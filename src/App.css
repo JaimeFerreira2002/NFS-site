@@ -1,0 +1,40 @@
+/*
+Especific styles
+*/
+.App {
+    text-align: center;
+  }
+  
+.top-bar {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+.top-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+.top-bar ul li {
+    margin: 0;
+  }
+  
+.top-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+.language-dropdown {
+    /* Add your language dropdown styles here */
+    color: #fff;
+  }
