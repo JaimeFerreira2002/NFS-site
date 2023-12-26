@@ -1,0 +1,13 @@
+
+.team-page {
+    background-color: #1d1d1d;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: 'PoppinsBold', sans-serif;
+    font-weight: 600;
+}

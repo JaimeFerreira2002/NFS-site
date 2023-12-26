@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage/HomePage';
 import AboutUsPage from './pages/AboutUsPage';
-import TeamPage from './pages/TeamPage';
+import TeamPage from './pages/TeamPage/TeamPage';
 import PartnersPage from './pages/PartnersPage';
 import ArticlesPage from './pages/ArticlesPage';
 import RecruitmentPage from './pages/RecruitmentPage';
@@ -20,13 +20,13 @@ function App() {
       <div className="App">
       <TopBar/>
       <Routes>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/about" component={AboutUsPage} />
-        <Route path="/team" component={TeamPage} />
-        <Route path="/partners" component={PartnersPage} />
-        <Route path="/articles" component={ArticlesPage} />
-        <Route path="/recruitment" component={RecruitmentPage} />
-        <Route path="/contacts" component={ContactsPage} />
+        <Route path="/" exact element={<HomePage/>} />
+        <Route path="/about" element={<AboutUsPage/>} />
+        <Route path="/team" element={<TeamPage/>} />
+        <Route path="/partners" element={<PartnersPage/>} />
+        <Route path="/articles" element={<ArticlesPage/>} />
+        <Route path="/recruitment" element={<RecruitmentPage/>} />
+        <Route path="/contacts" element={<ContactsPage/>} />
       </Routes>
       </div>
     </Router>

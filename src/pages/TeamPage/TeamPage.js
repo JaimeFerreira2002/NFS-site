@@ -1,9 +1,10 @@
 import React from 'react';
+import './TeamPage.css';
 
-const TeamPage = () => {
+function TeamPage(){
   return (
-    <div>
-      <h2>Team</h2>
+    <div className='team-page'>
+      <h2 className='h2'>Team</h2>
       <p>This is the Garage page. Content goes here.</p>
     </div>
   );
