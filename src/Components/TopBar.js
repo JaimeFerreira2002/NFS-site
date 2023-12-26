@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NFSLogo from '../assets/images/NFSLogo.png'
+import './TopBar.css';
 
 function TopBar() {
   return (
     <nav className="top-bar">
-      <div className="logo">Your Logo</div>
-      <ul>
+      <div className="logo">
+        <img src={NFSLogo} alt="Your Logo" />
+      </div>
+      <ul>   
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/about">Sobre</Link></li>
         <li><Link to="/garage">Garagem</Link></li>

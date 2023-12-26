@@ -1,0 +1,36 @@
+.top-bar {
+    background-color: #1d1d1d;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: 'PoppinsBold', sans-serif;
+    font-weight: 600;
+
+}
+.logo img {
+    width: 10vw;
+    height: 10vh;
+    display: block;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+ 
+.top-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+.top-bar ul li {
+    margin: 0;
+  }
+  
+.top-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}

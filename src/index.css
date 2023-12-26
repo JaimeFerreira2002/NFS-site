@@ -2,3 +2,26 @@
 global styles for the app
 */
 
+/*
+we define fonts here because its the main app style
+*/
+@font-face {
+    font-family: 'Poppins'; 
+    src: url('./assets/fonts/Poppins-Medium.ttf') format('ttf');
+    /* Add additional formats if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+
+
