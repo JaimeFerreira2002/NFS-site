@@ -12,7 +12,7 @@ function TopBar() {
       <ul>   
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/about">Sobre</Link></li>
-        <li><Link to="/garage">Garagem</Link></li>
+        <li><Link to="/team">Equipa</Link></li>
         <li><Link to="/partners">Parcerias</Link></li>
         <li><Link to="/articles">Artigos</Link></li>
         <li><Link to="/recruitment">Recrutamento</Link></li>
