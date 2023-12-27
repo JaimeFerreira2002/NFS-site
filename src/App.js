@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutUsPage from './pages/AboutUsPage';
-import TeamPage from './pages/TeamPage/TeamPage';
+import TeamPage from './pages/TeamPage';
 import PartnersPage from './pages/PartnersPage';
 import ArticlesPage from './pages/ArticlesPage';
 import RecruitmentPage from './pages/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage';
-import TopBar from './Components/TopBar'
+import TopBar from './components/TopBar/TopBar'
 
 import './App.css'; // You can add your CSS styles here
 
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<HomePage/>} />
         <Route path="/about" element={<AboutUsPage/>} />
-        <Route path="/garage" element={<TeamPage/>} />
+        <Route path="/team" element={<TeamPage/>} />
         <Route path="/partners" element={<PartnersPage/>} />
         <Route path="/articles" element={<ArticlesPage/>} />
         <Route path="/recruitment" element={<RecruitmentPage/>} />
