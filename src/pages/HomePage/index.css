@@ -1,0 +1,43 @@
+.description {
+  margin: auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5vw 35vw 45vw 5vw;
+  column-gap: 100px;
+  overflow: hidden;
+
+}
+
+
+.description .text {
+  text-align: justify;
+  background-color: #ffffff;
+  opacity: 0.6;
+  padding: 20px;
+  
+}
+
+.text h1{
+  margin-top:0;
+}
+
+.description .logoNFS {
+  height: 40vh;
+  margin: auto;
+}
+.description .logoNOVA {
+  height: 40vh;
+}
+
+.car {
+  width: 100vw;
+}
+
+.sobre {
+  background-image: url("../../assets/images/car_background.jpg");
+  background-size: cover;
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin: auto;
+}

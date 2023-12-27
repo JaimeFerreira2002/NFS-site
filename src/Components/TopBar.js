@@ -7,7 +7,7 @@ function TopBar() {
   return (
     <nav className="top-bar">
       <div className="logo">
-        <img src={NFSLogo} alt="Your Logo" />
+        <img src={NFSLogo} alt="NFS" />
       </div>
       <ul>   
         <li><Link to="/">Inicio</Link></li>
