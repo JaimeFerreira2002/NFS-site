@@ -9,6 +9,7 @@ import RecruitmentPage from './pages/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage';
 import TopBar from './components/TopBar/TopBar'
 
+
 import './App.css'; // You can add your CSS styles here
 
 

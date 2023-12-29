@@ -1,6 +1,6 @@
 .top-bar {
     background-color: #1d1d1d;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     padding-right: 5%;
     height: auto;
     display: flex;
@@ -28,9 +28,33 @@
   
 .top-bar ul li {
     margin: 0;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
   
 .top-bar ul li a {
     text-decoration: none;
     color: #fff;
+    transition: color 0.3s ease; 
+    &:hover {
+      color: #409ed4; /*we separate the animations because of the props associated with each element*/
+    }
 }
+
+
+
+.language-buttons{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    max-height: 100px;
+    max-width: 100px;
+  }
+
+  /* .pt-button.selected {
+    background-color: #0095ff;
+    transform: scale(1.4);
+  } */
+
