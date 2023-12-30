@@ -7,7 +7,7 @@ import PartnersPage from './pages/PartnersPage';
 import ArticlesPage from './pages/ArticlesPage';
 import RecruitmentPage from './pages/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage';
-import TopBar from './components/TopBar/TopBar'
+import TopBar from './components/TopBar'
 
 
 import './App.css'; // You can add your CSS styles here

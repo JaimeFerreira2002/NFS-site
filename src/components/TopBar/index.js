@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NFSLogo from '../../assets/images/NFSLogo.png'
-import './TopBar.css';
+import './style.css';
 import { useTranslation } from 'react-i18next';
-import IconButton from '../IconButton/IconButton';
+import IconButton from '../IconButton';
 import PT_FLAG from '../../assets/images/pt_flag.png';
 import EN_FLAG from '../../assets/images/en_flag.png';
 

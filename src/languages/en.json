@@ -8,7 +8,12 @@
     "articles": "Articles",
     "recruitment": "Recruitment",
     "contacts": "Contact Us"
-}
+},
     
+"team-page":{
+    "title": "Meet the NFS Team!",
+    "description": "Our team is made up by student from a wide range of areas of study and from various NOVA Faculties.We are structured in major departments: Board, Technical and Bussiness & Strategy."
+
+}
     
 }   

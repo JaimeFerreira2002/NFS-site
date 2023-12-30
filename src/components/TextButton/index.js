@@ -1,5 +1,5 @@
 import React from 'react';
-import './TextButton.css';
+import './style.css';
 
 //we can use icons or images in this button
 const CustomTextButton = ({ onClick, text }) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './IconButton.css';
+import './style.css';
 
 //we can use icons or images in this button, this is a
 const CustomIconButton = ({ onClick, icon }) => {
