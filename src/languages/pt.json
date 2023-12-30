@@ -1,6 +1,5 @@
 {
-    
-"topbar":{
+  "topbar": {
     "start": "Inicio",
     "about": "Sobre nós",
     "team": "Equipa",
@@ -8,8 +7,13 @@
     "articles": "Artigos",
     "recruitment": "Recrutamento",
     "contacts": "Contactos"
-}
+  },
 
-
-
+  "home": {
+    "Quem somos": "QUEM SOMOS",
+    "Equipa de FS": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
+    "Equipa": "Equipa",
+    "Descricao Equipa": "Estudantes apaixonados por engenharia automóvel da NOVA. O nossofoco é competir na Formula Student, construindo um carro inovador.Procuramos aprender, competir e demonstrar habilidades técnicas emeventos.",
+    "Team Leader": "Líder de Equipa"
+  }
 }

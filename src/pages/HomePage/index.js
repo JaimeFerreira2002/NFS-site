@@ -1,6 +1,9 @@
 import React from "react";
 import "./index.css";
 import NFSLogo from "../../assets/images/NFSLogo.png";
+import NOVALogo from "../../assets/images/NOVA_logo.png";
+import TeamLeaderPhoto from "../../assets/images/teamLeaderCutileiro.jpg";
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -35,9 +38,29 @@ const HomePage = () => {
           </div>
           <div>
             <img className="logoNFS" src={NFSLogo} alt="NFS" />
-            <img className="logoNOVA" src={NFSLogo} alt="NFS" />
+            <img className="logoNOVA" src={NOVALogo} alt="NFS" />
           </div>
         </div>
+      </div>
+      <div className="team">
+        <div>
+          <h3 className="titleLink"><Link style={{ textDecoration: 'none', color:'black' }} to="/team">Team</Link></h3>
+          <span>
+            Estudantes apaixonados por engenharia automóvel da NOVA. O nosso
+            foco é competir na Formula Student, construindo um carro inovador.
+            Procuramos aprender, competir e demonstrar habilidades técnicas em
+            eventos.
+          </span>
+        </div>
+        <img
+          className="teamLeaderPhoto"
+          src={TeamLeaderPhoto}
+          alt="Ricardo Cutileiro - Team Leader"
+        />
+        <br></br>
+        <strong>Ricardo Cutileiro</strong>
+        <br></br>
+        <label>Team Leader</label>
       </div>
     </div>
   );
