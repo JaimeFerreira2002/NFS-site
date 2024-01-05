@@ -14,6 +14,14 @@
     "title": "Meet the NFS Team!",
     "description": "Our team is made up by student from a wide range of areas of study and from various NOVA Faculties.We are structured in major departments: Board, Technical and Bussiness & Strategy."
 
-}
+},
+
+"home": {
+    "Quem somos": "WHO ARE WE",
+    "Equipa de FS": "We are the Formula Student team from NOVA University of Lisbon.",
+    "Equipa": "Team",
+    "Descricao Equipa": "Estudantes apaixonados por engenharia automóvel da NOVA. O nossofoco é competir na Formula Student, construindo um carro inovador.Procuramos aprender, competir e demonstrar habilidades técnicas emeventos.",
+    "Team Leader": "Team Leader"
+  }
     
 }   

@@ -1,6 +1,5 @@
 {
-    
-"topbar":{
+  "topbar": {
     "start": "Inicio",
     "about": "Sobre nós",
     "team": "Equipa",
@@ -13,8 +12,15 @@
 "team-page":{
     "title": "Conhece a nossa equipa!",
     "description": "A nossa equipa é composta por estudantes de diversas áreas de estudo e de várias faculdades da NOVA. Estamos estruturados em principais departamentos: Direção, Técnico e Negócios e Estratégia."
-}
+},
 
+"home": {
+    "Quem somos": "QUEM SOMOS",
+    "Equipa de FS": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
+    "Equipa": "Equipa",
+    "Descricao Equipa": "Estudantes apaixonados por engenharia automóvel da NOVA. O nossofoco é competir na Formula Student, construindo um carro inovador.Procuramos aprender, competir e demonstrar habilidades técnicas emeventos.",
+    "Team Leader": "Líder de Equipa"
+  }
 
 
 }

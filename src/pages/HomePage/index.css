@@ -41,3 +41,24 @@
   width: 100vw;
   margin: auto;
 }
+
+
+.team{
+  columns: 2;
+  margin:10vh;
+  
+  
+ 
+}
+
+.teamLeaderPhoto{
+  width: 30vh;
+}
+
+.titleLink{
+  font-size: 1.17em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
