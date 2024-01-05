@@ -1,0 +1,18 @@
+
+
+.text-header-box{
+    padding-left: 3%;
+    padding-right: 30%;
+    padding-top: 2%;
+}
+.text-header h2 {
+    text-align: left;
+    font-size: 35px;
+    font-weight: 900; 
+  }
+  
+  .text-header p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500; 
+  }
