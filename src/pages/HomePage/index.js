@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import NFSLogo from "../../assets/images/NFSLogo.png";
 import NOVALogo from "../../assets/images/NOVA_logo.png";
-import TeamLeaderPhoto from "../../assets/images/teamLeaderCutileiro.jpg";
+import TeamLeaderPhoto from "../../assets/images/members_photos/Ricardo_Cutileiro_TL.jpg";
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
