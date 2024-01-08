@@ -13,9 +13,30 @@
 "team-page":{
     "title": "Meet the NFS Team!",
     "description": "Our team is made up by student from a wide range of areas of study and from various NOVA Faculties.We are structured in major departments: Board, Technical and Bussiness & Strategy.",
-    "BSD" : "Bussiness & Strategy Director",
-    "TL" : "Team Leader",
-    "TD" : "Technical Director",
+    
+    "headers":{
+        "board_header": "Board",
+        "management_header": "Management"
+    },
+    
+
+    "roles":{
+        "BSD" : "Bussiness & Strategy Director",
+        "TL" : "Team Leader",
+        "TD" : "Technical Director",
+        "MKT" : "Marketing",
+        "CR" : "Corporate Relations",
+        "LG"  : "Logistics",
+        "FIN" : "Finances",
+
+        "PWT" : "Powertraim",
+        "ELE" : "Electronics",
+        "AERO" : "Aerodynamics",
+        "VD" : "Vehicle Dynamics",
+        "SE" : "Steering & Ergonomics",
+        "CS" : "Chassis & Suspension" 
+    },
+   
     "degrees":{
         "mechanical_engineering" : "Mechanical Engeneering",
         "eletronic_engineering" :  "Eletronic Engeneering",

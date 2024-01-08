@@ -1,0 +1,65 @@
+.bottom-bar {
+    background-color: #1d1d1d;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: 'PoppinsBold', sans-serif;
+    font-weight: 600;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    
+  }
+  
+  .bottom-bar .logo img {
+    width: 20vw;
+    height: 20vh;
+    display: block;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  .social-icons{
+    display: flex; /* Added to ensure children are in a flex container */
+    width: 80%; /* Occupy the full width of the left-section */
+    justify-content: space-evenly; /* Adjust to your preferred spacing */
+    align-items: center; /* Center the icons vertically */
+  }
+  
+   .social-icons img {
+    width: 40px;
+    height: 40px;
+    flex-direction: row;
+   
+  }
+  
+  .navigation-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter-subscription input {
+    margin-right: 10px;
+    padding: 8px;
+  }
+  
+  .newsletter-subscription button {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -8,6 +8,7 @@ import ArticlesPage from './pages/ArticlesPage';
 import RecruitmentPage from './pages/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage';
 import TopBar from './components/TopBar'
+import BottomBar from './components/BottomBar';
 
 
 import './App.css'; // You can add your CSS styles here
@@ -29,6 +30,7 @@ function App() {
         <Route path="/recruitment" element={<RecruitmentPage/>} />
         <Route path="/contacts" element={<ContactsPage/>} />
       </Routes>
+      <BottomBar/>
       </div>
     </Router>
   );

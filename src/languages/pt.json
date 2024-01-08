@@ -12,9 +12,29 @@
 "team-page":{
     "title": "Conhece a nossa equipa!",
     "description": "A nossa equipa é composta por estudantes de diversas áreas de estudo e de várias faculdades da NOVA. Estamos estruturados em principais departamentos: Direção, Técnico e Negócios e Estratégia.",
-    "BSD" : "Diretor de Estratégia & Negócios",
-    "TL" : "Team Leader",
-    "TD" : "Diretor Técnico",
+    
+    "headers":{
+      "board_header": "Direção",
+      "management_header": "Coordenadores"
+    },
+
+    "roles" :{
+      "BSD" : "Diretor de Estratégia & Negócios",
+      "TL" : "Team Leader",
+      "TD" : "Diretor Técnico",
+      "MKT" : "Marketing",
+      "CR" : "Relações Empresariais",
+      "LG"  : "Logística",
+      "FIN" : "Finanças",
+
+      "PWT" : "Motores",
+      "ELE" : "Eletrónica",
+      "AERO" : "Aerodinâmica",
+      "VD" : "Dinâmica de veículo",
+      "SE" : "Ergonómica",
+      "CS" : "Chassis e Suspenção"
+    },
+    
     "degrees":{
         "mechanical_engineering" : "Engenharia Mecânica",
         "eletronic_engineering" :  "Engenharia Eletrotécnica",

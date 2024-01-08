@@ -11,7 +11,7 @@
     font-weight: 600;
 
 }
-.logo img {
+.top-bar .logo img {
     width: 10vw;
     height: 10vh;
     display: block;
@@ -53,8 +53,4 @@
     max-width: 100px;
   }
 
-  /* .pt-button.selected {
-    background-color: #0095ff;
-    transform: scale(1.4);
-  } */
 

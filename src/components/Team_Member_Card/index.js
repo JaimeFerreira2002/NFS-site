@@ -5,7 +5,7 @@ import { faEnvelope, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
 
-const TeamBoardCard = ({ name, role, email, degree, imagePath }) => {
+const TeamMemberCard = ({ name, role, email, degree, imagePath }) => {
   
   return (
     <div className="card">
@@ -20,7 +20,7 @@ const TeamBoardCard = ({ name, role, email, degree, imagePath }) => {
   );
 };
 
-TeamBoardCard.propTypes = {
+TeamMemberCard.propTypes = {
   photo: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
@@ -28,4 +28,4 @@ TeamBoardCard.propTypes = {
   degree: PropTypes.string.isRequired,
 };
 
-export default TeamBoardCard;
+export default TeamMemberCard;
