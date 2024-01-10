@@ -45,11 +45,15 @@
 
 
 "home": {
-    "Quem somos": "QUEM SOMOS",
-    "Equipa de FS": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
-    "Equipa": "Equipa",
-    "Descricao Equipa": "Estudantes apaixonados por engenharia automóvel da NOVA. O nossofoco é competir na Formula Student, construindo um carro inovador.Procuramos aprender, competir e demonstrar habilidades técnicas emeventos.",
-    "Team Leader": "Líder de Equipa"
+    "who_r_we": "QUEM SOMOS",
+    "fs_team": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
+    "team": "Equipa",
+    "team_desc": "Estudantes apaixonados por engenharia automóvel da NOVA.\n\r\nO nosso foco é competir na Formula Student, construindo um carro inovador.\n\r\nProcuramos aprender, competir e demonstrar habilidades técnicas em eventos.",
+    "team_leader": "Líder de Equipa",
+    "sponsor_title": "Patrocinadores",
+    "sponsor_title_2": "Torne-se Nosso Parceiro na Inovação Automóvel!",
+    "sponsor_text": "Torne-se um patrocinador da nossa equipa, tendo a oportunidade de se associar a um projeto inovador e educacional.\n\r\nAumentando a visibilidade da sua marca em eventos, medias sociais e materiais promocionais.\n\r\nJunte-se a nós nesta jornada de excelência técnica e compromisso com a inovação.\n\r\nApoie a próxima geração de líderes e inovadores.",
+    "reach_us":"Contacte-nos"
   }
 
 

@@ -3,9 +3,13 @@ import "./style.css";
 import NFSLogo from "../../assets/images/NFSLogo.png";
 import NOVALogo from "../../assets/images/NOVA_logo.png";
 import TeamLeaderPhoto from "../../assets/images/members_photos/Ricardo_Cutileiro_TL.jpg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 const HomePage = () => {
+  const { t } = useTranslation();
   return (
     <div className="home-page">
       {/* Add your background image and text overlay here */}
@@ -15,11 +19,9 @@ const HomePage = () => {
             <br></br>
           </div>
           <div className="text">
-            <h1>QUEM SOMOS</h1>
+            <h1>{t("home.who_r_we")}</h1>
 
-            <h4 className="subtitle">
-              Somos a equipa de Formula Student da Universidade Nova de Lisboa.
-            </h4>
+            <h4 className="subtitle">{t("home.fs_team")}</h4>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               nisl lectus, viverra ut massa sed, condimentum imperdiet diam. Sed
@@ -44,13 +46,12 @@ const HomePage = () => {
       </div>
       <div className="team">
         <div>
-          <h3 className="titleLink"><Link style={{ textDecoration: 'none', color:'black' }} to="/team">Team</Link></h3>
-          <span>
-            Estudantes apaixonados por engenharia automóvel da NOVA. O nosso
-            foco é competir na Formula Student, construindo um carro inovador.
-            Procuramos aprender, competir e demonstrar habilidades técnicas em
-            eventos.
-          </span>
+          <h2 className="titleLink">
+            <Link style={{ textDecoration: "none", color: "black" }} to="/team">
+              {t("home.team")}
+            </Link>
+          </h2>
+          <span>{t("home.team_desc")}</span>
         </div>
         <img
           className="teamLeaderPhoto"
@@ -60,7 +61,28 @@ const HomePage = () => {
         <br></br>
         <strong>Ricardo Cutileiro</strong>
         <br></br>
-        <label>Team Leader</label>
+        <label>{t("home.team_leader")}</label>
+      </div>
+      <div className="sponsors">
+        <div>
+          <Card className="card" style={{ width: "20rem" }}>
+            <Card.Body>
+              <Card.Title>{t("home.sponsor_title")}</Card.Title>
+              <br></br>
+              <Card.Text style={{ textAlign: "justify" }}>
+                {t("home.sponsor_text")}
+              </Card.Text>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/partners"
+            >
+              <Button className="btn" variant="primary">
+                {t("home.reach_us")}
+              </Button>
+            </Link>
+            </Card.Body>
+          </Card>
+        </div>
       </div>
     </div>
   );

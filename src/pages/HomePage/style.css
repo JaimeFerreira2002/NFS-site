@@ -60,3 +60,35 @@
   color: #000000;
 }
 
+.sponsors{
+  background-image: url("../../assets/images/car_image_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  width: 100vw;
+  margin: auto;
+  padding:30px;
+  columns: 3;
+
+  padding-left:10vw;
+  
+}
+
+.card{
+  pointer-events: none;
+  margin-left: 10vw;
+
+  transition: transform 0s ease;
+  &:hover {
+    transform: scale(1);
+  }
+  
+}
+
+.card .btn{
+  pointer-events:all;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.06);
+  }
+}

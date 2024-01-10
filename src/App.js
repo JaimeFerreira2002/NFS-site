@@ -9,7 +9,7 @@ import RecruitmentPage from './pages/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage';
 import TopBar from './components/TopBar'
 import BottomBar from './components/BottomBar';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css'; // You can add your CSS styles here
 

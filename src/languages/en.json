@@ -45,11 +45,11 @@
 },
 
 "home": {
-    "Quem somos": "WHO ARE WE",
-    "Equipa de FS": "We are the Formula Student team from NOVA University of Lisbon.",
-    "Equipa": "Team",
-    "Descricao Equipa": "Estudantes apaixonados por engenharia automóvel da NOVA. O nossofoco é competir na Formula Student, construindo um carro inovador.Procuramos aprender, competir e demonstrar habilidades técnicas emeventos.",
-    "Team Leader": "Team Leader"
+    "who_r_we": "WHO ARE WE",
+    "fs_team": "We are the Formula Student team from NOVA University of Lisbon.",
+    "team": "Team",
+    "team_desc": "Estudantes apaixonados por engenharia automóvel da NOVA. O nossofoco é competir na Formula Student, construindo um carro inovador.Procuramos aprender, competir e demonstrar habilidades técnicas emeventos.",
+    "team_leader": "Team Leader"
   }
     
 }   
