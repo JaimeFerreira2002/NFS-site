@@ -2,11 +2,20 @@
   "topbar": {
     "start": "Inicio",
     "about": "Sobre nós",
-    "team": "Equipa",
+    "garage": "Garagem",
     "partnerships": "Parceiros",
     "articles": "Artigos",
     "recruitment": "Recrutamento",
     "contacts": "Contactos"
+},
+
+
+"garage-page":{
+  "page-title" : "Garagem",
+  "page-subtitle" : "Descobre os nossos carros",
+  "fenix-description" : "O nosso primeiro carro",
+  "button-text" : "Saber mais"
+
 },
 
 "team-page":{
@@ -42,6 +51,9 @@
     }
 
   },
+
+
+  
 
 
 "home": {

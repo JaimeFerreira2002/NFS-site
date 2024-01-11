@@ -3,12 +3,20 @@
 "topbar":{
     "start": "Home",
     "about": "About us",
-    "team": "Team",
+    "garage": "Garage",
     "partnerships": "Partners",
     "articles": "Articles",
     "recruitment": "Recruitment",
     "contacts": "Contact Us"
 },
+
+"garage-page":{
+    "page-title" : "Garage",
+    "page-subtitle" : "Discover our cars",
+    "fenix-description" : "Our first car",
+    "button-text" : "Learn more"
+  
+  },
     
 "team-page":{
     "title": "Meet the NFS Team!",

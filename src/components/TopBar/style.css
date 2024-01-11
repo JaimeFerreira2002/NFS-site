@@ -2,7 +2,7 @@
     background-color: #1d1d1d;
     /* padding-left: 5%; */
     padding-right: 5%;
-    height: auto;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +24,7 @@
     list-style: none;
     display: flex;
     gap: 40px;
+    margin: 0;
   }
   
 .top-bar ul li {

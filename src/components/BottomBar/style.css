@@ -1,12 +1,13 @@
 .bottom-bar {
     background-color: #1d1d1d;
-    height: 30vh;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     font-family: 'PoppinsBold', sans-serif;
     font-weight: 600;
+  
   }
   
   .left-section {
@@ -18,8 +19,8 @@
   }
   
   .bottom-bar .logo img {
-    width: 20vw;
-    height: 20vh;
+    width: 10vw;
+    height: 10vh;
     display: block;
     padding-top: 0%;
     padding-bottom: 0%;

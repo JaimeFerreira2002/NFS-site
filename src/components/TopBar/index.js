@@ -29,7 +29,7 @@ const changeLanguage = (lang) => {
       <ul>   
         <li><Link to="/">{t('topbar.start')}</Link></li>
         <li><Link to="/about">{t('topbar.about')}</Link></li>
-        <li><Link to="/team">{t('topbar.team')}</Link></li>
+        <li><Link to="/garage">{t('topbar.garage')}</Link></li>
         <li><Link to="/partners">{t('topbar.partnerships')}</Link></li>
         <li><Link to="/articles">{t('topbar.articles')}</Link></li>
         <li><Link to="/recruitment">{t('topbar.recruitment')}</Link></li>
