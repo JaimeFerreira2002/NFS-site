@@ -7,8 +7,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    font-family: 'PoppinsBold', sans-serif;
-    font-weight: 600;
+    font-family: 'Poppins';
+    font-weight: 500;
 
 }
 .top-bar .logo img {
@@ -38,9 +38,12 @@
 .top-bar ul li a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s ease; 
+    transition: all 0.3s ease; 
     &:hover {
-      color: #409ed4; /*we separate the animations because of the props associated with each element*/
+      background-image: linear-gradient(to right, #2980b9, #ffffff);
+      background-size: 100%; 
+      background-clip: text;
+      color: transparent;
     }
 }
 

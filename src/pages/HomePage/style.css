@@ -24,6 +24,7 @@
 .description .logoNFS {
   height: 40vh;
   margin: auto;
+  
 }
 .description .logoNOVA {
   height: 40vh;
@@ -40,6 +41,7 @@
   background-repeat: no-repeat;
   width: 100vw;
   margin: auto;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -92,3 +94,4 @@
     transform: scale(1.06);
   }
 }
+ 

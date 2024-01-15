@@ -7,11 +7,36 @@ we define fonts here because its the main app style
 */
 @font-face {
     font-family: 'Poppins'; 
-    src: url('./assets/fonts/Poppins-Medium.ttf') format('ttf');
+    src: url('./assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
     /* Add additional formats if needed */
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Raleway'; 
+    src: url('./assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    /* Add additional formats if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FasterStroker';
+    src: url('./assets/fonts/FasterStroker/FasterStroker.otf') format('opentype');
+    /* Add additional formats if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'AkiraExpanded';
+    src: url('./assets/fonts/AkiraExpanded/AkiraExpanded.otf') format('opentype');
+    /* Add additional formats if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
 
 
 body, html {

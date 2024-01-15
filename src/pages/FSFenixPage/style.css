@@ -1,0 +1,75 @@
+.fsfsenix-page{
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    width: 100vw;
+    
+}
+
+.page-header{
+    padding: 2%;
+}
+
+.page-title {
+    font-family: 'AkiraExpanded'; 
+    font-size: 50px; 
+    font-weight: normal; 
+    background-image: linear-gradient(to right, #0099ff, #ffffff);
+    background-size: 90%;
+    background-clip: text;
+    color: transparent;
+}
+  
+.page-subtitle {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 24px; 
+    font-weight: 00; 
+    color: #444444; 
+}
+
+
+.model_and_specs{
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40%;   
+      
+}
+
+.specs{
+    width: 40%;
+}
+
+.specs-title{
+    font-family: 'AkiraExpanded';
+    font-size: 25px; 
+    font-weight: normal; 
+    text-align: left;
+    background-image: linear-gradient(to right, #0099ff, #ffffff);
+    background-size: 130%;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.specs li {
+    font-family: 'Raleway';
+    text-align: left;
+    list-style: none;
+}
+
+.fsfenix-3d-model{
+    width: 60%;
+}
+
+.sponsors-card{
+    height: 20%;
+   
+    
+}
+
+.sponsors-card-photo{
+    object-fit: contain;
+    
+}
