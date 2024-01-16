@@ -2,26 +2,23 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export default function FSFenixModel(props) {
+export default function FSFenix_Render_v2(props) {
   const { nodes, materials } = useGLTF("/FSFenix_Render.gltf");
   return (
     <group {...props} dispose={null}>
-      <mesh
+      {/* <mesh
         name="Cylinder"
-        castShadow 
+        castShadow
         receiveShadow
         geometry={nodes.Cylinder.geometry}
         material={materials["Basic Black Plastic"]}
-        position={[0, 0, 0]}
-        scale={[3.5, -0.08, 3.5]}
-      />
+        position={[0,0,0]}
+        scale={[3, -0.04958992, 3]}
+      /> */}
       <group
         name="Car"
-        castShadow 
-        receiveShadow
-        position={[0, 0.95, 0]}
-        scale={0.002556}
-        
+        position={[0, 0.5, 0]}
+        scale={0.0028558} 
       >
         <mesh
           name="Mesh_0"
@@ -1179,10 +1176,144 @@ export default function FSFenixModel(props) {
           material={materials["Red Metallic Paint.104"]}
         />
       </group>
+      <group
+        name="Light001"
+        position={[-6.70901537, 13.23885727, 4.3268714]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light001_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light005"
+        position={[2.65318251, 13.23885727, -0.6731286]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light005_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light004"
+        position={[-6.70901537, 13.23885727, -0.6731286]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light004_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light003"
+        position={[11.29098511, 13.10138226, -0.6731286]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light003_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light008"
+        position={[2.65318251, 13.23885727, -7.6731286]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light008_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light007"
+        position={[-6.70901537, 13.23885727, -7.6731286]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+        c
+      >
+        <pointLight
+          name="Light007_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light006"
+        position={[11.29098511, 13.23885727, -7.6731286]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light006_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      
+      {/* 
+      commented for visual purposes
+      <group
+        name="Light011"
+        position={[2.65318251, 12.80334949, 9.32687187]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light011_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light010"
+        position={[-6.70901537, 13.23885727, 9.32687187]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light010_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light009"
+        position={[11.29098511, 13.23885727, 9.32687187]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light009_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group>
+      <group
+        name="Light"
+        position={[2.65318251, 13.23885727, 4.3268714]}
+        rotation={[1.89012596, 0.88056835, -2.04521599]}
+      >
+        <pointLight
+          name="Light_Orientation"
+          intensity={300}
+          decay={2}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+      </group> */}
     </group>
   );
 }
 
 useGLTF.preload("/FSFenix_Render.gltf");
-
-

@@ -1,7 +1,6 @@
 import React, { useRef, Suspense } from 'react';
 import { Canvas, extend, useFrame, useThree } from 'react-three-fiber';
 import FSFenixModel from '../../assets/3DModels/FSFenix_Render.js';
-import FSFenixModelV2 from '../../assets/3DModels/FSFenix_Render_v2.js';
 import { OrbitControls } from '@react-three/drei';
 
 
@@ -16,7 +15,7 @@ const CarModelViewer = () => {
       fov: 35,              
     }}>
       <Suspense fallback={null}> 
-        <FSFenixModelV2/>
+        <FSFenixModel/>
         <OrbitControls autoRotate={true} 
                        autoRotateSpeed={0.5} 
                        enablePan={false} 
