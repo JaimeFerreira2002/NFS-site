@@ -7,66 +7,57 @@
     "articles": "Artigos",
     "recruitment": "Recrutamento",
     "contacts": "Contactos"
-},
+  },
 
+  "garage-page": {
+    "page-title": "Garagem",
+    "page-subtitle": "Descobre os nossos carros",
+    "fenix-description": "O nosso primeiro carro",
+    "button-text": "Saber mais"
+  },
 
-"garage-page":{
-  "page-title" : "Garagem",
-  "page-subtitle" : "Descobre os nossos carros",
-  "fenix-description" : "O nosso primeiro carro",
-  "button-text" : "Saber mais"
-
-},
-
-"team-page":{
+  "team-page": {
     "title": "Conhece a nossa equipa!",
     "description": "A nossa equipa é composta por estudantes de diversas áreas de estudo e de várias faculdades da NOVA. Estamos estruturados em principais departamentos: Direção, Técnico e Negócios e Estratégia.",
-    
-    "headers":{
+
+    "headers": {
       "board_header": "Direção",
       "management_header": "Coordenadores"
     },
 
-    "roles" :{
-      "BSD" : "Diretor de Estratégia & Negócios",
-      "TL" : "Team Leader",
-      "TD" : "Diretor Técnico",
-      "MKT" : "Marketing",
-      "CR" : "Relações Empresariais",
-      "LG"  : "Logística",
-      "FIN" : "Finanças",
+    "roles": {
+      "BSD": "Diretor de Estratégia & Negócios",
+      "TL": "Team Leader",
+      "TD": "Diretor Técnico",
+      "MKT": "Marketing",
+      "CR": "Relações Empresariais",
+      "LG": "Logística",
+      "FIN": "Finanças",
 
-      "PWT" : "Motores",
-      "ELE" : "Eletrónica",
-      "AERO" : "Aerodinâmica",
-      "VD" : "Dinâmica de veículo",
-      "SE" : "Ergonómica",
-      "CS" : "Chassis e Suspenção"
+      "PWT": "Motores",
+      "ELE": "Eletrónica",
+      "AERO": "Aerodinâmica",
+      "VD": "Dinâmica de veículo",
+      "SE": "Ergonómica",
+      "CS": "Chassis e Suspenção"
     },
-    
-    "degrees":{
-        "mechanical_engineering" : "Engenharia Mecânica",
-        "eletronic_engineering" :  "Engenharia Eletrotécnica",
-        "computer_engineering" : "Engenharia Informática"
-    }
 
+    "degrees": {
+      "mechanical_engineering": "Engenharia Mecânica",
+      "eletronic_engineering": "Engenharia Eletrotécnica",
+      "computer_engineering": "Engenharia Informática"
+    }
   },
 
-
-  
-
-
-"home": {
+  "home": {
     "who_r_we": "QUEM SOMOS",
     "fs_team": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
     "team": "Equipa",
-    "team_desc": "Estudantes apaixonados por engenharia automóvel da NOVA.\n\r\nO nosso foco é competir na Formula Student, construindo um carro inovador.\n\r\nProcuramos aprender, competir e demonstrar habilidades técnicas em eventos.",
+    "team_desc": "Estudantes apaixonados por engenharia automóvel da NOVA.\n\r\nO nosso foco é competir na Formula Student, construindo um carro inovador.\n\r\nProcuramos aprender, competir e demonstrar habilidades técnicas em eventos. Temos 47 pessoas na equipa, de 3 faculdades diferentes. Divididos em 2 áreas principais: Técnico e não Técnico. Que por sua vez se dividem em 5 e 7 áreas cada uma.",
     "team_leader": "Líder de Equipa",
     "sponsor_title": "Patrocinadores",
     "sponsor_title_2": "Torne-se Nosso Parceiro na Inovação Automóvel!",
     "sponsor_text": "Torne-se um patrocinador da nossa equipa, tendo a oportunidade de se associar a um projeto inovador e educacional.\n\r\nAumentando a visibilidade da sua marca em eventos, medias sociais e materiais promocionais.\n\r\nJunte-se a nós nesta jornada de excelência técnica e compromisso com a inovação.\n\r\nApoie a próxima geração de líderes e inovadores.",
-    "reach_us":"Contacte-nos"
+    "reach_us": "Contacte-nos"
   }
-
-
 }

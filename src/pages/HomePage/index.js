@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Car_Render from "../../assets/images/car_render_bridge.jpg";
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -46,42 +47,124 @@ const HomePage = () => {
       </div>
       <div className="team">
         <div>
-          <h2 className="titleLink">
-            <Link style={{ textDecoration: "none", color: "black" }} to="/team">
-              {t("home.team")}
-            </Link>
-          </h2>
-          <span>{t("home.team_desc")}</span>
+          <Link style={{ textDecoration: "none", color: "black" }} to="/team">
+            <Card
+              className="card"
+              bg="dark"
+              text="white"
+              border="info"
+              style={{ width: "20rem" }}
+            >
+              <Card.Body>
+                <Card.Title style={{ textAlign: "left" }}>
+                  <h2>
+                    <strong>{t("home.team")}</strong>
+                  </h2>
+                </Card.Title>
+                <br></br>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  {t("home.team_desc")}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
         </div>
-        <img
-          className="teamLeaderPhoto"
-          src={TeamLeaderPhoto}
-          alt="Ricardo Cutileiro - Team Leader"
-        />
-        <br></br>
-        <strong>Ricardo Cutileiro</strong>
-        <br></br>
-        <label>{t("home.team_leader")}</label>
+
+        <div>
+        <Link style={{ textDecoration: "none", color: "black" }} to="/team">
+          <img
+            className="teamLeaderPhoto"
+            src={TeamLeaderPhoto}
+            alt="Ricardo Cutileiro - Team Leader"
+          />
+          <br></br>
+          <strong>Ricardo Cutileiro</strong>
+          <br></br>
+          <label>{t("home.team_leader")}</label>
+          </Link>
+        </div>
       </div>
       <div className="sponsors">
         <div>
-          <Card className="card" style={{ width: "20rem" }}>
+          <Card
+            className="card"
+            bg="dark"
+            text="white"
+            border="info"
+            style={{ width: "20rem" }}
+          >
             <Card.Body>
-              <Card.Title>{t("home.sponsor_title")}</Card.Title>
+              <Card.Title style={{ textAlign: "left" }}>
+                <h2>
+                  <strong>{t("home.sponsor_title")}</strong>
+                </h2>
+              </Card.Title>
               <br></br>
               <Card.Text style={{ textAlign: "justify" }}>
                 {t("home.sponsor_text")}
               </Card.Text>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/partners"
-            >
-              <Button className="btn" variant="primary">
-                {t("home.reach_us")}
-              </Button>
-            </Link>
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/partners"
+              >
+                <Button className="btn" variant="info">
+                  {t("home.reach_us")}
+                </Button>
+              </Link>
             </Card.Body>
           </Card>
+        </div>
+      </div>
+      <div className="garage">
+        <div>
+          <Card
+            className="card"
+            bg="dark"
+            text="white"
+            border="info"
+            style={{ width: "20rem" }}
+          >
+            <Card.Body>
+              <Card.Title style={{ textAlign: "left" }}>
+                <h2>
+                  <strong>A Garagem</strong>
+                </h2>
+              </Card.Title>
+              <br></br>
+              <Card.Text style={{ textAlign: "justify" }}>
+                Tendo voltado à competição há pouco tempo, o carro que queremos
+                apresentar o FSFenix. Este carro é o resultado de um ano de
+                trabalho, e é o primeiro carro da equipa.
+                <strong>
+                  Esperamos poder produzir mais carros como este, e melhorar a
+                  cada ano que passa.
+                </strong>
+              </Card.Text>
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/garage"
+              ></Link>
+            </Card.Body>
+          </Card>
+        </div>
+
+        <div className="cards-container">
+          <div
+            className="garage-item"
+            id="garage-item1"
+            style={{
+              backgroundImage: `url(${Car_Render})`,
+            }}
+          >
+            <div className="overlay">
+              <h2>FS FENIX</h2>
+              <p>{t("garage-page.fenix-description")}</p>
+
+              <Link to="/garage/fsfenix">
+                <button>{t("garage-page.button-text")}</button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
