@@ -1,0 +1,69 @@
+/* Partners.css */
+.partners-section {
+    text-align: center;
+  }
+  
+  .partner-categories h3 {
+    text-align: left;
+  }
+  
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .partner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .partner-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* PartnerCard.css */
+.partner-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 300px; /* or any desired width */
+  height: 200px; /* or any desired height */
+  margin: 1rem;
+  border-radius: 8px; /* Optional: if you want rounded corners */
+  overflow: hidden; /* Ensures the overlay fits within the card */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  color: white;
+  padding: 20px;
+}
+
+.partner-card h2,
+.partner-card p {
+  margin: 0;
+}
+
+.partner-card button {
+  /* Style your button as needed */
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.partner-card button:hover {
+  /* Button hover effect */
+  background-color: #e0e0e0;
+}

@@ -5,20 +5,20 @@
   grid-template-columns: 5vw 35vw 45vw 5vw;
   column-gap: 100px;
   overflow: hidden;
-
 }
-
 
 .description .text {
   text-align: justify;
   background-color: #ffffff;
   opacity: 0.6;
   padding: 20px;
-  
+}
+.text .subtitle {
+  text-align: left;
 }
 
-.text h1{
-  margin-top:0;
+.text h1 {
+  margin-top: 0;
 }
 
 .description .logoNFS {
@@ -39,44 +39,42 @@
   background-size: cover;
   background-position: 50% 75%;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
 
-
-.team{
+.team {
   columns: 2;
-  margin:10vh;
- 
+  padding: 30px;
+  padding-left: 10vw;
+  margin: auto;
 }
 
-.teamLeaderPhoto{
+.teamLeaderPhoto {
   width: 30vh;
 }
 
-.titleLink{
+.titleLink {
   font-size: 1.17em;
   font-weight: bold;
   text-decoration: none;
   color: #000000;
 }
 
-.sponsors{
+.sponsors {
   background-image: url("../../assets/images/car_image_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 60%;
-  width: 100vw;
+  width: 100%;
   margin: auto;
-  padding:30px;
-  columns: 3;
+  padding: 30px;
 
-  padding-left:10vw;
-  
+  padding-left: 10vw;
 }
 
-.card{
+.card {
   pointer-events: none;
   margin-left: 10vw;
 
@@ -84,14 +82,22 @@
   &:hover {
     transform: scale(1);
   }
-  
 }
 
-.card .btn{
-  pointer-events:all;
+.card .btn {
+  pointer-events: all;
   transition: transform 0.3s ease;
   &:hover {
     transform: scale(1.06);
   }
 }
+<<<<<<< HEAD
  
+=======
+
+.garage {
+  columns: 2;
+  padding: 5%;
+  padding-left: 10vw;
+}
+>>>>>>> 647d4217ee57102f02f47baad03565ed7e0eef5a
