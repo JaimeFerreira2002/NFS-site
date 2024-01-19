@@ -6,19 +6,11 @@ export default function FSFenix_Render_v2(props) {
   const { nodes, materials } = useGLTF("/FSFenix_Render.gltf");
   return (
     <group {...props} dispose={null}>
-      {/* <mesh
-        name="Cylinder"
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder.geometry}
-        material={materials["Basic Black Plastic"]}
-        position={[0,0,0]}
-        scale={[3, -0.04958992, 3]}
-      /> */}
+   
       <group
         name="Car"
         position={[0, 0.5, 0]}
-        scale={0.0028558} 
+        scale={0.0015558} 
       >
         <mesh
           name="Mesh_0"

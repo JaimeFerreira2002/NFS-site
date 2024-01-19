@@ -23,6 +23,7 @@ import NovaLogo from '../../assets/images/sponsors_logos/nova.png'
 import VisteonLogo from '../../assets/images/sponsors_logos/visteon.png'
 import VWLogo from '../../assets/images/sponsors_logos/volkswagen.png'
 import WOBLogo from '../../assets/images/sponsors_logos/wob_palmela.jpg'
+import SectionTitle from '../../components/SectionTitle';
 
 const logosList = [
   VWLogo,
@@ -48,48 +49,68 @@ const logosList = [
 ]
 
 
-
-
-  
-
-
 const FSFenixPage = () => {
   const { t } = useTranslation();
   const ref = useRef();
   return (
     <div className='fsfsenix-page'>
-        <div className='page-header'>
-          <h2 className='page-title'>{t('fsfenix-page.page-title')}</h2>
-          <p className='page-subtitle'>{t('fsfenix-page.page-subtitle')}</p>
-        </div>
 
-        <div className='model_and_specs'>
+      <div className='grey-block-header'>
+          <div className='page-header'>
+            <div className='page-title'>{t('fsfenix-page.page-title')}</div>
+            <div className='page-subtitle'>{t('fsfenix-page.page-subtitle')}</div>
+          </div>
+      </div>
+
+      <div className='background-image-container'>
+        <div className='background-image-gradient-overlay'/> 
+      </div>     
+
+      <div className='fsfenix-numbers-container'>
+
+        <SectionTitle text={"FS FENIX IN NUMBERS"} fontSize={"30px"} altName={"FSFenix-in-numbers"}/>
+  
+        <div className='numbers-container'>
+            <div className='common-container members-container'>
+            <div className='text'>MEMBERS</div>
+            <div className='number'>55</div>
+          </div>
+
+          <div className='common-container faculties-container'>
+            <div className='text'>FACULTIES</div>
+            <div className='number'>3</div>
+          </div>
+
+          <div className='common-container partners-container'>
+            <div className='text'>PARTNERS</div>
+            <div className='number'>24</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div className='model_and_specs-container'>
+
+          <SectionTitle text={"TECHNICAL SPECIFICATIONS"} fontSize={"30px"} altName={"technical-specifications"}/>
+          
+          <div className='specs-and-model'>
             <div className='specs'>
-            <h2 className='specs-title'>Technical Specifications</h2>
-              <ul>
-                <li>Engine Type - V6</li>
-                <li>Horsepower - 300 HP</li>
-                <li>Transmission - Automatic</li>
-                <li>Fuel Efficiency - 25 MPG</li>
-                <li>Color Options - Red, Blue, Silver</li>
-                <li>Safety Features - ABS, Airbags</li>
-                <li>Warranty - 3 years</li>
-              </ul>
+                  <ul>
+                    <li>Engine Type - V6</li>
+                    <li>Horsepower - 300 HP</li>
+                    <li>Transmission - Automatic</li>
+                    <li>Fuel Efficiency - 25 MPG</li>
+                    <li>Color Options - Red, Blue, Silver</li>
+                    <li>Safety Features - ABS, Airbags</li>
+                    <li>Warranty - 3 years</li>
+                  </ul>
             </div>
             <div className="fsfenix-3d-model">        
-                <CarModelViewer/>         
-            </div>
-          </div>
-            <div className='sponsors-container'>
-              <div className='sponsors-container-title'>
-                With the support from
+                  <CarModelViewer/>         
               </div>
-                  <div className="logos-grid">
-                    {logosList.map((logo, index) => (
-                      <img key={index} src={logo} alt={`Logo ${index}`} className='logo-item' />
-                    ))}
-                  </div>                         
-            </div>
+          </div>          
+      </div>
     </div>
   );
 };
