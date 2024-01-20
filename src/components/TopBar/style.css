@@ -7,14 +7,10 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
-<<<<<<< HEAD
-    font-family: 'Poppins';
-    font-weight: 500;
-=======
+
     font-family: 'PoppinsBold', sans-serif;
     font-weight: 600;
     width: 100%;
->>>>>>> 647d4217ee57102f02f47baad03565ed7e0eef5a
 
 }
 .top-bar .logo img {
