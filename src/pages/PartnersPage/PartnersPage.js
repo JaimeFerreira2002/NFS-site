@@ -1,7 +1,7 @@
 // PartnerPage.js
 import React from 'react';
-import NFSLogo from '/Users/joaohenriquegarcia/Pictures/NFS/NFS-site/src/assets/images/NFSLogo.png';
-import GalpLogo from '/Users/joaohenriquegarcia/Pictures/NFS/NFS-site/src/assets/images/Galp.png';
+import NFSLogo from '../../assets/images/NFSLogo.png';
+import GalpLogo from '../../assets/images/Galp.png';
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import './Partners.css'; // Import your CSS stylesheet
