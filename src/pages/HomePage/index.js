@@ -71,21 +71,25 @@ const HomePage = () => {
         </div>
 
         <div>
-        <Link style={{ textDecoration: "none", color: "black" }} to="/team">
-          <img
-            className="teamLeaderPhoto"
-            src={TeamLeaderPhoto}
-            alt="Ricardo Cutileiro - Team Leader"
-          />
-          <br></br>
-          <strong>Ricardo Cutileiro</strong>
-          <br></br>
-          <label>{t("home.team_leader")}</label>
+          <Link style={{ textDecoration: "none", color: "black" }} to="/team">
+            <img
+              className="teamLeaderPhoto"
+              src={TeamLeaderPhoto}
+              alt="Ricardo Cutileiro - Team Leader"
+            />
+            <br></br>
+            <strong>Ricardo Cutileiro</strong>
+            <br></br>
+            <label>{t("home.team_leader")}</label>
           </Link>
         </div>
       </div>
       <div className="sponsors">
         <div>
+        <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/partners"
+              >
           <Card
             className="card"
             bg="dark"
@@ -105,7 +109,7 @@ const HomePage = () => {
               </Card.Text>
               <Link
                 style={{ textDecoration: "none", color: "black" }}
-                to="/partners"
+                to="/recruitment"
               >
                 <Button className="btn" variant="info">
                   {t("home.reach_us")}
@@ -113,6 +117,7 @@ const HomePage = () => {
               </Link>
             </Card.Body>
           </Card>
+          </Link>
         </div>
       </div>
       <div className="garage">
@@ -160,7 +165,7 @@ const HomePage = () => {
               <h2>FS FENIX</h2>
               <p>{t("garage-page.fenix-description")}</p>
 
-              <Link to="/garage/fsfenix">
+              <Link to="/garage">
                 <button>{t("garage-page.button-text")}</button>
               </Link>
             </div>
