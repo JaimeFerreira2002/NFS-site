@@ -1,18 +1,24 @@
 .top-bar {
-    background-color: #1d1d1d;
-    /* padding-left: 5%; */
-    padding-right: 5%;
-    height: 8vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-
-    font-family: 'PoppinsBold', sans-serif;
-    font-weight: 600;
-    width: 100%;
-
+  color: black;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7%;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  background-color: rgba(26, 26, 26, 0); /* Initially transparent */
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-between; /* Spreads out the items */
 }
+
+.top-bar.scrolled {
+  background-color: #1d1d1d;
+  color: white; /* Change to your preferred solid color */
+}
+
+
 .top-bar .logo img {
     width: 10vw;
     height: 10vh;
@@ -22,24 +28,26 @@
   }
 
  
-.top-bar ul {
-    list-style: none;
+  .top-bar ul {
     display: flex;
-    gap: 40px;
-    margin: 0;
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    gap: 20px; /* Adjust as needed */
   }
-  
 .top-bar ul li {
+  color: black;
     margin: 0;
     transition: transform 0.3s ease;
     &:hover {
       transform: scale(1.1);
     }
+  
   }
   
 .top-bar ul li a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     transition: all 0.3s ease; 
     &:hover {
       background-image: linear-gradient(to right, #2980b9, #ffffff);
@@ -47,6 +55,18 @@
       background-clip: text;
       color: transparent;
     }
+}
+
+.top-bar.scrolled ul li a {
+  color: white;/* Link color when scrolled */
+  transition: all 0.3s ease; 
+  &:hover {
+    background-image: linear-gradient(to right, #2980b9, #000000);
+    background-size: 100%; 
+    background-clip: text;
+    color: transparent;
+  } 
+  /* ... Other styles for hover ... */
 }
 
 

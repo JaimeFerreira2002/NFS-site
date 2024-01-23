@@ -3,6 +3,5 @@ Especific styles
 */
 .App {
     text-align: center;
+    padding-top: 60px; /* Adjust to the height of your TopBar */
   }
-  
-

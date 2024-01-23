@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 // import TeamPage from './pages/TeamPage';
-import PartnersPage from './pages/PartnersPage/PartnersPage';
+import PartnersPage from './pages/PartnersPage';
 import ArticlesPage from './pages/ArticlesPage/ArticlesPage';
 import RecruitmentPage from './pages/RecruitmentPage/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
@@ -16,14 +17,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; 
 
 
-//React uses JSX, which is a combination of JS and HTML tags
-//A component is a JS function that returns a HTML tag
 function App() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Adjust this threshold as needed
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Router>
       <div className="App">
-      <TopBar/>
-      <Routes>
+        <TopBar isScrolled={isScrolled} />
+        <Routes>
         <Route path="/" exact element={<HomePage/>} />
         <Route path="/about" element={<AboutUsPage/>} />
         <Route path="/garage" element={<GaragePage/>} />
@@ -38,5 +51,9 @@ function App() {
     </Router>
   );
 }
+
+//React uses JSX, which is a combination of JS and HTML tags
+//A component is a JS function that returns a HTML tag
+
 
 export default App;

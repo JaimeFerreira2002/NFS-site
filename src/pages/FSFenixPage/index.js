@@ -19,7 +19,7 @@ import LeanAcademyLogo from '../../assets/images/sponsors_logos/lean_academy.jpg
 import LogoplasteLogo from '../../assets/images/sponsors_logos/logoplaste.jpg'
 import NiterraLogo from '../../assets/images/sponsors_logos/niterra.png'
 import NorelemLogo from '../../assets/images/sponsors_logos/norelem.png'
-import NovaLogo from '../../assets/images/sponsors_logos/nova.png'
+import NovaLogo from '../../assets/images/sponsors_logos/NOVA.png'
 import VisteonLogo from '../../assets/images/sponsors_logos/visteon.png'
 import VWLogo from '../../assets/images/sponsors_logos/volkswagen.png'
 import WOBLogo from '../../assets/images/sponsors_logos/wob_palmela.jpg'
