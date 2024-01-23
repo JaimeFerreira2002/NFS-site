@@ -19,22 +19,27 @@ const PartnersData = {
     'Gold': [
       {
         title: 'Galp',
-        imageUrl: GalpLogo // Replace with actual path to image
+        imageUrl: GalpLogo,
+        link:'https://galp.com' // Replace with actual path to image
       },
       {
         title: 'Bosch',
-        imageUrl: boshLogo // Replace with actual path to image
+        imageUrl: boshLogo, // Replace with actual path to image
+        link: 'https://www.bosch.pt/'
       },
       {
         title: 'NOVA SST',
-        imageUrl: NOVASSTLogo // Replace with actual path to image
+        imageUrl: NOVASSTLogo, // Replace with actual path to image
+        link:'https://www.fct.unl.pt/'
       }, {
         title: 'MCG',
-        imageUrl: MCGLogo // Replace with actual path to image
+        imageUrl: MCGLogo, // Replace with actual path to image
+        link: 'https://www.mcg.pt/?lang=pt-pt'
       },
       {
         title: 'Ciclo Fapril',
-        imageUrl: ciclofabLogo // Replace with actual path to image
+        imageUrl: ciclofabLogo, // Replace with actual path to image
+        link: 'https://ciclofapril.pt/pt/'
       },
       // ... add more partners as needed
     ],
@@ -42,46 +47,56 @@ const PartnersData = {
      
       {
         title: 'Lean Acadamy',
-        imageUrl: LeanAcadamyLogo // Replace with actual path to image
+        imageUrl: LeanAcadamyLogo, // Replace with actual path to image
+        link: 'https://lean.org.pt/'
       }, 
       {
         title: 'Altair',
-        imageUrl: AltairLogo // Replace with actual path to image
+        imageUrl: AltairLogo, // Replace with actual path to image
+        link:'https://altair.com/'
       },
       {
-        title: 'Alihima',
-        imageUrl: AthimaLogo // Replace with actual path to image
+        title: 'Althima',
+        imageUrl: AthimaLogo, // Replace with actual path to image
+        link:'https://althima.com/'
       },
       {
         title: 'Visteon',
-        imageUrl: VisteonLogo // Replace with actual path to image
+        imageUrl: VisteonLogo, // Replace with actual path to image
+        link:'https://www.visteon.com/'
       },
       // ... add more partners as needed
     ],
     'Bronze': [
       {
         title: 'KFrio',
-        imageUrl: KFrioLogo // Replace with actual path to image
+        imageUrl: KFrioLogo, // Replace with actual path to image
+        link:'https://kfrio.pt/'
       },
       {
         title: 'COFICAB',
-        imageUrl: CoficabLogo // Replace with actual path to image
+        imageUrl: CoficabLogo, // Replace with actual path to image
+        link: 'https://www.coficab.pt/'
       },
       {
         title: 'Blocks',
-        imageUrl: BlocksLogo // Replace with actual path to image
+        imageUrl: BlocksLogo, // Replace with actual path to image
+        link:'https://blockstec.com/'
       },
       {
         title: 'DFC Turbo',
-        imageUrl: DFCTurboLogo // Replace with actual path to image
+        imageUrl: DFCTurboLogo, // Replace with actual path to image
+        link:'https://dfcturbo.com/'
       },
       {
         title: 'MathWorks',
-        imageUrl: MathWorksLogo // Replace with actual path to image
+        imageUrl: MathWorksLogo, // Replace with actual path to image
+        link: 'https://www.mathworks.com'
       },
       {
         title: 'Norelem',
-        imageUrl: NorelemLogo // Replace with actual path to image
+        imageUrl: NorelemLogo, // Replace with actual path to image
+        link: 'https://norelem.es/pt'
       },
       // ... add more partners as needed
     ],

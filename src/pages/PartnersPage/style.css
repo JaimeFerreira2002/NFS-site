@@ -6,18 +6,29 @@
 }
 
 .partner-row {
+  padding: 2%;
+  font-family: 'AkiraExpanded';
   display: flex;
   gap: 20px;
   width: 100%;
   overflow-x: auto;
-  /* Enable horizontal scrolling */
-  padding: 10px;
+  
+  
   border: 1px solid #ccc;
-  /* Add a border to separate rows */
+ 
 }
 
+.partner-card h2
+{
+  font-family: 'AkiraExpanded', sans-serif;
+}  .partner-card button {
+  font-family: 'Raleway', sans-serif; /* Example: Arial font */
+}
+
+
+
 .partner-list-name {
-  font-family: 'AkiraExpanded';
+  font-family: 'Raleway';
   font-weight: bold;
   margin-right: 10px;
   flex-shrink: 0;
@@ -25,6 +36,7 @@
 }
 
 .partner-card {
+  padding: 2%;
   width: 300px;
   /* Adjust the card width as needed */
   height: 300px;
@@ -44,6 +56,7 @@
 }
 
 .subtitle {
+  font-family: 'Raleway';
   text-align: center;
   font-size: 18px;
   font-weight: 400;
@@ -58,6 +71,7 @@
 }
 
 .partner-card {
+  
   position: relative;
   width: 600px;
   height: 300px;
