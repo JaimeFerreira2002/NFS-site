@@ -7,105 +7,79 @@
   width: 100%;
   height: 6%;
   transition: background-color 0.3s;
-  /* Smooth transition for background color */
   background-color: #1d1d1d;
-  /* Initially transparent */
   display: flex;
   align-items: center;
-  /* Aligns items vertically in the center */
   justify-content: space-between;
-  /* Spreads out the items */
 }
 
 .top-bar.scrolled {
   background-color: #1d1d1dc0;
   color: white;
-  /* Change to your preferred solid color */
 }
-
 
 .top-bar .logo img {
   width: 10vw;
-  height: 10vh;
+  height: auto;
   display: block;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 170px; /* Limit logo size */
 }
-
 
 .top-bar ul {
   display: flex;
   list-style: none;
-  /* Removes bullet points */
   padding: 0;
-  /* Removes default padding */
   margin: 0;
-  /* Removes default margin */
   gap: 20px;
-  /* Adjust as needed */
 }
 
 .top-bar ul li {
-  color: rgb(255, 255, 255);
+  color: white;
   margin: 0;
   transition: transform 0.3s ease;
+}
 
-  &:hover {
-    transform: scale(1.1);
-  }
-
+.top-bar ul li:hover {
+  transform: scale(1.1);
 }
 
 .top-bar li.active a {
-  font-size: 1.4em; /* Increase the font size */
-  line-height: 1; /* Adjust line height to maintain vertical alignment */
-  padding: 0.5em 1em; /* Adjust padding as needed */
+  font-size: 1.4em;
+  line-height: 1;
+  padding: 0.5em 1em;
   background-image: linear-gradient(to right, #ffffff, #2980b9, #ffffff);
   background-size: 100%;
   background-clip: text;
   color: transparent;
 }
-.top-bar.top-bar.scrolled li.active a {
-  font-size: 1.4em; /* Increase the font size */
-  line-height: 1; /* Adjust line height to maintain vertical alignment */
-  padding: 0.5em 1em; /* Adjust padding as needed */
-  background-image: linear-gradient(to right, #ffffff, #2980b9, #ffffff);
-  background-size: 100%;
-  background-clip: text;
-  color: transparent;
-}
-
 
 .top-bar ul li a {
   font-family: 'AkiraExpanded';
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   transition: all 0.3s ease;
+}
 
-  &:hover {
-    background-image: linear-gradient(to right, #2980b9, #ffffff);
-    background-size: 100%;
-    background-clip: text;
-    color: transparent;
-  }
+.top-bar ul li a:hover {
+  background-image: linear-gradient(to right, #2980b9, #ffffff);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
 }
 
 .top-bar.scrolled ul li a {
   color: white;
-  /* Link color when scrolled */
   transition: all 0.3s ease;
-
-  &:hover {
-    background-image: linear-gradient(to right, #2980b9, #000000);
-    background-size: 100%;
-    background-clip: text;
-    color: transparent;
-  }
-
-  /* ... Other styles for hover ... */
 }
 
-
+.top-bar.scrolled ul li a:hover {
+  background-image: linear-gradient(to right, #2980b9, #000000);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+}
 
 .language-buttons {
   display: flex;
@@ -113,4 +87,37 @@
   justify-content: space-between;
   max-height: 100px;
   max-width: 100px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+  .top-bar {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .top-bar .logo img {
+    width: 50vw;
+    height: auto;
+  }
+
+  .top-bar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .top-bar ul li a {
+    font-size: 1em;
+  }
+
+  .top-bar li.active a {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  .language-buttons {
+    margin-top: 10px;
+  }
 }
