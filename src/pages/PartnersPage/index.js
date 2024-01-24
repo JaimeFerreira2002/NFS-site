@@ -1,7 +1,7 @@
 // PartnerPage.js
 import React from 'react';
 import PartnersData from '../../pages/PartnersPage/PartnersList.js'; // Update the path as necessary
-
+import SectionTitle from '../../components/SectionTitle';
 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -9,20 +9,17 @@ import './style.css'; // Import your CSS stylesheet
 
 
 // Individual Partner Card Component
+// PartnerCard component
 const PartnerCard = ({ title, imageUrl, link, description }) => {
-  const { t } = useTranslation();
   return (
-    <div className="partner-card" style={{ backgroundImage: `url(${imageUrl})` }}>
-      <div className="overlay">
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <button>{t('garage-page.button-text')}</button>
-        </a>
-      </div>
+    <div className="partner-card">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img src={imageUrl} alt={title} />
+      </a>
     </div>
   );
 };
+
 
 
 // Main Partners Component
@@ -37,10 +34,12 @@ const Partners = ({ partners = PartnersData }) => {
       </div>
 
       <div className="partner-list-container">
-        <div className="partner-cards">
-          {Object.keys(partners).map((category) => (
-            <div key={category} className="partner-row">
-              <h3>{category}</h3>
+        {Object.keys(partners).map((category) => (
+          <div key={category} className="partner-category">
+            <div className="section-title-wrapper">
+              <SectionTitle text={category} fontSize={"30px"} altName={"technical-specifications"} />
+            </div>
+            <div className="partner-row">
               {partners[category].map((partner) => (
                 <PartnerCard
                   key={partner.title}
@@ -51,8 +50,8 @@ const Partners = ({ partners = PartnersData }) => {
                 />
               ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
       {/* Add Bottom Bar Component Here */}

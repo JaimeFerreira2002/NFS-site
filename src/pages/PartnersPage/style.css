@@ -6,23 +6,24 @@
 }
 
 .partner-row {
-  padding: 2%;
-  font-family: 'AkiraExpanded';
   display: flex;
+  flex-wrap: wrap;
+  /* Allow cards to wrap to the next line */
+  justify-content: space-evenly;
+  /* Evenly space the cards */
   gap: 20px;
-  width: 100%;
+  /* Space between cards */
+  padding: 2%;
   overflow-x: auto;
-  
-  
-  border: 1px solid #ccc;
- 
 }
 
-.partner-card h2
-{
+.partner-card h2 {
   font-family: 'AkiraExpanded', sans-serif;
-}  .partner-card button {
-  font-family: 'Raleway', sans-serif; /* Example: Arial font */
+}
+
+.partner-card button {
+  font-family: 'Raleway', sans-serif;
+  /* Example: Arial font */
 }
 
 
@@ -35,13 +36,6 @@
   /* Prevent list names from shrinking */
 }
 
-.partner-card {
-  padding: 2%;
-  width: 300px;
-  /* Adjust the card width as needed */
-  height: 300px;
-  /* Adjust the card height as needed */
-}
 
 
 .page-title-container {
@@ -63,30 +57,8 @@
 }
 
 
-.cards-container {
-  display: flex;
-  padding: 2%;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.partner-card {
-  
-  position: relative;
-  width: 600px;
-  height: 300px;
-  margin: 10px;
-  box-shadow: 0 1px 40px rgba(0, 0, 0, 0.2);
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
 
-.partner-card:hover {
-  transform: scale(1.1);
-}
 
 .overlay {
   position: absolute;
@@ -104,9 +76,54 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.partner-card:hover .overlay {
-  opacity: 1;
+.partner-card {
+  width: 300px;
+  /* Adjust as needed */
+  height: width;
+  /* Adjust as needed */
+  padding: 0.5%;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  /* Optional for rounded corners */
 }
+
+@media (max-width: 768px) {
+  .partner-card {
+    width: 200px;
+    /* Smaller width for smaller screens */
+    height: 200px;
+    /* Smaller height for smaller screens */
+  }
+}
+
+.partner-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Adjusts image to cover the card */
+  border-radius: 20px;
+  /* Optional for rounded corners */
+  transition: transform 0.3s ease-in-out;
+  object-fit: contain;
+  /* Adjusts image to fit within the card */
+  background-color: #FFF;
+  /* Or any background color that matches your design */
+  transition: transform 0.3s ease-in-out;
+}
+
+.partner-card:hover img {
+  opacity: 1.1;
+  /* Slightly reduce opacity on hover */
+  transform: scale(1.05);
+  /* Slightly smaller scale */
+}
+
+/* Remove styles related to overlay, text, and button if not used */
+
+
 
 .overlay h2,
 .overlay p,
@@ -147,15 +164,6 @@
   font-weight: 400;
 }
 
-.cards-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  overflow-x: auto;
-  /* Enable horizontal scrolling */
-  gap: 20px;
-  padding: 2%;
-}
 
 .partner-column {
   flex: 1;
@@ -173,4 +181,9 @@
   width: 100vw;
   overflow-y: auto;
   /* Enable vertical scrolling */
+}
+
+.section-title-wrapper {
+  text-align: center;
+  width: 100%;
 }

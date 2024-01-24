@@ -8,14 +8,14 @@ import CarModelViewer from '../../components/CarModelViewer';
 import AltairLogo from '../../assets/images/sponsors_logos/altair.png'
 import AlthimaLogo from '../../assets/images/sponsors_logos/althima.png'
 import BlocksLogo from '../../assets/images/sponsors_logos/blocks.png'
-import CicloLogo from '../../assets/images/sponsors_logos/ciclo_fabril.jpg'
+import CicloLogo from '../../assets/images/sponsors_logos/cf.png';
 import CoficabLogo from '../../assets/images/sponsors_logos/coficab.jpg'
 import DFCTurboLogo from '../../assets/images/sponsors_logos/dfc_turbo.png'
 import ESSSLogo from '../../assets/images/sponsors_logos/esss.png'
 import FCTLogo from '../../assets/images/sponsors_logos/fct.jpg'
 import GalpLogo from '../../assets/images/sponsors_logos/galp.png'
 import KFrioLogo from '../../assets/images/sponsors_logos/kfrio.png'
-import LeanAcademyLogo from '../../assets/images/sponsors_logos/lean_academy.jpg'
+import LeanAcademyLogo from '../../assets/images/sponsors_logos/lean_acadamy.png';
 import LogoplasteLogo from '../../assets/images/sponsors_logos/logoplaste.jpg'
 import NiterraLogo from '../../assets/images/sponsors_logos/niterra.png'
 import NorelemLogo from '../../assets/images/sponsors_logos/norelem.png'
