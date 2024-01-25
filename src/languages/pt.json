@@ -1,6 +1,6 @@
 {
   "topbar": {
-    "start": "Inicio",
+    "start": "Início",
     "about": "Sobre nós",
     "garage": "Garagem",
     "partnerships": "Parceiros",
@@ -10,22 +10,25 @@
   },
 
 
+  "garage-page": {
+    "page-title": "Garagem",
+    "page-subtitle": "Descobre os nossos carros",
+    "fenix-description": "O nosso primeiro carro",
+    "button-text": "Saber mais"
+  },
 
-"garage-page":{
-  "page-title" : "Garagem",
-  "page-subtitle" : "Descobre os nossos carros",
-  "fenix-description" : "O nosso primeiro carro",
-  "button-text" : "Saber mais"
+  "partners-page": {
+    "page-title": "Parceiros",
+    "page-subtitle": "Estes são os nossos parceiros",
+    "gold": "Ouro"
+  },
 
-},
+  "fsfenix-page": {
+    "page-title": "FS FENIX",
+    "page-subtitle": "O FS FENIX representa o nosso primeiro esforço concretizado de contruir um carro de Formula Student"
+  },
 
-"fsfenix-page":{
-  "page-title" : "FS FENIX",
-  "page-subtitle" : "O FS FENIX representa o nosso primeiro esforço concretizado de contruir um carro de Formula Student"
-  
-},
-
-"team-page":{
+  "team-page": {
     "title": "Conhece a nossa equipa!",
     "description": "A nossa equipa é composta por estudantes de diversas áreas de estudo e de várias faculdades da NOVA. Estamos estruturados em principais departamentos: Direção, Técnico e Negócios e Estratégia.",
 

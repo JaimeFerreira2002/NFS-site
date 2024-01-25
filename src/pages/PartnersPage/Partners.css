@@ -1,69 +1,153 @@
-/* Partners.css */
-.partners-section {
-    text-align: center;
-  }
-  
-  .partner-categories h3 {
-    text-align: left;
-  }
-  
-  .partner-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-    margin: 1rem 0;
-  }
-  
-  .partner-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .partner-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* PartnerCard.css */
+
+.partner-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.partner-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px;
+  border: 1px solid #ccc; /* Add a border to separate rows */
+}
+
+.partner-list-name {
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0; /* Prevent list names from shrinking */
+}
+
+.partner-card {
+  width: 300px; /* Adjust the card width as needed */
+  height: 300px; /* Adjust the card height as needed */
+}
+
+
+.page-title-container{
+  padding: 2%;
+}
+
+.title{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subtitle{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.cards-container {
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .partner-card {
   position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 10px;
+  box-shadow: 0 1px 40px rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-position: center;
-  width: 300px; /* or any desired width */
-  height: 200px; /* or any desired height */
-  margin: 1rem;
-  border-radius: 8px; /* Optional: if you want rounded corners */
-  overflow: hidden; /* Ensures the overlay fits within the card */
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.partner-card:hover {
+  transform: scale(1.1);
 }
 
 .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.partner-card h2,
-.partner-card p {
+.partner-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h2,
+.overlay p,
+.overlay button {
   margin: 0;
+  padding: 10px;
 }
 
-.partner-card button {
-  /* Style your button as needed */
+.overlay button {
   background-color: #fff;
+  color: #000;
   border: none;
   padding: 10px 20px;
-  margin-top: 10px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.partner-page {
+  display: flex;
+  flex-direction: column;
+  height: 72vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.partner-card button:hover {
-  /* Button hover effect */
-  background-color: #e0e0e0;
+.page-title-container {
+  padding: 2%;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 20px;
+  padding: 2%;
+}
+
+.partner-column {
+  flex: 1;
+  min-width: 45%; /* Adjust the column width as needed */
+  max-width: 50%;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.partner-page {
+  display: flex;
+  flex-direction: column;
+  height: 72vh;
+  width: 100vw;
+  overflow-y: auto; /* Enable vertical scrolling */
 }

@@ -18,6 +18,12 @@
   
   },
 
+  "partners-page":{
+    "page-title": "Partners",
+    "page-subtitle": "This are our partners",
+    "gold": "Gold"
+  },
+
 "fsfenix-page":{
     "page-title" : "FS FENIX",
     "page-subtitle" : "The FS FENIX represents our first realized effort to build a Formula Student car"
