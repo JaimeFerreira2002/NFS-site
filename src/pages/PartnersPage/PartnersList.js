@@ -1,6 +1,6 @@
 import GalpLogo from '../../assets/images/sponsors_logos/galp.png';
 import boshLogo from '../../assets/images/sponsors_logos/Bosch.jpg'
-import NOVASSTLogo from '../../assets/images/sponsors_logos/NOVA.png';
+import NOVASSTLogo from '../../assets/images/sponsors_logos/nova.png';
 import MCGLogo from '../../assets/images/sponsors_logos/MCG.png';
 import ciclofabLogo from '../../assets/images/sponsors_logos/cf.png';
 import LeanAcadamyLogo from '../../assets/images/sponsors_logos/lean_acadamy.png';
