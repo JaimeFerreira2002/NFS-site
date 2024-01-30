@@ -1,0 +1,189 @@
+.partner-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.partner-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow cards to wrap to the next line */
+  justify-content: space-evenly;
+  /* Evenly space the cards */
+  gap: 20px;
+  /* Space between cards */
+  padding: 2%;
+  overflow-x: auto;
+}
+
+.partner-card h2 {
+  font-family: 'AkiraExpanded', sans-serif;
+}
+
+.partner-card button {
+  font-family: 'Raleway', sans-serif;
+  /* Example: Arial font */
+}
+
+
+
+.partner-list-name {
+  font-family: 'Raleway';
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0;
+  /* Prevent list names from shrinking */
+}
+
+
+
+.page-title-container {
+  padding: 2%;
+}
+
+.title {
+  font-family: 'AkiraExpanded';
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-family: 'Raleway';
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.partner-card {
+  width: 300px;
+  /* Adjust as needed */
+  height: width;
+  /* Adjust as needed */
+  padding: 0.5%;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  /* Optional for rounded corners */
+}
+
+@media (max-width: 768px) {
+  .partner-card {
+    width: 200px;
+    /* Smaller width for smaller screens */
+    height: 200px;
+    /* Smaller height for smaller screens */
+  }
+}
+
+.partner-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Adjusts image to cover the card */
+  border-radius: 20px;
+  /* Optional for rounded corners */
+  transition: transform 0.3s ease-in-out;
+  object-fit: contain;
+  /* Adjusts image to fit within the card */
+  background-color: #FFF;
+  /* Or any background color that matches your design */
+  transition: transform 0.3s ease-in-out;
+}
+
+.partner-card:hover img {
+  opacity: 1.1;
+  /* Slightly reduce opacity on hover */
+  transform: scale(1.05);
+  /* Slightly smaller scale */
+}
+
+/* Remove styles related to overlay, text, and button if not used */
+
+
+
+.overlay h2,
+.overlay p,
+.overlay button {
+  margin: 0;
+  padding: 10px;
+}
+
+.overlay button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.partner-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.page-title-container {
+  padding: 2%;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.partner-column {
+  flex: 1;
+  min-width: 45%;
+  /* Adjust the column width as needed */
+  max-width: 50%;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.partner-page {
+  display: flex;
+  flex-direction: column;
+  height: 72vh;
+  width: 100vw;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+.section-title-wrapper {
+  text-align: center;
+  width: 100%;
+}

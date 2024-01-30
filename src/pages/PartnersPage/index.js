@@ -1,74 +1,63 @@
 // PartnerPage.js
 import React from 'react';
-import NFSLogo from '../../assets/images/NFSLogo.png';
-import GalpLogo from '../../assets/images/Galp.png';
+import PartnersData from '../../pages/PartnersPage/PartnersList.js'; // Update the path as necessary
+import SectionTitle from '../../components/SectionTitle';
 
-import './Partners.css'; // Import your CSS stylesheet
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import './style.css'; // Import your CSS stylesheet
 
 
 // Individual Partner Card Component
+// PartnerCard component
 const PartnerCard = ({ title, imageUrl, link, description }) => {
   return (
-    <div className="garage-item" style={{ backgroundImage: `url(${imageUrl})` }}>
-      <div className="overlay">
-        <h2>{title}</h2>
-        <p>{description}</p>
-     
-      </div>
+    <div className="partner-card">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img src={imageUrl} alt={title} />
+      </a>
     </div>
   );
 };
 
 
-const dummyPartnerData = {
-  'Partners': [
-    {
-      title: 'BYBIT',
-      imageUrl: '/path/to/bybit-logo.png' // Replace with actual path to image
-    },
-    {
-      title: 'TAG Heuer',
-      imageUrl: '/path/to/tagheuer-logo.png' // Replace with actual path to image
-    },
-    // ... other team partners
-
-    {
-      title: 'Galp',
-      imageUrl: GalpLogo // Replace with actual path to image
-    },
-    // ... other technical partners
-  ],
-  // ... other categories
-};
-
 
 // Main Partners Component
-const Partners = ({ partners = dummyPartnerData }) => {
+const Partners = ({ partners = PartnersData }) => {
+  const { t } = useTranslation();
+
   return (
-    <div className="partners-section">
-      <h2>Partners</h2>
-      <p>Working together to lead the charge</p>
-      <div className="partner-categories">
+    <div className='partners-page'>
+      <div className='page-title-container'>
+        <div className='title'>{t('partners-page.page-title')}</div>
+        <div className='subtitle'>{t('partners-page.page-subtitle')}</div>
+      </div>
+
+      <div className="partner-list-container">
         {Object.keys(partners).map((category) => (
           <div key={category} className="partner-category">
-            <h3>{category}</h3>
-            <div className="partner-grid">
+            <div className="section-title-wrapper">
+              <SectionTitle text={category} fontSize={"30px"} altName={"technical-specifications"} />
+            </div>
+            <div className="partner-row">
               {partners[category].map((partner) => (
                 <PartnerCard
                   key={partner.title}
                   title={partner.title}
                   imageUrl={partner.imageUrl}
-                  link={partner.link} // Make sure each partner has a 'link' property in your data
-                  description={partner.description} // Assuming you have a description for each partner
+                  link={partner.link}
+                  description={partner.description}
                 />
               ))}
             </div>
           </div>
         ))}
       </div>
+
+      {/* Add Bottom Bar Component Here */}
+      {/* <BottomBar /> */}
     </div>
   );
 };
-
 
 export default Partners;
