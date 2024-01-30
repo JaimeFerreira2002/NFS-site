@@ -6,7 +6,7 @@ import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 // import TeamPage from './pages/TeamPage';
 import PartnersPage from './pages/PartnersPage';
 import ArticlesPage from './pages/ArticlesPage/ArticlesPage';
-import RecruitmentPage from './pages/RecruitmentPage/RecruitmentPage';
+import RecruitmentPage from './pages/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import TopBar from './components/TopBar'
 import BottomBar from './components/BottomBar';
