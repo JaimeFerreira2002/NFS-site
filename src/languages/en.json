@@ -20,7 +20,7 @@
 
   "partners-page":{
     "page-title": "Partners",
-    "page-subtitle": "This are our partners",
+    "page-subtitle": "Nova Formual Student official partners",
     "gold": "Gold"
   },
 
@@ -28,6 +28,24 @@
     "page-title" : "FS FENIX",
     "page-subtitle" : "The FS FENIX represents our first realized effort to build a Formula Student car"
     
+  },
+
+  "contacts-page": {
+    "page-title": "Contacts",
+    "form-email": "Email",
+    "form-name": "Name",
+    "form-subject": "Subject",
+    "form-message": "Message",
+    "form-send": "Send",
+    "form-title": "Contact us",
+    "team-name": "Team Name",
+    "team-email": "Team Email",
+    "cr-email": "CR Email",
+    "team-hq": "Team Headquarters Address",
+    "team-sm": "Social Media"
+
+   
+   
   },
     
 "team-page":{

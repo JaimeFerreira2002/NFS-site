@@ -19,13 +19,28 @@
 
   "partners-page": {
     "page-title": "Parceiros",
-    "page-subtitle": "Estes são os nossos parceiros",
+    "page-subtitle": "Parceiros oficiais do Nova Formula Student",
     "gold": "Ouro"
   },
 
   "fsfenix-page": {
     "page-title": "FS FENIX",
     "page-subtitle": "O FS FENIX representa o nosso primeiro esforço concretizado de contruir um carro de Formula Student"
+  },
+  "contacts-page": {
+    "page-title": "Contactos",
+    "form-email": "Email",
+    "form-name": "Nome",
+    "form-subject": "Assunto",
+    "form-message": "Mensagem",
+    "form-send": "Enviar",
+    "form-title": "Contacte-nos",
+    "team-name": "Nome da Equipa",
+    "team-email": "Email da Equipa",
+    "cr-email": "Email da Equipa de CR",
+    "team-hq": "Morada da Sede da Equipa",
+    "team-sm": "Redes Socias"
+   
   },
 
   "team-page": {

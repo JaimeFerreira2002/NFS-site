@@ -1,0 +1,237 @@
+.contacts-page-container {
+    display: flex;
+    flex-direction: column;
+    /* Make the container take full viewport height */
+    overflow: auto;
+
+}
+
+/* Style for the form section title */
+.form-title {
+    color: white;
+    font-family: "AkiraExpanded";
+    /* Change to your preferred color */
+}
+
+/* Style for the contact info section title */
+.info-title {
+    color: #1D3557;
+    /* Change to your preferred color */
+}
+
+
+.contacts-page-title {
+    color: #1d1d1d;
+    font-family: 'AkiraExpanded', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.contacts-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.contact-info-section {
+
+    gap: 20px;
+    padding: 45px 8%;
+    color: #1d1d1d;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* Adjust padding as needed */
+    font-family: "Raleway";
+}
+
+.contact-info-columns {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: end;
+    justify-content: end;
+
+}
+
+.contact-info-columns.title {
+    font-weight: bold;
+
+}
+
+.contact-info-columns>div {
+    flex: 1 1 50%;
+    /* Grow to fill the space, but start with a basis of 50% width */
+    max-width: 50%;
+    /* Ensure it does not grow beyond 50% width */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+    padding: 10px;
+    /* Adjust as needed */
+}
+
+
+.contact-form-section {
+    background-color: #1d1d1d;
+    padding: 45px 8%;
+  
+    gap: 20px; /* Maintain gap between items if needed */
+ 
+}
+
+.contact-form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    padding: 10px;
+    /* Adjusted padding for comfort */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    /* Adjusted to take full width of the form container */
+    min-height: 150px;
+    /* Increased minimum height */
+    border-radius: 5px;
+    height: auto;
+    /* Adjust height based on content */
+    text-align: left;
+    /* Align text to the right */
+    direction: rtl;
+    /* Right-to-left direction for text alignment at the top-right */
+    overflow: auto;
+    /* Ensure scrollbar appears if content exceeds the textarea height */
+    resize: vertical;
+    /* Allow vertical resizing only to keep layout intact */
+}
+
+
+.contact-form button {
+    width: 100px;
+    /* Set a specific width to make the button narrower */
+    padding: 10px 0;
+    /* Adjusted padding to maintain height */
+    align-self: flex-start;
+    /* Align the button to the right */
+    border: none;
+    border-radius: 5px;
+    background-color: #4496ed;
+    color: white;
+    cursor: pointer;
+}
+
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Google Maps Section Styling */
+.google-maps-section {
+    width: 100%;
+
+}
+
+.google-maps-section iframe {
+    width: 100%;
+    /* Make the iframe responsive */
+    height: 100%;
+    /* Adjust height as needed */
+    border: none;
+    /* Remove default border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contacts-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+        flex-shrink: 0;
+        /* Prevent this section from shrinking */
+        /* Adjust this value as needed to increase space */
+
+    }
+
+    .contact-form-section,
+    .contact-info-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .custom-popup {}
+
+    .google-maps-section {
+        flex-grow: 1;
+        /* This will allow the map to expand and fill the remaining space */
+        width: 100%;
+        /* Full width */
+        /* No fixed height here, it will expand */
+    }
+
+
+}
+
+.address-container {
+    text-align: left;
+    /* Default alignment for the container */
+}
+
+
+.address-container button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.address-container button:hover {
+    background-color: #0056b3;
+}
+
+.social-media-button {
+    display: inline-block;
+    /* Or flex, depending on your layout */
+    width: 40px;
+    /* Icon width */
+    height: 40px;
+    /* Icon height */
+    background-size: cover;
+    /* Cover the entire area of the button */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Additional styling */
+}
+
+.sm a {
+
+    color: #409ED4;
+    /* Change to your desired link color */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    text-decoration: none;
+    /* Removes the underline */
+    /* Add any other styles you want for your links here, like font-family, font-weight, etc. */
+}
+
+.sm a:hover {
+    color: #286196;
+    /* Darker shade for hover effect, change as needed */
+    text-decoration: underline;
+    /* Adds an underline on hover, optional */
+    /* You can also add other effects like background-color, border, etc. */
+}
