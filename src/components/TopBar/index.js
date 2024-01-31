@@ -41,12 +41,12 @@ const TopBar = ({ isScrolled }) => {
         <li className={location.pathname === '/partners' ? 'active' : ''}>
           <Link to="/partners">{t('topbar.partnerships')}</Link>
         </li>
-        <li className={location.pathname === '/articles' ? 'active' : ''}>
+        {/* <li className={location.pathname === '/articles' ? 'active' : ''}>
           <Link to="/articles">{t('topbar.articles')}</Link>
-        </li>
-        <li className={location.pathname === '/recruitment' ? 'active' : ''}>
+        </li> */}
+        {/* <li className={location.pathname === '/recruitment' ? 'active' : ''}>
           <Link to="/recruitment">{t('topbar.recruitment')}</Link>
-        </li>
+        </li> */}
         <li className={location.pathname === '/contacts' ? 'active' : ''}>
           <Link to="/contacts">{t('topbar.contacts')}</Link>
         </li>

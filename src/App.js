@@ -7,14 +7,15 @@ import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import PartnersPage from './pages/PartnersPage';
 import ArticlesPage from './pages/ArticlesPage/ArticlesPage';
 import RecruitmentPage from './pages/RecruitmentPage/RecruitmentPage';
-import ContactsPage from './pages/ContactsPage/ContactsPage';
+import ContactsPage from './pages/ContactsPage';
 import TopBar from './components/TopBar'
 import BottomBar from './components/BottomBar';
 import GaragePage from './pages/GaragePage';
 import FSFenixPage from './pages/FSFenixPage';
+import Dummy from './pages/dummy';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './App.css'; 
+import './App.css';
 
 
 function App() {
@@ -33,22 +34,25 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="App">
-        <TopBar isScrolled={isScrolled} />
-        <Routes>
-        <Route path="/" exact element={<HomePage/>} />
-        <Route path="/about" element={<AboutUsPage/>} />
-        <Route path="/garage" element={<GaragePage/>} />
-        <Route path="/garage/fsfenix" element={<FSFenixPage/>} />
-        <Route path="/partners" element={<PartnersPage/>} />
-        <Route path="/articles" element={<ArticlesPage/>} />
-        <Route path="/recruitment" element={<RecruitmentPage/>} />
-        <Route path="/contacts" element={<ContactsPage/>} /> 
-      </Routes>
-      <BottomBar/>
-      </div>
-    </Router>
+    <div className="content-wrapper">
+      <Router>
+        <div className="App">
+          <TopBar isScrolled={isScrolled} />
+          <Routes>
+            <Route path="/" exact element={<HomePage />} />
+            <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/garage" element={<GaragePage />} />
+            <Route path="/garage/fsfenix" element={<FSFenixPage />} />
+            <Route path="/partners" element={<PartnersPage />} />
+            <Route path="/articles" element={<ArticlesPage />} />
+            <Route path="/recruitment" element={<RecruitmentPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/dummy" element={<Dummy />} />
+          </Routes>
+          <BottomBar />
+        </div>
+      </Router>
+    </div>
   );
 }
 

@@ -1,18 +1,14 @@
-// PartnerPage.js
 import React from 'react';
-import PartnersData from '../../pages/PartnersPage/PartnersList.js'; // Update the path as necessary
+import PartnersData from '../../pages/PartnersPage/PartnersList.js';
 import SectionTitle from '../../components/SectionTitle';
 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import './style.css'; // Import your CSS stylesheet
+import './style.css'; // Make sure the path points to the updated CSS file
 
-
-// Individual Partner Card Component
-// PartnerCard component
 const PartnerCard = ({ title, imageUrl, link, description }) => {
   return (
-    <div className="partner-card">
+    <div className="dummy-partner-item">
       <a href={link} target="_blank" rel="noopener noreferrer">
         <img src={imageUrl} alt={title} />
       </a>
@@ -20,25 +16,23 @@ const PartnerCard = ({ title, imageUrl, link, description }) => {
   );
 };
 
-
-
-// Main Partners Component
-const Partners = ({ partners = PartnersData }) => {
+const Dummy = ({ partners = PartnersData }) => {
   const { t } = useTranslation();
 
   return (
-    <div className='partners-page'>
-      <div className='page-title-container'>
-        <div className='subtitle'>{t('partners-page.page-subtitle')}</div>
+    <div className='dummy-partners-page'>
+      <div className='dummy-page-title-container'>
+        <div className='dummy-title'>{t('partners-page.page-title')}</div>
+        <div className='dummy-subtitle'>{t('partners-page.page-subtitle')}</div>
       </div>
 
-      <div className="partner-list-container">
+      <div className="dummy-partner-list-container">
         {Object.keys(partners).map((category) => (
-          <div key={category} className="partner-category">
-            <div className="section-title-wrapper">
+          <div key={category} className="dummy-partner-category">
+            <div className="dummy-section-title-wrapper">
               <SectionTitle text={category} fontSize={"30px"} altName={"technical-specifications"} />
             </div>
-            <div className="partner-row">
+            <div className="dummy-partner-row">
               {partners[category].map((partner) => (
                 <PartnerCard
                   key={partner.title}
@@ -52,11 +46,8 @@ const Partners = ({ partners = PartnersData }) => {
           </div>
         ))}
       </div>
-
-      {/* Add Bottom Bar Component Here */}
-      {/* <BottomBar /> */}
     </div>
   );
 };
 
-export default Partners;
+export default Dummy;
