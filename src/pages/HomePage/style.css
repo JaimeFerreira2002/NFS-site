@@ -199,6 +199,7 @@
 }
 
 .icon-button {
+  text-decoration: none; 
   flex: 1; /* Take up equal space */
   display: flex;
   justify-content: center; /* Center the icon horizontally within its space */
@@ -206,7 +207,17 @@
   color: #fff;
   border-radius: 50%;
   padding: 5px;
-  transition: background-color 0
+  transition: background-color 0;
+  flex-direction: column;
+}
+
+.reach{
+  font-family: "Raleway";
+  font-weight: bold;
+  text-align: right;
+  font-size: 3rem;
+  color: #409ED4;
+  padding: 20px;
 }
 
 .sponsors-section .dark-glass-overlay .icon-button:hover {

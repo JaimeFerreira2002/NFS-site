@@ -55,7 +55,7 @@ Especific styles
   transition: transform 300ms ease-in;
 }
 
-/* Slide ackward */
+/* Slide backward */
 .slide-backward-enter {
   transform: translateX(-100%);
 }

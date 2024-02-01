@@ -6,7 +6,9 @@
     "partnerships": "Parceiros",
     "articles": "Artigos",
     "recruitment": "Recrutamento",
-    "contacts": "Contactos"
+    "contacts": "Contactos",
+    "subscribe": "Subscrever",
+    "email-newsletter": "Subscreva a nossa newsletter!"
   },
 
 
@@ -31,7 +33,7 @@
     "page-title": "Contactos",
     "form-email": "Email",
     "form-name": "Nome",
-    "form-subject": "Assunto",
+    "form-subject": "Nome",
     "form-message": "Mensagem",
     "form-send": "Enviar",
     "form-title": "Contacte-nos",
@@ -39,7 +41,9 @@
     "team-email": "Email da Equipa",
     "cr-email": "Email da Equipa de CR",
     "team-hq": "Morada da Sede da Equipa",
-    "team-sm": "Redes Socias"
+    "team-sm": "Redes Socias",
+    "fill-all-fields": "Preencha o formulário abaixo para nos contactar.",
+    "send-success": "Mensagem enviada com sucesso!"
    
   },
 

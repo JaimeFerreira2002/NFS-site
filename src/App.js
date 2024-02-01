@@ -90,9 +90,9 @@ function App() {
         <div className="App">
           <TopBar isScrolled={isScrolled} />
           <AnimatedRoutes /> {/* Using the AnimatedRoutes component here */}
-          <BottomBar />
         </div>
       </Router>
+      <BottomBar />
     </div>
   );
 }

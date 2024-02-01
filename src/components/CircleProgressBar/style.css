@@ -1,5 +1,7 @@
 .circular-progress-bar {
+
     transform: rotate(-90deg); /* Start progress from the top */
+  
   }
   
   .circular-progress-bar__background {

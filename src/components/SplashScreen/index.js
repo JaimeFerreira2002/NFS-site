@@ -39,7 +39,7 @@ const SplashScreen = ({ isVisible }) => {
           ease: "easeInOut"
         }}
       />
-      <CircularProgressBar size={100} progress={progress} strokeWidth={4} />
+      <CircularProgressBar size={250} progress={progress} strokeWidth={4} />
     </div>
   );
 };
