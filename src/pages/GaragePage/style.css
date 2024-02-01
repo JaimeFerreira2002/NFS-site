@@ -1,4 +1,5 @@
 .garage-page{
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   height: 110vh;
@@ -117,3 +118,4 @@
   font-weight: normal; 
   color: #ffffff;
 }
+

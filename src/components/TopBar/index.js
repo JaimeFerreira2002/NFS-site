@@ -15,6 +15,7 @@ const TopBar = ({ isScrolled }) => {
   const { t, i18n } = useTranslation(); // this variable is used for language switching
 
   const [selectedLanguage, setSelectedLanguage] = useState("pt"); // we use the state for language switch buttons
+  const isHomePage = location.pathname === '/';
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
@@ -22,7 +23,7 @@ const TopBar = ({ isScrolled }) => {
   };
 
   return (
-    <nav className={`top-bar ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`top-bar ${isScrolled ? 'scrolled' : ''} ${isHomePage ? 'home' : ''}`}>
       <div className="logo">
         <Link to="/">
           <img src={NFSLogo} alt="NFS_LOGO" />

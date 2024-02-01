@@ -1,8 +1,8 @@
 import React from "react";
-import "./index.css";
+import "./style.css";
 const AboutUsPage = () => {
   return (
-    <div>
+    <div className="page-about">
       <div className="section">
         <h2>Sobre a Formula Student</h2>
         <p>

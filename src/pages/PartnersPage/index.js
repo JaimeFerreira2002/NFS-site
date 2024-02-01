@@ -29,7 +29,7 @@ const Partners = ({ partners = PartnersData }) => {
   return (
     <div className='partners-page'>
       <div className='page-title-container'>
-        <div className='subtitle'>{t('partners-page.page-subtitle')}</div>
+        <div className='subtitle-partners'>{t('partners-page.page-subtitle')}</div>
       </div>
 
       <div className="partner-list-container">

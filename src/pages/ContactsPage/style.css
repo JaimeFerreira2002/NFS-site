@@ -1,4 +1,5 @@
 .contacts-page-container {
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     /* Make the container take full viewport height */

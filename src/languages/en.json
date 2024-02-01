@@ -86,8 +86,12 @@
     "who_r_we": "WHO ARE WE",
     "fs_team": "We are the Formula Student team from NOVA University of Lisbon.",
     "team": "Team",
-    "team_desc": "Estudantes apaixonados por engenharia automóvel da NOVA. O nossofoco é competir na Formula Student, construindo um carro inovador.Procuramos aprender, competir e demonstrar habilidades técnicas emeventos.",
-    "team_leader": "Team Leader"
+    "team_desc": "Students passionate about automotive engineering from NOVA University of Lisbon.\n\r\nOur focus is to compete in Formula Student, building an innovative car.\n\r\nWe aim to learn, compete, and demonstrate technical skills at events. We have 47 people on the team from 3 different faculties. Divided into 2 main areas: Technical and Non-Technical, which are further divided into 5 and 7 areas respectively.",
+    "team_leader": "Team Leader",
+    "sponsor_title": "Patrocinadores",
+    "sponsor_title_2": "Torne-se Nosso Parceiro na Inovação Automóvel!",
+    "sponsor_text": "Torne-se um patrocinador da nossa equipa, tendo a oportunidade de se associar a um projeto inovador e educacional.\n\r\nAumentando a visibilidade da sua marca em eventos, medias sociais e materiais promocionais.\n\r\nJunte-se a nós nesta jornada de excelência técnica e compromisso com a inovação.\n\r\nApoie a próxima geração de líderes e inovadores.",
+    "reach_us": "Contacte-nos"
   }
     
 }   

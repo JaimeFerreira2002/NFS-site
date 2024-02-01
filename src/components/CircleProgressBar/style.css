@@ -1,0 +1,13 @@
+.circular-progress-bar {
+    transform: rotate(-90deg); /* Start progress from the top */
+  }
+  
+  .circular-progress-bar__background {
+    stroke-opacity: 0.2; /* Light grey background for the progress bar */
+  }
+  
+  .circular-progress-bar__progress {
+    transform-origin: 50% 50%; /* Ensure the progress bar animates from the center */
+    /* You can add more styles for the progress bar stroke here */
+  }
+  

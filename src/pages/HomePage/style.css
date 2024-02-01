@@ -1,99 +1,295 @@
-.description {
-  margin: auto;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 5vw 35vw 45vw 5vw;
-  column-gap: 100px;
-  overflow: hidden;
-}
-
-.description .text {
-  text-align: justify;
-  background-color: #ffffff;
-  opacity: 0.6;
-  padding: 20px;
-}
-.text .subtitle {
-  text-align: left;
-}
-
-.text h1 {
-  margin-top: 0;
-}
-
-.description .logoNFS {
-  height: 40vh;
-  margin: auto;
-  
-}
-.description .logoNOVA {
-  height: 40vh;
-}
-
-.car {
-  width: 100vw;
+.home-page {
+  font-family: 'Poppins', sans-serif;
 }
 
 .sobre {
-  background-image: url("../../assets/images/car_background.jpg");
+  position: relative;
+  background-image: url('../../assets/images/car_background.jpg');
   background-size: cover;
   background-position: 50% 75%;
   background-repeat: no-repeat;
   width: 100%;
-  margin: auto;
-  font-family: 'Poppins', sans-serif;
+  height: 100vh;
 }
 
-.team {
-  columns: 2;
-  padding: 30px;
-  padding-left: 10vw;
-  margin: auto;
+.scroll-indicator {
+  position: absolute;
+  left: 50%; /* Center the icon horizontally */
+  bottom: 20px; /* Adjust based on your design */
+  transform: translateX(-50%); /* Center the icon exactly */
+  /* Additional styling for the icon as needed */
 }
 
-.teamLeaderPhoto {
-  width: 30vh;
-}
-
-.titleLink {
-  font-size: 1.17em;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000000;
-}
-
-.sponsors {
-  background-image: url("../../assets/images/car_image_1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 60%;
+.dark-glass-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin: auto;
-  padding: 30px;
-
-  padding-left: 10vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-.card {
-  pointer-events: none;
-  margin-left: 10vw;
-
-  transition: transform 0s ease;
-  &:hover {
-    transform: scale(1);
-  }
+.nova-title {
+  font-family: "AkiraExpanded";
+  font-weight: bold;
+  color: #ffffff;
 }
 
-.card .btn {
-  pointer-events: all;
-  transition: transform 0.3s ease;
-  &:hover {
-    transform: scale(1.06);
-  }
+.nova-word {
+  color: #409ED4;
 }
 
-.garage {
-  columns: 2;
-  padding: 5%;
-  padding-left: 10vw;
+.black-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: #fff;
+  padding: 30px 10vw;
+  gap: 20px;
+  /* Adds space between flex items */
+}
+
+.team-content {
+  color: #ccc;
+  font-size: 1rem;
+  margin-right: 20px;
+  /* Adds space between the text and the photo */
+}
+
+.team-photo {
+  position: relative;
+  flex-shrink: 0;
+  /* Prevents the photo from shrinking */
+}
+
+.team-photo img {
+  width: auto;
+  /* Adjusts based on the height */
+  max-width: 400px;
+  /* Increase or adjust this value to give more space to the photo */
+  height: auto;
+  border-radius: 10px;
+}
+
+.leader-name-overlay {
+  font-family: "Raleway";
+  font-size: 25px;
+  bottom: 10px;
+  /* Position the name at the bottom of the photo */
+  left: 10px;
+  color: black;
+
+  border-radius: 5px;
+}
+
+.leader-name-overlay-sub {
+  font-family: "Raleway";
+  font-size: 20px;
+  bottom: 0;
+  left: 10px;
+  color: #286196;
+  border-radius: 5px;
+}
+
+.title-team{
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 3rem;
+  color: #286196;
+}
+
+.content-team{
+  font-family: "Raleway";
+  text-align: justify;
+  font-size: 1.5rem;
+  color: black;
+}
+/* Existing styles... */
+
+.closing-section {
+  position: relative;
+  background-image: url('../../assets/images/car_image_1.jpg'); /* Update with your desired background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh; /* Adjust height as needed */
+}
+
+.closing-title {
+  font-family: "AkiraExpanded", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px; /* Space between title and paragraph */
+}
+
+.closing-section .dark-glass-overlay {
+  /* Reuse the dark glass overlay styles, adjust if needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  padding: 20px;
+}
+
+/* Styles for the paragraph inside the closing section */
+.closing-section p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.title-sponsor{
+  font-family: "Raleway";
+  font-weight: bold;
+  text-align: right;
+  font-size: 3rem;
+  color: #409ED4;
+}
+
+
+
+/* Existing styles... */
+/* Other styles... */
+
+.sponsors-section {
+  position: relative;
+  background-image: url('../../assets/images/car_image_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+}
+
+.sponsors-section .dark-glass-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Padding on the sides */
+}
+
+.sponsor-text-content {
+  flex: 1; /* Take up equal space */
+  font-family: "Raleway";
+  text-align: justify;
+  font-size: 1.5rem;
+  color: white;
+  
+}
+
+.icon-button {
+  flex: 1; /* Take up equal space */
+  display: flex;
+  justify-content: center; /* Center the icon horizontally within its space */
+  align-items: center; /* Center the icon vertically */
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  transition: background-color 0
+}
+
+.sponsors-section .dark-glass-overlay .icon-button:hover {
+  background-color: rgba(64, 158, 212, 0); /* Fully transparent */
+}
+
+/* Other styles... */
+
+.garage-home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10vw;
+  background-color: #f5f5f5; /* Example background color */
+}
+
+.garage-home-content {
+  flex: 1;
+  margin-right: 20px; /* Space between text and image */
+}
+
+.garage-home-image {
+  position: relative;
+  max-width: 700px;
+  border-radius: 10px; /* Optional: to match your design */
+  overflow: hidden; /* Ensure the overlay fits within the image boundaries */
+}
+
+.garage-image-overlay {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, ); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hide overlay by default */
+  transition: opacity 0.5s ease; /* Smooth transition for the overlay */
+}
+
+.garage-home-image:hover .garage-image-overlay {
+  opacity: 1; /* Show overlay on hover */
+    transform: scale(1.05);
+}
+
+.garage-image-overlay button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #409ED4; /* Example button color */
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.garage-image-overlay button:hover {
+  background-color: #3078a6; /* Darker shade on hover */
+  
+}
+
+
+.garage-home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional */
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 20px; /* Space above the button */
+  background-color: #409ED4; /* Example button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3078a6; /* Darker shade on hover */
 }

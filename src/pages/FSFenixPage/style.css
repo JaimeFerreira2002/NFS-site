@@ -1,5 +1,6 @@
 
 .fsfsenix-page{
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     height: 800vh;
