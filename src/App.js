@@ -7,7 +7,7 @@ import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import PartnersPage from './pages/PartnersPage';
 import ArticlesPage from './pages/ArticlesPage/ArticlesPage';
 
-import RecruitmentPage from './pages/RecruitmentPage/RecruitmentPage';
+import RecruitmentPage from './pages/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage';
 
 import TopBar from './components/TopBar'
