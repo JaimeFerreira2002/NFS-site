@@ -6,7 +6,9 @@
     "partnerships": "Parceiros",
     "articles": "Artigos",
     "recruitment": "Recrutamento",
-    "contacts": "Contactos"
+    "contacts": "Contactos",
+    "subscribe": "Subscrever",
+    "email-newsletter": "Subscreva a nossa newsletter!"
   },
 
 
@@ -31,7 +33,7 @@
     "page-title": "Contactos",
     "form-email": "Email",
     "form-name": "Nome",
-    "form-subject": "Assunto",
+    "form-subject": "Nome",
     "form-message": "Mensagem",
     "form-send": "Enviar",
     "form-title": "Contacte-nos",
@@ -39,7 +41,9 @@
     "team-email": "Email da Equipa",
     "cr-email": "Email da Equipa de CR",
     "team-hq": "Morada da Sede da Equipa",
-    "team-sm": "Redes Socias"
+    "team-sm": "Redes Socias",
+    "fill-all-fields": "Preencha o formulário abaixo para nos contactar.",
+    "send-success": "Mensagem enviada com sucesso!"
    
   },
 
@@ -80,7 +84,7 @@
     "who_r_we": "QUEM SOMOS",
     "fs_team": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
     "team": "Equipa",
-    "team_desc": "Estudantes apaixonados por engenharia automóvel da NOVA.\n\r\nO nosso foco é competir na Formula Student, construindo um carro inovador.\n\r\nProcuramos aprender, competir e demonstrar habilidades técnicas em eventos. Temos 47 pessoas na equipa, de 3 faculdades diferentes. Divididos em 2 áreas principais: Técnico e não Técnico. Que por sua vez se dividem em 5 e 7 áreas cada uma.",
+    "team_desc": "Estudantes apaixonados por engenharia automóvel da Universidade NOVA de Lisboa.\n\r\nO nosso foco é competir na Formula Student, construindo um carro inovador.\n\r\nProcuramos aprender, competir e demonstrar habilidades técnicas em eventos. Temos 47 pessoas na equipa, de 3 faculdades diferentes. Divididos em 2 áreas principais: Técnico e não Técnico. Que por sua vez se dividem em 5 e 7 áreas cada uma.",
     "team_leader": "Líder de Equipa",
     "sponsor_title": "Patrocinadores",
     "sponsor_title_2": "Torne-se Nosso Parceiro na Inovação Automóvel!",
@@ -93,3 +97,6 @@
     "page-subtitle": "Estes são as nossas posições abertas de momento."
   }
 }
+
+
+

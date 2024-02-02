@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react'; // Added useState here
+
 import { useTranslation } from "react-i18next";
 
 import emailjs from 'emailjs-com';
@@ -19,8 +20,14 @@ import './style.css';
 
 const ContactsPage = () => {
   const { t } = useTranslation();
+  const mapRef = useRef(null);
+  const form = useRef();
 
-  const mapRef = useRef(null); // Create a ref for the map container
+  const [formSubmitting, setFormSubmitting] = useState(false);
+
+  const [feedbackMessage, setFeedbackMessage] = useState('');
+
+  const [feedbackMessageType, setFeedbackMessageType] = useState(''); // 'success' or 'error'
 
   useEffect(() => {
     if (mapRef.current && !mapRef.current._leaflet_id) {
@@ -51,93 +58,104 @@ const ContactsPage = () => {
 
 
 
-  const form = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Check if all fields have values
+    const fromName = form.current.querySelector('input[name="from_name"]').value.trim();
+    const fromEmail = form.current.querySelector('input[name="from_email"]').value.trim();
+    const message = form.current.querySelector('textarea').value.trim();
+
+    if (!fromName || !fromEmail || !message) {
+      // If any field is empty, set an error message and do not submit
+      setFeedbackMessage(t('contacts-page.fill-all-fields'));
+      setFeedbackMessageType('error');
+      return; // Stop the function from proceeding
+    }
+
+    // Proceed with form submission if all fields have values
+    setFormSubmitting(true);
+    setFeedbackMessage('');
+    setFeedbackMessageType('');
+
     emailjs.sendForm('service_b657amf', 'template_x1zmjzo', form.current, 'jgCfBy5PqaFtqL4aW')
       .then((result) => {
-        console.log(result.text);
-        console.log("Email sent successfully!");
+        setFeedbackMessage(t('contacts-page.send-success'));
+        setFeedbackMessageType('success');
+        setFormSubmitting(false);
+        form.current.reset(); // Reset the form fields
       }, (error) => {
-        console.log(error.text);
-        console.log("Email not sent!");
+        setFeedbackMessage(t('contacts-page.send-error'));
+        setFeedbackMessageType('error');
+        setFormSubmitting(false);
       });
   };
 
 
+
   return (
-    <div className='contacts-page-container'>
+    <div>
+      <div className='contacts-page-container'>
 
-      <div className='contacts-content'>
+        <div className='contacts-content'>
 
-        <div className='contact-form-section'>
-          <h2 className="form-title">{t('contacts-page.form-title')}</h2>
-          {/* <form className='contact-form' ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" placeholder={t('contacts-page.form-subject')} name="from_name" />
-            <label>Email</label>
-            <input type="email" placeholder={t('contacts-page.form-email')} name="from_email" />
-            <label>Message</label>
-            <textarea name="message" placeholder={t('contacts-page.form-message')} />
-            <input type="submit" value="Send" />
-          </form> */}
-          <form className='contact-form' ref={form} onSubmit={sendEmail}>
+          <div className='contact-form-section'>
+            <h2 className="form-title">{t('contacts-page.form-title')}</h2>
+            {feedbackMessage && (<div style={{ color: feedbackMessageType === 'success' ? 'green' : 'red' }}>
+              {feedbackMessage}
+            </div>)}
+            <form className='contact-form' ref={form} onSubmit={sendEmail}>
 
-            <input type='text' placeholder={t('contacts-page.form-subject')} name="from_name" />
+              <input type='text' placeholder={t('contacts-page.form-subject')} name="from_name" />
 
-            <input type='email' placeholder={t('contacts-page.form-email')} name="from_email" />
+              <input type='email' placeholder={t('contacts-page.form-email')} name="from_email" />
 
-            <textarea placeholder={t('contacts-page.form-message')}></textarea>
-            <button type='submit'>{t('contacts-page.form-send')} </button>
-          </form>
-        </div>
+              <textarea placeholder={t('contacts-page.form-message')}></textarea>
+              <button type='submit'>{t('contacts-page.form-send')} </button>
+            </form>
+          </div>
 
-
-        <div className='contact-info-section'>
-          <h2 className="contacts-page-title info-title">{t('contacts-page.page-title')}</h2>
-          <div className="contact-info-columns">
-            <div>
-              <h3>{t('contacts-page.team-email')}</h3>
-              <p>{"formulastudent@ae.fct.unl.pt"}</p>
-            </div>
-            <div >
-              <h3 className='contact-info-columns.title'>{t('contacts-page.team-name')}</h3>
-              <p>{t('Nova Formula Student')}</p>
-            </div>
-            <div>
-              <h3>{t('contacts-page.cr-email')}</h3>
-              <p>{"cr.formualstudent@ae.fct.unl.pt"}</p>
-            </div>
-            <div>
-              <h3>{t('contacts-page.team-hq')}</h3>
-              <div className="first-line">Faculdade de Ciências e Tecnologia</div>
-              <div className="second-line">2829-516 Caparica</div>
-            </div>
-            <div>
-              <h3 >{t('contacts-page.team-sm')}</h3>
-              <div className="contact-info-columns">
-                <div>
-                  <h4 >{"Instagram"}</h4>
-                  <div className='sm'><a href="https://www.instagram.com/novaformulastudent?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@novaformulastudent</a></div>
-                </div>
-                <div>
-                  <h4  >{t("LinkedIn")}</h4>
-                  <div className='sm'><a href="https://www.linkedin.com/company/formula-student-fct/" target="_blank" rel="noopener noreferrer">Nova Formula Student</a></div>
+          <div className='contact-info-section'>
+            <h2 className="contacts-page-title info-title">{t('contacts-page.page-title')}</h2>
+            <div className="contact-info-columns">
+              <div>
+                <h3>{t('contacts-page.team-email')}</h3>
+                <p>{"formulastudent@ae.fct.unl.pt"}</p>
+              </div>
+              <div >
+                <h3 className='contact-info-columns.title'>{t('contacts-page.team-name')}</h3>
+                <p>{t('Nova Formula Student')}</p>
+              </div>
+              <div>
+                <h3>{t('contacts-page.cr-email')}</h3>
+                <p>{"cr.formualstudent@ae.fct.unl.pt"}</p>
+              </div>
+              <div>
+                <h3>{t('contacts-page.team-hq')}</h3>
+                <div className="first-line">Faculdade de Ciências e Tecnologia</div>
+                <div className="second-line">2829-516 Caparica</div>
+              </div>
+              <div>
+                <h3 >{t('contacts-page.team-sm')}</h3>
+                <div className="contact-info-columns">
+                  <div>
+                    <h4 >{"Instagram"}</h4>
+                    <div className='sm'><a href="https://www.instagram.com/novaformulastudent?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@novaformulastudent</a></div>
+                  </div>
+                  <div>
+                    <h4  >{t("LinkedIn")}</h4>
+                    <div className='sm'><a href="https://www.linkedin.com/company/formula-student-fct/" target="_blank" rel="noopener noreferrer">Nova Formula Student</a></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
 
-      {/* Google Maps iframe integration */}
-      <div className='google-maps-section' id="map" ref={mapRef} style={{ height: '450px', width: '100%' }}></div>
-
-
+      <div className='google-maps-section' id="map" ref={mapRef} style={{ height: '50vh', width: '100%' }}></div>
     </div>
   );
 }
