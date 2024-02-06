@@ -87,11 +87,16 @@ const HomePage = () => {
           </motion.div>
         )}
       </div>
-
+      <div className="nfs">
+        <h2 className='title-team'>{t('home.who_r_we')}</h2>
+        <p></p>
+      </div>
       <div className="black-section" ref={teamRef}>
         <div className="team-content">
           <h2 className='title-team'>{t('home.team')}</h2>
-          <p className='content-team'>{t('home.team_desc')}</p>
+          <p className='content-team'>{t('home.team_desc1')}</p>
+          <p className='content-team'>{t('home.team_desc2')}</p>
+          <p className='content-team'>{t('home.team_desc3')}</p>
         </div>
 
         <motion.div className="team-photo" animate={controlsTeam} initial={{ opacity: 0, x: 100 }}>

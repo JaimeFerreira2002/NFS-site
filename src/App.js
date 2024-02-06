@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import SplashScreen from './components/SplashScreen'
+import SplashScreen from './components/SplashScreen';
+
 import ScrollToTop from './components/ScrollToTop.js'; // Adjust the import path as needed
-import MobileDrawer from './components/MobileDrawer';
 
 
 // Import your pages and components
@@ -20,9 +20,6 @@ import BottomBar from './components/BottomBar';
 import GaragePage from './pages/GaragePage';
 import FSFenixPage from './pages/FSFenixPage';
 import Dummy from './pages/dummy';
-
-
-
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,13 +40,11 @@ function App() {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-
-
   }, []);
 
   const [isSplashVisible, setIsSplashVisible] = useState(true);
@@ -63,7 +58,6 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-
   // Component to handle route transitions
   const AnimatedRoutes = () => {
     const location = useLocation(); // Correctly called within a child component of <Router>
@@ -75,28 +69,34 @@ function App() {
     return (
       
       <div className="App">
+        
+          <SplashScreen isVisible={isSplashVisible} />
 
-        <SplashScreen isVisible={isSplashVisible} />
-
-        <TransitionGroup component={null}>
-          <CSSTransition key={location.key} classNames="fade" timeout={300} nodeRef={nodeRef}>
-            <div ref={nodeRef}> {/* This div acts as the CSSTransition child */}
-
-              <Routes location={location}>
-
-                <Route path="/" exact element={<HomePage />} />
-                <Route path="/about" element={<AboutUsPage />} />
-                <Route path="/garage" element={<GaragePage />} />
-                <Route path="/garage/fsfenix" element={<FSFenixPage />} />
-                <Route path="/partners" element={<PartnersPage />} />
-                <Route path="/articles" element={<ArticlesPage />} />
-                <Route path="/recruitment" element={<RecruitmentPage />} />
-                <Route path="/contacts" element={<ContactsPage />} />
-                <Route path="/dummy" element={<Dummy />} />
-              </Routes>
-            </div>
-          </CSSTransition>
-        </TransitionGroup>
+          <TransitionGroup component={null}>
+            <CSSTransition
+              key={location.key}
+              classNames="fade"
+              timeout={300}
+              nodeRef={nodeRef}
+            >
+              <div ref={nodeRef}>
+                {" "}
+                {/* This div acts as the CSSTransition child */}
+                <Routes location={location}>
+                  <Route path="/" exact element={<HomePage />} />
+                  <Route path="/about" element={<AboutUsPage />} />
+                  <Route path="/garage" element={<GaragePage />} />
+                  <Route path="/garage/fsfenix" element={<FSFenixPage />} />
+                  <Route path="/partners" element={<PartnersPage />} />
+                  <Route path="/articles" element={<ArticlesPage />} />
+                  <Route path="/recruitment" element={<RecruitmentPage />} />
+                  <Route path="/contacts" element={<ContactsPage />} />
+                  <Route path="/dummy" element={<Dummy />} />
+                </Routes>
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
+        
       </div>
     );
   };

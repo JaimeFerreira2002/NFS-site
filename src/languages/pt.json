@@ -11,7 +11,6 @@
     "email-newsletter": "Subscreva a nossa newsletter!"
   },
 
-
   "garage-page": {
     "page-title": "Garagem",
     "page-subtitle": "Descobre os nossos carros",
@@ -44,7 +43,6 @@
     "team-sm": "Redes Socias",
     "fill-all-fields": "Preencha o formulário abaixo para nos contactar.",
     "send-success": "Mensagem enviada com sucesso!"
-   
   },
 
   "team-page": {
@@ -83,8 +81,11 @@
   "home": {
     "who_r_we": "QUEM SOMOS",
     "fs_team": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
+    "description": "Localizados no Campus da Faculdade de Ciências e Tecnologia da Universidade NOVA de Lisboa, o NOVA Formula Student, NFS, é uma equipa de jovens engenheiros e engenheiras unidos com um único objetivo: Desenhar, fabricar e otimizar um carro do estilo Formula para participar em provas Formula Student tanto a nível nacional como internacional.",
     "team": "Equipa",
-    "team_desc": "Estudantes apaixonados por engenharia automóvel da Universidade NOVA de Lisboa.\n\r\nO nosso foco é competir na Formula Student, construindo um carro inovador.\n\r\nProcuramos aprender, competir e demonstrar habilidades técnicas em eventos. Temos 47 pessoas na equipa, de 3 faculdades diferentes. Divididos em 2 áreas principais: Técnico e não Técnico. Que por sua vez se dividem em 5 e 7 áreas cada uma.",
+    "team_desc1": "O Formula Student FCT, FSFCT, foi fundado em 2015 por alunos da NOVA FCT, que criaram o primeiro projeto da equipa, o FSDRAGON. Este protótipo levou-os à sua primeira competição em 2018, no Formula Student Spain.",
+    "team_desc2": "Em 2022, após algum tempo de inatividade devido à pandemia, um novo grupo de alunos da NOVA FCT reergueram o FSFCT. A equipa assumiu uma nova identidade, o NOVA Formula Student, recuperou o espaço de trabalho, e criou o projeto FSFENIX.",
+    "team_desc3": "Atualmente, a equipa conta com cerca de 50 membros: alunos da NOVA FCT, focados tanto na engenharia e parte técnica do projeto como na vertente estratégica, e alunos de outras faculdades da Universidade NOVA, como a NOVA IMS e NOVA FCSH, os quais se focam na estratégia, negócio, e imagem da equipa.",
     "team_leader": "Líder de Equipa",
     "sponsor_title": "Patrocinadores",
     "sponsor_title_2": "Torne-se Nosso Parceiro na Inovação Automóvel!",
@@ -95,8 +96,36 @@
   "recruitment-page": {
     "page-title": "Recrutamento",
     "page-subtitle": "Estes são as nossas posições abertas de momento."
+  },
+
+  "about-page": {
+    "about-us":"SOBRE NÓS",
+    "about-us-desc":"Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
+    "about-fs":"Sobre a Formula Student",
+    "formula-student": "Formula Student é a maior prova de engenharia entre estudantes universitários. Esta une alunos das mais variadas áreas, como Engenharias, Negócio, Marketing, Gestão de Projeto, entre outras, com intuito de projetar um carro e participar em competições de nível mundial.",
+    "how-it-works-title": "Como funciona",
+    "how-it-works-desc": "As provas de Formula Student pretendem avaliar o trabalho efetuado pelas equipas ao longo de cada época, seja a nível de Negócio, Design, ou Performance do carro fabricado. Estas provas estão divididas em vários eventos - Estáticos e Dinâmicos - com valorizações pontuais diferentes. Quando somadas as pontuações obtidas pelas equipas em cada evento, obtém-se a classificação final.",
+    "static-events": "EVENTOS ESTÁTICOS",
+    "static-ev-desc":"Os eventos estáticos avaliam a preparação da equipa nas seguintes áreas:",
+    "area":"Área",	
+    "points":"Pontos",
+    "business-model": "Modelo de Negócios",
+    "business-model-desc": "O objetivo é avaliar a capacidade da equipa de desenvolver e apresentar um modelo de negócios abrangente. Este modelo de negócios deve estar relacionado ao veículo protótipo específico da equipa ou a um componente específico dele. Ao fazer isso, o negócio deve oferecer o veículo ou componente como um produto, ou vender um serviço com base nele, proporcionando uma oportunidade de negócio recompensadora que gere lucro monetário.",
+    "cost-manufacturing": "Custo e Manufatura",
+    "cost-manufacturing-desc": "O objetivo do evento de custo e manufatura é avaliar a compreensão da equipa dos processos de manufatura e dos custos associados à construção de um veículo protótipo. Isso inclui decisões de compensação entre conteúdo e custo, decisões de fazer ou comprar e compreensão das diferenças entre protótipo e produção em massa.",
+    "engineering-design": "Design de Engenharia",
+    "engineering-desc": "O conceito do evento de design é avaliar o processo de engenharia e o esforço do estudante que foram dedicados ao design de um veículo, atendendo à intenção da competição. Componentes e sistemas patenteados que são incorporados ao design do veículo como itens acabados não são avaliados como unidades projetadas pelo estudante, mas são apenas avaliados com base na seleção e aplicação da equipa desse componente.",
+    "dynamic-events": "EVENTOS DINÂMICOS",
+    "dynamic-ev-desc": "Os eventos dinâmicos avaliam o desempenho do carro na pista. Para isso, após a aprovação nos testes de segurança, os veículos são testados nos seguintes testes:",
+    "acceleration": "Aceleração",
+    "acceleration-desc": "Medir o desempenho de aceleração em linha reta do carro. A pista de aceleração é uma linha reta com um comprimento de 75 m da linha de largada para a linha de chegada. A pista tem pelo menos 3 m de largura. Cones são colocados ao longo da pista em intervalos de cerca de 5 m.",
+    "skidpad": "Skidpad",
+    "skidpad-desc": "Avaliar a aderência lateral e as capacidades de curva do carro. O carro percorre um percurso em oito marcado por dois círculos em direções opostas. O tempo para completar o percurso e a aceleração lateral média são indicadores-chave de desempenho.",
+    "autocross": "Autocross",
+    "autocross-desc": "Avaliar a agilidade, manuseio e desempenho dinâmico geral do carro. O carro manobra por um percurso apertado e sinuoso marcado por cones. O foco está em alcançar o tempo mais rápido enquanto navega com sucesso pelo percurso, enfatizando a aceleração lateral e longitudinal, além da responsividade.",
+    "endurance": "Endurance",
+    "endurance-desc": "Testar a durabilidade, confiabilidade e eficiência de combustível do carro ao longo de uma distância de corrida estendida. O carro deve completar um número especificado de voltas em uma pista desafiadora. O evento avalia tanto a resistência do veículo quanto as decisões estratégicas da equipa em relação à eficiência de combustível, paragens nas boxes e confiabilidade geral.",
+    "efficiency": "Eficiência / Trackdrive",
+    "efficiency-desc": "A eficiência é medida no evento de resistência é refletida na capacidade da equipa de projetar um carro que possa completar a corrida com um consumo mínimo de combustível, demonstrando não apenas velocidade, mas também uma gestão de energia cuidadosa."
   }
 }
-
-
-
