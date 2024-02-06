@@ -1,0 +1,167 @@
+.drawer {
+  flex-direction: column;
+  display: flex; /* Ensure flex properties are applied */
+  position: fixed;
+  top: 0;
+  left: -100svw; /* Start off-screen to the left */
+  width: 100svw; /* Use vw for viewport widths */
+  height: 100svh; /* Use vh for viewport heights */
+  background: #1d1d1d; /* Matching drawer-nav color */
+  transition: left 0.3s ease; /* Animate the 'left' property */
+  z-index: 1000; /* Above the overlay */
+  justify-content: space-between; /* Pushes .drawerEnd to the bottom */
+  padding-bottom: 20px; /* Add some padding at the bottom */
+}
+.logo-drawer img {
+  max-width: 30svw;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center the logo */
+  display: block;
+  /* Remove default inline-block space */
+}
+
+.drawer.open {
+  left: 0;
+  /* Move to fully visible on the screen */
+}
+
+.close-drawer {
+  font-family: 'AkiraExpanded';
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  top: 10px;
+  /* Adjust as needed */
+  left: 85svw;
+  /* Adjust as needed */
+  background-color: transparent;
+  border: none;
+  /* Remove button border if present */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  /* Adjust as needed */
+  height: 5svh;
+  /* Adjust as needed */
+
+}
+
+.close-drawer:hover {
+  background-color: transparent;
+
+}
+
+.language-buttons-drawer {
+
+  position: relative;
+  transform: translateY(-50%);
+  /* Ensure the buttons are centered vertically */
+  display: flex;
+
+
+}
+
+.drawerEnd{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  /* Adjust as needed */
+  align-items: center;
+  /* Center the logo */
+  background-color: #1d1d1d;
+  /* Matching drawer-nav color */
+  z-index: 1000;
+  /* Above the overlay */
+
+}
+
+
+.drawer-nav {
+  /* Adjust to match drawer-nav logo and items alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center the navigation items */
+  gap: 20px;
+  /* Gap between nav items */
+}
+
+.drawer-nav a {
+  color: white;
+  /* Match drawer-nav text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.drawer-nav a:hover {
+  color: #2980b9;
+  /* Hover effect color matching drawer-nav */
+}
+
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  /* Below the drawer to allow it to be clickable */
+}
+
+.drawer-nav ul {
+  flex-direction: column;
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 3rem);
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.drawer-nav ul li {
+  padding: 2svh;
+  color: white;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.drawer-nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.drawer-nav li.active a {
+  font-size: 1.4em;
+  line-height: 1;
+  padding: 0.5em 1em;
+  background-image: linear-gradient(to right, #ffffff, #2980b9, #ffffff);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+}
+
+.drawer-nav ul li a {
+
+  font-family: 'Raleway', sans-serif;
+
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.drawer-nav ul li a:hover {
+  background-image: linear-gradient(to right, #2980b9, #ffffff);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

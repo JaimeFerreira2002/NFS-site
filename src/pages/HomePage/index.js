@@ -83,13 +83,9 @@ const HomePage = () => {
             animate={{ y: [0, 10, 0] }} // Simple y-axis bounce animation
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           >
-            <FontAwesomeIcon icon={faAnglesDown} size="3x" color='white' />
+            <FontAwesomeIcon icon={faAnglesDown} size="2x" color='white' />
           </motion.div>
         )}
-      </div>
-      <div className="nfs">
-        <h2 className='title-team'>{t('home.who_r_we')}</h2>
-        <p></p>
       </div>
       <div className="black-section" ref={teamRef}>
         <div className="team-content">
@@ -108,17 +104,16 @@ const HomePage = () => {
       </div>
       {/* Additional sections if needed */}
       <div className="sponsors-section" ref={sponsorRef}>
-        <div className="dark-glass-overlay">
-
+        <div className="dark-glass-overlay-sponsor">
           <motion.div
-            className="icon-button"
+            className="icon-button-c"
             animate={controlsSponsor}
             initial={{ opacity: 0, x: -100 }} // Start from the left
             transition={{ duration: 0.5, delay: 0.2 }} // Optional: add a delay if needed
           >
 
-            <a className="icon-button" href="/contacts">
-              <FontAwesomeIcon icon={faAddressBook} size="10x" />
+            <a className="icon-button-c" href="/contacts">
+              <FontAwesomeIcon  icon={faAddressBook} size="10x" />
 
               <h2 className='reach'>{t("home.reach_us")}</h2>
             </a>
@@ -136,10 +131,10 @@ const HomePage = () => {
       <div className="garage-home-section" ref={garageRef}>
         <div className="garage-home-content">
           <h2 className='title-team'>{t('garage-page.page-title')}</h2>
-          <p className='content-team'>{t('garage-page.page-subtitle')}</p>
+          <p className='team-content'>{t('garage-page.page-subtitle')}</p>
 
           <a href="/garage" className="button-link">
-            <button>{t('garage-page.button-text')}</button>
+            <button className="home-garge-button">{t('garage-page.button-text')}</button>
           </a>
         </div>
         <div className="garage-home-image">
@@ -148,7 +143,7 @@ const HomePage = () => {
             <img src={FSDragon} alt="Garage" />
             <div className="garage-image-overlay">
               <a href="/garage/fsfenix" className="button-link">
-                <button>FS Fenix</button>
+                <button className='home-garge-button'>FS Fenix</button>
               </a>
             </div>
           </motion.div>

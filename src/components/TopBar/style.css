@@ -2,45 +2,58 @@
   color: white;
   z-index: 2;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  height: 60px;
-
+  width: 100svw;
+  height: 8svh;
   transition: background-color 0.3s;
   background-color: #1d1d1d;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
 }
 
 .top-bar.scrolled {
   background-color: #1d1d1dc0;
   color: white;
+  width: 100vw;
 }
 
-.top-bar.home{
+.top-bar.home {
   background-color: #1d1d1d00;
   color: white;
 }
 
-.top-bar.home.scrolled{
+.top-bar.home.scrolled {
   background-color: #1d1d1dc0;
   color: white;
 }
 
 .top-bar .logo img {
+  position: relative;
   width: auto;
-  height:40px;
+  max-height: 5vh;
   display: block;
   padding-top: 0;
   padding-bottom: 0;
-  max-width: 170px; /* Limit logo size */
+  max-width: auto;
+  bottom: 25%;
+  
+  /* Limit logo size */
 }
+
+@media (max-aspect-ratio: 1/1) {
+  .top-bar .logo img {
+    left: 36vw;
+    bottom: 25%;
+    /* Limit logo size */
+  }
+}
+
+
 
 .top-bar ul {
   display: flex;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -48,6 +61,7 @@
 }
 
 .top-bar ul li {
+
   color: white;
   margin: 0;
   transition: transform 0.3s ease;
@@ -96,43 +110,72 @@
 }
 
 .language-buttons {
-  display: flex;
+  position: relative;
   flex-direction: row;
-  justify-content: space-between;
-  max-height: 100px;
-  max-width: 100px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  /* Ensure the buttons are centered vertically */
+  display: flex;
+ 
+  /* Adjust the gap as needed */
+  padding-right: 1vw;
+  /* Adjust the right padding as needed */
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .language-buttons {
+    display: none;
+  }
+}
+
+.drawerButton {
+  display: none;
 }
 
 /* Adjustments for smaller screens */
-@media (max-width: 600px) {
-  .top-bar {
-    height: auto;
-    flex-direction: column;
-    padding: 10px 0;
+@media (max-aspect-ratio: 1/1) {
+ 
+  .drawerButton {
+  position: absolute;
+  bottom: 4%;
+    /* Center vertically in the top bar */
+    font-size: 2rem;
+    /* Increase the size of the icon */
+    background: none;
+    border: none;
+    color: #fff;
+    /* Adjust the color to fit your design */
+    padding: 10px;
   }
 
-  .top-bar .logo img {
-    width: 50vw;
-    height: auto;
+
+}
+
+/* Hide the hamburger icon by default */
+.hamburger-button {
+  display: none;
+
+}
+
+/* Show the hamburger icon only on screens smaller than 768px */
+@media (max-aspect-ratio: 1/1) {
+  .drawerButton {
+    display: block;
   }
-  
+
+  .hamburger-button {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    /* Adjust the color to fit your design */
+    font-size: 1.5rem;
+    /* Adjust the size as needed */
+  }
 
   .top-bar ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: none;
   }
 
-  .top-bar ul li a {
-    font-size: 1em;
-  }
-
-  .top-bar li.active a {
-    font-size: 1em;
-    padding: 0.5em;
-  }
-
-  .language-buttons {
-    margin-top: 10px;
-  }
 }
