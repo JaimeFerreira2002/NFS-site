@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import SplashScreen from './components/SplashScreen';
-
+import SplashScreen from './components/SplashScreen'
 import ScrollToTop from './components/ScrollToTop.js'; // Adjust the import path as needed
+import MobileDrawer from './components/MobileDrawer';
 
 
 // Import your pages and components
@@ -21,8 +21,22 @@ import GaragePage from './pages/GaragePage';
 import FSFenixPage from './pages/FSFenixPage';
 import Dummy from './pages/dummy';
 
+
+
+
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // State to control the drawer's open/close state
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  // Function to toggle the drawer open/close state
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
+  const width = window.innerWidth;
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,9 +67,13 @@ function App() {
   // Component to handle route transitions
   const AnimatedRoutes = () => {
     const location = useLocation(); // Correctly called within a child component of <Router>
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+
 
     const nodeRef = useRef(null); // To comply with CSSTransition nodeRef requirement
     return (
+      
       <div className="App">
 
         <SplashScreen isVisible={isSplashVisible} />
@@ -83,12 +101,13 @@ function App() {
     );
   };
 
-  return (
+  return  (
     <div className="content-wrapper">
       <Router>
-      <ScrollToTop />
+        <ScrollToTop />
         <div className="App">
-          <TopBar isScrolled={isScrolled} />
+          <TopBar isScrolled={isScrolled} toggleDrawer={toggleDrawer} />
+          <MobileDrawer isOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
           <AnimatedRoutes /> {/* Using the AnimatedRoutes component here */}
         </div>
       </Router>

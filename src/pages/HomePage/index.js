@@ -104,7 +104,6 @@ const HomePage = () => {
       {/* Additional sections if needed */}
       <div className="sponsors-section" ref={sponsorRef}>
         <div className="dark-glass-overlay">
-
           <motion.div
             className="icon-button"
             animate={controlsSponsor}
@@ -113,7 +112,7 @@ const HomePage = () => {
           >
 
             <a className="icon-button" href="/contacts">
-              <FontAwesomeIcon icon={faAddressBook} size="10x" />
+              <FontAwesomeIcon className="icon-button-b" icon={faAddressBook} size="10x" />
 
               <h2 className='reach'>{t("home.reach_us")}</h2>
             </a>

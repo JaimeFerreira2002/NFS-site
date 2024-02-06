@@ -13,7 +13,7 @@
   /* Evenly space the cards */
   gap: 20px;
   /* Space between cards */
-  padding: 2%;
+  padding: 10vh;
   overflow-x: auto;
 }
 
