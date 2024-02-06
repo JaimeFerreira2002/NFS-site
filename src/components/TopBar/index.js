@@ -9,6 +9,7 @@ import EN_FLAG from '../../assets/images/en_flag.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import MobileDrawer from '../../components/MobileDrawer';
+import HamburgerButton from '../../components/HamburgerIcon';
 
 
 const TopBar = ({ isScrolled, toggleDrawer }) => { // Accept toggleDrawer as a prop
@@ -21,7 +22,11 @@ const TopBar = ({ isScrolled, toggleDrawer }) => { // Accept toggleDrawer as a p
   // State to control the drawer's open/close state
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-
+  // Toggle function adjusted for this component
+  const handleToggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+    toggleDrawer(); // Assuming this prop function does additional tasks
+  };
 
 
   const changeLanguage = (lang) => {
@@ -29,12 +34,17 @@ const TopBar = ({ isScrolled, toggleDrawer }) => { // Accept toggleDrawer as a p
     setSelectedLanguage(lang);
   };
 
-
+  // Determine if the hamburger should move based on the drawer's state and possibly the viewport width
+  const shouldHamburgerMove = isDrawerOpen; // Add additional conditions for viewport width if needed
 
   return (
     <nav className={`top-bar ${isScrolled ? 'scrolled' : ''} ${isHomePage ? 'home' : ''}`}>
       <button onClick={() => toggleDrawer()} className='drawerButton'>
-        <FontAwesomeIcon icon={faBars} />
+        <HamburgerButton
+          isDrawerOpen={isDrawerOpen}
+          toggleDrawer={handleToggleDrawer}
+          className={`${isDrawerOpen ? 'hamburger-move' : ''}`}
+        />
       </button>
       <div className="logo">
         <Link to="/">

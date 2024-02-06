@@ -7,6 +7,7 @@ import SplashScreen from './components/SplashScreen';
 
 import ScrollToTop from './components/ScrollToTop.js'; // Adjust the import path as needed
 
+import MobileDrawer from './components/MobileDrawer';
 
 // Import your pages and components
 import HomePage from './pages/HomePage';
@@ -29,8 +30,18 @@ function App() {
 
   // Function to toggle the drawer open/close state
   const toggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen);
+    // Assuming 'isOpen' reflects the current state of the drawer
+    setIsDrawerOpen(!isDrawerOpen); // Toggle the drawer open state
+  
+    if (!isDrawerOpen) {
+      // If the drawer is about to open, disable scrolling on the body
+      document.body.style.overflow = 'hidden';
+    } else {
+      // If the drawer is about to close, re-enable scrolling on the body
+      document.body.style.overflow = '';
+    }
   };
+  
 
   const width = window.innerWidth;
 

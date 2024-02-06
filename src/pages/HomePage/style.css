@@ -7,8 +7,8 @@
   background-image: url('../../assets/images/car_background.jpg');
   background-size: cover;
   background-position: 50% 75%;
-  width: 100vw;
-  height: 100vh;
+  width: 100svw;
+  height: 100svh;
 }
 
 .scroll-indicator {
@@ -26,8 +26,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100svw;
+  height: 100svh;
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
@@ -56,14 +56,14 @@
   padding: 30px 10vw;
   gap: 20px;
   /* Adds space between flex items */
-  height: 50vh;
+  min-height: 50svh;
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
   .black-section {
     flex-direction: column;
     /* Stack items vertically */
-    height: 90vh;
+    min-height: 90vh;
   }
 }
 
@@ -71,15 +71,14 @@
 .team-photo {
   position: relative;
 
-  /* Prevents the photo from shrinking */
-
 }
 
 .team-photo img {
-  max-width: clamp(100px, 60vw, 300px);
+  max-width: clamp(100px, 60vw, 500px);
   /* Adjusts based on the height */
   height: auto;
   border-radius: 10px;
+
 }
 
 .leader-name-overlay {
@@ -104,36 +103,53 @@
 .title-team {
   font-family: "Raleway";
   font-weight: bold;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   color: #286196;
+  padding: 20px 0;
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
-  .title-team {
-    text-align: center;
+
+  .team-content {
+
+    width: 90svw;
   }
 
 }
 
-.content-team {
+.team-content {
   font-family: "Raleway";
-  text-align: justify;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: black;
+  max-width: 800px;
+
+}
+
+.content-sponsor {
+  font-family: "Raleway";
+  text-align: right;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: white;
+  max-width: 800px;
+
 }
 
 
+
+
 .title-sponsor {
+  text-align: right;
   font-family: "Raleway";
   font-weight: bold;
-  text-align: right;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(2rem, 10vw, 4rem);
+  padding: 20px 0;
+  color: #409ED4;
   color: #409ED4;
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
   .title-sponsor {
-    text-align: center;
+    text-align: left;
   }
 
 
@@ -144,53 +160,59 @@
   position: relative;
   background-image: url('../../assets/images/car_image_1.jpg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 50vh;
+  background-position: 50% 60%;
+  width: 100svw;
+  min-height: 50svh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: #fff;
+  padding: 30px 10vw;
+  gap: 20px;
+  /* Adds space between flex items */
+
+
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
 
   .sponsors-section {
-
-    height: 90vh;
+    min-height: 90vh;
   }
 
 
-  .sponsors-section .dark-glass-overlay {
+
+}
+@media screen and (max-aspect-ratio: 1/1) {
+  .dark-glass-overlay-sponsor {
     flex-direction: column-reverse;
-    height: 90vh;
+    min-height: 90vh;
   }
 
-}
-
-.sponsors-section.dark-glass-overlay {
-  position: absolute;
-  width: 100%;
-  height: 50vh;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: space-between;
-  /* Distribute space evenly */
-  align-items: center;
-  /* Center items vertically */
-  padding: 10px 20px;
-  /* Padding on the sides */
-}
-
-.sponsor-text-content {
-  flex: 1;
-  /* Take up equal space */
-  font-family: "Raleway";
-  text-align: justify;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
-  color: white;
   
 }
 
-.icon-button {
-  max-width: clamp(200px, 80vw, 300px);
+.dark-glass-overlay-sponsor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100svw;
+  height: clamp(50svh, 50vh, 200svh);
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0px 20px 20px 20px;
+  text-align: center;
+
+}
+
+
+
+.icon-button-c {
+  max-width: clamp(100px, 60vw, 500px);
   text-decoration: none;
   flex: 1;
   /* Take up equal space */
@@ -201,25 +223,42 @@
   /* Center the icon vertically */
   color: #fff;
   border-radius: 50%;
-  padding: 5px;
   transition: background-color 0;
   flex-direction: column;
+  background-color: transparent;
+
 
 }
+
 
 .reach {
   text-align: center;
   font-family: "Raleway";
   font-weight: bold;
   text-align: right;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(1.2rem, 2vw, 3rem);
   color: #409ED4;
   padding: 20px;
+  transition: background-color 0.3s ease;
+  /* Add a transition for a smooth effect */
+  transition: transform 0.3s ease;
 }
 
-.sponsors-section .dark-glass-overlay .icon-button:hover {
+.icon-button-c:hover {
   background-color: rgba(64, 158, 212, 0);
+  transform: scale(1.3);
+  transition: background-color 0.3s ease;
+  /* Add a transition for a smooth effect */
+  transition: transform 0.3s ease;
+
   /* Fully transparent */
+}
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+  .content-sponsor {
+    text-align: left;
+  }
 }
 
 /* Other styles... */
@@ -237,15 +276,10 @@
   .garage-home-section {
     flex-direction: column;
     /* Stack items vertically */
-    
+
   }
 }
 
-.garage-home-content {
-  flex: 1;
-  margin-right: 20px;
-  /* Space between text and image */
-}
 
 .garage-home-image {
   position: relative;
@@ -253,9 +287,9 @@
   border-radius: 10px;
   /* Optional: to match your design */
   overflow: hidden;
-  
+
   /* Ensure the overlay fits within the image boundaries */
- 
+
 }
 
 .garage-image-overlay {
@@ -308,8 +342,16 @@
   /* Optional */
 }
 
-button {
-  font-size: 0.7rem;
+
+
+.home-garge-button:hover {
+  background-color: #3078a6;
+  /* Darker shade on hover */
+}
+
+.home-garge-button{
+  fote-family: "Raleway";
+  font-size: clamp(1rem, 2vw, 1.5rem);
   padding: 10px 10px;
   margin-top: 20px;
   /* Space above the button */
@@ -320,9 +362,4 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #3078a6;
-  /* Darker shade on hover */
 }

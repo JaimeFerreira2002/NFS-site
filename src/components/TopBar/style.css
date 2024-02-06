@@ -2,8 +2,8 @@
   color: white;
   z-index: 2;
   position: fixed;
-  width: 100vw;
-  height: 8vh;
+  width: 100svw;
+  height: 8svh;
   transition: background-color 0.3s;
   background-color: #1d1d1d;
   display: flex;
@@ -43,7 +43,7 @@
 
 @media (max-aspect-ratio: 1/1) {
   .top-bar .logo img {
-    left: 43vw;
+    left: 36vw;
     bottom: 25%;
     /* Limit logo size */
   }

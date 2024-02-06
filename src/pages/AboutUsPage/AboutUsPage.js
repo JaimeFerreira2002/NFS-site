@@ -6,7 +6,7 @@ import {
   faTag,
   faPenRuler,
   faChartLine,
-  faGaugeHigh,
+  faGaugeHigh, 
   faCarSide,
   faBatteryHalf,
   faFlagCheckered,

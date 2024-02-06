@@ -20,26 +20,32 @@ const PartnersData = {
       {
         title: 'Galp',
         imageUrl: GalpLogo,
-        link:'https://galp.com' // Replace with actual path to image
+        link:'https://galp.com', // Replace with actual path to image,
+        tier: 'Gold'
       },
       {
         title: 'Bosch',
         imageUrl: boshLogo, // Replace with actual path to image
-        link: 'https://www.bosch.pt/'
+        link: 'https://www.bosch.pt/',
+        tier: 'Gold'
       },
       {
         title: 'NOVA SST',
         imageUrl: NOVASSTLogo, // Replace with actual path to image
-        link:'https://www.fct.unl.pt/'
+        link:'https://www.fct.unl.pt/',
+        tier: 'Gold'
       }, {
         title: 'MCG',
         imageUrl: MCGLogo, // Replace with actual path to image
-        link: 'https://www.mcg.pt/?lang=pt-pt'
+        link: 'https://www.mcg.pt/?lang=pt-pt',
+        tier: 'Gold'
       },
       {
         title: 'Ciclo Fapril',
         imageUrl: ciclofabLogo, // Replace with actual path to image
-        link: 'https://ciclofapril.pt/pt/'
+        link: 'https://ciclofapril.pt/pt/',
+        tier: 'Gold'
+
       },
       // ... add more partners as needed
     ],
@@ -48,22 +54,26 @@ const PartnersData = {
       {
         title: 'Lean Acadamy',
         imageUrl: LeanAcadamyLogo, // Replace with actual path to image
-        link: 'https://lean.org.pt/'
+        link: 'https://lean.org.pt/',
+        tier: 'Silver'
       }, 
       {
         title: 'Altair',
         imageUrl: AltairLogo, // Replace with actual path to image
-        link:'https://altair.com/'
+        link:'https://altair.com/',
+        tier: 'Silver'
       },
       {
         title: 'Althima',
         imageUrl: AthimaLogo, // Replace with actual path to image
-        link:'https://althima.com/'
+        link:'https://althima.com/',
+        tier: 'Silver'
       },
       {
         title: 'Visteon',
         imageUrl: VisteonLogo, // Replace with actual path to image
-        link:'https://www.visteon.com/'
+        link:'https://www.visteon.com/',
+        tier: 'Silver'
       },
       // ... add more partners as needed
     ],
@@ -71,32 +81,38 @@ const PartnersData = {
       {
         title: 'KFrio',
         imageUrl: KFrioLogo, // Replace with actual path to image
-        link:'https://kfrio.pt/'
+        link:'https://kfrio.pt/',
+        tier: 'Bronze'
       },
       {
         title: 'COFICAB',
         imageUrl: CoficabLogo, // Replace with actual path to image
-        link: 'https://www.coficab.pt/'
+        link: 'https://www.coficab.pt/',
+        tier: 'Bronze'
       },
       {
         title: 'Blocks',
         imageUrl: BlocksLogo, // Replace with actual path to image
-        link:'https://blockstec.com/'
+        link:'https://blockstec.com/',
+        tier: 'Bronze'
       },
       {
         title: 'DFC Turbo',
         imageUrl: DFCTurboLogo, // Replace with actual path to image
-        link:'https://dfcturbo.com/'
+        link:'https://dfcturbo.com/',
+        tier: 'Bronze'
       },
       {
         title: 'MathWorks',
         imageUrl: MathWorksLogo, // Replace with actual path to image
-        link: 'https://www.mathworks.com'
+        link: 'https://www.mathworks.com',
+        tier: 'Bronze'
       },
       {
         title: 'Norelem',
         imageUrl: NorelemLogo, // Replace with actual path to image
-        link: 'https://norelem.es/pt'
+        link: 'https://norelem.es/pt',
+        tier: 'Bronze'
       },
       // ... add more partners as needed
     ],
