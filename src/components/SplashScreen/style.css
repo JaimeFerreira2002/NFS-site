@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 1;
   flex-direction: column;
 }
 
@@ -16,12 +16,8 @@
 
 .logo-splash {
   position: absolute;
-  padding: 10px;
-<<<<<<< HEAD
-  width: 10%;
-=======
+  padding: 30px;
   max-width: 250px;
->>>>>>> 3a17f36297f8a28be7fe421412dbf8f28e8c6a8e
   height: auto;
   /* Apply drop-shadow filter for glow effect */
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); /* Adjust color and size as needed */
