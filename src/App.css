@@ -4,18 +4,22 @@ Especific styles
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100svh;
+  width: 100svw;
   background-color: white;
+
 }
 
 
-  .content-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  min-height: 100vh;
+}
 
-  /* Add these styles to App.css or a relevant CSS file */
+/* Add these styles to App.css or a relevant CSS file */
 
 .fade-enter {
   transform: translateX(100%);
@@ -43,13 +47,16 @@ Especific styles
 .slide-forward-enter {
   transform: translateX(100%);
 }
+
 .slide-forward-enter-active {
   transform: translateX(0);
   transition: transform 300ms ease-out;
 }
+
 .slide-forward-exit {
   transform: translateX(0);
 }
+
 .slide-forward-exit-active {
   transform: translateX(-100%);
   transition: transform 300ms ease-in;
@@ -59,13 +66,16 @@ Especific styles
 .slide-backward-enter {
   transform: translateX(-100%);
 }
+
 .slide-backward-enter-active {
   transform: translateX(0);
   transition: transform 300ms ease-out;
 }
+
 .slide-backward-exit {
   transform: translateX(0);
 }
+
 .slide-backward-exit-active {
   transform: translateX(100%);
   transition: transform 300ms ease-in;

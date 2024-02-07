@@ -7,6 +7,7 @@ import SplashScreen from './components/SplashScreen';
 
 import ScrollToTop from './components/ScrollToTop.js'; // Adjust the import path as needed
 
+import MobileDrawer from './components/MobileDrawer';
 
 // Import your pages and components
 import HomePage from './pages/HomePage';
@@ -24,18 +25,37 @@ import Dummy from './pages/dummy';
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // State to control the drawer's open/close state
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  // Function to toggle the drawer open/close state
+  const toggleDrawer = () => {
+    // Assuming 'isOpen' reflects the current state of the drawer
+    setIsDrawerOpen(!isDrawerOpen); // Toggle the drawer open state
+  
+    if (!isDrawerOpen) {
+      // If the drawer is about to open, disable scrolling on the body
+      document.body.style.overflow = 'hidden';
+    } else {
+      // If the drawer is about to close, re-enable scrolling on the body
+      document.body.style.overflow = '';
+    }
+  };
+  
+
+  const width = window.innerWidth;
+
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-
-
   }, []);
 
   const [isSplashVisible, setIsSplashVisible] = useState(true);
@@ -49,46 +69,56 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-
   // Component to handle route transitions
   const AnimatedRoutes = () => {
     const location = useLocation(); // Correctly called within a child component of <Router>
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+
 
     const nodeRef = useRef(null); // To comply with CSSTransition nodeRef requirement
     return (
+      
       <div className="App">
+        
+          <SplashScreen isVisible={isSplashVisible} />
 
-        <SplashScreen isVisible={isSplashVisible} />
-
-        <TransitionGroup component={null}>
-          <CSSTransition key={location.key} classNames="fade" timeout={300} nodeRef={nodeRef}>
-            <div ref={nodeRef}> {/* This div acts as the CSSTransition child */}
-
-              <Routes location={location}>
-
-                <Route path="/" exact element={<HomePage />} />
-                <Route path="/about" element={<AboutUsPage />} />
-                <Route path="/garage" element={<GaragePage />} />
-                <Route path="/garage/fsfenix" element={<FSFenixPage />} />
-                <Route path="/partners" element={<PartnersPage />} />
-                <Route path="/articles" element={<ArticlesPage />} />
-                <Route path="/recruitment" element={<RecruitmentPage />} />
-                <Route path="/contacts" element={<ContactsPage />} />
-                <Route path="/dummy" element={<Dummy />} />
-              </Routes>
-            </div>
-          </CSSTransition>
-        </TransitionGroup>
+          <TransitionGroup component={null}>
+            <CSSTransition
+              key={location.key}
+              classNames="fade"
+              timeout={300}
+              nodeRef={nodeRef}
+            >
+              <div ref={nodeRef}>
+                {" "}
+                {/* This div acts as the CSSTransition child */}
+                <Routes location={location}>
+                  <Route path="/" exact element={<HomePage />} />
+                  <Route path="/about" element={<AboutUsPage />} />
+                  <Route path="/garage" element={<GaragePage />} />
+                  <Route path="/garage/fsfenix" element={<FSFenixPage />} />
+                  <Route path="/partners" element={<PartnersPage />} />
+                  <Route path="/articles" element={<ArticlesPage />} />
+                  <Route path="/recruitment" element={<RecruitmentPage />} />
+                  <Route path="/contacts" element={<ContactsPage />} />
+                  <Route path="/dummy" element={<Dummy />} />
+                </Routes>
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
+        
       </div>
     );
   };
 
-  return (
+  return  (
     <div className="content-wrapper">
       <Router>
-      <ScrollToTop />
+        <ScrollToTop />
         <div className="App">
-          <TopBar isScrolled={isScrolled} />
+          <TopBar isScrolled={isScrolled} toggleDrawer={toggleDrawer} />
+          <MobileDrawer isOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
           <AnimatedRoutes /> {/* Using the AnimatedRoutes component here */}
         </div>
       </Router>

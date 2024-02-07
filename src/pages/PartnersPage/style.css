@@ -13,7 +13,7 @@
   /* Evenly space the cards */
   gap: 20px;
   /* Space between cards */
-  padding: 2%;
+  padding: 1vh;
   overflow-x: auto;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .partner-card {
-  width: 300px;
+  width: clamp(200px, 20vw, 300px);
   /* Adjust as needed */
   height: width;
   /* Adjust as needed */
@@ -125,10 +125,12 @@
 }
 
 .partners-page {
-  padding-top: 60px;
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: white;
+  min-height: 100svh;
 }
 
 .page-title-container {

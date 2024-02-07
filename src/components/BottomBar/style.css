@@ -1,6 +1,7 @@
 .bottom-bar {
   background-color: #1d1d1d;
-  height: 15vh;
+  min-height: 15vh;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,4 +155,54 @@ padding: 10px;
   /* Green text for the confirmation message */
   margin-top: 10px;
   /* Space above the confirmation message */
+}
+
+
+/* Media query for aspect ratio wider than 1/1 */
+@media screen and (max-aspect-ratio: 1/1) {
+  .bottom-bar {
+    min-height: 25vh; /* Increased height */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    padding: 20px 0; /* Add padding at the top and bottom */
+  }
+
+  .left-section,
+  .right-section {
+    justify-content: center; /* Center content for left and right sections */
+    width: 100%; /* Full width */
+  }
+
+  .navigation-links {
+    position: absolute;
+    right: 5%;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links */
+    margin: 2vh px 0; /* Add margin above and below for spacing */
+  }
+
+  .navigation-links a {
+    margin: 1vh 0; /* Space between links when stacked */
+  }
+
+
+  .form-newsletter,
+  .form-newsletter.sent {
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center form elements */
+    width: 100%; /* Full width */
+  }
+
+  .form-newsletter button {
+    width: auto; /* Auto width to fit content */
+    margin-top: 10px; /* Space above the button */
+  }
+
+  .confirmation-message {
+    top: 100%; /* Position below the form */
+    left: 50%; /* Start from the middle */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+  }
 }
