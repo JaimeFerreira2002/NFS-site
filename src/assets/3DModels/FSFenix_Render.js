@@ -9,8 +9,8 @@ export default function FSFenix_Render_v2(props) {
    
       <group
         name="Car"
-        position={[0, 0.5, 0]}
-        scale={0.0015558} 
+        position={[0, 0.1, 0]}
+        scale={0.0030558} 
       >
         <mesh
           name="Mesh_0"

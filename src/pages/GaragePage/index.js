@@ -3,14 +3,14 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import FSDragon from '../../assets/images/fsdragon.png'
-import GaragePhoto2 from '../../assets/images/3_car_garage_2.jpg';
+import FSFenix from '../../assets/images/fsfenix.png'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
-
-
 import './style.css';
+import PageHeader from '../../components/PageHeader';
+
 
 const GaragePage = () => {
   const sliderRef = useRef(null);
@@ -53,7 +53,7 @@ const GaragePage = () => {
 
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -91,28 +91,25 @@ const GaragePage = () => {
   return (
     <div className='garage-page'>
 
-        <div className='page-header-container'>
-          <div className='page-title'>Garage</div>
-          <div className='page-subtitle'>Discover our cars</div>
-        </div>
-    
+      <PageHeader title={t("garage-page.page-title")} subtitle={t("garage-page.page-subtitle")}/>
 
       <div className='car-name'>{getTitleForSlide(currentSlide)}</div>
+
+      <div className='button-container'>
+        <Link to = {getCarPagePath()} className='car-button'>
+            {t("garage-page.button-text")}
+        </Link>
+      </div>
 
       <Slider ref={sliderRef} {...settings} className='cars-image-slider'>
         <div className='car-image'>
           <img src={FSDragon} alt='fsdragon' />
         </div>
         <div className='car-image'>
-          <img src={FSDragon} alt='fsfenix' />
+          <img src={FSFenix} alt='fsfenix' />
         </div>
       </Slider>
 
-    <div className='button-container'>
-      <Link to = {getCarPagePath()} className='car-button'>
-          LEARN MORE
-      </Link>
-    </div>
 
     </div>
   );

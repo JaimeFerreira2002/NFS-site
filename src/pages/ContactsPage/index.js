@@ -124,10 +124,6 @@ const ContactsPage = () => {
                 <h3>{t('contacts-page.team-email')}</h3>
                 <p>{"formulastudent@ae.fct.unl.pt"}</p>
               </div>
-              <div >
-                <h3 className='contact-info-columns.title'>{t('contacts-page.team-name')}</h3>
-                <p>{t('Nova Formula Student')}</p>
-              </div>
               <div>
                 <h3>{t('contacts-page.cr-email')}</h3>
                 <p>{"cr.formualstudent@ae.fct.unl.pt"}</p>

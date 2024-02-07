@@ -6,6 +6,7 @@ import SectionTitle from '../../components/SectionTitle';
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import './style.css'; // Import your CSS stylesheet
+import PageHeader from '../../components/PageHeader/index.js';
 
 
 // Individual Partner Card Component
@@ -28,9 +29,8 @@ const Partners = ({ partners = PartnersData }) => {
 
   return (
     <div className='partners-page'>
-      <div className='page-title-container'>
-        <div className='subtitle-partners'>{t('partners-page.page-subtitle')}</div>
-      </div>
+    
+      <PageHeader title={t("partners-page.page-title")} subtitle={t("partners-page.page-subtitle")}/>
 
       <div className="partner-list-container">
         {Object.keys(partners).map((category) => (
@@ -53,8 +53,6 @@ const Partners = ({ partners = PartnersData }) => {
         ))}
       </div>
 
-      {/* Add Bottom Bar Component Here */}
-      {/* <BottomBar /> */}
     </div>
   );
 };

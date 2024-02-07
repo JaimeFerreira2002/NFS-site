@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
-import TeamLeaderPhoto from '../../assets/images/members_photos/Ricardo_Cutileiro_TL.jpg';
+import TeamLeaderPhoto from '../../assets/images/members_photos/board/cutileiro.jpg';
 import { useTranslation } from "react-i18next";
 import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
 import FSDragon from '../../assets/images/fsdragon2.png'

@@ -19,7 +19,7 @@
 .logo-splash {
   position: absolute;
   padding: 10px;
-  width: 250px;
+  width: 10%;
   height: auto;
   /* Apply drop-shadow filter for glow effect */
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); /* Adjust color and size as needed */

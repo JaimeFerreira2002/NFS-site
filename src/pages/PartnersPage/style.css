@@ -27,7 +27,6 @@
 }
 
 
-
 .partner-list-name {
   font-family: 'Raleway';
   font-weight: bold;
@@ -36,25 +35,9 @@
   /* Prevent list names from shrinking */
 }
 
-
-
-.page-title-container {
-  padding: 2%;
+.partner-list-container {
+  padding: 4%;
 }
-
-.title-partners {
-  font-family: 'AkiraExpanded';
-  text-align: center;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.subtitle-partners {
-  font-family: 'Raleway';
-  font-size: 25px;
-  text-align: center;
-}
-
 
 
 
