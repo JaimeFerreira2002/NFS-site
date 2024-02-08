@@ -10,7 +10,6 @@
 
 
 
-
 .car-name {
   padding-top: 1%;
   color: #242424;
@@ -42,19 +41,65 @@
   align-items: center;
   justify-content: center;
   height: 80%;
+  overflow: hidden;
+  transition: filter 0.3s ease;
 }
 
 .car-image img {
   width: 80%;
   align-self: center;
+  justify-content: center;
   margin: 0 auto; 
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.3s ease; /* Add transition for the image as well */
   
+}
+
+.hovered {
+  filter: brightness(100%);
+}
+
+.button-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  width: 80%;
+
+}
+
+.car-button {
+  width: 22%;
+  text-align: center;
+  background-color: #1a1a1a; 
+  color: #ffffff; 
+  font-family: 'AkiraExpanded';
+  padding: 1%;
+  text-decoration: none;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 
 
+
+
+.car-button:hover {
+  transform: scale(1.1); 
+}
+
+
+
+
+
 .custom-arrow{
-  font-size: 40px;
+  font-size: 20px;
   padding: 1%;
   position: absolute;
   top: 50%;
@@ -71,59 +116,4 @@
   left: 1%;
 }
 
-
-.button-container{
-  display: flex;
-  height: 5%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-.car-button {
-  width: 22%;
-  text-align: center;
-  background-color: #1f1f1f; 
-  color: #ffffff; 
-  font-family: 'AkiraExpanded';
-  padding: 1%;
-  text-decoration: none;
-  font-size: 15px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease; 
-}
-
-.car-button:hover {
- transform: scale(1.1); 
-}
-
-
-
-.page-header-container{  
-  height: 20%;
-  width: 100%;
-  padding: 1%;
-  background-color: #1d1d1d;
-} 
-
-.page-header-container .page-title {
-  font-family: 'AkiraExpanded'; 
-  font-size: 70px; 
-  font-weight: normal; 
-  background-image: linear-gradient(to right, #19a3ff, #ffffff);
-  background-size: 100%;
-  background-clip: text;
-  color: transparent;
-  margin: 0;
-}
-
-.page-header-container .page-subtitle {
-  font-family: 'Raleway'; 
-  font-size: 24px; 
-  font-weight: normal; 
-  color: #ffffff;
-}
 

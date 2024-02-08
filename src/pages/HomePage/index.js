@@ -45,6 +45,7 @@ const HomePage = () => {
   }, []); // Empty dependency array ensures this effect runs only once on mount
 
 
+  //effects
   React.useEffect(() => {
     if (teamInView) {
       controlsTeam.start({ opacity: 1, x: 0, transition: { duration: 0.5 } });
@@ -69,6 +70,7 @@ const HomePage = () => {
     }
   }, [controlsGarage, garageInView]);
 
+  
   return (
     <div className="home-page">
       <div className="sobre">

@@ -25,6 +25,7 @@ const GaragePage = () => {
     return (
       <div
         className='custom-arrow prev-arrow'
+        style={{ color: 'black' }}
         onClick={() => {
           if (sliderRef.current) {
             sliderRef.current.slickPrev();
@@ -40,6 +41,7 @@ const GaragePage = () => {
     return (
       <div
         className='custom-arrow next-arrow'
+        style={{ color: 'black' }}
         onClick={() => {
           if (sliderRef.current) {
             sliderRef.current.slickNext();
@@ -87,6 +89,17 @@ const GaragePage = () => {
     }
   };
 
+  //used for buttons effetc
+  const [isHovered, setShowButton] = useState(false);
+  const handleMouseEnter = () => {
+    setShowButton(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowButton(false);
+  };
+
+
 
   return (
     <div className='garage-page'>
@@ -95,20 +108,36 @@ const GaragePage = () => {
 
       <div className='car-name'>{getTitleForSlide(currentSlide)}</div>
 
-      <div className='button-container'>
-        <Link to = {getCarPagePath()} className='car-button'>
-            {t("garage-page.button-text")}
-        </Link>
-      </div>
-
       <Slider ref={sliderRef} {...settings} className='cars-image-slider'>
-        <div className='car-image'>
+        <div
+          className={`car-image ${isHovered ? 'hovered' : ''}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <img src={FSDragon} alt='fsdragon' />
+          {isHovered && (
+            <div className='button-container'>
+              <Link to={getCarPagePath()} className='car-button'>
+                {t("garage-page.button-text")}
+              </Link>
+            </div>
+          )}
         </div>
-        <div className='car-image'>
+        <div
+          className={`car-image ${isHovered ? 'hovered' : ''}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <img src={FSFenix} alt='fsfenix' />
+          {isHovered && (
+            <div className='button-container'>
+              <Link to={getCarPagePath()} className='car-button'>
+                {t("garage-page.button-text")}
+              </Link>
+            </div>
+          )}
         </div>
-      </Slider>
+    </Slider>
 
 
     </div>

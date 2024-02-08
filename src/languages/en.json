@@ -37,6 +37,7 @@
     "page-title" : "FS FENIX",
     "page-subtitle" : "The FS FENIX represents our first realized effort to build a Formula Student car",
     "specs-title" : "Technical Specifications",
+    "team-title" : "The Team",
 
     "technical-specs": {
         "general": {
@@ -48,7 +49,7 @@
             "wheel-base" : "Wheelbase",
             "wheel-base-value": "1525 mm",
 
-            "width" : "Width",
+            "width" : "Track",
             "width-value": "1346 mm",
 
             "height-cg" : "Height",
@@ -122,6 +123,28 @@
             "cl.d" : "CL.D",
             "cl.d-value": "1.106"
         }
+    },
+
+    "teams-names" : {
+        "board" : "Board",
+        "aerodynamics" : "Aerodynamics",
+        "chassis&suspension" : "Chassis & Suspension",
+        "vehicle-dynamics" : "Vehicle Dynamics",
+        "steering&ergonomics" : "Steering & Ergonomics",
+        "electronics" : "Electronics",
+        "powertrain" : "Powertrain",
+        "marketing" : "Marketing",
+        "corporate-relations" : "Corporate Relations",
+        "logistics" : "Logistics",
+        "finances" : "Finances"
+    },
+
+    "roles" : {
+        "team-leader" : "Team Leader",
+        "technical-director" : "Technical Director",
+        "bsd" : "Business & Strategy Director",
+        "dep-leader" : "Department Leader",
+        "member" : "Member"
     }
     
   },
@@ -129,7 +152,7 @@
 
 
 
-  "contacts-page": {
+"contacts-page": {
     "page-title": "Contacts",
     "form-email": "Email",
     "form-name": "Name",
@@ -196,7 +219,7 @@
   },
 
   
-  "about-page": {
+"about-page": {
     "about-us":"ABOUT US",
     "about-us-desc":"We are the Formula Student team from Nova University.",
     "about-fs":"About Formula Student",

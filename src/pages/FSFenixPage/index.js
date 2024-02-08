@@ -78,11 +78,16 @@ const FSFenixPage = () => {
 
   ///////////////animations///////////////////////////
 
-    //controllers
+    //controllers/////
     const specsAndModelController = useAnimation();
     const [specsAndModelRef, specsAndModelInView] = useInView({ threshold: 0.1 });
 
-    //effects
+    const teamController = useAnimation();
+    const [teamRef, teamInView] = useInView({ threshold: 0.05 });
+
+    //effects////////
+
+    //specs and model
     React.useEffect(() => {
       if (specsAndModelInView) {
         specsAndModelController.start({ opacity: 1, x: 0, transition: { duration: 0.5 } });
@@ -90,6 +95,15 @@ const FSFenixPage = () => {
         specsAndModelController.start({ opacity: 0, x: -100, transition: { duration: 0.5 } });
       }
     }, [specsAndModelController, specsAndModelInView]);
+
+    //team 
+    React.useEffect(() => {
+      if (teamInView) {
+        teamController.start({ opacity: 1, x: 0 });
+      } else {
+        teamController.start({ opacity: 0 });
+      }
+    }, [teamController, teamInView]);
 
   
 
@@ -151,16 +165,21 @@ const FSFenixPage = () => {
           Team
         </div>
 
-        {TeamListData.map((department, index) => (
-          <div key={index}>
-            <h2 className="department-title">{department.title}</h2>
-            <div className="team-members">
-              {department.members.map((member, memberIndex) => (
-                <MemberCard key={memberIndex} {...member} />
-              ))}
-            </div>
-          </div>
-        ))}
+        <div ref={teamRef}>
+          <motion.div className='team-animation' animate = {teamController}>
+            {TeamListData.map((department, index) => (
+              <div key={index} className='department-container'>
+                <h2 className="department-title">{t(`fsfenix-page.teams-names.${department.title}`)}</h2>
+                <div className="team-members">
+                  {department.members.map((member, memberIndex) => (
+                    <MemberCard key={memberIndex} {...member} />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+
       </div>
 
 
