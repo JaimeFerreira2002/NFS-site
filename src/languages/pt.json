@@ -10,6 +10,7 @@
     "subscribe": "Subscrever",
     "email-newsletter": "Subscreva a nossa newsletter!"
   },
+  
 
   "garage-page": {
     "page-title": "Garagem",
@@ -118,11 +119,11 @@
   },
 
   "teams-names" : {
-    "board" : "Direçao",
+    "board" : "Direcao",
     "aerodynamics" : "Aerodinamica",
     "chassis&suspension" : "Chassis e Suspensao",
     "vehicle-dynamics" : "Dinamica de Veiculo",
-    "steering&ergonomics" : "Direçao e Ergonimica ",
+    "steering&ergonomics" : "Direcao e Ergonimica ",
     "electronics" : "Eletronica",
     "powertrain" : "Motor",
     "marketing" : "Marketing",
@@ -200,7 +201,6 @@
     "team_desc1": "O Formula Student FCT, FSFCT, foi fundado em 2015 por alunos da NOVA FCT, que criaram o primeiro projeto da equipa, o FSDRAGON. Este protótipo levou-os à sua primeira competição em 2018, no Formula Student Spain.",
     "team_desc2": "Em 2022, após algum tempo de inatividade devido à pandemia, um novo grupo de alunos da NOVA FCT reergueram o FSFCT. A equipa assumiu uma nova identidade, o NOVA Formula Student, recuperou o espaço de trabalho, e criou o projeto FSFENIX.",
     "team_desc3": "Atualmente, a equipa conta com cerca de 50 membros: alunos da NOVA FCT, focados tanto na engenharia e parte técnica do projeto como na vertente estratégica, e alunos de outras faculdades da Universidade NOVA, como a NOVA IMS e NOVA FCSH, os quais se focam na estratégia, negócio, e imagem da equipa.",
-    "team_leader": "Líder de Equipa",
     "sponsor_title": "Patrocinadores",
     "sponsor_title_2": "Torne-se Nosso Parceiro na Inovação Automóvel!",
     "sponsor_text": "Torne-se um patrocinador da nossa equipa, tendo a oportunidade de se associar a um projeto inovador e educacional.\n\r\nAumentando a visibilidade da sua marca em eventos, medias sociais e materiais promocionais.\n\r\nJunte-se a nós nesta jornada de excelência técnica e compromisso com a inovação.\n\r\nApoie a próxima geração de líderes e inovadores.",

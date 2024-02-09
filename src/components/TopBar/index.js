@@ -29,7 +29,8 @@ const TopBar = ({ isScrolled, toggleDrawer }) => { // Accept toggleDrawer as a p
   };
 
 
-  const changeLanguage = (lang) => {
+  const changeLanguage = async (lang) => {
+    // window.location.reload(); fix this
     i18n.changeLanguage(lang);
     setSelectedLanguage(lang);
   };

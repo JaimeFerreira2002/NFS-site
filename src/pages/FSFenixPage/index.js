@@ -1,12 +1,12 @@
 import React, { useRef, useState } from 'react';
-import "./style.css";
+import "../FSFenixPage/style.css";
 import { useTranslation } from "react-i18next";
 import CarModelViewer from '../../components/CarModelViewer';
-import SpecsSection from './components/SpecsSection'; 
-import Gallery from './components/Gallery'; 
+import SpecsSection from '../../components/SpecsSection'; 
+import Gallery from '../../components/Gallery'; 
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import TeamListData from './team_members_list'; 
+import TeamListData from '../../components/team_members_list'; 
 
 
 
@@ -40,7 +40,7 @@ import image4 from '../../assets/images/fsdragon_photos/image_4.jpg';
 import image5 from '../../assets/images/fsdragon_photos/image_5.jpg';
 import image6 from '../../assets/images/fsdragon_photos/image_6.jpg';
 import image7 from '../../assets/images/fsdragon_photos/image_7.jpg';
-import MemberCard from './components/MemberCard';
+import MemberCard from '../../components/MemberCard';
 
 const imageArray = [image1, image2, image3, image4, image5, image6, image7];
 
@@ -83,7 +83,7 @@ const FSFenixPage = () => {
     const [specsAndModelRef, specsAndModelInView] = useInView({ threshold: 0.1 });
 
     const teamController = useAnimation();
-    const [teamRef, teamInView] = useInView({ threshold: 0.05 });
+    const [teamRef, teamInView] = useInView({ threshold: 0.03 });
 
     //effects////////
 
@@ -117,26 +117,26 @@ const FSFenixPage = () => {
   return (
     <div className='fsfsenix-page'>
 
-      <div className='grey-block-header'>
-          <div className='page-header'>
-            <div className='page-title'>{t('fsfenix-page.page-title')}</div>
-            <div className='page-subtitle'>{t('fsfenix-page.page-subtitle')}</div>
+      <div className='fenix-grey-block-header'>
+          <div className='fenix-page-header'>
+            <div className='fenix-page-title'>{t('fsfenix-page.page-title')}</div>
+            <div className='fenix-page-subtitle'>{t('fsfenix-page.page-subtitle')}</div>
           </div>
       </div>
 
-      <div className='background-image-container'>
-        <div className='background-image-gradient-overlay'/> 
+      <div className='fenix-background-image-container'>
+        <div className='fenix-background-image-gradient-overlay'/> 
       </div>     
 
-      <div className='model_and_specs-container'>
-          <div className='section-title'>
+      <div className='fenix-model_and_specs-container'>
+          <div className='fenix-section-title'>
                 Technical Specifications
           </div>
 
-          <div className='specs-and-model'>
+          <div className='fenix-specs-and-model'>
           <div ref={specsAndModelRef}> 
-            <motion.div className='specs&model-animation' animate={specsAndModelController} initial={{ opacity: 0, x: 100 }}>
-              <div className='specs'>
+            <motion.div className='fenix-specs&model-animation' animate={specsAndModelController} initial={{ opacity: 0, x: 100 }}>
+              <div className='fenix-specs'>
                 <SpecsSection title="general" dataKeys={generalKeys} t={t} />
                 <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} />
                 <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} />
@@ -144,7 +144,7 @@ const FSFenixPage = () => {
                 <SpecsSection title="aero" dataKeys={aeroKeys} t={t} />
               </div>
               
-              <div className="fsfenix-3d-model">        
+              <div className="fenix-fsfenix-3d-model">        
                     <CarModelViewer/>         
               </div>
             </motion.div>
@@ -153,24 +153,24 @@ const FSFenixPage = () => {
       </div>
 
 
-      <div className='gallery-container'>
-          <div className='section-title'>
+      <div className='fenix-gallery-container'>
+          <div className='fenix-section-title'>
             Gallery
           </div>
           <Gallery images={imageArray} />
       </div>
 
-      <div className='team-container'>
-        <div className='section-title'>
+      <div className='fenix-team-container'>
+        <div className='fenix-section-title'>
           Team
         </div>
 
         <div ref={teamRef}>
-          <motion.div className='team-animation' animate = {teamController}>
+          <motion.div className='fenix-team-animation' animate = {teamController}>
             {TeamListData.map((department, index) => (
-              <div key={index} className='department-container'>
-                <h2 className="department-title">{t(`fsfenix-page.teams-names.${department.title}`)}</h2>
-                <div className="team-members">
+              <div key={index} className='fenix-department-container'>
+                <h2 className="fenix-department-title">{t(`fsfenix-page.teams-names.${department.title}`)}</h2>
+                <div className="fenix-team-members">
                   {department.members.map((member, memberIndex) => (
                     <MemberCard key={memberIndex} {...member} />
                   ))}

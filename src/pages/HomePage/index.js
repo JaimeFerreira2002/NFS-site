@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
-import TeamLeaderPhoto from '../../assets/images/members_photos/board/cutileiro.jpg';
+import TeamPhoto from '../../assets/images/team_photo_fspt.jpg';
 import { useTranslation } from "react-i18next";
 import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
 import FSDragon from '../../assets/images/fsdragon2.png'
@@ -98,10 +98,7 @@ const HomePage = () => {
         </div>
 
         <motion.div className="team-photo" animate={controlsTeam} initial={{ opacity: 0, x: 100 }}>
-
-          <img src={TeamLeaderPhoto} alt="Team Leader" />
-          <div className="leader-name-overlay">Ricardo Cutileiro</div>
-          <div className="leader-name-overlay-sub">Team Leader</div>
+          <img src={TeamPhoto} alt="Team Leader" />
         </motion.div>
       </div>
       {/* Additional sections if needed */}

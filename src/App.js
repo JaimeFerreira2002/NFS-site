@@ -20,6 +20,7 @@ import TopBar from './components/TopBar';
 import BottomBar from './components/BottomBar';
 import GaragePage from './pages/GaragePage';
 import FSFenixPage from './pages/FSFenixPage';
+import FSDragonPage from './pages/FSDragonPage';
 import Dummy from './pages/dummy';
 
 function App() {
@@ -98,6 +99,7 @@ function App() {
                   <Route path="/about" element={<AboutUsPage />} />
                   <Route path="/garage" element={<GaragePage />} />
                   <Route path="/garage/fsfenix" element={<FSFenixPage />} />
+                  <Route path="/garage/fsdragon" element={<FSDragonPage />} />
                   <Route path="/partners" element={<PartnersPage />} />
                   <Route path="/articles" element={<ArticlesPage />} />
                   <Route path="/recruitment" element={<RecruitmentPage />} />

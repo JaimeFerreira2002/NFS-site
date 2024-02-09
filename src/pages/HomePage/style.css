@@ -81,37 +81,23 @@
 
 }
 
-.leader-name-overlay {
-  font-family: "Raleway";
-  font-size: 1.5rem;
-  bottom: 10px;
-  /* Position the name at the bottom of the photo */
-  left: 10px;
-  color: black;
-  border-radius: 5px;
-}
-
-.leader-name-overlay-sub {
-  font-family: "Raleway";
-  font-size: 1rem;
-  bottom: 0;
-  left: 10px;
-  color: #286196;
-  border-radius: 5px;
-}
 
 .title-team {
-  font-family: "Raleway";
-  font-weight: bold;
-  font-size: clamp(2rem, 10vw, 4rem);
-  color: #286196;
-  padding: 20px 0;
+  text-align: start;
+  font-family: 'AkiraExpanded'; 
+  font-size: 50px; 
+  font-weight: normal; 
+  background-image: linear-gradient(to right, #19a3ff, #ffffff);
+  background-size: 130%;
+  background-clip: text;
+  color: transparent;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
 
   .team-content {
-
     width: 90svw;
   }
 
@@ -119,7 +105,7 @@
 
 .team-content {
   font-family: "Raleway";
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.4rem);
   color: black;
   max-width: 800px;
 
@@ -138,13 +124,16 @@
 
 
 .title-sponsor {
-  text-align: right;
-  font-family: "Raleway";
-  font-weight: bold;
-  font-size: clamp(2rem, 10vw, 4rem);
-  padding: 20px 0;
-  color: #409ED4;
-  color: #409ED4;
+  text-align: end;
+  font-family: 'AkiraExpanded'; 
+  font-size: 50px; 
+  font-weight: normal; 
+  background-image: linear-gradient(to right, #19a3ff, #ffffff);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
@@ -350,7 +339,7 @@
 }
 
 .home-garge-button{
-  fote-family: "Raleway";
+  font-family: "Raleway";
   font-size: clamp(1rem, 2vw, 1.5rem);
   padding: 10px 10px;
   margin-top: 20px;
