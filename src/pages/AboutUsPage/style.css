@@ -1,31 +1,47 @@
 body {
-   
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
 }
-.page-about{
-    padding-top: 60px;
+.page-about {
+  padding-top: 60px;
 }
 .section {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: justify;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
 }
 
 h2 {
-    color: #333;
+  color: #333;
 }
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
+}
+
+.p-organizationchart-lines {
+  color: black;
+}
+.accordion-item {
+  border: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+@media (max-width: 768px) {
+  img{
+    width: 100%;
+  }
 }
