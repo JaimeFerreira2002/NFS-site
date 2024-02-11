@@ -23,8 +23,8 @@
 }
 
 .logo-bb img {
-  width:  40px;
-  height:auto;
+  width: 40px;
+  height: auto;
   display: flex;
   align-items: center;
   padding: 10px 10px;
@@ -38,7 +38,7 @@
 }
 
 .social-icon-bb {
-padding: 10px;
+  padding: 10px;
 }
 
 .social-icons-bb img {
@@ -95,7 +95,6 @@ padding: 10px;
   /* Make the background transparent */
   /* Keep other styles as they are */
 }
-
 
 .form-newsletter button {
   width: 200px;
@@ -157,7 +156,6 @@ padding: 10px;
   /* Space above the confirmation message */
 }
 
-
 /* Media query for aspect ratio wider than 1/1 */
 @media screen and (max-aspect-ratio: 1/1) {
   .bottom-bar {
@@ -184,7 +182,6 @@ padding: 10px;
   .navigation-links a {
     margin: 1vh 0; /* Space between links when stacked */
   }
-
 
   .form-newsletter,
   .form-newsletter.sent {
