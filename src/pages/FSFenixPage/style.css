@@ -1,138 +1,146 @@
-
-.fsfsenix-page{
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    height: 800vh; /* apagar isto*/
-    width: 100%;   
+.fsfsenix-page {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
 }
 /* we use fenix to avoid conflicts between fsfenix and fsdragon page */
-.fenix-grey-block-header{
-    height: 2%;
-    background-color: #1d1d1d;
-    justify-content: center;
-    align-items: center;
+.fenix-grey-block-header {
+  height: 2%;
+  background-color: #1d1d1d;
+  justify-content: center;
+  align-items: center;
 }
 
-.fenix-background-image-container{
+.fenix-background-image-container {
   position: relative;
   height: 10%;
-  background-image: url('../../assets/images/fsfenix_render_garage_2.jpg');
-  background-position: center center; 
+  background-image: url("../../assets/images/fsfenix_render_garage_2.jpg");
+  background-position: center center;
   background-size: cover;
 }
 
-.fenix-background-image-gradient-overlay{
-    position: absolute;
-    width: 100%;
-    height: 15%;
-    top:0;
-    background: linear-gradient(to bottom, #1d1d1d, rgba(0, 0, 0, 0)); 
-    
-   
+.fenix-background-image-gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  top: 0;
+  background: linear-gradient(to bottom, #1d1d1d, rgba(0, 0, 0, 0));
 }
-
 
 .fenix-page-title {
-    text-align: center;
-    font-family: 'AkiraExpanded'; 
-    font-size: 70px; 
-    font-weight: normal; 
-    background-image: linear-gradient(to right, #19a3ff, #ffffff);
-    background-size: 90%;
-    background-clip: text;
-    color: transparent;
-    margin: 0;
-}
-  
-.fenix-page-subtitle {
-    text-align: center;
-    font-family: 'Raleway', sans-serif; 
-    font-size: 24px; 
-    font-weight: 00; 
-    color: #ffffff; 
+  text-align: center;
+  font-family: "AkiraExpanded";
+  font-size: 70px;
+  font-weight: normal;
+  background-image: linear-gradient(to right, #19a3ff, #ffffff);
+  background-size: 90%;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
 }
 
+.fenix-page-subtitle {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 00;
+  color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .fenix-page-subtitle {
+    font-size: 18px;
+  }
+  .fenix-page-title {
+    font-size: 50px;
+  }
+
+  .fenix-section-title {
+    font-size: 10px;
+  }
+}
 
 /*//////////////SPECS AND MODEL///////////////*/
 
-.fenix-section-title{
-    text-align: center;
-    font-family: 'AkiraExpanded'; 
-    font-size: 2.6em; 
-    font-weight: normal; 
-    background-image: linear-gradient(to right, #19a3ff, #ffffff);
-    background-size: 100%;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 1%;
-
+.fenix-section-title {
+  text-align: center;
+  font-family: "AkiraExpanded";
+  font-size: 2.6em;
+  font-weight: normal;
+  background-image: linear-gradient(to right, #19a3ff, #ffffff);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1%;
 }
 
-
-.fenix-model_and_specs-container{
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-    justify-content: space-around;
+.fenix-model_and_specs-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  justify-content: space-around;
 }
 
-.fenix-specs-and-model{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.fenix-specs-and-model {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.fenix-specs{
-    display: flex;
+.fenix-specs {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .fenix-specs {
+    flex-wrap: wrap;
+  }
 }
 
 .fenix-specs-section {
-    flex: 1 1 calc(33.33% - 20px); /* Divide the container into three equal parts, considering the gap */
-    max-width: calc(33.33% - 20px); /* Set a maximum width to prevent overflow */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    min-width: 400px; /* is this good?*/
-  }
-
-  .fenix-fsfenix-3d-model{
-    display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Set your desired shadow properties */
-    border-radius: 40px;
-    height: 60vh;
+  flex: 1 1 calc(33.33% - 20px); /* Divide the container into three equal parts, considering the gap */
+  max-width: calc(33.33% - 20px); /* Set a maximum width to prevent overflow */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  min-width: 400px; /* is this good?*/
 }
 
+.fenix-fsfenix-3d-model {
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Set your desired shadow properties */
+  border-radius: 40px;
+  height: 60vh;
+}
 
 /* //////////////GALLERY///////////////// */
 
-.fenix-gallery-container{
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-    justify-content: space-around;
+.fenix-gallery-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  justify-content: space-around;
 }
-
 
 /*///////////////TEAM/////////////////////*/
 
-
-.fenix-team-container{
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-    justify-content: space-around;
+.fenix-team-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  justify-content: space-around;
 }
 
-.fenix-department-title{
-    font-family: 'AkiraExpanded';
-    font-size: 1.5em;
-    text-align: center;
-    padding-top: 4%;
-    padding-bottom: 1%;
+.fenix-department-title {
+  font-family: "AkiraExpanded";
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 1%;
 }
 
 .fenix-team-members {
-    display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

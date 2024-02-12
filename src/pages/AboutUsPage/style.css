@@ -36,13 +36,20 @@ p {
 .accordion-item {
   border: none;
 }
+.accordion-button:hover {
+  z-index: 0;
+}
 .accordion-button:focus {
-  box-shadow: none;
-  border-color: rgba(0, 0, 0, 0.125);
+  background-color: white;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  border-color: white;
 }
 
 @media (max-width: 768px) {
-  img{
+  img {
     width: 100%;
   }
 }

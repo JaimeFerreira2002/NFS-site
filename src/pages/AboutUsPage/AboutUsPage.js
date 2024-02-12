@@ -56,8 +56,8 @@ const AboutUsPage = () => {
         <br></br>
         <p>{t("about-page.static-ev-desc")}</p>
         <br></br>
-        <Accordion defaultActiveKey="-1">
-          <Accordion.Item eventKey="0">
+        <Accordion defaultActiveKey="-1" >
+          <Accordion.Item eventKey="0" style={{ zIndex:"-1" }}>
             <Accordion.Header>
               <FontAwesomeIcon
                 icon={faPenRuler}
