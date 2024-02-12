@@ -7,6 +7,8 @@ import Gallery from '../../components/Gallery';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import TeamListData from '../../components/team_members_list'; 
+import PageHeader from '../../components/PageHeader/index.js';
+
 
 
 
@@ -117,12 +119,7 @@ const FSDragonPage = () => {
   return (
     <div className='fsfsenix-page'>
 
-      <div className='dragon-grey-block-header'>
-          <div className='dragon-page-header'>
-            <div className='dragon-page-title'>{t('fsfenix-page.page-title')}</div>
-            <div className='dragon-page-subtitle'>{t('fsfenix-page.page-subtitle')}</div>
-          </div>
-      </div>
+      <PageHeader title={t('fsfenix-page.page-title')} subtitle={t('fsfenix-page.page-subtitle')} gradientColor = "#19ff38" height={'7%'}/>
 
       <div className='dragon-background-image-container'>
         {/* <div className='background-image-gradient-overlay'/>  */}

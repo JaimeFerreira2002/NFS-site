@@ -7,7 +7,7 @@ import Gallery from '../../components/Gallery';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import TeamListData from '../../components/team_members_list'; 
-
+import PageHeader from '../../components/PageHeader/index.js';
 
 
 
@@ -117,12 +117,8 @@ const FSFenixPage = () => {
   return (
     <div className='fsfsenix-page'>
 
-      <div className='fenix-grey-block-header'>
-          <div className='fenix-page-header'>
-            <div className='fenix-page-title'>{t('fsfenix-page.page-title')}</div>
-            <div className='fenix-page-subtitle'>{t('fsfenix-page.page-subtitle')}</div>
-          </div>
-      </div>
+    <PageHeader title={t('fsfenix-page.page-title')} subtitle={t('fsfenix-page.page-subtitle')} gradientColor = "#19a3ff" height={'2.5%'}/>
+
 
       <div className='fenix-background-image-container'>
         <div className='fenix-background-image-gradient-overlay'/> 

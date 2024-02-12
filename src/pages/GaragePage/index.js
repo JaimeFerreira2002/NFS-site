@@ -104,7 +104,7 @@ const GaragePage = () => {
   return (
     <div className='garage-page'>
 
-      <PageHeader title={t("garage-page.page-title")} subtitle={t("garage-page.page-subtitle")}/>
+      <PageHeader title={t("garage-page.page-title")} subtitle={t("garage-page.page-subtitle")} gradientColor = {'#19a3ff'} height={'20%'}/>
 
       <div className='car-name'>{getTitleForSlide(currentSlide)}</div>
 
