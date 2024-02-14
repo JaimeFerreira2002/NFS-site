@@ -58,39 +58,36 @@ const ContactsPage = () => {
 
 
 
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [content, setContent] = useState('');
 
 
-  const sendEmail = (e) => {
+  // React component code
+
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    // Check if all fields have values
-    const fromName = form.current.querySelector('input[name="from_name"]').value.trim();
-    const fromEmail = form.current.querySelector('input[name="from_email"]').value.trim();
-    const message = form.current.querySelector('textarea').value.trim();
-
-    if (!fromName || !fromEmail || !message) {
-      // If any field is empty, set an error message and do not submit
-      setFeedbackMessage(t('contacts-page.fill-all-fields'));
-      setFeedbackMessageType('error');
-      return; // Stop the function from proceeding
-    }
-
-    // Proceed with form submission if all fields have values
-    setFormSubmitting(true);
-    setFeedbackMessage('');
-    setFeedbackMessageType('');
-
-    emailjs.sendForm('service_b657amf', 'template_x1zmjzo', form.current, 'jgCfBy5PqaFtqL4aW')
-      .then((result) => {
-        setFeedbackMessage(t('contacts-page.send-success'));
-        setFeedbackMessageType('success');
-        setFormSubmitting(false);
-        form.current.reset(); // Reset the form fields
-      }, (error) => {
-        setFeedbackMessage(t('contacts-page.send-error'));
-        setFeedbackMessageType('error');
-        setFormSubmitting(false);
+    try {
+      const response = await fetch('http://localhost:3000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'recipient@example.com',
+          subject: 'Test Email',
+          text: 'This is a test email',
+        }),
       });
+
+      const data = await response.json();
+      console.log(data);
+      alert('Email sent successfully!');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Failed to send email.');
+    }
   };
 
 
@@ -108,11 +105,11 @@ const ContactsPage = () => {
             </div>)}
             <form className='contact-form' ref={form} onSubmit={sendEmail}>
 
-              <input type='text' placeholder={t('contacts-page.form-subject')} name="from_name" />
+              <input type='text' placeholder={t('contacts-page.form-subject')} />
 
-              <input type='email' placeholder={t('contacts-page.form-email')} name="from_email" />
+              <input type='email' onChange={(e) => setSubject(e.target.value)} placeholder={t('contacts-page.form-email')} />
 
-              <textarea placeholder={t('contacts-page.form-message')}></textarea>
+              <textarea onChange={(e) => setEmail(e.target.value)} placeholder={t('contacts-page.form-message')}></textarea>
               <button type='submit'>{t('contacts-page.form-send')} </button>
             </form>
           </div>
