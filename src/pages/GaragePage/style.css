@@ -1,11 +1,10 @@
-.garage-page{
-  padding-top: 60px;
+.garage-page {
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
-  height: 110vh;
-  width: 100vw;
-  align-items: center;
-
+  width: 100%;
+  background-color: white;
+  min-height: 100svh;
 }
 
 
@@ -16,8 +15,8 @@
   font-size: 45px;
   font-family: 'AkiraExpanded';
   text-align: center;
-  width: 100%; 
-  z-index: 1; 
+  width: 100%;
+  z-index: 1;
 }
 
 
@@ -25,7 +24,8 @@
 
 .cars-image-slider {
   width: 80%;
-  height: 70%; /* Adjust the height based on your images */
+  height: 70%;
+  /* Adjust the height based on your images */
   display: flex;
   overflow: hidden;
 }
@@ -49,11 +49,12 @@
   width: 80%;
   align-self: center;
   justify-content: center;
-  margin: 0 auto; 
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
-  transition: filter 0.3s ease; /* Add transition for the image as well */
-  
+  transition: filter 0.3s ease;
+  /* Add transition for the image as well */
+
 }
 
 .hovered {
@@ -74,8 +75,8 @@
 .car-button {
   width: 22%;
   text-align: center;
-  background-color: #1a1a1a; 
-  color: #ffffff; 
+  background-color: #1a1a1a;
+  color: #ffffff;
   font-family: 'AkiraExpanded';
   padding: 1%;
   text-decoration: none;
@@ -91,14 +92,14 @@
 
 
 .car-button:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 
 
 
 
-.custom-arrow{
+.custom-arrow {
   font-size: 20px;
   padding: 1%;
   position: absolute;
@@ -108,12 +109,10 @@
 }
 
 
-.next-arrow{
+.next-arrow {
   right: 1%;
 }
 
-.prev-arrow{
+.prev-arrow {
   left: 1%;
 }
-
-

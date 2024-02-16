@@ -213,11 +213,12 @@
   },
 
   "about-page": {
-    "about-us":"SOBRE NÓS",
+    "who-are-we":"Quem Somos",
+    "about-us":"SOBRE NOS",
     "about-us-desc":"Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
     "about-fs":"Sobre a Formula Student",
     "formula-student": "Formula Student é a maior prova de engenharia entre estudantes universitários. Esta une alunos das mais variadas áreas, como Engenharias, Negócio, Marketing, Gestão de Projeto, entre outras, com intuito de projetar um carro e participar em competições de nível mundial.",
-    "how-it-works-title": "Como funciona",
+    "how-it-works-title": "Como funciona o FS",
     "how-it-works-desc": "As provas de Formula Student pretendem avaliar o trabalho efetuado pelas equipas ao longo de cada época, seja a nível de Negócio, Design, ou Performance do carro fabricado. Estas provas estão divididas em vários eventos - Estáticos e Dinâmicos - com valorizações pontuais diferentes. Quando somadas as pontuações obtidas pelas equipas em cada evento, obtém-se a classificação final.",
     "static-events": "EVENTOS ESTÁTICOS",
     "static-ev-desc":"Os eventos estáticos avaliam a preparação da equipa nas seguintes áreas:",

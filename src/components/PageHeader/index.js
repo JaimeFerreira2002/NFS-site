@@ -4,7 +4,7 @@ import './style.css';
 const PageHeader = ({ title, subtitle, gradientColor , height}) => {
 
   const containerStyle = {
-    height: height || 'auto', // Use the provided height or set it to 'auto' by default
+    height: 'auto', // Use the provided height or set it to 'auto' by default
   }
 
   const titleStyle = {

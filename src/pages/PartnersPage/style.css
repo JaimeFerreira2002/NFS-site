@@ -1,3 +1,13 @@
+.partners-page {
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  min-height: 100svh;
+}
+
+
 .partners-cards {
   display: flex;
   flex-direction: column;
@@ -124,14 +134,6 @@
   margin-top: 10px;
 }
 
-.partners-page {
-  padding-top: 8vh;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: white;
-  min-height: 100svh;
-}
 
 .page-title-container {
   padding: 2%;
@@ -155,14 +157,6 @@
   /* Enable vertical scrolling */
 }
 
-.partner-page {
-  display: flex;
-  flex-direction: column;
-  height: 72vh;
-  width: 100vw;
-  overflow-y: auto;
-  /* Enable vertical scrolling */
-}
 
 .section-title-wrapper {
   text-align: center;

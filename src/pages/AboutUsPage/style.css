@@ -2,43 +2,174 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333;
+
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
-}
 
 .page-about {
-  padding-top: 60px;
-}
-.section {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: justify;
-}
-
-h2 {
-  color: #333;
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  min-height: 100svh;
 }
 
-p {
-  line-height: 1.6;
+
+
+
+
+.first-section {
+  display: flex;
+  flex-direction: row;
+  /* This is default and can be omitted */
+  align-items: center;
+  /* Vertically centers the flex items */
+  justify-content: space-between;
+  /* This might not be necessary depending on your layout */
+  background-color: #286196;
+  /* Changed from #fff for text visibility */
+  height: auto;
+  padding: 30px 10vw;
+  gap: 20px;
+  /* Keeps space between the text and the map */
+  /* Removed the min-height property to avoid a typo (50svh -> 50vh) and possibly unnecessary style */
 }
+
+
+
+.first-section p {
+  color: white;
+}
+
+.first-section h2 {
+  color: white;
+}
+
+.first-section img {
+  width: 50%;
+  height: auto;
+  z-index: 0;
+  border-radius: 10px;
+
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+
+  .first-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10vw;
+    padding-top: 30px;
+  }
+
+  .first-section img {
+    width: 100svw;
+    height: auto;
+    border-radius: 0px;
+  }
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+
+  padding: 30px 10vw;
+  gap: 20px;
+}
+
+.how-it-works h2 {
+  text-align: right;
+  color: #286196;
+}
+
+.how-it-works p {
+  text-align: right;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+  .how-it-works {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10vw;
+  }
+
+  .how-it-works h2 {
+    text-align: left;
+  }
+
+  .how-it-works p {
+    text-align: left;
+  }
+
+}
+
+.team-section-about {
+  background-color: #1d1d1d;
+ 
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10vw;
+  gap: 20px;
+
+}
+
+.team-image-container {
+  width: auto;
+  height: clamp(50vh, 40vw, 80vh);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* For aspect ratios wider than 16:9 */
+@media (max-aspect-ratio: 1/1) {
+  .team-image-container {
+    background-image: url('../../assets/images/org_chart_eng.drawio_mobile.png');
+  }
+}
+
+/* For aspect ratios narrower than 16:9 */
+@media (min-aspect-ratio: 1/1) {
+  .team-image-container {
+    background-image: url('../../assets/images/org_chart_eng.drawio_desktop.png');
+  }
+}
+
+
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 30px 10vw;
+  gap: 20px;
+
+}
+
+.events h2 {
+  text-align: left;
+  color: #286196;
+}
+
+
 
 .p-organizationchart-lines {
   color: black;
 }
+
 .accordion-item {
   border: none;
 }
+
 .accordion-button:hover {
   z-index: 0;
 }
+
 .accordion-button:focus {
   background-color: white;
   border: none;
@@ -46,10 +177,4 @@ p {
 
 .accordion-button:not(.collapsed) {
   border-color: white;
-}
-
-@media (max-width: 768px) {
-  img {
-    width: 100%;
-  }
 }

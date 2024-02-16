@@ -10,6 +10,8 @@
     background-size: 100%;
     background-clip: text;
     color: transparent;
+    max-width: 100svw;
+    font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 .title-text{

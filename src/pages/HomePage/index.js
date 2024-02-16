@@ -7,7 +7,7 @@ import './style.css';
 import TeamPhoto from '../../assets/images/team_photo_fspt.jpg';
 import { useTranslation } from "react-i18next";
 import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
-import FSDragon from '../../assets/images/fsdragon2.png'
+import FSFenix from '../../assets/images/fsfenix.png'
 import { Link } from 'react-router-dom';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'; // Ensure you import the correct icon
 
@@ -139,7 +139,7 @@ const HomePage = () => {
         <div className="garage-home-image">
           <motion.div className="team-photo" animate={controlsGarage} initial={{ opacity: 0, x: 100 }}>
 
-            <img src={FSDragon} alt="Garage" />
+            <img src={FSFenix} alt="Garage" />
             <div className="garage-image-overlay">
               <a href="/garage/fsfenix" className="button-link">
                 <button className='home-garge-button'>FS Fenix</button>

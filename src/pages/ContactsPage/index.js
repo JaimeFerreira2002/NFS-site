@@ -4,23 +4,12 @@ import { useTranslation } from "react-i18next";
 
 import emailjs from 'emailjs-com';
 
-
-import mapIcon from "../../assets/images/mapIcon.png";
-import linkedinIcon from "../../assets/images/linkedIn_icon.png";
-import instagramIcon from "../../assets/images/instagram_icon.png";
-
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-
+import MapComponent from '../../components/maps.js'; // Update the path according to your file structure
 import './style.css';
-
-
-
 
 
 const ContactsPage = () => {
   const { t } = useTranslation();
-  const mapRef = useRef(null);
   const form = useRef();
 
   const [formSubmitting, setFormSubmitting] = useState(false);
@@ -28,33 +17,6 @@ const ContactsPage = () => {
   const [feedbackMessage, setFeedbackMessage] = useState('');
 
   const [feedbackMessageType, setFeedbackMessageType] = useState(''); // 'success' or 'error'
-
-  useEffect(() => {
-    if (mapRef.current && !mapRef.current._leaflet_id) {
-      const map = L.map(mapRef.current, {
-        scrollWheelZoom: false, // Disable scroll wheel zoom
-        center: [38.66214021803797, -9.2070192353163],
-        zoom: 16
-      });
-
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
-      }).addTo(map);
-
-      const customIcon = L.icon({
-        iconUrl: mapIcon,
-        iconSize: [100, 100],
-        iconAnchor: [45, 85],
-        popupAnchor: [1, -50]
-      });
-
-      L.marker([38.66214021803797, -9.2070192353163], { icon: customIcon })
-        .addTo(map)
-        .bindPopup('<div class="custom-popup"><a href="https://www.google.com/maps/?q=38.66214021803797,-9.2070192353163" target="_blank">Open in Google Maps</a></div>')
-    }
-
-
-  }, []);
 
 
 
@@ -148,8 +110,8 @@ const ContactsPage = () => {
         </div>
       </div>
 
-      <div className='google-maps-section' id="map" ref={mapRef} style={{ height: '50vh', width: '100%' }}></div>
-    </div>
+      <MapComponent mapCenter={[38.66214021803797, -9.2070192353163]} mapZoom={16}  />
+      </div>
   );
 }
 

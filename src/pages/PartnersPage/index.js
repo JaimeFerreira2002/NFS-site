@@ -40,9 +40,7 @@ const Partners = ({ partners = PartnersData }) => {
 
   return (
     <div className='partners-page'>
-    
-      <PageHeader title={t("partners-page.page-title")} subtitle={t("partners-page.page-subtitle")} gradientColor = {'#19a3ff'} height={'20%'}/>
-
+      <PageHeader title={t("partners-page.page-title")} subtitle={t("partners-page.page-subtitle")} gradientColor = {'#19a3ff'} />
       <div className="partner-list-container">
         {Object.keys(partners).map((category) => (
           <div key={category} className="partner-category">

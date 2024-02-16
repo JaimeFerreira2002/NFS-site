@@ -53,17 +53,27 @@
   justify-content: space-between;
   background-color: white;
   color: #fff;
-  padding: 30px 10vw;
+
   gap: 20px;
   /* Adds space between flex items */
   min-height: 50svh;
 }
 
+
+
 @media screen and (max-aspect-ratio: 1/1) {
+
+
   .black-section {
     flex-direction: column;
     /* Stack items vertically */
-    min-height: 90vh;
+    height :auto;
+
+    padding-top: 30px;
+  }
+
+  .team-photo{
+    width: 100svw;
   }
 }
 
@@ -73,21 +83,28 @@
 
 }
 
-.team-photo img {
-  max-width: clamp(100px, 60vw, 500px);
-  /* Adjusts based on the height */
-  height: auto;
-  border-radius: 10px;
 
+@media screen and (min-aspect-ratio: 1/1) {
+
+  
+  .black-section {
+
+    padding: 30px 10svw;
+  }
+
+  .team-photo img {
+    max-width: clamp(100px, 60vw, 500px);
+    /* Adjusts based on the height */
+    height: auto;
+    border-radius: 10px;
+  
+  }
 }
+
 
 
 .title-team {
   text-align: start;
-  font-family: 'AkiraExpanded'; 
-  font-size: 50px; 
-  font-weight: normal; 
-  background-image: linear-gradient(to right, #19a3ff, #ffffff);
   background-size: 130%;
   background-clip: text;
   color: transparent;
@@ -125,10 +142,6 @@
 
 .title-sponsor {
   text-align: end;
-  font-family: 'AkiraExpanded'; 
-  font-size: 50px; 
-  font-weight: normal; 
-  background-image: linear-gradient(to right, #19a3ff, #ffffff);
   background-size: 100%;
   background-clip: text;
   color: transparent;
@@ -168,21 +181,38 @@
 
   .sponsors-section {
     min-height: 90vh;
+
+    padding-top: 30px;
   }
 
 
 
 }
+
 @media screen and (max-aspect-ratio: 1/1) {
   .dark-glass-overlay-sponsor {
     flex-direction: column-reverse;
     min-height: 90vh;
+    padding-top: 30px;
+   
   }
 
-  
+
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  .dark-glass-overlay-sponsor {
+
+    padding-top: 30px 10svw;
+  }
+
+
 }
 
 .dark-glass-overlay-sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
   top: 0;
   left: 0;
@@ -193,7 +223,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 0px 20px 20px 20px;
+  gap: 20px;
   text-align: center;
 
 }
@@ -221,16 +251,17 @@
 
 
 .reach {
-  text-align: center;
-  font-family: "Raleway";
-  font-weight: bold;
-  text-align: right;
+  text-align: start;
+  font-family: 'Raleway';
+  font-weight: normal;
+  background-image: linear-gradient(to right, #19a3ff, #ffffff);
+  background-size: 130%;
+  background-clip: text;
+  color: transparent;
+  padding-top: 1%;
+  padding-bottom: 1%;
   font-size: clamp(1.2rem, 2vw, 3rem);
-  color: #409ED4;
-  padding: 20px;
-  transition: background-color 0.3s ease;
-  /* Add a transition for a smooth effect */
-  transition: transform 0.3s ease;
+
 }
 
 .icon-button-c:hover {
@@ -338,7 +369,7 @@
   /* Darker shade on hover */
 }
 
-.home-garge-button{
+.home-garge-button {
   font-family: "Raleway";
   font-size: clamp(1rem, 2vw, 1.5rem);
   padding: 10px 10px;

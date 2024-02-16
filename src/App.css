@@ -10,6 +10,45 @@ Especific styles
 
 }
 
+h2 {
+  font-family: 'AkiraExpanded';
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-weight: normal;
+  background-image: linear-gradient(to right, #19a3ff, #ffffff);
+  background-size: 130%;
+  background-clip: text;
+  color: transparent;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+h4{
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #1d1d1d;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+}
+
+small{
+  font-family: 'Raleway';
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #1d1d1d;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+
+p {
+  font-family: "Raleway";
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #404040;
+  max-width: 800px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
 
 .content-wrapper {
   flex: 1;

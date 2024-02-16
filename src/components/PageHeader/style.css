@@ -1,6 +1,5 @@
-.page-header-container{  
-    /* height: 20%; */
-    width: 100%;
+.page-header-container{
+    width: 100svw;
     padding: 1%;
     background-color: #1d1d1d;
   } 
@@ -8,7 +7,7 @@
   .page-header-container .page-title {
     text-align: center;
     font-family: 'AkiraExpanded'; 
-    font-size: 70px; 
+    font-size: clamp(2rem, 3vw, 6rem); 
     font-weight: normal; 
     /* background-image: linear-gradient(to right, #19a3ff, #ffffff); */
     background-size: 100%;
@@ -20,19 +19,9 @@
   .page-header-container .page-subtitle {
     text-align: center;
     font-family: 'Raleway'; 
-    font-size: 24px; 
+    font-size:  clamp(1rem, 2vw, 1.4rem); 
     font-weight: normal; 
     color: #ffffff;
   }
   
 
-  /* FOR VERTICAL SCREENS */
-  @media screen and (max-aspect-ratio: 1/1) {
-    .page-header-container .page-title {
-        font-size: 60px; /* Adjust the size for smaller screens */
-    }
-
-    .page-header-container .page-subtitle {
-        font-size: 22px; /* Adjust the size for smaller screens */
-    }
-}
