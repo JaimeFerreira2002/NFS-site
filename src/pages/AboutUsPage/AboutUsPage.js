@@ -23,7 +23,11 @@ import BrigdeCar from '../../assets/images/car_render_bridge.jpg';
 
 
 const AboutUsPage = () => {
-  const { t } = useTranslation();
+
+  const { t, i18n } = useTranslation();
+  // Determine the class based on the current language
+  const containerClass = `team-image-container ${i18n.language}`;
+
   return (
 
     <div className="page-about">
@@ -49,7 +53,7 @@ const AboutUsPage = () => {
           <div> <h2>
             <strong>{t("home.team")}</strong>
           </h2>
-            <div id="teamImageContainer" class="team-image-container"></div>
+            <div id="teamImageContainer" className={containerClass}></div>
           </div>
         </div>
 

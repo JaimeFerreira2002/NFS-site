@@ -31,6 +31,7 @@ const MobileDrawer = ({ isOpen, toggleDrawer }) => {
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     setSelectedLanguage(lang);
+    window.location.reload();
   };
 
   

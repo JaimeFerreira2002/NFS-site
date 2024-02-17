@@ -33,6 +33,7 @@ const TopBar = ({ isScrolled, toggleDrawer }) => { // Accept toggleDrawer as a p
     // window.location.reload(); fix this
     i18n.changeLanguage(lang);
     setSelectedLanguage(lang);
+    window.location.reload();
   };
 
   // Determine if the hamburger should move based on the drawer's state and possibly the viewport width

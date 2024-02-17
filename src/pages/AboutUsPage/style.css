@@ -127,19 +127,36 @@ body {
   background-position: center;
 }
 
-/* For aspect ratios wider than 16:9 */
+/* Default styles for English images */
+.team-image-container.eng {
+  background-image: url('../../assets/images/org_chart_eng.drawio_desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Styles for English images on screens with an aspect ratio less than 1 (more vertical) */
 @media (max-aspect-ratio: 1/1) {
-  .team-image-container {
+  .team-image-container.eng {
     background-image: url('../../assets/images/org_chart_eng.drawio_mobile.png');
   }
 }
 
-/* For aspect ratios narrower than 16:9 */
-@media (min-aspect-ratio: 1/1) {
-  .team-image-container {
-    background-image: url('../../assets/images/org_chart_eng.drawio_desktop.png');
+/* Default styles for Portuguese images */
+.team-image-container.pt {
+  background-image: url('../../assets/images/org_chart_pt.drawio_desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Styles for Portuguese images on screens with an aspect ratio less than 1 (more vertical) */
+@media (max-aspect-ratio: 1/1) {
+  .team-image-container.pt {
+    background-image: url('../../assets/images/org_chart_pt.drawio_mobile.png');
   }
 }
+
 
 
 .events {
