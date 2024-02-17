@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import NFSLogo from '../../assets/images/NFSLogo.png';
 import './style.css';
@@ -16,7 +16,7 @@ const TopBar = ({ isScrolled, toggleDrawer }) => { // Accept toggleDrawer as a p
   const location = useLocation();
   const { t, i18n } = useTranslation();
 
-  const [selectedLanguage, setSelectedLanguage] = useState("pt");
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');
   const isHomePage = location.pathname === '/';
 
   // State to control the drawer's open/close state
@@ -29,10 +29,19 @@ const TopBar = ({ isScrolled, toggleDrawer }) => { // Accept toggleDrawer as a p
   };
 
 
-  const changeLanguage = async (lang) => {
-    // window.location.reload(); fix this
+  useEffect(() => {
+    // Change the application's language to the saved or default language when the component mounts
+    i18n.changeLanguage(selectedLanguage);
+  }, [selectedLanguage, i18n]);
+
+  const changeLanguage = (lang) => {
+    // Change the language in i18next
     i18n.changeLanguage(lang);
+    // Update the selectedLanguage state
     setSelectedLanguage(lang);
+    // Save the user's language preference in localStorage
+    localStorage.setItem('language', lang);
+    // Optionally, reload the page if needed. Note that reloading the page might not be the best user experience.
     window.location.reload();
   };
 
