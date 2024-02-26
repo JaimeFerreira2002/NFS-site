@@ -80,8 +80,14 @@
 
 .team-photo {
   position: relative;
-
+  max-width: 100svw;
 }
+
+.team-photo img{
+
+  max-width: 100svw;
+}
+
 
 
 @media screen and (min-aspect-ratio: 1/1) {
@@ -118,6 +124,16 @@
     width: 90svw;
   }
 
+  .sponsor-text-content{
+
+    flex-direction: column;
+    /* Stack items vertically */
+    height :auto;
+    
+    padding:30px;
+  
+  }
+
 }
 
 .team-content {
@@ -136,6 +152,8 @@
   max-width: 800px;
 
 }
+
+
 
 
 

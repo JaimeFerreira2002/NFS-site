@@ -94,6 +94,7 @@
     flex-direction: column;
 }
 
+
 .contact-form input {
     padding: 10px;
     margin-bottom: 10px;
@@ -176,6 +177,14 @@
     .contact-info-section {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    @media screen and (max-aspect-ratio: 1/1) {
+        .contact-info-section {
+            max-height: 50vh; /* Example max height, adjust based on your design needs */
+            overflow-y: auto; /* Enables vertical scrolling within the contact info section */
+            /* Keep your existing styles */
+        }
     }
 
     .custom-popup {}
