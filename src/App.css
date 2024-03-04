@@ -22,6 +22,17 @@ h2 {
   padding-bottom: 1%;
 }
 
+h3 {
+  font-family: 'Raleway';
+  font-size: clamp(1.2rem, 2vw, 3rem);
+  font-weight: bold;
+  color: #1d1d1d;
+  background-size: 130%;
+  background-clip: text;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
 h4{
   font-family: 'Raleway';
   font-weight: bolder;
