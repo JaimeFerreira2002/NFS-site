@@ -2,7 +2,7 @@
     padding-top: 8vh;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100svw;
     background-color: white;
 
 }
@@ -11,26 +11,16 @@
 
 @media screen and (min-aspect-ratio: 1/1) {
 
+ .contact-info-section{
+    flex-direction: column;
+ }
 
-    .contacts-content {
-        display: flex;
-        flex-direction: row-reverse;
-        max-width: 120svh;
-    }
-
-    .contact-info-section {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-
-
+   
 
 }
 
 .contact-form-section h2 {
+
     color: #19a3ff;
 }
 
@@ -38,7 +28,6 @@
     background-color: #1d1d1d;
     display: flex;
     flex-direction: column;
-
     padding: 30px 10vw;
     gap: 20px;
 }
@@ -48,14 +37,14 @@
     margin-bottom: 10px;
     height: 50px;
     position: relative;
-    width: 100%;
+    width: clamp(300px, 50vw, 500px);
 }
 
 .input-container-msg {
     margin-bottom: 10px;
     height: 100px;
     position: relative;
-    width: 100%;
+    width: clamp(300px, 50vw, 500px);
 }
 
 
@@ -92,7 +81,7 @@
     height: 50px;
     margin-top: 10px;
     text-align: center;
-    width: 100%;
+    width: clamp(300px, 50vw, 500px);
 }
 
 .submit:active {

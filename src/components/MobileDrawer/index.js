@@ -6,37 +6,20 @@ import { useTranslation } from 'react-i18next';
 import IconButton from '../IconButton';
 import PT_FLAG from '../../assets/images/pt_flag.png';
 import EN_FLAG from '../../assets/images/en_flag.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-
-
-
 
 const MobileDrawer = ({ isOpen, toggleDrawer }) => {
-
-
   const location = useLocation();
   const { t, i18n } = useTranslation();
 
-  const [selectedLanguage, setSelectedLanguage] = useState("pt");
-  const isHomePage = location.pathname === '/';
-
-  // State to control the drawer's open/close state
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-
-
+  // Retrieve the language preference from localStorage or default to 'pt'
+  const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || "pt");
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     setSelectedLanguage(lang);
-    window.location.reload();
+    localStorage.setItem('language', lang); // Save the user's language preference in localStorage
+    window.location.reload(); // Reload the page to apply the language change
   };
-
-  
-
-
 
   return (
     <>
@@ -58,18 +41,10 @@ const MobileDrawer = ({ isOpen, toggleDrawer }) => {
             <li className={location.pathname === '/partners' ? 'active' : ''}>
               <Link to="/partners">{t('topbar.partnerships')}</Link>
             </li>
-            {/* <li className={location.pathname === '/articles' ? 'active' : ''}>
-          <Link to="/articles">{t('topbar.articles')}</Link>
-        </li> */}
-            {/* <li className={location.pathname === '/recruitment' ? 'active' : ''}>
-          <Link to="/recruitment">{t('topbar.recruitment')}</Link>
-        </li> */}
             <li className={location.pathname === '/contacts' ? 'active' : ''}>
               <Link to="/contacts">{t('topbar.contacts')}</Link>
             </li>
-
           </ul>
-
         </nav>
         <div className='drawerEnd'>
           <div className="language-buttons-drawer">
@@ -81,16 +56,11 @@ const MobileDrawer = ({ isOpen, toggleDrawer }) => {
               <img src={NFSLogo} alt="NFS_LOGO" />
             </Link>
           </div>
-
         </div>
       </div>
-
       {isOpen && <div className="drawer-overlay" onClick={toggleDrawer}></div>}
     </>
   );
 };
 
 export default MobileDrawer;
-
-
-
