@@ -61,6 +61,27 @@ p {
   padding-bottom: 1%;
 }
 
+/* When the height is less than 800px */
+@media screen and (max-height: 800px) {
+  h3, p {
+      font-size: 0.9rem; /* Adjust the font size as needed */
+  }
+}
+
+/* When the height is less than 600px */
+@media screen and (max-height: 600px) {
+ h3, p {
+      font-size: 0.8rem; /* Further adjust the font size as needed */
+  }
+}
+
+/* When the height is less than 400px */
+@media screen and (max-height: 400px) {
+  h3, p {
+      font-size: 0.7rem; /* Further adjust the font size as needed */
+  }
+}
+
 .content-wrapper {
   flex: 1;
   display: flex;

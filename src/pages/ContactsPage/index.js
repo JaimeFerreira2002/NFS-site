@@ -89,26 +89,36 @@ const ContactsPage = () => {
 
           </div>
           <div className='contact-form-section'>
-            <h2 className="form-title">{t('contacts-page.form-title')}</h2>
+            <div className="form-title-container">
+              <h2 className="form-title">{t('contacts-page.form-title')}</h2>
+            </div>
             <div className='centered'>
               {feedbackMessage && (<div style={{ color: feedbackMessageType === 'success' ? 'green' : 'red' }}>
                 {feedbackMessage}
               </div>)}
-              <form className='contact-form' ref={form} onSubmit={sendEmail}>
-                <div className='input-container'>
-                  <input className='input' type='text' placeholder={t('contacts-page.form-subject')} />
-                  <div class="cut"></div>
+              <div className='forms-container'>
+                <form className='contact-form' ref={form} onSubmit={sendEmail}>
+                  <div className='input-container'>
+                    <input className='input' type='text' placeholder={t('contacts-page.form-subject')} />
+                    <div class="cut"></div>
 
-                </div>
-                <div className='input-container'><input className='input' type='email' onChange={(e) => setSubject(e.target.value)} placeholder={t('contacts-page.form-email')} />
-                </div>
-                <div className='input-container-msg'><textarea className='input' onChange={(e) => setEmail(e.target.value)} placeholder={t('contacts-page.form-message')}></textarea>
-                </div>
-                <button className='submit' type='submit'>{t('contacts-page.form-send')} </button>
-              </form>
+                  </div>
+                  <div className='input-container'><input className='input' type='email' onChange={(e) => setSubject(e.target.value)} placeholder={t('contacts-page.form-email')} />
+                  </div>
+                  <div className='input-container-msg'><textarea className='input' onChange={(e) => setEmail(e.target.value)} placeholder={t('contacts-page.form-message')}></textarea>
+                    <button className='submit' type='submit'>{t('contacts-page.form-send')} </button>
+
+                  </div>
+
+                </form></div>
+
+            </div>
+            <div className='touch'>
+              <p>{t('contacts-page.touch-msg')}</p>
             </div>
 
           </div>
+
         </div>
       </div>
 

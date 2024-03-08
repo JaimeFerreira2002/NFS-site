@@ -118,7 +118,8 @@
         "team-hq": "Address",
         "team-sm": "Social Media",
         "fill-all-fields": "Fill the form below to contact us",
-        "send-success": "Message sent successfully"
+        "send-success": "Message sent successfully",
+        "touch-msg": "We will get in touch with you as soon as possible!"
     },
     "team-page": {
         "title": "Meet the NFS Team!",
