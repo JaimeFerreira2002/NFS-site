@@ -10,6 +10,9 @@ const MapComponent = ({ mapCenter, mapZoom }) => {
     if (mapRef.current && !mapRef.current._leaflet_id) {
       const map = L.map(mapRef.current, {
         scrollWheelZoom: false,
+
+        TouchZoom: false,
+
         center: mapCenter,
         zoom: mapZoom
       });
@@ -31,7 +34,7 @@ const MapComponent = ({ mapCenter, mapZoom }) => {
     }
   }, [mapCenter, mapZoom]); // Dependencies array ensures effect runs only if these values change
 
-  return <div id="map" ref={mapRef} style={{ height: '50vh'}}></div>;
+  return <div id="map" ref={mapRef} style={{ height: '50vh' }}></div>;
 };
 
 export default MapComponent;

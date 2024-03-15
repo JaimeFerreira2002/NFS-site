@@ -46,11 +46,15 @@ const ContactsPage = () => {
       const data = await response.json();
       console.log(data);
       alert('Email sent successfully!');
+
     } catch (error) {
       console.error('Error sending email:', error);
       alert('Failed to send email.');
     }
   };
+
+ 
+    
 
 
 

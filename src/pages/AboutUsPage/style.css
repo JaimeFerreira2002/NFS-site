@@ -110,7 +110,7 @@ body {
 }
 
 .team-section-about {
-  background-color: #1d1d1d;
+  background-color: #ffffff;
  
   flex-direction: column;
   align-items: center;
@@ -129,7 +129,7 @@ body {
 
 /* Default styles for English images */
 .team-image-container.eng {
-  background-image: url('../../assets/images/org_chart_eng.drawio_desktop.png');
+  background-image: url('../../assets/images/org_chart_en.drawio_desktop.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -139,7 +139,7 @@ body {
 /* Styles for English images on screens with an aspect ratio less than 1 (more vertical) */
 @media (max-aspect-ratio: 1/1) {
   .team-image-container.eng {
-    background-image: url('../../assets/images/org_chart_eng.drawio_mobile.png');
+    background-image: url('../../assets/images/org_chart_en.drawio_mobile.png');
     z-index: 10;
   }
 }
