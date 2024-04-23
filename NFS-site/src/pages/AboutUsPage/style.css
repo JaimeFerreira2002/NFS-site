@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+.page-about {
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  min-height: 100svh;
+}
+
+
+.first-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url('../../assets/images/fsdragon_photos/image_2.jpg');
+  background-size: cover;
+  background-position: center 60%;
+  flex-direction: column;
+  align-items: start;
+  gap: 3%;
+  z-index: 1;
+}
+
+.first-section-image-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(to right, #1d1d1d, rgba(0, 0, 0, 0));
+  z-index: 2;
+}
+
+.first-section h2 {
+  z-index: 2;
+  color: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+
+}
+
+.first-section p{
+  z-index: 2;
+  color: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+  .first-section {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 10vw;
+    padding-top: 30px;
+  }
+
+  .first-section-image-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #1d1d1d, rgba(0, 0, 0, 0));
+    z-index: 2;
+  }
+ 
+}
+
+.how-it-works {
+  display: flex;
+  background-color: #1d1d1d;
+  background-size: cover;
+  background-position: center 40%; /* Adjust the percentage as needed */
+  flex-direction: row-reverse;
+  align-items: end;
+  padding: 5% 10vw;
+  gap: 20px;
+}
+
+
+.how-it-works h2 {
+  text-align: right;
+  color: white;
+}
+
+.how-it-works p {
+  text-align: end;
+  color: white
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+  .how-it-works {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10vw;
+  }
+
+  .how-it-works h2 {
+    text-align: left;
+  }
+
+  .how-it-works p {
+    text-align: left;
+  }
+
+}
+
+.team-section-about {
+  background-color: #1d1d1d;
+ 
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10vw;
+  gap: 20px;
+
+}
+
+.team-image-container {
+  width: auto;
+  height: clamp(50vh, 40vw, 80vh);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Default styles for English images */
+.team-image-container.eng {
+  background-image: url('../../assets/images/org_chart_eng.drawio_desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+/* Styles for English images on screens with an aspect ratio less than 1 (more vertical) */
+@media (max-aspect-ratio: 1/1) {
+  .team-image-container.eng {
+    background-image: url('../../assets/images/org_chart_eng.drawio_mobile.png');
+    z-index: 10;
+  }
+}
+
+/* Default styles for Portuguese images */
+.team-image-container.pt {
+  background-image: url('../../assets/images/org_chart_pt.drawio_desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+/* Styles for Portuguese images on screens with an aspect ratio less than 1 (more vertical) */
+@media (max-aspect-ratio: 1/1) {
+  .team-image-container.pt {
+    background-image: url('../../assets/images/org_chart_pt.drawio_mobile.png');
+    z-index: 10;
+  }
+}
+
+
+
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 30px 10vw;
+  gap: 20px;
+
+}
+
+.events h2 {
+  text-align: left;
+  color: #286196;
+}
+
+
+
+.p-organizationchart-lines {
+  color: black;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:hover {
+  z-index: 0;
+}
+
+.accordion-button:focus {
+  background-color: white;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  border-color: white;
+}

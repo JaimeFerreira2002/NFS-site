@@ -1,0 +1,113 @@
+/*
+Especific styles
+*/
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  width: 100svw;
+  background-color: white;
+
+}
+
+h2 {
+  font-family: 'Horizon';
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-weight: normal;
+  background-image: linear-gradient(to right, #19a3ff, #ffffff);
+  background-size: 150%;
+  background-clip: text;
+  color: transparent;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+h3 {
+  font-family: 'Raleway';
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: bold;
+  
+  color: #1d1d1d;
+  background-size: 130%;
+  background-clip: text;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+h4{
+  font-family: 'Raleway';
+  font-weight: bolder;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #1d1d1d;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+}
+
+small{
+  font-family: 'Raleway';
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #1d1d1d;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+
+p {
+  font-family: "Raleway";
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #404040;
+  max-width: 800px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/* When the height is less than 800px */
+@media screen and (max-height: 800px) {
+  h3, p {
+      font-size: 0.9rem; /* Adjust the font size as needed */
+  }
+}
+
+/* When the height is less than 600px */
+@media screen and (max-height: 600px) {
+ h3, p {
+      font-size: 0.8rem; /* Further adjust the font size as needed */
+  }
+}
+
+/* When the height is less than 400px */
+@media screen and (max-height: 400px) {
+  h3, p {
+      font-size: 0.7rem; /* Further adjust the font size as needed */
+  }
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 100svw;
+  min-height: 100svh;
+}
+
+/* Add these styles to App.css or a relevant CSS file */
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 600ms, transform 600ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+

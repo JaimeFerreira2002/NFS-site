@@ -1,0 +1,45 @@
+.title-container{
+    display: flex;
+    flex-direction: row;
+    /* flex: 1; flex 1 means it will share the space equally */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /*TEXT COLOR*/
+    background-image: linear-gradient(to right, #0099ff, #ffffff);
+    background-size: 100%;
+    background-clip: text;
+    color: transparent;
+    max-width: 100svw;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.title-text{
+  font-family: 'Raleway';
+  font-weight: normal; 
+}
+
+.divisor-left {
+    flex: 1;
+    height: 4px;
+    background: linear-gradient(to left, #5abdff, #ffffff); 
+    margin: 0 3%; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+  }
+
+  .divisor-right {
+    flex: 1;
+    height: 4px;
+    background: linear-gradient(to right, #5abdff, #ffffff); 
+    margin: 0 3%; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+  }

@@ -1,0 +1,151 @@
+
+.fsfsenix-page{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    height: 800vh; /* apagar isto*/
+    width: 100%;   
+}
+
+.dragon-grey-block-header{
+    height: 2.2%;
+    background-color: #1d1d1d;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.dragon-background-image-container{
+  position: relative;
+  height: 15%;
+  background-image: url('../../assets/images/fsdragon_photos/image_2.jpg');
+  background-position: center top; 
+  background-size: cover;
+  margin-top: -300px; /* Adjusted margin to move the container up */
+  z-index: 0;
+
+}
+
+/* .background-image-gradient-overlay{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    top:10px;
+    background: linear-gradient(to bottom, #1d1d1d, rgba(0, 0, 0, 0)); 
+    z-index: 1;
+   
+} */
+
+
+.dragon-page-title {
+    text-align: center;
+    font-family: 'AkiraExpanded'; 
+    font-size: 70px; 
+    font-weight: normal; 
+    background-size: 90%;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    z-index: 1;
+
+}
+  
+.dragon-page-subtitle {
+    text-align: center;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 24px; 
+    margin-bottom: 5%;
+    color: #ffffff;
+    z-index: 1;
+ 
+}
+
+
+/*//////////////SPECS AND MODEL///////////////*/
+
+.dragon-section-title{
+    text-align: center;
+    font-family: 'AkiraExpanded'; 
+    font-size: 2.6em; 
+    font-weight: normal; 
+    background-image: linear-gradient(to right, #19ff38, #ffffff);
+    background-size: 100%;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1%;
+
+}
+
+
+.dragon-model_and_specs-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    justify-content: space-around;
+}
+
+.dragon-specs-and-model{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.dragon-specs{
+    display: flex;
+}
+@media only screen and (max-width: 768px) {
+    .dragon-specs {
+      flex-wrap: wrap;
+    }
+  }
+
+.dragon-specs-section {
+    flex: 1 1 calc(33.33% - 20px); /* Divide the container into three equal parts, considering the gap */
+    max-width: calc(33.33% - 20px); /* Set a maximum width to prevent overflow */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    min-width: 400px; /* is this good?*/
+  }
+
+.dragon-fsfenix-3d-model{
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Set your desired shadow properties */
+    border-radius: 40px;
+    height: 60vh;
+}
+
+
+/* //////////////GALLERY///////////////// */
+
+.dragon-gallery-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    justify-content: space-around;
+}
+
+
+/*///////////////TEAM/////////////////////*/
+
+
+.dragon-team-container{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    justify-content: space-around;
+}
+
+.dragon-department-title{
+    font-family: 'AkiraExpanded';
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+.dragon-team-members {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+  }

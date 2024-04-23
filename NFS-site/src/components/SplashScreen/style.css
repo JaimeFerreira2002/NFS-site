@@ -1,0 +1,25 @@
+.splash-screen {
+  position: fixed;
+  width: 100svw;
+  height: 100svh;
+  background: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  flex-direction: column;
+}
+
+.splash-screen.hidden {
+  display: none;
+  width: 100svw;
+}
+
+.logo-splash {
+  position: absolute;
+  padding: 30px;
+  max-width: 250px;
+  height: auto;
+  /* Apply drop-shadow filter for glow effect */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); /* Adjust color and size as needed */
+}

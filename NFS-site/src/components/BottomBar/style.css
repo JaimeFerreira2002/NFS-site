@@ -1,0 +1,205 @@
+.bottom-bar {
+  background-color: #1d1d1d;
+  min-height: 15vh;
+  width: 100svw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.left-section {
+  width: 10px;
+  display: flex;
+  align-items: start;
+  height: auto;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.logo-bb img {
+  width: 10%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 10%;
+}
+
+.social-icons-bb {
+  padding: 8%;
+  display: flex;
+  flex-direction: row; /* Stack social icons vertically */
+  align-items: flex-start; /* Align social icons to the right (next to the logo) */
+}
+
+.social-icon-bb {
+  padding: 10px;
+}
+
+.social-icons-bb img {
+  width: 40px; /* Adjust the width to your desired size */
+  height: 40px; /* Adjust the height to your desired size */
+  margin-bottom: 10px; /* Add some space between icons */
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Allows it to take up any available space */
+}
+
+.navigation-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px; /* Space between links */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.form-newsletter {
+  padding: 50px;
+  display: flex;
+}
+
+.form-newsletter input {
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  /* Remove borders */
+  border-bottom: 1px solid #ccc;
+  /* Only show a bottom border */
+  border-radius: 0;
+  /* Remove border-radius */
+  background-color: transparent;
+  /* Make the background transparent */
+  width: 100%;
+  /* Full width to match the container */
+}
+
+.form-newsletter textarea {
+  padding: 10px;
+  border: none;
+  /* Remove borders */
+  border-bottom: 1px solid #ccc;
+  /* Only show a bottom border */
+  background-color: transparent;
+  /* Make the background transparent */
+  /* Keep other styles as they are */
+}
+
+.form-newsletter button {
+  width: 200px;
+  /* Specific width */
+  padding: 10px 10px;
+  /* Adjusted padding */
+  border: 1px solid transparent;
+  /* Transparent border by default */
+  border-radius: 5px;
+  /* Rounded corners */
+  background-color: transparent;
+  /* Transparent background */
+  color: #4496ed;
+  /* Text color */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.form-newsletter button:hover {
+  padding: 10px 10px;
+  /* Adjusted padding */
+
+  color: #286196;
+  /* Text color change on hover */
+}
+
+.form-newsletter.sent {
+  padding: 50px;
+  padding: 10px 10px;
+  /* Adjusted padding */
+  border: 1px solid transparent;
+  /* Transparent border by default */
+  border-radius: 5px;
+  /* Rounded corners */
+  border: 2px solid green;
+  /* Green outline for the form */
+  padding: 8px;
+  /* Adjust padding to accommodate the border */
+}
+
+.logo-bb img {
+  width: auto;
+  height: 40px;
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.confirmation-message {
+  position: absolute;
+
+  /* Adjusted padding */
+  border: 1px solid transparent;
+  /* Transparent border by default */
+  color: green;
+  /* Green text for the confirmation message */
+  margin-top: 10px;
+  /* Space above the confirmation message */
+}
+
+/* Media query for aspect ratio wider than 1/1 */
+@media screen and (max-aspect-ratio: 1/1) {
+  .bottom-bar {
+    min-height: 25vh; /* Increased height */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    padding: 20px 0; /* Add padding at the top and bottom */
+  }
+
+  .left-section,
+  .right-section {
+    justify-content: center; /* Center content for left and right sections */
+    width: 100%; /* Full width */
+  }
+
+  .navigation-links {
+    position: absolute;
+    right: 5%;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links */
+    margin: 2vh px 0; /* Add margin above and below for spacing */
+  }
+
+  .navigation-links a {
+    margin: 1vh 0; /* Space between links when stacked */
+  }
+
+  .form-newsletter,
+  .form-newsletter.sent {
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center form elements */
+    width: 100%; /* Full width */
+  }
+
+  .form-newsletter button {
+    width: auto; /* Auto width to fit content */
+    margin-top: 10px; /* Space above the button */
+  }
+
+  .confirmation-message {
+    top: 100%; /* Position below the form */
+    left: 50%; /* Start from the middle */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+  }
+}
