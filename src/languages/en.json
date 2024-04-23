@@ -10,19 +10,22 @@
         "subscribe": "Subscribe",
         "email-newsletter": "Subscribe to our newsletter"
     },
+
     "garage-page": {
         "page-title": "Garage",
         "page-subtitle": "Discover our cars",
         "fenix-description": "Our first car",
         "button-text": "Learn more"
     },
+
     "partners-page": {
         "page-title": "Partners",
-        "page-subtitle": "Nova Formual Student official partners"
+        "page-subtitle": "Nova Formula Student official partners"
     },
-    "fsfenix-page": {
+
+    "fsfenix-evo-page": {
         "page-title": "FS FENIX",
-        "page-subtitle": "The FS FENIX represents our first realized effort to build a Formula Student car",
+        "page-subtitle": "The FS FENIX EVO represents the rebirth from the ashes for the NOVA Formula Student",
         "specs-title": "Technical Specifications",
         "team-title": "The Team",
         "technical-specs": {
@@ -84,6 +87,25 @@
                 "cl.d-value": "1.106"
             }
         },
+
+        "competitions" : {
+            "title" : "Competitions",
+            "subtitle" : "The FS FENIX EVO is going to compete in the Formula Student Austria & Formula Student Portugal events!",
+            "fspt" : {
+                "title" : "FORMULA STUDENT PORTUGAL",
+                "date" : "3 to 7 of September 2024",
+                "location" : "Castelo Branco Kart Track",
+                "class" : "Class 1"
+            },
+            "fsa" : {
+                "title" : "FORMULA STUDENT AUSTRIA",
+                "date" : "21 to 25 of July 2024",
+                "location" : "RedBull Ring",
+                "class" : "Class 1"
+            }
+
+        },
+        
         "teams-names": {
             "board": "Board",
             "aerodynamics": "Aerodynamics",
@@ -95,11 +117,114 @@
             "marketing": "Marketing",
             "corporate-relations": "Corporate Relations",
             "logistics": "Logistics",
-            "finances": "Finances"
+            "finances": "Finance"
         },
         "roles": {
             "team-leader": "Team Leader",
             "technical-director": "Technical Director",
+            "team-leader&project-manager": "Team Leader & Project Manager",
+            "technical-director&team-leader" : "Technical Director & Team Leader",
+            "bsd": "Business & Strategy Director",
+            "dep-leader": "Department Leader",
+            "member": "Member"
+        }
+    },
+
+    "fsfenix-page": {
+        "page-title": "FS FENIX",
+        "page-subtitle": "The FS FENIX EVO represents the rebirth from the ashes for the NOVA Formula Student",
+        "specs-title": "Technical Specifications",
+        "team-title": "The Team",
+        "technical-specs": {
+            "general": {
+                "title": "General",
+                "weight": "Weight",
+                "weight-value": "280 Kg",
+                "wheel-base": "Wheelbase",
+                "wheel-base-value": "1525 mm",
+                "width": "Track",
+                "width-value": "1346 mm",
+                "height-cg": "Height",
+                "height-cg-value": "250 mm",
+                "0-100": "0-100 km/h",
+                "0-100-value": "3.9 s",
+                "top-speed": "Top Speed",
+                "top-speed-value": "170 Km/h"
+            },
+            "powertrain": {
+                "title": "Powertrain",
+                "engine": "Engine",
+                "engine-value": "Yamaha MT-07 CP2",
+                "power": "Power",
+                "power-value": "67 BHP",
+                "max-rpm": "Max RPM",
+                "max-rpm-value": "9000",
+                "volume": "Volume",
+                "volume-value": "698 cc",
+                "ecu": "ECU",
+                "ecu-value": "Splitronics Mercury 3",
+                "quick-shifter": "Quick Shifter",
+                "quick-shifter-value": "KLIKTRONIC"
+            },
+            "steering&suspension": {
+                "title": "Steering & Suspension",
+                "type": "Type",
+                "type-value": "Double Wishbone with pushrod",
+                "tyres": "Tyres",
+                "tyres-value": "Hoosier 205/407 R13 FSAE",
+                "breaking": "Breaking",
+                "breaking-value": "AP Racing, opposite pistons with 25.4 mm diameter (4 in the front, 2 in the rear)",
+                "suspension": "Suspension",
+                "suspension-value": "FOX Van R"
+            },
+            "chassis": {
+                "title": "Chassis",
+                "structure": "Structure",
+                "structure-value": "Steel tube BS4-T45",
+                "weight": "Weight",
+                "weight-value": "38 Kg",
+                "impact-structure": "Impact Structure",
+                "impact-structure-value": "High Density Foam"
+            },
+            "aero": {
+                "title": "Aerodynamics",
+                "cd.a": "CD.A",
+                "cd.a-value": "1.553",
+                "cl.d": "CL.D",
+                "cl.d-value": "1.106"
+            }
+        },
+
+        "competitions" : {
+            "title" : "Competitions",
+            "subtitle" : "The FS FENIX competed in the Formula Student Portugal event!",
+            "fspt" : {
+                "title" : "FORMULA STUDENT PORTUGAL",
+                "position" : "Placed 4th ",
+                "date" : "3 to 7 of September 2024",
+                "location" : "Castelo Branco Kart Track"
+            }
+
+        },
+        
+        "teams-names": {
+            "board": "Board",
+            "aerodynamics": "Aerodynamics",
+            "chassis&suspension": "Chassis & Suspension",
+            "vehicle-dynamics": "Vehicle Dynamics",
+            "steering&ergonomics": "Steering & Ergonomics",
+            "electronics": "Electronics",
+            "powertrain": "Powertrain",
+            "marketing": "Marketing",
+            "corporate-relations": "Corporate Relations",
+            "logistics": "Logistics",
+            "finances": "Finance"
+        },
+        "roles": {
+            "team-leader": "Team Leader",
+            "technical-director": "Technical Director",
+            "team-leader&project-manager": "Team Leader & Project Manager",
+            "technical-director&team-leader" : "Technical Director & Team Leader",
             "bsd": "Business & Strategy Director",
             "dep-leader": "Department Leader",
             "member": "Member"
@@ -114,7 +239,7 @@
         "form-send": "Send",
         "form-title": "Contact us",
         "team-email": "Email",
-        "cr-email": "CR Email",
+        "cr-email": "Corporate Email",
         "team-hq": "Address",
         "team-sm": "Social Media",
         "fill-all-fields": "Fill the form below to contact us",
@@ -123,7 +248,7 @@
     },
     "team-page": {
         "title": "Meet the NFS Team!",
-        "description": "Our team is made up by student from a wide range of areas of study and from various NOVA Faculties.We are structured in major departments: Board, Technical and Bussiness & Strategy.",
+        "description": "Our team is made up by students from a wide range of areas of study and from various NOVA Faculties.We are structured in major departments: Board, Technical and Bussiness & Strategy.",
         "headers": {
             "board_header": "Board",
             "management_header": "Management"
@@ -135,7 +260,7 @@
             "MKT": "Marketing",
             "CR": "Corporate Relations",
             "LG": "Logistics",
-            "FIN": "Finances",
+            "FIN": "Finance",
             "PWT": "Powertrain",
             "ELE": "Electronics",
             "AERO": "Aerodynamics",
@@ -149,17 +274,22 @@
             "computer_engineering": "Computer Engeneering"
         }
     },
+
+
+
+
+
     "home": {
         "who_r_we": "WHO WE ARE",
         "fs_team": "We are the Formula Student team from Universidade Nova de Lisboa.",
         "description": "Located on the Campus of the Faculty of Sciences and Technology of the Universidade NOVA de Lisboa, NOVA Formula Student, NFS, is a team of young engineers united with a single goal: To design, manufacture, and optimize a Formula-style car to participate in Formula Student competitions both nationally and internationally.",
-        "team": "Team",
+        "team": "The Team",
         "team_desc1": "Formula Student FCT, FSFCT, was founded in 2015 by students from NOVA FCT, who created the team's first project, the FSDRAGON. This prototype took them to their first competition in 2018, at Formula Student Spain.",
-        "team_desc2": "In 2022, after some time of inactivity due to the pandemic, a new group of students from NOVA FCT revived FSFCT. The team took on a new identity, NOVA Formula Student, reclaimed the workspace, and created the FSFENIX project.",
+        "team_desc2": "In 2022, after some time of inactivity due to the pandemic, a new group of students from NOVA FCT revived FSFCT. The team took on a new identity, NOVA Formula Student, rehabilitated the workspace, and created the FSFENIX project.",
         "team_desc3": "Currently, the team has about 50 members: students from NOVA FCT, focused both on the engineering and technical part of the project as well as on the strategic aspect, and students from other faculties of Universidade NOVA, such as NOVA IMS and NOVA FCSH, who focus on strategy, business, and the team's image.",
         "sponsor_title": "Sponsors",
         "sponsor_title_2": "Become Our Partner in Automotive Innovation!",
-        "sponsor_text": "Become a sponsor of our team, having the opportunity to associate with an innovative and educational project.\n\r\nIncreasing the visibility of your brand at events, social media, and promotional materials.\n\r\nJoin us on this journey of technical excellence and commitment to innovation.\n\r\nSupport the next generation of leaders and innovators.",
+        "sponsor_text": "Become a sponsor of our team, having the opportunity to associate with an innovative and educational project.\n\r\nIncrease the visibility of your brand at events, social media, and promotional materials.\n\r\nJoin us on this journey of technical excellence and commitment to innovation.\n\r\nSupport the next generation of leaders and innovators.",
         "reach_us": "Contact Us"
     },
     "about-page": {

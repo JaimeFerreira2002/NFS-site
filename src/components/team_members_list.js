@@ -5,8 +5,9 @@ const TeamListData = [
   {
     title: 'board',
     members: [
-      { name: 'Ricardo Cutileiro', role: 'team-leader', imageSrc: require('../assets/images/members_photos/board/cutileiro.jpg') },
-      { name: 'João Balbino', role: 'technical-director', imageSrc: require('../assets/images/members_photos/board/balbino.jpg') },
+      { name: 'Ricardo Cutileiro', role: 'team-leader&project-manager', imageSrc: require('../assets/images/members_photos/board/cutileiro.jpg') },
+      { name: 'João Balbino', role: 'technical-director&team-leader', imageSrc: require('../assets/images/members_photos/board/balbino.jpg') },
+      { name: 'Miguel Pereira', role: 'technical-director', imageSrc: placeholder },
       { name: 'Sergiu Nica', role: 'bsd', imageSrc: require('../assets/images/members_photos/board/sergiu.jpg') },
     ],
   },
@@ -30,7 +31,6 @@ const TeamListData = [
       { name: 'Miguel Pereira', role: 'dep-leader', imageSrc: placeholder },
       { name: 'Mariana Inácio', role: 'member', imageSrc: placeholder },
       { name: 'Rafael Jordão', role: 'member', imageSrc: placeholder },
-      { name: 'Diogo Fortes', role: 'member', imageSrc: placeholder },
       { name: 'João Rodrigues', role: 'member', imageSrc: placeholder },
     ],
   },
@@ -51,6 +51,7 @@ const TeamListData = [
       { name: 'Pedro Marques', role: 'member', imageSrc: placeholder },
       { name: 'Vasco Louro', role: 'member', imageSrc: require('../assets/images/members_photos/steering_and_ergonomics/vasco_louro.jpg') },
       { name: 'Beatriz Moniz', role: 'member', imageSrc: placeholder },
+      { name: 'Guilherme Santiago', role: 'member', imageSrc: placeholder },
       { name: 'Gonçalo Coelho', role: 'member', imageSrc: require('../assets/images/members_photos/steering_and_ergonomics/goncalo_coelho.jpg') },
 
     
@@ -64,9 +65,7 @@ const TeamListData = [
       { name: 'Miguel Caldeirinha', role: 'member', imageSrc: placeholder },
       { name: 'Tiago Mega', role: 'member', imageSrc: placeholder },
       { name: 'Inês Monteiro', role: 'member', imageSrc: require('../assets/images/members_photos/electronics/ines_monteiro.jpg') },
-      { name: 'João Cruz', role: 'member', imageSrc: require('../assets/images/members_photos/electronics/joao_cruz.jpg') },
       { name: 'Rodrigo Mendão', role: 'member', imageSrc: placeholder },
-      { name: 'Roberto Teixeira', role: 'member', imageSrc: require('../assets/images/members_photos/electronics/roberto_teixeira.jpg') },
       { name: 'David Amaral', role: 'member', imageSrc: require('../assets/images/members_photos/electronics/david_amaral.jpg') },
     ],
   },
@@ -78,10 +77,10 @@ const TeamListData = [
       { name: 'Lourenço Vaz Tomé', role: 'member', imageSrc: placeholder },
       { name: 'João Vau', role: 'member', imageSrc: placeholder },
       { name: 'João Castro', role: 'member', imageSrc: placeholder },
-      { name: 'Henrique Ferreira', role: 'member', imageSrc: placeholder },
       { name: 'Gustavo Guido', role: 'member', imageSrc: placeholder },
       { name: 'João Cabral', role: 'member', imageSrc: placeholder },
       { name: 'Ricardo Cascais', role: 'member', imageSrc: placeholder },
+      { name: 'Carmo Cadilha', role: 'member', imageSrc: placeholder },
       { name: 'Bernardo Henriques', role: 'member', imageSrc: require('../assets/images/members_photos/powertrain/bernardo_henriques.jpg') },
     ],
   },
@@ -97,7 +96,8 @@ const TeamListData = [
       { name: 'Rita Mendes', role: 'member', imageSrc: placeholder },
       { name: 'Diogo Gouveia', role: 'member', imageSrc: require('../assets/images/members_photos/marketing/diogo_gouveia.jpg') },
       { name: 'Pedro Matos', role: 'member', imageSrc: placeholder },
-      { name: 'Tomás Prata', role: 'member', imageSrc: require('../assets/images/members_photos/marketing/tomas_prata.jpg') },
+      { name: 'Tomás Pratas', role: 'member', imageSrc: require('../assets/images/members_photos/marketing/tomas_prata.jpg') },
+      { name: 'Leonor Ribeiro', role: 'member', imageSrc: placeholder },
     ],
   },
     
@@ -108,14 +108,14 @@ const TeamListData = [
       { name: 'Francisco Jorge', role: 'member', imageSrc: require('../assets/images/members_photos/cr/francisco_jorge.jpg') },
       { name: 'Rafael Rato', role: 'member', imageSrc: placeholder },
       { name: 'Laura Galvão', role: 'member', imageSrc: require('../assets/images/members_photos/cr/laura_galvao.jpg') },
-      { name: 'Leonor Ribeiro', role: 'member', imageSrc: placeholder },
     ],
   },
     
   {
     title: 'logistics',
     members: [
-      { name: 'Diogo Algarvio', role: 'dep-leader', imageSrc: placeholder },
+      { name: 'Carolina Costa' , role: 'dep-leader' , imageSrc: require('../assets/images/members_photos/finances/carolina_costa.jpg'),},             
+      { name: 'Diogo Algarvio', role: 'member', imageSrc: placeholder },
       { name: 'Mariana Ribeiro', role: 'member', imageSrc: placeholder },
       { name: 'Inês Marques', role: 'member', imageSrc: placeholder },
     ],

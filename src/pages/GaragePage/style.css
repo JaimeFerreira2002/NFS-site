@@ -5,27 +5,35 @@
   width: 100%;
   background-color: white;
   min-height: 100svh;
+  align-items: center;
 }
-
 
 
 .car-name {
   padding-top: 1%;
   color: #242424;
-  font-size: 45px;
-  font-family: 'AkiraExpanded';
+  font-size: 4em;
+  font-family: 'Horizon';
   text-align: center;
   width: 100%;
   z-index: 1;
+  transition: opacity 0.3s ease-in-out; /* Example transition for opacity */
 }
 
 
+@media (max-aspect-ratio: 1/1){
+  .car-name{
+    padding-top: 5%;
+    font-size: 2.6em;
+  }
+}
 
+
+/*///////////SLIDER///////////////*/
 
 .cars-image-slider {
-  width: 80%;
-  height: 70%;
-  /* Adjust the height based on your images */
+  width: 60%;
+  height: 50%;
   display: flex;
   overflow: hidden;
 }
@@ -35,67 +43,86 @@
   align-items: start;
 }
 
+.car-image-container{
+  display: flex;
+  justify-content: center;
+}
 
 .car-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
+  object-fit: contain;
   overflow: hidden;
   transition: filter 0.3s ease;
 }
 
 .car-image img {
-  width: 80%;
+  width: 100%;
   align-self: center;
   justify-content: center;
-  margin: 0 auto;
   position: relative;
   overflow: hidden;
   transition: filter 0.3s ease;
+  align-self: center;
   /* Add transition for the image as well */
 
 }
 
-.hovered {
-  filter: brightness(100%);
+@media (max-aspect-ratio: 1/1){
+  .cars-image-slider{
+    width: 95%;
+    padding-top: 6%;
+  }
+
+  
 }
+
+
+/*//////BUTTON /////*/
+
 
 .button-container {
   display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   justify-content: center;
   width: 80%;
-
 }
 
+
 .car-button {
-  width: 22%;
+  width: 35%;
   text-align: center;
-  background-color: #1a1a1a;
-  color: #ffffff;
-  font-family: 'AkiraExpanded';
+  background-color: #ffffff;
+  color: #272727;
+  font-family: 'Horizon';
   padding: 1%;
   text-decoration: none;
-  font-size: 15px;
-  border: none;
+  font-size: clamp(1rem, 1vw, 2rem);;
+  border: 3px solid rgb(22, 22, 22);
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-
-
-
-
 .car-button:hover {
   transform: scale(1.1);
 }
 
+/*PORTRAIT*/
+@media (max-aspect-ratio:1/1){
+  .button-container{
+    width: 100%;
+    height: 80%;
+    padding: 2%;
+    padding-top: 5%;
+  }
 
+  .car-button{
+    width: 60%;
+    padding: 4%;
+  }
+}
 
 
 

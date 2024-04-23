@@ -1,6 +1,6 @@
 {
   "topbar": {
-    "start": "Inicio",
+    "start": "Início",
     "about": "Sobre nós",
     "garage": "Garagem",
     "partnerships": "Parceiros",
@@ -26,11 +26,9 @@
 
   "fsfenix-page": {
     "page-title": "FS FENIX",
-    "page-subtitle": "O FS FENIX representa o nosso primeiro esforço concretizado de contruir um carro de Formula Student",
+    "page-subtitle": "O FS FENIX representa o reerguer das cinzas do Formula Student na Universidade NOVA",
     "specs-title" : "Especificações Técnicas",
     "team-title" : "A Equipa",
-
-
 
     "technical-specs": {
       "general": {
@@ -118,23 +116,38 @@
       }
   },
 
+  "competitions" : {
+    "title" : "Competições",
+    "subtitle" : "O FS FENIX competiu no evento Formula Student Portugal!",
+    "fspt" : {
+        "title" : "FORMULA STUDENT PORTUGAL",
+         "position" : "...",
+        "date" : "3 a 7 de Setembro 2024",
+        "location" : "Kartódromo de Castelo Branco"
+
+    }
+  
+},
+
   "teams-names" : {
-    "board" : "Direcao",
-    "aerodynamics" : "Aerodinamica",
-    "chassis&suspension" : "Chassis e Suspensao",
-    "vehicle-dynamics" : "Dinamica de Veiculo",
-    "steering&ergonomics" : "Direcao e Ergonimica ",
-    "electronics" : "Eletronica",
+    "board" : "Direção",
+    "aerodynamics" : "Aerodinâmica",
+    "chassis&suspension" : "Chassis e Suspensão",
+    "vehicle-dynamics" : "Dinâmica de Veículo",
+    "steering&ergonomics" : "Direção e Ergonómica ",
+    "electronics" : "Eletrónica",
     "powertrain" : "Motor",
     "marketing" : "Marketing",
-    "corporate-relations" : "Relaçoes Empresariais",
-    "logistics" : "Logistica",
-    "finances" : "Financas"
+    "corporate-relations" : "Relações Empresariais",
+    "logistics" : "Logística",
+    "finances" : "Finanças"
 },
 
 "roles" : {
     "team-leader" : "Team Leader",
     "technical-director" : "Diretor Técnico",
+    "team-leader&project-manager": "Team Leader & Diretor de Projeto",
+            "technical-director&team-leader" : "Diretor Técnico & Team Leader",
     "bsd" : "Diretor de Estratégia e Negócio",
     "dep-leader" : "Coordenador",
     "member" : "Membro"
@@ -153,7 +166,7 @@
     "form-send": "Enviar",
     "form-title": "Contacte - nos",
     "team-email": "Email",
-    "cr-email": "Email da Equipa de CR",
+    "cr-email": "Email Empresarial",
     "team-hq": "Morada",
     "team-sm": "Redes Socias",
     "fill-all-fields": "Preencha o formulário abaixo para nos contactar.",
@@ -197,20 +210,20 @@
   "home": {
     "who_r_we": "QUEM SOMOS",
     "fs_team": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
-    "description": "Localizados no Campus da Faculdade de Ciências e Tecnologia da Universidade NOVA de Lisboa, o NOVA Formula Student, NFS, é uma equipa de jovens engenheiros e engenheiras unidos com um único objetivo: Desenhar, fabricar e otimizar um carro do estilo Formula para participar em provas Formula Student tanto a nível nacional como internacional.",
-    "team": "Equipa",
+    "description": "Localizados no Campus da Faculdade de Ciências e Tecnologia da Universidade NOVA de Lisboa, o NOVA Formula Student, NFS, é uma equipa de jovens engenheiros e engenheiras unidos com um único objetivo: desenhar, fabricar e otimizar um carro do estilo Formula para participar em provas Formula Student tanto a nível nacional como internacional.",
+    "team": "A Equipa",
     "team_desc1": "O Formula Student FCT, FSFCT, foi fundado em 2015 por alunos da NOVA FCT, que criaram o primeiro projeto da equipa, o FSDRAGON. Este protótipo levou-os à sua primeira competição em 2018, no Formula Student Spain.",
     "team_desc2": "Em 2022, após algum tempo de inatividade devido à pandemia, um novo grupo de alunos da NOVA FCT reergueram o FSFCT. A equipa assumiu uma nova identidade, o NOVA Formula Student, recuperou o espaço de trabalho, e criou o projeto FSFENIX.",
     "team_desc3": "Atualmente, a equipa conta com cerca de 50 membros: alunos da NOVA FCT, focados tanto na engenharia e parte técnica do projeto como na vertente estratégica, e alunos de outras faculdades da Universidade NOVA, como a NOVA IMS e NOVA FCSH, os quais se focam na estratégia, negócio, e imagem da equipa.",
     "sponsor_title": "Patrocinadores",
     "sponsor_title_2": "Torne-se Nosso Parceiro na Inovação Automóvel!",
-    "sponsor_text": "Torne-se um patrocinador da nossa equipa, tendo a oportunidade de se associar a um projeto inovador e educacional.\n\r\nAumentando a visibilidade da sua marca em eventos, medias sociais e materiais promocionais.\n\r\nJunte-se a nós nesta jornada de excelência técnica e compromisso com a inovação.\n\r\nApoie a próxima geração de líderes e inovadores.",
+    "sponsor_text": "Torne-se um patrocinador da nossa equipa, tendo a oportunidade de se associar a um projeto inovador e educacional.\n\r\nAumente a visibilidade da sua marca em eventos, medias sociais e materiais promocionais.\n\r\nJunte-se a nós nesta jornada de excelência técnica e compromisso com a inovação.\n\r\nApoie a próxima geração de líderes e inovadores.",
     "reach_us": "Contacte-nos"
   },
 
   "recruitment-page": {
     "page-title": "Recrutamento",
-    "page-subtitle": "Estes são as nossas posições abertas de momento."
+    "page-subtitle": "Estas são as nossas posições abertas de momento."
   },
 
   "about-page": {

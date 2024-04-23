@@ -22,6 +22,7 @@ import GaragePage from './pages/GaragePage';
 import FSFenixPage from './pages/FSFenixPage';
 import FSDragonPage from './pages/FSDragonPage';
 import Dummy from './pages/dummy';
+import FSFenixPageEvo from './pages/FSFenixEvoPage/index.js';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -98,8 +99,9 @@ function App() {
                   <Route path="/" exact element={<HomePage />} />
                   <Route path="/about" element={<AboutUsPage />} />
                   <Route path="/garage" element={<GaragePage />} />
-                  <Route path="/garage/fsfenix" element={<FSFenixPage />} />
+                  <Route path="/garage/fsfenixevo" element={<FSFenixPageEvo />} />
                   <Route path="/garage/fsdragon" element={<FSDragonPage />} />
+                  <Route path="/garage/fsfenix" element={<FSFenixPage />} />
                   <Route path="/partners" element={<PartnersPage />} />
                   <Route path="/articles" element={<ArticlesPage />} />
                   <Route path="/recruitment" element={<RecruitmentPage />} />

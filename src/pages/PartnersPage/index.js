@@ -15,9 +15,10 @@ import PageHeader from '../../components/PageHeader/index.js';
 const PartnerCard = ({ title, imageUrl, link, description, tier }) => {
   // Define different sizes for each tier
   const sizes = {
-    Gold: { width: 'clamp(170px, 20vw, 350px)', height: 'auto' }, // Example size for Gold
-    Silver: { width: 'clamp(130px, 20vw, 250px)', height: 'auto' }, // Example size for Silver
-    Bronze: { width: 'clamp(90px, 20vw, 200px)', height: 'auto' } // Example size for Bronze
+    Gold: { width: 'clamp(200px, 35vw, 400px)', height: 'auto' }, 
+    Silver: { width: 'clamp(140px, 25vw, 300px)', height: 'auto' }, 
+    Bronze: { width: 'clamp(90px, 20vw, 200px)', height: 'auto' },
+    Partners: { width: 'clamp(90px, 20vw, 180px)', height: 'auto' }
   };
 
   // Get the size for the current partner's tier
@@ -32,6 +33,15 @@ const PartnerCard = ({ title, imageUrl, link, description, tier }) => {
   );
 };
 
+//color for sponsros section titles
+const categoryMap = {
+  "INSTITUTIONAL" : "#19a3ff",
+  "GOLD" : "#FDCD87",
+  "SILVER" : "#c0c0c0",
+  "BRONZE" : "#CD7F32",
+  "PARTNERS" : "#FDCD87",
+}
+
 
 
 // Main Partners Component
@@ -45,7 +55,7 @@ const Partners = ({ partners = PartnersData }) => {
         {Object.keys(partners).map((category) => (
           <div key={category} className="partner-category">
             <div className="section-title-wrapper">
-              <SectionTitle text={category} fontSize={"30px"} altName={"technical-specifications"} />
+              <SectionTitle text={category} fontSize={"2.6em"} altName={"partners-level"} textColor={"#1d1d1d"} dividersColor={categoryMap[category]}/>
             </div>
             <div className="partner-row">
               {partners[category].map((partner) => (

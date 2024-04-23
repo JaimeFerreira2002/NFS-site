@@ -49,11 +49,7 @@ const BottomBar = () => {
 
       <div className="left-section">
         {/* Social Icons */}
-        <div className="logo-bb">
-          <a href="/">
-            <img src={NFSLogo} alt="NFS_LOGO" />
-          </a>
-        </div>
+
         <div className="social-icons-bb">
           <a className="social-icon-bb" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             <img src={InstagramLogo} alt="Instagram" />
@@ -76,6 +72,15 @@ const BottomBar = () => {
       </div>
 
       <div className="right-section">
+
+      {/* NFS Logo */}
+      {/* <div className="logo-bb">
+          <a href="/">
+            <img src={NFSLogo} alt="NFS_LOGO" />
+          </a>
+      </div> */}
+
+
         {/* Newsletter Subscription */}
         {/* <div className="form-newsletter">
           {isSent ? (

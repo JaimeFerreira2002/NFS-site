@@ -1,19 +1,28 @@
 .page-header-container{
     width: 100svw;
-    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     background-color: #1d1d1d;
   } 
   
   .page-header-container .page-title {
     text-align: center;
-    font-family: 'AkiraExpanded'; 
-    font-size: clamp(2rem, 3vw, 6rem); 
+    font-family: 'Horizon'; 
+    font-size: 4em; 
     font-weight: normal; 
     /* background-image: linear-gradient(to right, #19a3ff, #ffffff); */
     background-size: 100%;
     background-clip: text;
     color: transparent;
     margin: 0;
+  }
+
+  @media (max-aspect-ratio : 1/1){
+    .page-header-container .page-title{
+      font-size: 2.5em;
+    }
   }
   
   .page-header-container .page-subtitle {

@@ -12,10 +12,13 @@
     color: transparent;
     max-width: 100svw;
     font-size: clamp(1rem, 2vw, 1.4rem);
+    padding-top: 2%;
+    padding-bottom: 2%;
+
 }
 
 .title-text{
-  font-family: 'AkiraExpanded';
+  font-family: 'Raleway';
   font-weight: normal; 
 }
 

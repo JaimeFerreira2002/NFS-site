@@ -14,11 +14,11 @@ import { useTranslation } from "react-i18next";
 import Accordion from "react-bootstrap/Accordion";
 import eng_team_chart from "../../assets/images/org_chart_eng.drawio_desktop.png";
 import pt_team_chart from "../../assets/images/org_chart_pt.drawio_desktop.png";
+import BrigdeCar from '../../assets/images/car_render_bridge.jpg';
 import MapComponent from '../../components/maps.js';
 
 import PageHeader from '../../components/PageHeader/index.js';
 
-import BrigdeCar from '../../assets/images/car_render_bridge.jpg';
 
 
 
@@ -33,13 +33,19 @@ const AboutUsPage = () => {
     <div className="page-about">
       <PageHeader title={t("about-page.about-us")} subtitle={t("about-page.about-us-desc")} gradientColor={'#19a3ff'} height={'20%'} />
       <div className="section">
-        <div className="first-section">
-          <div>
-            <h2 className="title-first-section">{t("about-page.who-are-we")}</h2>
-            <p className="text-first-section">{t("home.description")}</p>
 
+        <div className="first-section">
+          <div className="first-section-image-overlay"/>    
+          <h2 className="title-first-section">{t("about-page.who-are-we")}</h2>
+          <p className="text-first-section">{t("home.description")}</p>
+        </div>   
+    
+        <div className="team-section-about">
+          <div> <h2>
+            <strong>{t("home.team")}</strong>
+          </h2>
+            <div id="teamImageContainer" className={containerClass}></div>
           </div>
-          <img src={BrigdeCar} />
         </div>
 
         <div className="how-it-works">
@@ -49,14 +55,7 @@ const AboutUsPage = () => {
             <p>{t("about-page.how-it-works-desc")}</p>
           </div>
         </div>
-        <div className="team-section-about">
-          <div> <h2>
-            <strong>{t("home.team")}</strong>
-          </h2>
-            <div id="teamImageContainer" className={containerClass}></div>
-          </div>
-        </div>
-
+        
         <div className="events">
           <div >
             <div>

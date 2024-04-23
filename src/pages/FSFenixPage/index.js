@@ -3,10 +3,9 @@ import "../FSFenixPage/style.css";
 import { useTranslation } from "react-i18next";
 import CarModelViewer from '../../components/CarModelViewer';
 import SpecsSection from '../../components/SpecsSection'; 
-import Gallery from '../../components/Gallery'; 
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import TeamListData from '../../components/team_members_list'; 
+import TeamListData from '../../components/fenix_team_list.js'; 
 import PageHeader from '../../components/PageHeader/index.js';
 
 
@@ -41,6 +40,7 @@ import image5 from '../../assets/images/fsdragon_photos/image_5.jpg';
 import image6 from '../../assets/images/fsdragon_photos/image_6.jpg';
 import image7 from '../../assets/images/fsdragon_photos/image_7.jpg';
 import MemberCard from '../../components/MemberCard';
+import ImageGallery from './components/CompetitionTile/index.js';
 
 const imageArray = [image1, image2, image3, image4, image5, image6, image7];
 
@@ -76,16 +76,17 @@ const FSFenixPage = () => {
   const { t } = useTranslation();
   const ref = useRef();
 
-  ///////////////animations///////////////////////////
+  ///////////////ANIMATIONS///////////////////////////
 
-    //controllers/////
+    //controllers//
     const specsAndModelController = useAnimation();
     const [specsAndModelRef, specsAndModelInView] = useInView({ threshold: 0.1 });
 
     const teamController = useAnimation();
     const [teamRef, teamInView] = useInView({ threshold: 0.03 });
 
-    //effects////////
+    
+    //////EFFECTS////////
 
     //specs and model
     React.useEffect(() => {
@@ -126,39 +127,90 @@ const FSFenixPage = () => {
 
       <div className='fenix-model_and_specs-container'>
           <div className='fenix-section-title'>
-                Technical Specifications
+            {t('fsfenix-page.specs-title')}        
           </div>
 
           <div className='fenix-specs-and-model'>
-          <div ref={specsAndModelRef}> 
-            <motion.div className='fenix-specs&model-animation' animate={specsAndModelController} initial={{ opacity: 0, x: 100 }}>
-              <div className='fenix-specs'>
-                <SpecsSection title="general" dataKeys={generalKeys} t={t} />
-                <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} />
-                <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} />
-                <SpecsSection title="chassis" dataKeys={chassisKeys} t={t} />
-                <SpecsSection title="aero" dataKeys={aeroKeys} t={t} />
-              </div>
-              
-              <div className="fenix-fsfenix-3d-model">        
-                    <CarModelViewer/>         
-              </div>
-            </motion.div>
-          </div>
+            <div ref={specsAndModelRef}> 
+              <motion.div className='fenix-specs&model-animation' animate={specsAndModelController} initial={{ opacity: 0, x: 100 }}>
+                <div className='fenix-specs'>
+                  <SpecsSection title="general" dataKeys={generalKeys} t={t} />
+                  <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} />
+                  <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} />
+                  <SpecsSection title="chassis" dataKeys={chassisKeys} t={t} />
+                  <SpecsSection title="aero" dataKeys={aeroKeys} t={t} />
+                </div>
+                
+                {/* <div className="fenix-fsfenix-3d-model">        
+                      <CarModelViewer/>         
+                </div> */}
+              </motion.div>
+            </div>
           </div>          
       </div>
 
 
-      <div className='fenix-gallery-container'>
+      {/* COMPETITIONS SECTION */}
+      <div className='competitions-section-container'>
+
+        <div className='fenix-section-title'>
+          {t('fsfenix-page.competitions.title')}
+        </div>
+
+        <div className='competitions-subtitle'>
+          {t('fsfenix-page.competitions.subtitle')}
+        </div>
+
+        <div className='competitions-images-row-container'>
+          <ImageGallery/>
+        </div>
+      </div>        
+
+
+      {/* GALLERY */}
+      {/* <div className='fenix-gallery-container'>
           <div className='fenix-section-title'>
             Gallery
           </div>
           <Gallery images={imageArray} />
-      </div>
+      </div> */}
 
+      {/* TEAM SECTION */}
       <div className='fenix-team-container'>
         <div className='fenix-section-title'>
           Team
+        </div>
+
+        <div className='team-number-container'>
+          <div className='team-number-row'>
+
+            <div className='numbers members'>
+              <div className='numbers-digits members'>
+                  53
+              </div>
+              <div className='numbers-title members'>
+                  Members
+              </div>
+            </div>
+
+            <div className='numbers degrees'>
+              <div className='numbers-digits degrees'>
+                  17
+              </div>
+              <div className='numbers-title medegreesmbers'>
+                  Degrees
+              </div>
+            </div>
+
+            <div className='numbers universities'>
+              <div className='numbers-digits universities'>
+                  3
+              </div>
+              <div className='numbers-title universities'>
+                  Universities
+              </div>
+            </div>
+          </div>
         </div>
 
         <div ref={teamRef}>

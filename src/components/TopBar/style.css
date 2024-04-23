@@ -16,7 +16,7 @@
   background-color: #1d1d1dc0;
   backdrop-filter: blur(10px); /* Adjust the blur value as needed */
   color: white;
-  width: 100vw;
+  width: 100svw;
 }
 
 .top-bar.home {

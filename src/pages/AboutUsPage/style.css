@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-
 }
 
 
@@ -16,78 +15,90 @@ body {
 }
 
 
-
-
-
 .first-section {
   display: flex;
-  flex-direction: row;
-  /* This is default and can be omitted */
   align-items: center;
-  /* Vertically centers the flex items */
-  justify-content: space-between;
-  /* This might not be necessary depending on your layout */
-  background-color: #286196;
-  /* Changed from #fff for text visibility */
-  height: auto;
-  padding: 30px 10vw;
-  gap: 20px;
-  /* Keeps space between the text and the map */
-  /* Removed the min-height property to avoid a typo (50svh -> 50vh) and possibly unnecessary style */
+  position: relative;
+  background-image: url('../../assets/images/fsdragon_photos/image_2.jpg');
+  background-size: cover;
+  background-position: center 60%;
+  flex-direction: column;
+  align-items: start;
+  gap: 3%;
+  z-index: 1;
 }
 
-
-
-.first-section p {
-  color: white;
+.first-section-image-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(to right, #1d1d1d, rgba(0, 0, 0, 0));
+  z-index: 2;
 }
 
 .first-section h2 {
-  color: white;
-}
-
-.first-section img {
-  width: 50%;
-  height: auto;
-  z-index: 0;
-  border-radius: 10px;
+  z-index: 2;
+  color: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 1%;
 
 }
+
+.first-section p{
+  z-index: 2;
+  color: #ffffff;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
 
 @media screen and (max-aspect-ratio: 1/1) {
 
-
   .first-section {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding: 0px 10vw;
     padding-top: 30px;
   }
 
-  .first-section img {
-    width: 100svw;
-    height: auto;
-    border-radius: 0px;
+  .first-section-image-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #1d1d1d, rgba(0, 0, 0, 0));
+    z-index: 2;
   }
+ 
 }
 
 .how-it-works {
   display: flex;
+  background-color: #1d1d1d;
+  background-size: cover;
+  background-position: center 40%; /* Adjust the percentage as needed */
   flex-direction: row-reverse;
   align-items: end;
-
-  padding: 30px 10vw;
+  padding: 5% 10vw;
   gap: 20px;
 }
 
+
 .how-it-works h2 {
   text-align: right;
-  color: #286196;
+  color: white;
 }
 
 .how-it-works p {
-  text-align: right;
+  text-align: end;
+  color: white
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
@@ -110,7 +121,7 @@ body {
 }
 
 .team-section-about {
-  background-color: #ffffff;
+  background-color: #1d1d1d;
  
   flex-direction: column;
   align-items: center;

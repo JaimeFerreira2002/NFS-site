@@ -55,14 +55,14 @@ const GaragePage = () => {
 
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-    draggable: false,
+    draggable: true,
     afterChange: (index) => setCurrentSlide(index),
   };
 
@@ -89,17 +89,6 @@ const GaragePage = () => {
     }
   };
 
-  //used for buttons effetc
-  const [isHovered, setShowButton] = useState(false);
-  const handleMouseEnter = () => {
-    setShowButton(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowButton(false);
-  };
-
-
 
   return (
     <div className='garage-page'>
@@ -108,38 +97,21 @@ const GaragePage = () => {
 
       <div className='car-name'>{getTitleForSlide(currentSlide)}</div>
 
+      <div className='button-container'>
+            <Link to={getCarPagePath()}  className='car-button'>
+              {t("garage-page.button-text")}
+           </Link>
+      </div>
+
       <Slider ref={sliderRef} {...settings} className='cars-image-slider'>
-        <div
-          className={`car-image ${isHovered ? 'hovered' : ''}`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img src={FSDragon} alt='fsdragon' />
-          {isHovered && (
-            <div className='button-container'>
-              <Link to={getCarPagePath()} className='car-button'>
-                {t("garage-page.button-text")}
-              </Link>
-            </div>
-          )}
+        <div className={`car-image`}>
+          <img src={FSDragon} alt='fsdragon' />       
         </div>
-        <div
-          className={`car-image ${isHovered ? 'hovered' : ''}`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img src={FSFenix} alt='fsfenix' />
-          {isHovered && (
-            <div className='button-container'>
-              <Link to={getCarPagePath()} className='car-button'>
-                {t("garage-page.button-text")}
-              </Link>
-            </div>
-          )}
+        <div className={`car-image`}>
+          <img src={FSFenix} alt='fsfenix' />   
         </div>
-    </Slider>
-
-
+      </Slider>
+      
     </div>
   );
 };

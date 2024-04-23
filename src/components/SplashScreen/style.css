@@ -1,5 +1,4 @@
 .splash-screen {
-
   position: fixed;
   width: 100svw;
   height: 100svh;
@@ -7,12 +6,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10000;
+  z-index: 3;
   flex-direction: column;
 }
 
 .splash-screen.hidden {
   display: none;
+  width: 100svw;
 }
 
 .logo-splash {

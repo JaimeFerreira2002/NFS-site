@@ -189,21 +189,22 @@
 
 
 .submit:active {
-    background-color: #06b;
+    background-color: #19a3ff;
 }
 
 
 .contact-info-section h2 {
-    color: #286196;
+    color: #19a3ff;
 }
 
 .contact-sub-section {
 
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-}
+    padding-top: 10px; 
+    padding-bottom: 10px;
 
+}
 
 
 

@@ -2,13 +2,53 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.sobre {
+
+/* VIDEO PLAYER */
+.background-home-video {
   position: relative;
-  background-image: url('../../assets/images/car_background.jpg');
-  background-size: cover;
-  background-position: 50% 75%;
+  width: 100%;
+  height: 100vh;
+}
+
+.video-player {
+  object-fit: cover;
   width: 100svw;
   height: 100svh;
+  top: 0;
+  left: 0;
+  filter: brightness(0.35);  
+}
+
+.video-text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  z-index: 1;
+  text-align: center;
+  padding: 2%;
+  font-size: 0.9vw; /* to adapt to the window width */
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Add a transition for opacity property */
+}
+
+/* Add a class to fade out the element */
+.video-text-content.fade-out {
+  opacity: 0;
+}
+
+
+
+.nova-title {
+  font-family: "AkiraExpanded";
+  font-size: 5em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nova-word {
+  color: #409ED4;
 }
 
 .scroll-indicator {
@@ -21,32 +61,6 @@
   /* Center the icon exactly */
   /* Additional styling for the icon as needed */
 }
-
-.dark-glass-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100svw;
-  height: 100svh;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 0px 20px 20px 20px;
-  text-align: center;
-}
-
-.nova-title {
-  font-family: "AkiraExpanded";
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.nova-word {
-  color: #409ED4;
-}
-
 .black-section {
   display: flex;
   align-items: center;
@@ -62,7 +76,6 @@
 
 
 @media screen and (max-aspect-ratio: 1/1) {
-
 
   .black-section {
     flex-direction: column;
@@ -92,7 +105,6 @@
 
 @media screen and (min-aspect-ratio: 1/1) {
 
-  
   .black-section {
 
     padding: 30px 10svw;
@@ -111,9 +123,7 @@
 
 .title-team {
   text-align: start;
-  background-size: 130%;
-  background-clip: text;
-  color: transparent;
+  color: #409ED4;
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -160,9 +170,7 @@
 
 .title-sponsor {
   text-align: end;
-  background-size: 100%;
-  background-clip: text;
-  color: transparent;
+  color: #ffffff;
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -270,13 +278,11 @@
 
 .reach {
   text-align: start;
-  font-family: 'Raleway';
+  font-family: 'Horizon';
+  font-size: 0.5em;
   font-weight: normal;
-  background-image: linear-gradient(to right, #19a3ff, #ffffff);
-  background-size: 130%;
-  background-clip: text;
-  color: transparent;
-  padding-top: 1%;
+  color: #ffffff;
+  padding-top: 8%;
   padding-bottom: 1%;
   font-size: clamp(1.2rem, 2vw, 3rem);
 
@@ -299,13 +305,34 @@
   }
 }
 
-/* Other styles... */
+.title-garage {
+  text-align: start;
+  color: #409ED4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+  .garage-content {
+    width: 90svw;
+  }
+
+}
+
+.garage-content {
+  font-family: "Raleway";
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: black;
+  max-width: 800px;
+
+}
 
 .garage-home-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 10vw;
+  padding: 5% 10vw;
   background-color: #f5f5f5;
   /* Example background color */
 }
@@ -321,7 +348,7 @@
 
 .garage-home-image {
   position: relative;
-  max-width: 80vw;
+  max-width: 50vw;
   border-radius: 10px;
   /* Optional: to match your design */
   overflow: hidden;
@@ -357,11 +384,14 @@
 .garage-image-overlay button {
   padding: 10px 20px;
   border: none;
-  background-color: #409ED4;
+  background-color: #ffffff;
   /* Example button color */
-  color: white;
+  color: #1d1d1d;
   font-size: 1rem;
+  font-family: "Horizon";
   border-radius: 5px;
+  border-color: #1d1d1d;
+  border-width: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -383,21 +413,21 @@
 
 
 .home-garge-button:hover {
-  background-color: #3078a6;
-  /* Darker shade on hover */
+  transform: scale(1.1);
 }
 
 .home-garge-button {
   font-family: "Raleway";
+  width: 90%;
   font-size: clamp(1rem, 2vw, 1.5rem);
   padding: 10px 10px;
   margin-top: 20px;
   /* Space above the button */
-  background-color: #409ED4;
+  background-color: #ffffff;
   /* Example button color */
-  color: white;
-  border: none;
-  border-radius: 5px;
+  color: #1d1d1d;
+  border: 3px solid rgb(22, 22, 22);
+  border-radius: 10px; 
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.3s;
 }

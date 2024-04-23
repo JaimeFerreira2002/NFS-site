@@ -10,10 +10,14 @@ import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
 import FSFenix from '../../assets/images/fsfenix.png'
 import { Link } from 'react-router-dom';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'; // Ensure you import the correct icon
+import fspt_video from '../../assets/videos/fspt_video.mp4'
 
 
 
 const HomePage = () => {
+  const titleController = useAnimation();
+  const [titleRef, titleInView] = useInView({ threshold: 0.03 });
+
   const controlsTeam = useAnimation();
   const [teamRef, teamInView] = useInView({ threshold: 0.1 });
 
@@ -46,6 +50,16 @@ const HomePage = () => {
 
 
   //effects
+
+  // title
+  React.useEffect(() => {
+    if (titleInView) {
+      titleController.start({ opacity: 0 });
+    } else {
+      titleController.start({ opacity: 1 });
+    }
+  }, [titleController, titleInView]);
+
   React.useEffect(() => {
     if (teamInView) {
       controlsTeam.start({ opacity: 1, x: 0, transition: { duration: 0.5 } });
@@ -71,14 +85,30 @@ const HomePage = () => {
   }, [controlsGarage, garageInView]);
 
   
+
+  
   return (
     <div className="home-page">
-      <div className="sobre">
-        <div className="dark-glass-overlay">
 
-          <h1 className="nova-title"><span className="nova-word">Nova</span> Formula Student</h1>
+      <div className="background-home-video">
+        <div className = "video-player-container">
+        
+            <video className='video-player' autoPlay loop muted>
+              <source src={fspt_video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>   
 
-        </div>
+            <div ref={titleRef}> 
+                <motion.div animate = {titleController}>
+                    <div className="video-text-content">
+                        <h1 className="nova-title"><span className="nova-word">Nova</span> Formula Student</h1>
+                    </div>
+                </motion.div>
+            </div>
+             
+        </div>   
+
+
         {showScrollArrow && (
           <motion.div
             className="scroll-indicator"
@@ -89,6 +119,7 @@ const HomePage = () => {
           </motion.div>
         )}
       </div>
+      
       <div className="black-section" ref={teamRef}>
         <div className="team-content">
           <h2 className='title-team'>{t('home.team')}</h2>
@@ -114,7 +145,7 @@ const HomePage = () => {
             <a className="icon-button-c" href="/contacts">
               <FontAwesomeIcon  icon={faAddressBook} size="10x" />
 
-              <h2 className='reach'>{t("home.reach_us")}</h2>
+              <div className='reach'>{t("home.reach_us")}</div>
             </a>
           </motion.div>
 
@@ -129,8 +160,8 @@ const HomePage = () => {
 
       <div className="garage-home-section" ref={garageRef}>
         <div className="garage-home-content">
-          <h2 className='title-team'>{t('garage-page.page-title')}</h2>
-          <p className='team-content'>{t('garage-page.page-subtitle')}</p>
+          <h2 className='title-garage'>{t('garage-page.page-title')}</h2>
+          <p className='garage-content'>{t('garage-page.page-subtitle')}</p>
 
           <a href="/garage" className="button-link">
             <button className="home-garge-button">{t('garage-page.button-text')}</button>
@@ -138,13 +169,7 @@ const HomePage = () => {
         </div>
         <div className="garage-home-image">
           <motion.div className="team-photo" animate={controlsGarage} initial={{ opacity: 0, x: 100 }}>
-
             <img src={FSFenix} alt="Garage" />
-            <div className="garage-image-overlay">
-              <a href="/garage/fsfenix" className="button-link">
-                <button className='home-garge-button'>FS Fenix</button>
-              </a>
-            </div>
           </motion.div>
 
 

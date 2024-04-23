@@ -8,13 +8,6 @@
 }
 
 
-.partners-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
 .partner-row {
   display: flex;
   flex-wrap: wrap;
@@ -24,11 +17,12 @@
   gap: 20px;
   /* Space between cards */
   padding: 1vh;
+  padding-bottom: 8%;
   overflow-x: auto;
 }
 
 .partner-card h2 {
-  font-family: 'AkiraExpanded', sans-serif;
+  font-family: 'Horizon', sans-serif;
 }
 
 .partner-card button {
@@ -48,8 +42,6 @@
 .partner-list-container {
   padding: 4%;
 }
-
-
 
 
 .overlay {
@@ -74,7 +66,8 @@
   height: width;
   /* Adjust as needed */
   padding: 0.5%;
-
+  align-items: center;
+  text-align: center; /* Optional: Center text horizontally within the card */
   position: relative;
   overflow: hidden;
   border-radius: 20px;
@@ -112,8 +105,6 @@
   transform: scale(1.05);
   /* Slightly smaller scale */
 }
-
-/* Remove styles related to overlay, text, and button if not used */
 
 
 

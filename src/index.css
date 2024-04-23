@@ -37,11 +37,20 @@ we define fonts here because its the main app style
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Horizon';
+    src: url('./assets/fonts/Horizon/horizon.otf') format('opentype');
+    /* Add additional formats if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
 
 
 body, html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 
 

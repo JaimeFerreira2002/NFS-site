@@ -13,10 +13,24 @@ import BlocksLogo from '../../assets/images/sponsors_logos/blocks.png';
 import DFCTurboLogo from '../../assets/images/sponsors_logos/dfc_turbo.png';
 import MathWorksLogo from '../../assets/images/sponsors_logos/MathWorksLogo.png';
 import NorelemLogo from '../../assets/images/sponsors_logos/norelemlogo.png';
+import AltiumLogo from '../../assets/images/sponsors_logos/altium.png';
+import NDTunedLogo from '../../assets/images/sponsors_logos/ndtuned.png';
+import PCBWayLogo from '../../assets/images/sponsors_logos/pcbway.png';
+
+
+
 
 
 const PartnersData = {
-    'Gold': [
+  'INSTITUTIONAL': [
+    {
+      title: 'NOVA SST',
+      imageUrl: NOVASSTLogo, // Replace with actual path to image
+      link:'https://www.fct.unl.pt/',
+      tier: 'Gold'
+    },
+  ],
+    'GOLD': [
       {
         title: 'Galp',
         imageUrl: GalpLogo,
@@ -30,11 +44,6 @@ const PartnersData = {
         tier: 'Gold'
       },
       {
-        title: 'NOVA SST',
-        imageUrl: NOVASSTLogo, // Replace with actual path to image
-        link:'https://www.fct.unl.pt/',
-        tier: 'Gold'
-      }, {
         title: 'MCG',
         imageUrl: MCGLogo, // Replace with actual path to image
         link: 'https://www.mcg.pt/?lang=pt-pt',
@@ -49,7 +58,7 @@ const PartnersData = {
       },
       // ... add more partners as needed
     ],
-    'Silver': [
+    'SILVER': [
      
       {
         title: 'Lean Acadamy',
@@ -77,17 +86,11 @@ const PartnersData = {
       },
       // ... add more partners as needed
     ],
-    'Bronze': [
+    'BRONZE': [
       {
         title: 'KFrio',
         imageUrl: KFrioLogo, // Replace with actual path to image
         link:'https://kfrio.pt/',
-        tier: 'Bronze'
-      },
-      {
-        title: 'COFICAB',
-        imageUrl: CoficabLogo, // Replace with actual path to image
-        link: 'https://www.coficab.pt/',
         tier: 'Bronze'
       },
       {
@@ -103,21 +106,55 @@ const PartnersData = {
         tier: 'Bronze'
       },
       {
+        title: 'Norelem',
+        imageUrl: NorelemLogo, // Replace with actual path to image
+        link: 'https://norelem.es/pt',
+        tier: 'Bronze'
+      },
+    
+    ],
+
+    'PARTNERS': [
+      {
+        title: 'Altium',
+        imageUrl: AltiumLogo, // Replace with actual path to image
+        link:'https://www.altium.com/',
+        tier: 'Partners'
+      },
+      {
+        title: 'COFICAB',
+        imageUrl: CoficabLogo, // Replace with actual path to image
+        link: 'https://www.coficab.pt/',
+        tier: 'Partners'
+      },
+      // {
+      //   title: 'Exide Group',
+      //   imageUrl: BlocksLogo, // Replace with actual path to image
+      //   link:'https://blockstec.com/',
+      //   tier: 'Partners'
+      // },
+      {
         title: 'MathWorks',
         imageUrl: MathWorksLogo, // Replace with actual path to image
         link: 'https://www.mathworks.com',
         tier: 'Bronze'
       },
       {
-        title: 'Norelem',
-        imageUrl: NorelemLogo, // Replace with actual path to image
-        link: 'https://norelem.es/pt',
-        tier: 'Bronze'
+        title: 'ND Tuned',
+        imageUrl: NDTunedLogo, // Replace with actual path to image
+        link:'https://www.ndtuned.com/',
+        tier: 'Partners'
       },
-      // ... add more partners as needed
+      {
+        title: 'PCBWay',
+        imageUrl: PCBWayLogo, // Replace with actual path to image
+        link: 'https://www.pcbway.com/',
+        tier: 'Partners'
+      },
+    
     ],
     
-    // ... add more categories as needed
+   
   };
   
   export default PartnersData;
