@@ -206,13 +206,12 @@
   justify-content: space-around;
 }
 
-.fenix-department-title {
-  font-family: "Horizon";
-  color: #1d1d1d;
-  font-size: 1.6em;
+.dragon-department-title{
+  font-family: 'Horizon';
+  font-size: 1.5em;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 2%;
+  padding-top: 4%;
+  padding-bottom: 1%;
 }
 
 @media (max-aspect-ratio : 1/1){

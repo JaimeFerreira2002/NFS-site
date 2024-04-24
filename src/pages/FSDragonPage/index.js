@@ -6,7 +6,7 @@ import SpecsSection from '../../components/SpecsSection';
 import Gallery from '../../components/Gallery'; 
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import TeamListData from '../../components/team_members_list'; 
+import TeamListData from '../../components/dragon_team_list.js'; 
 import PageHeader from '../../components/PageHeader/index.js';
 
 
@@ -74,7 +74,7 @@ const logosList = [
 
 
 const FSDragonPage = () => {
-
+  const colorGradient = { backgroundImage: 'linear-gradient(to right, #19ff38, #ffffff)', };
   const { t } = useTranslation();
   const ref = useRef();
 
@@ -125,7 +125,7 @@ const FSDragonPage = () => {
         {/* <div className='background-image-gradient-overlay'/>  */}
       </div>     
 
-      <div className='dragon-model_and_specs-container'>
+      {/* <div className='dragon-model_and_specs-container'>
           <div className='dragon-section-title'>
                 Technical Specifications
           </div>
@@ -134,20 +134,20 @@ const FSDragonPage = () => {
           <div ref={specsAndModelRef}> 
             <motion.div className='dragon-specs&model-animation' animate={specsAndModelController} initial={{ opacity: 0, x: 100 }}>
               <div className='dragon-specs'>
-                <SpecsSection title="general" dataKeys={generalKeys} t={t} />
-                <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} />
-                <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} />
-                <SpecsSection title="chassis" dataKeys={chassisKeys} t={t} />
-                <SpecsSection title="aero" dataKeys={aeroKeys} t={t} />
-              </div>
+                <SpecsSection title="general" dataKeys={generalKeys} t={t} car="dragon"/>
+                <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} car="dragon"/>
+                <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} car="dragon"/>
+                <SpecsSection title="chassis" dataKeys={chassisKeys} t={t} car="dragon"/>
+                <SpecsSection title="aero" dataKeys={aeroKeys} t={t} car="dragon"/>
+              </div> */}
               
               {/* <div className="fsfenix-3d-model">        
                     <CarModelViewer/>         
               </div> */}
-            </motion.div>
+            {/* </motion.div>
           </div>
           </div>          
-      </div>
+      </div> */}
 
 
       <div className='dragon-gallery-container'>
@@ -166,7 +166,7 @@ const FSDragonPage = () => {
           <motion.div className='dragon-team-animation' animate = {teamController}>
             {TeamListData.map((department, index) => (
               <div key={index} className='dragon-department-container'>
-                <h2 className="dragon-department-title">{t(`fsfenix-page.teams-names.${department.title}`)}</h2>
+                <h2 style={colorGradient} className="dragon-department-title">{t(`fsdragon-page.teams-names.${department.title}`)}</h2>
                 <div className="dragon-team-members">
                   {department.members.map((member, memberIndex) => (
                     <MemberCard key={memberIndex} {...member} />

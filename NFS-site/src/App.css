@@ -11,7 +11,7 @@ Especific styles
 }
 
 h2 {
-  font-family: 'Horizon';
+  font-family: 'AkiraExpanded';
   font-size: clamp(1.5rem, 3vw, 4rem);
   font-weight: normal;
   background-image: linear-gradient(to right, #19a3ff, #ffffff);

@@ -9,7 +9,7 @@ const TeamListData = [
                 name: 'João Fernandes', role: 'team-leader', imageSrc: placeholder
             },
             {
-                name: 'Guilherme Costa', role: 'technical-director', imageSrc: require('../assets/images/members_photos/board/balbino.jpg')
+                name: 'Guilherme Costa', role: 'technical-director', imageSrc: placeholder
             },
         ],
     },
@@ -100,10 +100,10 @@ const TeamListData = [
         title: 'marketing',
         members: [
             {
-                name: 'Isabel Botelho', role: 'dep-leader', imageSrc: require('../assets/images/members_photos/marketing/joao_garcia.jpg')
+                name: 'Isabel Botelho', role: 'dep-leader', imageSrc: placeholder
             },
             {
-                name: 'Pedro Botelho', role: 'member', imageSrc: require('../assets/images/members_photos/marketing/jaime_ferreira.jpg')
+                name: 'Pedro Botelho', role: 'member', imageSrc: placeholder
             },
             {
                 name: 'Tiago Soares', role: 'member', imageSrc: placeholder
@@ -132,10 +132,10 @@ const TeamListData = [
         title: 'corporate-relations',
         members: [
             {
-                name: 'Isabel Botelho', role: 'dep-leader', imageSrc: require('../assets/images/members_photos/marketing/joao_garcia.jpg')
+                name: 'Isabel Botelho', role: 'dep-leader', imageSrc: placeholder
             },
             {
-                name: 'Pedro Botelho', role: 'member', imageSrc: require('../assets/images/members_photos/marketing/jaime_ferreira.jpg')
+                name: 'Pedro Botelho', role: 'member', imageSrc: placeholder
             },
             {
                 name: 'Tiago Soares', role: 'member', imageSrc: placeholder

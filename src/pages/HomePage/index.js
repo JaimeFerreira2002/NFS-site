@@ -10,7 +10,8 @@ import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
 import FSFenix from '../../assets/images/fsfenix.png'
 import { Link } from 'react-router-dom';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'; // Ensure you import the correct icon
-import fspt_video from '../../assets/videos/fspt_video.mp4'
+//TODO descomentar isto e alterar o path do video
+//import fspt_video from '../../assets/videos/fspt_video.mp4'
 
 
 
@@ -94,7 +95,7 @@ const HomePage = () => {
         <div className = "video-player-container">
         
             <video className='video-player' autoPlay loop muted>
-              <source src={fspt_video} type="video/mp4" />
+              {/*  <source src={fspt_video} type="video/mp4" />*/}
               Your browser does not support the video tag.
             </video>   
 

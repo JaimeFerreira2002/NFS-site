@@ -155,7 +155,107 @@
   
   },
 
+  "fsdragon-page": {
+    "page-title": "FS DRAGON",
+    "page-subtitle": "The FS DRAGON is ...",
+    "specs-title": "Technical Specifications",
+    "team-title": "The Team",
+    "technical-specs": {
+        "general": {
+            "title": "General",
+            "weight": "Weight",
+            "weight-value": "280 Kg",
+            "wheel-base": "Wheelbase",
+            "wheel-base-value": "1525 mm",
+            "width": "Track",
+            "width-value": "1346 mm",
+            "height-cg": "Height",
+            "height-cg-value": "250 mm",
+            "0-100": "0-100 km/h",
+            "0-100-value": "3.9 s",
+            "top-speed": "Top Speed",
+            "top-speed-value": "170 Km/h"
+        },
+        "powertrain": {
+            "title": "Powertrain",
+            "engine": "Engine",
+            "engine-value": "Yamaha MT-07 CP2",
+            "power": "Power",
+            "power-value": "67 BHP",
+            "max-rpm": "Max RPM",
+            "max-rpm-value": "9000",
+            "volume": "Volume",
+            "volume-value": "698 cc",
+            "ecu": "ECU",
+            "ecu-value": "Splitronics Mercury 3",
+            "quick-shifter": "Quick Shifter",
+            "quick-shifter-value": "KLIKTRONIC"
+        },
+        "steering&suspension": {
+            "title": "Steering & Suspension",
+            "type": "Type",
+            "type-value": "Double Wishbone with pushrod",
+            "tyres": "Tyres",
+            "tyres-value": "Hoosier 205/407 R13 FSAE",
+            "breaking": "Breaking",
+            "breaking-value": "AP Racing, opposite pistons with 25.4 mm diameter (4 in the front, 2 in the rear)",
+            "suspension": "Suspension",
+            "suspension-value": "FOX Van R"
+        },
+        "chassis": {
+            "title": "Chassis",
+            "structure": "Structure",
+            "structure-value": "Steel tube BS4-T45",
+            "weight": "Weight",
+            "weight-value": "38 Kg",
+            "impact-structure": "Impact Structure",
+            "impact-structure-value": "High Density Foam"
+        },
+        "aero": {
+            "title": "Aerodynamics",
+            "cd.a": "CD.A",
+            "cd.a-value": "1.553",
+            "cl.d": "CL.D",
+            "cl.d-value": "1.106"
+        }
+    },
 
+    "competitions" : {
+        "title" : "Competitions",
+        "subtitle" : "The FS DRAGON competed in the Formula Student Portugal event!",
+        "fspt" : {
+            "title" : "FORMULA STUDENT PORTUGAL",
+            "position" : "Placed 4th ",
+            "date" : "3 to 7 of September 2024",
+            "location" : "Castelo Branco Kart Track"
+        }
+
+    },
+    
+    "teams-names": {
+        "board": "Direção",
+        "aerodynamics": "Aerodinâmica",
+        "chassis&Dynamics": "Chassis e Dinâmica",
+        "chassis&suspension": "Chassis & Suspension",
+        "vehicle-dynamics": "Vehicle Dynamics",
+        "steering&ergonomics": "Steering & Ergonomics",
+        "electronics": "Eletrónica",
+        "powertrain": "Motores",
+        "marketing": "Marketing",
+        "corporate-relations": "Relações Empresariais",
+        "logistics": "Logística",
+        "finances": "Finanças"
+    },
+    "roles": {
+        "team-leader": "Team Leader",
+        "technical-director": "Technical Director",
+        "team-leader&project-manager": "Team Leader & Project Manager",
+        "technical-director&team-leader" : "Technical Director & Team Leader",
+        "bsd": "Business & Strategy Director",
+        "dep-leader": "Department Leader",
+        "member": "Member"
+    }
+},
 
   "contacts-page": {
     "page-title": "Contactos",

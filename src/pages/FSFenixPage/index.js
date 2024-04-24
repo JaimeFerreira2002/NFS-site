@@ -72,7 +72,7 @@ const logosList = [
 
 
 const FSFenixPage = () => {
-
+  const colorGradient = { backgroundImage: 'linear-gradient(to right, #19a3ff, #ffffff)', };
   const { t } = useTranslation();
   const ref = useRef();
 
@@ -116,9 +116,9 @@ const FSFenixPage = () => {
   const aeroKeys = ['cd.a', 'cl.d'];
 
   return (
-    <div className='fsfsenix-page'>
+    <div className='fsdragon-page'>
 
-    <PageHeader title={t('fsfenix-page.page-title')} subtitle={t('fsfenix-page.page-subtitle')} gradientColor = "#19a3ff" height={'2.5%'}/>
+    <PageHeader title={t('fsdragon-page.page-title')} subtitle={t('fsdragon-page.page-subtitle')} gradientColor = "#19a3ff" height={'2.5%'}/>
 
 
       <div className='fenix-background-image-container'>
@@ -134,11 +134,11 @@ const FSFenixPage = () => {
             <div ref={specsAndModelRef}> 
               <motion.div className='fenix-specs&model-animation' animate={specsAndModelController} initial={{ opacity: 0, x: 100 }}>
                 <div className='fenix-specs'>
-                  <SpecsSection title="general" dataKeys={generalKeys} t={t} />
-                  <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} />
-                  <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} />
-                  <SpecsSection title="chassis" dataKeys={chassisKeys} t={t} />
-                  <SpecsSection title="aero" dataKeys={aeroKeys} t={t} />
+                  <SpecsSection title="general" dataKeys={generalKeys} t={t} car="fenix"/>
+                  <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} car="fenix"/>
+                  <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} car="fenix"/>
+                  <SpecsSection title="chassis" dataKeys={chassisKeys} t={t} car="fenix"/>
+                  <SpecsSection title="aero" dataKeys={aeroKeys} t={t} car="fenix"/>
                 </div>
                 
                 {/* <div className="fenix-fsfenix-3d-model">        
@@ -217,7 +217,7 @@ const FSFenixPage = () => {
           <motion.div className='fenix-team-animation' animate = {teamController}>
             {TeamListData.map((department, index) => (
               <div key={index} className='fenix-department-container'>
-                <h2 className="fenix-department-title">{t(`fsfenix-page.teams-names.${department.title}`)}</h2>
+                <h2 style={colorGradient} className="fenix-department-title">{t(`fsfenix-page.teams-names.${department.title}`)}</h2>
                 <div className="fenix-team-members">
                   {department.members.map((member, memberIndex) => (
                     <MemberCard key={memberIndex} {...member} />
