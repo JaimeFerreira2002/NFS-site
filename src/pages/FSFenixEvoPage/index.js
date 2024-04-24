@@ -117,7 +117,7 @@ const FenixEvoPage = () => {
   const aeroKeys = ['cd.a', 'cl.d'];
 
   return (
-    <div className='fenixevo-page'>
+    <div className='fenixevo'>
 
     <PageHeader title={t('fenixevo-page.page-title')} subtitle={t('fenixevo-page.page-subtitle')} gradientColor = "#19a3ff" height={'2.5%'}/>
 

@@ -89,7 +89,7 @@ const HomePage = () => {
 
   
   return (
-    <div className="home-page">
+    <div className="dragon-page">
 
       <div className="background-home-video">
         <div className = "video-player-container">

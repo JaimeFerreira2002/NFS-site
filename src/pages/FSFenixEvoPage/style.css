@@ -1,9 +1,9 @@
-.fenixevo-page {
-  padding-top: 60px;
+.fenixevo {
+  padding-top: 8vh;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  overflow: auto;
+  width: 100svw;
+  background-color: white;
 }
 /* we use fenixevo to avoid conflicts between fsfenixevo and fsdragon page */
 .fenixevo-grey-block-header {

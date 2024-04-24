@@ -1,10 +1,10 @@
 
-.fsfsenix-page{
-    padding-top: 60px;
+.fsfsenix{
+     padding-top: 8vh;
     display: flex;
     flex-direction: column;
-    height: 800vh; /* apagar isto*/
-    width: 100%;   
+    width: 100svw;
+    background-color: white;
 }
 
 .dragon-grey-block-header{

@@ -116,7 +116,7 @@ const FSFenixPage = () => {
   const aeroKeys = ['cd.a', 'cl.d'];
 
   return (
-    <div className='fsdragon-page'>
+    <div className='fsfsenix-page'>
 
     <PageHeader title={t('fsdragon-page.page-title')} subtitle={t('fsdragon-page.page-subtitle')} gradientColor = "#19a3ff" height={'2.5%'}/>
 
