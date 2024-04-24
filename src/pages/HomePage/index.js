@@ -94,10 +94,11 @@ const HomePage = () => {
       <div className="background-home-video">
         <div className = "video-player-container">
         
-            <video className='video-player' autoPlay loop muted>
-              {/*  <source src={fspt_video} type="video/mp4" />*/}
-              Your browser does not support the video tag.
-            </video>   
+        <video className='video-player' autoPlay loop muted>
+          <source src="https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/FSPT23%20-%20The%20Ultimate%20Engineering%20Showdown.mp4?alt=media&token=eac91054-1ff1-4510-9ef4-f3ba561e7fe0" type="video/mp4" />
+           
+          </video>
+
 
             <div ref={titleRef}> 
                 <motion.div animate = {titleController}>
