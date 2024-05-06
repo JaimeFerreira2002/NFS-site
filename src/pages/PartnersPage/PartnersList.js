@@ -1,31 +1,9 @@
-import GalpLogo from '../../assets/images/sponsors_logos/galp.png';
-import boshLogo from '../../assets/images/sponsors_logos/Bosch.jpg'
-import NOVASSTLogo from '../../assets/images/sponsors_logos/nova.png';
-import MCGLogo from '../../assets/images/sponsors_logos/MCG.png';
-import ciclofabLogo from '../../assets/images/sponsors_logos/cf.png';
-import LeanAcadamyLogo from '../../assets/images/sponsors_logos/lean_acadamy.png';
-import AltairLogo from '../../assets/images/sponsors_logos/altair.png';
-import AthimaLogo from '../../assets/images/sponsors_logos/althima.png';
-import VisteonLogo from '../../assets/images/sponsors_logos/visteon.jpg';
-import KFrioLogo from '../../assets/images/sponsors_logos/kfrio.png';
-import CoficabLogo from '../../assets/images/sponsors_logos/Cof.png';
-import BlocksLogo from '../../assets/images/sponsors_logos/blocks.png';
-import DFCTurboLogo from '../../assets/images/sponsors_logos/dfc_turbo.png';
-import MathWorksLogo from '../../assets/images/sponsors_logos/MathWorksLogo.png';
-import NorelemLogo from '../../assets/images/sponsors_logos/norelemlogo.png';
-import AltiumLogo from '../../assets/images/sponsors_logos/altium.png';
-import NDTunedLogo from '../../assets/images/sponsors_logos/ndtuned.png';
-import PCBWayLogo from '../../assets/images/sponsors_logos/pcbway.png';
-
-
-
-
 
 const PartnersData = {
   'INSTITUTIONAL': [
     {
       title: 'NOVA SST',
-      imageUrl: NOVASSTLogo, // Replace with actual path to image
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fnova.png?alt=media&token=634aa583-42bb-4cb3-8ddf-04ccf33c5bc6', // Replace with actual path to image
       link:'https://www.fct.unl.pt/',
       tier: 'Gold'
     },
@@ -33,25 +11,25 @@ const PartnersData = {
     'GOLD': [
       {
         title: 'Galp',
-        imageUrl: GalpLogo,
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fgalp.png?alt=media&token=3d55ec58-d6d5-4e71-9519-67a63aae9742',
         link:'https://galp.com', // Replace with actual path to image,
         tier: 'Gold'
       },
       {
         title: 'Bosch',
-        imageUrl: boshLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2FBosch.png?alt=media&token=b9383533-5350-4c6c-8dd0-7a54f289d3ea', // Replace with actual path to image
         link: 'https://www.bosch.pt/',
         tier: 'Gold'
       },
       {
         title: 'MCG',
-        imageUrl: MCGLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2FMCG.png?alt=media&token=7a027acc-8c4b-46b3-8f29-3b93a65a4803', // Replace with actual path to image
         link: 'https://www.mcg.pt/?lang=pt-pt',
         tier: 'Gold'
       },
       {
         title: 'Ciclo Fapril',
-        imageUrl: ciclofabLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fcf.png?alt=media&token=e02d5ec6-9b26-45dd-b2b3-7358d43773fa', // Replace with actual path to image
         link: 'https://ciclofapril.pt/pt/',
         tier: 'Gold'
 
@@ -62,25 +40,25 @@ const PartnersData = {
      
       {
         title: 'Lean Acadamy',
-        imageUrl: LeanAcadamyLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Flean_acadamy.png?alt=media&token=cc6cf81a-66b7-462d-9e53-8c4dfa1bc7cd', // Replace with actual path to image
         link: 'https://lean.org.pt/',
         tier: 'Silver'
       }, 
       {
         title: 'Altair',
-        imageUrl: AltairLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Faltair.png?alt=media&token=615b0800-eaca-4d8f-98c5-72c6a84cf134', // Replace with actual path to image
         link:'https://altair.com/',
         tier: 'Silver'
       },
       {
         title: 'Althima',
-        imageUrl: AthimaLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Falthima.png?alt=media&token=c159bf7b-73fe-426a-8903-abd8e7d9686b', // Replace with actual path to image
         link:'https://althima.com/',
         tier: 'Silver'
       },
       {
         title: 'Visteon',
-        imageUrl: VisteonLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fvisteon.png?alt=media&token=323b71ea-e1ec-4bfd-b11d-d7a8889fe013', // Replace with actual path to image
         link:'https://www.visteon.com/',
         tier: 'Silver'
       },
@@ -89,25 +67,25 @@ const PartnersData = {
     'BRONZE': [
       {
         title: 'KFrio',
-        imageUrl: KFrioLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fkfrio.png?alt=media&token=e7f2ce9a-ca6b-4ee4-b84c-157cd6ac5806', // Replace with actual path to image
         link:'https://kfrio.pt/',
         tier: 'Bronze'
       },
       {
         title: 'Blocks',
-        imageUrl: BlocksLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fblocks.png?alt=media&token=bcf36927-9be8-4466-bffb-cdd0cce20d4b', // Replace with actual path to image
         link:'https://blockstec.com/',
         tier: 'Bronze'
       },
       {
         title: 'DFC Turbo',
-        imageUrl: DFCTurboLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fdfc_turbo.png?alt=media&token=4d54205b-822c-432e-b4ce-393e6b5f4c65', // Replace with actual path to image
         link:'https://dfcturbo.com/',
         tier: 'Bronze'
       },
       {
         title: 'Norelem',
-        imageUrl: NorelemLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fnorelemlogo.png?alt=media&token=db5f4187-17e3-4e52-aa2c-cd10c70d4967', // Replace with actual path to image
         link: 'https://norelem.es/pt',
         tier: 'Bronze'
       },
@@ -117,13 +95,13 @@ const PartnersData = {
     'PARTNERS': [
       {
         title: 'Altium',
-        imageUrl: AltiumLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Faltium.png?alt=media&token=dffdab52-2feb-4fcd-acbc-0645d9586f01', // Replace with actual path to image
         link:'https://www.altium.com/',
         tier: 'Partners'
       },
       {
         title: 'COFICAB',
-        imageUrl: CoficabLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2FCof.png?alt=media&token=5656f99e-8b73-40ff-8687-5d3fd4f53cd8', // Replace with actual path to image
         link: 'https://www.coficab.pt/',
         tier: 'Partners'
       },
@@ -135,19 +113,19 @@ const PartnersData = {
       // },
       {
         title: 'MathWorks',
-        imageUrl: MathWorksLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2FMathWorksLogo.png?alt=media&token=fed5c98d-7cdd-4f3e-b3f4-d4418548aea3', // Replace with actual path to image
         link: 'https://www.mathworks.com',
         tier: 'Bronze'
       },
       {
         title: 'ND Tuned',
-        imageUrl: NDTunedLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fndtuned.png?alt=media&token=38b7c255-c47a-4501-9b00-2d08abac8f48', // Replace with actual path to image
         link:'https://www.ndtuned.com/',
         tier: 'Partners'
       },
       {
         title: 'PCBWay',
-        imageUrl: PCBWayLogo, // Replace with actual path to image
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/sponsors%2Fpcbway.png?alt=media&token=f23c094b-1291-4671-81e5-24b55797581c', // Replace with actual path to image
         link: 'https://www.pcbway.com/',
         tier: 'Partners'
       },

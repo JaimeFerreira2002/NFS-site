@@ -35,14 +35,17 @@ import WOBLogo from '../../assets/images/sponsors_logos/wob_palmela.jpg'
 
 //photos
 
-import image1 from '../../assets/images/fsdragon_photos/image_1.jpg';
-import image2 from '../../assets/images/fsdragon_photos/image_2.jpg';
-import image3 from '../../assets/images/fsdragon_photos/image_3.jpg';
-import image4 from '../../assets/images/fsdragon_photos/image_4.jpg';
-import image5 from '../../assets/images/fsdragon_photos/image_5.jpg';
-import image6 from '../../assets/images/fsdragon_photos/image_6.jpg';
-import image7 from '../../assets/images/fsdragon_photos/image_7.jpg';
+
 import MemberCard from '../../components/MemberCard';
+
+
+const image1 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_1.jpg?alt=media&token=4218f056-21c2-417f-a641-e2c906c511b8';
+const image2 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_2.jpg?alt=media&token=b242db41-8235-47c8-b57c-f5d4ea9f907d';
+const image3 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_3.jpg?alt=media&token=3d5fc4bc-8ca3-4dc1-9e63-aa7060a85a0a';
+const image4 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_4.jpg?alt=media&token=ff640648-f3ba-4e7d-b158-7cb7f2f19067';
+const image5 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_5.jpg?alt=media&token=6b48cd96-ed4a-43e8-bae3-05aeff71a21b';
+const image6 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_6.jpg?alt=media&token=6436488a-8a6c-4ff2-bd28-0f0da602f599';
+const image7 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_7.jpg?alt=media&token=34e4920c-6a83-4831-b9b8-2b6f4b8ff486';
 
 const imageArray = [image1, image2, image3, image4, image5, image6, image7];
 
