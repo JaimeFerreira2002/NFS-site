@@ -121,7 +121,7 @@ const FSFenixPage = () => {
   return (
     <div className='fsfsenix-page'>
 
-    <PageHeader title={t('fsdragon-page.page-title')} subtitle={t('fsdragon-page.page-subtitle')} gradientColor = "#19a3ff" height={'2.5%'}/>
+    <PageHeader title={t('fsfenix-page.page-title')} subtitle={t('fsfenix-page.page-subtitle')} gradientColor = "#19a3ff" height={'2.5%'}/>
 
 
       <div className='fenix-background-image-container'>

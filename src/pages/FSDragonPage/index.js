@@ -120,12 +120,12 @@ const FSDragonPage = () => {
   const aeroKeys = ['cd.a', 'cl.d'];
 
   return (
-    <div className='fsfsenix-page'>
+    <div className='fsdragon-page'>
 
-      <PageHeader title={t('fsfenix-page.page-title')} subtitle={t('fsfenix-page.page-subtitle')} gradientColor = "#19ff38" height={'7%'}/>
+      <PageHeader title={t('fsdragon-page.page-title')} subtitle={t('fsdragon-page.page-subtitle')} gradientColor = "#19ff38" height={'2.5%'}/>
 
       <div className='dragon-background-image-container'>
-        {/* <div className='background-image-gradient-overlay'/>  */}
+         <div className='background-image-gradient-overlay'/>
       </div>     
 
       {/* <div className='dragon-model_and_specs-container'>
