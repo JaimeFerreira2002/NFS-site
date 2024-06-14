@@ -16,11 +16,11 @@
 
 .dragon-background-image-container{
   position: relative;
-  height: 10%;
+  min-height: 10%; 
+  width: 100%;
   background-image: url('../../assets/images/fsdragon_photos/image_2.jpg');
-  background-position: center top; 
+  background-position: center center;
   background-size: cover;
-
 }
 
 /* .background-image-gradient-overlay{

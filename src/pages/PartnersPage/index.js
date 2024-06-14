@@ -38,7 +38,7 @@ const categoryMap = {
   "INSTITUTIONAL" : "#19a3ff",
   "GOLD" : "#FDCD87",
   "SILVER" : "#c0c0c0",
-  "BRONZE" : "#CD7F32",
+  "BRONZE & PARTNERS" : "#CD7F32",
   "PARTNERS" : "#FDCD87",
 }
 
