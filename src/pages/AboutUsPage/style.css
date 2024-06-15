@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_2.jpg?alt=media&token=b242db41-8235-47c8-b57c-f5d4ea9f907d');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fimage_2.jpg?alt=media&token=9a0cc5a6-9cee-425b-8ad6-0f3b79e94446');
   background-size: cover;
   background-position: center 60%;
   flex-direction: column;
@@ -91,6 +91,13 @@ body {
   gap: 20px;
 }
 
+.how-it-works img {
+  max-width: clamp(100px, 60vw, 500px);
+  /* Adjusts based on the height */
+  height: auto;
+  border-radius: 10px;
+}
+
 
 .how-it-works h2 {
   text-align: right;
@@ -109,6 +116,14 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px 10vw;
+  }
+
+  .how-it-works img {
+    max-width: clamp(100px, 60vw, 500px);
+    /* Adjusts based on the height */
+    height: auto;
+    border-radius: 10px;
+
   }
 
   .how-it-works h2 {
@@ -141,7 +156,7 @@ body {
 
 /* Default styles for English images */
 .team-image-container.en {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/draw.io.team%2Forg_chart_eng.drawio_desktop.png?alt=media&token=76274dec-ddcb-4459-b495-f45ff9712ec7');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Forg_chart_eng.drawio_desktop.png?alt=media&token=08fd8c6b-e6df-4177-8f78-6db11b99b6d5');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -151,14 +166,14 @@ body {
 /* Styles for English images on screens with an aspect ratio less than 1 (more vertical) */
 @media (max-aspect-ratio: 1/1) {
   .team-image-container.en {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/draw.io.team%2Forg_chart_eng.drawio_mobile.png?alt=media&token=c3f2c462-d151-4b25-b5f0-734d051377c6');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Forg_chart_eng.drawio_mobile.png?alt=media&token=f70792bf-147c-46c8-acc2-b6a62178b470');
     z-index: 10;
   }
 }
 
 /* Default styles for Portuguese images */
 .team-image-container.pt {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/draw.io.team%2Forg_chart_pt.drawio_desktop.png?alt=media&token=3c430c3d-1279-4eb7-99fe-927c13d8d10a');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Forg_chart_pt.drawio_desktop.png?alt=media&token=2a525508-5981-49df-bff5-f309255fd5e6');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -168,7 +183,7 @@ body {
 /* Styles for Portuguese images on screens with an aspect ratio less than 1 (more vertical) */
 @media (max-aspect-ratio: 1/1) {
   .team-image-container.pt {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/draw.io.team%2Forg_chart_pt.drawio_mobile.png?alt=media&token=46e7a341-da33-45db-bb81-cdb59371b6ca');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Forg_chart_pt.drawio_mobile.png?alt=media&token=d1b62a28-f752-4e37-9383-fe94b4a85b19');
     z-index: 10;
   }
 }

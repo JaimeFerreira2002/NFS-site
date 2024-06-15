@@ -123,7 +123,7 @@ const FSFenixPage = () => {
 
     <PageHeader title={t('fsfenix-page.page-title')} subtitle={t('fsfenix-page.page-subtitle')} gradientColor = "#19a3ff" height={'2.5%'}/>
 
-      <img alt="carro" src="https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/Renders/Ffsfenix_render3.png?alt=media&token=24fe77ce-018b-40bc-9ab6-11fceddf5278"></img>
+      <img alt="carro" src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%2Ffsfenix_render3.png?alt=media&token=f6f6d07e-71a5-4524-9761-e3460a77c3fd"></img>
       <div className='fenix-background-image-container'>
         <div className='fenix-background-image-gradient-overlay'/> 
       </div>     

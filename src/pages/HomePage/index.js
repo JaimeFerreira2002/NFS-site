@@ -131,7 +131,7 @@ const HomePage = () => {
         </div>
 
         <motion.div className="team-photo" animate={controlsTeam} initial={{ opacity: 0, x: 100 }}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/team_photo_fspt.jpg?alt=media&token=9d944e58-54af-4703-b667-d2a6db782c2c' alt="Team Leader" />
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_fspt.jpg?alt=media&token=97557c72-cc63-44b0-a1e4-3ca6783a03c5' alt="Team Leader" />
         </motion.div>
       </div>
       {/* Additional sections if needed */}
@@ -171,7 +171,7 @@ const HomePage = () => {
         </div>
         <div className="garage-home-image">
           <motion.div className="team-photo" animate={controlsGarage} initial={{ opacity: 0, x: 100 }}>
-            <img src='https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/fsfenix.png?alt=media&token=cb77d0e9-ed9c-4ab8-b39e-be256452c59a ' alt="Garage" />
+            <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=1419a883-a4d9-4a9c-a3ed-260d664307c6' alt="Garage" />
           </motion.div>
 
 

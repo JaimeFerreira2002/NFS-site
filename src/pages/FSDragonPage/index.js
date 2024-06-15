@@ -39,13 +39,13 @@ import WOBLogo from '../../assets/images/sponsors_logos/wob_palmela.jpg'
 import MemberCard from '../../components/MemberCard';
 
 
-const image1 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_1.jpg?alt=media&token=4218f056-21c2-417f-a641-e2c906c511b8';
-const image2 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_2.jpg?alt=media&token=b242db41-8235-47c8-b57c-f5d4ea9f907d';
-const image3 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_3.jpg?alt=media&token=3d5fc4bc-8ca3-4dc1-9e63-aa7060a85a0a';
-const image4 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_4.jpg?alt=media&token=ff640648-f3ba-4e7d-b158-7cb7f2f19067';
-const image5 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_5.jpg?alt=media&token=6b48cd96-ed4a-43e8-bae3-05aeff71a21b';
-const image6 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_6.jpg?alt=media&token=6436488a-8a6c-4ff2-bd28-0f0da602f599';
-const image7 = 'https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/image_7.jpg?alt=media&token=34e4920c-6a83-4831-b9b8-2b6f4b8ff486';
+const image1 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_1.jpg?alt=media&token=65326678-4677-41bc-9c28-1692c8efd323';
+const image2 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_2.jpg?alt=media&token=a2306c1f-b1ed-4916-9d05-c5a6e6258d02';
+const image3 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_3.jpg?alt=media&token=162a9a4e-0f88-438e-840e-5332c069b511';
+const image4 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_4.jpg?alt=media&token=8b969bc2-995f-4919-af96-bb773aa4d8f8';
+const image5 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_5.jpg?alt=media&token=f2fda04c-84ce-416f-a508-11ef867442fd';
+const image6 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_6.jpg?alt=media&token=00e9c650-49d4-4124-80fe-964f38a5079d';
+const image7 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_7.jpg?alt=media&token=a34814ce-d33f-4545-8bc2-0aa0f40cff44';
 
 const imageArray = [image1, image2, image3, image4, image5, image6, image7];
 

@@ -105,10 +105,10 @@ const GaragePage = () => {
 
       <Slider ref={sliderRef} {...settings} className='cars-image-slider'>
         <div className={`car-image`}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/Renders%2Ffsdragon.png?alt=media&token=f47d23c6-6b44-456c-87e6-8435ae0456bb' alt='fsdragon' />       
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsdragon.png?alt=media&token=f76b0ebf-07f9-4410-b869-5e9854c29799' alt='fsdragon' />       
         </div>
         <div className={`car-image`}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/Renders%2Ffsfenix.png?alt=media&token=e498e34d-6c62-4b5b-a45a-3e9814c2e551' alt='fsfenix' />   
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=1419a883-a4d9-4a9c-a3ed-260d664307c6' alt='fsfenix' />   
         </div>
       </Slider>
       
