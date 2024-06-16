@@ -53,6 +53,12 @@ const PartnersData = {
         tier: 'Gold'
 
       },
+      {
+        title: 'VW Autoeuropa',
+        imageUrl:'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FGold%2FVW_logo.jpg?alt=media&token=993fae19-49dc-459e-8f5c-a70bd6634300',
+        link:'https://www.volkswagenautoeuropa.pt/',
+        tier:'Gold',
+      }
       // ... add more partners as needed
     ],
     'SILVER': [

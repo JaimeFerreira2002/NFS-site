@@ -157,23 +157,24 @@
 
   "fsdragon-page": {
     "page-title": "FS DRAGON",
-    "page-subtitle": "The FS DRAGON is ...",
-    "specs-title": "Technical Specifications",
-    "team-title": "The Team",
+    "page-subtitle": "O FS DRAGON é o primeiro protótipo que a equipa do NOVA Formula Student construiu.",
+    "specs-title": "Especificações Técnicas",
+    "team-title": "A Equipa",
+    "gallery": "Galeria",
     "technical-specs": {
         "general": {
-            "title": "General",
-            "weight": "Weight",
+            "title": "Geral",
+            "weight": "Massa",
             "weight-value": "280 Kg",
-            "wheel-base": "Wheelbase",
+            "wheel-base": "Distância entre eixos",
             "wheel-base-value": "1525 mm",
             "width": "Track",
             "width-value": "1346 mm",
-            "height-cg": "Height",
+            "height-cg": "Altura CG",
             "height-cg-value": "250 mm",
             "0-100": "0-100 km/h",
             "0-100-value": "3.9 s",
-            "top-speed": "Top Speed",
+            "top-speed": "Velocidade máxima",
             "top-speed-value": "170 Km/h"
         },
         "powertrain": {

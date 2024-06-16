@@ -155,14 +155,14 @@ const FSDragonPage = () => {
 
       <div className='dragon-gallery-container'>
           <div className='dragon-section-title'>
-            Gallery
+          {t(`fsdragon-page.gallery`)}
           </div>
           <Gallery images={imageArray} />
       </div>
 
       <div className='dragon-team-container'>
         <div className='dragon-section-title'>
-          Team
+        {t(`fsdragon-page.team-title`)}
         </div>
 
         <div ref={teamRef}>

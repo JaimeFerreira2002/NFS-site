@@ -181,7 +181,7 @@ const FSFenixPage = () => {
       {/* TEAM SECTION */}
       <div className='fenix-team-container'>
         <div className='fenix-section-title'>
-          Team
+        {t(`fsfenix-page.team-title`)}
         </div>
 
         <div className='team-number-container'>
