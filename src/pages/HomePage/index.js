@@ -95,7 +95,7 @@ const HomePage = () => {
         <div className = "video-player-container">
         
         <video className='video-player' autoPlay loop muted>
-          <source src="https://firebasestorage.googleapis.com/v0/b/site-nfs.appspot.com/o/FSPT23%20-%20The%20Ultimate%20Engineering%20Showdown.mp4?alt=media&token=eac91054-1ff1-4510-9ef4-f3ba561e7fe0" type="video/mp4" />
+          <source src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/fspt_video.mp4?alt=media&token=ac9d5aea-68e3-4aca-a518-3c8b26392cfb" />
            
           </video>
 
