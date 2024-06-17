@@ -1,6 +1,7 @@
 
+
 const PartnersData = {
-  'INSTITUTIONAL': [
+  "institutional": [
     {
       title: 'NOVA University',
       imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2FNOVA%20UNI.png?alt=media&token=cbf5d98d-5d0b-4149-b79c-c2f3648dc58b', // Replace with actual path to image
@@ -20,7 +21,7 @@ const PartnersData = {
       tier: 'Gold'
     },
   ],
-    'GOLD': [
+    'gold': [
       {
         title: 'Galp',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FGold%2FGALP.png?alt=media&token=bc649a92-f6a9-477d-9991-13a5490301b2',
@@ -55,13 +56,13 @@ const PartnersData = {
       },
       {
         title: 'VW Autoeuropa',
-        imageUrl:'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FGold%2FVW_logo.jpg?alt=media&token=993fae19-49dc-459e-8f5c-a70bd6634300',
+        imageUrl:'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FGold%2FVW_Autoeuropa.png?alt=media&token=3c4029b6-e21d-4450-87a9-ede9dd1324c0',
         link:'https://www.volkswagenautoeuropa.pt/',
         tier:'Gold',
       }
       // ... add more partners as needed
     ],
-    'SILVER': [
+    'silver': [
      
       {
         title: 'Lean Acadamy',
@@ -107,7 +108,7 @@ const PartnersData = {
       },
       // ... add more partners as needed
     ],
-    'BRONZE & PARTNERS': [
+    'bronze': [
       {
         title: '3DISO',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2F3D%20ISO.png?alt=media&token=332b678b-1b68-4998-9965-5d69a8f67d3e', // Replace with actual path to image
@@ -190,6 +191,12 @@ const PartnersData = {
         title: 'MATHWORKS',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FMATHWORKS.png?alt=media&token=f9901129-26a5-4a4f-983b-c63110396ce2', // Replace with actual path to image
         link:'https://www.mathworks.com/',
+        tier: 'Bronze'
+      },
+      {
+        title: 'Maxiarte',
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2Fcropped-Maxiarte_logo1.png?alt=media&token=626c9759-a65e-45de-b16b-c58f1e81bca1', // Replace with actual path to image
+        link: 'https://www.maxiarte.pt/',
         tier: 'Bronze'
       },
       {

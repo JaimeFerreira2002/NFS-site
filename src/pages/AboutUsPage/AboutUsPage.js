@@ -55,7 +55,7 @@ const AboutUsPage = () => {
           </h2>
             <p>{t("about-page.how-it-works-desc")}</p>
           </div>
-          <img src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fcar_render_bridge.jpg?alt=media&token=fa303a12-48d2-40df-ab0b-7f99ca55b7b6" alt="Car Bridge" />
+          {/* <img src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fcar_render_bridge.jpg?alt=media&token=fa303a12-48d2-40df-ab0b-7f99ca55b7b6" alt="Car Bridge" /> */}
         </div>
         
         <div className="events">

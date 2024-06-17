@@ -21,7 +21,11 @@
 
   "partners-page": {
     "page-title": "Parceiros",
-    "page-subtitle": "Parceiros oficiais do Nova Formula Student"
+    "page-subtitle": "Parceiros oficiais do Nova Formula Student",
+    "institutional": "Institucional",
+    "bronze": "Bronze & Parceiros",
+    "silver": "Silver",
+    "gold": "Gold"
   },
 
   "fsfenix-page": {

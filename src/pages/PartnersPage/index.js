@@ -38,7 +38,7 @@ const categoryMap = {
   "INSTITUTIONAL" : "#19a3ff",
   "GOLD" : "#FDCD87",
   "SILVER" : "#c0c0c0",
-  "BRONZE & PARTNERS" : "#CD7F32",
+  "BRONZE" : "#CD7F32",
   "PARTNERS" : "#FDCD87",
 }
 
@@ -55,7 +55,7 @@ const Partners = ({ partners = PartnersData }) => {
         {Object.keys(partners).map((category) => (
           <div key={category} className="partner-category">
             <div className="section-title-wrapper">
-              <SectionTitle text={category} fontSize={"2.6em"} altName={"partners-level"} textColor={"#1d1d1d"} dividersColor={categoryMap[category]}/>
+              <SectionTitle text={`${t(`partners-page.${category}`).toUpperCase()}`} fontSize={"2.6em"} altName={"partners-level"} textColor={"#1d1d1d"} dividersColor={categoryMap[category.toUpperCase()]}/>
             </div>
             <div className="partner-row">
               {partners[category].map((partner) => (
