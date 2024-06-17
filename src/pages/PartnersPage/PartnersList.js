@@ -22,13 +22,13 @@ const PartnersData = {
     },
     {
       title: 'DEMI',
-      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2FDEMI.jpg?alt=media&token=a04a10a3-e1a4-438a-b5af-c0f74a91ec90', // Replace with actual path to image
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2Fdemi.png?alt=media&token=7f3f7ebd-342d-4c36-9602-56450813a1df', // Replace with actual path to image
       link:'https://www.demi.fct.unl.pt/',
       tier: 'Gold'
     },
     {
       title: 'DEEC',
-      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2FDEEC.jpg?alt=media&token=239ec15b-d3ac-416d-bd92-071464138f09', // Replace with actual path to image
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2Fdeec.png?alt=media&token=3f67b690-e7d1-45e3-9c89-f3114e566ab0', // Replace with actual path to image
       link:'https://www.dee.fct.unl.pt/',
       tier: 'Gold'
     },
