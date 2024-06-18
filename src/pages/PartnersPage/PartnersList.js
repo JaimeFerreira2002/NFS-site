@@ -10,7 +10,7 @@ const PartnersData = {
     },
     {
       title: 'NOVA SST',
-      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2FFCT.png?alt=media&token=7de493af-dadc-44bf-bd74-d79e2fffdc29', // Replace with actual path to image
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2Flogo_nova_fct_pt_v.png?alt=media&token=ed0015be-b061-4ebf-a3a8-3fd36fea20da', // Replace with actual path to image
       link:'https://www.fct.unl.pt/',
       tier: 'BIG'
     },
