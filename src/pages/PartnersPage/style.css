@@ -7,8 +7,20 @@
   min-height: 100svh;
 }
 
-
-.partner-row {
+.partner-row.tier-big {
+  /* Styles for tier BIG partners row */
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow cards to wrap to the next line */
+  justify-content: space-evenly;
+  /* Evenly space the cards */
+  gap: 20px;
+  /* Space between cards */
+  padding: 1vh;
+  padding-bottom: 2%;
+  overflow-x: auto;
+}
+.partner-row.others {
   display: flex;
   flex-wrap: wrap;
   /* Allow cards to wrap to the next line */

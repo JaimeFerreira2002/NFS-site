@@ -6,18 +6,18 @@ const PartnersData = {
       title: 'NOVA University',
       imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2FNOVA%20UNI.png?alt=media&token=cbf5d98d-5d0b-4149-b79c-c2f3648dc58b', // Replace with actual path to image
       link:'https://www.unl.pt/',
-      tier: 'Gold'
-    },
-    {
-      title: 'AEFCT',
-      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2Flogo_aefct.png?alt=media&token=a90aefd0-ebda-443e-88d4-9fa2b7ed38da', // Replace with actual path to image
-      link:'https://ae.fct.unl.pt/',
-      tier: 'Gold'
+      tier: 'BIG'
     },
     {
       title: 'NOVA SST',
       imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2FFCT.png?alt=media&token=7de493af-dadc-44bf-bd74-d79e2fffdc29', // Replace with actual path to image
       link:'https://www.fct.unl.pt/',
+      tier: 'BIG'
+    },
+    {
+      title: 'AEFCT',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2FAE_peq.png?alt=media&token=ac1e28cb-4b32-44b6-967e-26339aa40c3a', // Replace with actual path to image
+      link:'https://ae.fct.unl.pt/',
       tier: 'Gold'
     },
     {
