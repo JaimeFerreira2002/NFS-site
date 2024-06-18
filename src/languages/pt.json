@@ -155,7 +155,12 @@
     "bsd" : "Diretor de Estratégia e Negócio",
     "dep-leader" : "Coordenador",
     "member" : "Membro"
-}
+},
+"team-container":{
+      "members": "Membros",
+      "degrees": "Cursos",
+      "universities": "Faculdades"
+    }
   
   },
 

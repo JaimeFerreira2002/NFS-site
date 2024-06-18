@@ -192,7 +192,7 @@ const FSFenixPage = () => {
                   53
               </div>
               <div className='numbers-title members'>
-                  Members
+              {t(`fsfenix-page.team-container.members`)}
               </div>
             </div>
 
@@ -201,7 +201,7 @@ const FSFenixPage = () => {
                   17
               </div>
               <div className='numbers-title medegreesmbers'>
-                  Degrees
+              {t(`fsfenix-page.team-container.degrees`)}
               </div>
             </div>
 
@@ -210,7 +210,7 @@ const FSFenixPage = () => {
                   3
               </div>
               <div className='numbers-title universities'>
-                  Universities
+              {t(`fsfenix-page.team-container.universities`)}
               </div>
             </div>
           </div>

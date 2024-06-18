@@ -71,7 +71,7 @@ const ContactsPage = () => {
             </div>
             <div className='contact-sub-section '>
               <h3>{t('contacts-page.cr-email')}</h3>
-              <p>{"cr.formualstudent@ae.fct.unl.pt"}</p>
+              <p>{"cr.formulastudent@ae.fct.unl.pt"}</p>
             </div>
             <div className='contact-sub-section '>
               <h3>{t('contacts-page.team-hq')}</h3>

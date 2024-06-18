@@ -21,7 +21,7 @@ const TeamListData = [
                 name: 'Francisco Rodrigues', role: 'dep-leader', imageSrc: placeholder
             },
             {
-                name: 'Beatriz Simõess', role: 'member', imageSrc: placeholder
+                name: 'Beatriz Simões', role: 'member', imageSrc: placeholder
             },
             {
                 name: 'Rafael Nunes', role: 'member', imageSrc: placeholder

@@ -230,6 +230,11 @@
       "bsd": "Business & Strategy Director",
       "dep-leader": "Coordinator",
       "member": "Member"
+    },
+    "team-container":{
+      "members": "Members",
+      "degrees": "Degrees",
+      "universities": "Schools"
     }
   },
   "fsdragon-page": {
