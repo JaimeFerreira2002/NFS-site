@@ -28,6 +28,138 @@
     "gold": "Gold"
   },
 
+  "fsfenixevo-page": {
+    "page-title": "FS FENIX EVO",
+    "page-subtitle": "O FS FENIX EVO ...",
+    "specs-title" : "Especificações Técnicas",
+    "team-title" : "A Equipa",
+    "technical-specs": {
+      "general": {
+         "title" : "Geral",
+
+          "weight" : "Peso",
+          "weight-value": "280 Kg",
+
+          "wheel-base" : "Distância entre eixos",
+          "wheel-base-value": "1525 mm",
+
+          "width" : "Largura da via",
+          "width-value": "1346 mm",
+
+          "height-cg" : "Altura CG",
+          "height-cg-value": "250 mm",
+
+          "0-100" : "0-100 km/h",
+          "0-100-value": "3.9 s",
+
+          "top-speed" : "Velocidade Máxima",
+          "top-speed-value": "170 Km/h"  
+      },
+
+      "powertrain": {
+         "title" : "Motor",
+
+          "engine" : "Motor",
+          "engine-value": "Yamaha MT-07 CP2",
+
+          "power" : "Potência",
+          "power-value": "67 CV",
+
+          "max-rpm" : "Max RPM",
+          "max-rpm-value": "9000",
+
+          "volume" : "Cilindrada",
+          "volume-value": "698 cc",
+
+          "ecu" : "ECU",
+          "ecu-value": "Splitronics Mercury 3",
+
+          "quick-shifter" : "Quick Shifter",
+          "quick-shifter-value": "KLIKTRONIC"  
+      },
+
+      "steering&suspension": {
+          "title" : "Direção & Suspensão",
+
+          "type" : "Tipo",
+          "type-value": "Double Wishbone com pushrod",
+
+          "tyres" : "Pneus",
+          "tyres-value": "Hoosier 205/407 R13 FSAE",
+
+          "breaking" : "Travagem",
+          "breaking-value": "AP Racing, pistões opostos com 25.4 milímetros de diâmetro (4 pistões à frente, 2 pistões atrás)",
+
+          "suspension" : "Amortecedores",
+          "suspension-value": "FOX Van R"  
+      },
+
+      "chassis": {
+          "title" : "Chassis",
+
+          "structure" : "Estrutura",
+          "structure-value": ": Tubular de Aço BS4-T45",
+
+          "weight" : "Peso",
+          "weight-value": "38 Kg",
+
+          "impact-structure" : "Atenuador de Impacto",
+          "impact-structure-value": "Espuma de Alta Densidade"
+
+      },
+
+      "aero": {
+          "title" : "Aerodinâmica",
+
+          "cd.a" : "CD.A",
+          "cd.a-value": "1.553",
+
+          "cl.d" : "CL.D",
+          "cl.d-value": "1.106"
+      }
+  },
+
+    "competitions": {
+      "title" : "Competições",
+      "subtitle": "O FS FENIX EVO irá competir nos eventos Formula Student Austria & Formula Student Portugal!",
+      "fspt": {
+        "title": "FORMULA STUDENT PORTUGAL",
+        "date": "3 a 7 de Setembro 2024",
+        "location": "Castelo Branco Kart Track",
+        "class": "Classe 1"
+      },
+      "fsa": {
+        "title": "FORMULA STUDENT AUSTRIA",
+        "date": "21 a 25 de Julho 2024",
+        "location": "RedBull Ring",
+        "class": "Classe 1"
+      }
+    },
+
+    "teams-names" : {
+    "board" : "Direção",
+    "aerodynamics" : "Aerodinâmica",
+    "chassis&suspension" : "Chassis e Suspensão",
+    "vehicle-dynamics" : "Dinâmica de Veículo",
+    "steering&ergonomics" : "Direção e Ergonómica ",
+    "electronics" : "Eletrónica",
+    "powertrain" : "Motor",
+    "marketing" : "Marketing",
+    "corporate-relations" : "Relações Empresariais",
+    "logistics" : "Logística",
+    "finances" : "Finanças"
+},
+    "roles": {
+      "team-leader" : "Team Leader",
+    "technical-director" : "Diretor Técnico",
+    "team-leader&project-manager": "Team Leader & Diretor de Projeto",
+    "technical-director&team-leader" : "Diretor Técnico & Team Leader",
+    "bsd" : "Diretor de Estratégia e Negócio",
+    "dep-leader" : "Coordenador",
+    "member" : "Membro"
+    }
+  },
+
   "fsfenix-page": {
     "page-title": "FS FENIX",
     "page-subtitle": "O FS FENIX representa o reerguer das cinzas do Formula Student na Universidade NOVA",
@@ -125,8 +257,8 @@
     "subtitle" : "O FS FENIX competiu no evento Formula Student Portugal!",
     "fspt" : {
         "title" : "FORMULA STUDENT PORTUGAL",
-         "position" : "...",
-        "date" : "3 a 7 de Setembro 2024",
+         "position" : "4º Lugar",
+        "date" : "1 a 5 de Agosto 2023",
         "location" : "Kartódromo de Castelo Branco"
 
     }
@@ -151,7 +283,7 @@
     "team-leader" : "Team Leader",
     "technical-director" : "Diretor Técnico",
     "team-leader&project-manager": "Team Leader & Diretor de Projeto",
-            "technical-director&team-leader" : "Diretor Técnico & Team Leader",
+    "technical-director&team-leader" : "Diretor Técnico & Team Leader",
     "bsd" : "Diretor de Estratégia e Negócio",
     "dep-leader" : "Coordenador",
     "member" : "Membro"

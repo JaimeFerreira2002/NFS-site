@@ -255,8 +255,8 @@ const PartnersData = {
       },
       {
         title: 'TeixeiraDuarte',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FTEIXEIRA%20DUARTE.png?alt=media&token=2b079e99-fd7a-4cb6-934b-877be105eb4b', // Replace with actual path to image
-        link: 'https://www.teixeiraduarte.pt/',
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FLogo_TDGI.png?alt=media&token=6a3da3d1-367e-4b8c-a470-b946452f9be2', // Replace with actual path to image
+        link: 'https://www.tdgiworld.com/',
         tier: 'Bronze'
       },
       {
