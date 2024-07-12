@@ -2,7 +2,6 @@ import React from "react";
 import "../CompetitionTile/style.css";
 import { useTranslation } from "react-i18next";
 import fspt_photo from "../../../../assets/images/FSPT.jpg";
-import fsa_photo from "../../../../assets/images/FSA.jpg";
 const ImageGallery = () => {
   const { t } = useTranslation();
 
@@ -18,15 +17,6 @@ const ImageGallery = () => {
           location={t("fsfenix-page.competitions.fspt.location")}
           position={t("fsfenix-page.competitions.fspt.position")}
           url={"https://www.formulastudent.pt/"}
-        />
-        <ImageCard
-          key={"fsa"}
-          src={fsa_photo}
-          title={t("fsfenix-page.competitions.fsa.title")}
-          date={t("fsfenix-page.competitions.fsa.date")}
-          location={t("fsfenix-page.competitions.fsa.location")}
-          division={t("fsfenix-page.competitions.fsa.class")}
-          url={"https://fsaustria.at/"}
         />
       </div>
     </div>
