@@ -115,21 +115,20 @@ const FenixEvoPage = () => {
     "weight",
     "wheel-base",
     "width",
+    "height",
     "height-cg",
-    "0-100",
+    "length",
     "top-speed",
   ];
   const powertrainKeys = [
     "engine",
     "power",
     "max-rpm",
-    "volume",
-    "ecu",
-    "quick-shifter",
+    "gear-box",
   ];
-  const steeringSuspensionKeys = ["type", "tyres", "breaking", "suspension"];
-  const chassisKeys = ["structure", "weight", "impact-structure"];
-  const aeroKeys = ["cd.a", "cl.d"];
+  const steeringSuspensionKeys = ["type", "tyres", "breaking"];
+  const chassisKeys = ["structure", "weight-dist"];
+  const aeroKeys = ["bodywork"];
 
   return (
     <div className="fenixevo">

@@ -35,60 +35,73 @@
     "technical-specs": {
       "general": {
         "title": "General",
+
         "weight": "Weight",
-        "weight-value": "280 Kg",
-        "wheel-base": "Wheelbase",
-        "wheel-base-value": "1525 mm",
-        "width": "Track",
-        "width-value": "1346 mm",
-        "height-cg": "Height",
-        "height-cg-value": "250 mm",
-        "0-100": "0-100 km/h",
-        "0-100-value": "3.9 s",
+        "weight-value": "260 Kg",
+
+        "wheel-base": "Wheel Base",
+        "wheel-base-value": "1585 mm",
+
+        "width": "Width",
+        "width-value": "1455 mm",
+
+        "height": "Height",
+        "height-value": "1176 mm",
+
+        "height-cg": "CG Height",
+        "height-cg-value": "299 mm",
+
+        "length": "Length",
+        "length-value": "2811 mm",
+
         "top-speed": "Top Speed",
-        "top-speed-value": "170 Km/h"
+        "top-speed-value": "140 Km/h"
       },
+
       "powertrain": {
         "title": "Powertrain",
+
         "engine": "Engine",
-        "engine-value": "Yamaha MT-07 CP2",
+        "engine-value": "Honda CBR 600 F4i",
+
         "power": "Power",
-        "power-value": "67 BHP",
+        "power-value": "75 HP",
+
         "max-rpm": "Max RPM",
-        "max-rpm-value": "9000",
-        "volume": "Volume",
-        "volume-value": "698 cc",
-        "ecu": "ECU",
-        "ecu-value": "Splitronics Mercury 3",
-        "quick-shifter": "Quick Shifter",
-        "quick-shifter-value": "KLIKTRONIC"
+        "max-rpm-value": "13500",
+
+        "gear-box": "Gearbox",
+        "gear-box-value": "Sequential Semi-Automatic 6-speed"
       },
+
       "steering&suspension": {
         "title": "Steering & Suspension",
+
         "type": "Type",
-        "type-value": "Double Wishbone with pushrod",
+        "type-value": "Double Wishbone with Push-Rod",
+
         "tyres": "Tyres",
-        "tyres-value": "Hoosier 205/407 R13 FSAE",
-        "breaking": "Breaking",
-        "breaking-value": "AP Racing, opposite pistons with 25.4 mm diameter (4 in the front, 2 in the rear)",
-        "suspension": "Suspension",
-        "suspension-value": "FOX Van R"
+        "tyres-value": "Hoosier 205/470 – R13",
+
+        "breaking": "Braking",
+        "breaking-value": "4-Piston AP Racing Calipers"
       },
+
       "chassis": {
         "title": "Chassis",
+
         "structure": "Structure",
-        "structure-value": "Steel tube BS4-T45",
-        "weight": "Weight",
-        "weight-value": "38 Kg",
-        "impact-structure": "Impact Structure",
-        "impact-structure-value": "High Density Foam"
+        "structure-value": "Tubular with Tungsten Welding",
+
+        "weight-dist": "Weight Distribution",
+        "weight-dist-value": "45F 55R"
       },
+
       "aero": {
         "title": "Aerodynamics",
-        "cd.a": "CD.A",
-        "cd.a-value": "1.553",
-        "cl.d": "CL.D",
-        "cl.d-value": "1.106"
+
+        "bodywork": "Bodywork",
+        "bodywork-value": "Carbon Fiber"
       }
     },
 
@@ -231,7 +244,7 @@
       "dep-leader": "Coordinator",
       "member": "Member"
     },
-    "team-container":{
+    "team-container": {
       "members": "Members",
       "degrees": "Degrees",
       "universities": "Schools"

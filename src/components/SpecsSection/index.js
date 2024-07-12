@@ -4,7 +4,7 @@ import "./style.css";
 const carColorMap = {
   dragon: "#19ff38",
   fenix: "#19a3ff",
-  fenix_evo: "TBD",//TODO escolher a cor certa para este carro
+  fenixevo: "TBD",//TODO escolher a cor certa para este carro
 };
 
 function getStyle(car) {
@@ -23,7 +23,7 @@ const SpecsSection = ({ title, dataKeys, t, car }) => {
       <ul>
         {dataKeys.map((key) => (
           <li key={key}>
-            {t(`fs${car}-page.technical-specs.${title}.${key}`)}:{" "}
+            <strong>{t(`fs${car}-page.technical-specs.${title}.${key}`)}</strong>:{" "}
             {t(`fs${car}-page.technical-specs.${title}.${key}-value`)}
           </li>
         ))}

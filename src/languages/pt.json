@@ -38,84 +38,72 @@
          "title" : "Geral",
 
           "weight" : "Peso",
-          "weight-value": "280 Kg",
+          "weight-value": "260 Kg",
 
           "wheel-base" : "Distância entre eixos",
-          "wheel-base-value": "1525 mm",
+          "wheel-base-value": "1585 mm",
 
           "width" : "Largura da via",
-          "width-value": "1346 mm",
+          "width-value": "1455 mm",
+
+          "height" : "Altura",
+          "height-value": "1176 mm",
 
           "height-cg" : "Altura CG",
-          "height-cg-value": "250 mm",
+          "height-cg-value": "299 mm",
 
-          "0-100" : "0-100 km/h",
-          "0-100-value": "3.9 s",
+          "length": "Comprimento",
+          "length-value": "2811 mm",
 
           "top-speed" : "Velocidade Máxima",
-          "top-speed-value": "170 Km/h"  
+          "top-speed-value": "140 Km/h"  
       },
 
       "powertrain": {
          "title" : "Motor",
 
           "engine" : "Motor",
-          "engine-value": "Yamaha MT-07 CP2",
+          "engine-value": "Honda CBR 600 F4i",
 
           "power" : "Potência",
-          "power-value": "67 CV",
+          "power-value": "75 CV",
 
           "max-rpm" : "Max RPM",
-          "max-rpm-value": "9000",
+          "max-rpm-value": "13500",
 
-          "volume" : "Cilindrada",
-          "volume-value": "698 cc",
-
-          "ecu" : "ECU",
-          "ecu-value": "Splitronics Mercury 3",
-
-          "quick-shifter" : "Quick Shifter",
-          "quick-shifter-value": "KLIKTRONIC"  
+          "gear-box": "Caixa de Velocidades",
+          "gear-box-value": "Sequencial Semi Automática de 6 velocidades"
       },
 
       "steering&suspension": {
           "title" : "Direção & Suspensão",
 
           "type" : "Tipo",
-          "type-value": "Double Wishbone com pushrod",
+          "type-value": " Double Wishbone com Push-Rod",
 
           "tyres" : "Pneus",
-          "tyres-value": "Hoosier 205/407 R13 FSAE",
+          "tyres-value": "Hoosier 205/470 – R13",
 
           "breaking" : "Travagem",
-          "breaking-value": "AP Racing, pistões opostos com 25.4 milímetros de diâmetro (4 pistões à frente, 2 pistões atrás)",
-
-          "suspension" : "Amortecedores",
-          "suspension-value": "FOX Van R"  
+          "breaking-value": "x4 Pinças Pistão AP Racing"  
       },
 
       "chassis": {
           "title" : "Chassis",
 
           "structure" : "Estrutura",
-          "structure-value": ": Tubular de Aço BS4-T45",
+          "structure-value": ": Tubular com soldadura a tungsténio ",
 
-          "weight" : "Peso",
-          "weight-value": "38 Kg",
-
-          "impact-structure" : "Atenuador de Impacto",
-          "impact-structure-value": "Espuma de Alta Densidade"
+          "weight-dist" : "Distribuição de Peso",
+          "weight-dist-value": "45F 55R"
 
       },
 
       "aero": {
           "title" : "Aerodinâmica",
 
-          "cd.a" : "CD.A",
-          "cd.a-value": "1.553",
-
-          "cl.d" : "CL.D",
-          "cl.d-value": "1.106"
+          "bodywork": "Carenagem",
+          "bodywork-value":"Fibra de Carbono"
       }
   },
 
