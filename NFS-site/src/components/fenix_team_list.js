@@ -1,6 +1,7 @@
 import placeholder from '../assets/images/members_photos/placeholder.png'
 
 
+
 const TeamListData = [
     {
     title: 'board',

@@ -223,21 +223,21 @@ const FenixEvoPage = () => {
         <div className="team-number-container">
           <div className="team-number-row">
             <div className="numbers members">
-              <div className="numbers-digits members">53</div>
+              <div className="numbers-digits members">60</div>
               <div className="numbers-title members">
                 {t(`fsfenix-page.team-container.members`)}
               </div>
             </div>
 
             <div className="numbers degrees">
-              <div className="numbers-digits degrees">17</div>
+              <div className="numbers-digits degrees">18</div>
               <div className="numbers-title medegreesmbers">
                 {t(`fsfenix-page.team-container.degrees`)}
               </div>
             </div>
 
             <div className="numbers universities">
-              <div className="numbers-digits universities">3</div>
+              <div className="numbers-digits universities">4</div>
               <div className="numbers-title universities">
                 {t(`fsfenix-page.team-container.universities`)}
               </div>
