@@ -37,8 +37,8 @@ import ImageGallery from "./components/CompetitionsRow/index.js";
 const image1 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFENIX_EVO.JPG?alt=media&token=7ddf6654-efce-4706-8f6b-595723565ea0";
 const image2 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo2.JPG?alt=media&token=0091748a-a8d1-4b44-9906-93d7d5b105d6";
 const image3 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo3.JPG?alt=media&token=551869b2-e774-4693-9070-1efc3b779f32";
-
-const imageArray = [image1, image2, image3];
+const image4 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo4.JPG?alt=media&token=a570ef03-90df-4bdc-b68b-63b150923ea5"
+const imageArray = [image1, image2, image3, image4];
 
 const colorGradient = {
   backgroundImage: "linear-gradient(to right, #1966ff, #70a0ff)",
