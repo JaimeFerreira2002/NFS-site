@@ -48,7 +48,7 @@ const ImageCard = ({ src, title, date, location, division, url, position }) => {
       className="fenix-image-card"
     >
       <div onMouseEnter={handleHover} onMouseLeave={handleHover}>
-        <img src={src} alt="Gallery Image" className="fenix-gallery-image" />
+        <img src={src} alt="Gallery" className="fenix-gallery-image" />
         <div className="fenix-image-overlay">
           <div className="fenix-overlay-text title">{title}</div>
           <div className="fenix-overlay-text date">{date}</div>

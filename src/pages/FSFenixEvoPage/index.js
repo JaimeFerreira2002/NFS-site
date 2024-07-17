@@ -44,7 +44,7 @@ import ImageGallery from "./components/CompetitionsRow/index.js";
 const imageArray = [image1, image2, image3, image4, image5, image6, image7];
 
 const colorGradient = {
-  backgroundImage: "linear-gradient(to right, #19a3ff, #ffffff)",
+  backgroundImage: "linear-gradient(to right, #1966ff, #70a0ff)",
 };
 
 //logos
@@ -139,8 +139,8 @@ const FenixEvoPage = () => {
         height={"2.5%"}
       />
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFENIX_EVO.JPG?alt=media&token=7ddf6654-efce-4706-8f6b-595723565ea0"
-        alt="Car Bridge"
+        src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FRenderFenixEvo.jpg?alt=media&token=2d271060-b099-46bf-9e1c-e77857811402"
+        alt="Fenix Evo"
       />
       <div className="fenixevo-background-image-container">
         <div className="fenixevo-background-image-gradient-overlay" />
@@ -221,8 +221,8 @@ const FenixEvoPage = () => {
       </div> */}
 
       {/* TEAM SECTION */}
-      <div className="fenix-team-container">
-        <div className="fenix-section-title">
+      <div className="fenixevo-team-container">
+        <div className="fenixevo-section-title">
           {t(`fsfenix-page.team-title`)}
         </div>
 

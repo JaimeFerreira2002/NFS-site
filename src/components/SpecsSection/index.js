@@ -4,7 +4,7 @@ import "./style.css";
 const carColorMap = {
   dragon: "#19ff38",
   fenix: "#19a3ff",
-  fenixevo: "TBD",//TODO escolher a cor certa para este carro
+  fenixevo: "#1966ff",//TODO escolher a cor certa para este carro
 };
 
 function getStyle(car) {
