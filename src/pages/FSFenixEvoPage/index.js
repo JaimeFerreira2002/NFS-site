@@ -29,19 +29,16 @@ import VisteonLogo from "../../assets/images/sponsors_logos/visteon.png";
 import VWLogo from "../../assets/images/sponsors_logos/volkswagen.png";
 import WOBLogo from "../../assets/images/sponsors_logos/wob_palmela.jpg";
 
-//photos
 
-import image1 from "../../assets/images/fsdragon_photos/image_1.jpg";
-import image2 from "../../assets/images/fsdragon_photos/image_2.jpg";
-import image3 from "../../assets/images/fsdragon_photos/image_3.jpg";
-import image4 from "../../assets/images/fsdragon_photos/image_4.jpg";
-import image5 from "../../assets/images/fsdragon_photos/image_5.jpg";
-import image6 from "../../assets/images/fsdragon_photos/image_6.jpg";
-import image7 from "../../assets/images/fsdragon_photos/image_7.jpg";
 import MemberCard from "../../components/MemberCard";
 import ImageGallery from "./components/CompetitionsRow/index.js";
+//photos
 
-const imageArray = [image1, image2, image3, image4, image5, image6, image7];
+const image1 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFENIX_EVO.JPG?alt=media&token=7ddf6654-efce-4706-8f6b-595723565ea0";
+const image2 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo2.JPG?alt=media&token=0091748a-a8d1-4b44-9906-93d7d5b105d6";
+const image3 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo3.JPG?alt=media&token=551869b2-e774-4693-9070-1efc3b779f32";
+
+const imageArray = [image1, image2, image3];
 
 const colorGradient = {
   backgroundImage: "linear-gradient(to right, #1966ff, #70a0ff)",
@@ -120,12 +117,7 @@ const FenixEvoPage = () => {
     "length",
     "top-speed",
   ];
-  const powertrainKeys = [
-    "engine",
-    "power",
-    "max-rpm",
-    "gear-box",
-  ];
+  const powertrainKeys = ["engine", "power", "max-rpm", "gear-box"];
   const steeringSuspensionKeys = ["type", "tyres", "breaking"];
   const chassisKeys = ["structure", "weight-dist"];
   const aeroKeys = ["bodywork"];
@@ -135,7 +127,7 @@ const FenixEvoPage = () => {
       <PageHeader
         title={t("fsfenixevo-page.page-title")}
         subtitle={t("fsfenixevo-page.page-subtitle")}
-        gradientColor="#19a3ff"
+        gradientColor="#1966ff"
         height={"2.5%"}
       />
       <img
@@ -147,7 +139,9 @@ const FenixEvoPage = () => {
       </div>
 
       <div className="fenixevo-model_and_specs-container">
-        <div className="fenixevo-section-title">{t('fsfenixevo-page.specs-title')}</div>
+        <div className="fenixevo-section-title">
+          {t("fsfenixevo-page.specs-title")}
+        </div>
 
         <div className="fenixevo-specs-and-model">
           <div ref={specsAndModelRef}>
@@ -213,12 +207,12 @@ const FenixEvoPage = () => {
       </div>
 
       {/* GALLERY */}
-      {/* <div className='fenixevo-gallery-container'>
+       <div className='fenixevo-gallery-container'>
           <div className='fenixevo-section-title'>
-            Gallery
+          {t(`fsdragon-page.gallery`)}
           </div>
           <Gallery images={imageArray} />
-      </div> */}
+      </div> 
 
       {/* TEAM SECTION */}
       <div className="fenixevo-team-container">
