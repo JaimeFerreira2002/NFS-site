@@ -1,0 +1,37 @@
+/* src/components/PreviousArticlesList.css */
+.previous-articles {
+  margin-top: 20px;
+}
+
+.article-tiles {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.article-tile {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2; /* Light background for articles */
+  border-radius: 8px;
+  text-decoration: none;
+  color: black; /* Text color */
+  transition: background-color 0.3s;
+}
+
+.article-tile:hover {
+  background-color: #e0e0e0;
+}
+
+.article-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.article-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}

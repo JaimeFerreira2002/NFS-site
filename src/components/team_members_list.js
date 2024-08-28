@@ -8,7 +8,7 @@ const TeamListData = [
       { name: 'Ricardo Cutileiro', role: 'team-leader&project-manager', imageSrc: require('../assets/images/members_photos/board/cutileiro.jpg') },
       { name: 'João Balbino', role: 'technical-director&team-leader', imageSrc: fotos.Joao_Balbino }, 
       { name: 'Miguel Pereira', role: 'technical-director', imageSrc: placeholder },
-      { name: 'Sergiu Nica', role: 'bsd', imageSrc: require('../assets/images/members_photos/board/sergiu.jpg') },
+      { name: 'Sergiu Nica', role: 'bsd', imageSrc: fotos.Sergiu_Nica },
     ],
   },
 

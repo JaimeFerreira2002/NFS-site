@@ -23,6 +23,7 @@ import FSFenixPage from './pages/FSFenixPage';
 import FSDragonPage from './pages/FSDragonPage';
 import Dummy from './pages/dummy';
 import FSFenixPageEvo from './pages/FSFenixEvoPage/index.js';
+import NewsPage from './pages/NewsPage';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -107,6 +108,7 @@ function App() {
                   <Route path="/recruitment" element={<RecruitmentPage />} />
                   <Route path="/contacts" element={<ContactsPage />} />
                   <Route path="/dummy" element={<Dummy />} />
+                  <Route path="/news" element={<NewsPage />} />
                 </Routes>
               </div>
             </CSSTransition>
