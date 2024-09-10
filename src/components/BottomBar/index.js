@@ -51,10 +51,10 @@ const BottomBar = () => {
         {/* Social Icons */}
 
         <div className="social-icons-bb">
-          <a className="social-icon-bb" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a className="social-icon-bb" href="https://www.instagram.com/novaformulastudent/" target="_blank" rel="noopener noreferrer">
             <img src={InstagramLogo} alt="Instagram" />
           </a>
-          <a className="social-icon-bb" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a className="social-icon-bb" href="https://www.linkedin.com/company/formula-student-fct/mycompany/" target="_blank" rel="noopener noreferrer">
             <img src={LinkedIn} alt="LinkedIn" />
           </a>
         </div>
