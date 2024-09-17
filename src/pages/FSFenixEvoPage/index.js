@@ -8,6 +8,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TeamListData from "../../components/team_members_list.js";
 import PageHeader from "../../components/PageHeader/index.js";
+import { Link } from "react-router-dom";
 
 //logos
 import AltairLogo from "../../assets/images/sponsors_logos/altair.png";
@@ -132,7 +133,7 @@ const FenixEvoPage = () => {
         height={"2.5%"}
       />
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FRenderFenixEvo.jpg?alt=media&token=2d271060-b099-46bf-9e1c-e77857811402"
+        src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fcarro_fspt.jpg?alt=media&token=c254dd19-2cd4-400c-9694-0b700ddab32d"
         alt="Fenix Evo"
       />
       <div className="fenixevo-background-image-container">

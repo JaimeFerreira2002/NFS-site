@@ -29,7 +29,7 @@ const SplashScreen = ({ isVisible }) => {
   return (
     <div className={`splash-screen ${isVisible ? '' : 'hidden'}`}>
       <motion.img
-        src={NFSLogo}
+        src={'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FLogos%2FlogoSoBranco.svg?alt=media&token=54c0a069-68b9-4e48-8c58-78295d7f6453'}
         className="logo-splash"
         alt="Logo"
         animate={{ scale: [1, 1.1, 1] }} // Pulsating scale effect

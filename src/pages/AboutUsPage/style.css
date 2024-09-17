@@ -20,9 +20,9 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fimage_2.jpg?alt=media&token=9a0cc5a6-9cee-425b-8ad6-0f3b79e94446');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffoto%20equipa%201.jpg?alt=media&token=077761a5-74dd-4d4f-b6e1-4a2d09b82564');
   background-size: cover;
-  background-position: center 60%;
+  background-position: center ;
   flex-direction: column;
   align-items: start;
   gap: 3%;

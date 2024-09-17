@@ -1,0 +1,36 @@
+{
+  "competitions": [
+    {
+      "competitionName": "FSPT_2024",
+      "staticEvents": [
+        { "eventName": "Design", "result": "P2" },
+        { "eventName": "Cost", "result": "P2" }
+      ],
+      "dynamicEvents": [
+        { "eventName": "Aceleration", "result": "DNS" },
+        { "eventName": "Skidpad", "result": "DNS" },
+        { "eventName": "Autocross", "result": "DNS" },
+        { "eventName": "Endurance", "result": "DNF (10 laps completed)" }
+      ],
+      "businessPlan": {
+        "result": "1st Place"
+      },
+      "specialAwards": [
+        { "awardName": "Best social media presence", "result": null }
+      ]
+    },
+    {
+      "competitionName": "FSA_2024",
+      "staticEvents": [
+        { "eventName": "Design", "result": null },
+        { "eventName": "Cost", "result": null }
+      ],
+      "dynamicEvents": [
+        { "eventName": "Scrutineering", "result": "Did not complete" }
+      ],
+      "businessPlan": {
+        "result": "Did not compete"
+      }
+    }
+  ]
+}
