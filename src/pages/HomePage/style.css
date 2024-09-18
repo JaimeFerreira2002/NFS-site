@@ -431,3 +431,59 @@
   cursor: pointer;
   transition: transform 0.3s;
 }
+
+/* Recruitment Section (imitating the sponsor section without the dark glass overlay) */
+.recruitment-section {
+  position: relative;
+  background-size: cover;
+  background-position: 50% 60%;
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1d1d1d; /* Same background color as the sponsor section */
+  color: #fff;
+  padding: 30px 10vw;
+  gap: 20px;
+}
+
+/* Recruitment content (similar to sponsor text content, but without overlay) */
+.recruitment-content {
+  max-width: 800px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  text-align: start;
+}
+
+.title-recruitment {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #409ED4; /* You can match this with the sponsor section style */
+}
+
+.recruitment-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Recruitment button style matching the garage button */
+.recruitment-button {
+  font-family: "Raleway";
+  width: 30%;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  padding: 10px 10px;
+  margin-top: 20px; /* Space above the button */
+  background-color: #1d1d1d;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.recruitment-button:hover {
+  transform: scale(1.1);
+  color: #fff;
+ /* Button text color changes to white on hover */
+}

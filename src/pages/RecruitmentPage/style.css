@@ -1,3 +1,12 @@
+.recruitment-page {
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  min-height: 100svh;
+}
+
 .title {
   font-family: "AkiraExpanded";
   text-align: center;
@@ -12,7 +21,72 @@
   font-weight: 400;
 }
 
-.positions{
-  padding:3vw;
-  margin:auto;
+.positions {
+  padding: 3vw;
+  margin: auto;
 }
+
+.position-list{
+  padding: 5%;
+}
+
+.card-link{
+  padding: 4% 4%;
+}
+
+/* Make the corners rounder */
+.team-card {
+  border-radius: 15px; /* Adjust the radius as needed for rounder corners */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover */
+  overflow: hidden; /* Ensure the image respects the border-radius *//* Remove padding to ensure the image fills the card */
+}
+
+/* Also apply the border-radius to the image container */
+.card-image-container {
+  border-radius: 5px; /* Adjust the radius to match the card */
+  overflow: hidden; /* Ensure the image stays within the rounded corners */
+}
+
+/* Hover effect on the card */
+.team-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+/* To ensure the image respects the card's rounded corners */
+.card-image {
+  border-radius: 15px; /* Match the border radius */
+  transition: transform 0.3s ease-in-out; /* Smooth transition on image hover */
+}
+
+
+
+.recruitment-button-dep:hover h2 {
+  transform: scale(1.05); /* Slight hover effect */
+  color: #19a3ff;
+
+}
+
+.recruitment-button-dep {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-size: 2rem;
+   /* Larger font size to resemble a title */
+  margin-top: 0px;
+  background-color: transparent; /* No background color */
+  border: none; /* Remove border */
+  text-align: center;
+  font-weight: bold; /* Bold text for title effect */
+  cursor: pointer;
+  transition: transform 0.3s;
+  padding: 10px 0; /* Minimal padding */
+}
+
+.button-pos-dep{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 0vw; /* Adjust padding to fit new title-like appearance */
+}
+
+

@@ -25,6 +25,7 @@ import Dummy from './pages/dummy';
 import FSFenixPageEvo from './pages/FSFenixEvoPage/index.js';
 import NewsPage from './pages/NewsPage';
 import CompetitionDetails from './pages/ResultsPage/index.js';
+import DepartmentPage from './pages/DepartmentPage'; // Import your DepartmentPage component
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,21 +35,16 @@ function App() {
 
   // Function to toggle the drawer open/close state
   const toggleDrawer = () => {
-    // Assuming 'isOpen' reflects the current state of the drawer
-    setIsDrawerOpen(!isDrawerOpen); // Toggle the drawer open state
+    setIsDrawerOpen(!isDrawerOpen);
   
     if (!isDrawerOpen) {
-      // If the drawer is about to open, disable scrolling on the body
+      // Disable scrolling when the drawer is open
       document.body.style.overflow = 'hidden';
     } else {
-      // If the drawer is about to close, re-enable scrolling on the body
+      // Enable scrolling when the drawer is closed
       document.body.style.overflow = '';
     }
   };
-  
-
-  const width = window.innerWidth;
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,61 +62,52 @@ function App() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      console.log("Hiding splash screen"); // Add this line for debugging
       setIsSplashVisible(false); // Hide splash screen after a set time
-    }, 2200); // Adjust time based on your needs
+    }, 2200);
 
     return () => clearTimeout(timer);
   }, []);
 
   // Component to handle route transitions
   const AnimatedRoutes = () => {
-    const location = useLocation(); // Correctly called within a child component of <Router>
-    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const location = useLocation();
+    const nodeRef = useRef(null);
 
-
-
-    const nodeRef = useRef(null); // To comply with CSSTransition nodeRef requirement
     return (
-      
       <div className="App">
-        
-          <SplashScreen isVisible={isSplashVisible} />
-
-          <TransitionGroup component={null}>
-            <CSSTransition
-              key={location.key}
-              classNames="fade"
-              timeout={300}
-              nodeRef={nodeRef}
-            >
-              <div ref={nodeRef}>
-                {" "}
-                {/* This div acts as the CSSTransition child */}
-                <Routes location={location}>
-                  <Route path="/" exact element={<HomePage />} />
-                  <Route path="/about" element={<AboutUsPage />} />
-                  <Route path="/garage" element={<GaragePage />} />
-                  <Route path="/garage/fsfenixevo" element={<FSFenixPageEvo />} />
-                  <Route path="/garage/fsdragon" element={<FSDragonPage />} />
-                  <Route path="/garage/fsfenix" element={<FSFenixPage />} />
-                  <Route path="/partners" element={<PartnersPage />} />
-                  <Route path="/articles" element={<ArticlesPage />} />
-                  <Route path="/recruitment" element={<RecruitmentPage />} />
-                  <Route path="/contacts" element={<ContactsPage />} />
-                  <Route path="/dummy" element={<Dummy />} />
-                  <Route path="/news" element={<NewsPage />} />
-                  <Route path="/competition/:id" element={<CompetitionDetails />} />
-                </Routes>
-              </div>
-            </CSSTransition>
-          </TransitionGroup>
-        
+        <SplashScreen isVisible={isSplashVisible} />
+        <TransitionGroup component={null}>
+          <CSSTransition
+            key={location.key}
+            classNames="fade"
+            timeout={300}
+            nodeRef={nodeRef}
+          >
+            <div ref={nodeRef}>
+              <Routes location={location}>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutUsPage />} />
+                <Route path="/garage" element={<GaragePage />} />
+                <Route path="/garage/fsfenixevo" element={<FSFenixPageEvo />} />
+                <Route path="/garage/fsdragon" element={<FSDragonPage />} />
+                <Route path="/garage/fsfenix" element={<FSFenixPage />} />
+                <Route path="/partners" element={<PartnersPage />} />
+                <Route path="/articles" element={<ArticlesPage />} />
+                <Route path="/recruitment" element={<RecruitmentPage />} />
+                <Route path="/contacts" element={<ContactsPage />} />
+                <Route path="/dummy" element={<Dummy />} />
+                <Route path="/news" element={<NewsPage />} />
+                <Route path="/competition/:id" element={<CompetitionDetails />} />
+                <Route path="/department/:departmentName" element={<DepartmentPage />} /> {/* Dynamic route */}
+              </Routes>
+            </div>
+          </CSSTransition>
+        </TransitionGroup>
       </div>
     );
   };
 
-  return  (
+  return (
     <div className="content-wrapper">
       <Router>
         <ScrollToTop />

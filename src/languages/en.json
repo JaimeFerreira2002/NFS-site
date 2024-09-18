@@ -10,14 +10,12 @@
     "subscribe": "Subscribe",
     "email-newsletter": "Subscribe to our newsletter"
   },
-
   "garage-page": {
     "page-title": "Garage",
     "page-subtitle": "Discover our cars",
     "fenix-description": "Our first car",
     "button-text": "Learn more"
   },
-
   "partners-page": {
     "page-title": "Partners",
     "page-subtitle": "Nova Formula Student official partners",
@@ -26,7 +24,6 @@
     "silver": "Silver",
     "gold": "Gold"
   },
-
   "fsfenixevo-page": {
     "page-title": "FS FENIX EVO",
     "page-subtitle": "The FS FENIX EVO marks the team's return to building a formula student car",
@@ -35,76 +32,54 @@
     "technical-specs": {
       "general": {
         "title": "General",
-
         "weight": "Weight",
         "weight-value": "260 Kg",
-
         "wheel-base": "Wheel Base",
         "wheel-base-value": "1585 mm",
-
         "width": "Width",
         "width-value": "1455 mm",
-
         "height": "Height",
         "height-value": "1176 mm",
-
         "height-cg": "CG Height",
         "height-cg-value": "299 mm",
-
         "length": "Length",
         "length-value": "2811 mm",
-
         "top-speed": "Top Speed",
         "top-speed-value": "140 Km/h"
       },
-
       "powertrain": {
         "title": "Powertrain",
-
         "engine": "Engine",
         "engine-value": "Honda CBR 600 F4i",
-
         "power": "Power",
         "power-value": "75 HP",
-
         "max-rpm": "Max RPM",
         "max-rpm-value": "13500",
-
         "gear-box": "Gearbox",
         "gear-box-value": "Sequential Semi-Automatic 6-speed"
       },
-
       "steering&suspension": {
         "title": "Steering & Suspension",
-
         "type": "Type",
         "type-value": "Double Wishbone with Push-Rod",
-
         "tyres": "Tyres",
         "tyres-value": "Hoosier 205/470 – R13",
-
         "breaking": "Braking",
         "breaking-value": "4-Piston AP Racing Calipers"
       },
-
       "chassis": {
         "title": "Chassis",
-
         "structure": "Structure",
         "structure-value": "Tubular with Tungsten Welding",
-
         "weight-dist": "Weight Distribution",
         "weight-dist-value": "45F 55R"
       },
-
       "aero": {
         "title": "Aerodynamics",
-
         "bodywork": "Bodywork",
         "bodywork-value": "Carbon Fiber"
       }
     },
-
     "competitions": {
       "title": "Competitions",
       "subtitle": "The FS FENIX EVO is going to compete in the Formula Student Austria & Formula Student Portugal events!",
@@ -121,7 +96,6 @@
         "class": "Class 1"
       }
     },
-
     "teams-names": {
       "board": "Board",
       "aerodynamics": "Aerodynamics",
@@ -145,7 +119,6 @@
       "member": "Member"
     }
   },
-
   "fsfenix-page": {
     "page-title": "FS FENIX",
     "page-subtitle": "The FS FENIX represents the rebirth from the ashes for NOVA Formula Student",
@@ -210,7 +183,6 @@
         "cl.d-value": "1.106"
       }
     },
-
     "competitions": {
       "title": "Competitions",
       "subtitle": "The FS FENIX competed in the Formula Student Portugal event!",
@@ -221,7 +193,6 @@
         "location": "Castelo Branco Kart Track"
       }
     },
-
     "teams-names": {
       "board": "Board",
       "aerodynamics": "Aerodynamics",
@@ -315,7 +286,6 @@
         "cl.d-value": "1.106"
       }
     },
-
     "competitions": {
       "title": "Competitions",
       "subtitle": "The FS DRAGON competed in the Formula Student Portugal event!",
@@ -326,7 +296,6 @@
         "location": "Castelo Branco Kart Track"
       }
     },
-
     "teams-names": {
       "board": "Board",
       "aerodynamics": "Aerodynamics",
@@ -395,7 +364,6 @@
       "computer_engineering": "Computer Engeneering"
     }
   },
-
   "home": {
     "who_r_we": "WHO WE ARE",
     "fs_team": "We are the Formula Student team from Universidade Nova de Lisboa.",
@@ -407,7 +375,10 @@
     "sponsor_title": "Sponsors",
     "sponsor_title_2": "Become Our Partner in Automotive Innovation!",
     "sponsor_text": "Become a sponsor of our team, having the opportunity to associate with an innovative and educational project.\n\r\nIncrease the visibility of your brand at events, social media, and promotional materials.\n\r\nJoin us on this journey of technical excellence and commitment to innovation.\n\r\nSupport the next generation of leaders and innovators.",
-    "reach_us": "Contact Us"
+    "reach_us": "Contact Us",
+    "recruitment_title": "Recruitment",
+    "recruitment_text": "We are always looking for new members to join our team. If you're interested in being part of an innovative and educational project, join us!",
+    "recruitment_button": "Join us"
   },
   "about-page": {
     "who-are-we": "Who We Are",
@@ -439,5 +410,19 @@
     "endurance-desc": "Test the car's durability, reliability, and fuel efficiency over an extended race distance. The car must complete a specified number of laps on a challenging track. The event assesses both the vehicle's endurance and the team's strategic decisions regarding fuel efficiency, pit stops, and overall reliability.",
     "efficiency": "Efficiency / Trackdrive",
     "efficiency-desc": "Efficiency measured in the endurance event is reflected in the team's ability to design a car that can complete the race with minimum fuel consumption, demonstrating not just speed, but also careful energy management."
+  },
+  "DepartmentPage": {
+    "coordinator": "Coordinator",
+    "discoperations": "\"In the operations department, we look for communicative and ambitious people who are ready to face new challenges and grow with us. \nThis department ensures the organization of static events, making sure that all documentation and regulations are strictly followed. \nAdditionally, we will be responsible for interacting with partner companies to close agreements related to the production and manufacturing of the components needed for our projects. \nLastly, we will play a fundamental role in reviewing technical drawings, ensuring they are correct before being sent to the companies.\"",
+    "discmkt": "\"In the marketing team, we are responsible for the public image of the team. This includes showcasing our partners, attracting new companies to our project, and sharing our work with the general public.\nWe mainly work on our social media, website, and all the graphic materials of the team, which includes merchandise and the liveries of the cars.\nWe look for creativity, brand awareness, and, most importantly, a willingness to learn how to work with various digital media creation tools.\nIf you want to help the NFS brand grow, the marketing team is ready to welcome you!\"",
+    "disceletro": "\"In the electronics team, we are responsible for the development and manufacturing of all the hardware for the electric car. From creating and assembling PCBs to integrating sensors, planning the system layouts, and all the wiring, ensuring every component works in harmony.\nDue to the complexity of the area and its interdependence with other teams, we look for people with solid foundations in the field, who are self-taught, and have excellent communication skills. If you want to help NFS take off, the electronics team is ready to welcome you.\"",
+    "discchassis": "\"The chassis department is responsible for the design and manufacturing of the chassis and the driver's ergonomics in our cars.\nWe work with structural analysis using CAD design software and finite element simulation.\nWe seek committed and dedicated people, ready to learn and devote their time to this project!\"",
+    "discpowertrain": "\"In the powertrain team, we are responsible for the propulsion and transmission of the car. This year, we will optimize the current car and develop the electric car project.\nFor the current car, we focus on optimizing and integrating new components. In the electric project, we will integrate the entire propulsion system, including the transmission, motor, control, and the development of the electric accumulator.\nWe are looking for members interested in electronics and mechanics applied to the electric propulsion system. If you enjoy innovation and high-performance engineering, join us and help the team take the next step!\"",
+    "discsuspension": "\"In the suspension team, we will design all the components related to the car's suspension and steering.\nTeam members will work with CAD software and finite element simulation.\nWe seek dedicated people with a willingness to learn. Any prior experience is welcome, but the key is your dedication to the project!\"",
+    "discsc": "\"In the software & control team, we are responsible for developing the control software that drives our car. From CAN communication protocols to firmware for acquisition systems and control algorithms.\nWe work to extract the maximum potential from the electric motor.\nWe value people with logical thinking, creativity, and tenacity. If you have these qualities and want to help NFS dominate the track, the S&C team is ready to welcome you!\"",
+    "discaero": "\"In the aerodynamics department, you will work with CAD and CFD software, participating in the development and research of future aerodynamic components for our cars.\nWe seek dedicated and committed people, with a great capacity and willingness to conduct autonomous research on various topics due to their complexity.\nWe are also looking for motorsport enthusiasts who are passionate about taking the performance of a car to the next level!\"",
+    "discvd": "\"In this department, we use software like OptimumG, OpenLap, Adams, and SolidWorks.\nWe highly value dedication, a willingness to learn, and the ability to be self-taught and proactive.\nSee you in the interviews!\"",
+    "disclogistics": "\"The logistics team is responsible for planning all essential activities to ensure the success of NFS!\nOur work ranges from organizing team-building events and coffee breaks to the detailed coordination of competitions.\nWe are looking for someone with excellent time management skills, critical thinking, and, above all, a strong aptitude for organization.\nIf you're looking for a challenge and want to actively contribute to the success of NFS, join the logistics team!\"",
+    "disccr": "\"In the corporate relations department, we look for dynamic and proactive people, eager to learn and with critical thinking.\nPrevious experience counts, but it’s not essential. We interact with partner companies and seek future business opportunities, ensuring that the relationship with NFS runs smoothly.\nThese companies can come from various industries depending on the team’s needs.\nLastly, we participate in the preparation of the business plan presentation, which the team has already won!\""
   }
 }

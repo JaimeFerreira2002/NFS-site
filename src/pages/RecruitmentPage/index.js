@@ -1,101 +1,55 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "./style.css";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
-import ListGroup from "react-bootstrap/ListGroup";
+import Col from "react-bootstrap/Col";
+import PageHeader from "../../components/PageHeader/index.js";
+
+// Import the departments data
+import departments from "../../pages/DepartmentPage/departments.js";
 
 const RecruitmentPage = () => {
-  const positions = [
-    {
-      title: "Position1",
-      description:
-        "As a Marketing Team Member for our Formula Student Team, you will play a pivotal role in promoting our team's achievements, building brand awareness, and establishing a strong online and offline presence. This position requires a dynamic individual with a passion for motorsports, excellent communication skills, and a creative mindset. The Marketing Team Member will collaborate with other team members to develop and implement marketing strategies aimed at engaging the target audience, sponsors, and the broader motorsports community.",
-      team: "Marketing",
-      responsibilities: [
-        "Content Creation",
-        "Social Media Management",
-        "Public Relations",
-        "Event Coordination",
-        "Sponsorship Activation",
-        "Brand Management",
-      ],
-    },
-    {
-      title: "Position2",
-      description:
-        "As a Marketing Team Member for our Formula Student Team, you will play a pivotal role in promoting our team's achievements, building brand awareness, and establishing a strong online and offline presence. This position requires a dynamic individual with a passion for motorsports, excellent communication skills, and a creative mindset. The Marketing Team Member will collaborate with other team members to develop and implement marketing strategies aimed at engaging the target audience, sponsors, and the broader motorsports community.",
-      team: "Marketing",
-      responsibilities: [
-        "Content Creation",
-        "Social Media Management",
-        "Public Relations",
-        "Event Coordination",
-        "Sponsorship Activation",
-        "Brand Management",
-      ],
-    },
-    {
-      title: "Position3",
-      description:
-        "As a Marketing Team Member for our Formula Student Team, you will play a pivotal role in promoting our team's achievements, building brand awareness, and establishing a strong online and offline presence. This position requires a dynamic individual with a passion for motorsports, excellent communication skills, and a creative mindset. The Marketing Team Member will collaborate with other team members to develop and implement marketing strategies aimed at engaging the target audience, sponsors, and the broader motorsports community.",
-      team: "Marketing",
-      responsibilities: [
-        "Content Creation",
-        "Social Media Management",
-        "Public Relations",
-        "Event Coordination",
-        "Sponsorship Activation",
-        "Brand Management",
-      ],
-    },
-    {
-      title: "Position4",
-      description:
-        "As a Marketing Team Member for our Formula Student Team, you will play a pivotal role in promoting our team's achievements, building brand awareness, and establishing a strong online and offline presence. This position requires a dynamic individual with a passion for motorsports, excellent communication skills, and a creative mindset. The Marketing Team Member will collaborate with other team members to develop and implement marketing strategies aimed at engaging the target audience, sponsors, and the broader motorsports community.",
-      team: "Marketing",
-      responsibilities: [
-        "Content Creation",
-        "Social Media Management",
-        "Public Relations",
-        "Event Coordination",
-        "Sponsorship Activation",
-        "Brand Management",
-      ],
-    },
-  ];
   const { t } = useTranslation();
+  
   const positionList = (
-    <Row style={{ margin: "auto" }}>
-      {positions.map((position) => (
-        <Card
-          bg="dark"
-          text="white"
-          key={position.title}
-          style={{ width: "30rem", marginBottom: "5rem", borderColor:"#419ed4" }}
-        >
-          <Card.Img variant="top" src="holder.js/100px180" />
-          <Card.Body>
-            <Card.Title>{position.title}</Card.Title>
-            <Card.Text style={{ textAlign: "justify" }}>
-              {position.description}
-            </Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush">
-            {position.responsibilities.map((resp) => (
-              <ListGroup.Item style={{backgroundColor: "#212529", color:"white", borderColor:"#419ed4"}} key={resp}>{resp}</ListGroup.Item>
-            ))}
-          </ListGroup>
-        </Card>
+    <Row className="position-list" xs={1} sm={2} md={3} lg={4}>
+      {departments.map((position) => (
+        <Col key={position.title}>
+          <Link to={position.link} className="card-link">
+            <Card className="team-card">
+              <div className="card-image-container">
+                <Card.Img
+                  variant="top"
+                  src={position.imgSrc}
+                  alt={`${position.title} Image`}
+                  className="card-image"
+                />
+              </div>
+            </Card>
+          </Link>
+        </Col>
       ))}
     </Row>
   );
+
   return (
-    <div>
-      <div className="title">{t("recruitment-page.page-title")}</div>
-      <div className="subtitle">{t("recruitment-page.page-subtitle")}</div>
-      <div className="positions" style={{ justifyContent: "center" }}>
+    <div className="recruitment-page">
+      <PageHeader
+        title={t("recruitment-page.page-title")}
+        subtitle={t("recruitment-page.page-subtitle")}
+        gradientColor={"#19a3ff"}
+      />
+
+
+      <div className="positions">
         {positionList}
+      </div>
+      <div className="button-pos-dep">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScMwAEYXGpfIvQgLzFcns1R8xwy7q-ZqydVWkjMHSyR15yvxQ/viewform" className="button-link">
+          <button className="recruitment-button-dep"><h2>{t('home.recruitment_button')}</h2></button>
+        </a>
       </div>
     </div>
   );

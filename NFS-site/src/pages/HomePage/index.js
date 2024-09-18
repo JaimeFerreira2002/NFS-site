@@ -7,10 +7,10 @@ import './style.css';
 import TeamPhoto from '../../assets/images/team_photo_fspt.jpg';
 import { useTranslation } from "react-i18next";
 import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
-import FSFenix from '../../assets/images/fsfenix.png'
+import FSFenix from '../../assets/images/fsfenix.png';
 import { Link } from 'react-router-dom';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'; // Ensure you import the correct icon
-import fspt_video from '../../assets/videos/fspt_video.mp4'
+import fspt_video from '../../assets/videos/fspt_video.mp4';
 
 
 
@@ -26,6 +26,9 @@ const HomePage = () => {
 
   const controlsGarage = useAnimation();
   const [garageRef, garageInView] = useInView({ threshold: 0.1 });
+
+  const controlsRecruitment = useAnimation();
+  const [recruitmentRef, recruitmentInView] = useInView({ threshold: 0.1 });
 
   const { t } = useTranslation();
 
@@ -84,7 +87,13 @@ const HomePage = () => {
     }
   }, [controlsGarage, garageInView]);
 
-  
+  React.useEffect(() => {
+    if (recruitmentInView) {
+      controlsRecruitment.start({ opacity: 1, x: 0, transition: { duration: 0.5 } });
+    } else {
+      controlsRecruitment.start({ opacity: 0, x: 100, transition: { duration: 0.5 } });
+    }
+  }, [controlsRecruitment, recruitmentInView]);
 
   
   return (
@@ -171,9 +180,24 @@ const HomePage = () => {
           <motion.div className="team-photo" animate={controlsGarage} initial={{ opacity: 0, x: 100 }}>
             <img src={FSFenix} alt="Garage" />
           </motion.div>
-
-
         </div>
+      </div>
+
+      {/* Recruitment Section */}
+      <div className="recruitment-section" ref={recruitmentRef}>
+        <div className="recruitment-content">
+          <h2 className='title-recruitment'>{t('home.recruitment_title')}</h2>
+          <p className='recruitment-text'>{t('home.recruitment_text')}</p>
+
+          <Link to="/recruitment" className="recruitment-button-link">
+            <button className="recruitment-button">
+              {t('home.recruitment_button')}
+            </button>
+          </Link>
+        </div>
+        <motion.div className="recruitment-image" animate={controlsRecruitment} initial={{ opacity: 0, x: 100 }}>
+          {/* Optional Image or graphic related to recruitment */}
+        </motion.div>
       </div>
     </div>
 

@@ -7,11 +7,10 @@ import './style.css';
 import TeamPhoto from '../../assets/images/team_photo_fspt.jpg';
 import { useTranslation } from "react-i18next";
 import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
-import FSFenix from '../../assets/images/fsfenix.png'
+import FSFenix from '../../assets/images/fsfenix.png';
 import { Link } from 'react-router-dom';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'; // Ensure you import the correct icon
-//TODO descomentar isto e alterar o path do video
-//import fspt_video from '../../assets/videos/fspt_video.mp4'
+import fspt_video from '../../assets/videos/fspt_video.mp4';
 
 
 
@@ -27,6 +26,9 @@ const HomePage = () => {
 
   const controlsGarage = useAnimation();
   const [garageRef, garageInView] = useInView({ threshold: 0.1 });
+
+  const controlsRecruitment = useAnimation();
+  const [recruitmentRef, recruitmentInView] = useInView({ threshold: 0.1 });
 
   const { t } = useTranslation();
 
@@ -85,31 +87,37 @@ const HomePage = () => {
     }
   }, [controlsGarage, garageInView]);
 
-  
+  React.useEffect(() => {
+    if (recruitmentInView) {
+      controlsRecruitment.start({ opacity: 1, x: 0, transition: { duration: 0.5 } });
+    } else {
+      controlsRecruitment.start({ opacity: 0, x: 100, transition: { duration: 0.5 } });
+    }
+  }, [controlsRecruitment, recruitmentInView]);
 
-  
+
   return (
-    <div className="dragon-page">
+    <div className="home-page">
 
       <div className="background-home-video">
-        <div className = "video-player-container">
-        
-        <video className='video-player' autoPlay loop muted>
-          <source src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/fspt_video.mp4?alt=media&token=ac9d5aea-68e3-4aca-a518-3c8b26392cfb" />
-           
+        <div className="video-player-container">
+
+          <video className='video-player' autoPlay loop muted>
+            <source src={fspt_video} type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
 
+          <div ref={titleRef}>
+            <motion.div animate={titleController}>
+              <div className="video-text-content">
+                <h1 className="nova-title"><span className="nova-word">Nova</span> Formula Student</h1>
+              </div>
+            </motion.div>
+          </div>
 
-            <div ref={titleRef}> 
-                <motion.div animate = {titleController}>
-                    <div className="video-text-content">
-                        <h1 className="nova-title"><span className="nova-word">Nova</span> Formula Student</h1>
-                    </div>
-                </motion.div>
-            </div>
-             
-        </div>   
-
+        </div>
+        {/* Recruitment Section */}
+       
 
         {showScrollArrow && (
           <motion.div
@@ -121,7 +129,7 @@ const HomePage = () => {
           </motion.div>
         )}
       </div>
-      
+
       <div className="black-section" ref={teamRef}>
         <div className="team-content">
           <h2 className='title-team'>{t('home.team')}</h2>
@@ -131,7 +139,7 @@ const HomePage = () => {
         </div>
 
         <motion.div className="team-photo" animate={controlsTeam} initial={{ opacity: 0, x: 100 }}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_fspt.jpg?alt=media&token=97557c72-cc63-44b0-a1e4-3ca6783a03c5' alt="Team Leader" />
+          <img src={TeamPhoto} alt="Team Leader" />
         </motion.div>
       </div>
       {/* Additional sections if needed */}
@@ -145,7 +153,7 @@ const HomePage = () => {
           >
 
             <a className="icon-button-c" href="/contacts">
-              <FontAwesomeIcon  icon={faAddressBook} size="10x" />
+              <FontAwesomeIcon icon={faAddressBook} size="10x" />
 
               <div className='reach'>{t("home.reach_us")}</div>
             </a>
@@ -171,12 +179,28 @@ const HomePage = () => {
         </div>
         <div className="garage-home-image">
           <motion.div className="team-photo" animate={controlsGarage} initial={{ opacity: 0, x: 100 }}>
-            <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=1419a883-a4d9-4a9c-a3ed-260d664307c6' alt="Garage" />
+            <img src={FSFenix} alt="Garage" />
           </motion.div>
-
-
         </div>
       </div>
+
+      <div className="recruitment-section" ref={recruitmentRef}>
+          <div className="recruitment-content">
+            <h2 className='title-recruitment'>{t('home.recruitment_title')}</h2>
+            <p className='recruitment-text'>{t('home.recruitment_text')}</p>
+
+            <Link to="/recruitment" className="recruitment-button-link">
+              <button className="recruitment-button">
+                {t('home.recruitment_button')}
+              </button>
+            </Link>
+          </div>
+          <motion.div className="recruitment-image" animate={controlsRecruitment} initial={{ opacity: 0, x: 100 }}>
+            {/* Optional Image or graphic related to recruitment */}
+          </motion.div>
+        </div>
+
+
     </div>
 
   );

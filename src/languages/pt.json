@@ -10,15 +10,12 @@
     "subscribe": "Subscrever",
     "email-newsletter": "Subscreva a nossa newsletter!"
   },
-  
-
   "garage-page": {
     "page-title": "Garagem",
     "page-subtitle": "Descobre os nossos carros",
     "fenix-description": "O nosso primeiro carro",
     "button-text": "Saber mais"
   },
-
   "partners-page": {
     "page-title": "Parceiros",
     "page-subtitle": "Parceiros oficiais do Nova Formula Student",
@@ -27,88 +24,64 @@
     "silver": "Silver",
     "gold": "Gold"
   },
-
   "fsfenixevo-page": {
     "page-title": "FS FENIX EVO",
     "page-subtitle": "O FS FENIX EVO marca o regresso da equipa à construção de um carro fórmula student",
-    "specs-title" : "Especificações Técnicas",
-    "team-title" : "A Equipa",
+    "specs-title": "Especificações Técnicas",
+    "team-title": "A Equipa",
     "technical-specs": {
       "general": {
-         "title" : "Geral",
-
-          "weight" : "Peso",
-          "weight-value": "260 Kg",
-
-          "wheel-base" : "Distância entre eixos",
-          "wheel-base-value": "1585 mm",
-
-          "width" : "Largura da via",
-          "width-value": "1455 mm",
-
-          "height" : "Altura",
-          "height-value": "1176 mm",
-
-          "height-cg" : "Altura CG",
-          "height-cg-value": "299 mm",
-
-          "length": "Comprimento",
-          "length-value": "2811 mm",
-
-          "top-speed" : "Velocidade Máxima",
-          "top-speed-value": "140 Km/h"  
+        "title": "Geral",
+        "weight": "Peso",
+        "weight-value": "260 Kg",
+        "wheel-base": "Distância entre eixos",
+        "wheel-base-value": "1585 mm",
+        "width": "Largura da via",
+        "width-value": "1455 mm",
+        "height": "Altura",
+        "height-value": "1176 mm",
+        "height-cg": "Altura CG",
+        "height-cg-value": "299 mm",
+        "length": "Comprimento",
+        "length-value": "2811 mm",
+        "top-speed": "Velocidade Máxima",
+        "top-speed-value": "140 Km/h"
       },
-
       "powertrain": {
-         "title" : "Motor",
-
-          "engine" : "Motor",
-          "engine-value": "Honda CBR 600 F4i",
-
-          "power" : "Potência",
-          "power-value": "75 CV",
-
-          "max-rpm" : "Max RPM",
-          "max-rpm-value": "13500",
-
-          "gear-box": "Caixa de Velocidades",
-          "gear-box-value": "Sequencial Semi Automática de 6 velocidades"
+        "title": "Motor",
+        "engine": "Motor",
+        "engine-value": "Honda CBR 600 F4i",
+        "power": "Potência",
+        "power-value": "75 CV",
+        "max-rpm": "Max RPM",
+        "max-rpm-value": "13500",
+        "gear-box": "Caixa de Velocidades",
+        "gear-box-value": "Sequencial Semi Automática de 6 velocidades"
       },
-
       "steering&suspension": {
-          "title" : "Direção & Suspensão",
-
-          "type" : "Tipo",
-          "type-value": " Double Wishbone com Push-Rod",
-
-          "tyres" : "Pneus",
-          "tyres-value": "Hoosier 205/470 – R13",
-
-          "breaking" : "Travagem",
-          "breaking-value": "x4 Pinças Pistão AP Racing"  
+        "title": "Direção & Suspensão",
+        "type": "Tipo",
+        "type-value": " Double Wishbone com Push-Rod",
+        "tyres": "Pneus",
+        "tyres-value": "Hoosier 205/470 – R13",
+        "breaking": "Travagem",
+        "breaking-value": "x4 Pinças Pistão AP Racing"
       },
-
       "chassis": {
-          "title" : "Chassis",
-
-          "structure" : "Estrutura",
-          "structure-value": ": Tubular com soldadura a tungsténio ",
-
-          "weight-dist" : "Distribuição de Peso",
-          "weight-dist-value": "45F 55R"
-
+        "title": "Chassis",
+        "structure": "Estrutura",
+        "structure-value": ": Tubular com soldadura a tungsténio ",
+        "weight-dist": "Distribuição de Peso",
+        "weight-dist-value": "45F 55R"
       },
-
       "aero": {
-          "title" : "Aerodinâmica",
-
-          "bodywork": "Carenagem",
-          "bodywork-value":"Fibra de Carbono"
+        "title": "Aerodinâmica",
+        "bodywork": "Carenagem",
+        "bodywork-value": "Fibra de Carbono"
       }
-  },
-
+    },
     "competitions": {
-      "title" : "Competições",
+      "title": "Competições",
       "subtitle": "O FS FENIX EVO irá competir nos eventos Formula Student Austria & Formula Student Portugal!",
       "fspt": {
         "title": "FORMULA STUDENT PORTUGAL",
@@ -123,167 +96,131 @@
         "class": "Classe 1"
       }
     },
-
-    "teams-names" : {
-    "board" : "Direção",
-    "aerodynamics" : "Aerodinâmica",
-    "chassis&suspension" : "Chassis e Suspensão",
-    "vehicle-dynamics" : "Dinâmica de Veículo",
-    "steering&ergonomics" : "Direção e Ergonómica ",
-    "electronics" : "Eletrónica",
-    "powertrain" : "Motor",
-    "marketing" : "Marketing",
-    "corporate-relations" : "Relações Empresariais",
-    "logistics" : "Logística",
-    "finances" : "Finanças"
-},
+    "teams-names": {
+      "board": "Direção",
+      "aerodynamics": "Aerodinâmica",
+      "chassis&suspension": "Chassis e Suspensão",
+      "vehicle-dynamics": "Dinâmica de Veículo",
+      "steering&ergonomics": "Direção e Ergonómica ",
+      "electronics": "Eletrónica",
+      "powertrain": "Motor",
+      "marketing": "Marketing",
+      "corporate-relations": "Relações Empresariais",
+      "logistics": "Logística",
+      "finances": "Finanças"
+    },
     "roles": {
-      "team-leader" : "Team Leader",
-    "technical-director" : "Diretor Técnico",
-    "team-leader&project-manager": "Team Leader & Diretor de Projeto",
-    "technical-director&team-leader" : "Diretor Técnico & Team Leader",
-    "bsd" : "Diretor de Estratégia e Negócio",
-    "dep-leader" : "Coordenador",
-    "member" : "Membro"
+      "team-leader": "Team Leader",
+      "technical-director": "Diretor Técnico",
+      "team-leader&project-manager": "Team Leader & Diretor de Projeto",
+      "technical-director&team-leader": "Diretor Técnico & Team Leader",
+      "bsd": "Diretor de Estratégia e Negócio",
+      "dep-leader": "Coordenador",
+      "member": "Membro"
     }
   },
-
   "fsfenix-page": {
     "page-title": "FS FENIX",
     "page-subtitle": "O FS FENIX representa o reerguer das cinzas do Formula Student na Universidade NOVA",
-    "specs-title" : "Especificações Técnicas",
-    "team-title" : "A Equipa",
-
+    "specs-title": "Especificações Técnicas",
+    "team-title": "A Equipa",
     "technical-specs": {
       "general": {
-         "title" : "Geral",
-
-          "weight" : "Peso",
-          "weight-value": "280 Kg",
-
-          "wheel-base" : "Distância entre eixos",
-          "wheel-base-value": "1525 mm",
-
-          "width" : "Largura da via",
-          "width-value": "1346 mm",
-
-          "height-cg" : "Altura CG",
-          "height-cg-value": "250 mm",
-
-          "0-100" : "0-100 km/h",
-          "0-100-value": "3.9 s",
-
-          "top-speed" : "Velocidade Máxima",
-          "top-speed-value": "170 Km/h"  
+        "title": "Geral",
+        "weight": "Peso",
+        "weight-value": "280 Kg",
+        "wheel-base": "Distância entre eixos",
+        "wheel-base-value": "1525 mm",
+        "width": "Largura da via",
+        "width-value": "1346 mm",
+        "height-cg": "Altura CG",
+        "height-cg-value": "250 mm",
+        "0-100": "0-100 km/h",
+        "0-100-value": "3.9 s",
+        "top-speed": "Velocidade Máxima",
+        "top-speed-value": "170 Km/h"
       },
-
       "powertrain": {
-         "title" : "Motor",
-
-          "engine" : "Motor",
-          "engine-value": "Yamaha MT-07 CP2",
-
-          "power" : "Potência",
-          "power-value": "67 CV",
-
-          "max-rpm" : "Max RPM",
-          "max-rpm-value": "9000",
-
-          "volume" : "Cilindrada",
-          "volume-value": "698 cc",
-
-          "ecu" : "ECU",
-          "ecu-value": "Splitronics Mercury 3",
-
-          "quick-shifter" : "Quick Shifter",
-          "quick-shifter-value": "KLIKTRONIC"  
+        "title": "Motor",
+        "engine": "Motor",
+        "engine-value": "Yamaha MT-07 CP2",
+        "power": "Potência",
+        "power-value": "67 CV",
+        "max-rpm": "Max RPM",
+        "max-rpm-value": "9000",
+        "volume": "Cilindrada",
+        "volume-value": "698 cc",
+        "ecu": "ECU",
+        "ecu-value": "Splitronics Mercury 3",
+        "quick-shifter": "Quick Shifter",
+        "quick-shifter-value": "KLIKTRONIC"
       },
-
       "steering&suspension": {
-          "title" : "Direção & Suspensão",
-
-          "type" : "Tipo",
-          "type-value": "Double Wishbone com pushrod",
-
-          "tyres" : "Pneus",
-          "tyres-value": "Hoosier 205/407 R13 FSAE",
-
-          "breaking" : "Travagem",
-          "breaking-value": "AP Racing, pistões opostos com 25.4 milímetros de diâmetro (4 pistões à frente, 2 pistões atrás)",
-
-          "suspension" : "Amortecedores",
-          "suspension-value": "FOX Van R"  
+        "title": "Direção & Suspensão",
+        "type": "Tipo",
+        "type-value": "Double Wishbone com pushrod",
+        "tyres": "Pneus",
+        "tyres-value": "Hoosier 205/407 R13 FSAE",
+        "breaking": "Travagem",
+        "breaking-value": "AP Racing, pistões opostos com 25.4 milímetros de diâmetro (4 pistões à frente, 2 pistões atrás)",
+        "suspension": "Amortecedores",
+        "suspension-value": "FOX Van R"
       },
-
       "chassis": {
-          "title" : "Chassis",
-
-          "structure" : "Estrutura",
-          "structure-value": ": Tubular de Aço BS4-T45",
-
-          "weight" : "Peso",
-          "weight-value": "38 Kg",
-
-          "impact-structure" : "Atenuador de Impacto",
-          "impact-structure-value": "Espuma de Alta Densidade"
-
+        "title": "Chassis",
+        "structure": "Estrutura",
+        "structure-value": ": Tubular de Aço BS4-T45",
+        "weight": "Peso",
+        "weight-value": "38 Kg",
+        "impact-structure": "Atenuador de Impacto",
+        "impact-structure-value": "Espuma de Alta Densidade"
       },
-
       "aero": {
-          "title" : "Aerodinâmica",
-
-          "cd.a" : "CD.A",
-          "cd.a-value": "1.553",
-
-          "cl.d" : "CL.D",
-          "cl.d-value": "1.106"
+        "title": "Aerodinâmica",
+        "cd.a": "CD.A",
+        "cd.a-value": "1.553",
+        "cl.d": "CL.D",
+        "cl.d-value": "1.106"
       }
-  },
-
-  "competitions" : {
-    "title" : "Competições",
-    "subtitle" : "O FS FENIX competiu no evento Formula Student Portugal!",
-    "fspt" : {
-        "title" : "FORMULA STUDENT PORTUGAL",
-         "position" : "4º Lugar",
-        "date" : "1 a 5 de Agosto 2023",
-        "location" : "Kartódromo de Castelo Branco"
-
-    }
-  
-},
-
-  "teams-names" : {
-    "board" : "Direção",
-    "aerodynamics" : "Aerodinâmica",
-    "chassis&suspension" : "Chassis e Suspensão",
-    "vehicle-dynamics" : "Dinâmica de Veículo",
-    "steering&ergonomics" : "Direção e Ergonómica ",
-    "electronics" : "Eletrónica",
-    "powertrain" : "Motor",
-    "marketing" : "Marketing",
-    "corporate-relations" : "Relações Empresariais",
-    "logistics" : "Logística",
-    "finances" : "Finanças"
-},
-
-"roles" : {
-    "team-leader" : "Team Leader",
-    "technical-director" : "Diretor Técnico",
-    "team-leader&project-manager": "Team Leader & Diretor de Projeto",
-    "technical-director&team-leader" : "Diretor Técnico & Team Leader",
-    "bsd" : "Diretor de Estratégia e Negócio",
-    "dep-leader" : "Coordenador",
-    "member" : "Membro"
-},
-"team-container":{
+    },
+    "competitions": {
+      "title": "Competições",
+      "subtitle": "O FS FENIX competiu no evento Formula Student Portugal!",
+      "fspt": {
+        "title": "FORMULA STUDENT PORTUGAL",
+        "position": "4º Lugar",
+        "date": "1 a 5 de Agosto 2023",
+        "location": "Kartódromo de Castelo Branco"
+      }
+    },
+    "teams-names": {
+      "board": "Direção",
+      "aerodynamics": "Aerodinâmica",
+      "chassis&suspension": "Chassis e Suspensão",
+      "vehicle-dynamics": "Dinâmica de Veículo",
+      "steering&ergonomics": "Direção e Ergonómica ",
+      "electronics": "Eletrónica",
+      "powertrain": "Motor",
+      "marketing": "Marketing",
+      "corporate-relations": "Relações Empresariais",
+      "logistics": "Logística",
+      "finances": "Finanças"
+    },
+    "roles": {
+      "team-leader": "Team Leader",
+      "technical-director": "Diretor Técnico",
+      "team-leader&project-manager": "Team Leader & Diretor de Projeto",
+      "technical-director&team-leader": "Diretor Técnico & Team Leader",
+      "bsd": "Diretor de Estratégia e Negócio",
+      "dep-leader": "Coordenador",
+      "member": "Membro"
+    },
+    "team-container": {
       "members": "Membros",
       "degrees": "Cursos",
       "universities": "Faculdades"
     }
-  
   },
-
   "fsdragon-page": {
     "page-title": "FS DRAGON",
     "page-subtitle": "O FS DRAGON é o primeiro protótipo que a equipa do NOVA Formula Student construiu.",
@@ -291,102 +228,98 @@
     "team-title": "A Equipa",
     "gallery": "Galeria",
     "technical-specs": {
-        "general": {
-            "title": "Geral",
-            "weight": "Massa",
-            "weight-value": "280 Kg",
-            "wheel-base": "Distância entre eixos",
-            "wheel-base-value": "1525 mm",
-            "width": "Track",
-            "width-value": "1346 mm",
-            "height-cg": "Altura CG",
-            "height-cg-value": "250 mm",
-            "0-100": "0-100 km/h",
-            "0-100-value": "3.9 s",
-            "top-speed": "Velocidade máxima",
-            "top-speed-value": "170 Km/h"
-        },
-        "powertrain": {
-            "title": "Powertrain",
-            "engine": "Engine",
-            "engine-value": "Yamaha MT-07 CP2",
-            "power": "Power",
-            "power-value": "67 BHP",
-            "max-rpm": "Max RPM",
-            "max-rpm-value": "9000",
-            "volume": "Volume",
-            "volume-value": "698 cc",
-            "ecu": "ECU",
-            "ecu-value": "Splitronics Mercury 3",
-            "quick-shifter": "Quick Shifter",
-            "quick-shifter-value": "KLIKTRONIC"
-        },
-        "steering&suspension": {
-            "title": "Steering & Suspension",
-            "type": "Type",
-            "type-value": "Double Wishbone with pushrod",
-            "tyres": "Tyres",
-            "tyres-value": "Hoosier 205/407 R13 FSAE",
-            "breaking": "Breaking",
-            "breaking-value": "AP Racing, opposite pistons with 25.4 mm diameter (4 in the front, 2 in the rear)",
-            "suspension": "Suspension",
-            "suspension-value": "FOX Van R"
-        },
-        "chassis": {
-            "title": "Chassis",
-            "structure": "Structure",
-            "structure-value": "Steel tube BS4-T45",
-            "weight": "Weight",
-            "weight-value": "38 Kg",
-            "impact-structure": "Impact Structure",
-            "impact-structure-value": "High Density Foam"
-        },
-        "aero": {
-            "title": "Aerodynamics",
-            "cd.a": "CD.A",
-            "cd.a-value": "1.553",
-            "cl.d": "CL.D",
-            "cl.d-value": "1.106"
-        }
+      "general": {
+        "title": "Geral",
+        "weight": "Massa",
+        "weight-value": "280 Kg",
+        "wheel-base": "Distância entre eixos",
+        "wheel-base-value": "1525 mm",
+        "width": "Track",
+        "width-value": "1346 mm",
+        "height-cg": "Altura CG",
+        "height-cg-value": "250 mm",
+        "0-100": "0-100 km/h",
+        "0-100-value": "3.9 s",
+        "top-speed": "Velocidade máxima",
+        "top-speed-value": "170 Km/h"
+      },
+      "powertrain": {
+        "title": "Powertrain",
+        "engine": "Engine",
+        "engine-value": "Yamaha MT-07 CP2",
+        "power": "Power",
+        "power-value": "67 BHP",
+        "max-rpm": "Max RPM",
+        "max-rpm-value": "9000",
+        "volume": "Volume",
+        "volume-value": "698 cc",
+        "ecu": "ECU",
+        "ecu-value": "Splitronics Mercury 3",
+        "quick-shifter": "Quick Shifter",
+        "quick-shifter-value": "KLIKTRONIC"
+      },
+      "steering&suspension": {
+        "title": "Steering & Suspension",
+        "type": "Type",
+        "type-value": "Double Wishbone with pushrod",
+        "tyres": "Tyres",
+        "tyres-value": "Hoosier 205/407 R13 FSAE",
+        "breaking": "Breaking",
+        "breaking-value": "AP Racing, opposite pistons with 25.4 mm diameter (4 in the front, 2 in the rear)",
+        "suspension": "Suspension",
+        "suspension-value": "FOX Van R"
+      },
+      "chassis": {
+        "title": "Chassis",
+        "structure": "Structure",
+        "structure-value": "Steel tube BS4-T45",
+        "weight": "Weight",
+        "weight-value": "38 Kg",
+        "impact-structure": "Impact Structure",
+        "impact-structure-value": "High Density Foam"
+      },
+      "aero": {
+        "title": "Aerodynamics",
+        "cd.a": "CD.A",
+        "cd.a-value": "1.553",
+        "cl.d": "CL.D",
+        "cl.d-value": "1.106"
+      }
     },
-
-    "competitions" : {
-        "title" : "Competitions",
-        "subtitle" : "The FS DRAGON competed in the Formula Student Portugal event!",
-        "fspt" : {
-            "title" : "FORMULA STUDENT PORTUGAL",
-            "position" : "Placed 4th ",
-            "date" : "3 to 7 of September 2024",
-            "location" : "Castelo Branco Kart Track"
-        }
-
+    "competitions": {
+      "title": "Competitions",
+      "subtitle": "The FS DRAGON competed in the Formula Student Portugal event!",
+      "fspt": {
+        "title": "FORMULA STUDENT PORTUGAL",
+        "position": "Placed 4th ",
+        "date": "3 to 7 of September 2024",
+        "location": "Castelo Branco Kart Track"
+      }
     },
-    
     "teams-names": {
-        "board": "Direção",
-        "aerodynamics": "Aerodinâmica",
-        "chassis&Dynamics": "Chassis e Dinâmica",
-        "chassis&suspension": "Chassis & Suspension",
-        "vehicle-dynamics": "Vehicle Dynamics",
-        "steering&ergonomics": "Steering & Ergonomics",
-        "electronics": "Eletrónica",
-        "powertrain": "Motores",
-        "marketing": "Marketing",
-        "corporate-relations": "Relações Empresariais",
-        "logistics": "Logística",
-        "finances": "Finanças"
+      "board": "Direção",
+      "aerodynamics": "Aerodinâmica",
+      "chassis&Dynamics": "Chassis e Dinâmica",
+      "chassis&suspension": "Chassis & Suspension",
+      "vehicle-dynamics": "Vehicle Dynamics",
+      "steering&ergonomics": "Steering & Ergonomics",
+      "electronics": "Eletrónica",
+      "powertrain": "Motores",
+      "marketing": "Marketing",
+      "corporate-relations": "Relações Empresariais",
+      "logistics": "Logística",
+      "finances": "Finanças"
     },
     "roles": {
-        "team-leader": "Team Leader",
-        "technical-director": "Technical Director",
-        "team-leader&project-manager": "Team Leader & Project Manager",
-        "technical-director&team-leader" : "Technical Director & Team Leader",
-        "bsd": "Business & Strategy Director",
-        "dep-leader": "Department Leader",
-        "member": "Member"
+      "team-leader": "Team Leader",
+      "technical-director": "Technical Director",
+      "team-leader&project-manager": "Team Leader & Project Manager",
+      "technical-director&team-leader": "Technical Director & Team Leader",
+      "bsd": "Business & Strategy Director",
+      "dep-leader": "Department Leader",
+      "member": "Member"
     }
-},
-
+  },
   "contacts-page": {
     "page-title": "Contactos",
     "form-email": "Email",
@@ -403,16 +336,13 @@
     "send-success": "Mensagem enviada com sucesso!",
     "touch-msg": "Entraremos em contacto consigo o mais rápido possível."
   },
-
   "team-page": {
     "title": "Conhece a nossa equipa!",
     "description": "A nossa equipa é composta por estudantes de diversas áreas de estudo e de várias faculdades da NOVA. Estamos estruturados em principais departamentos: Direção, Técnico e Negócios e Estratégia.",
-
     "headers": {
       "board_header": "Direção",
       "management_header": "Coordenadores"
     },
-
     "roles": {
       "BSD": "Diretor de Estratégia & Negócios",
       "TL": "Team Leader",
@@ -421,7 +351,6 @@
       "CR": "Relações Empresariais",
       "LG": "Logística",
       "FIN": "Finanças",
-
       "PWT": "Motores",
       "ELE": "Eletrónica",
       "AERO": "Aerodinâmica",
@@ -429,14 +358,12 @@
       "SE": "Ergonómica",
       "CS": "Chassis e Suspenção"
     },
-
     "degrees": {
       "mechanical_engineering": "Engenharia Mecânica",
       "eletronic_engineering": "Engenharia Eletrotécnica",
       "computer_engineering": "Engenharia Informática"
     }
   },
-
   "home": {
     "who_r_we": "QUEM SOMOS",
     "fs_team": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
@@ -448,26 +375,27 @@
     "sponsor_title": "Patrocinadores",
     "sponsor_title_2": "Torne-se Nosso Parceiro na Inovação Automóvel!",
     "sponsor_text": "Torne-se um patrocinador da nossa equipa, tendo a oportunidade de se associar a um projeto inovador e educacional.\n\r\nAumente a visibilidade da sua marca em eventos, medias sociais e materiais promocionais.\n\r\nJunte-se a nós nesta jornada de excelência técnica e compromisso com a inovação.\n\r\nApoie a próxima geração de líderes e inovadores.",
-    "reach_us": "Contacte-nos"
+    "reach_us": "Contacte-nos",
+    "recruitment_title": "Recrutamento",
+    "recruitment_text": "Estamos sempre à procura de novos membros para a nossa equipa. Se estás interessado em fazer parte de um projeto inovador e educacional, junta-te a nós!",
+    "recruitment_button": "Junte-te a nós"
   },
-
   "recruitment-page": {
     "page-title": "Recrutamento",
-    "page-subtitle": "Estas são as nossas posições abertas de momento."
+    "page-subtitle": "Estas são as nossas equipas com posições abertas de momento."
   },
-
   "about-page": {
-    "who-are-we":"Quem Somos",
-    "about-us":"SOBRE NÓS",
-    "about-us-desc":"Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
-    "about-fs":"Sobre a Formula Student",
+    "who-are-we": "Quem Somos",
+    "about-us": "SOBRE NÓS",
+    "about-us-desc": "Somos a equipa de Formula Student da Universidade Nova de Lisboa.",
+    "about-fs": "Sobre a Formula Student",
     "formula-student": "Formula Student é a maior prova de engenharia entre estudantes universitários. Esta une alunos das mais variadas áreas, como Engenharias, Negócio, Marketing, Gestão de Projeto, entre outras, com intuito de projetar um carro e participar em competições de nível mundial.",
     "how-it-works-title": "Como funciona o FS",
     "how-it-works-desc": "As provas de Formula Student pretendem avaliar o trabalho efetuado pelas equipas ao longo de cada época, seja a nível de Negócio, Design, ou Performance do carro fabricado. Estas provas estão divididas em vários eventos - Estáticos e Dinâmicos - com valorizações pontuais diferentes. Quando somadas as pontuações obtidas pelas equipas em cada evento, obtém-se a classificação final.",
     "static-events": "EVENTOS ESTÁTICOS",
-    "static-ev-desc":"Os eventos estáticos avaliam a preparação da equipa nas seguintes áreas:",
-    "area":"Área",	
-    "points":"Pontos",
+    "static-ev-desc": "Os eventos estáticos avaliam a preparação da equipa nas seguintes áreas:",
+    "area": "Área",
+    "points": "Pontos",
     "business-model": "Modelo de Negócios",
     "business-model-desc": "O objetivo é avaliar a capacidade da equipa de desenvolver e apresentar um modelo de negócios abrangente. Este modelo de negócios deve estar relacionado ao veículo protótipo específico da equipa ou a um componente específico dele. Ao fazer isso, o negócio deve oferecer o veículo ou componente como um produto, ou vender um serviço com base nele, proporcionando uma oportunidade de negócio recompensadora que gere lucro monetário.",
     "cost-manufacturing": "Custo e Manufatura",
@@ -486,5 +414,19 @@
     "endurance-desc": "Testar a durabilidade, confiabilidade e eficiência de combustível do carro ao longo de uma distância de corrida estendida. O carro deve completar um número especificado de voltas em uma pista desafiadora. O evento avalia tanto a resistência do veículo quanto as decisões estratégicas da equipa em relação à eficiência de combustível, paragens nas boxes e confiabilidade geral.",
     "efficiency": "Eficiência / Trackdrive",
     "efficiency-desc": "A eficiência é medida no evento de resistência é refletida na capacidade da equipa de projetar um carro que possa completar a corrida com um consumo mínimo de combustível, demonstrando não apenas velocidade, mas também uma gestão de energia cuidadosa."
+  },
+  "DepartmentPage": {
+    "coordenador": "Coordenador",
+    "discoperations": "\"No departamento de operations procuramos pessoas comunicativas e ambiciosas, que estejam dispostas a enfrentar novos desafios e a crescer connosco. \nEste departamento garante a organização dos eventos estáticos, assegurando que toda a documentação e regulamentos sejam seguidos a risca. \nAlém disso, seremos responsáveis por interagir com as empresas parceiras para fechar acordos relacionados à produção e manufatura dos componentes necessários para os nossos projetos. \nPor fim, teremos um papel fundamental na revisão dos desenhos técnicos, assegurando que estejam corretos antes de serem enviados para as empresas.\"",
+    "discmkt": "\"Na equipa de marketing somos responsáveis pela imagem públicada equipa. Tanto para mostrar os nossos parceiros, atrair novas empresas ao nosso projeto e também mostrar ao público geral todo o nosso trabalho.\nTrabalhamos maioritariamente nas nossas redes sociais, website e todo o material gráfico da equipa, isto inclui a merchandise e liveries dos nossos carros.\nProcuramos criatividade, sentido de marca e especialmente vontade de aprender a trabalhar nas várias ferramentas de criação de mídia digital.\nSe queres ajudar a marca NFS a crescer a equipa de marketing está pronta para te receber!\"", 
+    "disceletro": "\"Na equipa de eletrónica, somos responsáveis pelo desenvolvimento e manufatura de todo o hardware do carro elétrico. Desde a criação e montagem de pcbs, até a integração de sensores. Planeamento do layout dos sistemas e toda a cablagem, garantindo que cada componente funciona em harmonia.\nDevido à complexidade da área e a interdependência com outras equipas, procuramos pessoas com bases sólidas na área, que sejam autodidatas e com excelentes capacidades de comunicação. De queres ajudar o nfs a arrancar com tudo, a equipa de eletrónica está pronta para te receber\"",
+    "discchassis": "\"O departamento de chassis é responsável pelo design e manufatura do chassis e ergonomia do piloto nos nossos carros.\nTrabalhamos com análise estrutural em programas de desenho CAD e simulação de elementos finitos.\nProcuramos pessoas empenhadas e dedicadas, prontas para aprender e dedicar o seu tempo  a este projeto !",
+    "discpowertrain": "\"Na equipa de powertrain, somos responsáveis pela propulsão e transmissão do carro. Este ano vamos otimizar o carro atual e desenvolver o projeto do carro elétrico.\nPara o carro atual, focamos-nos na otimização e integração de novos componentes. No projeto elétrico iremos integrar todo o sistema de propulsão, incluindo a transmissão, motor, controlo e desenvolvimento do acumulador elétrico.\nProcuramos membros interessados em eletrónica e mecânica aplicadas ao sistema de propulsão elétrica. Se gostas de inovação e engenharia de alta performance, junta-te a nós e ajuda a equipa a dar o passo para o próximo nível I\"",
+    "discsuspension": "\"Na equipa de suspensão, será realizado o projeto de todos o8 componentes relacionados com a suspensão e direção do carro.\nOs membros da equipa irão trabalhar com softwares cad e simulação de elementos finitos.\nProcuramos pessoas empenhada® e com vontade de aprender, qualquer experiência prévia é bem vinda, no entanto o essencial é a vossa dedicação ao projeto!\"",
+    "discsc": "\"Na equipa de software & control somos responsáveis por desenvolver o software de controlo que impulsiona o nosso carro. Desde protocolos de comunicação can até firmware para sistemas de aquisição e algoritmos de controlo.\nTrabalhamos para extrair o máximo potencial do motor elétrico.\nValorizamos pessoas com pensamento lógico, criatividade e tenacidade. Se tens essas qualidades e queres ajudar o nfs a dominar na pista, a equipa de s&c está pronta para te receber!\"",
+    "discaero": "\"No departamento de aerodinâmica irão trabalhar com softwares cad e cfd, participando no desenvolvimento e pesquisa dos futuros componentes aerodinamicos dos nossos carros\nProcuramos pessoas empenhadas e dedicadas. Com bastante capacidade e vontade de fazer pesquisa autónoma sobre osvá rios temas, dada a sua complexidade\nProcuramos também apaixonados por motorsport e arte de levar a performance de um carro ao próximo nível!\"",
+    "discvd": "\"Neste departamento ubamos softwares como optimum g, open lap, adams e solidworks.\nValorizamos bastante a dedicação, vontade de aprender e capacidade de ser autodidata e proativo\nvemos-nos nas entrevistas!\"",
+    "disclogistics": "\"A equipa de logística é responsável pelo planeamento de todas as atividades essenciais para garantir o sucesso do NFS!\nO nosso trabalho abrange desde a organização de eventos de team building e coffee breaks até à coordenação detalhada das competições.\nProcuramos alguém com excelentes capacidades de gestão de tempo, pensamento crítico e, acima de tudo, uma forte aptidão para a organização.\nSe estás à procura de um desafio e queres contribuir ativamente para o sucesso do nfs. Junta-te à equipa de logística!\"",
+    "disccr": "\"No departamento de corporate relations queremos pessoas dinâmicas e ativas, com vontade de aprender e espírito crítico.\nA experiência anterior conta, mas poucoi interagimos com as empresas parceiras e procuramos possíveis futuros negócios, garantindo que a relação com o NFS corre perfeitamente.\nEstas empresas podem ser de vários ramos, consoante as necessidades da equipa.\nPor fim, participamos na preparação do business plan presentation, que a equipa já ganhou!\""
   }
 }

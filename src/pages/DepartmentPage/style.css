@@ -1,0 +1,93 @@
+.department-page {
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    min-height: 100svh;
+    align-items: center;
+}
+
+.coordenador {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #1d1d1d;
+}
+
+.coordenador-name {
+    text-align: center;
+}
+
+.department-page header {
+    margin-bottom: 2rem;
+}
+
+.department-page h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #19a3ff;
+}
+
+.department-page p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+/* Card Styling */
+/* Card Styling */
+.department-card {
+    width: 100%;
+    max-width: 400px;
+    min-height: 500px; /* Ensures minimum height */
+    flex-grow: 1; /* Allows card to grow if necessary */
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+/* Make the image fill the card */
+.department-image {
+    width: 100%;
+    aspect-ratio: 4/5; /* Maintain 4:5 ratio, matching 400px width and 500px height */
+    object-fit: cover; /* Ensures the image fills the card while maintaining aspect ratio */
+    border-radius: 0;
+}
+
+
+.dep-disc{
+    padding: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #1d1d1d;
+    text-align: center;
+    align-items: center;
+}
+
+.recruitment-button-dep:hover {
+    transform: scale(1.05); /* Slight hover effect */
+    color: #19a3ff;
+
+  }
+  
+.recruitment-button-dep {
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    font-size: 2rem;
+     /* Larger font size to resemble a title */
+    margin-top: 0px;
+    background-color: transparent; /* No background color */
+    border: none; /* Remove border */
+    text-align: center;
+    font-weight: bold; /* Bold text for title effect */
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 10px 0; /* Minimal padding */
+  }
+
+.button-pos-dep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0vw; /* Adjust padding to fit new title-like appearance */
+}

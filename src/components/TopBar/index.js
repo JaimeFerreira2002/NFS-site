@@ -84,6 +84,9 @@ const TopBar = ({ isScrolled, toggleDrawer }) => { // Accept toggleDrawer as a p
         <li className={location.pathname === '/contacts' ? 'active' : ''}>
           <Link to="/contacts">{t('topbar.contacts')}</Link>
         </li>
+        <li className={location.pathname === '/recruitment' ? 'active' : ''}>
+          <Link to="/recruitment">{t('topbar.recruitment')}</Link>
+        </li>
 
       </ul>
 
