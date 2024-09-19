@@ -56,7 +56,8 @@ const AboutUsPage = () => {
             <div id="teamImageContainer" className={containerClass}></div>
           </div>
         </div>
-        <div className="video-container">
+        {
+          /*<div className="video-container">
         <div className="video-wrapper">
           <h3>Title 1</h3>
           <YouTube videoId="DRr-4rR2rII" opts={opts} />
@@ -65,7 +66,7 @@ const AboutUsPage = () => {
           <h3>Title 2</h3>
           <YouTube videoId="DRr-4rR2rII" opts={opts} />
         </div>
-      </div>
+      </div>*/}
 
         <div className="how-it-works">
           <div>
