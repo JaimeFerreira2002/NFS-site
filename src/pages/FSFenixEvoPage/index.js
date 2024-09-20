@@ -9,6 +9,7 @@ import { useInView } from "react-intersection-observer";
 import TeamListData from "../../components/team_members_list.js";
 import PageHeader from "../../components/PageHeader/index.js";
 import { Link } from "react-router-dom";
+import PhotoGallery from "../../components/PhotoGallery/index.js";
 
 //logos
 import AltairLogo from "../../assets/images/sponsors_logos/altair.png";
@@ -30,17 +31,42 @@ import VisteonLogo from "../../assets/images/sponsors_logos/visteon.png";
 import VWLogo from "../../assets/images/sponsors_logos/volkswagen.png";
 import WOBLogo from "../../assets/images/sponsors_logos/wob_palmela.jpg";
 
-
 import MemberCard from "../../components/MemberCard";
 import ImageGallery from "./components/CompetitionsRow/index.js";
 //photos
-const image0 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2F_DSC4175.JPG?alt=media&token=51ac6880-72fa-4aa6-ba31-9d46b5f87189"
-const image1 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFENIX_EVO.JPG?alt=media&token=7ddf6654-efce-4706-8f6b-595723565ea0";
-const image2 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo2.JPG?alt=media&token=0091748a-a8d1-4b44-9906-93d7d5b105d6";
-const image3 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo3.JPG?alt=media&token=551869b2-e774-4693-9070-1efc3b779f32";
-const image4 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo4.JPG?alt=media&token=a570ef03-90df-4bdc-b68b-63b150923ea5";
-const image5 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2F_DSC4311.JPG?alt=media&token=5fd53d2c-1790-419b-8618-aa187522f8e7";
+const image0 =
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2F_DSC4175.JPG?alt=media&token=51ac6880-72fa-4aa6-ba31-9d46b5f87189";
+const image1 =
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFENIX_EVO.JPG?alt=media&token=7ddf6654-efce-4706-8f6b-595723565ea0";
+const image2 =
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo2.JPG?alt=media&token=0091748a-a8d1-4b44-9906-93d7d5b105d6";
+const image3 =
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo3.JPG?alt=media&token=551869b2-e774-4693-9070-1efc3b779f32";
+const image4 =
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo4.JPG?alt=media&token=a570ef03-90df-4bdc-b68b-63b150923ea5";
+const image5 =
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2F_DSC4311.JPG?alt=media&token=5fd53d2c-1790-419b-8618-aa187522f8e7";
 const imageArray = [image0, image1, image2, image5, image3, image4];
+
+const photos = [
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2F_DSC4175.JPG?alt=media&token=51ac6880-72fa-4aa6-ba31-9d46b5f87189",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFENIX_EVO.JPG?alt=media&token=7ddf6654-efce-4706-8f6b-595723565ea0",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo2.JPG?alt=media&token=0091748a-a8d1-4b44-9906-93d7d5b105d6",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo3.JPG?alt=media&token=551869b2-e774-4693-9070-1efc3b779f32",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo4.JPG?alt=media&token=a570ef03-90df-4bdc-b68b-63b150923ea5",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2F_DSC4311.JPG?alt=media&token=5fd53d2c-1790-419b-8618-aa187522f8e7",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday0amanzano-16.jpg?alt=media&token=e363bcf8-3ebb-48ab-8b34-3e0f1071209c",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday1amanzano-179.jpg?alt=media&token=5687f1b9-3375-4bd3-928e-43213c693475",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday3amanzano-55.jpg?alt=media&token=4a9a241d-8be2-48b6-a206-3cc7cc7ada68",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday4amanzano-171.jpg?alt=media&token=c50fbe5f-cddd-4dc2-8c6e-aba9f5ebd69f",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday5amanzano-139.jpg?alt=media&token=8554ab21-01b8-4037-933b-64389bfa4385",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday5amanzano-140.jpg?alt=media&token=1952e5bb-b43c-4391-95ab-8e1b1f8864b5",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday5amanzano-141.jpg?alt=media&token=3b63e117-7714-46a3-885b-a88a289062e9",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday5amanzano-142.jpg?alt=media&token=166c6543-81b4-495e-82a1-cf5a1179d82a",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday5amanzano-143.jpg?alt=media&token=60036fa5-b985-4e39-a773-dde3c3adbee7",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday5amanzano-144.jpg?alt=media&token=a33d1813-66e6-4fe3-9031-90b308106396",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Fday5amanzano-166.jpg?alt=media&token=e6f33a51-2d2b-4d5e-8dc1-c7f323de8069",
+];
 
 const colorGradient = {
   backgroundImage: "linear-gradient(to right, #286196, #70a0ff)",
@@ -209,12 +235,14 @@ const FenixEvoPage = () => {
       </div>
 
       {/* GALLERY */}
-       <div className='fenixevo-gallery-container'>
-          <div className='fenixevo-section-title'>
+      <div className="fenixevo-gallery-container">
+        <div className="fenixevo-section-title">
           {t(`fsdragon-page.gallery`)}
-          </div>
-          <Gallery images={imageArray} />
-      </div> 
+        </div>
+        <Gallery images={imageArray} />
+      </div>
+
+      <PhotoGallery photos={photos} />
 
       {/* TEAM SECTION */}
       <div className="fenixevo-team-container">
