@@ -239,7 +239,9 @@ const FenixEvoPage = () => {
         <div className="fenixevo-section-title">
           {t(`fsdragon-page.gallery`)}
         </div>
-        <Gallery images={imageArray} />
+        {
+          //<Gallery images={imageArray} />
+        }
       </div>
 
       <PhotoGallery photos={photos} />
