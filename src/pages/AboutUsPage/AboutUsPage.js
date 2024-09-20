@@ -32,7 +32,7 @@ const AboutUsPage = () => {
       autoplay: 0,
     },
   };
-
+var iconColor="#19a3ff"
   return (
     <div className="page-about">
       <PageHeader
@@ -94,7 +94,7 @@ const AboutUsPage = () => {
                 <FontAwesomeIcon
                   icon={faPenRuler}
                   size="4x"
-                  color="#286196"
+                  color={iconColor}
                   style={{ paddingRight: "2rem" }}
                 />
 
@@ -114,7 +114,7 @@ const AboutUsPage = () => {
                 <FontAwesomeIcon
                   icon={faTag}
                   size="4x"
-                  color="#286196"
+                  color={iconColor}
                   style={{ paddingRight: "2rem" }}
                 />
                 <span style={{ display: "flex" }}>
@@ -133,7 +133,7 @@ const AboutUsPage = () => {
                 <FontAwesomeIcon
                   icon={faChartLine}
                   size="4x"
-                  color="#286196"
+                  color={iconColor}
                   style={{ paddingRight: " 2rem" }}
                 />
                 <span style={{ display: "flex" }}>
@@ -164,7 +164,7 @@ const AboutUsPage = () => {
                 <FontAwesomeIcon
                   icon={faGaugeHigh}
                   size="4x"
-                  color="#286196"
+                  color={iconColor}
                   style={{ paddingRight: "2rem" }}
                 />
                 <span style={{ display: "flex" }}>
@@ -183,7 +183,7 @@ const AboutUsPage = () => {
                 <FontAwesomeIcon
                   icon={faCarSide}
                   size="4x"
-                  color="#286196"
+                  color={iconColor}
                   style={{ paddingRight: "1.4rem" }}
                 />
                 <span style={{ display: "flex" }}>
@@ -202,7 +202,7 @@ const AboutUsPage = () => {
                 <FontAwesomeIcon
                   icon={faCar}
                   size="4x"
-                  color="#286196"
+                  color={iconColor}
                   style={{ paddingRight: "2rem" }}
                 />
                 <span style={{ display: "flex" }}>
@@ -221,7 +221,7 @@ const AboutUsPage = () => {
                 <FontAwesomeIcon
                   icon={faRoad}
                   size="4x"
-                  color="#286196"
+                  color={iconColor}
                   style={{ paddingRight: "1.7rem" }}
                 />
 
@@ -241,7 +241,7 @@ const AboutUsPage = () => {
                 <FontAwesomeIcon
                   icon={faBatteryHalf}
                   size="4x"
-                  color="#286196"
+                  color={iconColor}
                   style={{ paddingRight: "1.8rem" }}
                 />
                 <span style={{ display: "flex" }}>

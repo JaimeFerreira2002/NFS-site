@@ -43,7 +43,7 @@ const image5 = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.a
 const imageArray = [image0, image1, image2, image5, image3, image4];
 
 const colorGradient = {
-  backgroundImage: "linear-gradient(to right, #1966ff, #70a0ff)",
+  backgroundImage: "linear-gradient(to right, #286196, #70a0ff)",
 };
 
 //logos
