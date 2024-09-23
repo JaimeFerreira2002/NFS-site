@@ -26,7 +26,6 @@ const NewsletterColumn = () => {
       <div className="newsletter-tiles">
         {newsletters.map((newsletter, index) => (
           <a href={newsletter.link} key={index} className="newsletter-tile">
-            <img src={newsletter.image} alt={newsletter.title} className="newsletter-image" />
             <div className="newsletter-info">
               <h3>{newsletter.title}</h3>
             </div>

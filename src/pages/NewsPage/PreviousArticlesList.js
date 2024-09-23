@@ -7,33 +7,39 @@ const PreviousArticlesList = () => {
     {
       title: "Previous Article 1",
       link: "/article-1",
-      image: "https://via.placeholder.com/100", // Replace with actual image URL
+      subtitle: "Understanding the Basics",
+      date: "2024-01-15"
+      
     },
     {
       title: "Previous Article 2",
       link: "/article-2",
-      image: "https://via.placeholder.com/100", // Replace with actual image URL
+      subtitle: "Understanding the Basics",
+      date: "2024-01-15"
+      
     },
     {
       title: "Previous Article 3",
       link: "/article-3",
-      image: "https://via.placeholder.com/100", // Replace with actual image URL
+      subtitle: "Understanding the Basics",
+      date: "2024-01-15"
+      
     },
   ];
 
   return (
-    <div className="previous-articles">
-      <h2>Previous Articles</h2>
-      <div className="article-tiles">
-        {articles.map((article, index) => (
-          <a href={article.link} key={index} className="article-tile">
-            <img src={article.image} alt={article.title} className="article-image" />
-            <div className="article-info">
-              <h3>{article.title}</h3>
-            </div>
-          </a>
-        ))}
-      </div>
+    <div className="previous-articles-list">
+      {articles.map((article, index) => (
+        <div key={index} className="article-card">
+          <div className="article-details">
+            <h3 className="article-title">{article.title}</h3>
+            <p className="article-subtitle">{article.subtitle}</p>
+          </div>
+          <div className="article-date">
+            <p>{new Date(article.date).toLocaleDateString()}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
