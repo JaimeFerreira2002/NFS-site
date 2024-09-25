@@ -438,6 +438,7 @@
     "endurance": "Endurance",
     "endurance-desc": "Test the car's durability, reliability, and fuel efficiency over an extended race distance. The car must complete a specified number of laps on a challenging track. The event assesses both the vehicle's endurance and the team's strategic decisions regarding fuel efficiency, pit stops, and overall reliability.",
     "efficiency": "Efficiency / Trackdrive",
-    "efficiency-desc": "Efficiency measured in the endurance event is reflected in the team's ability to design a car that can complete the race with minimum fuel consumption, demonstrating not just speed, but also careful energy management."
+    "efficiency-desc": "Efficiency measured in the endurance event is reflected in the team's ability to design a car that can complete the race with minimum fuel consumption, demonstrating not just speed, but also careful energy management.",
+    "media-aps": "NFS in the Media"
   }
 }

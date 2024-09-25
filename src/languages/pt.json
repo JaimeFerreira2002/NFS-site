@@ -485,6 +485,7 @@
     "endurance": "Endurance",
     "endurance-desc": "Testar a durabilidade, confiabilidade e eficiência de combustível do carro ao longo de uma distância de corrida estendida. O carro deve completar um número especificado de voltas em uma pista desafiadora. O evento avalia tanto a resistência do veículo quanto as decisões estratégicas da equipa em relação à eficiência de combustível, paragens nas boxes e confiabilidade geral.",
     "efficiency": "Eficiência / Trackdrive",
-    "efficiency-desc": "A eficiência é medida no evento de resistência é refletida na capacidade da equipa de projetar um carro que possa completar a corrida com um consumo mínimo de combustível, demonstrando não apenas velocidade, mas também uma gestão de energia cuidadosa."
+    "efficiency-desc": "A eficiência é medida no evento de resistência é refletida na capacidade da equipa de projetar um carro que possa completar a corrida com um consumo mínimo de combustível, demonstrando não apenas velocidade, mas também uma gestão de energia cuidadosa.",
+    "media-aps": "NFS nos Media"
   }
 }

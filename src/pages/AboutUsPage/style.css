@@ -249,3 +249,13 @@ body {
   margin-bottom: 10px;
   color: white;
 }
+.video-section{
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #1d1d1d;
+}
+
+.video-section h2 {
+  text-align: center;
+}

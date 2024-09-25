@@ -32,7 +32,7 @@ const AboutUsPage = () => {
       autoplay: 0,
     },
   };
-var iconColor="#19a3ff"
+  var iconColor = "#19a3ff";
   return (
     <div className="page-about">
       <PageHeader
@@ -56,17 +56,21 @@ var iconColor="#19a3ff"
             <div id="teamImageContainer" className={containerClass}></div>
           </div>
         </div>
-        {
-          /*<div className="video-container">
-        <div className="video-wrapper">
-          <h3>Title 1</h3>
-          <YouTube videoId="DRr-4rR2rII" opts={opts} />
+        <div className="video-section">
+          <h2>
+            <strong>{t("about-page.media-aps")}</strong>
+          </h2>
+          <div className="video-container">
+            <div className="video-wrapper">
+              <h3>Primeiro Jornal SIC</h3>
+              <YouTube videoId="09gNvZ6cpTc" opts={opts} />
+            </div>
+            <div className="video-wrapper">
+              <h3>Jornal da tarde RTP</h3>
+              <YouTube videoId="iipu79myd-A" opts={opts} />
+            </div>
+          </div>
         </div>
-        <div className="video-wrapper">
-          <h3>Title 2</h3>
-          <YouTube videoId="DRr-4rR2rII" opts={opts} />
-        </div>
-      </div>*/}
 
         <div className="how-it-works">
           <div>
@@ -258,7 +262,6 @@ var iconColor="#19a3ff"
           </Accordion>
         </div>
       </div>
-      
     </div>
   );
 };
