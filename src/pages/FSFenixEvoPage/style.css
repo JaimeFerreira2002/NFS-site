@@ -121,7 +121,7 @@
 
 .competitions-section-container{
   padding-top: 3%;
-  padding-bottom: 4%;
+  padding-bottom: 1%;
 }
 
 .competitions-subtitle{
@@ -229,4 +229,32 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.competition-results-container {
+  display: flex;
+  justify-content: space-between; /* Ensure spacing between the two columns */
+  gap: 20px; /* Space between the columns */
+  margin-bottom: 20px; /* Space above the results */
+}
+
+.competition-results-column {
+  flex: 1; /* Make each column take up equal space */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.competition-results-column h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.competition-results-column ul {
+
+  
+}
+
+.competition-results-column li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }

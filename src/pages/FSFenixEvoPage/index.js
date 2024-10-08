@@ -247,6 +247,48 @@ const FenixEvoPage = () => {
         </div>
       </div>
 
+      {/* COMPETITIONS RESULTS */}
+      <div className="competition-results-container">
+        {/* FSPT Competition Results */}
+        <div className="competition-results-column">
+          <h3>FSPT Results</h3>
+          <h5>Static Events</h5>
+          <ul>
+            <li>Design: P2</li>
+            <li>Cost: P2</li>
+          </ul>
+          <h5>Dynamic Events</h5>
+          <ul>
+            <li>
+               Aceleration: DNS
+            </li>
+            <li>Skidpad: DNS</li>
+            <li>Autocross: DNS</li>
+            <li>Endurance: DNF (10 laps completed)</li>
+            </ul>
+            <h5>Other:</h5>
+            <ul>
+            <li>Business Plan: 1st Place</li>
+            <li>Special Awards: Best social media presence</li>
+          </ul>
+        </div>
+
+        {/* FSA Competition Results */}
+        <div className="competition-results-column">
+          <h3>FSA Results</h3>
+          <h5>Static Events</h5>
+          <ul>
+            <li>Design: P18</li>
+            <li>Cost: P17</li>
+          </ul>
+          <h5>Dynamic Events</h5>
+          <li style={{listStyleType: "none"}}>Did not complete scrutineering</li>
+            <h5>Other:</h5>
+            <li>Business Plan: Did not compete</li>
+            
+        </div>
+      </div>
+
       {/* GALLERY */}
       <div className="fenixevo-gallery-container">
         <div className="fenixevo-section-title">

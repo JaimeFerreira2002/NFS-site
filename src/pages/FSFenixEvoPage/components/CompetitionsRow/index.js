@@ -30,6 +30,7 @@ const ImageGallery = () => {
           position={""}
           url={"https://fsaustria.at/"}
         />
+        
       </div>
     </div>
   );

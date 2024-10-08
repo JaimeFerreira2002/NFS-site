@@ -140,5 +140,15 @@
   .fenixevo-image-card:hover .overlay-text {
     color: white; /* Fade in effect */
   }
+
+  .competition-results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .competition-results li {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+  }
 }
 
