@@ -24,3 +24,24 @@
   width: 100svw;
   background-color: white;
 }
+
+.article-image {
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.add-article-button{
+  background-color: #1d1d1d;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.previous-articles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid layout for responsive columns */
+  gap: 20px; /* Space between the articles */
+  padding: 20px; /* Padding around the container */
+}
