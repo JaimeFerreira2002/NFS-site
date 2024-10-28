@@ -118,6 +118,12 @@ const PartnersData = {
         link:'https://www.flytap.com/',
         tier: 'Silver'
       },
+      {
+        title: 'TE Connectivity',
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FTE_Connectivity_logo.svg?alt=media&token=8c8aa121-f9e2-406c-a347-3e0e67bf9b30', // Replace with actual path to image
+        link:'https://www.te.com/',
+        tier: 'Silver'
+      },
       // ... add more partners as needed
     ],
     'bronze': [
