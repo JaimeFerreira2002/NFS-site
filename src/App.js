@@ -13,7 +13,7 @@ import MobileDrawer from './components/MobileDrawer';
 import HomePage from './pages/HomePage';
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import PartnersPage from './pages/PartnersPage';
-import ArticlesPage from './pages/ArticlesPage/ArticlesPage';
+import ArticlesPage from './pages/ArticlePage/index.js';
 import RecruitmentPage from './pages/RecruitmentPage';
 import ContactsPage from './pages/ContactsPage';
 import TopBar from './components/TopBar';
@@ -23,8 +23,13 @@ import FSFenixPage from './pages/FSFenixPage';
 import FSDragonPage from './pages/FSDragonPage';
 import Dummy from './pages/dummy';
 import FSFenixPageEvo from './pages/FSFenixEvoPage/index.js';
-import NewsPage from './pages/NewsPage';
+import NewsPage from './pages/NewsPage/index.js';
 import CompetitionDetails from './pages/ResultsPage/index.js';
+import LoginPage from './pages/LoginPage/index.js';
+import AddArticlePage from './pages/AddArticlePage/index.js';
+import ArticlePage from './pages/ArticlePage/index.js'; // Import the new article page
+
+
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -111,6 +116,9 @@ function App() {
                   <Route path="/dummy" element={<Dummy />} />
                   <Route path="/news" element={<NewsPage />} />
                   <Route path="/competition/:id" element={<CompetitionDetails />} />
+                  <Route path="/login" element={<LoginPage />} />
+                  <Route path="/addarticle" element={<AddArticlePage />} />
+                  <Route path="/article/:articleId" element={<ArticlePage />} />
                 </Routes>
               </div>
             </CSSTransition>
