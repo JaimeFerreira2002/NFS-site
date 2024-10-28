@@ -1,0 +1,53 @@
+.latest-article {
+    position: relative;
+    padding: 20px;
+}
+
+.article-content-container {
+    position: relative;
+}
+
+.truncated-content {
+    max-height: 70svh;
+    overflow: hidden;
+    position: relative;
+}
+
+.fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10svh;
+    background: linear-gradient(transparent, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-more-button {
+    color: #1d1d1d;
+    /* Set desired text color */
+    text-decoration: none;
+    /* Remove underline */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    /* Smooth scale transition */
+}
+
+.show-more-button:hover {
+    transform: scale(1.1);
+    /* Scale up on hover */
+}
+
+/* Optional: Additional style for the Link itself if needed */
+.show-more-button a {
+    color: inherit;
+    /* Inherit color from parent */
+    text-decoration: none;
+    /* Ensure no underline */
+}
+
+.full-content {
+    max-height: none;
+}

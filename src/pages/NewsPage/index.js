@@ -78,9 +78,9 @@ const NewsPage = () => {
           <LatestArticle />
           <PreviousArticlesList className="previous-articles-container" /> {/* This now fetches data from Firestore */}
         </div>
-        <div className="sidebar">
+        {/* <div className="sidebar">
           <NewsletterColumn />
-        </div>
+        </div> */}
       </div>
 
      

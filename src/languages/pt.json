@@ -8,7 +8,8 @@
     "recruitment": "Recrutamento",
     "contacts": "Contactos",
     "subscribe": "Subscrever",
-    "email-newsletter": "Subscreva a nossa newsletter!"
+    "email-newsletter": "Subscreva a nossa newsletter!",
+    "artigos" : "Artigos"
   },
   
 
@@ -487,5 +488,12 @@
     "efficiency": "Eficiência / Trackdrive",
     "efficiency-desc": "A eficiência é medida no evento de resistência é refletida na capacidade da equipa de projetar um carro que possa completar a corrida com um consumo mínimo de combustível, demonstrando não apenas velocidade, mas também uma gestão de energia cuidadosa.",
     "media-aps": "NFS nos Media"
+  },
+ "news-page" : {
+    "page-title" : "Artigos",
+    "page-subtitle" : "Fique a par das últimas novidades da equipa",
+    "read-more" : "Ler mais",
+    "no-articles" : "Não existem artigos disponíveis de momento"
   }
+
 }

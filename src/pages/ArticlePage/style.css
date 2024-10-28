@@ -23,10 +23,9 @@ h2 {
   font-family: 'Horizon';
   font-size: clamp(1.5rem, 3vw, 4rem);
   font-weight: normal;
-  background-image: linear-gradient(to right, #19a3ff, #ffffff);
+  color: #1d1d1d;
   background-size: 150%;
   background-clip: text;
-  color: transparent;
   padding-top: 1%;
   padding-bottom: 1%;
 }

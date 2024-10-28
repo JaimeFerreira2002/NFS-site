@@ -96,6 +96,9 @@ const TopBar = ({ isScrolled, toggleDrawer }) => {
         <li className={location.pathname === '/contacts' ? 'active' : ''}>
           <Link to="/contacts">{t('topbar.contacts')}</Link>
         </li>
+        <li className={location.pathname === '/news' ? 'active' : ''}>
+          <Link to="/news">{t('topbar.artigos')}</Link>
+        </li>
       </ul>
 
       <div className="language-buttons">
