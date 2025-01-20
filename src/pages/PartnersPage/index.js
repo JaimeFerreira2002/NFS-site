@@ -1,12 +1,14 @@
 // PartnerPage.js
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import PartnersData from "../../pages/PartnersPage/PartnersList.js"; // Update the path as necessary
 import SectionTitle from "../../components/SectionTitle";
 
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import "./style.css"; // Import your CSS stylesheet
 import PageHeader from "../../components/PageHeader/index.js";
+import SplashScreen from '../../components/SplashScreen/index.js'; 
+import loadImages from '../../HelperFunctions.js'
+
 
 // Individual Partner Card Component
 // PartnerCard component
@@ -18,6 +20,7 @@ const PartnerCard = ({ title, imageUrl, link, description, tier }) => {
     Gold: { width: "clamp(200px, 35vw, 400px)", height: "auto" },
     Silver: { width: "clamp(140px, 25vw, 300px)", height: "auto" },
     Bronze: { width: "clamp(90px, 20vw, 200px)", height: "auto" },
+    Software: { width: "clamp(140px, 25vw, 300px)", height: "auto" },
     Partners: { width: "clamp(90px, 20vw, 180px)", height: "auto" },
   };
 
@@ -46,6 +49,7 @@ const categoryMap = {
   GOLD: "#FDCD87",
   SILVER: "#c0c0c0",
   BRONZE: "#CD7F32",
+  SOFTWARE: "#2959a6",
   PARTNERS: "#FDCD87",
 };
 
@@ -53,8 +57,31 @@ const categoryMap = {
 const Partners = ({ partners = PartnersData }) => {
   const { t } = useTranslation();
 
+  const [isLoading, setIsLoading] = useState(true); 
+    
+
+  useEffect(() => {
+    const imagesURLs = []
+
+    for (const tier in PartnersData) {
+      // Iterate through each partner in the current tier
+      PartnersData[tier].forEach(partner => {
+        imagesURLs.push(partner.imageUrl); // Add the imageUrl to the array
+      });
+    }
+  
+   // Use the reusable function to load images
+   loadImages(imagesURLs, () => {
+    setIsLoading(false);
+  });
+    
+  
+  }, []);
+
+
   return (
     <div className="partners-page">
+        <SplashScreen isVisible={isLoading}/>
       <PageHeader
         title={t("partners-page.page-title")}
         subtitle={t("partners-page.page-subtitle")}

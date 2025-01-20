@@ -1,0 +1,38 @@
+rules_version = '2';
+
+ // Rule to allow anyone to read articles but only authenticated users can write
+   
+  
+
+service cloud.firestore {
+
+ match /articles/{articleId} {
+      allow read: if true; // Anyone can read articles
+    }
+
+  match /databases/{database}/documents {
+    match /Users/{userId} {
+      allow create: if isSignedIn()  
+ && !exists(resource.parent) && set(resource, {
+        roles: [defaultRole]
+      });
+      allow read: if true;
+      allow update, delete: if hasAnyRole(['admin']);
+    }
+
+    match /articles/{articleId} {
+      allow create: if true;
+      allow read: if true;
+      allow update: if hasAnyRole(['admin']);
+      allow delete: if hasAnyRole(['admin']);
+    }
+  }
+
+  function isSignedIn() {
+    return request.auth != null;
+  }
+
+  function hasAnyRole(roles) {
+    return isSignedIn() && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role.hasAny(roles);
+  }
+}

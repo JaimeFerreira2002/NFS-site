@@ -1,0 +1,51 @@
+[debug] [2024-11-13T20:46:07.389Z] ----------------------------------------------------------------------
+[debug] [2024-11-13T20:46:07.392Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-11-13T20:46:07.393Z] CLI Version:   13.13.1
+[debug] [2024-11-13T20:46:07.393Z] Platform:      win32
+[debug] [2024-11-13T20:46:07.393Z] Node Version:  v20.11.0
+[debug] [2024-11-13T20:46:07.393Z] Time:          Wed Nov 13 2024 20:46:07 GMT+0000 (Hora padrão da Europa Ocidental)
+[debug] [2024-11-13T20:46:07.394Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-13T20:46:07.408Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-13T20:46:07.554Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-13T20:46:07.555Z] > authorizing via signed-in user (jaimeslopesferreira@gmail.com)
+[debug] [2024-11-13T20:46:07.555Z] [iam] checking project novaformulastudent for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-13T20:46:07.556Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/novaformulastudent:testIamPermissions [none]
+[debug] [2024-11-13T20:46:07.556Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/novaformulastudent:testIamPermissions x-goog-quota-user=projects/novaformulastudent
+[debug] [2024-11-13T20:46:07.556Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/novaformulastudent:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-13T20:46:07.842Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-11-13T20:46:07.843Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-11-13T20:46:08.235Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/novaformulastudent:testIamPermissions 401
+[debug] [2024-11-13T20:46:08.235Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/novaformulastudent:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-11-13T20:46:08.236Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-11-13T20:46:08.238Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/novaformulastudent [none]
+[debug] [2024-11-13T20:46:08.369Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/novaformulastudent 401
+[debug] [2024-11-13T20:46:08.369Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/novaformulastudent {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-11-13T20:46:08.369Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2024-11-13T20:46:26.835Z] ----------------------------------------------------------------------
+[debug] [2024-11-13T20:46:26.838Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-11-13T20:46:26.839Z] CLI Version:   13.13.1
+[debug] [2024-11-13T20:46:26.839Z] Platform:      win32
+[debug] [2024-11-13T20:46:26.839Z] Node Version:  v20.11.0
+[debug] [2024-11-13T20:46:26.840Z] Time:          Wed Nov 13 2024 20:46:26 GMT+0000 (Hora padrão da Europa Ocidental)
+[debug] [2024-11-13T20:46:26.840Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-13T20:46:26.914Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-13T20:46:26.914Z] > authorizing via signed-in user (jaimeslopesferreira@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\jaime\Desktop\NFS-site
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+

@@ -36,7 +36,7 @@ const PartnersData = {
     'gold': [
       {
         title: 'Galp',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FGold%2FGALP.png?alt=media&token=bc649a92-f6a9-477d-9991-13a5490301b2',
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FGold%2FGalp%20Logo%20-%20Main.png?alt=media&token=eca39b07-ce5c-4c8b-8ee2-a4d4b86a7026',
         link:'https://galp.com', // Replace with actual path to image,
         tier: 'Gold'
       },
@@ -113,9 +113,21 @@ const PartnersData = {
         tier: 'Silver'
       },
       {
+        title: 'VI-GRADE',
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FVI-GRADE.png?alt=media&token=0f1cf0f3-5d52-421a-b058-d3668ceb8e69', // Replace with actual path to image
+        link:'https://www.vi-grade.com/en/',
+        tier: 'Silver'
+      },
+      {
         title: 'TAP',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FTAP.png?alt=media&token=a43d8d53-5e1a-45b7-8ec9-c775d1e27b2c', // Replace with actual path to image
         link:'https://www.flytap.com/',
+        tier: 'Silver'
+      },
+      {
+        title: 'TE-Connectivity',
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FTE_Connectivity_logo.svg?alt=media&token=8c8aa121-f9e2-406c-a347-3e0e67bf9b30', // Replace with actual path to image
+        link:'https://www.te.com/en/home.html',
         tier: 'Silver'
       },
       // ... add more partners as needed
@@ -267,6 +279,33 @@ const PartnersData = {
       },
     
     ],
+
+    "software": [
+    {
+      title: 'RapidHarness',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FRapidHarness.png?alt=media&token=ea68562b-f561-4bdc-aa37-0cc32517f0cc', // Replace with actual path to image
+      link:'https://rapidharness.com',
+      tier: 'Software'
+    },
+    {
+      title: 'SolidWorks',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FSolidWorkds.png?alt=media&token=07f8bdcd-429e-457a-9880-77eb5d42ecce', // Replace with actual path to image
+      link:'https://www.solidworks.com',
+      tier: 'Software'
+    },
+    {
+      title: 'VI-GRADE',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FVI-GRADE.jpg?alt=media&token=0ba9de7a-94d5-43c1-983f-f70912c2f007', // Replace with actual path to image
+      link:'https://www.vi-grade.com',
+      tier: 'Software'
+    },
+    {
+      title: 'MathWorks',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FMATHWORKS.png?alt=media&token=f3ace95b-0884-4d58-a38e-551f6af872b1', // Replace with actual path to image
+      link:'https://www.mathworks.com',
+      tier: 'Software'
+    },
+  ],
 /** 
     'PARTNERS': [
       {

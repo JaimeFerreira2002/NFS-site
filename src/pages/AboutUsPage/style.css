@@ -138,12 +138,15 @@ body {
 
 .team-section-about {
   background-color: #1d1d1d;
- 
   flex-direction: column;
   align-items: center;
-  padding: 30px 10vw;
+  padding: 30px 5vw;
   gap: 20px;
 
+}
+
+.team-section-about h2{
+ color: white;
 }
 
 .team-image-container {
@@ -253,9 +256,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 30px 5vw;
+
   background-color: #1d1d1d;
 }
 
 .video-section h2 {
-  text-align: center;
+  text-align: left;
+  color: #ffffff;
 }

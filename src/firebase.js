@@ -12,6 +12,7 @@ import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyCly1L7QHzkBk092HO7CcBo1A055IbQA2M",
   authDomain: "novaformulastudent.firebaseapp.com",
+  databaseURL: "https://novaformulastudent-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "novaformulastudent",
   storageBucket: "novaformulastudent.appspot.com",
   messagingSenderId: "414396531013",

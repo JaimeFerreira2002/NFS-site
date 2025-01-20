@@ -12,10 +12,11 @@ import MobileDrawer from '../../components/MobileDrawer';
 import HamburgerButton from '../../components/HamburgerIcon';
 import { auth } from '../../firebase'; // Import auth from Firebase
 
-const TopBar = ({ isScrolled, toggleDrawer }) => { 
+const TopBar = ({ toggleDrawer }) => { 
   const location = useLocation();
   const { t, i18n } = useTranslation();
 
+  const [isScrolled, setIsScrolled] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'pt');
   const isHomePage = location.pathname === '/';
 
@@ -29,6 +30,15 @@ const TopBar = ({ isScrolled, toggleDrawer }) => {
     setIsDrawerOpen(!isDrawerOpen);
     toggleDrawer();
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     // Listen to Firebase authentication changes
@@ -96,9 +106,9 @@ const TopBar = ({ isScrolled, toggleDrawer }) => {
         <li className={location.pathname === '/contacts' ? 'active' : ''}>
           <Link to="/contacts">{t('topbar.contacts')}</Link>
         </li>
-        <li className={location.pathname === '/news' ? 'active' : ''}>
+        {/* <li className={location.pathname === '/news' ? 'active' : ''}>
           <Link to="/news">{t('topbar.artigos')}</Link>
-        </li>
+        </li> */}
       </ul>
 
       <div className="language-buttons">

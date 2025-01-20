@@ -7,10 +7,14 @@ import PreviousArticlesList from "./PreviousArticlesList";
 import NewsletterColumn from "./NewsletterColumn";
 import "./style.css";
 import PageHeader from "../../components/PageHeader";
+import { useTranslation } from "react-i18next";
+
 
 const NewsPage = () => {
   const [isAdmin, setIsAdmin] = useState(false); // State to track admin status
   const [loading, setLoading] = useState(true); // State to track loading
+  const { t } = useTranslation();
+
 
   useEffect(() => {
     const checkAdminStatus = async () => {
@@ -58,8 +62,8 @@ const NewsPage = () => {
     <div className="newspage">
      
       <PageHeader
-        title={"Artigos"}
-        subtitle={"Noticias do NFS"}
+        title={t("news-page.page-title")}
+        subtitle={ t("news-page.page-subtitle")}
         gradientColor="#19a3ff"
         height={"2.5%"}
       />

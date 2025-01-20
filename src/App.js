@@ -90,7 +90,7 @@ function App() {
       
       <div className="App">
         
-          <SplashScreen isVisible={isSplashVisible} />
+          {/* <SplashScreen isVisible={isSplashVisible} /> */}
 
           <TransitionGroup component={null}>
             <CSSTransition
@@ -133,7 +133,7 @@ function App() {
       <Router>
         <ScrollToTop />
         <div className="App">
-          <TopBar isScrolled={isScrolled} toggleDrawer={toggleDrawer} />
+          <TopBar toggleDrawer={toggleDrawer} />
           <MobileDrawer isOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
           <AnimatedRoutes /> {/* Using the AnimatedRoutes component here */}
         </div>

@@ -25,7 +25,9 @@
     "institutional": "Institutional",
     "bronze": "Bronze & Partners",
     "silver": "Silver",
-    "gold": "Gold"
+    "gold": "Gold",
+    "software" : "Software"
+
   },
 
   "fsfenixevo-page": {
