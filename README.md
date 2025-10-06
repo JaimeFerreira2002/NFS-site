@@ -19,7 +19,7 @@ This website, built with **React**, serves as the central hub for our team, show
 ## 🛠️ Tech Stack
 
 - **Frontend**: [React.js](https://react.dev/)
-- **Styling**: CSS   
+- **Styling**: CSS +  Bootstrap
 - **Backend**: Firebase Storage and Firestore  
 - **Hosting**: Firebase Hosting  
 
