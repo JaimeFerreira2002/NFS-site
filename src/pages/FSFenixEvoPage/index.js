@@ -276,15 +276,24 @@ const FenixEvoPage = () => {
         {/* FSA Competition Results */}
         <div className="competition-results-column">
           <h3>FSA Results</h3>
+          
           <h5>Static Events</h5>
           <ul>
             <li>Design: P18</li>
             <li>Cost: P17</li>
           </ul>
+          
           <h5>Dynamic Events</h5>
-          <li style={{listStyleType: "none"}}>Did not complete scrutineering</li>
-            <h5>Other:</h5>
+          {/* Use a list for the result, even if it's a single entry */}
+          <ul>
+            <li>Did not complete scrutineering</li>
+          </ul>
+            
+          <h5>Other:</h5>
+          <ul>
+            {/* Use a list item within a list for the result */}
             <li>Business Plan: Did not compete</li>
+          </ul>
             
         </div>
       </div>
