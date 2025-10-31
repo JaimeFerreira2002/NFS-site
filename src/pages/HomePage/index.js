@@ -120,7 +120,7 @@ const HomePage = () => {
           <div ref={titleRef}>
             <motion.div animate={titleController}>
               <div className="video-text-content">
-                <h1 className="nova-title"><span className="nova-word">Nova</span> Formula Student</h1>
+                <h1 className="nova-title">Nova Formula Student</h1>
               </div>
             </motion.div>
           </div>
