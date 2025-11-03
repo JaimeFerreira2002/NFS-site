@@ -120,7 +120,7 @@ const HomePage = () => {
           <div ref={titleRef}>
             <motion.div animate={titleController}>
               <div className="video-text-content">
-                <h1 className="nova-title"><span className="nova-word">Nova</span> Formula Student</h1>
+                <h1 className="nova-title">Nova Formula Student</h1>
               </div>
             </motion.div>
           </div>
@@ -145,7 +145,7 @@ const HomePage = () => {
           <p className='content-team'>{t('home.team_desc3')}</p>
         </div>
         <motion.div className="team-photo" animate={controlsTeam} initial={{ opacity: 0, x: 100 }}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_fspt.jpg?alt=media&token=97557c72-cc63-44b0-a1e4-3ca6783a03c5' alt="Team Leader" />
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_2025.jpg?alt=media&token=7fb76067-f655-4e54-9680-4a0984848092' alt="Team Leader" />
         </motion.div>
       </div>
 

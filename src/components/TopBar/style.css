@@ -32,10 +32,10 @@
 .top-bar .logo img {
   position: relative;
   width: auto;
-  max-height: 5vh;
+  max-height: 5.5vh;
   display: block;
   max-width: auto;
-  padding-left: 10%;
+  padding-left: 20%;
   bottom: 25%;
   
 }

@@ -32,7 +32,7 @@
   button {
     padding: 10px 20px;
     background-color: #19a3ff;
-    color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -45,6 +45,7 @@
   
   button:hover:not(:disabled) {
     background-color: #007acc;
+    color: black;
   }
   
   .news-container {
