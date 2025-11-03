@@ -61,64 +61,56 @@
   /* Center the icon exactly */
   /* Additional styling for the icon as needed */
 }
+
 .black-section {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background-color: white;
-  color: #fff;
-
   gap: 20px;
-  /* Adds space between flex items */
   min-height: 50svh;
+
+  align-items: center; 
+  padding: 30px 10svw;
 }
 
+/* This is the container for the photo */
+.team-photo {
+  position: relative;
+  flex-basis: 45%; 
+  max-width: 45%;
+  min-height: 100%; 
+}
+
+/* This is the image itself */
+.team-photo img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
 
 
 @media screen and (max-aspect-ratio: 1/1) {
+  /* On mobile */
 
   .black-section {
     flex-direction: column;
-    /* Stack items vertically */
-    height :auto;
-
-    padding-top: 30px;
+    align-items: center; 
+    height: auto;
+    padding: 30px 5svw;
   }
 
-  .team-photo{
-    width: 100svw;
-  }
-}
-
-
-.team-photo {
-  position: relative;
-  max-width: 100svw;
-}
-
-.team-photo img{
-
-  max-width: 100svw;
-}
-
-
-
-@media screen and (min-aspect-ratio: 1/1) {
-
-  .black-section {
-
-    padding: 30px 10svw;
+  .team-photo {
+    flex-basis: auto; 
+    width: 90svw; 
+    max-width: 90svw;
   }
 
   .team-photo img {
-    max-width: clamp(100px, 60vw, 500px);
-    /* Adjusts based on the height */
-    height: auto;
-    border-radius: 10px;
-  
+    height: auto; 
+    width: 100%;
   }
 }
-
 
 
 .title-team {
