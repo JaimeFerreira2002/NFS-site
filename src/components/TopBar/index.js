@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import NFSLogo from '../../assets/images/NFSLogo.png';
+import NFSLogo from '../../assets/images/logoSoBranco.png';
 import './style.css';
 import { useTranslation } from 'react-i18next';
 import IconButton from '../IconButton';

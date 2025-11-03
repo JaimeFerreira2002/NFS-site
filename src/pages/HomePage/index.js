@@ -145,7 +145,7 @@ const HomePage = () => {
           <p className='content-team'>{t('home.team_desc3')}</p>
         </div>
         <motion.div className="team-photo" animate={controlsTeam} initial={{ opacity: 0, x: 100 }}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_fspt.jpg?alt=media&token=97557c72-cc63-44b0-a1e4-3ca6783a03c5' alt="Team Leader" />
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_2025.jpg?alt=media&token=53d69aa3-e95e-4ed8-a80d-9bb3a8a23b62' alt="Team Leader" />
         </motion.div>
       </div>
 
