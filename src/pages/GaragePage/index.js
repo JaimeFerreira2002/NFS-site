@@ -70,11 +70,11 @@ const GaragePage = () => {
   const getTitleForSlide = (slideIndex) => {
     // Add logic to determine title based on slide index
     switch (slideIndex) {
-      case 0:
+      case 2:
         return 'FS DRAGON';
       case 1:
         return 'FS FENIX';
-      case 2:
+      case 0:
         return 'FS FENIX EVO';
     }
   };
@@ -82,13 +82,13 @@ const GaragePage = () => {
 
   const getCarPagePath = () => {
     switch (currentSlide) {
-      case 0:
+      case 2:
         return "fsdragon";
         
       case 1:
         return "fsfenix";  
 
-      case 2:
+      case 0:
         return "fsfenixevo";
     }
   };
@@ -109,13 +109,13 @@ const GaragePage = () => {
 
       <Slider ref={sliderRef} {...settings} className='cars-image-slider'>
         <div className={`car-image`}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsdragon.png?alt=media&token=f76b0ebf-07f9-4410-b869-5e9854c29799' alt='fsdragon' />       
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Frender_frente_fenix_evo.png?alt=media&token=a21e76dd-3ae8-4899-ac56-68abad3cece8' alt='fsfenixevo' />   
         </div>
         <div className={`car-image`}>
           <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=1419a883-a4d9-4a9c-a3ed-260d664307c6' alt='fsfenix' />   
         </div>
         <div className={`car-image`}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Frender_frente_fenix_evo.png?alt=media&token=a21e76dd-3ae8-4899-ac56-68abad3cece8' alt='fsfenixevo' />   
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsdragon.png?alt=media&token=f76b0ebf-07f9-4410-b869-5e9854c29799' alt='fsdragon' />       
         </div>
       </Slider>
       
