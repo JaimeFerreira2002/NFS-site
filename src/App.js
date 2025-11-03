@@ -29,56 +29,7 @@ import LoginPage from './pages/LoginPage/index.js';
 import AddArticlePage from './pages/AddArticlePage/index.js';
 import ArticlePage from './pages/ArticlePage/index.js'; // Import the new article page
 
-
-
-function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  // State to control the drawer's open/close state
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  // Function to toggle the drawer open/close state
-  const toggleDrawer = () => {
-    // Assuming 'isOpen' reflects the current state of the drawer
-    setIsDrawerOpen(!isDrawerOpen); // Toggle the drawer open state
-  
-    if (!isDrawerOpen) {
-      // If the drawer is about to open, disable scrolling on the body
-      document.body.style.overflow = 'hidden';
-    } else {
-      // If the drawer is about to close, re-enable scrolling on the body
-      document.body.style.overflow = '';
-    }
-  };
-  
-
-  const width = window.innerWidth;
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const [isSplashVisible, setIsSplashVisible] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      console.log("Hiding splash screen"); // Add this line for debugging
-      setIsSplashVisible(false); // Hide splash screen after a set time
-    }, 2200); // Adjust time based on your needs
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  // Component to handle route transitions
+// Component to handle route transitions
   const AnimatedRoutes = () => {
     const location = useLocation(); // Correctly called within a child component of <Router>
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -127,6 +78,55 @@ function App() {
       </div>
     );
   };
+
+function App() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // State to control the drawer's open/close state
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  // Function to toggle the drawer open/close state
+  const toggleDrawer = () => {
+    // Assuming 'isOpen' reflects the current state of the drawer
+    setIsDrawerOpen(!isDrawerOpen); // Toggle the drawer open state
+  
+    if (!isDrawerOpen) {
+      // If the drawer is about to open, disable scrolling on the body
+      document.body.style.overflow = 'hidden';
+    } else {
+      // If the drawer is about to close, re-enable scrolling on the body
+      document.body.style.overflow = '';
+    }
+  };
+  
+
+  const width = window.innerWidth;
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const [isSplashVisible, setIsSplashVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      console.log("Hiding splash screen"); // Add this line for debugging
+      setIsSplashVisible(false); // Hide splash screen after a set time
+    }, 2200); // Adjust time based on your needs
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  
 
   return  (
     <div className="content-wrapper">
