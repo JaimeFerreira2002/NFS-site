@@ -16,7 +16,7 @@ const TeamListData = [
   {
     title: 'aerodynamics',
     members: [
-      { name: 'Afonso Dinis', role: 'dep-leader', imageSrc: require('../assets/images/members_photos/aerodynamics/afonso_dinis.jpg') },
+      { name: 'Afonso Dinis', role: 'dep-leader', imageSrc: fotos.Afonso_Dinis },
       { name: 'Ângela Rodrigues', role: 'member', imageSrc: fotos.Angela_Rodrigues },
       { name: 'João Gaspar', role: 'member', imageSrc: placeholder },
       { name: 'Mário Fonseca', role: 'member', imageSrc: fotos.Mario_Fonseca },

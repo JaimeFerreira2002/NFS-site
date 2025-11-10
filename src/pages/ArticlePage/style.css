@@ -64,7 +64,7 @@ small{
 p {
   font-family: "Raleway";
   font-size: clamp(1rem, 2vw, 1.4rem);
-  color: #404040;
+  color: white;
   max-width: 80svw;
   padding-top: 1%;
   padding-bottom: 1%;
