@@ -180,7 +180,7 @@ const HomePage = () => {
         </div>
         <div className="garage-home-image">
           <motion.div className="team-photo" animate={controlsGarage} initial={{ opacity: 0, x: 100 }}>
-            <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=1419a883-a4d9-4a9c-a3ed-260d664307c6' alt="Garage" />
+            <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Frender_frente_fenix_evo.png?alt=media&token=a21e76dd-3ae8-4899-ac56-68abad3cece8' alt="Garage" />
           </motion.div>
         </div>
       </div>
