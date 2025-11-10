@@ -46,7 +46,6 @@ const image4 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.a
 const image5 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_5.jpg?alt=media&token=f2fda04c-84ce-416f-a508-11ef867442fd';
 const image6 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_6.jpg?alt=media&token=00e9c650-49d4-4124-80fe-964f38a5079d';
 const image7 = 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fimage_7.jpg?alt=media&token=a34814ce-d33f-4545-8bc2-0aa0f40cff44';
-
 const imageArray = [image1, image2, image3, image4, image5, image6, image7];
 
 
