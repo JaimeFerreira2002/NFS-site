@@ -65,53 +65,79 @@
 .black-section {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: #1d1d1d;
   gap: 20px;
   min-height: 50svh;
-
-  align-items: center; 
-  padding: 30px 10svw;
+  align-items: stretch; 
+  color: white;
 }
 
-/* This is the container for the photo */
 .team-photo {
   position: relative;
   flex-basis: 45%; 
-  max-width: 45%;
-  min-height: 100%; 
+  max-width: 42%;
+  overflow: hidden;
+  display: flex;
 }
 
-/* This is the image itself */
 .team-photo img {
   width: 100%;
-  height: auto; 
-  object-fit: cover; 
-  border-radius: 10px;
+  height: 100%; 
+  object-fit: cover;
+  object-position: center;
+  display: block; 
 }
 
+.team-content {
+  font-family: "Raleway";
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: white;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; 
+  padding: 5svw;
+}
 
+.title-team {
+  text-align: start;
+  color: #409ED4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.content-team {
+  margin-bottom: 1rem;
+}
+
+/* --- MOBILE --- */
 @media screen and (max-aspect-ratio: 1/1) {
-  /* On mobile */
-
   .black-section {
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center; 
     height: auto;
-    padding: 30px 5svw;
+    padding: 30px 5svw; 
   }
 
   .team-photo {
     flex-basis: auto; 
     width: 90svw; 
     max-width: 90svw;
+    min-height: 60vh;
+    height: 60vh; /* Fixed height on mobile */
   }
 
   .team-photo img {
-    height: auto; 
+    height: 100%; 
     width: 100%;
+    object-fit: cover;
+  }
+
+  .team-content {
+    width: 90svw;
   }
 }
-
 
 .title-team {
   text-align: start;
@@ -154,11 +180,6 @@
   max-width: 800px;
 
 }
-
-
-
-
-
 
 .title-sponsor {
   text-align: end;
@@ -315,7 +336,7 @@
 .garage-content {
   font-family: "Raleway";
   font-size: clamp(1rem, 2vw, 1.4rem);
-  color: black;
+  color: white;
   max-width: 800px;
 
 }
@@ -325,7 +346,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 5% 10vw;
-  background-color: #f5f5f5;
+  background-color: #1d1d1d;
   /* Example background color */
 }
 
@@ -347,6 +368,11 @@
 
   /* Ensure the overlay fits within the image boundaries */
 
+}
+
+.garage-home-image .team-photo {
+  flex-basis: 100%; 
+  max-width: 80%;
 }
 
 .garage-image-overlay {
@@ -389,9 +415,7 @@
 }
 
 .garage-image-overlay button:hover {
-  background-color: #3078a6;
-  /* Darker shade on hover */
-
+  background-color: #409ED4;
 }
 
 
@@ -399,13 +423,11 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  /* Optional */
 }
 
-
-
-.home-garge-button:hover {
+.button-link .home-garge-button:hover {
   transform: scale(1.1);
+  background-color: #409ED4;
 }
 
 .home-garge-button {

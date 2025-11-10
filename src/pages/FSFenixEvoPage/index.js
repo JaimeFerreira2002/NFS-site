@@ -51,33 +51,15 @@ const imageArray = [image0, image1, image2, image5, image3, image4];
 const photos = [
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07602.JPG?alt=media&token=414e080b-fd0a-497e-af2b-999b50c233b5",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07686.JPG?alt=media&token=0f431637-cc20-430c-a6af-43ac2c7b1c35",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07696.JPG?alt=media&token=8e5eec7d-488b-4715-8f16-38d40d69d7f9",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07746.JPG?alt=media&token=f9ee4f94-f0af-446d-b929-bc6fee483322",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07762.JPG?alt=media&token=5132bc8e-84bd-40e3-ad61-90084ee374f8",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07819.JPG?alt=media&token=1bf8bb71-0802-4df6-941f-086a5704c8a9",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-02.jpg?alt=media&token=ee6336aa-e582-4e25-9d2d-703fada4aeff",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-12.jpg?alt=media&token=9a27d8c7-1b8a-41ff-88c2-5f53349156b8",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-13.jpg?alt=media&token=4c34b4f6-f991-49aa-85fd-c7efa4cc6830",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-27.jpg?alt=media&token=078b9632-4af5-4a4f-a96a-a222b49f843e",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-33.jpg?alt=media&token=7807af54-3d81-44b4-9189-fd6b107a82f9",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-35.jpg?alt=media&token=ad248d02-efe3-49b3-9b8a-b2d88404926c",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-42.jpg?alt=media&token=711852f4-b883-48b3-bf3c-b1c5d3606021",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-65.jpg?alt=media&token=340a1b04-c1da-43de-8316-005c7c3d77ab",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-81.jpg?alt=media&token=fc8912ec-2106-4142-8995-65d3f217189d",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-85.jpg?alt=media&token=5ba04a72-bd79-4c0f-8c52-5510a45fe0f7",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-86.jpg?alt=media&token=7305932f-2507-4f1d-b2a7-12649275d656",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-87.jpg?alt=media&token=e37445f5-7be8-466e-8e5d-675c6da6bdac",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0026.jpg?alt=media&token=8f9bc3c3-d8dd-4c7f-8ca0-58720f255e1b",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0027.jpg?alt=media&token=92eeaefd-2712-4736-8a7c-892ff0502001",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0028.jpg?alt=media&token=1603d5d4-859d-4ab6-9992-936322f88231",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0029.jpg?alt=media&token=2344b9cd-3013-49a0-9ef2-5b61bb9756d2",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0030.jpg?alt=media&token=9ba62833-1d72-455e-b19e-452578c9f965",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0031.jpg?alt=media&token=f17e919d-7e90-42d2-86a2-7076a81fdd6b",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0032.jpg?alt=media&token=7f5894bf-ee6e-4520-b746-415f20045972",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0033.jpg?alt=media&token=0e0a5db2-dafb-447b-ad88-31601c8c93b5",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0035.jpg?alt=media&token=4f4df9ab-aacd-4385-80e9-9abbb7fd2cda",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0036.jpg?alt=media&token=9a945329-d091-41f7-a68f-4259d36cd395",
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0037.jpg?alt=media&token=c6f870cc-d7c6-478a-bb2a-f01968ae6842",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0038.jpg?alt=media&token=f9320ed2-814c-418c-9bf7-234ca7d6aaaa",
 ];
 
@@ -309,7 +291,7 @@ const FenixEvoPage = () => {
         }
       </div>
 
-      <PhotoGallery photos={photos} />
+      <Gallery images={photos} />
 
       {/* TEAM SECTION */}
       <div className="fenixevo-team-container">

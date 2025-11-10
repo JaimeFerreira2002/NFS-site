@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   width: 100svw;
-  background-color: white;
+  background-color: #1d1d1d;
+  color: white;
 }
 /* we use fenixevo to avoid conflicts between fsfenixevo and fsdragon page */
 .fenixevo-grey-block-header {
@@ -86,20 +87,73 @@
 }
 
 .fenixevo-specs {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
 }
 
+/* Each spec section takes one column */
+.fenixevo-specs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 0; /* Allow grid items to shrink */
+  max-width: 100%; /* Remove the previous max-width constraint */
+}
+
+/* Title styling - first row */
+.fenixevo-specs-section h3 {
+  font-family: "Horizon";
+  font-size: 1.5em;
+  color: #286196;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #286196;
+}
+
+/* Content styling - subsequent rows */
+.fenixevo-specs-section .spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px 0;
+}
+
+.fenixevo-specs-section .spec-label {
+  font-family: "Raleway";
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #666;
+}
+
+.fenixevo-specs-section .spec-value {
+  font-family: "Raleway";
+  font-size: 1em;
+  color: #1d1d1d;
+}
+
+/* Mobile - 2 columns */
 @media only screen and (max-width: 768px) {
   .fenixevo-specs {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px;
   }
-}
-
-.fenixevo-specs-section {
-  flex: 1 1 calc(33.33% - 20px); /* Divide the container into three equal parts, considering the gap */
-  max-width: calc(33.33% - 20px); /* Set a maximum width to prevent overflow */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  min-width: 400px; /* is this good?*/
+  
+  .fenixevo-specs-section h3 {
+    font-size: 1.2em;
+  }
+  
+  .fenixevo-specs-section .spec-label {
+    font-size: 0.85em;
+  }
+  
+  .fenixevo-specs-section .spec-value {
+    font-size: 0.95em;
+  }
 }
 
 .fenixevo-fsfenixevo-3d-model {
@@ -247,11 +301,6 @@
 .competition-results-column h3 {
   font-size: 1.6em;
   margin-bottom: 10px;
-}
-
-.competition-results-column ul {
-
-  
 }
 
 .competition-results-column li {

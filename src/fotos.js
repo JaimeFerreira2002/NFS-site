@@ -38,3 +38,4 @@ export const Tomas_Sousa = "https://firebasestorage.googleapis.com/v0/b/novaform
 export const Vasco_Louro = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FVasco%20Louro.png?alt=media&token=1507ad82-73d0-40f4-902b-156ecdfb5601";
 export const Vitor_Raimundo = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FVitor%20Raimundo.png?alt=media&token=0ddcba0c-0ab6-4136-aba4-f07d23311a3e";
 export const Angela_Rodrigues = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2F%C3%82ngela%20Rodrigues.png?alt=media&token=fa2165e4-346a-4da6-a069-c530aaa1f68b";
+export const Afonso_Dinis = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FAfonso%20Dinis.png?alt=media&token=3fb70844-a2c8-4ee8-beb9-8f743b12792b";

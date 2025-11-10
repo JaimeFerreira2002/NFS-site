@@ -25,7 +25,7 @@ const GaragePage = () => {
     return (
       <div
         className='custom-arrow prev-arrow'
-        style={{ color: 'black' }}
+        style={{ color: 'white' }}
         onClick={() => {
           if (sliderRef.current) {
             sliderRef.current.slickPrev();
@@ -41,7 +41,7 @@ const GaragePage = () => {
     return (
       <div
         className='custom-arrow next-arrow'
-        style={{ color: 'black' }}
+        style={{ color: 'white' }}
         onClick={() => {
           if (sliderRef.current) {
             sliderRef.current.slickNext();

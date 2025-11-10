@@ -1,4 +1,5 @@
 import placeholder from '../assets/images/members_photos/placeholder.png'
+import { Afonso_Dinis } from '../fotos';
 
 
 const TeamListData = [
@@ -17,7 +18,7 @@ const TeamListData = [
     members: [
             { name: 'Ricardo Cutileiro', role: 'dep-leader', imageSrc: placeholder
             },
-            { name: 'Afonso Dinis', role: 'member', imageSrc: require('../assets/images/members_photos/aerodynamics/afonso_dinis.jpg')
+            { name: 'Afonso Dinis', role: 'member', imageSrc: Afonso_Dinis
             },
             { name: 'Ângela Rodrigues', role: 'member', imageSrc: placeholder
             },
