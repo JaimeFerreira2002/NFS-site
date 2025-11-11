@@ -89,23 +89,9 @@ const Gallery = ({ images }) => {
       </Slider>
 
       {selectedPhoto && (
-        <div 
-          className='image-popup-overlay'
-          onClick={closePopup}
-        >
+        <div className='image-popup-overlay'onClick={closePopup}>
           <div className='image-popup-content'>
-            <button 
-              className='close-popup'
-              onClick={closePopup}
-              aria-label="Close"
-            >
-              <FontAwesomeIcon icon={faTimes} />
-            </button>
-            <img 
-              src={selectedPhoto} 
-              alt="Enlarged view"
-              onClick={(e) => e.stopPropagation()}
-            />
+            <img src={selectedPhoto} alt="Enlarged view"onClick={(e) => e.stopPropagation()}/>
           </div>
         </div>
       )}
