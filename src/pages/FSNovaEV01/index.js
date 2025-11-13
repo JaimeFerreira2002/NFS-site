@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import TeamListData from "../../components/team_members_list.js";
 import PageHeader from "../../components/PageHeader/index.js";
 
+
 //logos
 import AltairLogo from "../../assets/images/sponsors_logos/altair.png";
 import AlthimaLogo from "../../assets/images/sponsors_logos/althima.png";
@@ -30,8 +31,8 @@ import WOBLogo from "../../assets/images/sponsors_logos/wob_palmela.jpg";
 
 import MemberCard from "../../components/MemberCard";
 import ImageGallery from "./components/CompetitionsRow/index.js";
-
 //photos
+
 const photos = [
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07602.JPG?alt=media&token=414e080b-fd0a-497e-af2b-999b50c233b5",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07686.JPG?alt=media&token=0f431637-cc20-430c-a6af-43ac2c7b1c35",
@@ -132,7 +133,7 @@ const FenixEvoPage = () => {
   return (
     <div className="fenixevo">
       <PageHeader
-        title={t("fsfenixevo-page.page-title")}
+        title={t("fsnovaev01-page.page-title")}
         subtitle={t("fsfenixevo-page.page-subtitle")}
         gradientColor="#1966ff"
         height={"2.5%"}

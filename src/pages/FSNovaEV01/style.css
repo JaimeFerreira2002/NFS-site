@@ -1,0 +1,309 @@
+.fenixevo {
+  padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  width: 100svw;
+  background-color: #1d1d1d;
+  color: white;
+}
+/* we use fenixevo to avoid conflicts between fsfenixevo and fsdragon page */
+.fenixevo-grey-block-header {
+  height: 2%;
+  background-color: #1d1d1d;
+  justify-content: center;
+  align-items: center;
+}
+
+.fenixevo-page-title {
+  text-align: center;
+  font-family: "Horizon";
+  font-size: 2em;
+  font-weight: normal;
+  background-image: linear-gradient(to right, #286196, #ffffff);
+  background-size: 90%;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.fenixevo-page-subtitle {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 00;
+  color: #ffffff;
+}
+.fenixevo-background-image-container {
+  position: relative;
+  min-height: 10%; 
+  width: 100%;
+  background-image: url("../../assets/images/fsfenix_render3.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.fenixevo-background-image-gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  top: 0;
+  background: linear-gradient(to bottom, #1d1d1d, rgba(0, 0, 0, 0));
+}
+
+
+/*//////////////SPECS AND MODEL///////////////*/
+
+.fenixevo-section-title {
+  text-align: center;
+  font-family: "Horizon";
+  font-size: 2.6em;
+  font-weight: normal;
+  background-image: linear-gradient(to right, #286196, #70a0ff);
+  background-size: 100%;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1%;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .fenixevo-section-title {
+    font-size: 2em;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+}
+
+.fenixevo-model_and_specs-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  justify-content: space-around;
+}
+
+.fenixevo-specs-and-model {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fenixevo-specs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Each spec section takes one column */
+.fenixevo-specs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 0; /* Allow grid items to shrink */
+  max-width: 100%; /* Remove the previous max-width constraint */
+}
+
+/* Title styling - first row */
+.fenixevo-specs-section h3 {
+  font-family: "Horizon";
+  font-size: 1.5em;
+  color: #286196;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #286196;
+}
+
+/* Content styling - subsequent rows */
+.fenixevo-specs-section .spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px 0;
+}
+
+.fenixevo-specs-section .spec-label {
+  font-family: "Raleway";
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #666;
+}
+
+.fenixevo-specs-section .spec-value {
+  font-family: "Raleway";
+  font-size: 1em;
+  color: #1d1d1d;
+}
+
+/* Mobile - 2 columns */
+@media only screen and (max-width: 768px) {
+  .fenixevo-specs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  .fenixevo-specs-section h3 {
+    font-size: 1.2em;
+  }
+  
+  .fenixevo-specs-section .spec-label {
+    font-size: 0.85em;
+  }
+  
+  .fenixevo-specs-section .spec-value {
+    font-size: 0.95em;
+  }
+}
+
+.fenixevo-fsfenixevo-3d-model {
+  display: flex;
+  height: 60vh;
+}
+
+/* //////////////GALLERY///////////////// */
+
+/* .fenixevo-gallery-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  justify-content: space-around;
+} */
+
+
+/*///////////COMPETITIONS//////////*/
+
+.competitions-section-container{
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+.competitions-subtitle{
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .competitions-subtitle{
+    font-size: 1.2em;
+  }
+}
+
+/*///////////////TEAM/////////////////////*/
+
+/*////////NUMBERS////////////*/
+.team-number-container {
+  display: flex;
+  width: 100%;
+}
+
+
+.team-number-row {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+
+.numbers-title {
+  margin-top: 8px; 
+  font-family: 'Raleway';
+  font-size: 3em;
+}
+
+.numbers-digits {
+  font-size: 4.5em; 
+  font-family: 'Horizon';
+  animation: count-up 1.5s ease-out forwards;
+}
+
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+  .team-number-row {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .numbers-title {
+    font-size: 1.6em;
+  }
+  
+  .numbers-digits {
+    font-size: 2.6em; 
+  }
+}
+
+.fenixevo-team-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  justify-content: space-around;
+}
+
+.fenixevo-department-title {
+  font-family: "Horizon";
+  color: #1d1d1d;
+  font-size: 1.6em;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+@media (max-aspect-ratio : 1/1){
+  .fenixevo-department-title{
+    font-size: 1.8em;
+    padding-top: 12%;
+    padding-bottom: 6%;
+  }
+}
+
+.fenixevo-team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.competition-results-container {
+  display: flex;
+  justify-content: space-between; /* Ensure spacing between the two columns */
+  gap: 20px; /* Space between the columns */
+  margin-bottom: 20px; /* Space above the results */
+}
+
+.competition-results-column {
+  flex: 1; /* Make each column take up equal space */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.competition-results-column h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.competition-results-column li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
