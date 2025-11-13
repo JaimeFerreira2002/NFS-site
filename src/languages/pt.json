@@ -31,8 +31,81 @@
   },
 
   "fsnovaev01-page": {
-    "page-title": "FS NOVA EV 01"
-  },
+    "page-title": "FS NOVA EV 01",
+    "page-subtitle": "O FS NOVA EV 01 é o primeiro carro elétrico da equipa",
+    "specs-title" : "Especificações Técnicas",
+    "team-title" : "A Equipa",
+    "technical-specs": {
+      "general": {
+         "title" : "Geral",
+
+          "weight" : "Peso",
+          "weight-value": "220 Kg",
+
+          "wheel-base" : "Distância entre eixos",
+          "wheel-base-value": "1585 mm",
+
+          "width" : "Largura da via",
+          "width-value": "1455 mm",
+
+          "height" : "Altura",
+          "height-value": "1176 mm",
+
+          "height-cg" : "Altura CG",
+          "height-cg-value": "299 mm",
+
+          "length": "Comprimento",
+          "length-value": "2811 mm",
+
+          "top-speed" : "Velocidade Máxima",
+          "top-speed-value": "140 Km/h"  
+      },
+
+      "powertrain": {
+         "title" : "Motor",
+
+          "motor" : "Motor",
+          "motor-value": "QS 205 10kW Hub Motor",
+
+          "battery" : "Bateria",
+          "battery-value": "Lithium-Ion 96V 20kWh",
+
+          "controller" : "Controlador",
+          "controller-value": "Kelly KLS7245H"
+      },
+
+      "steering&suspension": {
+          "title" : "Direção & Suspensão",
+
+          "type" : "Tipo",
+          "type-value": " Double Wishbone com Push-Rod",
+
+          "tyres" : "Pneus",
+          "tyres-value": "Hoosier 205/470 – R13",
+
+          "breaking" : "Travagem",
+          "breaking-value": "x4 Pinças Pistão AP Racing"  
+      },
+
+      "chassis": {
+          "title" : "Chassis",
+
+          "structure" : "Estrutura",
+          "structure-value": ": Tubular com soldadura a tungsténio ",
+
+          "weight-dist" : "Distribuição de Peso",
+          "weight-dist-value": "45F 55R"
+
+      },
+
+      "aero": {
+          "title" : "Aerodinâmica",
+
+          "bodywork": "Carenagem",
+          "bodywork-value":"Fibra de Carbono"
+      }
+  }
+},
 
 
   

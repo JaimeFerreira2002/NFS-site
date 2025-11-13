@@ -29,9 +29,82 @@
     "software" : "Software"
 
   },
-  
+
   "fsnovaev01-page": {
-    "page-title": "FS NOVA EV 01"
+    "page-title": "FS NOVA EV 01",
+    "page-subtitle": "The FS NOVA EV 01 is the team's first electric formula student car",
+    "specs-title": "Technical Specifications",
+    "team-title": "The Team",
+    "technical-specs": {
+      "general": {
+        "title": "General",
+
+        "weight": "Weight",
+        "weight-value": "300 Kg",
+
+        "wheel-base": "Wheel Base",
+        "wheel-base-value": "1600 mm",
+
+        "width": "Width",
+        "width-value": "1450 mm",
+
+        "height": "Height",
+        "height-value": "1200 mm",
+
+        "height-cg": "CG Height",
+        "height-cg-value": "310 mm",
+
+        "length": "Length",
+        "length-value": "2900 mm",
+
+        "top-speed": "Top Speed",
+        "top-speed-value": "150 Km/h"
+      },
+
+      "powertrain": {
+        "title": "Powertrain",
+
+        "motor": "Motor",
+        "motor-value": "Custom Electric Motor",
+
+        "power": "Power",
+        "power-value": "80 HP",
+
+        "battery": "Battery",
+        "battery-value": "Li-Ion 48V 20kWh"
+      },
+
+      "steering&suspension": {
+        "title": "Steering & Suspension",
+
+        "type": "Type",
+        "type-value": "Double Wishbone with Push-Rod",
+
+        "tyres": "Tyres",
+        "tyres-value": "Hoosier 205/470 – R13",
+
+        "breaking": "Braking",
+        "breaking-value": "4-Piston AP Racing Calipers"
+      },
+
+      "chassis": {
+        "title": "Chassis",
+
+        "structure": "Structure",
+        "structure-value": "Tubular with Tungsten Welding",
+
+        "weight-dist": "Weight Distribution",
+        "weight-dist-value": "48F 52R"
+      },
+
+      "aero": {
+        "title": "Aerodynamics",
+
+        "bodywork": "Bodywork",
+        "bodywork-value": "Carbon Fiber"
+      }
+    }
+    
   },
 
   "fsfenixevo-page": {

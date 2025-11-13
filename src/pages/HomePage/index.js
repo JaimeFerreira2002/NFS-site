@@ -57,7 +57,7 @@ const carData = [
     year: "2025",
     path: "/garage/fsnovaev01", // You will need to create this page
     // Placeholder image - replace this with your new car's image URL!
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo2.JPG?alt=media&token=0091748a-a8d1-4b44-9906-93d7d5b105d6"
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4"
   }
 ];
 
