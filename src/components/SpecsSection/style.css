@@ -1,20 +1,256 @@
+/* Specs Section Card */
+.specs-section-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-.specs-section {
-    padding: 2%;
+.specs-section-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Card Title */
+.specs-section-title {
+  font-family: 'Horizon', sans-serif;
+  font-size: 1.5em;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0 0 16px 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+/* Card Preview List */
+.specs-section-preview {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  flex: 1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.specs-section-preview li {
+  margin: 10px 0;
+  font-size: 0.95em;
+}
+
+.specs-section-preview strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+}
+
+.specs-section-more {
+  margin-top: 12px;
+  font-size: 0.9em;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Card CTA */
+.specs-section-cta {
+  margin-top: 16px;
+  font-size: 0.9em;
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Modal Overlay */
+.specs-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.specs-modal-overlay.closing {
+  animation: fadeOut 0.3s ease-out;
+}
+
+/* Modal Content */
+.specs-modal-content {
+  background: linear-gradient(135deg, #1d1d1d 0%, #2a2a2a 100%);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+  animation: scaleIn 0.3s ease-out;
+}
+
+.specs-modal-content.closing {
+  animation: scaleOut 0.3s ease-out;
+}
+
+/* Close Button */
+.specs-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.specs-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Modal Title */
+.specs-modal-title {
+  font-family: 'Horizon', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0 0 24px 0;
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Modal Description */
+.specs-modal-description {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.specs-modal-description p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Modal Subtitle */
+.specs-modal-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 16px 0;
+}
+
+/* Modal Specs List */
+.specs-modal-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  font-family: 'Raleway', sans-serif;
+}
+
+.specs-modal-specs li {
+  margin: 12px 0;
+  font-size: 1em;
+}
+
+.specs-modal-specs strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .specs-section-card {
+    padding: 20px;
   }
 
-.specs-section h2 {
-    font-family: 'Raleway';
-    font-size: 2em;
-    margin-bottom: 5%; 
+  .specs-section-title {
+    font-size: 1.3em;
   }
 
-.specs-section ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0;
-    font-family: 'Raleway';
+  .specs-modal-content {
+    padding: 24px;
+    max-height: 90vh;
   }
 
-.specs-section li {
-    margin-bottom: 3%; 
+  .specs-modal-title {
+    font-size: 1.5em;
+  }
+
+  .specs-modal-close {
+    top: 10px;
+    right: 10px;
+  }
 }

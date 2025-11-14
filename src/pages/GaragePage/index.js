@@ -126,7 +126,7 @@ return (
           <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsdragon.png?alt=media&token=f76b0ebf-07f9-4410-b869-5e9854c29799' alt='fsdragon' />
         </div>
         <div className={`car-image`}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Ffenixevo2.JPG?alt=media&token=0091748a-a8d1-4b44-9906-93d7d5b105d6' alt='fsnovaev01' />
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4' alt='fsnovaev01' />
         </div>
       </Slider>
     </div>
