@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { X } from 'lucide-react';
 import "./style.css";
 
 const carColorMap = {
@@ -17,23 +16,24 @@ function getStyle(car) {
 
 const SpecsSection = ({ title, dataKeys, t, car, description }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isClosing, setIsClosing] = useState(false);
 
   const handleCardClick = () => {
     setIsModalOpen(true);
   };
 
   const handleClose = () => {
-    setIsClosing(true);
+    const overlay = document.querySelector('.specs-modal-overlay');
+    const content = document.querySelector('.specs-modal-content');
+    
+    if (overlay && content) {
+      overlay.classList.add('closing');
+      content.classList.add('closing');
+    }
+    
     setTimeout(() => {
-      setIsClosing(false);
       setIsModalOpen(false);
     }, 300);
   };
-
-  // Show first 3 specs in card
-  const previewKeys = dataKeys.slice(0, 3);
-  const hasMore = dataKeys.length > 3;
 
   return (
     <>
@@ -42,17 +42,12 @@ const SpecsSection = ({ title, dataKeys, t, car, description }) => {
           {t(`fs${car}-page.technical-specs.${title}.title`)}
         </h2>
         <ul className="specs-section-preview">
-          {previewKeys.map((key) => (
+          {dataKeys.map((key) => (
             <li key={key}>
               <strong>{t(`fs${car}-page.technical-specs.${title}.${key}`)}</strong>:{" "}
               {t(`fs${car}-page.technical-specs.${title}.${key}-value`)}
             </li>
           ))}
-          {hasMore && (
-            <li className="specs-section-more">
-              +{dataKeys.length - 3} {t(`fs${car}-page.specs.more`) || 'more...'}
-            </li>
-          )}
         </ul>
         <p className="specs-section-cta">
           {t(`fs${car}-page.specs.click-more`) || 'Clique para saber mais →'}
@@ -61,11 +56,11 @@ const SpecsSection = ({ title, dataKeys, t, car, description }) => {
 
       {isModalOpen && (
         <div 
-          className={`specs-modal-overlay ${isClosing ? 'closing' : ''}`}
+          className="specs-modal-overlay"
           onClick={handleClose}
         >
           <div 
-            className={`specs-modal-content ${isClosing ? 'closing' : ''}`}
+            className="specs-modal-content"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -73,18 +68,16 @@ const SpecsSection = ({ title, dataKeys, t, car, description }) => {
               onClick={handleClose}
               aria-label="Close"
             >
-              <X size={20} color="white" />
+              ✕
             </button>
 
             <h2 className="specs-modal-title" style={getStyle(car)}>
               {t(`fs${car}-page.technical-specs.${title}.title`)}
             </h2>
 
-            {description && (
-              <div className="specs-modal-description">
-                <p>{t(`fs${car}-page.technical-specs.${title}.description`)}</p>
-              </div>
-            )}
+            <div className="specs-modal-description">
+              <p>{t(`fs${car}-page.technical-specs.${title}.description`)}</p>
+            </div>
 
             <h3 className="specs-modal-subtitle">
               {t(`fs${car}-page.specs.technical-specs`) || 'Especificações Técnicas'}

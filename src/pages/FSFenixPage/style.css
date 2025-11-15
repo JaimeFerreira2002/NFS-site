@@ -50,7 +50,6 @@
   background: linear-gradient(to bottom, #1d1d1d, rgba(0, 0, 0, 0));
 }
 
-
 /*//////////////SPECS AND MODEL///////////////*/
 
 .fenix-section-title {
@@ -87,26 +86,80 @@
 }
 
 .fenix-specs {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
 }
 
+/* Each spec section takes one column */
+.fenix-specs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 0; /* Allow grid items to shrink */
+  max-width: 100%; /* Remove the previous max-width constraint */
+}
+
+/* Title styling - first row */
+.fenix-specs-section h3 {
+  font-family: "Horizon";
+  font-size: 1.5em;
+  color: #286196;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #286196;
+}
+
+/* Content styling - subsequent rows */
+.fenix-specs-section .spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px 0;
+}
+
+.fenix-specs-section .spec-label {
+  font-family: "Raleway";
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #666;
+}
+
+.fenix-specs-section .spec-value {
+  font-family: "Raleway";
+  font-size: 1em;
+  color: #1d1d1d;
+}
+
+/* Mobile - 2 columns */
 @media only screen and (max-width: 768px) {
   .fenix-specs {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px;
   }
-}
-
-.fenix-specs-section {
-  flex: 1 1 calc(33.33% - 20px); /* Divide the container into three equal parts, considering the gap */
-  max-width: calc(33.33% - 20px); /* Set a maximum width to prevent overflow */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  min-width: 400px; /* is this good?*/
+  
+  .fenix-specs-section h3 {
+    font-size: 1.2em;
+  }
+  
+  .fenix-specs-section .spec-label {
+    font-size: 0.85em;
+  }
+  
+  .fenix-specs-section .spec-value {
+    font-size: 0.95em;
+  }
 }
 
 .fenix-fsfenix-3d-model {
   display: flex;
   height: 60vh;
 }
+
 
 /* //////////////GALLERY///////////////// */
 

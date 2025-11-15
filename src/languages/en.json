@@ -108,228 +108,272 @@
   },
 
   "fsfenixevo-page": {
-    "page-title": "FS FENIX EVO",
-    "page-subtitle": "The FS FENIX EVO marks the team's return to building a formula student car",
-    "specs-title": "Technical Specifications",
-    "team-title": "The Team",
-    "technical-specs": {
-      "general": {
-        "title": "General",
-
-        "weight": "Weight",
-        "weight-value": "260 Kg",
-
-        "wheel-base": "Wheel Base",
-        "wheel-base-value": "1585 mm",
-
-        "width": "Width",
-        "width-value": "1455 mm",
-
-        "height": "Height",
-        "height-value": "1176 mm",
-
-        "height-cg": "CG Height",
-        "height-cg-value": "299 mm",
-
-        "length": "Length",
-        "length-value": "2811 mm",
-
-        "top-speed": "Top Speed",
-        "top-speed-value": "140 Km/h"
-      },
-
-      "powertrain": {
-        "title": "Powertrain",
-
-        "engine": "Engine",
-        "engine-value": "Honda CBR 600 F4i",
-
-        "power": "Power",
-        "power-value": "75 HP",
-
-        "max-rpm": "Max RPM",
-        "max-rpm-value": "13500",
-
-        "gear-box": "Gearbox",
-        "gear-box-value": "Sequential Semi-Automatic 6-speed"
-      },
-
-      "steering&suspension": {
-        "title": "Steering & Suspension",
-
-        "type": "Type",
-        "type-value": "Double Wishbone with Push-Rod",
-
-        "tyres": "Tyres",
-        "tyres-value": "Hoosier 205/470 – R13",
-
-        "breaking": "Braking",
-        "breaking-value": "4-Piston AP Racing Calipers"
-      },
-
-      "chassis": {
-        "title": "Chassis",
-
-        "structure": "Structure",
-        "structure-value": "Tubular with Tungsten Welding",
-
-        "weight-dist": "Weight Distribution",
-        "weight-dist-value": "45F 55R"
-      },
-
-      "aero": {
-        "title": "Aerodynamics",
-
-        "bodywork": "Bodywork",
-        "bodywork-value": "Carbon Fiber"
-      }
+  "page-title": "FS FENIX EVO",
+  "page-subtitle": "The FS FENIX EVO marks the team's return to building a formula student car",
+  "specs-title": "Technical Specifications",
+  "team-title": "The Team",
+  "specs": {
+    "click-more": "Click to learn more →",
+    "technical-specs": "Technical Specifications"
+  },
+  "technical-specs": {
+    "general": {
+      "title": "General",
+      "description": "The Fenix Evo's dimensions and characteristics have been carefully optimized to provide the best balance between aerodynamic performance and maneuverability. With a low center of gravity and lightweight construction, the car delivers agile and precise response in all track conditions.",
+      
+      "weight": "Weight",
+      "weight-value": "260 Kg",
+      
+      "wheel-base": "Wheel Base",
+      "wheel-base-value": "1585 mm",
+      
+      "width": "Width",
+      "width-value": "1455 mm",
+      
+      "height": "Height",
+      "height-value": "1176 mm",
+      
+      "height-cg": "CG Height",
+      "height-cg-value": "299 mm",
+      
+      "length": "Length",
+      "length-value": "2811 mm",
+      
+      "top-speed": "Top Speed",
+      "top-speed-value": "140 Km/h"
     },
-
-    "competitions": {
-      "title": "Competitions",
-      "subtitle": "The FS FENIX EVO is going to compete in the Formula Student Austria & Formula Student Portugal events!",
-      "fspt": {
-        "title": "FORMULA STUDENT PORTUGAL",
-        "date": "3 to 7 of September 2024",
-        "location": "Castelo Branco Kart Track",
-        "class": "Class 1"
-      },
-      "fsa": {
-        "title": "FORMULA STUDENT AUSTRIA",
-        "date": "21 to 25 of July 2024",
-        "location": "RedBull Ring",
-        "class": "Class 1"
-      }
+    
+    "powertrain": {
+      "title": "Powertrain",
+      "description": "The heart of the Fenix Evo is a Honda CBR 600 F4i engine, known for its reliability and performance. With explosive acceleration and a semi-automatic sequential gearbox, the powertrain delivers an exhilarating driving experience, reaching up to 13500 RPM.",
+      
+      "engine": "Engine",
+      "engine-value": "Honda CBR 600 F4i",
+      
+      "power": "Power",
+      "power-value": "75 HP",
+      
+      "max-rpm": "Max RPM",
+      "max-rpm-value": "13500",
+      
+      "gear-box": "Gearbox",
+      "gear-box-value": "Sequential Semi-Automatic 6-speed"
     },
-
-    "teams-names": {
-      "board": "Board",
-      "aerodynamics": "Aerodynamics",
-      "chassis&suspension": "Chassis & Suspension",
-      "vehicle-dynamics": "Vehicle Dynamics",
-      "steering&ergonomics": "Steering & Ergonomics",
-      "electronics": "Electronics",
-      "powertrain": "Powertrain",
-      "marketing": "Marketing",
-      "corporate-relations": "Corporate Relations",
-      "logistics": "Logistics",
-      "finances": "Finance"
+    
+    "steering&suspension": {
+      "title": "Steering & Suspension",
+      "description": "The Double Wishbone suspension system with Push-Rod provides superior control and precise feedback to the driver. High-performance Hoosier tires and the braking system with AP Racing calipers ensure maximum grip and consistent braking, even under extreme racing conditions.",
+      
+      "type": "Type",
+      "type-value": "Double Wishbone with Push-Rod",
+      
+      "tyres": "Tyres",
+      "tyres-value": "Hoosier 205/470 – R13",
+      
+      "breaking": "Braking",
+      "breaking-value": "4-Piston AP Racing Calipers"
     },
-    "roles": {
-      "team-leader": "Team Leader",
-      "technical-director": "Technical Director",
-      "team-leader&project-manager": "Team Leader & Project Manager",
-      "technical-director&team-leader": "Technical Director & Team Leader",
-      "bsd": "Business & Strategy Director",
-      "dep-leader": "Department Leader",
-      "member": "Member"
+    
+    "chassis": {
+      "title": "Chassis",
+      "description": "The tubular chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness. The 45F/55R weight distribution has been carefully calculated to provide ideal balance between traction and maneuverability, allowing predictable and confident car response in all situations.",
+      
+      "structure": "Structure",
+      "structure-value": "Tubular with Tungsten Welding",
+      
+      "weight-dist": "Weight Distribution",
+      "weight-dist-value": "45F 55R"
+    },
+    
+    "aero": {
+      "title": "Aerodynamics",
+      "description": "The Fenix Evo's aerodynamics were developed to maximize downforce and minimize drag. The carbon fiber bodywork not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
+      
+      "bodywork": "Bodywork",
+      "bodywork-value": "Carbon Fiber"
     }
   },
-
-  "fsfenix-page": {
-    "page-title": "FS FENIX",
-    "page-subtitle": "The FS FENIX represents the rebirth from the ashes for NOVA Formula Student",
-    "specs-title": "Technical Specifications",
-    "team-title": "The Team",
-    "technical-specs": {
-      "general": {
-        "title": "General",
-        "weight": "Weight",
-        "weight-value": "280 Kg",
-        "wheel-base": "Wheelbase",
-        "wheel-base-value": "1525 mm",
-        "width": "Track",
-        "width-value": "1346 mm",
-        "height-cg": "Height",
-        "height-cg-value": "250 mm",
-        "0-100": "0-100 km/h",
-        "0-100-value": "3.9 s",
-        "top-speed": "Top Speed",
-        "top-speed-value": "170 Km/h"
-      },
-      "powertrain": {
-        "title": "Powertrain",
-        "engine": "Engine",
-        "engine-value": "Yamaha MT-07 CP2",
-        "power": "Power",
-        "power-value": "67 BHP",
-        "max-rpm": "Max RPM",
-        "max-rpm-value": "9000",
-        "volume": "Volume",
-        "volume-value": "698 cc",
-        "ecu": "ECU",
-        "ecu-value": "Splitronics Mercury 3",
-        "quick-shifter": "Quick Shifter",
-        "quick-shifter-value": "KLIKTRONIC"
-      },
-      "steering&suspension": {
-        "title": "Steering & Suspension",
-        "type": "Type",
-        "type-value": "Double Wishbone with pushrod",
-        "tyres": "Tyres",
-        "tyres-value": "Hoosier 205/407 R13 FSAE",
-        "breaking": "Breaking",
-        "breaking-value": "AP Racing, opposite pistons with 25.4 mm diameter (4 in the front, 2 in the rear)",
-        "suspension": "Suspension",
-        "suspension-value": "FOX Van R"
-      },
-      "chassis": {
-        "title": "Chassis",
-        "structure": "Structure",
-        "structure-value": "Steel tube BS4-T45",
-        "weight": "Weight",
-        "weight-value": "38 Kg",
-        "impact-structure": "Impact Structure",
-        "impact-structure-value": "High Density Foam"
-      },
-      "aero": {
-        "title": "Aerodynamics",
-        "cd.a": "CD.A",
-        "cd.a-value": "1.553",
-        "cl.d": "CL.D",
-        "cl.d-value": "1.106"
-      }
+  
+  "competitions": {
+    "title": "Competitions",
+    "subtitle": "The FS FENIX EVO is going to compete in the Formula Student Austria & Formula Student Portugal events!",
+    "fspt": {
+      "title": "FORMULA STUDENT PORTUGAL",
+      "date": "3 to 7 of September 2024",
+      "location": "Castelo Branco Kart Track",
+      "class": "Class 1"
     },
-
-    "competitions": {
-      "title": "Competitions",
-      "subtitle": "The FS FENIX competed in the Formula Student Portugal event!",
-      "fspt": {
-        "title": "FORMULA STUDENT PORTUGAL",
-        "position": "Placed 4th ",
-        "date": "August 1st to 5th 2023",
-        "location": "Castelo Branco Kart Track"
-      }
-    },
-
-    "teams-names": {
-      "board": "Board",
-      "aerodynamics": "Aerodynamics",
-      "chassis&suspension": "Chassis & Suspension",
-      "vehicle-dynamics": "Vehicle Dynamics",
-      "steering&ergonomics": "Steering & Ergonomics",
-      "electronics": "Electronics",
-      "powertrain": "Powertrain",
-      "marketing": "Marketing",
-      "corporate-relations": "Corporate Relations",
-      "logistics": "Logistics",
-      "finances": "Finance"
-    },
-    "roles": {
-      "team-leader": "Team Leader",
-      "technical-director": "Technical Director",
-      "team-leader&project-manager": "Team Leader & Project Manager",
-      "technical-director&team-leader": "Technical Director & Team Leader",
-      "bsd": "Business & Strategy Director",
-      "dep-leader": "Coordinator",
-      "member": "Member"
-    },
-    "team-container": {
-      "members": "Members",
-      "degrees": "Degrees",
-      "universities": "Schools"
+    "fsa": {
+      "title": "FORMULA STUDENT AUSTRIA",
+      "date": "21 to 25 of July 2024",
+      "location": "RedBull Ring",
+      "class": "Class 1"
     }
   },
+  
+  "teams-names": {
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
+    "chassis&suspension": "Chassis & Suspension",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "steering&ergonomics": "Steering & Ergonomics",
+    "electronics": "Electronics",
+    "powertrain": "Powertrain",
+    "marketing": "Marketing",
+    "corporate-relations": "Corporate Relations",
+    "logistics": "Logistics",
+    "finances": "Finance"
+  },
+  "roles": {
+    "team-leader": "Team Leader",
+    "technical-director": "Technical Director",
+    "team-leader&project-manager": "Team Leader & Project Manager",
+    "technical-director&team-leader": "Technical Director & Team Leader",
+    "bsd": "Business & Strategy Director",
+    "dep-leader": "Department Leader",
+    "member": "Member"
+  }
+},
+
+"fsfenix-page": {
+  "page-title": "FS FENIX",
+  "page-subtitle": "The FS FENIX represents the rebirth from the ashes for NOVA Formula Student",
+  "specs-title": "Technical Specifications",
+  "team-title": "The Team",
+  "specs": {
+    "click-more": "Click to learn more →",
+    "technical-specs": "Technical Specifications"
+  },
+  "technical-specs": {
+    "general": {
+      "title": "General",
+      "description": "The FS Fenix was designed with a focus on weight optimization and mass distribution. At 280 kg with a compact wheelbase of 1525 mm, the car offers an exceptional combination of agility and stability. The low center of gravity height at just 250 mm provides superior cornering grip, allowing the driver to explore the vehicle's limits with confidence.",
+      
+      "weight": "Weight",
+      "weight-value": "280 Kg",
+      
+      "wheel-base": "Wheelbase",
+      "wheel-base-value": "1525 mm",
+      
+      "width": "Track",
+      "width-value": "1346 mm",
+      
+      "height-cg": "Height",
+      "height-cg-value": "250 mm",
+      
+      "0-100": "0-100 km/h",
+      "0-100-value": "3.9 s",
+      
+      "top-speed": "Top Speed",
+      "top-speed-value": "170 Km/h"
+    },
+    
+    "powertrain": {
+      "title": "Powertrain",
+      "description": "The Yamaha MT-07 CP2 parallel twin 698cc engine is the beating heart of the FS Fenix. With 67 horsepower and 9000 maximum RPM, this engine offers a linear and predictable power curve. The integration of the Splitronics Mercury 3 ECU allows for custom mapping and precise control, while the KLIKTRONIC quick shifter provides ultra-fast shifts without loss of traction.",
+      
+      "engine": "Engine",
+      "engine-value": "Yamaha MT-07 CP2",
+      
+      "power": "Power",
+      "power-value": "67 BHP",
+      
+      "max-rpm": "Max RPM",
+      "max-rpm-value": "9000",
+      
+      "volume": "Volume",
+      "volume-value": "698 cc",
+      
+      "ecu": "ECU",
+      "ecu-value": "Splitronics Mercury 3",
+      
+      "quick-shifter": "Quick Shifter",
+      "quick-shifter-value": "KLIKTRONIC"
+    },
+    
+    "steering&suspension": {
+      "title": "Steering & Suspension",
+      "description": "The Double Wishbone suspension with pushrod was carefully calibrated to provide the perfect balance between comfort and performance. FOX Van R dampers offer precise compression and rebound adjustments, adapting to different track conditions. The Hoosier FSAE compound-specific tires, combined with AP Racing calipers, ensure powerful and consistent braking in all situations.",
+      
+      "type": "Type",
+      "type-value": "Double Wishbone with pushrod",
+      
+      "tyres": "Tyres",
+      "tyres-value": "Hoosier 205/407 R13 FSAE",
+      
+      "breaking": "Breaking",
+      "breaking-value": "AP Racing, opposite pistons with 25.4 mm diameter (4 in the front, 2 in the rear)",
+      
+      "suspension": "Suspension",
+      "suspension-value": "FOX Van R"
+    },
+    
+    "chassis": {
+      "title": "Chassis",
+      "description": "The BS4-T45 steel tubular chassis was developed with emphasis on torsional rigidity and driver safety. At just 38 kg, the structure offers an exceptional weight-to-strength ratio. The high-density foam impact attenuator ensures maximum protection in case of frontal collision, strictly complying with Formula Student safety regulations.",
+      
+      "structure": "Structure",
+      "structure-value": "Steel tube BS4-T45",
+      
+      "weight": "Weight",
+      "weight-value": "38 Kg",
+      
+      "impact-structure": "Impact Structure",
+      "impact-structure-value": "High Density Foam"
+    },
+    
+    "aero": {
+      "title": "Aerodynamics",
+      "description": "The FS Fenix aerodynamic package was optimized through extensive CFD simulations. With a drag coefficient (CD.A) of 1.553 and lift coefficient (CL.D) of 1.106, the car generates significant downforce while maintaining aerodynamic efficiency. This balance allows for high speeds on straights while maintaining stability and grip in fast corners.",
+      
+      "cd.a": "CD.A",
+      "cd.a-value": "1.553",
+      
+      "cl.d": "CL.D",
+      "cl.d-value": "1.106"
+    }
+  },
+  
+  "competitions": {
+    "title": "Competitions",
+    "subtitle": "The FS FENIX competed in the Formula Student Portugal event!",
+    "fspt": {
+      "title": "FORMULA STUDENT PORTUGAL",
+      "position": "Placed 4th ",
+      "date": "August 1st to 5th 2023",
+      "location": "Castelo Branco Kart Track"
+    }
+  },
+  
+  "teams-names": {
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
+    "chassis&suspension": "Chassis & Suspension",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "steering&ergonomics": "Steering & Ergonomics",
+    "electronics": "Electronics",
+    "powertrain": "Powertrain",
+    "marketing": "Marketing",
+    "corporate-relations": "Corporate Relations",
+    "logistics": "Logistics",
+    "finances": "Finance"
+  },
+  "roles": {
+    "team-leader": "Team Leader",
+    "technical-director": "Technical Director",
+    "team-leader&project-manager": "Team Leader & Project Manager",
+    "technical-director&team-leader": "Technical Director & Team Leader",
+    "bsd": "Business & Strategy Director",
+    "dep-leader": "Coordinator",
+    "member": "Member"
+  },
+  "team-container": {
+    "members": "Members",
+    "degrees": "Degrees",
+    "universities": "Schools"
+  }
+},
+
   "fsdragon-page": {
     "page-title": "FS DRAGON",
     "page-subtitle": "The FS DRAGON is the first prototype car that the NOVA Formula Student team built.",
