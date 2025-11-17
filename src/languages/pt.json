@@ -107,18 +107,17 @@
   }
 },
 
-
-  
-
 "fsfenixevo-page": {
   "page-title": "FS FENIX EVO",
   "page-subtitle": "O FS FENIX EVO marca o regresso da equipa à construção de um carro fórmula student",
   "specs-title": "Especificações Técnicas",
   "team-title": "A Equipa",
+
   "specs": {
     "click-more": "Clique para saber mais →",
     "technical-specs": "Especificações Técnicas"
   },
+
   "technical-specs": {
     "general": {
       "title": "Geral",
@@ -235,7 +234,10 @@
     "bsd": "Diretor de Estratégia e Negócio",
     "dep-leader": "Coordenador",
     "member": "Membro"
-  }
+  },
+  
+  "with-help-from": "Com o apoio de",
+  "sponsors-title": "Patrocinadores"
 },
 
   "fsfenix-page": {
