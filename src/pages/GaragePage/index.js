@@ -76,6 +76,8 @@ const settings = useMemo(() => ({
         return 'FS FENIX';
       case 2:
         return 'FS DRAGON';
+      case 3:
+        return 'FS NOVA EV01';
     }
   };
 
@@ -84,12 +86,12 @@ const settings = useMemo(() => ({
     switch (currentSlide) {
       case 0:
         return "fsfenixevo";
-        
       case 1:
-        return "fsfenix";  
-
+        return "fsfenix";
       case 2:
         return "fsdragon";
+      case 3:
+        return "fsnovaev01";
     }
   };
 
@@ -123,8 +125,10 @@ return (
         <div className={`car-image`}>
           <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsdragon.png?alt=media&token=f76b0ebf-07f9-4410-b869-5e9854c29799' alt='fsdragon' />
         </div>
+        <div className={`car-image`}>
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4' alt='fsnovaev01' />
+        </div>
       </Slider>
-      
     </div>
   );
 };

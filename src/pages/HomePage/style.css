@@ -38,8 +38,6 @@
   opacity: 0;
 }
 
-
-
 .nova-title {
   font-family: "AkiraExpanded";
   font-size: 5em;
@@ -90,14 +88,14 @@
 
 .team-content {
   font-family: "Raleway";
-  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-size: clamp(2rem, 2vw, 1.4rem);
   color: white;
-  max-width: 800px;
+  max-width: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1; 
-  padding: 5svw;
+  padding: 5svw 10px 5svw 6svw;
 }
 
 .title-team {
@@ -164,14 +162,6 @@
 
 }
 
-.team-content {
-  font-family: "Raleway";
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  color: black;
-  max-width: 800px;
-
-}
-
 .content-sponsor {
   font-family: "Raleway";
   text-align: right;
@@ -192,8 +182,6 @@
   .title-sponsor {
     text-align: left;
   }
-
-
 }
 
 
@@ -211,9 +199,6 @@
   color: #fff;
   padding: 30px 10vw;
   gap: 20px;
-  /* Adds space between flex items */
-
-
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
@@ -288,7 +273,6 @@
 
 }
 
-
 .reach {
   text-align: start;
   font-family: 'Horizon';
@@ -298,7 +282,6 @@
   padding-top: 8%;
   padding-bottom: 1%;
   font-size: clamp(1.2rem, 2vw, 3rem);
-
 }
 
 .icon-button-c:hover {
@@ -333,115 +316,127 @@
 
 }
 
-.garage-content {
-  font-family: "Raleway";
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  color: white;
-  max-width: 800px;
-
-}
-
 .garage-home-section {
   display: flex;
+  flex-direction: column; /* Stack title and grid */
   align-items: center;
-  justify-content: space-between;
-  padding: 5% 10vw;
-  background-color: #1d1d1d;
-  /* Example background color */
+  justify-content: center;
+  padding: 5% 5vw; /* Generous padding */
+  background-color: #1d1d1d; /* Light grey background */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
-  .garage-home-section {
-    flex-direction: column;
-    /* Stack items vertically */
-
-  }
+.garage-home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center title and subtitle */
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 100%;
 }
 
+.title-garage {
+  text-align: center;
+  color: #409ED4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: 'Horizon', sans-serif; /* Match new style */
+  font-size: 2.6em;
+}
 
-.garage-home-image {
+.garage-content {
+  font-family: "Raleway";
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #1d1d1d; /* Text color on light background */
+  max-width: 800px;
+}
+
+.garage-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  width: 105%;
+  box-sizing: border-box;
+}
+
+.car-card {
   position: relative;
-  max-width: 50vw;
-  border-radius: 10px;
-  /* Optional: to match your design */
+  aspect-ratio: 3 / 4; 
+  height: auto;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
-
-  /* Ensure the overlay fits within the image boundaries */
-
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
-.garage-home-image .team-photo {
-  flex-basis: 100%; 
-  max-width: 80%;
+.car-card:hover {
+  transform: scale(1.03);
 }
 
-.garage-image-overlay {
-
+.car-card-overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, );
-  /* Semi-transparent overlay */
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0));
   display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  /* Hide overlay by default */
-  transition: opacity 0.5s ease;
-  /* Smooth transition for the overlay */
+  align-items: flex-end;
+  padding: 15px; /* Slightly smaller padding for 4 cards */
 }
 
-.garage-home-image:hover .garage-image-overlay {
-  opacity: 1;
-  /* Show overlay on hover */
-  transform: scale(1.05);
+.car-card-text {
+  color: white;
 }
 
-.garage-image-overlay button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #ffffff;
-  /* Example button color */
-  color: #1d1d1d;
-  font-size: 1rem;
-  font-family: "Horizon";
-  border-radius: 5px;
-  border-color: #1d1d1d;
-  border-width: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.car-card-text h3 {
+  font-family: 'Horizon', sans-serif;
+  font-size: 1.8em; /* Slightly smaller for 4 cards */
+  margin: 0 0 5px 0;
+  line-height: 1;
 }
 
-.garage-image-overlay button:hover {
-  background-color: #409ED4;
+.car-card-text p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 600;
+  opacity: 0.9;
 }
 
+/* --- MOBILE STYLES for Garage Section --- */
+@media screen and (max-aspect-ratio: 1/1) {
+  .garage-home-section {
+    padding: 30px 5vw;
+  }
 
-.garage-home-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
+  .title-garage {
+    font-size: 2em;
+  }
+  
+  .garage-grid-container {
+    /* Stack in 1 column on mobile */
+    grid-template-columns: 1fr; 
+    gap: 30px;
+    width: 100%;
+  }
 
-.button-link .home-garge-button:hover {
-  transform: scale(1.1);
-  background-color: #409ED4;
-}
+  .car-card-text h3 {
+    font-size: 1.8em;
+  }
 
-.home-garge-button {
-  font-family: "Raleway";
-  width: 90%;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  padding: 10px 10px;
-  margin-top: 20px;
-  /* Space above the button */
-  background-color: #ffffff;
-  /* Example button color */
-  color: #1d1d1d;
-  border: 3px solid rgb(22, 22, 22);
-  border-radius: 10px; 
-  cursor: pointer;
-  transition: transform 0.3s;
+  .car-card-text p {
+    font-size: 1em;
+  }
+
+  /* Make sure old mobile rules are gone */
+  .garage-home-image {
+    display: none; /* Hide old mobile layout */
+  }
+  
+  .garage-content {
+    width: 90svw;
+  }
 }

@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import SplashScreen from '../../components/SplashScreen/index.js'; // Import SplashScreen if it's not imported already
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const titleController = useAnimation();
@@ -26,6 +27,39 @@ const HomePage = () => {
 
   const [showScrollArrow, setShowScrollArrow] = useState(true);
   const [isLoading, setIsLoading] = useState(true); // State to control splash screen visibility
+
+  // --- CAR DATA ---
+// We define all car data here to create the grid
+const carData = [
+    {
+    name: "FS DRAGON",
+    year: "2015",
+    path: "/garage/fsdragon",
+    // This is the Dragon image from your old carousel
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fcar_background.jpg?alt=media&token=b4845e0b-8f0b-407e-8f4d-1efce819f1d3"
+  },
+  {
+    name: "FS FENIX",
+    year: "2023",
+    path: "/garage/fsfenix",
+    // This is the Fenix render from your old carousel
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%2Ffsfenix_render3.png?alt=media&token=f6f6d07e-71a5-4524-9761-e3460a77c3fd"
+  },
+  {
+    name: "FS FENIX EVO",
+    year: "2024",
+    path: "/garage/fsfenixevo",
+    // This is the image from your Fenix Evo page
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fcarro_fspt.jpg?alt=media&token=c254dd19-2cd4-400c-9694-0b700ddab32d"
+  },
+  {
+    name: "FS NOVA EV01",
+    year: "2025",
+    path: "/garage/fsnovaev01", // You will need to create this page
+    // Placeholder image - replace this with your new car's image URL!
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4"
+  }
+];
 
   // Handle scroll arrow visibility
   useEffect(() => {
@@ -170,20 +204,35 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="garage-home-section" ref={garageRef}>
+      <div className="garage-home-section" ref={garageRef}> 
+          {/* Main Title */}
         <div className="garage-home-content">
           <h2 className='title-garage'>{t('garage-page.page-title')}</h2>
           <p className='garage-content'>{t('garage-page.page-subtitle')}</p>
-          <a href="/garage" className="button-link">
-            <button className="home-garge-button">{t('garage-page.button-text')}</button>
-          </a>
         </div>
-        <div className="garage-home-image">
-          <motion.div className="team-photo" animate={controlsGarage} initial={{ opacity: 0, x: 100 }}>
-            <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Frender_frente_fenix_evo.png?alt=media&token=a21e76dd-3ae8-4899-ac56-68abad3cece8' alt="Garage" />
-          </motion.div>
-        </div>
-      </div>
+          
+        {/* 4-Card Grid */}
+        <motion.div className='garage-grid-container'
+          animate={controlsGarage} 
+          initial={{ opacity: 0, x: 100 }}
+        >
+        {carData.map((car) => (
+          <Link 
+            key={car.name} 
+            to={car.path} 
+            className='car-card'
+            style={{ backgroundImage: `url(${car.imageUrl})` }}
+          >
+            <div className='car-card-overlay'>
+              <div className='car-card-text'>
+                <h3>{car.name}</h3>
+                <p>{car.year}</p>
+              </div>
+            </div>
+          </Link>
+          ))}
+        </motion.div>
+    </div>
     </div>
   );
 };

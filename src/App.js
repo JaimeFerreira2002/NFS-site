@@ -28,6 +28,7 @@ import CompetitionDetails from './pages/ResultsPage/index.js';
 import LoginPage from './pages/LoginPage/index.js';
 import AddArticlePage from './pages/AddArticlePage/index.js';
 import ArticlePage from './pages/ArticlePage/index.js'; // Import the new article page
+import FSNovaEV01Page from './pages/FSNovaEV01/index.js';
 
 // Component to handle route transitions
   const AnimatedRoutes = () => {
@@ -60,6 +61,7 @@ import ArticlePage from './pages/ArticlePage/index.js'; // Import the new articl
                   <Route path="/garage/fsfenixevo" element={<FSFenixPageEvo />} />
                   <Route path="/garage/fsdragon" element={<FSDragonPage />} />
                   <Route path="/garage/fsfenix" element={<FSFenixPage />} />
+                  <Route path="/garage/fsnovaev01" element={<FSNovaEV01Page />} />
                   <Route path="/partners" element={<PartnersPage />} />
                   <Route path="/articles" element={<ArticlesPage />} />
                   <Route path="/recruitment" element={<RecruitmentPage />} />

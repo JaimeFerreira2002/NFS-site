@@ -128,28 +128,57 @@ const FSFenixPage = () => {
         <div className='fenix-background-image-gradient-overlay'/> 
       </div>     
 
-      <div className='fenix-model_and_specs-container'>
-          <div className='fenix-section-title'>
-            {t('fsfenix-page.specs-title')}        
-          </div>
+      <div className="fenix-model_and_specs-container">
+        <div className="fenix-section-title">
+          {t("fsfenix-page.specs-title")}
+        </div>
 
-          <div className='fenix-specs-and-model'>
-            <div ref={specsAndModelRef}> 
-              <motion.div className='fenix-specs&model-animation' animate={specsAndModelController} initial={{ opacity: 0, x: 100 }}>
-                <div className='fenix-specs'>
-                  <SpecsSection title="general" dataKeys={generalKeys} t={t} car="fenix"/>
-                  <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} car="fenix"/>
-                  <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} car="fenix"/>
-                  <SpecsSection title="chassis" dataKeys={chassisKeys} t={t} car="fenix"/>
-                  <SpecsSection title="aero" dataKeys={aeroKeys} t={t} car="fenix"/>
-                </div>
-                
-                {/* <div className="fenix-fsfenix-3d-model">        
+        <div className="fenix-specs-and-model">
+          <div ref={specsAndModelRef}>
+            <motion.div
+              className="fenix-specs&model-animation"
+              animate={specsAndModelController}
+              initial={{ opacity: 0, x: 100 }}
+            >
+              <div className="fenix-specs">
+                <SpecsSection
+                  title="general"
+                  dataKeys={generalKeys}
+                  t={t}
+                  car="fenix"
+                />
+                <SpecsSection
+                  title="powertrain"
+                  dataKeys={powertrainKeys}
+                  t={t}
+                  car="fenix"
+                />
+                <SpecsSection
+                  title="steering&suspension"
+                  dataKeys={steeringSuspensionKeys}
+                  t={t}
+                  car="fenix"
+                />
+                <SpecsSection
+                  title="chassis"
+                  dataKeys={chassisKeys}
+                  t={t}
+                  car="fenix"
+                />
+                <SpecsSection
+                  title="aero"
+                  dataKeys={aeroKeys}
+                  t={t}
+                  car="fenix"
+                />
+              </div>
+
+              {/* <div className="fenix-fenix-3d-model">        
                       <CarModelViewer/>         
                 </div> */}
-              </motion.div>
-            </div>
-          </div>          
+            </motion.div>
+          </div>
+        </div>
       </div>
 
 

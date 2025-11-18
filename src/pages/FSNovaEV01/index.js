@@ -7,11 +7,32 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TeamListData from "../../components/team_members_list.js";
 import PageHeader from "../../components/PageHeader/index.js";
-import PartnersData from "../../pages/PartnersPage/PartnersList.js";
+
+
+//logos
+import AltairLogo from "../../assets/images/sponsors_logos/altair.png";
+import AlthimaLogo from "../../assets/images/sponsors_logos/althima.png";
+import BlocksLogo from "../../assets/images/sponsors_logos/blocks.png";
+import CicloLogo from "../../assets/images/sponsors_logos/ciclo_fabril.jpg";
+import CoficabLogo from "../../assets/images/sponsors_logos/coficab.jpg";
+import DFCTurboLogo from "../../assets/images/sponsors_logos/dfc_turbo.png";
+import ESSSLogo from "../../assets/images/sponsors_logos/esss.png";
+import FCTLogo from "../../assets/images/sponsors_logos/fct.jpg";
+import GalpLogo from "../../assets/images/sponsors_logos/galp.png";
+import KFrioLogo from "../../assets/images/sponsors_logos/kfrio.png";
+import LeanAcademyLogo from "../../assets/images/sponsors_logos/lean_academy.jpg";
+import LogoplasteLogo from "../../assets/images/sponsors_logos/logoplaste.jpg";
+import NiterraLogo from "../../assets/images/sponsors_logos/niterra.png";
+import NorelemLogo from "../../assets/images/sponsors_logos/norelem.png";
+import NovaLogo from "../../assets/images/sponsors_logos/nova.png";
+import VisteonLogo from "../../assets/images/sponsors_logos/visteon.png";
+import VWLogo from "../../assets/images/sponsors_logos/volkswagen.png";
+import WOBLogo from "../../assets/images/sponsors_logos/wob_palmela.jpg";
+
 import MemberCard from "../../components/MemberCard";
 import ImageGallery from "./components/CompetitionsRow/index.js";
-
 //photos
+
 const photos = [
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07602.JPG?alt=media&token=414e080b-fd0a-497e-af2b-999b50c233b5",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07686.JPG?alt=media&token=0f431637-cc20-430c-a6af-43ac2c7b1c35",
@@ -31,10 +52,31 @@ const colorGradient = {
   backgroundImage: "linear-gradient(to right, #286196, #70a0ff)",
 };
 
+//logos
+const logosList = [
+  VWLogo,
+  FCTLogo,
+  NovaLogo,
+  VisteonLogo,
+  GalpLogo,
+  LeanAcademyLogo,
+  BlocksLogo,
+  AltairLogo,
+  AlthimaLogo,
+  CicloLogo,
+  CoficabLogo,
+  DFCTurboLogo,
+  ESSSLogo,
+  KFrioLogo,
+  LogoplasteLogo,
+  NiterraLogo,
+  NorelemLogo,
+  WOBLogo,
+];
+
 const FenixEvoPage = () => {
   const { t } = useTranslation();
   const ref = useRef();
-  const [openAccordion, setOpenAccordion] = useState(null);
 
   ///////////////ANIMATIONS///////////////////////////
 
@@ -88,43 +130,16 @@ const FenixEvoPage = () => {
   const chassisKeys = ["structure", "weight-dist"];
   const aeroKeys = ["bodywork"];
 
-  const toggleAccordion = (category) => {
-    setOpenAccordion(openAccordion === category ? null : category);
-  };
-
-  const goldSponsors = PartnersData.gold || [];
-
   return (
     <div className="fenixevo">
       <PageHeader
-        title={t("fsfenixevo-page.page-title")}
+        title={t("fsnovaev01-page.page-title")}
         subtitle={t("fsfenixevo-page.page-subtitle")}
         gradientColor="#1966ff"
         height={"2.5%"}
       />
-      
-      {/* GOLD SPONSORS SECTION */}
-      <div className="gold-sponsors-section">
-        <h2 className="gold-sponsors-title">
-          {t("fsfenixevo-page.with-help-from") || "Com o apoio de"}
-        </h2>
-        <div className="gold-sponsors-grid">
-          {goldSponsors.map((sponsor) => (
-            <a
-              key={sponsor.title}
-              href={sponsor.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gold-sponsor-card"
-            >
-              <img src={sponsor.imageUrl} alt={sponsor.title} />
-            </a>
-          ))}
-        </div>
-      </div>
-
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fcarro_fspt.jpg?alt=media&token=c254dd19-2cd4-400c-9694-0b700ddab32d"
+        src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4"
         alt="Fenix Evo"
       />
       <div className="fenixevo-background-image-container">
@@ -175,6 +190,10 @@ const FenixEvoPage = () => {
                   car="fenixevo"
                 />
               </div>
+
+              {/* <div className="fenixevo-fenixevo-3d-model">        
+                      <CarModelViewer/>         
+                </div> */}
             </motion.div>
           </div>
         </div>
@@ -197,20 +216,26 @@ const FenixEvoPage = () => {
 
       {/* COMPETITIONS RESULTS */}
       <div className="competition-results-container">
+        {/* FSPT Competition Results */}
         <div className="competition-results-column">
           <h3>FSPT Results</h3>
+
           <h5>Static Events</h5>
           <ul>
             <li>Design: P2</li>
             <li>Cost: P2</li>
           </ul>
+
           <h5>Dynamic Events</h5>
           <ul>
-            <li>Aceleration: DNS</li>
+            <li>
+               Aceleration: DNS
+            </li>
             <li>Skidpad: DNS</li>
             <li>Autocross: DNS</li>
             <li>Endurance: DNF (10 laps completed)</li>
           </ul>
+
           <h5>Other:</h5>
           <ul>
             <li>Business Plan: 1st Place</li>
@@ -218,21 +243,26 @@ const FenixEvoPage = () => {
           </ul>
         </div>
 
+        {/* FSA Competition Results */}
         <div className="competition-results-column">
           <h3>FSA Results</h3>
+          
           <h5>Static Events</h5>
           <ul>
             <li>Design: P18</li>
             <li>Cost: P17</li>
           </ul>
+          
           <h5>Dynamic Events</h5>
           <ul>
             <li>Did not complete scrutineering</li>
           </ul>
+            
           <h5>Other:</h5>
           <ul>
             <li>Business Plan: Did not compete</li>
           </ul>
+            
         </div>
       </div>
 
@@ -241,56 +271,12 @@ const FenixEvoPage = () => {
         <div className="fenixevo-section-title">
           {t(`fsdragon-page.gallery`)}
         </div>
+        {
+          //<Gallery images={imageArray} />
+        }
       </div>
 
       <Gallery images={photos} />
-
-      {/* SPONSORS ACCORDION */}
-      <div className="sponsors-accordion-section">
-        <div className="fenixevo-section-title">
-          {t("fsfenixevo-page.sponsors-title") || "Patrocinadores"}
-        </div>
-
-        <div className="accordion-container">
-          {Object.keys(PartnersData).map((category) => {
-            const isOpen = openAccordion === category;
-            return (
-              <div key={category} className="accordion-item">
-                <button
-                  className={`accordion-header ${isOpen ? 'active' : ''}`}
-                  onClick={() => toggleAccordion(category)}
-                >
-                  <span>{t(`partners-page.${category}`).toUpperCase()}</span>
-                  <span className="accordion-icon">
-                    {isOpen ? '−' : '+'}
-                  </span>
-                </button>
-                <div 
-                  className={`accordion-content ${isOpen ? 'open' : ''}`}
-                  style={{
-                    maxHeight: isOpen ? '5000px' : '0',
-                    padding: isOpen ? '30px' : '0'
-                  }}
-                >
-                  <div className="sponsors-grid">
-                    {PartnersData[category].map((sponsor) => (
-                      <a
-                        key={sponsor.title}
-                        href={sponsor.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="sponsor-logo-card"
-                      >
-                        <img src={sponsor.imageUrl} alt={sponsor.title} />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
 
       {/* TEAM SECTION */}
       <div className="fenixevo-team-container">
