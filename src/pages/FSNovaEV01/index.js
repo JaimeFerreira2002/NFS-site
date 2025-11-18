@@ -134,7 +134,7 @@ const FenixEvoPage = () => {
     <div className="fenixevo">
       <PageHeader
         title={t("fsnovaev01-page.page-title")}
-        subtitle={t("fsfenixevo-page.page-subtitle")}
+        subtitle={t("fsnovaev01-page.page-subtitle")}
         gradientColor="#1966ff"
         height={"2.5%"}
       />
@@ -148,7 +148,7 @@ const FenixEvoPage = () => {
 
       <div className="fenixevo-model_and_specs-container">
         <div className="fenixevo-section-title">
-          {t("fsfenixevo-page.specs-title")}
+          {t("fsnovaev01-page.specs-title")}
         </div>
 
         <div className="fenixevo-specs-and-model">

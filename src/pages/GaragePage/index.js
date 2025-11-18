@@ -77,7 +77,7 @@ const settings = useMemo(() => ({
       case 2:
         return 'FS DRAGON';
       case 3:
-        return 'FS NOVA EV01';
+        return 'NOVA EV01';
     }
   };
 
