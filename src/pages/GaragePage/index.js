@@ -71,13 +71,13 @@ const settings = useMemo(() => ({
     // Add logic to determine title based on slide index
     switch (slideIndex) {
       case 0:
-        return 'FS FENIX EVO';
-      case 1:
-        return 'FS FENIX';
-      case 2:
-        return 'FS DRAGON';
-      case 3:
         return 'NOVA EV01';
+      case 1:
+        return 'FS FENIX EVO';
+      case 2:
+        return 'FS FENIX';
+      case 3:
+        return 'FS DRAGON';
     }
   };
 
@@ -85,13 +85,13 @@ const settings = useMemo(() => ({
   const getCarPagePath = () => {
     switch (currentSlide) {
       case 0:
-        return "fsfenixevo";
-      case 1:
-        return "fsfenix";
-      case 2:
-        return "fsdragon";
-      case 3:
         return "fsnovaev01";
+      case 1:
+        return "fsfenixevo";
+      case 2:
+        return "fsfenix";
+      case 3:
+        return "fsdragon";
     }
   };
 
@@ -117,16 +117,16 @@ return (
 
       <Slider ref={sliderRef} {...settings} className='cars-image-slider'>
         <div className={`car-image`}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Frender_frente_fenix_evo.png?alt=media&token=a21e76dd-3ae8-4899-ac56-68abad3cece8' alt='fsfenixevo' />
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2FebRender.png?alt=media&token=1703bbe8-084d-41ba-b178-4061e2bbfcb2' alt='fsnovaev01' />
+        </div>
+        <div className={`car-image`}>
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FfenixRender.png?alt=media&token=592b3e8e-113b-4202-a6be-073ea5a8c2b9' alt='fsfenixevo' />
         </div>
         <div className={`car-image`}>
           <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=1419a883-a4d9-4a9c-a3ed-260d664307c6' alt='fsfenix' />
         </div>
         <div className={`car-image`}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsdragon.png?alt=media&token=f76b0ebf-07f9-4410-b869-5e9854c29799' alt='fsdragon' />
-        </div>
-        <div className={`car-image`}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4' alt='fsnovaev01' />
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2FdragonRender.png?alt=media&token=770c5507-bf7b-4f13-908b-4a625a30c091' alt='fsnovaev01' />
         </div>
       </Slider>
     </div>

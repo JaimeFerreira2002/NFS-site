@@ -98,13 +98,6 @@
   padding: 5svw 10px 5svw 6svw;
 }
 
-.title-team {
-  text-align: start;
-  color: #409ED4;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
 .content-team {
   margin-bottom: 1rem;
 }
@@ -139,7 +132,9 @@
 
 .title-team {
   text-align: start;
-  color: #409ED4;
+  background-image: linear-gradient(to right, #286196, #70a0ff);
+  background-clip: text;
+  color: transparent;
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -321,13 +316,6 @@
   }
 }
 
-.title-garage {
-  text-align: start;
-  color: #409ED4;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
 @media screen and (max-aspect-ratio: 1/1) {
 
   .garage-content {
@@ -358,7 +346,9 @@
 
 .title-garage {
   text-align: center;
-  color: #409ED4;
+  color: transparent;
+  background-image: linear-gradient(to right, #286196, #70a0ff);
+  background-clip: text;
   padding-top: 1%;
   padding-bottom: 1%;
   font-family: 'Horizon', sans-serif; /* Match new style */
