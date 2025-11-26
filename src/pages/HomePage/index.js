@@ -185,22 +185,20 @@ const carData = [
 
       <div className="sponsors-section" ref={sponsorRef}>
         <div className="dark-glass-overlay-sponsor">
+          <div className="sponsor-text-content">
+            <h2 className='title-sponsor'>{t('home.sponsor_title')}</h2>
+          </div>
+          
           <motion.div
-            className="icon-button-c"
             animate={controlsSponsor}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <a className="icon-button-c" href="/contacts">
-              <FontAwesomeIcon icon={faAddressBook} size="10x" />
+            <Link className="icon-button-c" to="/contacts">
               <div className='reach'>{t("home.reach_us")}</div>
-            </a>
+            </Link>
           </motion.div>
 
-          <div className="sponsor-text-content">
-            <h2 className='title-sponsor'>{t('home.sponsor_title')}</h2>
-            <p className='content-sponsor'>{t('home.sponsor_text')}</p>
-          </div>
         </div>
       </div>
 

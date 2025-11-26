@@ -102,12 +102,13 @@ const FenixEvoPage = () => {
         gradientColor="#1966ff"
         height={"2.5%"}
       />
-      
+
+      <h2 className="gold-sponsors-title">
+          {t("fsfenixevo-page.with-help-from") || "Com o apoio de"}
+      </h2>
+
       {/* GOLD SPONSORS SECTION */}
       <div className="gold-sponsors-section">
-        <h2 className="gold-sponsors-title">
-          {t("fsfenixevo-page.with-help-from") || "Com o apoio de"}
-        </h2>
         <div className="gold-sponsors-grid">
           {goldSponsors.map((sponsor) => (
             <a
@@ -127,6 +128,7 @@ const FenixEvoPage = () => {
         src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fcarro_fspt.jpg?alt=media&token=c254dd19-2cd4-400c-9694-0b700ddab32d"
         alt="Fenix Evo"
       />
+      
       <div className="fenixevo-background-image-container">
         <div className="fenixevo-background-image-gradient-overlay" />
       </div>
