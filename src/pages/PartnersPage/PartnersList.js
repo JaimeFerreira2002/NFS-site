@@ -112,24 +112,26 @@ const PartnersData = {
         link:'https://rectimold.pt/en/',
         tier: 'Silver'
       },
-      {
+/*      {
         title: 'VI-GRADE',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FVI-GRADE.png?alt=media&token=0f1cf0f3-5d52-421a-b058-d3668ceb8e69', // Replace with actual path to image
         link:'https://www.vi-grade.com/en/',
         tier: 'Silver'
       },
+*/
       {
         title: 'TAP',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FTAP.png?alt=media&token=a43d8d53-5e1a-45b7-8ec9-c775d1e27b2c', // Replace with actual path to image
         link:'https://www.flytap.com/',
         tier: 'Silver'
       },
-      {
+/*      {
         title: 'TE-Connectivity',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FTE_Connectivity_logo.svg?alt=media&token=8c8aa121-f9e2-406c-a347-3e0e67bf9b30', // Replace with actual path to image
         link:'https://www.te.com/en/home.html',
         tier: 'Silver'
       },
+*/
       // ... add more partners as needed
     ],
     'bronze': [
@@ -277,6 +279,12 @@ const PartnersData = {
         link: 'https://www.zdkmotorsport.com/',
         tier: 'Bronze'
       },
+      {
+        title: 'Fibran',
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FFIBRAN.png?alt=media&token=0261c337-23c0-4e60-825b-0d6d5cc58168', // Replace with actual path to image
+        link: 'https://fibran.pt/',
+        tier: 'Bronze'
+      },
     
     ],
 
@@ -306,7 +314,7 @@ const PartnersData = {
       tier: 'Software'
     },
   ],
-/** 
+/* 
     'PARTNERS': [
       {
         title: 'Altium',
