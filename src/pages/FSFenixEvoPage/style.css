@@ -500,3 +500,84 @@
     height: 120px;
   }
 }
+
+/*///////// Team Accordion Section /////////*/
+
+.team-accordion-container {
+  max-width: 90%;
+  margin: 40px 50px 0;
+}
+
+.team-accordion-item {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.team-accordion-header {
+  width: 100%;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: 'Horizon', sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-accordion-header:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(112, 160, 255, 0.3);
+}
+
+.team-accordion-header.active {
+  background: rgba(112, 160, 255, 0.1);
+  border-color: rgba(112, 160, 255, 0.5);
+}
+
+.team-department-title {
+  background-image: linear-gradient(to right, #286196, #70a0ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.team-accordion-content {
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0;
+}
+
+.team-accordion-content.open {
+  opacity: 1;
+}
+
+@media (max-width: 968px) {
+  .team-accordion-container {
+    max-width: 95%;
+  }
+
+  .team-accordion-header {
+    padding: 15px 20px;
+    font-size: 1.2em;
+  }
+
+  .team-accordion-content.open {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-accordion-header {
+    font-size: 1em;
+    padding: 12px 15px;
+  }
+}

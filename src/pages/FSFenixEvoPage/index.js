@@ -35,6 +35,7 @@ const FenixEvoPage = () => {
   const { t } = useTranslation();
   const ref = useRef();
   const [openAccordion, setOpenAccordion] = useState(null);
+  const [openTeamAccordion, setOpenTeamAccordion] = useState(null);
 
   ///////////////ANIMATIONS///////////////////////////
 
@@ -83,6 +84,7 @@ const FenixEvoPage = () => {
     "length",
     "top-speed",
   ];
+  
   const powertrainKeys = ["engine", "power", "max-rpm", "gear-box"];
   const steeringSuspensionKeys = ["type", "tyres", "breaking"];
   const chassisKeys = ["structure", "weight-dist"];
@@ -90,6 +92,10 @@ const FenixEvoPage = () => {
 
   const toggleAccordion = (category) => {
     setOpenAccordion(openAccordion === category ? null : category);
+  };
+
+  const toggleTeamAccordion = (index) => {
+    setOpenTeamAccordion(openTeamAccordion === index ? null : index);
   };
 
   const goldSponsors = PartnersData.gold || [];
@@ -325,21 +331,39 @@ const FenixEvoPage = () => {
           </div>
         </div>
 
-        <div ref={teamRef}>
-          <motion.div className="fenix-team-animation" animate={teamController}>
-            {TeamListData.map((department, index) => (
-              <div key={index} className="fenix-department-container">
-                <h2 style={colorGradient} className="fenix-department-title">
-                  {t(`fsfenixevo-page.teams-names.${department.title}`)}
-                </h2>
-                <div className="fenix-team-members">
-                  {department.members.map((member, memberIndex) => (
-                    <MemberCard key={memberIndex} {...member} />
-                  ))}
+        {/* TEAM ACCORDION */}
+        <div className="team-accordion-container">
+          {TeamListData.map((department, index) => {
+            const isOpen = openTeamAccordion === index;
+            return (
+              <div key={index} className="team-accordion-item">
+                <button
+                  className={`team-accordion-header ${isOpen ? 'active' : ''}`}
+                  onClick={() => toggleTeamAccordion(index)}
+                >
+                  <span className="team-department-title">
+                    {t(`fsfenixevo-page.teams-names.${department.title}`)}
+                  </span>
+                  <span className="accordion-icon">
+                    {isOpen ? '−' : '+'}
+                  </span>
+                </button>
+                <div 
+                  className={`team-accordion-content ${isOpen ? 'open' : ''}`}
+                  style={{
+                    maxHeight: isOpen ? '5000px' : '0',
+                    padding: isOpen ? '30px' : '0'
+                  }}
+                >
+                  <div className="fenix-team-members">
+                    {department.members.map((member, memberIndex) => (
+                      <MemberCard key={memberIndex} {...member} />
+                    ))}
+                  </div>
                 </div>
               </div>
-            ))}
-          </motion.div>
+            );
+          })}
         </div>
       </div>
     </div>
