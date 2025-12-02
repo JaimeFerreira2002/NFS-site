@@ -201,14 +201,20 @@
     "subtitle": "The FS FENIX EVO is going to compete in the Formula Student Austria & Formula Student Portugal events!",
     "fspt": {
       "title": "FORMULA STUDENT PORTUGAL",
-      "date": "3 to 7 of September 2024",
+      "date": "3rd to 7th of September 2024",
       "location": "Castelo Branco Kart Track",
       "class": "Class 1"
     },
     "fsa": {
       "title": "FORMULA STUDENT AUSTRIA",
-      "date": "21 to 25 of July 2024",
+      "date": "21st to 25th of July 2024",
       "location": "RedBull Ring",
+      "class": "Class 1"
+    },
+    "fss": {
+      "title": "FORMULA STUDENT SPAIN",
+      "date": "4th to 10th of August 2025",
+      "location": "Circuit de Barcelona - Catalunya",
       "class": "Class 1"
     }
   },

@@ -30,6 +30,16 @@ const ImageGallery = () => {
           position={""}
           url={"https://fsaustria.at/"}
         />
+        <ImageCard
+          key={"fss"}
+          src={"https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFSS_allTeams.jpg?alt=media&token=0b0b1dec-d71a-4ed6-9b9d-aa4d9fb0c5ac"}
+          title={t("fsfenixevo-page.competitions.fss.title")}
+          date={t("fsfenixevo-page.competitions.fss.date")}
+          location={t("fsfenixevo-page.competitions.fss.location")}
+          division={t("fsfenixevo-page.competitions.fss.class")}
+          position={""}
+          url={"https://www.formulastudent.es/"}
+        />
         
       </div>
     </div>

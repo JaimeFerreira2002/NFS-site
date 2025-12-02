@@ -64,6 +64,7 @@
   background-clip: text;
   color: transparent;
   margin-bottom: 1%;
+  padding-top: 1%;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -370,13 +371,13 @@
 /*///////// Sponsors Accordion Section /////////*/
 
 .sponsors-accordion-section {
-  background-color: #1d1d1d;
-  padding: 60px 40px;
+  padding: 3%;
 }
 
 .accordion-container {
-  max-width: 90%;
-  margin: 0 auto;
+  max-width: 2000px;
+  margin: 40px auto 0;
+  width: 95%;
 }
 
 .accordion-item {
@@ -504,8 +505,9 @@
 /*///////// Team Accordion Section /////////*/
 
 .team-accordion-container {
-  max-width: 90%;
-  margin: 40px 50px 0;
+  max-width: 2000px;
+  width: 95%;
+  margin: 40px auto 0;
 }
 
 .team-accordion-item {
@@ -521,8 +523,9 @@
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  font-family: 'Horizon', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -540,11 +543,17 @@
   border-color: rgba(112, 160, 255, 0.5);
 }
 
+.team-accordion-header.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
 .team-department-title {
+  font-family: 'Horizon', sans-serif;
   background-image: linear-gradient(to right, #286196, #70a0ff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 1.2em;
 }
 
 .team-accordion-content {
@@ -562,12 +571,13 @@
 
 @media (max-width: 968px) {
   .team-accordion-container {
-    max-width: 95%;
+    max-width: 1200px;
+    width: 92%;
   }
 
   .team-accordion-header {
     padding: 15px 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .team-accordion-content.open {

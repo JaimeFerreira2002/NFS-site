@@ -242,6 +242,25 @@ const FenixEvoPage = () => {
             <li>Business Plan: Did not compete</li>
           </ul>
         </div>
+        <div className="competition-results-column">
+          <h3>FSS Results</h3>
+          <h5>Static Events</h5>
+          <ul>
+            <li>Design: P5</li>
+            <li>Cost: P5</li>
+          </ul>
+          <h5>Dynamic Events</h5>
+          <ul>
+            <li>Aceleration: P6</li>
+            <li>Skidpad: DNS</li>
+            <li>Autocross: P8</li>
+            <li>Endurance: DNF</li>
+          </ul>
+          <h5>Other:</h5>
+          <ul>
+            <li>Business Plan: P2</li>
+          </ul>
+        </div>
       </div>
 
       {/* GALLERY */}
