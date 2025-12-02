@@ -27,84 +27,162 @@
     "bronze": "Bronze & Parceiros",
     "silver": "Silver",
     "gold": "Gold",
-    "software" : "Software"
+    "software" : "Software",
+    "main": "Main"
+    
   },
-
-  "fsnovaev01-page": {
-    "page-title": "NOVA EV 01",
-    "page-subtitle": "O NOVA EV 01 é o primeiro carro elétrico da equipa",
-    "specs-title" : "Especificações Técnicas",
-    "team-title" : "A Equipa",
+  "novaev01-page": {
+    "page-title": "FS NOVA EV01",
+    "page-subtitle": "O primeiro protótipo elétrico da NOVA Formula Student",
+    "with-help-from": "Com o apoio de",
+    "specs-title": "Especificações Técnicas",
+    "team-title": "A Equipa",
+    "gallery": "Galeria",
+    "sponsors-title": "Patrocinadores",
+    
+    "specs": {
+      "click-more": "Clique para saber mais →",
+      "technical-specs": "Especificações Técnicas"
+    },
+    
     "technical-specs": {
       "general": {
-         "title" : "Geral",
-
-          "weight" : "Peso",
-          "weight-value": "220 Kg",
-
-          "wheel-base" : "Distância entre eixos",
-          "wheel-base-value": "1585 mm",
-
-          "width" : "Largura da via",
-          "width-value": "1455 mm",
-
-          "height" : "Altura",
-          "height-value": "1176 mm",
-
-          "height-cg" : "Altura CG",
-          "height-cg-value": "299 mm",
-
-          "length": "Comprimento",
-          "length-value": "2811 mm",
-
-          "top-speed" : "Velocidade Máxima",
-          "top-speed-value": "140 Km/h"  
+        "title": "Geral",
+        "description": "O FS NOVA EV01 foi projetado com um foco em eficiência energética e distribuição de massa otimizada. Com uma distância entre eixos compacta e altura reduzida do centro de gravidade, o carro oferece uma combinação excepcional de agilidade e estabilidade nas curvas.",
+        
+        "weight": "Peso",
+        "weight-value": "TBD Kg",
+        
+        "wheel-base": "Distância entre eixos",
+        "wheel-base-value": "TBD mm",
+        
+        "width": "Largura da via",
+        "width-value": "TBD mm",
+        
+        "height": "Altura",
+        "height-value": "TBD mm",
+        
+        "height-cg": "Altura CG",
+        "height-cg-value": "TBD mm",
+        
+        "length": "Comprimento",
+        "length-value": "TBD mm",
+        
+        "0-100": "0-100 km/h",
+        "0-100-value": "TBD s",
+        
+        "top-speed": "Velocidade Máxima",
+        "top-speed-value": "TBD Km/h"
       },
-
+      
       "powertrain": {
-         "title" : "Motor",
-
-          "motor" : "Motor",
-          "motor-value": "QS 205 10kW Hub Motor",
-
-          "battery" : "Bateria",
-          "battery-value": "Lithium-Ion 96V 20kWh",
-
-          "controller" : "Controlador",
-          "controller-value": "Kelly KLS7245H"
+        "title": "Powertrain Elétrico",
+        "description": "O sistema de propulsão elétrica do FS NOVA EV01 foi desenvolvido para máxima eficiência e performance. Com motores elétricos de alta potência e um sistema de gestão de bateria avançado, o carro oferece aceleração instantânea e controle preciso de potência.",
+        
+        "motor": "Motor",
+        "motor-value": "TBD",
+        
+        "power": "Potência",
+        "power-value": "TBD kW",
+        
+        "battery": "Bateria",
+        "battery-value": "TBD kWh",
+        
+        "voltage": "Voltagem",
+        "voltage-value": "TBD V",
+        
+        "inverter": "Inversor",
+        "inverter-value": "TBD",
+        
+        "cooling": "Arrefecimento",
+        "cooling-value": "TBD"
       },
-
+      
       "steering&suspension": {
-          "title" : "Direção & Suspensão",
-
-          "type" : "Tipo",
-          "type-value": " Double Wishbone com Push-Rod",
-
-          "tyres" : "Pneus",
-          "tyres-value": "Hoosier 205/470 – R13",
-
-          "breaking" : "Travagem",
-          "breaking-value": "x4 Pinças Pistão AP Racing"  
+        "title": "Direção & Suspensão",
+        "description": "A suspensão foi cuidadosamente calibrada para proporcionar o equilíbrio perfeito entre conforto e desempenho em pista. O sistema de travagem foi otimizado para regeneração de energia, aumentando a eficiência global do veículo.",
+        
+        "type": "Tipo",
+        "type-value": "TBD",
+        
+        "tyres": "Pneus",
+        "tyres-value": "TBD",
+        
+        "breaking": "Travagem",
+        "breaking-value": "Sistema com regeneração de energia",
+        
+        "suspension": "Amortecedores",
+        "suspension-value": "TBD"
       },
-
+      
       "chassis": {
-          "title" : "Chassis",
-
-          "structure" : "Estrutura",
-          "structure-value": ": Tubular com soldadura a tungsténio ",
-
-          "weight-dist" : "Distribuição de Peso",
-          "weight-dist-value": "45F 55R"
-
+        "title": "Chassis",
+        "description": "O chassis foi desenvolvido com ênfase na rigidez torsional, segurança do piloto e proteção do sistema de alta voltagem. A estrutura oferece uma relação peso-resistência excecional, cumprindo rigorosamente os regulamentos de segurança da Formula Student Electric.",
+        
+        "structure": "Estrutura",
+        "structure-value": "TBD",
+        
+        "weight": "Peso",
+        "weight-value": "TBD Kg",
+        
+        "weight-dist": "Distribuição de Peso",
+        "weight-dist-value": "TBD",
+        
+        "impact-structure": "Atenuador de Impacto",
+        "impact-structure-value": "TBD"
       },
-
+      
       "aero": {
-          "title" : "Aerodinâmica",
-
-          "bodywork": "Carenagem",
-          "bodywork-value":"Fibra de Carbono"
+        "title": "Aerodinâmica",
+        "description": "O pacote aerodinâmico do FS NOVA EV01 foi otimizado através de extensivas simulações CFD. O design gera downforce significativa mantendo a eficiência aerodinâmica, essencial para maximizar a autonomia da bateria.",
+        
+        "bodywork": "Carroçaria",
+        "bodywork-value": "Fibra de carbono",
+        
+        "cd.a": "CD.A",
+        "cd.a-value": "TBD",
+        
+        "cl.d": "CL.D",
+        "cl.d-value": "TBD"
       }
-  }
+    },
+    
+    "project": {
+      "title": "O Projeto",
+      "description": "O FS NOVA EV01 representa um marco histórico para a equipa NOVA Formula Student - o nosso primeiro protótipo totalmente elétrico. Este projeto ambicioso visa desenvolver competências em tecnologias de propulsão elétrica, sistemas de alta voltagem e gestão de energia, preparando a equipa para as competições Formula Student Electric."
+    },
+    
+    "teams-names": {
+      "board": "Direção",
+      "aerodynamics": "Aerodinâmica",
+      "chassis&suspension": "Chassis e Suspensão",
+      "vehicle-dynamics": "Dinâmica de Veículo",
+      "steering&ergonomics": "Direção e Ergonómica",
+      "electronics": "Eletrónica",
+      "powertrain": "Powertrain Elétrico",
+      "high-voltage": "Alta Voltagem",
+      "battery": "Bateria",
+      "marketing": "Marketing",
+      "corporate-relations": "Relações Empresariais",
+      "logistics": "Logística",
+      "finances": "Finanças"
+    },
+    
+    "roles": {
+      "team-leader": "Team Leader",
+      "technical-director": "Diretor Técnico",
+      "team-leader&project-manager": "Team Leader & Diretor de Projeto",
+      "technical-director&team-leader": "Diretor Técnico & Team Leader",
+      "bsd": "Diretor de Estratégia e Negócio",
+      "dep-leader": "Coordenador",
+      "member": "Membro"
+    },
+    
+    "team-container": {
+      "members": "Membros",
+      "degrees": "Cursos",
+      "universities": "Faculdades"
+    }
 },
 
 "fsfenixevo-page": {

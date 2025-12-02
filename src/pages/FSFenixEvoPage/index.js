@@ -98,7 +98,9 @@ const FenixEvoPage = () => {
     setOpenTeamAccordion(openTeamAccordion === index ? null : index);
   };
 
-  const goldSponsors = PartnersData.gold || [];
+  // Access fenixevo-specific sponsors
+  const fenixevoPartners = PartnersData.fenixevo || {};
+  const goldSponsors = fenixevoPartners.gold || [];
 
   return (
     <div className="fenixevo">
@@ -279,7 +281,7 @@ const FenixEvoPage = () => {
         </div>
 
         <div className="accordion-container">
-          {Object.keys(PartnersData).map((category) => {
+          {Object.keys(fenixevoPartners).map((category) => {
             const isOpen = openAccordion === category;
             return (
               <div key={category} className="accordion-item">
@@ -300,7 +302,7 @@ const FenixEvoPage = () => {
                   }}
                 >
                   <div className="sponsors-grid">
-                    {PartnersData[category].map((sponsor) => (
+                    {fenixevoPartners[category].map((sponsor) => (
                       <a
                         key={sponsor.title}
                         href={sponsor.link}
