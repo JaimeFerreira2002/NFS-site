@@ -177,16 +177,7 @@ const NOVAEV01Page = () => {
         </div>
       </div>
 
-      {/* PROJECT DESCRIPTION/GOALS SECTION */}
-      <div className="competitions-section-container">
-        <div className="fenixevo-section-title">
-          {t("novaev01-page.project.title")}
-        </div>
 
-        <div className="competitions-subtitle">
-          {t("novaev01-page.project.description")}
-        </div>
-      </div>
 
       {/* GALLERY */}
       <div className="fenixevo-gallery-container">

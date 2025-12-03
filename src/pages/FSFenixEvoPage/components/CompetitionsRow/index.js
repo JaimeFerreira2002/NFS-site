@@ -32,7 +32,7 @@ const ImageGallery = () => {
         />
         <ImageCard
           key={"fss"}
-          src={"https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFSS_allTeams.jpg?alt=media&token=0b0b1dec-d71a-4ed6-9b9d-aa4d9fb0c5ac"}
+          src={"https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFSS2025.jpg?alt=media&token=33d72f14-e02f-4845-8385-3badafb6b722"}
           title={t("fsfenixevo-page.competitions.fss.title")}
           date={t("fsfenixevo-page.competitions.fss.date")}
           location={t("fsfenixevo-page.competitions.fss.location")}

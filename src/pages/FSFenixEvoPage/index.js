@@ -213,6 +213,7 @@ const FenixEvoPage = () => {
           <ul>
             <li>Design: P2</li>
             <li>Cost: P2</li>
+            <li>Business Plan: 1st Place</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
@@ -223,7 +224,6 @@ const FenixEvoPage = () => {
           </ul>
           <h5>Other:</h5>
           <ul>
-            <li>Business Plan: 1st Place</li>
             <li>Special Awards: Best social media presence</li>
           </ul>
         </div>
@@ -234,14 +234,11 @@ const FenixEvoPage = () => {
           <ul>
             <li>Design: P18</li>
             <li>Cost: P17</li>
+            <li>Business Plan: Did not compete</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
             <li>Did not complete scrutineering</li>
-          </ul>
-          <h5>Other:</h5>
-          <ul>
-            <li>Business Plan: Did not compete</li>
           </ul>
         </div>
         <div className="competition-results-column">
@@ -250,6 +247,7 @@ const FenixEvoPage = () => {
           <ul>
             <li>Design: P5</li>
             <li>Cost: P5</li>
+            <li>Business Plan: P2</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
@@ -257,10 +255,6 @@ const FenixEvoPage = () => {
             <li>Skidpad: DNS</li>
             <li>Autocross: P8</li>
             <li>Endurance: DNF</li>
-          </ul>
-          <h5>Other:</h5>
-          <ul>
-            <li>Business Plan: P2</li>
           </ul>
         </div>
       </div>

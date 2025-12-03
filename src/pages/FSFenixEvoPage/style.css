@@ -434,6 +434,7 @@
 
 .accordion-content.open {
   opacity: 1;
+  background-color: white;
 }
 
 .sponsors-grid {
