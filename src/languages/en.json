@@ -151,6 +151,17 @@
         "description": "The FS NOVA EV01 represents a historic milestone for the NOVA Formula Student team - our first fully electric prototype. This ambitious project aims to develop skills in electric propulsion technologies, high-voltage systems, and energy management, preparing the team for Formula Student Electric competitions."
       },
       
+      "competitions": {
+        "title": "Competitions",
+        "subtitle": "The FS FENIX EVO is going to compete in the Formula Student Austria & Formula Student Portugal events!",
+        "fspt": {
+          "title": "FORMULA STUDENT PORTUGAL",
+          "date": "27th of July to 1st of August 2025",
+          "location": "Castelo Branco Kart Track",
+          "class": "Class 1"
+        }
+      },
+
       "teams-names": {
         "board": "Board",
         "aerodynamics": "Aerodynamics",

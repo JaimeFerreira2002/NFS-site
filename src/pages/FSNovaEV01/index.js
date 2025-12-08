@@ -14,7 +14,12 @@ import ImageGallery from "./components/CompetitionsRow/index.js";
 
 //photos - Add your EV01 photos here
 const photos = [
-  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev2.jpg?alt=media&token=ac615e1e-7ba4-41c9-a40d-cce739120fbd",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev3.jpg?alt=media&token=9a53e98c-8fce-4f1f-bb47-ad938c3f69b5",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev4.jpg?alt=media&token=539e2615-a77c-4eb0-8879-0a2d28469420",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev5.jpg?alt=media&token=11de9c49-d236-47c4-925b-efe18a1d8947",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev6.jpg?alt=media&token=457a7355-f9fa-4e2a-ac02-d0a89b34f4bb",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev7.jpg?alt=media&token=14192e7e-c040-4d0b-b15b-9a8d9332e435",
   // Add more EV01 photos
 ];
 
@@ -120,7 +125,7 @@ const NOVAEV01Page = () => {
       </div>
 
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4"
+        src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev1.jpg?alt=media&token=74ae2ddd-46de-4263-8d31-9b7e24d11de1"
         alt="NOVA EV01"
       />
       
@@ -177,7 +182,37 @@ const NOVAEV01Page = () => {
         </div>
       </div>
 
+      {/* COMPETITIONS SECTION */}
+      <div className="competitions-section-container">
+        <div className="fenixevo-section-title">
+          {t("fsfenixevo-page.competitions.title")}
+        </div>
 
+        <div className="competitions-subtitle">
+          {t("fsfenixevo-page.competitions.subtitle")}
+        </div>
+
+        <div className="competitions-images-row-container">
+          <ImageGallery />
+        </div>
+      </div>
+
+      {/* COMPETITIONS RESULTS */}
+      <div className="competition-results-container">
+        <div className="competition-results-column">
+          <h3>FSPT Results</h3>
+          <h5>Static Events</h5>
+          <ul>
+            <li>Design: P1</li>
+            <li>Cost: P3</li>
+            <li>Business Plan: 1st Place</li>
+          </ul>
+          <h5>Other:</h5>
+          <ul>
+            <li>Special Awards: Best social media presence</li>
+          </ul>
+        </div>
+      </div>
 
       {/* GALLERY */}
       <div className="fenixevo-gallery-container">

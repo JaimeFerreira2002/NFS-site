@@ -151,6 +151,17 @@
       "title": "O Projeto",
       "description": "O FS NOVA EV01 representa um marco histórico para a equipa NOVA Formula Student - o nosso primeiro protótipo totalmente elétrico. Este projeto ambicioso visa desenvolver competências em tecnologias de propulsão elétrica, sistemas de alta voltagem e gestão de energia, preparando a equipa para as competições Formula Student Electric."
     },
+
+    "competitions": {
+      "title": "Competições",
+      "subtitle": "O NOVA EV01 competiu no evento Formula Student Portugal!",
+      "fspt": {
+        "title": "FORMULA STUDENT PORTUGAL",
+        "date": "27 de Julho a 1 de Agosto de 2025",
+        "location": "Castelo Branco Kart Track",
+        "class": "Class 1"
+      }
+    },
     
     "teams-names": {
       "board": "Direção",

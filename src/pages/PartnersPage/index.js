@@ -54,7 +54,7 @@ const categoryMap = {
 };
 
 // Main Partners Component
-const Partners = ({ partners = PartnersData }) => {
+const Partners = ({ partners = PartnersData.fenixevo }) => {
   const { t } = useTranslation();
 
   const [isLoading, setIsLoading] = useState(true); 
@@ -63,9 +63,9 @@ const Partners = ({ partners = PartnersData }) => {
   useEffect(() => {
     const imagesURLs = []
 
-    for (const tier in PartnersData) {
+    for (const tier in PartnersData.fenixevo) {
       // Iterate through each partner in the current tier
-      PartnersData[tier].forEach(partner => {
+      PartnersData.fenixevo[tier].forEach(partner => {
         imagesURLs.push(partner.imageUrl); // Add the imageUrl to the array
       });
     }

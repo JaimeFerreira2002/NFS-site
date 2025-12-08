@@ -404,7 +404,7 @@
 }
 
 .accordion-header:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #007acc;
   border-color: rgba(112, 160, 255, 0.3);
 }
 

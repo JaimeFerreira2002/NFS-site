@@ -8,18 +8,17 @@
   }
   
   .member-image-container {
-    width: 200px; /* Set a fixed width for the image container */
-    height: 200px; /* Set a fixed height for the image container */
+    width: 230px; /* Set a fixed width for the image container */
+    height: 230px; /* Set a fixed height for the image container */
     overflow: hidden; /* Hide overflow to keep fixed size */
-    padding: 12%; 
-    
+    padding: 10%; 
   }
   
   .member-image {
     width: 100%;
     height: 100%; /* Ensure the image won't exceed the container size */
     object-fit: cover; /* Maintain aspect ratio while covering the container */
-    border-radius: 50%;
+    border-radius: 5%;
   }
   
   .member-details {
@@ -29,7 +28,6 @@
   .member-name {
     font-size: 1.3em; /* Increase the font size of the name */
     margin-bottom: 8px; /* Add some spacing below the name */
-    
   }
   
   .member-role {
