@@ -281,6 +281,7 @@
   justify-content: space-between; /* Ensure spacing between the two columns */
   gap: 20px; /* Space between the columns */
   margin-bottom: 20px; /* Space above the results */
+  margin-left: 3%;
 }
 
 .competition-results-column {

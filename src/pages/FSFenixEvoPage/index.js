@@ -218,9 +218,9 @@ const FenixEvoPage = () => {
           <h3>FSPT Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Design: P2</li>
-            <li>Cost: P2</li>
-            <li>Business Plan: 1st Place</li>
+            <li>Engeneering Design: P2</li>
+            <li>Cost & Manufacturing: P2</li>
+            <li>Business Plan Presentation: 1st Place</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
@@ -239,9 +239,9 @@ const FenixEvoPage = () => {
           <h3>FSA Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Design: P18</li>
-            <li>Cost: P17</li>
-            <li>Business Plan: Did not compete</li>
+            <li>Engeneering Design: P18</li>
+            <li>Cost & Manufacturing: P17</li>
+            <li>Business Plan Presentation: Did not compete</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
@@ -252,9 +252,9 @@ const FenixEvoPage = () => {
           <h3>FSS Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Design: P5</li>
-            <li>Cost: P5</li>
-            <li>Business Plan: P2</li>
+            <li>Engeneering Design: P5</li>
+            <li>Cost & Manufacturing: P5</li>
+            <li>Business Plan Presentation: P2</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>

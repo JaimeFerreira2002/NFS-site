@@ -62,105 +62,81 @@
         "technical-specs": "Technical Specifications"
       },
       
-      "technical-specs": {
+        "technical-specs": {
         "general": {
           "title": "General",
-          "description": "The FS NOVA EV01 was designed with a focus on energy efficiency and optimized mass distribution. With a compact wheelbase and reduced center of gravity height, the car offers an exceptional combination of agility and stability in corners.",
+          "description": "The Fenix Evo's dimensions and characteristics have been carefully optimized to provide the best balance between aerodynamic performance and maneuverability. With a low center of gravity and lightweight construction, the car delivers agile and precise response in all track conditions.",
           
           "weight": "Weight",
-          "weight-value": "TBD Kg",
+          "weight-value": "260 Kg",
           
-          "wheel-base": "Wheelbase",
-          "wheel-base-value": "TBD mm",
+          "wheel-base": "Wheel Base",
+          "wheel-base-value": "1585 mm",
           
-          "width": "Track Width",
-          "width-value": "TBD mm",
+          "width": "Width",
+          "width-value": "1455 mm",
           
           "height": "Height",
-          "height-value": "TBD mm",
+          "height-value": "1176 mm",
           
           "height-cg": "CG Height",
-          "height-cg-value": "TBD mm",
+          "height-cg-value": "299 mm",
           
           "length": "Length",
-          "length-value": "TBD mm",
-          
-          "0-100": "0-100 km/h",
-          "0-100-value": "TBD s",
+          "length-value": "2811 mm",
           
           "top-speed": "Top Speed",
-          "top-speed-value": "TBD Km/h"
+          "top-speed-value": "140 Km/h"
         },
         
         "powertrain": {
-          "title": "Electric Powertrain",
-          "description": "The FS NOVA EV01's electric propulsion system was developed for maximum efficiency and performance. With high-power electric motors and an advanced battery management system, the car offers instant acceleration and precise power control.",
+          "title": "Powertrain",
+          "description": "The heart of the Fenix Evo is a Honda CBR 600 F4i engine, known for its reliability and performance. With explosive acceleration and a semi-automatic sequential gearbox, the powertrain delivers an exhilarating driving experience, reaching up to 13500 RPM.",
           
-          "motor": "Motor",
-          "motor-value": "TBD",
+          "engine": "Engine",
+          "engine-value": "Honda CBR 600 F4i",
           
           "power": "Power",
-          "power-value": "TBD kW",
+          "power-value": "75 HP",
           
-          "battery": "Battery",
-          "battery-value": "TBD kWh",
+          "max-rpm": "Max RPM",
+          "max-rpm-value": "13500",
           
-          "voltage": "Voltage",
-          "voltage-value": "TBD V",
-          
-          "inverter": "Inverter",
-          "inverter-value": "TBD",
-          
-          "cooling": "Cooling",
-          "cooling-value": "TBD"
+          "gear-box": "Gearbox",
+          "gear-box-value": "Sequential Semi-Automatic 6-speed"
         },
         
         "steering&suspension": {
           "title": "Steering & Suspension",
-          "description": "The suspension was carefully calibrated to provide the perfect balance between comfort and track performance. The braking system was optimized for energy regeneration, increasing the vehicle's overall efficiency.",
+          "description": "The Double Wishbone suspension system with Push-Rod provides superior control and precise feedback to the driver. High-performance Hoosier tires and the braking system with AP Racing calipers ensure maximum grip and consistent braking, even under extreme racing conditions.",
           
           "type": "Type",
-          "type-value": "TBD",
+          "type-value": "Double Wishbone with Push-Rod",
           
           "tyres": "Tyres",
-          "tyres-value": "TBD",
+          "tyres-value": "Hoosier 205/470 – R13",
           
           "breaking": "Braking",
-          "breaking-value": "System with energy regeneration",
-          
-          "suspension": "Dampers",
-          "suspension-value": "TBD"
+          "breaking-value": "4-Piston AP Racing Calipers"
         },
         
         "chassis": {
           "title": "Chassis",
-          "description": "The chassis was developed with emphasis on torsional rigidity, driver safety, and high-voltage system protection. The structure offers an exceptional weight-to-strength ratio, strictly complying with Formula Student Electric safety regulations.",
+          "description": "The tubular chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness. The 45F/55R weight distribution has been carefully calculated to provide ideal balance between traction and maneuverability, allowing predictable and confident car response in all situations.",
           
           "structure": "Structure",
-          "structure-value": "TBD",
-          
-          "weight": "Weight",
-          "weight-value": "TBD Kg",
+          "structure-value": "Tubular with Tungsten Welding",
           
           "weight-dist": "Weight Distribution",
-          "weight-dist-value": "TBD",
-          
-          "impact-structure": "Impact Attenuator",
-          "impact-structure-value": "TBD"
+          "weight-dist-value": "45F 55R"
         },
         
         "aero": {
           "title": "Aerodynamics",
-          "description": "The FS NOVA EV01's aerodynamic package was optimized through extensive CFD simulations. The design generates significant downforce while maintaining aerodynamic efficiency, essential for maximizing battery range.",
+          "description": "The Fenix Evo's aerodynamics were developed to maximize downforce and minimize drag. The carbon fiber bodywork not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
           
           "bodywork": "Bodywork",
-          "bodywork-value": "Carbon fiber",
-          
-          "cd.a": "CD.A",
-          "cd.a-value": "TBD",
-          
-          "cl.d": "CL.D",
-          "cl.d-value": "TBD"
+          "bodywork-value": "Carbon Fiber"
         }
       },
       

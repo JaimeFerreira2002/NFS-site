@@ -49,15 +49,13 @@ const carData = [
     name: "FS FENIX EVO",
     year: "2024",
     path: "/garage/fsfenixevo",
-    // This is the image from your Fenix Evo page
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fcarro_fspt.jpg?alt=media&token=c254dd19-2cd4-400c-9694-0b700ddab32d"
   },
   {
     name: "FS NOVA EV01",
     year: "2025",
-    path: "/garage/fsnovaev01", // You will need to create this page
-    // Placeholder image - replace this with your new car's image URL!
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Feletrobico-placeholder.png?alt=media&token=60692bfa-0ea3-44b8-affa-debbb2b798b4"
+    path: "/garage/fsnovaev01",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2FebRender.png?alt=media&token=1703bbe8-084d-41ba-b178-4061e2bbfcb2"
   }
 ];
 

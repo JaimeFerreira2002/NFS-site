@@ -13,10 +13,10 @@ const ImageGallery = () => {
         <ImageCard
           key={"fspt"}
           src={fspt_photo}
-          title={t("fsfenixevo-page.competitions.fspt.title")}
-          date={t("fsfenixevo-page.competitions.fspt.date")}
-          location={t("fsfenixevo-page.competitions.fspt.location")}
-          division={t("fsfenixevo-page.competitions.fspt.class")}
+          title={t("novaev01-page.competitions.fspt.title")}
+          date={t("novaev01-page.competitions.fspt.date")}
+          location={t("novaev01-page.competitions.fspt.location")}
+          division={t("novaev01-page.competitions.fspt.class")}
           position={""}
           url={"https://www.formulastudent.pt/"}
         />

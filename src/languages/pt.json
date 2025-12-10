@@ -61,124 +61,96 @@
       "click-more": "Clique para saber mais →",
       "technical-specs": "Especificações Técnicas"
     },
+
     
-    "technical-specs": {
-      "general": {
-        "title": "Geral",
-        "description": "O FS NOVA EV01 foi projetado com um foco em eficiência energética e distribuição de massa otimizada. Com uma distância entre eixos compacta e altura reduzida do centro de gravidade, o carro oferece uma combinação excepcional de agilidade e estabilidade nas curvas.",
-        
-        "weight": "Peso",
-        "weight-value": "TBD Kg",
-        
-        "wheel-base": "Distância entre eixos",
-        "wheel-base-value": "TBD mm",
-        
-        "width": "Largura da via",
-        "width-value": "TBD mm",
-        
-        "height": "Altura",
-        "height-value": "TBD mm",
-        
-        "height-cg": "Altura CG",
-        "height-cg-value": "TBD mm",
-        
-        "length": "Comprimento",
-        "length-value": "TBD mm",
-        
-        "0-100": "0-100 km/h",
-        "0-100-value": "TBD s",
-        
-        "top-speed": "Velocidade Máxima",
-        "top-speed-value": "TBD Km/h"
-      },
+  "technical-specs": {
+    "general": {
+      "title": "Geral",
+      "description": "As dimensões e características do Fenix Evo foram cuidadosamente otimizadas para proporcionar o melhor equilíbrio entre desempenho aerodinâmico e manobrabilidade. Com um centro de gravidade baixo e construção leve, o carro oferece uma resposta ágil e precisa em todas as condições de pista.",
       
-      "powertrain": {
-        "title": "Powertrain Elétrico",
-        "description": "O sistema de propulsão elétrica do FS NOVA EV01 foi desenvolvido para máxima eficiência e performance. Com motores elétricos de alta potência e um sistema de gestão de bateria avançado, o carro oferece aceleração instantânea e controle preciso de potência.",
-        
-        "motor": "Motor",
-        "motor-value": "TBD",
-        
-        "power": "Potência",
-        "power-value": "TBD kW",
-        
-        "battery": "Bateria",
-        "battery-value": "TBD kWh",
-        
-        "voltage": "Voltagem",
-        "voltage-value": "TBD V",
-        
-        "inverter": "Inversor",
-        "inverter-value": "TBD",
-        
-        "cooling": "Arrefecimento",
-        "cooling-value": "TBD"
-      },
+      "weight": "Peso",
+      "weight-value": "260 Kg",
       
-      "steering&suspension": {
-        "title": "Direção & Suspensão",
-        "description": "A suspensão foi cuidadosamente calibrada para proporcionar o equilíbrio perfeito entre conforto e desempenho em pista. O sistema de travagem foi otimizado para regeneração de energia, aumentando a eficiência global do veículo.",
-        
-        "type": "Tipo",
-        "type-value": "TBD",
-        
-        "tyres": "Pneus",
-        "tyres-value": "TBD",
-        
-        "breaking": "Travagem",
-        "breaking-value": "Sistema com regeneração de energia",
-        
-        "suspension": "Amortecedores",
-        "suspension-value": "TBD"
-      },
+      "wheel-base": "Distância entre eixos",
+      "wheel-base-value": "1585 mm",
       
-      "chassis": {
-        "title": "Chassis",
-        "description": "O chassis foi desenvolvido com ênfase na rigidez torsional, segurança do piloto e proteção do sistema de alta voltagem. A estrutura oferece uma relação peso-resistência excecional, cumprindo rigorosamente os regulamentos de segurança da Formula Student Electric.",
-        
-        "structure": "Estrutura",
-        "structure-value": "TBD",
-        
-        "weight": "Peso",
-        "weight-value": "TBD Kg",
-        
-        "weight-dist": "Distribuição de Peso",
-        "weight-dist-value": "TBD",
-        
-        "impact-structure": "Atenuador de Impacto",
-        "impact-structure-value": "TBD"
-      },
+      "width": "Largura da via",
+      "width-value": "1455 mm",
       
-      "aero": {
-        "title": "Aerodinâmica",
-        "description": "O pacote aerodinâmico do FS NOVA EV01 foi otimizado através de extensivas simulações CFD. O design gera downforce significativa mantendo a eficiência aerodinâmica, essencial para maximizar a autonomia da bateria.",
-        
-        "bodywork": "Carroçaria",
-        "bodywork-value": "Fibra de carbono",
-        
-        "cd.a": "CD.A",
-        "cd.a-value": "TBD",
-        
-        "cl.d": "CL.D",
-        "cl.d-value": "TBD"
-      }
+      "height": "Altura",
+      "height-value": "1176 mm",
+      
+      "height-cg": "Altura CG",
+      "height-cg-value": "299 mm",
+      
+      "length": "Comprimento",
+      "length-value": "2811 mm",
+      
+      "top-speed": "Velocidade Máxima",
+      "top-speed-value": "140 Km/h"
     },
     
-    "project": {
-      "title": "O Projeto",
-      "description": "O FS NOVA EV01 representa um marco histórico para a equipa NOVA Formula Student - o nosso primeiro protótipo totalmente elétrico. Este projeto ambicioso visa desenvolver competências em tecnologias de propulsão elétrica, sistemas de alta voltagem e gestão de energia, preparando a equipa para as competições Formula Student Electric."
+    "powertrain": {
+      "title": "Motor",
+      "description": "O coração do Fenix Evo é um motor Honda CBR 600 F4i, conhecido pela sua fiabilidade e desempenho. Com acelerações explosivas e uma caixa de velocidades sequencial semi-automática, o motor oferece uma experiência de condução emocionante, atingindo 13500 RPM.",
+      
+      "engine": "Motor",
+      "engine-value": "Honda CBR 600 F4i",
+      
+      "power": "Potência",
+      "power-value": "75 CV",
+      
+      "max-rpm": "Max RPM",
+      "max-rpm-value": "13500",
+      
+      "gear-box": "Caixa de Velocidades",
+      "gear-box-value": "Sequencial Semi Automática de 6 velocidades"
     },
+    
+    "steering&suspension": {
+      "title": "Direção & Suspensão",
+      "description": "O sistema de suspensão Double Wishbone com Push-Rod proporciona controlo superior e feedback preciso ao piloto. Os pneus Hoosier de alta performance e o sistema de travagem com pinças AP Racing garantem aderência máxima e travagens consistentes, mesmo em condições extremas de competição.",
+      
+      "type": "Tipo",
+      "type-value": " Double Wishbone com Push-Rod",
+      
+      "tyres": "Pneus",
+      "tyres-value": "Hoosier 205/470 – R13",
+      
+      "breaking": "Travagem",
+      "breaking-value": "x4 Pinças Pistão AP Racing"
+    },
+    
+    "chassis": {
+      "title": "Chassis",
+      "description": "O chassis tubular com soldadura a tungsténio oferece uma combinação ótima de rigidez torsional e leveza. A distribuição de peso 45F/55R foi cuidadosamente calculada para proporcionar um equilíbrio ideal entre tração e manobrabilidade, permitindo que o carro responda de forma previsível e confiante em todas as situações.",
+      
+      "structure": "Estrutura",
+      "structure-value": ": Tubular com soldadura a tungsténio ",
+      
+      "weight-dist": "Distribuição de Peso",
+      "weight-dist-value": "45F 55R"
+    },
+    
+    "aero": {
+      "title": "Aerodinâmica",
+      "description": "A aerodinâmica do Fenix Evo foi desenvolvida para maximizar a downforce e minimizar o arrasto. A carenagem em fibra de carbono não só proporciona leveza e rigidez estrutural, mas também foi moldada através de simulações CFD para otimizar o fluxo de ar, melhorando a estabilidade em alta velocidade e a eficiência em curva.",
+      
+      "bodywork": "Carenagem",
+      "bodywork-value": "Fibra de Carbono"
+    }
+  },
 
     "competitions": {
-      "title": "Competições",
-      "subtitle": "O NOVA EV01 competiu no evento Formula Student Portugal!",
-      "fspt": {
-        "title": "FORMULA STUDENT PORTUGAL",
-        "date": "27 de Julho a 1 de Agosto de 2025",
-        "location": "Castelo Branco Kart Track",
-        "class": "Class 1"
-      }
-    },
+    "title": "Competições",
+    "subtitle": "The NOVA EV01 competiu no evento Formula Student Portugal!",
+    "fspt": {
+      "title": "FORMULA STUDENT PORTUGAL",
+      "date": "27 de julho a 1 de Agosto 2025",
+      "location": "Castelo Branco Kart Track",
+      "class": "Class 1"
+    }
+  },
     
     "teams-names": {
       "board": "Direção",

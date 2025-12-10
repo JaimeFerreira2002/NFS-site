@@ -150,31 +150,31 @@ const NOVAEV01Page = () => {
                   title="general"
                   dataKeys={generalKeys}
                   t={t}
-                  car="novaev01"
+                  car="fenixevo"
                 />
                 <SpecsSection
                   title="powertrain"
                   dataKeys={powertrainKeys}
                   t={t}
-                  car="novaev01"
+                  car="fenixevo"
                 />
                 <SpecsSection
                   title="steering&suspension"
                   dataKeys={steeringSuspensionKeys}
                   t={t}
-                  car="novaev01"
+                  car="fenixevo"
                 />
                 <SpecsSection
                   title="chassis"
                   dataKeys={chassisKeys}
                   t={t}
-                  car="novaev01"
+                  car="fenixevo"
                 />
                 <SpecsSection
                   title="aero"
                   dataKeys={aeroKeys}
                   t={t}
-                  car="novaev01"
+                  car="fenixevo"
                 />
               </div>
             </motion.div>
@@ -185,11 +185,11 @@ const NOVAEV01Page = () => {
       {/* COMPETITIONS SECTION */}
       <div className="competitions-section-container">
         <div className="fenixevo-section-title">
-          {t("fsfenixevo-page.competitions.title")}
+          {t("novaev01-page.competitions.title")}
         </div>
 
         <div className="competitions-subtitle">
-          {t("fsfenixevo-page.competitions.subtitle")}
+          {t("novaev01-page.competitions.subtitle")}
         </div>
 
         <div className="competitions-images-row-container">
@@ -203,9 +203,9 @@ const NOVAEV01Page = () => {
           <h3>FSPT Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Design: P1</li>
-            <li>Cost: P3</li>
-            <li>Business Plan: 1st Place</li>
+            <li>Engeneering Design: P1</li>
+            <li>Cost & Manufacturing: P3</li>
+            <li>Business Plan Presentation: 1st Place</li>
           </ul>
           <h5>Other:</h5>
           <ul>

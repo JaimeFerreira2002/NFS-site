@@ -44,10 +44,6 @@ const Partners = () => {
       description: t("partners-page.perk-innovation-desc") || "Collaborate on cutting-edge automotive technology and sustainable mobility solutions"
     },
     {
-      title: t("partners-page.perk-reports-title") || "Regular Updates",
-      description: t("partners-page.perk-reports-desc") || "Receive progress reports, technical insights, and exclusive behind-the-scenes content"
-    },
-    {
       title: t("partners-page.perk-education-title") || "Educational Impact",
       description: t("partners-page.perk-education-desc") || "Support the next generation of engineers while enhancing your corporate social responsibility"
     }
@@ -56,6 +52,7 @@ const Partners = () => {
   // Placeholder images - replace with actual car/garage images
   const carImages = [
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix3.jpg?alt=media&token=877adc35-2178-4c26-a755-f27c0ec874cd", 
+    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix8.JPG?alt=media&token=ac0f6680-3ef4-484d-beaf-2a435da52d24",
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07602.JPG?alt=media&token=414e080b-fd0a-497e-af2b-999b50c233b5",
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07686.JPG?alt=media&token=0f431637-cc20-430c-a6af-43ac2c7b1c35",
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07746.JPG?alt=media&token=f9ee4f94-f0af-446d-b929-bc6fee483322",
@@ -67,9 +64,7 @@ const Partners = () => {
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix2.jpg?alt=media&token=31e035f2-69bf-48fc-b490-1748ecc159b2",
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix4.jpg?alt=media&token=b585f6d2-8124-4cdf-9081-27411725a28a", 
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix5.jpg?alt=media&token=cd785639-bf4b-4d38-8d2d-29bd78e32ee6", 
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix6.jpg?alt=media&token=87d9a2a3-005c-4128-a034-879bab96e453", 
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix7.jpg?alt=media&token=8cfb8101-ceef-43f6-94d3-540114658f3c",
- 
+    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix6.jpg?alt=media&token=87d9a2a3-005c-4128-a034-879bab96e453"
   ];
 
   return (
