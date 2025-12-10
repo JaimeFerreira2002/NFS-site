@@ -12,7 +12,6 @@
     "artigos" : "Artigos"
   },
   
-
   "garage-page": {
     "page-title": "Garagem",
     "page-subtitle": "Descobre os nossos carros",
@@ -21,16 +20,34 @@
   },
 
   "partners-page": {
-    "page-title": "Parceiros",
-    "page-subtitle": "Parceiros oficiais do Nova Formula Student",
-    "institutional": "Institucional",
-    "bronze": "Bronze & Parceiros",
-    "silver": "Silver",
-    "gold": "Gold",
-    "software" : "Software",
-    "main": "Main"
+    "page-title": "Os Nossos Parceiros",
+    "page-subtitle": "Apoiando a equipa em cada passo",
     
+    "perks-title": "Porquê Ser Nosso Parceiro?",
+    
+    "perk-visibility-title": "Visibilidade da Marca",
+    "perk-visibility-desc": "O seu logótipo exibido de forma proeminente no nosso carro e na garagem durante competições e eventos",
+    
+    "perk-exposure-title": "Exposição Mediática",
+    "perk-exposure-desc": "Destaque nas nossas redes sociais, website e comunicados de imprensa alcançando milhares de entusiastas de engenharia",
+    
+    "perk-network-title": "Networking",
+    "perk-network-desc": "Conexão direta com estudantes de engenharia talentosos e acesso a oportunidades de recrutamento",
+    
+    "perk-innovation-title": "Parceria em Inovação",
+    "perk-innovation-desc": "Colabore em tecnologia automóvel de ponta e soluções de mobilidade sustentável",
+    
+    "perk-reports-title": "Atualizações Regulares",
+    "perk-reports-desc": "Receba relatórios de progresso, insights técnicos e conteúdo exclusivo dos bastidores",
+    
+    "perk-education-title": "Impacto Educacional",
+    "perk-education-desc": "Apoie a próxima geração de engenheiros enquanto reforça a responsabilidade social corporativa",
+    
+    "interested-title": "Interessado em ser parceiro?",
+    "interested-desc": "Entre em contacto connosco para discutir oportunidades de parceria",
+    "contact-button": "Contacte-nos"
   },
+
   "novaev01-page": {
     "page-title": "FS NOVA EV01",
     "page-subtitle": "O primeiro protótipo elétrico da NOVA Formula Student",
