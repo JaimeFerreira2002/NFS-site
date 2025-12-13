@@ -243,7 +243,7 @@ const NOVAEV01Page = () => {
                   className={`accordion-header ${isOpen ? 'active' : ''}`}
                   onClick={() => toggleAccordion(category)}
                 >
-                  <span>{t(`partners-page.${category}`).toUpperCase()}</span>
+                  <span>{t(`novaev01-page.sponsors.${category}`).toUpperCase()}</span>
                   <span className="accordion-icon">
                     {isOpen ? '−' : '+'}
                   </span>

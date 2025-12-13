@@ -290,7 +290,7 @@ const FenixEvoPage = () => {
                   className={`accordion-header ${isOpen ? 'active' : ''}`}
                   onClick={() => toggleAccordion(category)}
                 >
-                  <span>{t(`partners-page.${category}`).toUpperCase()}</span>
+                  <span>{t(`fsfenixevo-page.sponsors.${category}`).toUpperCase()}</span>
                   <span className="accordion-icon">
                     {isOpen ? '−' : '+'}
                   </span>

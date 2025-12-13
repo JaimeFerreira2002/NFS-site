@@ -156,6 +156,14 @@
         }
       },
 
+      "sponsors": {
+        "main": "Main",
+        "gold": "Gold",
+        "silver": "Silver",
+        "bronze": "Bronze",
+        "institutional": "Institutional"
+      },
+
       "teams-names": {
         "board": "Board",
         "aerodynamics": "Aerodynamics",
@@ -302,6 +310,14 @@
     }
   },
   
+  "sponsors": {
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze",
+    "institutional": "Institutional",
+    "software": "Software"
+  },
+
   "teams-names": {
     "board": "Board",
     "aerodynamics": "Aerodynamics",

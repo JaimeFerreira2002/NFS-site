@@ -49,7 +49,7 @@
   },
 
   "novaev01-page": {
-    "page-title": "FS NOVA EV01",
+    "page-title": "NOVA EV01",
     "page-subtitle": "O primeiro protótipo elétrico da NOVA Formula Student",
     "with-help-from": "Com o apoio de",
     "specs-title": "Especificações Técnicas",
@@ -142,15 +142,23 @@
   },
 
     "competitions": {
-    "title": "Competições",
-    "subtitle": "The NOVA EV01 competiu no evento Formula Student Portugal!",
-    "fspt": {
-      "title": "FORMULA STUDENT PORTUGAL",
-      "date": "27 de julho a 1 de Agosto 2025",
-      "location": "Castelo Branco Kart Track",
-      "class": "Class 1"
-    }
-  },
+      "title": "Competições",
+      "subtitle": "The NOVA EV01 competiu no evento Formula Student Portugal!",
+      "fspt": {
+        "title": "FORMULA STUDENT PORTUGAL",
+        "date": "27 de julho a 1 de Agosto 2025",
+        "location": "Castelo Branco Kart Track",
+        "class": "Class 1"
+      }
+    },
+  
+  "sponsors": {
+      "main": "Main",
+      "gold": "Gold",
+      "silver": "Silver",
+      "bronze": "Bronze",
+      "institutional": "Institucional"
+    },
     
     "teams-names": {
       "board": "Direção",
@@ -296,6 +304,15 @@
       "class": "Classe 1"
     }
   },
+
+  "sponsors": {
+      "gold": "Gold",
+      "silver": "Silver",
+      "bronze": "Bronze",
+      "institutional": "Institucional",
+      "supporters": "Supporters",
+      "software": "Software"
+    },
   
   "teams-names": {
     "board": "Direção",
