@@ -192,7 +192,7 @@ const carData = [
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Link className="icon-button-c" to="/contacts">
+            <Link className="icon-button-c" to="/partners">
               <div className='reach'>{t("home.reach_us")}</div>
             </Link>
           </motion.div>

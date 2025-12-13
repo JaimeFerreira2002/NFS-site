@@ -92,6 +92,7 @@ const NOVAEV01Page = () => {
 
   // Access EV01-specific sponsors
   const ev01Partners = PartnersData.ev01 || {};
+  const mainSponsors = ev01Partners.main || [];
   const goldSponsors = ev01Partners.gold || [];
 
   return (
@@ -107,22 +108,43 @@ const NOVAEV01Page = () => {
           {t("novaev01-page.with-help-from") || "Com o apoio de"}
       </h2>
 
-      {/* GOLD SPONSORS SECTION */}
-      <div className="gold-sponsors-section">
-        <div className="gold-sponsors-grid">
-          {goldSponsors.map((sponsor) => (
-            <a
-              key={sponsor.title}
-              href={sponsor.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gold-sponsor-card"
-            >
-              <img src={sponsor.imageUrl} alt={sponsor.title} />
-            </a>
-          ))}
+      {/* MAIN SPONSORS SECTION */}
+      {mainSponsors.length > 0 && (
+        <div className="main-sponsors-section">
+          <div className="main-sponsors-grid">
+            {mainSponsors.map((sponsor) => (
+              <a
+                key={sponsor.title}
+                href={sponsor.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="main-sponsor-card"
+              >
+                <img src={sponsor.imageUrl} alt={sponsor.title} />
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
+
+      {/* GOLD SPONSORS SECTION */}
+      {goldSponsors.length > 0 && (
+        <div className="gold-sponsors-section">
+          <div className="gold-sponsors-grid">
+            {goldSponsors.map((sponsor) => (
+              <a
+                key={sponsor.title}
+                href={sponsor.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gold-sponsor-card"
+              >
+                <img src={sponsor.imageUrl} alt={sponsor.title} />
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       <img
         src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev1.jpg?alt=media&token=74ae2ddd-46de-4263-8d31-9b7e24d11de1"

@@ -504,6 +504,50 @@
   }
 }
 
+
+/* MAIN SPONSORS SECTION */
+.main-sponsors-section {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.main-sponsors-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.main-sponsor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  min-height: 180px;
+}
+
+.main-sponsor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(112, 160, 255, 0.3);
+}
+
+.main-sponsor-card img {
+  max-width: 100%;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 /*///////// Team Accordion Section /////////*/
 
 .team-accordion-container {
