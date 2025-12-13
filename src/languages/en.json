@@ -586,21 +586,15 @@
       "member": "Member"
     }
   },
+
   "contacts-page": {
     "page-title": "Contacts",
-    "form-email": "Email",
-    "form-name": "Name",
-    "form-subject": "Name",
-    "form-message": "Message",
-    "form-send": "Send",
-    "form-title": "Contact us",
     "team-email": "Email",
     "cr-email": "Corporate Email",
     "team-hq": "Address",
-    "team-sm": "Social Media",
     "fill-all-fields": "Fill the form below to contact us",
-    "send-success": "Message sent successfully",
-    "touch-msg": "We will get in touch with you as soon as possible!"
+    "cta-text": "Have a question or want to partner with us?",
+    "email-button": "Send us an Email"
   },
   "team-page": {
     "title": "Meet the NFS Team!",

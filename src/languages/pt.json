@@ -586,19 +586,11 @@
 
   "contacts-page": {
     "page-title": "Contactos",
-    "form-email": "Email",
-    "form-name": "Nome",
-    "form-subject": "Nome",
-    "form-message": "Mensagem",
-    "form-send": "Enviar",
-    "form-title": "Contacte - nos",
     "team-email": "Email",
     "cr-email": "Email Empresarial",
     "team-hq": "Morada",
-    "team-sm": "Redes Socias",
-    "fill-all-fields": "Preencha o formulário abaixo para nos contactar.",
-    "send-success": "Mensagem enviada com sucesso!",
-    "touch-msg": "Entraremos em contacto consigo o mais rápido possível."
+    "cta-text": "Tem alguma questão ou quer ser nosso parceiro?",
+    "email-button": "Envie-nos um email"
   },
 
   "team-page": {

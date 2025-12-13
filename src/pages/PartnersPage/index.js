@@ -94,7 +94,7 @@ const Partners = () => {
           <div className="cta-section">
             <h3>{t("partners-page.interested-title") || "Interested in partnering?"}</h3>
             <p>{t("partners-page.interested-desc") || "Get in touch with us to discuss partnership opportunities"}</p>
-            <a href="mailto:joao.lourenco1000@gmail.com" className="cta-button">
+            <a href="mailto:formulastudent@ae.fct.unl.pt" className="cta-button">
               {t("partners-page.contact-button") || "Contact Us"}
             </a>
           </div>
