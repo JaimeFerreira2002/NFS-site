@@ -1,6 +1,6 @@
 // PartnerPage.js
 import React, { useEffect, useState } from 'react';
-import PartnersData from "../../pages/PartnersPage/PartnersList.js";
+import PartnersData from "./PartnersList.js";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 import PageHeader from "../../components/PageHeader/index.js";
@@ -14,8 +14,12 @@ const Partners = () => {
   useEffect(() => {
     const imagesURLs = [];
 
-    for (const tier in PartnersData.fenixevo) {
-      PartnersData.fenixevo[tier].forEach(partner => {
+    // Load gallery images
+    carImages.forEach(url => imagesURLs.push(url));
+
+    // Load partner logos
+    for (const tier in PartnersData.allPartners) {
+      PartnersData.allPartners[tier].forEach(partner => {
         imagesURLs.push(partner.imageUrl);
       });
     }
@@ -49,23 +53,23 @@ const Partners = () => {
     }
   ];
 
-  // Placeholder images - replace with actual car/garage images
+  // Limited to 6 images for gallery
   const carImages = [
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix3.jpg?alt=media&token=877adc35-2178-4c26-a755-f27c0ec874cd", 
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix8.JPG?alt=media&token=ac0f6680-3ef4-484d-beaf-2a435da52d24",
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07602.JPG?alt=media&token=414e080b-fd0a-497e-af2b-999b50c233b5",
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07686.JPG?alt=media&token=0f431637-cc20-430c-a6af-43ac2c7b1c35",
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07746.JPG?alt=media&token=f9ee4f94-f0af-446d-b929-bc6fee483322",
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07762.JPG?alt=media&token=5132bc8e-84bd-40e3-ad61-90084ee374f8",
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-42.jpg?alt=media&token=711852f4-b883-48b3-bf3c-b1c5d3606021",
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-65.jpg?alt=media&token=340a1b04-c1da-43de-8316-005c7c3d77ab",
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDay1-81.jpg?alt=media&token=fc8912ec-2106-4142-8995-65d3f217189d",
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix1.jpg?alt=media&token=286ed59a-f5a6-43c0-858d-d7dbcbf2189a",
     "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix2.jpg?alt=media&token=31e035f2-69bf-48fc-b490-1748ecc159b2",
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix4.jpg?alt=media&token=b585f6d2-8124-4cdf-9081-27411725a28a", 
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix5.jpg?alt=media&token=cd785639-bf4b-4d38-8d2d-29bd78e32ee6", 
-    "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix6.jpg?alt=media&token=87d9a2a3-005c-4128-a034-879bab96e453"
   ];
+
+  const tierTitles = {
+    institutional: t("partners-page.tier-institutional") || "Institutional Partners",
+    gold: t("partners-page.tier-gold") || "Gold Partners",
+    silver: t("partners-page.tier-silver") || "Silver Partners",
+    bronze: t("partners-page.tier-bronze") || "Bronze Partners",
+    software: t("partners-page.tier-software") || "Software Partners"
+  };
 
   return (
     <div className="partners-page">
@@ -76,6 +80,7 @@ const Partners = () => {
         gradientColor={"#19a3ff"}
       />
       
+      {/* Top Grid: Benefits and Gallery */}
       <div className="partners-grid-container">
         {/* Column 1: Partnership Perks */}
         <div className="partners-column perks-column">
@@ -100,7 +105,7 @@ const Partners = () => {
           </div>
         </div>
 
-        {/* Column 2 & 3: Car and Garage Images */}
+        {/* Column 2: Car and Garage Images (6 photos) */}
         <div className="partners-column images-column">
           <div className="images-grid">
             {carImages.map((image, index) => (
@@ -113,6 +118,34 @@ const Partners = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Partners List Section */}
+      <div className="partners-list-section">
+        <h2 className="partners-main-title">{t("partners-page.our-partners") || "Our Partners"}</h2>
+        
+        {Object.entries(PartnersData.allPartners).map(([tier, partners]) => (
+          <div key={tier} className="tier-section">
+            <h3 className="tier-title">{tierTitles[tier]}</h3>
+            <div className={`partners-tier-grid ${tier}`}>
+              {partners.map((partner, index) => (
+                <a 
+                  key={index} 
+                  href={partner.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="partner-logo-card"
+                >
+                  <img 
+                    src={partner.imageUrl} 
+                    alt={partner.title}
+                    title={partner.title}
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

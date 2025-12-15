@@ -9,27 +9,31 @@
   min-height: 100svh;
 }
 
-/* Grid Container - 3 columns */
+/* Top Grid Container - Benefits and Gallery */
 .partners-grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  padding: 4% 6%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 1% 6%;
   max-width: 100%;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 /* Column Styles */
 .partners-column {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 .perks-column {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 2rem;
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 
 .column-title {
@@ -48,7 +52,7 @@
   height: 4px;
   background: #19a3ff;
   margin: 1rem auto 0;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 /* Perks List */
@@ -56,7 +60,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  flex: 1;
 }
 
 .perk-item {
@@ -64,7 +68,7 @@
   gap: 1rem;
   padding: 1.5rem;
   background: white;
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -72,19 +76,6 @@
 .perk-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-}
-
-.perk-icon {
-  font-size: 2.5rem;
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #19a3ff 0%, #1d8ad6 100%);
-  border-radius: 3px;
-  box-shadow: 0 4px 8px rgba(25, 163, 255, 0.3);
 }
 
 .perk-content {
@@ -115,9 +106,10 @@
 .cta-section {
   background-color: #007acc;
   padding: 2rem;
-  border-radius: 3px;
+  border-radius: 5px;
   text-align: center;
   color: white;
+  margin-top: 0;
 }
 
 .cta-section h3 {
@@ -153,24 +145,29 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Images Column (spans 2 columns) */
+/* Images Column - 6 photos in 2x3 grid */
 .images-column {
-  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
 }
 
 .images-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 1.5rem;
   height: 100%;
+  flex: 1;
 }
 
 .image-item {
-  border-radius: 3px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: #f0f0f0;
+  height: 100%;
 }
 
 .image-item:hover {
@@ -183,7 +180,98 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  min-height: 250px;
+}
+
+/* Partners List Section */
+.partners-list-section {
+  padding: 1.5rem 6%;
+  background-color: #1d1d1d;
+}
+
+.partners-main-title {
+  font-family: 'Horizon', sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.partners-main-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #19a3ff;
+  margin: 1rem auto 0;
+  border-radius: 5px;
+}
+
+.tier-section {
+  margin-bottom: 4rem;
+}
+
+.tier-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #19a3ff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Partner Logo Grids - Different sizes based on tier */
+.partners-tier-grid {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.partners-tier-grid.institutional {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.partners-tier-grid.gold {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.partners-tier-grid.silver {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.partners-tier-grid.bronze {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.partners-tier-grid.software {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.partner-logo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  text-decoration: none;
+}
+
+.partner-logo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.partner-logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 /* Responsive Design */
@@ -193,12 +281,15 @@
     gap: 2rem;
   }
 
-  .images-column {
-    grid-column: span 1;
+  .partners-tier-grid.institutional,
+  .partners-tier-grid.gold {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
-  .images-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .partners-tier-grid.silver,
+  .partners-tier-grid.bronze,
+  .partners-tier-grid.software {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
 
@@ -217,16 +308,7 @@
   }
 
   .perk-item {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
     padding: 1rem;
-  }
-
-  .perk-icon {
-    font-size: 2rem;
-    width: 50px;
-    height: 50px;
   }
 
   .perk-title {
@@ -239,11 +321,12 @@
 
   .images-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 1rem;
   }
 
-  .image-item img {
-    min-height: 200px;
+  .image-item {
+    height: 200px;
   }
 
   .cta-section {
@@ -252,5 +335,31 @@
 
   .cta-section h3 {
     font-size: 1.25rem;
+  }
+
+  .partners-list-section {
+    padding: 3rem 4%;
+  }
+
+  .partners-main-title {
+    font-size: 2rem;
+  }
+
+  .tier-title {
+    font-size: 1.5rem;
+  }
+
+  .partners-tier-grid.institutional,
+  .partners-tier-grid.gold,
+  .partners-tier-grid.silver,
+  .partners-tier-grid.bronze,
+  .partners-tier-grid.software {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .partner-logo-card {
+    height: 100px;
+    padding: 1rem;
   }
 }

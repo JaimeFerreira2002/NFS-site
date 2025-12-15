@@ -20,32 +20,28 @@
   },
 
   "partners-page": {
-    "page-title": "Our Partners",
-    "page-subtitle": "Supporting our team through every step",
-    
+    "page-title": "Partners",
+    "page-subtitle": "Building the future together with industry-leading companies",
     "perks-title": "Why Partner With Us?",
-    
     "perk-visibility-title": "Brand Visibility",
     "perk-visibility-desc": "Your logo prominently displayed on our car and in the garage during competitions and events",
-    
     "perk-exposure-title": "Media Exposure",
     "perk-exposure-desc": "Featured in our social media, website, and press releases reaching thousands of engineering enthusiasts",
-    
     "perk-network-title": "Networking",
     "perk-network-desc": "Direct connection with talented engineering students and access to recruitment opportunities",
-    
     "perk-innovation-title": "Innovation Partnership",
     "perk-innovation-desc": "Collaborate on cutting-edge automotive technology and sustainable mobility solutions",
-    
-    "perk-reports-title": "Regular Updates",
-    "perk-reports-desc": "Receive progress reports, technical insights, and exclusive behind-the-scenes content",
-    
     "perk-education-title": "Educational Impact",
     "perk-education-desc": "Support the next generation of engineers while enhancing your corporate social responsibility",
-    
     "interested-title": "Interested in partnering?",
     "interested-desc": "Get in touch with us to discuss partnership opportunities",
-    "contact-button": "Contact Us"
+    "contact-button": "Contact Us",
+    "our-partners": "Our Partners",
+    "tier-institutional": "Institutional",
+    "tier-gold": "Gold",
+    "tier-silver": "Silver",
+    "tier-bronze": "Bronze",
+    "tier-software": "Software"
   },
 
   "novaev01-page": {
