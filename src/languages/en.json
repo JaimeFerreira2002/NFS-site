@@ -163,7 +163,7 @@
       "teams-names": {
         "board": "Board",
         "aerodynamics": "Aerodynamics",
-        "chassis&suspension": "Chassis & Suspension",
+        "chassis": "Chassis",
         "vehicle-dynamics": "Vehicle Dynamics",
         "steering&ergonomics": "Steering & Ergonomics",
         "electronics": "Electronics",
@@ -173,13 +173,14 @@
         "marketing": "Marketing",
         "corporate-relations": "Corporate Relations",
         "logistics": "Logistics",
-        "finances": "Finance"
+        "finances": "Finance",
+        "suspension": "Suspension"
       },
       
       "roles": {
         "team-leader": "Team Leader",
         "technical-director": "Technical Director",
-        "team-leader&project-manager": "Team Leader & Project Manager",
+        "project-manager": "Project Manager",
         "technical-director&team-leader": "Technical Director & Team Leader",
         "bsd": "Business Strategy Director",
         "dep-leader": "Department Leader",
@@ -317,7 +318,7 @@
   "teams-names": {
     "board": "Board",
     "aerodynamics": "Aerodynamics",
-    "chassis&suspension": "Chassis & Suspension",
+    "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
     "steering&ergonomics": "Steering & Ergonomics",
     "electronics": "Electronics",
@@ -325,13 +326,15 @@
     "marketing": "Marketing",
     "corporate-relations": "Corporate Relations",
     "logistics": "Logistics",
-    "finances": "Finance"
+    "finances": "Finance",
+    "suspension": "Suspension"
+
   },
+
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Technical Director",
-    "team-leader&project-manager": "Team Leader & Project Manager",
-    "technical-director&team-leader": "Technical Director & Team Leader",
+    "project-manager": "Project Manager",
     "bsd": "Business & Strategy Director",
     "dep-leader": "Department Leader",
     "member": "Member"
@@ -455,7 +458,7 @@
   "teams-names": {
     "board": "Board",
     "aerodynamics": "Aerodynamics",
-    "chassis&suspension": "Chassis & Suspension",
+    "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
     "steering&ergonomics": "Steering & Ergonomics",
     "electronics": "Electronics",
@@ -463,14 +466,16 @@
     "marketing": "Marketing",
     "corporate-relations": "Corporate Relations",
     "logistics": "Logistics",
-    "finances": "Finance"
+    "finances": "Finance",
+    "suspension": "Suspension"
+
   },
+
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Technical Director",
-    "team-leader&project-manager": "Team Leader & Project Manager",
-    "technical-director&team-leader": "Technical Director & Team Leader",
-    "bsd": "Business & Strategy Director",
+    "project-manager": "Project Manager",
+    "bsd": "Strategy Director",
     "dep-leader": "Coordinator",
     "member": "Member"
   },

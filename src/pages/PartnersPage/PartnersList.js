@@ -361,7 +361,7 @@ const PartnersData = {}
     "main": [
       {
         title: 'Reitoria',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2FnovaRouteZero.png?alt=media&token=3d68423a-233c-4172-91f6-6e4722ee23d7', // Add your image URL
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FInstitucional%2Froutezero_PT_negativo_stacked.svg?alt=media&token=d5855863-9472-48ed-8a3a-0235d74fa64b', // Add your image URL
         link: 'https://www.unl.pt/',
         tier: 'main'
       }

@@ -94,6 +94,8 @@ const NOVAEV01Page = () => {
   const ev01Partners = PartnersData.ev01 || {};
   const mainSponsors = ev01Partners.main || [];
   const goldSponsors = ev01Partners.gold || [];
+  
+  const ev01Team = TeamListData.novaev01 || [];
 
   return (
     <div className="fenixevo">
@@ -128,23 +130,7 @@ const NOVAEV01Page = () => {
       )}
 
       {/* GOLD SPONSORS SECTION */}
-      {goldSponsors.length > 0 && (
-        <div className="gold-sponsors-section">
-          <div className="gold-sponsors-grid">
-            {goldSponsors.map((sponsor) => (
-              <a
-                key={sponsor.title}
-                href={sponsor.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gold-sponsor-card"
-              >
-                <img src={sponsor.imageUrl} alt={sponsor.title} />
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
+
 
       <img
         src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev1.jpg?alt=media&token=74ae2ddd-46de-4263-8d31-9b7e24d11de1"
@@ -330,7 +316,7 @@ const NOVAEV01Page = () => {
 
         {/* TEAM ACCORDION */}
         <div className="team-accordion-container">
-          {TeamListData.map((department, index) => {
+          {ev01Team.map((department, index) => {
             const isOpen = openTeamAccordion === index;
             return (
               <div key={index} className="team-accordion-item">

@@ -185,13 +185,17 @@
 /* Partners List Section */
 .partners-list-section {
   padding: 1.5rem 6%;
-  background-color: #1d1d1d;
+  background-color: white;
 }
 
 .partners-main-title {
-  font-family: 'Horizon', sans-serif;
+  font-family: "Horizon";
+  background-image: linear-gradient(to right, #286196, #70a0ff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 2.5rem;
-  color: #ffffff;
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
