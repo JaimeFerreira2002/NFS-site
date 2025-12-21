@@ -13,6 +13,7 @@ import ImageGallery from "./components/CompetitionsRow/index.js";
 
 //photos
 const photos = [
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix3.jpg?alt=media&token=877adc35-2178-4c26-a755-f27c0ec874cd", 
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07602.JPG?alt=media&token=414e080b-fd0a-497e-af2b-999b50c233b5",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07686.JPG?alt=media&token=0f431637-cc20-430c-a6af-43ac2c7b1c35",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FDSC07746.JPG?alt=media&token=f9ee4f94-f0af-446d-b929-bc6fee483322",
@@ -25,16 +26,19 @@ const photos = [
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0035.jpg?alt=media&token=4f4df9ab-aacd-4385-80e9-9abbb7fd2cda",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0036.jpg?alt=media&token=9a945329-d091-41f7-a68f-4259d36cd395",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FIMG-20240924-WA0038.jpg?alt=media&token=f9320ed2-814c-418c-9bf7-234ca7d6aaaa",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix1.jpg?alt=media&token=286ed59a-f5a6-43c0-858d-d7dbcbf2189a",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix2.jpg?alt=media&token=31e035f2-69bf-48fc-b490-1748ecc159b2",
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix4.jpg?alt=media&token=b585f6d2-8124-4cdf-9081-27411725a28a", 
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix5.jpg?alt=media&token=cd785639-bf4b-4d38-8d2d-29bd78e32ee6", 
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix6.jpg?alt=media&token=87d9a2a3-005c-4128-a034-879bab96e453", 
+  "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix7.jpg?alt=media&token=8cfb8101-ceef-43f6-94d3-540114658f3c",
 ];
-
-const colorGradient = {
-  backgroundImage: "linear-gradient(to right, #286196, #70a0ff)",
-};
 
 const FenixEvoPage = () => {
   const { t } = useTranslation();
   const ref = useRef();
   const [openAccordion, setOpenAccordion] = useState(null);
+  const [openTeamAccordion, setOpenTeamAccordion] = useState(null);
 
   ///////////////ANIMATIONS///////////////////////////
 
@@ -83,6 +87,7 @@ const FenixEvoPage = () => {
     "length",
     "top-speed",
   ];
+  
   const powertrainKeys = ["engine", "power", "max-rpm", "gear-box"];
   const steeringSuspensionKeys = ["type", "tyres", "breaking"];
   const chassisKeys = ["structure", "weight-dist"];
@@ -92,7 +97,14 @@ const FenixEvoPage = () => {
     setOpenAccordion(openAccordion === category ? null : category);
   };
 
-  const goldSponsors = PartnersData.gold || [];
+  const toggleTeamAccordion = (index) => {
+    setOpenTeamAccordion(openTeamAccordion === index ? null : index);
+  };
+
+  // Access fenixevo-specific sponsors
+  const fenixevoPartners = PartnersData.fenixevo || {};
+  const goldSponsors = fenixevoPartners.gold || [];
+  const fenixevoTeam = TeamListData.fsfenixevo || [];
 
   return (
     <div className="fenixevo">
@@ -203,8 +215,9 @@ const FenixEvoPage = () => {
           <h3>FSPT Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Design: P2</li>
-            <li>Cost: P2</li>
+            <li>Engeneering Design: P2</li>
+            <li>Cost & Manufacturing: P2</li>
+            <li>Business Plan Presentation: 1st Place</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
@@ -215,7 +228,6 @@ const FenixEvoPage = () => {
           </ul>
           <h5>Other:</h5>
           <ul>
-            <li>Business Plan: 1st Place</li>
             <li>Special Awards: Best social media presence</li>
           </ul>
         </div>
@@ -224,16 +236,29 @@ const FenixEvoPage = () => {
           <h3>FSA Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Design: P18</li>
-            <li>Cost: P17</li>
+            <li>Engeneering Design: P18</li>
+            <li>Cost & Manufacturing: P17</li>
+            <li>Business Plan Presentation: Did not compete</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
             <li>Did not complete scrutineering</li>
           </ul>
-          <h5>Other:</h5>
+        </div>
+        <div className="competition-results-column">
+          <h3>FSS Results</h3>
+          <h5>Static Events</h5>
           <ul>
-            <li>Business Plan: Did not compete</li>
+            <li>Engeneering Design: P5</li>
+            <li>Cost & Manufacturing: P5</li>
+            <li>Business Plan Presentation: P2</li>
+          </ul>
+          <h5>Dynamic Events</h5>
+          <ul>
+            <li>Aceleration: P6</li>
+            <li>Skidpad: DNS</li>
+            <li>Autocross: P8</li>
+            <li>Endurance: DNF</li>
           </ul>
         </div>
       </div>
@@ -254,7 +279,7 @@ const FenixEvoPage = () => {
         </div>
 
         <div className="accordion-container">
-          {Object.keys(PartnersData).map((category) => {
+          {Object.keys(fenixevoPartners).map((category) => {
             const isOpen = openAccordion === category;
             return (
               <div key={category} className="accordion-item">
@@ -262,7 +287,7 @@ const FenixEvoPage = () => {
                   className={`accordion-header ${isOpen ? 'active' : ''}`}
                   onClick={() => toggleAccordion(category)}
                 >
-                  <span>{t(`partners-page.${category}`).toUpperCase()}</span>
+                  <span>{t(`fsfenixevo-page.sponsors.${category}`).toUpperCase()}</span>
                   <span className="accordion-icon">
                     {isOpen ? '−' : '+'}
                   </span>
@@ -275,7 +300,7 @@ const FenixEvoPage = () => {
                   }}
                 >
                   <div className="sponsors-grid">
-                    {PartnersData[category].map((sponsor) => (
+                    {fenixevoPartners[category].map((sponsor) => (
                       <a
                         key={sponsor.title}
                         href={sponsor.link}
@@ -303,7 +328,7 @@ const FenixEvoPage = () => {
         <div className="team-number-container">
           <div className="team-number-row">
             <div className="numbers members">
-              <div className="numbers-digits members">60</div>
+              <div className="numbers-digits members">63</div>
               <div className="numbers-title members">
                 {t(`fsfenix-page.team-container.members`)}
               </div>
@@ -325,21 +350,39 @@ const FenixEvoPage = () => {
           </div>
         </div>
 
-        <div ref={teamRef}>
-          <motion.div className="fenix-team-animation" animate={teamController}>
-            {TeamListData.map((department, index) => (
-              <div key={index} className="fenix-department-container">
-                <h2 style={colorGradient} className="fenix-department-title">
-                  {t(`fsfenixevo-page.teams-names.${department.title}`)}
-                </h2>
-                <div className="fenix-team-members">
-                  {department.members.map((member, memberIndex) => (
-                    <MemberCard key={memberIndex} {...member} />
-                  ))}
+        {/* TEAM ACCORDION */}
+        <div className="team-accordion-container">
+          {fenixevoTeam.map((department, index) => {
+            const isOpen = openTeamAccordion === index;
+            return (
+              <div key={index} className="team-accordion-item">
+                <button
+                  className={`team-accordion-header ${isOpen ? 'active' : ''}`}
+                  onClick={() => toggleTeamAccordion(index)}
+                >
+                  <span className="team-department-title">
+                    {t(`fsfenixevo-page.teams-names.${department.title}`)}
+                  </span>
+                  <span className="accordion-icon">
+                    {isOpen ? '−' : '+'}
+                  </span>
+                </button>
+                <div 
+                  className={`team-accordion-content ${isOpen ? 'open' : ''}`}
+                  style={{
+                    maxHeight: isOpen ? '5000px' : '0',
+                    padding: isOpen ? '30px' : '0'
+                  }}
+                >
+                  <div className="fenix-team-members">
+                    {department.members.map((member, memberIndex) => (
+                      <MemberCard key={memberIndex} {...member} />
+                    ))}
+                  </div>
                 </div>
               </div>
-            ))}
-          </motion.div>
+            );
+          })}
         </div>
       </div>
     </div>

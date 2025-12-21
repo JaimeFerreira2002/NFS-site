@@ -35,12 +35,7 @@ const AboutUsPage = () => {
   var iconColor = "#19a3ff";
   return (
     <div className="page-about">
-      <PageHeader
-        title={t("about-page.about-us")}
-        subtitle={t("about-page.about-us-desc")}
-        gradientColor={"#19a3ff"}
-        height={"20%"}
-      />
+
       <div className="section">
         <div className="first-section">
           <div className="first-section-image-overlay" />

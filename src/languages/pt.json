@@ -12,7 +12,6 @@
     "artigos" : "Artigos"
   },
   
-
   "garage-page": {
     "page-title": "Garagem",
     "page-subtitle": "Descobre os nossos carros",
@@ -22,88 +21,186 @@
 
   "partners-page": {
     "page-title": "Parceiros",
-    "page-subtitle": "Parceiros oficiais do Nova Formula Student",
-    "institutional": "Institucional",
-    "bronze": "Bronze & Parceiros",
-    "silver": "Silver",
-    "gold": "Gold",
-    "software" : "Software"
+    "page-subtitle": "Construindo o futuro em conjunto com empresas líderes da indústria",
+    "perks-title": "Porquê Ser Nosso Parceiro?",
+    "perk-visibility-title": "Visibilidade da Marca",
+    "perk-visibility-desc": "O seu logótipo exibido com destaque no nosso carro e na garagem durante competições e eventos",
+    "perk-exposure-title": "Exposição Mediática",
+    "perk-exposure-desc": "Destaque nas nossas redes sociais, website e comunicados de imprensa, alcançando milhares de entusiastas de engenharia",
+    "perk-network-title": "Networking",
+    "perk-network-desc": "Conexão direta com estudantes de engenharia talentosos e acesso a oportunidades de recrutamento",
+    "perk-innovation-title": "Parceria de Inovação",
+    "perk-innovation-desc": "Colabore em tecnologia automóvel de ponta e soluções de mobilidade sustentável",
+    "perk-education-title": "Impacto Educacional",
+    "perk-education-desc": "Apoie a próxima geração de engenheiros enquanto melhora a sua responsabilidade social corporativa",
+    "interested-title": "Interessado em ser parceiro?",
+    "interested-desc": "Entre em contacto connosco para discutir oportunidades de parceria",
+    "contact-button": "Contacte-nos",
+    "our-partners": "Os Nossos Parceiros",
+    "tier-institutional": "Institucionais",
+    "tier-gold": "Gold",
+    "tier-silver": "Silver",
+    "tier-bronze": "Bronze",
+    "tier-software": "Software"
   },
 
-  "fsnovaev01-page": {
-    "page-title": "NOVA EV 01",
-    "page-subtitle": "O NOVA EV 01 é o primeiro carro elétrico da equipa",
-    "specs-title" : "Especificações Técnicas",
-    "team-title" : "A Equipa",
-    "technical-specs": {
-      "general": {
-         "title" : "Geral",
+"fsnovaev01-page": {
+  "page-title": "NOVA EV01",
+  "page-subtitle": "O primeiro protótipo elétrico da NOVA Formula Student",
+  "with-help-from": "Com o apoio de",
+  "specs-title": "Especificações Técnicas",
+  "team-title": "A Equipa",
+  "gallery": "Galeria",
+  "sponsors-title": "Patrocinadores",
+  
+  "specs": {
+    "click-more": "Clique para saber mais →",
+    "technical-specs": "Especificações Técnicas"
+  },
 
-          "weight" : "Peso",
-          "weight-value": "220 Kg",
+  "technical-specs": {
+    "general": {
+      "title": "Geral",
+      "description": "As dimensões e características do NOVA EV01 foram cuidadosamente otimizadas para proporcionar o melhor equilíbrio entre desempenho aerodinâmico e manobrabilidade. Com um centro de gravidade baixo e construção leve, o carro oferece uma resposta ágil e precisa em todas as condições de pista.",
+      
+      "weight": "Peso esperado",
+      "weight-value": "256 kg",
+      
+      "wheel-base": "Distância entre eixos",
+      "wheel-base-value": "1560 mm",
+      
+      "width": "Largura da via",
+      "width-value": "1424 mm",
+      
+      "height-cg": "Altura CG esperada",
+      "height-cg-value": "260 mm",
+      
+      "length": "Comprimento",
+      "length-value": "3246 mm",
+      
+      "top-speed": "Velocidade Máxima esperada",
+      "top-speed-value": "130 km/h"
+    },
+    
+    "powertrain": {
+      "title": "Motor",
+      "description": "O coração do NOVA EV01 é um motor elétrico EMRAX 228 MV refrigerado a líquido, oferecendo potência e eficiência impressionantes. O sistema de tração traseira com um motor e diferencial proporciona excelente tração e controlo, atingindo 6500 RPM.",
+      
+      "motor": "Motor",
+      "motor-value": "EMRAX 228 MV Refrigerado a Líquido",
+      
+      "power": "Potência",
+      "power-value": "85 cv",
+      
+      "max-rpm": "Max RPM",
+      "max-rpm-value": "6500",
+      
+      "voltage": "Tensão máxima",
+      "voltage-value": "315 V",
+      
+      "battery": "Energia máxima",
+      "battery-value": "7.9 kWh",
+      
+      "transmission": "Tipo de transmissão",
+      "transmission-value": "Tração traseira com 1 motor com diferencial"
+    },
+    
+    "steering&suspension": {
+      "title": "Direção & Suspensão",
+      "description": "O sistema de suspensão Double Wishbone com Push-Rod e barras anti-rolamento proporciona controlo superior e feedback preciso ao piloto. Os pneus Hoosier de alta performance garantem aderência máxima e desempenho consistente, mesmo em condições extremas de competição.",
+      
+      "type": "Geometria",
+      "type-value": "Double Wishbone com Push-Rod e barra anti-rolamento (frente e traseira)",
+      
+      "tyres": "Pneus",
+      "tyres-value": "Hoosier 205/470 – R13"
+    },
+    
+    "chassis": {
+      "title": "Chassis",
+      "description": "O chassis spaceframe tubular de aço com soldadura a tungsténio oferece uma combinação ótima de rigidez torsional e leveza com apenas 41 kg. O volante em fibra de carbono forjada à compressão proporciona excelente aderência e reduz o peso numa área crítica.",
+      
+      "structure": "Tipo de estrutura",
+      "structure-value": "Spaceframe tubular de aço soldado a tungsténio",
+      
+      "weight": "Peso do chassis",
+      "weight-value": "41 kg",
+      
+      "steering-wheel": "Volante",
+      "steering-wheel-value": "Fibra de carbono forjada à compressão"
+    },
+    
+    "aero": {
+      "title": "Aerodinâmica",
+      "description": "A aerodinâmica do NOVA EV01 foi desenvolvida para maximizar a downforce e otimizar o arrasto. A carenagem em fibra de carbono com difusores laterais e traseiro não só proporciona leveza e rigidez estrutural, mas também foi moldada através de simulações CFD para otimizar o fluxo de ar, melhorando a estabilidade em alta velocidade e a eficiência em curva.",
+      
+      "package": "Pacote Aerodinâmico",
+      "package-value": "Bodywork com difusores laterais e traseiro",
+      
+      "cl": "Cl esperado",
+      "cl-value": "-1.2",
+      
+      "cd": "Cd esperado",
+      "cd-value": "0.8",
+      
+      "frontal-area": "Área frontal",
+      "frontal-area-value": "0.85 m²",
+      
+      "manufacturing": "Fabrico",
+      "manufacturing-value": "Fibra de carbono wet lay-up curada a 60°C em vácuo"
+    }
+  },
 
-          "wheel-base" : "Distância entre eixos",
-          "wheel-base-value": "1585 mm",
+  "competitions": {
+    "title": "Competições",
+    "subtitle": "O NOVA EV01 competiu no evento Formula Student Portugal!",
+    "fspt": {
+      "title": "FORMULA STUDENT PORTUGAL",
+      "date": "27 de julho a 1 de Agosto 2025",
+      "location": "Castelo Branco Kart Track",
+      "class": "Class 1"
+    }
+  },
 
-          "width" : "Largura da via",
-          "width-value": "1455 mm",
-
-          "height" : "Altura",
-          "height-value": "1176 mm",
-
-          "height-cg" : "Altura CG",
-          "height-cg-value": "299 mm",
-
-          "length": "Comprimento",
-          "length-value": "2811 mm",
-
-          "top-speed" : "Velocidade Máxima",
-          "top-speed-value": "140 Km/h"  
-      },
-
-      "powertrain": {
-         "title" : "Motor",
-
-          "motor" : "Motor",
-          "motor-value": "QS 205 10kW Hub Motor",
-
-          "battery" : "Bateria",
-          "battery-value": "Lithium-Ion 96V 20kWh",
-
-          "controller" : "Controlador",
-          "controller-value": "Kelly KLS7245H"
-      },
-
-      "steering&suspension": {
-          "title" : "Direção & Suspensão",
-
-          "type" : "Tipo",
-          "type-value": " Double Wishbone com Push-Rod",
-
-          "tyres" : "Pneus",
-          "tyres-value": "Hoosier 205/470 – R13",
-
-          "breaking" : "Travagem",
-          "breaking-value": "x4 Pinças Pistão AP Racing"  
-      },
-
-      "chassis": {
-          "title" : "Chassis",
-
-          "structure" : "Estrutura",
-          "structure-value": ": Tubular com soldadura a tungsténio ",
-
-          "weight-dist" : "Distribuição de Peso",
-          "weight-dist-value": "45F 55R"
-
-      },
-
-      "aero": {
-          "title" : "Aerodinâmica",
-
-          "bodywork": "Carenagem",
-          "bodywork-value":"Fibra de Carbono"
-      }
+  "sponsors": {
+    "main": "Main",
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze",
+    "institutional": "Institucional"
+  },
+  
+  "teams-names": {
+    "board": "Direção",
+    "aerodynamics": "Aerodinâmica",
+    "chassis": "Chassis",
+    "vehicle-dynamics": "Dinâmica de Veículo",
+    "electronics": "Eletrónica e Software",
+    "driverless": "Driverless",
+    "e-powertrain": "Powertrain Elétrico",
+    "m-powertrain": "Powertrain Mecânico",
+    "marketing": "Marketing",
+    "production": "Produção",
+    "sponsoring": "Sponsoring",
+    "logistics": "Logística",
+    "cost": "Custo",
+    "suspension": "Suspensão"
+  },
+  
+  "roles": {
+    "team-leader": "Team Leader",
+    "technical-director": "Diretor Técnico",
+    "team-leader&project-manager": "Team Leader & Diretor de Projeto",
+    "technical-director&team-leader": "Diretor Técnico & Team Leader",
+    "bsd": "Diretor de Estratégia e Negócio",
+    "dep-leader": "Coordenador",
+    "member": "Membro"
+  },
+  
+  "team-container": {
+    "members": "Membros",
+    "degrees": "Cursos",
+    "universities": "Faculdades"
   }
 },
 
@@ -210,22 +307,39 @@
       "date": "21 a 25 de Julho 2024",
       "location": "RedBull Ring",
       "class": "Classe 1"
+    },
+    "fss": {
+      "title": "FORMULA STUDENT ESPANHA",
+      "date": "4 a 10 de Agosto 2025",
+      "location": "Circuit de Barcelona - Catalunya",
+      "class": "Classe 1"
     }
   },
+
+  "sponsors": {
+      "gold": "Gold",
+      "silver": "Silver",
+      "bronze": "Bronze",
+      "institutional": "Institucional",
+      "supporters": "Supporters",
+      "software": "Software"
+    },
   
   "teams-names": {
     "board": "Direção",
     "aerodynamics": "Aerodinâmica",
-    "chassis&suspension": "Chassis e Suspensão",
+    "chassis": "Chassis",
     "vehicle-dynamics": "Dinâmica de Veículo",
-    "steering&ergonomics": "Direção e Ergonómica ",
-    "electronics": "Eletrónica",
-    "powertrain": "Motor",
+    "electronics": "Eletrónica e Software",
+    "powertrain": "Powertrain",
     "marketing": "Marketing",
-    "corporate-relations": "Relações Empresariais",
     "logistics": "Logística",
-    "finances": "Finanças"
+    "suspension": "Suspensão",
+    "production": "Produção",
+    "cost": "Custo",
+    "sponsoring": "Sponsoring"
   },
+
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Diretor Técnico",
@@ -361,15 +475,15 @@
     "marketing": "Marketing",
     "corporate-relations": "Relações Empresariais",
     "logistics": "Logística",
-    "finances": "Finanças"
+    "finances": "Finanças",
+    "suspension": "Suspensão"
   },
   
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Diretor Técnico",
-    "team-leader&project-manager": "Team Leader & Diretor de Projeto",
-    "technical-director&team-leader": "Diretor Técnico & Team Leader",
-    "bsd": "Diretor de Estratégia e Negócio",
+    "project-manager": "Diretor de Projeto",
+    "bsd": "Diretor de Estratégia",
     "dep-leader": "Coordenador",
     "member": "Membro"
   },
@@ -485,19 +599,11 @@
 
   "contacts-page": {
     "page-title": "Contactos",
-    "form-email": "Email",
-    "form-name": "Nome",
-    "form-subject": "Nome",
-    "form-message": "Mensagem",
-    "form-send": "Enviar",
-    "form-title": "Contacte - nos",
     "team-email": "Email",
     "cr-email": "Email Empresarial",
     "team-hq": "Morada",
-    "team-sm": "Redes Socias",
-    "fill-all-fields": "Preencha o formulário abaixo para nos contactar.",
-    "send-success": "Mensagem enviada com sucesso!",
-    "touch-msg": "Entraremos em contacto consigo o mais rápido possível."
+    "cta-text": "Tem alguma questão ou quer ser nosso parceiro?",
+    "email-button": "Envie-nos um email"
   },
 
   "team-page": {

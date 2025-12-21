@@ -64,6 +64,7 @@
   background-clip: text;
   color: transparent;
   margin-bottom: 1%;
+  padding-top: 1%;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -246,8 +247,8 @@
 .fenixevo-team-container {
   display: flex;
   flex-direction: column;
-  padding: 3%;
   justify-content: space-around;
+  margin-bottom: 2%;
 }
 
 .fenixevo-department-title {
@@ -271,8 +272,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;  /* Now aligns based on the top (images) */
   flex-wrap: wrap;
+  gap: 20px;  /* Added consistent spacing between cards */
 }
 
 .competition-results-container {
@@ -280,6 +282,7 @@
   justify-content: space-between; /* Ensure spacing between the two columns */
   gap: 20px; /* Space between the columns */
   margin-bottom: 20px; /* Space above the results */
+  margin-left: 3%;
 }
 
 .competition-results-column {
@@ -370,13 +373,13 @@
 /*///////// Sponsors Accordion Section /////////*/
 
 .sponsors-accordion-section {
-  background-color: #1d1d1d;
-  padding: 60px 40px;
+  padding: 3%;
 }
 
 .accordion-container {
-  max-width: 90%;
-  margin: 0 auto;
+  max-width: 2000px;
+  margin: 40px auto 0;
+  width: 95%;
 }
 
 .accordion-item {
@@ -403,7 +406,7 @@
 }
 
 .accordion-header:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #007acc;
   border-color: rgba(112, 160, 255, 0.3);
 }
 
@@ -433,6 +436,7 @@
 
 .accordion-content.open {
   opacity: 1;
+  background-color: white;
 }
 
 .sponsors-grid {
@@ -498,5 +502,136 @@
   
   .sponsor-logo-card {
     height: 120px;
+  }
+}
+
+
+/* MAIN SPONSORS SECTION */
+.main-sponsors-section {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #1d1d1d;
+  height: 300px;
+}
+
+.main-sponsors-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.main-sponsor-card {
+  background: #1d1d1d;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  height: 250px;
+}
+
+.main-sponsor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(112, 160, 255, 0.3);
+}
+
+.main-sponsor-card img {
+  width: 2000px;
+  max-height: 1500px;
+}
+
+/*///////// Team Accordion Section /////////*/
+
+.team-accordion-container {
+  max-width: 2000px;
+  width: 95%;
+  margin: 40px auto 0;
+}
+
+.team-accordion-item {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.team-accordion-header {
+  width: 100%;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-accordion-header:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(112, 160, 255, 0.3);
+}
+
+.team-accordion-header.active {
+  background: rgba(112, 160, 255, 0.1);
+  border-color: rgba(112, 160, 255, 0.5);
+}
+
+.team-accordion-header.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.team-department-title {
+  font-family: 'Horizon', sans-serif;
+  background-image: linear-gradient(to right, #286196, #70a0ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.2em;
+}
+
+.team-accordion-content {
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0;
+}
+
+.team-accordion-content.open {
+  opacity: 1;
+}
+
+@media (max-width: 968px) {
+  .team-accordion-container {
+    max-width: 1200px;
+    width: 92%;
+  }
+
+  .team-accordion-header {
+    padding: 15px 20px;
+    font-size: 1.1em;
+  }
+
+  .team-accordion-content.open {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-accordion-header {
+    font-size: 1em;
+    padding: 12px 15px;
   }
 }

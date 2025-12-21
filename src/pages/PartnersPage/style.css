@@ -1,167 +1,370 @@
+/* style.css */
+
 .partners-page {
   padding-top: 8vh;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: white;
+  background-color: #1d1d1d;
   min-height: 100svh;
 }
 
-.partner-row.tier-big {
-  /* Styles for tier BIG partners row */
-  display: flex;
-  flex-wrap: wrap;
-  /* Allow cards to wrap to the next line */
-  justify-content: space-evenly;
-  /* Evenly space the cards */
-  gap: 20px;
-  /* Space between cards */
-  padding: 1vh;
-  padding-bottom: 2%;
-  overflow-x: auto;
-}
-.partner-row.others {
-  display: flex;
-  flex-wrap: wrap;
-  /* Allow cards to wrap to the next line */
-  justify-content: space-evenly;
-  /* Evenly space the cards */
-  gap: 20px;
-  /* Space between cards */
-  padding: 1vh;
-  padding-bottom: 8%;
-  overflow-x: auto;
+/* Top Grid Container - Benefits and Gallery */
+.partners-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 1% 6%;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 2%;
+  align-items: stretch;
 }
 
-.partner-card h2 {
-  font-family: 'Horizon', sans-serif;
-}
-
-.partner-card button {
-  font-family: 'Raleway', sans-serif;
-  /* Example: Arial font */
-}
-
-
-.partner-list-name {
-  font-family: 'Raleway';
-  font-weight: bold;
-  margin-right: 10px;
-  flex-shrink: 0;
-  /* Prevent list names from shrinking */
-}
-
-.partner-list-container {
-  padding: 4%;
-}
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* Column Styles */
+.partners-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  min-height: 100%;
 }
 
-.partner-card {
-  width: clamp(200px, 20vw, 300px);
-  /* Adjust as needed */
-  height: width;
-  /* Adjust as needed */
-  padding: 0.5%;
-  align-items: center;
-  text-align: center; /* Optional: Center text horizontally within the card */
+.perks-column {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.column-title {
+  font-family: 'Horizon', sans-serif;
+  font-size: 2rem;
+  color: #1d1d1d;
+  margin-bottom: 2rem;
+  text-align: center;
   position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  overflow: hidden;
-  /* Optional for rounded corners */
 }
 
-@media (max-width: 768px) {
-  .partner-card {
-    width: 200px;
-    /* Smaller width for smaller screens */
-    height: 200px;
-    /* Smaller height for smaller screens */
+.column-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #19a3ff;
+  margin: 1rem auto 0;
+  border-radius: 5px;
+}
+
+/* Perks List */
+.perks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.perk-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perk-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.perk-content {
+  flex: 1;
+}
+
+.perk-title {
+  font-family: "Horizon";
+  background-image: linear-gradient(to right, #286196, #70a0ff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.perk-description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #007acc;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+
+.cta-section h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.cta-section p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.95;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: white;
+  color: #007acc;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Images Column - 6 photos in 2x3 grid */
+.images-column {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+  height: 100%;
+  flex: 1;
+}
+
+.image-item {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f0f0f0;
+  height: 100%;
+}
+
+.image-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Partners List Section */
+.partners-list-section {
+  padding: 1.5rem 6%;
+  background-color: white;
+}
+
+.partners-main-title {
+  font-family: "Horizon";
+  background-image: linear-gradient(to right, #286196, #70a0ff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.partners-main-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #19a3ff;
+  margin: 1rem auto 0;
+  border-radius: 5px;
+}
+
+.tier-section {
+  margin-bottom: 4rem;
+}
+
+.tier-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #19a3ff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Partner Logo Grids - Different sizes based on tier */
+.partners-tier-grid {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.partners-tier-grid.institutional {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.partners-tier-grid.gold {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.partners-tier-grid.silver {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.partners-tier-grid.bronze {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.partners-tier-grid.software {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.partner-logo-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  text-decoration: none;
+}
+
+.partner-logo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.partner-logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .partners-grid-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .partners-tier-grid.institutional,
+  .partners-tier-grid.gold {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .partners-tier-grid.silver,
+  .partners-tier-grid.bronze,
+  .partners-tier-grid.software {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
 
-.partner-card img {
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-  /* Adjusts image to cover the card */
-  border-radius: 20px;
-  /* Optional for rounded corners */
-  transition: transform 0.3s ease-in-out;
-  object-fit: contain;
-  /* Adjusts image to fit within the card */
-  background-color: #FFF;
-  /* Or any background color that matches your design */
-  transition: transform 0.3s ease-in-out;
-}
+@media (max-width: 768px) {
+  .partners-grid-container {
+    padding: 4%;
+    gap: 1.5rem;
+  }
 
-.partner-card:hover img {
-  opacity: 1.1;
-  /* Slightly reduce opacity on hover */
-  transform: scale(1.05);
-  /* Slightly smaller scale */
-}
+  .perks-column {
+    padding: 1.5rem;
+  }
 
+  .column-title {
+    font-size: 1.5rem;
+  }
 
+  .perk-item {
+    padding: 1rem;
+  }
 
-.overlay h2,
-.overlay p,
-.overlay button {
-  margin: 0;
-  padding: 10px;
-}
+  .perk-title {
+    font-size: 1.1rem;
+  }
 
-.overlay button {
-  background-color: #fff;
-  color: #000;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
-}
+  .perk-description {
+    font-size: 0.9rem;
+  }
 
+  .images-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
 
-.page-title-container {
-  padding: 2%;
-}
+  .image-item {
+    height: 200px;
+  }
 
-.title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-}
+  .cta-section {
+    padding: 1.5rem;
+  }
 
+  .cta-section h3 {
+    font-size: 1.25rem;
+  }
 
+  .partners-list-section {
+    padding: 3rem 4%;
+  }
 
+  .partners-main-title {
+    font-size: 2rem;
+  }
 
-.partner-column {
-  flex: 1;
-  min-width: 45%;
-  /* Adjust the column width as needed */
-  max-width: 50%;
-  overflow-y: auto;
-  /* Enable vertical scrolling */
-}
+  .tier-title {
+    font-size: 1.5rem;
+  }
 
+  .partners-tier-grid.institutional,
+  .partners-tier-grid.gold,
+  .partners-tier-grid.silver,
+  .partners-tier-grid.bronze,
+  .partners-tier-grid.software {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+  }
 
-.section-title-wrapper {
-  text-align: center;
-  width: 100%;
+  .partner-logo-card {
+    height: 100px;
+    padding: 1rem;
+  }
 }

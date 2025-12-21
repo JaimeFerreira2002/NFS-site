@@ -13,24 +13,13 @@ const ImageGallery = () => {
         <ImageCard
           key={"fspt"}
           src={fspt_photo}
-          title={t("fsfenixevo-page.competitions.fspt.title")}
-          date={t("fsfenixevo-page.competitions.fspt.date")}
-          location={t("fsfenixevo-page.competitions.fspt.location")}
-          division={t("fsfenixevo-page.competitions.fspt.class")}
+          title={t("fsnovaev01-page.competitions.fspt.title")}
+          date={t("fsnovaev01-page.competitions.fspt.date")}
+          location={t("fsnovaev01-page.competitions.fspt.location")}
+          division={t("fsnovaev01-page.competitions.fspt.class")}
           position={""}
           url={"https://www.formulastudent.pt/"}
         />
-        <ImageCard
-          key={"fsa"}
-          src={"https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Faustria.jpg?alt=media&token=605ad51f-24ab-455f-bd89-0eb1034ad510"}
-          title={t("fsfenixevo-page.competitions.fsa.title")}
-          date={t("fsfenixevo-page.competitions.fsa.date")}
-          location={t("fsfenixevo-page.competitions.fsa.location")}
-          division={t("fsfenixevo-page.competitions.fsa.class")}
-          position={""}
-          url={"https://fsaustria.at/"}
-        />
-        
       </div>
     </div>
   );

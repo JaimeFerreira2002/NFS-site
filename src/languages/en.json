@@ -21,91 +21,193 @@
 
   "partners-page": {
     "page-title": "Partners",
-    "page-subtitle": "Nova Formula Student official partners",
-    "institutional": "Institutional",
-    "bronze": "Bronze & Partners",
-    "silver": "Silver",
-    "gold": "Gold",
-    "software" : "Software"
-
+    "page-subtitle": "Building the future together with industry-leading companies",
+    "perks-title": "Why Partner With Us?",
+    "perk-visibility-title": "Brand Visibility",
+    "perk-visibility-desc": "Your logo prominently displayed on our car and in the garage during competitions and events",
+    "perk-exposure-title": "Media Exposure",
+    "perk-exposure-desc": "Featured in our social media, website, and press releases reaching thousands of engineering enthusiasts",
+    "perk-network-title": "Networking",
+    "perk-network-desc": "Direct connection with talented engineering students and access to recruitment opportunities",
+    "perk-innovation-title": "Innovation Partnership",
+    "perk-innovation-desc": "Collaborate on cutting-edge automotive technology and sustainable mobility solutions",
+    "perk-education-title": "Educational Impact",
+    "perk-education-desc": "Support the next generation of engineers while enhancing your corporate social responsibility",
+    "interested-title": "Interested in partnering?",
+    "interested-desc": "Get in touch with us to discuss partnership opportunities",
+    "contact-button": "Contact Us",
+    "our-partners": "Our Partners",
+    "tier-institutional": "Institutional",
+    "tier-gold": "Gold",
+    "tier-silver": "Silver",
+    "tier-bronze": "Bronze",
+    "tier-software": "Software"
   },
 
-  "fsnovaev01-page": {
-    "page-title": "NOVA EV 01",
-    "page-subtitle": "The NOVA EV 01 is the team's first electric formula student car",
-    "specs-title": "Technical Specifications",
-    "team-title": "The Team",
-    "technical-specs": {
-      "general": {
-        "title": "General",
-
-        "weight": "Weight",
-        "weight-value": "300 Kg",
-
-        "wheel-base": "Wheel Base",
-        "wheel-base-value": "1600 mm",
-
-        "width": "Width",
-        "width-value": "1450 mm",
-
-        "height": "Height",
-        "height-value": "1200 mm",
-
-        "height-cg": "CG Height",
-        "height-cg-value": "310 mm",
-
-        "length": "Length",
-        "length-value": "2900 mm",
-
-        "top-speed": "Top Speed",
-        "top-speed-value": "150 Km/h"
-      },
-
-      "powertrain": {
-        "title": "Powertrain",
-
-        "motor": "Motor",
-        "motor-value": "Custom Electric Motor",
-
-        "power": "Power",
-        "power-value": "80 HP",
-
-        "battery": "Battery",
-        "battery-value": "Li-Ion 48V 20kWh"
-      },
-
-      "steering&suspension": {
-        "title": "Steering & Suspension",
-
-        "type": "Type",
-        "type-value": "Double Wishbone with Push-Rod",
-
-        "tyres": "Tyres",
-        "tyres-value": "Hoosier 205/470 – R13",
-
-        "breaking": "Braking",
-        "breaking-value": "4-Piston AP Racing Calipers"
-      },
-
-      "chassis": {
-        "title": "Chassis",
-
-        "structure": "Structure",
-        "structure-value": "Tubular with Tungsten Welding",
-
-        "weight-dist": "Weight Distribution",
-        "weight-dist-value": "48F 52R"
-      },
-
-      "aero": {
-        "title": "Aerodynamics",
-
-        "bodywork": "Bodywork",
-        "bodywork-value": "Carbon Fiber"
-      }
-    }
+"fsnovaev01-page": {
+  "page-title": "FS NOVA EV01",
+  "page-subtitle": "NOVA Formula Student's first electric prototype",
+  "with-help-from": "With help from",
+  "specs-title": "Technical Specifications",
+  "team-title": "The Team",
+  "gallery": "Gallery",
+  "sponsors-title": "Sponsors",
+  
+  "specs": {
+    "click-more": "Click to learn more →",
+    "technical-specs": "Technical Specifications"
+  },
+  
+  "technical-specs": {
+    "general": {
+      "title": "General",
+      "description": "The NOVA EV01's dimensions and characteristics have been carefully optimized to provide the best balance between aerodynamic performance and maneuverability. With a low center of gravity and lightweight construction, the car delivers agile and precise response in all track conditions.",
+      
+      "weight": "Expected Weight",
+      "weight-value": "256 kg",
+      
+      "wheel-base": "Wheel Base",
+      "wheel-base-value": "1560 mm",
+      
+      "width": "Track Width",
+      "width-value": "1424 mm",
+      
+      "height-cg": "Expected CG Height",
+      "height-cg-value": "260 mm",
+      
+      "length": "Length",
+      "length-value": "3246 mm",
+      
+      "top-speed": "Expected Top Speed",
+      "top-speed-value": "130 km/h"
+    },
     
+    "powertrain": {
+      "title": "Powertrain",
+      "description": "The heart of the NOVA EV01 is an EMRAX 228 MV liquid-cooled electric motor, delivering impressive power and efficiency. The rear-wheel drive system with a single motor and differential provides excellent traction and control, reaching up to 6500 RPM.",
+      
+      "motor": "Motor",
+      "motor-value": "EMRAX 228 MV Liquid Cooled",
+      
+      "power": "Power",
+      "power-value": "85 HP",
+      
+      "max-rpm": "Max RPM",
+      "max-rpm-value": "6500",
+      
+      "voltage": "Maximum Voltage",
+      "voltage-value": "315 V",
+      
+      "battery": "Maximum Energy",
+      "battery-value": "7.9 kWh",
+      
+      "transmission": "Transmission Type",
+      "transmission-value": "Rear-wheel drive with 1 motor and differential"
+    },
+    
+    "steering&suspension": {
+      "title": "Steering & Suspension",
+      "description": "The Double Wishbone suspension system with Push-Rod and anti-roll bars provides superior control and precise feedback to the driver. High-performance Hoosier tires ensure maximum grip and consistent performance, even under extreme racing conditions.",
+      
+      "type": "Geometry",
+      "type-value": "Double Wishbone with Push-Rod and anti-roll bar (front and rear)",
+      
+      "tyres": "Tyres",
+      "tyres-value": "Hoosier 205/470 – R13"
+    },
+    
+    "chassis": {
+      "title": "Chassis",
+      "description": "The tubular steel spaceframe chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness at just 41 kg. The carbon fiber compression-molded steering wheel provides excellent grip and reduces weight in a critical area.",
+      
+      "structure": "Structure Type",
+      "structure-value": "Tubular Steel Spaceframe with Tungsten Welding",
+      
+      "weight": "Chassis Weight",
+      "weight-value": "41 kg",
+      
+      "steering-wheel": "Steering Wheel",
+      "steering-wheel-value": "Compression-molded Carbon Fiber"
+    },
+    
+    "aero": {
+      "title": "Aerodynamics",
+      "description": "The NOVA EV01's aerodynamics were developed to maximize downforce and optimize drag. The carbon fiber bodywork with side and rear diffusers not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
+      
+      "package": "Aerodynamic Package",
+      "package-value": "Bodywork with side and rear diffusers",
+      
+      "cl": "Expected Cl",
+      "cl-value": "-1.2",
+      
+      "cd": "Expected Cd",
+      "cd-value": "0.8",
+      
+      "frontal-area": "Frontal Area",
+      "frontal-area-value": "0.85 m²",
+      
+      "manufacturing": "Manufacturing",
+      "manufacturing-value": "Carbon fiber wet lay-up vacuum cured at 60°C"
+    }
+    },
+    
+    "project": {
+      "title": "The Project",
+      "description": "The FS NOVA EV01 represents a historic milestone for the NOVA Formula Student team - our first fully electric prototype. This ambitious project aims to develop skills in electric propulsion technologies, high-voltage systems, and energy management, preparing the team for Formula Student Electric competitions."
+    },
+    
+    "competitions": {
+      "title": "Competitions",
+      "subtitle": "The FS NOVA EV01 competed in the Formula Student Portugal event!",
+      "fspt": {
+        "title": "FORMULA STUDENT PORTUGAL",
+        "date": "27th of July to 1st of August 2025",
+        "location": "Castelo Branco Kart Track",
+        "class": "Class 1"
+      }
+    },
+
+    "sponsors": {
+      "main": "Main",
+      "gold": "Gold",
+      "silver": "Silver",
+      "bronze": "Bronze",
+      "institutional": "Institutional"
+    },
+
+    "teams-names": {
+      "board": "Board",
+      "aerodynamics": "Aerodynamics",
+      "chassis": "Chassis",
+      "vehicle-dynamics": "Vehicle Dynamics",
+      "electronics": "Electronics and Software",
+      "driverless": "Driverless",
+      "e-powertrain": "Electric Powertrain",
+      "m-powertrain": "Mechanical Powertrain",
+      "marketing": "Marketing",
+      "production": "Production",
+      "sponsoring": "Sponsoring",
+      "logistics": "Logistics",
+      "cost": "Cost",
+      "suspension": "Suspension"
   },
+  
+  "roles": {
+    "team-leader": "Team Leader",
+    "technical-director": "Technical Director",
+    "project-manager": "Project Manager",
+    "technical-director&team-leader": "Technical Director & Team Leader",
+    "bsd": "Business Strategy Director",
+    "dep-leader": "Department Leader",
+    "member": "Member"
+  },
+  
+  "team-container": {
+    "members": "Members",
+    "degrees": "Degrees",
+    "universities": "Universities"
+  }
+},
 
   "fsfenixevo-page": {
   "page-title": "FS FENIX EVO",
@@ -201,36 +303,51 @@
     "subtitle": "The FS FENIX EVO is going to compete in the Formula Student Austria & Formula Student Portugal events!",
     "fspt": {
       "title": "FORMULA STUDENT PORTUGAL",
-      "date": "3 to 7 of September 2024",
+      "date": "3rd to 7th of September 2024",
       "location": "Castelo Branco Kart Track",
       "class": "Class 1"
     },
     "fsa": {
       "title": "FORMULA STUDENT AUSTRIA",
-      "date": "21 to 25 of July 2024",
+      "date": "21st to 25th of July 2024",
       "location": "RedBull Ring",
+      "class": "Class 1"
+    },
+    "fss": {
+      "title": "FORMULA STUDENT SPAIN",
+      "date": "4th to 10th of August 2025",
+      "location": "Circuit de Barcelona - Catalunya",
       "class": "Class 1"
     }
   },
   
+  "sponsors": {
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze",
+    "institutional": "Institutional",
+    "software": "Software"
+  },
+
   "teams-names": {
     "board": "Board",
     "aerodynamics": "Aerodynamics",
-    "chassis&suspension": "Chassis & Suspension",
+    "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
-    "steering&ergonomics": "Steering & Ergonomics",
-    "electronics": "Electronics",
+    "electronics": "Electronics and Software",
     "powertrain": "Powertrain",
     "marketing": "Marketing",
-    "corporate-relations": "Corporate Relations",
     "logistics": "Logistics",
-    "finances": "Finance"
+    "suspension": "Suspension",
+    "production": "Production",
+    "cost": "Cost",
+    "sponsoring": "Sponsoring"
   },
+
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Technical Director",
-    "team-leader&project-manager": "Team Leader & Project Manager",
-    "technical-director&team-leader": "Technical Director & Team Leader",
+    "project-manager": "Project Manager",
     "bsd": "Business & Strategy Director",
     "dep-leader": "Department Leader",
     "member": "Member"
@@ -362,14 +479,16 @@
     "marketing": "Marketing",
     "corporate-relations": "Corporate Relations",
     "logistics": "Logistics",
-    "finances": "Finance"
+    "finances": "Finance",
+    "suspension": "Suspension"
+
   },
+
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Technical Director",
-    "team-leader&project-manager": "Team Leader & Project Manager",
-    "technical-director&team-leader": "Technical Director & Team Leader",
-    "bsd": "Business & Strategy Director",
+    "project-manager": "Project Manager",
+    "bsd": "Strategy Director",
     "dep-leader": "Coordinator",
     "member": "Member"
   },
@@ -481,21 +600,15 @@
       "member": "Member"
     }
   },
+
   "contacts-page": {
     "page-title": "Contacts",
-    "form-email": "Email",
-    "form-name": "Name",
-    "form-subject": "Name",
-    "form-message": "Message",
-    "form-send": "Send",
-    "form-title": "Contact us",
     "team-email": "Email",
     "cr-email": "Corporate Email",
     "team-hq": "Address",
-    "team-sm": "Social Media",
     "fill-all-fields": "Fill the form below to contact us",
-    "send-success": "Message sent successfully",
-    "touch-msg": "We will get in touch with you as soon as possible!"
+    "cta-text": "Have a question or want to partner with us?",
+    "email-button": "Send us an Email"
   },
   "team-page": {
     "title": "Meet the NFS Team!",
