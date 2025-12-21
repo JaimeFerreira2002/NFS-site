@@ -12,7 +12,6 @@ import MemberCard from "../../components/MemberCard";
 import ImageGallery from "./components/CompetitionsRow/index.js";
 
 
-//photos - Add your EV01 photos here
 const photos = [
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev2.jpg?alt=media&token=ac615e1e-7ba4-41c9-a40d-cce739120fbd",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev3.jpg?alt=media&token=9a53e98c-8fce-4f1f-bb47-ad938c3f69b5",
@@ -66,21 +65,20 @@ const NOVAEV01Page = () => {
     }
   }, [teamController, teamInView]);
 
-  //used for the specs section translations
+  //used for the specs section translations - UPDATED for NOVA EV01
   const generalKeys = [
     "weight",
     "wheel-base",
     "width",
-    "height",
     "height-cg",
     "length",
     "top-speed",
   ];
   
-  const powertrainKeys = ["motor", "power", "battery", "voltage"];
-  const steeringSuspensionKeys = ["type", "tyres", "breaking"];
-  const chassisKeys = ["structure", "weight-dist"];
-  const aeroKeys = ["bodywork"];
+  const powertrainKeys = ["motor", "power", "max-rpm", "voltage", "battery", "transmission"];
+  const steeringSuspensionKeys = ["type", "tyres"];
+  const chassisKeys = ["structure", "weight", "steering-wheel"];
+  const aeroKeys = ["package", "cl", "cd", "frontal-area", "manufacturing"];
 
   const toggleAccordion = (category) => {
     setOpenAccordion(openAccordion === category ? null : category);
@@ -100,14 +98,14 @@ const NOVAEV01Page = () => {
   return (
     <div className="fenixevo">
       <PageHeader
-        title={t("novaev01-page.page-title")}
-        subtitle={t("novaev01-page.page-subtitle")}
+        title={t("fsnovaev01-page.page-title")}
+        subtitle={t("fsnovaev01-page.page-subtitle")}
         gradientColor="#1966ff"
         height={"2.5%"}
       />
 
       <h2 className="gold-sponsors-title">
-          {t("novaev01-page.with-help-from") || "Com o apoio de"}
+          {t("fsnovaev01-page.with-help-from") || "Com o apoio de"}
       </h2>
 
       {/* MAIN SPONSORS SECTION */}
@@ -143,7 +141,7 @@ const NOVAEV01Page = () => {
 
       <div className="fenixevo-model_and_specs-container">
         <div className="fenixevo-section-title">
-          {t("novaev01-page.specs-title")}
+          {t("fsnovaev01-page.specs-title")}
         </div>
 
         <div className="fenixevo-specs-and-model">
@@ -158,31 +156,31 @@ const NOVAEV01Page = () => {
                   title="general"
                   dataKeys={generalKeys}
                   t={t}
-                  car="fenixevo"
+                  car="novaev01"
                 />
                 <SpecsSection
                   title="powertrain"
                   dataKeys={powertrainKeys}
                   t={t}
-                  car="fenixevo"
+                  car="novaev01"
                 />
                 <SpecsSection
                   title="steering&suspension"
                   dataKeys={steeringSuspensionKeys}
                   t={t}
-                  car="fenixevo"
+                  car="novaev01"
                 />
                 <SpecsSection
                   title="chassis"
                   dataKeys={chassisKeys}
                   t={t}
-                  car="fenixevo"
+                  car="novaev01"
                 />
                 <SpecsSection
                   title="aero"
                   dataKeys={aeroKeys}
                   t={t}
-                  car="fenixevo"
+                  car="novaev01"
                 />
               </div>
             </motion.div>
@@ -193,11 +191,11 @@ const NOVAEV01Page = () => {
       {/* COMPETITIONS SECTION */}
       <div className="competitions-section-container">
         <div className="fenixevo-section-title">
-          {t("novaev01-page.competitions.title")}
+          {t("fsnovaev01-page.competitions.title")}
         </div>
 
         <div className="competitions-subtitle">
-          {t("novaev01-page.competitions.subtitle")}
+          {t("fsnovaev01-page.competitions.subtitle")}
         </div>
 
         <div className="competitions-images-row-container">
@@ -225,7 +223,7 @@ const NOVAEV01Page = () => {
       {/* GALLERY */}
       <div className="fenixevo-gallery-container">
         <div className="fenixevo-section-title">
-          {t(`novaev01-page.gallery`)}
+          {t(`fsnovaev01-page.gallery`)}
         </div>
       </div>
 
@@ -234,7 +232,7 @@ const NOVAEV01Page = () => {
       {/* SPONSORS ACCORDION */}
       <div className="sponsors-accordion-section">
         <div className="fenixevo-section-title">
-          {t("novaev01-page.sponsors-title") || "Patrocinadores"}
+          {t("fsnovaev01-page.sponsors-title") || "Patrocinadores"}
         </div>
 
         <div className="accordion-container">
@@ -251,7 +249,7 @@ const NOVAEV01Page = () => {
                   className={`accordion-header ${isOpen ? 'active' : ''}`}
                   onClick={() => toggleAccordion(category)}
                 >
-                  <span>{t(`novaev01-page.sponsors.${category}`).toUpperCase()}</span>
+                  <span>{t(`fsnovaev01-page.sponsors.${category}`).toUpperCase()}</span>
                   <span className="accordion-icon">
                     {isOpen ? '−' : '+'}
                   </span>
@@ -286,7 +284,7 @@ const NOVAEV01Page = () => {
       {/* TEAM SECTION */}
       <div className="fenixevo-team-container">
         <div className="fenixevo-section-title">
-          {t(`novaev01-page.team-title`)}
+          {t(`fsnovaev01-page.team-title`)}
         </div>
 
         <div className="team-number-container">
@@ -294,21 +292,21 @@ const NOVAEV01Page = () => {
             <div className="numbers members">
               <div className="numbers-digits members">45</div>
               <div className="numbers-title members">
-                {t(`novaev01-page.team-container.members`)}
+                {t(`fsnovaev01-page.team-container.members`)}
               </div>
             </div>
 
             <div className="numbers degrees">
               <div className="numbers-digits degrees">15</div>
               <div className="numbers-title medegreesmbers">
-                {t(`novaev01-page.team-container.degrees`)}
+                {t(`fsnovaev01-page.team-container.degrees`)}
               </div>
             </div>
 
             <div className="numbers universities">
               <div className="numbers-digits universities">3</div>
               <div className="numbers-title universities">
-                {t(`novaev01-page.team-container.universities`)}
+                {t(`fsnovaev01-page.team-container.universities`)}
               </div>
             </div>
           </div>
@@ -325,7 +323,7 @@ const NOVAEV01Page = () => {
                   onClick={() => toggleTeamAccordion(index)}
                 >
                   <span className="team-department-title">
-                    {t(`novaev01-page.teams-names.${department.title}`)}
+                    {t(`fsnovaev01-page.teams-names.${department.title}`)}
                   </span>
                   <span className="accordion-icon">
                     {isOpen ? '−' : '+'}

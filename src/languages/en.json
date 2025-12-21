@@ -44,156 +44,170 @@
     "tier-software": "Software"
   },
 
-  "novaev01-page": {
-      "page-title": "FS NOVA EV01",
-      "page-subtitle": "NOVA Formula Student's first electric prototype",
-      "with-help-from": "With help from",
-      "specs-title": "Technical Specifications",
-      "team-title": "The Team",
-      "gallery": "Gallery",
-      "sponsors-title": "Sponsors",
-      
-      "specs": {
-        "click-more": "Click to learn more →",
-        "technical-specs": "Technical Specifications"
-      },
-      
-        "technical-specs": {
-        "general": {
-          "title": "General",
-          "description": "The Fenix Evo's dimensions and characteristics have been carefully optimized to provide the best balance between aerodynamic performance and maneuverability. With a low center of gravity and lightweight construction, the car delivers agile and precise response in all track conditions.",
-          
-          "weight": "Weight",
-          "weight-value": "260 Kg",
-          
-          "wheel-base": "Wheel Base",
-          "wheel-base-value": "1585 mm",
-          
-          "width": "Width",
-          "width-value": "1455 mm",
-          
-          "height": "Height",
-          "height-value": "1176 mm",
-          
-          "height-cg": "CG Height",
-          "height-cg-value": "299 mm",
-          
-          "length": "Length",
-          "length-value": "2811 mm",
-          
-          "top-speed": "Top Speed",
-          "top-speed-value": "140 Km/h"
-        },
-        
-        "powertrain": {
-          "title": "Powertrain",
-          "description": "The heart of the Fenix Evo is a Honda CBR 600 F4i engine, known for its reliability and performance. With explosive acceleration and a semi-automatic sequential gearbox, the powertrain delivers an exhilarating driving experience, reaching up to 13500 RPM.",
-          
-          "engine": "Engine",
-          "engine-value": "Honda CBR 600 F4i",
-          
-          "power": "Power",
-          "power-value": "75 HP",
-          
-          "max-rpm": "Max RPM",
-          "max-rpm-value": "13500",
-          
-          "gear-box": "Gearbox",
-          "gear-box-value": "Sequential Semi-Automatic 6-speed"
-        },
-        
-        "steering&suspension": {
-          "title": "Steering & Suspension",
-          "description": "The Double Wishbone suspension system with Push-Rod provides superior control and precise feedback to the driver. High-performance Hoosier tires and the braking system with AP Racing calipers ensure maximum grip and consistent braking, even under extreme racing conditions.",
-          
-          "type": "Type",
-          "type-value": "Double Wishbone with Push-Rod",
-          
-          "tyres": "Tyres",
-          "tyres-value": "Hoosier 205/470 – R13",
-          
-          "breaking": "Braking",
-          "breaking-value": "4-Piston AP Racing Calipers"
-        },
-        
-        "chassis": {
-          "title": "Chassis",
-          "description": "The tubular chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness. The 45F/55R weight distribution has been carefully calculated to provide ideal balance between traction and maneuverability, allowing predictable and confident car response in all situations.",
-          
-          "structure": "Structure",
-          "structure-value": "Tubular with Tungsten Welding",
-          
-          "weight-dist": "Weight Distribution",
-          "weight-dist-value": "45F 55R"
-        },
-        
-        "aero": {
-          "title": "Aerodynamics",
-          "description": "The Fenix Evo's aerodynamics were developed to maximize downforce and minimize drag. The carbon fiber bodywork not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
-          
-          "bodywork": "Bodywork",
-          "bodywork-value": "Carbon Fiber"
-        }
-      },
-      
-      "project": {
-        "title": "The Project",
-        "description": "The FS NOVA EV01 represents a historic milestone for the NOVA Formula Student team - our first fully electric prototype. This ambitious project aims to develop skills in electric propulsion technologies, high-voltage systems, and energy management, preparing the team for Formula Student Electric competitions."
-      },
-      
-      "competitions": {
-        "title": "Competitions",
-        "subtitle": "The FS FENIX EVO is going to compete in the Formula Student Austria & Formula Student Portugal events!",
-        "fspt": {
-          "title": "FORMULA STUDENT PORTUGAL",
-          "date": "27th of July to 1st of August 2025",
-          "location": "Castelo Branco Kart Track",
-          "class": "Class 1"
-        }
-      },
-
-      "sponsors": {
-        "main": "Main",
-        "gold": "Gold",
-        "silver": "Silver",
-        "bronze": "Bronze",
-        "institutional": "Institutional"
-      },
-
-      "teams-names": {
-        "board": "Board",
-        "aerodynamics": "Aerodynamics",
-        "chassis": "Chassis",
-        "vehicle-dynamics": "Vehicle Dynamics",
-        "steering&ergonomics": "Steering & Ergonomics",
-        "electronics": "Electronics",
-        "powertrain": "Electric Powertrain",
-        "high-voltage": "High Voltage",
-        "battery": "Battery",
-        "marketing": "Marketing",
-        "corporate-relations": "Corporate Relations",
-        "logistics": "Logistics",
-        "finances": "Finance",
-        "suspension": "Suspension"
-      },
-      
-      "roles": {
-        "team-leader": "Team Leader",
-        "technical-director": "Technical Director",
-        "project-manager": "Project Manager",
-        "technical-director&team-leader": "Technical Director & Team Leader",
-        "bsd": "Business Strategy Director",
-        "dep-leader": "Department Leader",
-        "member": "Member"
-      },
-      
-      "team-container": {
-        "members": "Members",
-        "degrees": "Degrees",
-        "universities": "Universities"
-      }
-    
+"fsnovaev01-page": {
+  "page-title": "FS NOVA EV01",
+  "page-subtitle": "NOVA Formula Student's first electric prototype",
+  "with-help-from": "With help from",
+  "specs-title": "Technical Specifications",
+  "team-title": "The Team",
+  "gallery": "Gallery",
+  "sponsors-title": "Sponsors",
+  
+  "specs": {
+    "click-more": "Click to learn more →",
+    "technical-specs": "Technical Specifications"
   },
+  
+  "technical-specs": {
+    "general": {
+      "title": "General",
+      "description": "The NOVA EV01's dimensions and characteristics have been carefully optimized to provide the best balance between aerodynamic performance and maneuverability. With a low center of gravity and lightweight construction, the car delivers agile and precise response in all track conditions.",
+      
+      "weight": "Expected Weight",
+      "weight-value": "256 kg",
+      
+      "wheel-base": "Wheel Base",
+      "wheel-base-value": "1560 mm",
+      
+      "width": "Track Width",
+      "width-value": "1424 mm",
+      
+      "height-cg": "Expected CG Height",
+      "height-cg-value": "260 mm",
+      
+      "length": "Length",
+      "length-value": "3246 mm",
+      
+      "top-speed": "Expected Top Speed",
+      "top-speed-value": "130 km/h"
+    },
+    
+    "powertrain": {
+      "title": "Powertrain",
+      "description": "The heart of the NOVA EV01 is an EMRAX 228 MV liquid-cooled electric motor, delivering impressive power and efficiency. The rear-wheel drive system with a single motor and differential provides excellent traction and control, reaching up to 6500 RPM.",
+      
+      "motor": "Motor",
+      "motor-value": "EMRAX 228 MV Liquid Cooled",
+      
+      "power": "Power",
+      "power-value": "85 HP",
+      
+      "max-rpm": "Max RPM",
+      "max-rpm-value": "6500",
+      
+      "voltage": "Maximum Voltage",
+      "voltage-value": "315 V",
+      
+      "battery": "Maximum Energy",
+      "battery-value": "7.9 kWh",
+      
+      "transmission": "Transmission Type",
+      "transmission-value": "Rear-wheel drive with 1 motor and differential"
+    },
+    
+    "steering&suspension": {
+      "title": "Steering & Suspension",
+      "description": "The Double Wishbone suspension system with Push-Rod and anti-roll bars provides superior control and precise feedback to the driver. High-performance Hoosier tires ensure maximum grip and consistent performance, even under extreme racing conditions.",
+      
+      "type": "Geometry",
+      "type-value": "Double Wishbone with Push-Rod and anti-roll bar (front and rear)",
+      
+      "tyres": "Tyres",
+      "tyres-value": "Hoosier 205/470 – R13"
+    },
+    
+    "chassis": {
+      "title": "Chassis",
+      "description": "The tubular steel spaceframe chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness at just 41 kg. The carbon fiber compression-molded steering wheel provides excellent grip and reduces weight in a critical area.",
+      
+      "structure": "Structure Type",
+      "structure-value": "Tubular Steel Spaceframe with Tungsten Welding",
+      
+      "weight": "Chassis Weight",
+      "weight-value": "41 kg",
+      
+      "steering-wheel": "Steering Wheel",
+      "steering-wheel-value": "Compression-molded Carbon Fiber"
+    },
+    
+    "aero": {
+      "title": "Aerodynamics",
+      "description": "The NOVA EV01's aerodynamics were developed to maximize downforce and optimize drag. The carbon fiber bodywork with side and rear diffusers not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
+      
+      "package": "Aerodynamic Package",
+      "package-value": "Bodywork with side and rear diffusers",
+      
+      "cl": "Expected Cl",
+      "cl-value": "-1.2",
+      
+      "cd": "Expected Cd",
+      "cd-value": "0.8",
+      
+      "frontal-area": "Frontal Area",
+      "frontal-area-value": "0.85 m²",
+      
+      "manufacturing": "Manufacturing",
+      "manufacturing-value": "Carbon fiber wet lay-up vacuum cured at 60°C"
+    }
+    },
+    
+    "project": {
+      "title": "The Project",
+      "description": "The FS NOVA EV01 represents a historic milestone for the NOVA Formula Student team - our first fully electric prototype. This ambitious project aims to develop skills in electric propulsion technologies, high-voltage systems, and energy management, preparing the team for Formula Student Electric competitions."
+    },
+    
+    "competitions": {
+      "title": "Competitions",
+      "subtitle": "The FS NOVA EV01 competed in the Formula Student Portugal event!",
+      "fspt": {
+        "title": "FORMULA STUDENT PORTUGAL",
+        "date": "27th of July to 1st of August 2025",
+        "location": "Castelo Branco Kart Track",
+        "class": "Class 1"
+      }
+    },
+
+    "sponsors": {
+      "main": "Main",
+      "gold": "Gold",
+      "silver": "Silver",
+      "bronze": "Bronze",
+      "institutional": "Institutional"
+    },
+
+    "teams-names": {
+      "board": "Board",
+      "aerodynamics": "Aerodynamics",
+      "chassis": "Chassis",
+      "vehicle-dynamics": "Vehicle Dynamics",
+      "steering&ergonomics": "Steering & Ergonomics",
+      "electronics": "Electronics",
+      "powertrain": "Electric Powertrain",
+      "high-voltage": "High Voltage",
+      "battery": "Battery",
+      "marketing": "Marketing",
+      "corporate-relations": "Corporate Relations",
+      "logistics": "Logistics",
+      "finances": "Finance",
+      "suspension": "Suspension"
+  },
+  
+  "roles": {
+    "team-leader": "Team Leader",
+    "technical-director": "Technical Director",
+    "project-manager": "Project Manager",
+    "technical-director&team-leader": "Technical Director & Team Leader",
+    "bsd": "Business Strategy Director",
+    "dep-leader": "Department Leader",
+    "member": "Member"
+  },
+  
+  "team-container": {
+    "members": "Members",
+    "degrees": "Degrees",
+    "universities": "Universities"
+  }
+},
 
   "fsfenixevo-page": {
   "page-title": "FS FENIX EVO",
