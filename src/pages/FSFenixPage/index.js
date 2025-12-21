@@ -78,6 +78,7 @@ const FSFenixPage = () => {
   const colorGradient = { backgroundImage: 'linear-gradient(to right, #19a3ff, #ffffff)', };
   const { t } = useTranslation();
   const ref = useRef();
+  const [openTeamAccordion, setOpenTeamAccordion] = useState(null);
 
   ///////////////ANIMATIONS///////////////////////////
 
@@ -117,6 +118,10 @@ const FSFenixPage = () => {
   const steeringSuspensionKeys = ['type', 'tyres', 'breaking', 'suspension'];
   const chassisKeys = ['structure', 'weight', 'impact-structure'];
   const aeroKeys = ['cd.a', 'cl.d'];
+
+  const toggleTeamAccordion = (index) => {
+    setOpenTeamAccordion(openTeamAccordion === index ? null : index);
+  };
 
   return (
     <div className='fsfsenix-page'>
@@ -245,19 +250,39 @@ const FSFenixPage = () => {
           </div>
         </div>
 
-        <div ref={teamRef}>
-          <motion.div className='fenix-team-animation' animate = {teamController}>
-            {TeamListData.map((department, index) => (
-              <div key={index} className='fenix-department-container'>
-                <h2 style={colorGradient} className="fenix-department-title">{t(`fsfenix-page.teams-names.${department.title}`)}</h2>
-                <div className="fenix-team-members">
-                  {department.members.map((member, memberIndex) => (
-                    <MemberCard key={memberIndex} {...member} />
-                  ))}
+        {/* TEAM ACCORDION */}
+        <div className="team-accordion-container">
+          {TeamListData.map((department, index) => {
+            const isOpen = openTeamAccordion === index;
+            return (
+              <div key={index} className="team-accordion-item">
+                <button
+                  className={`team-accordion-header ${isOpen ? 'active' : ''}`}
+                  onClick={() => toggleTeamAccordion(index)}
+                >
+                  <span className="team-department-title">
+                    {t(`fsfenix-page.teams-names.${department.title}`)}
+                  </span>
+                  <span className="accordion-icon">
+                    {isOpen ? '−' : '+'}
+                  </span>
+                </button>
+                <div 
+                  className={`team-accordion-content ${isOpen ? 'open' : ''}`}
+                  style={{
+                    maxHeight: isOpen ? '5000px' : '0',
+                    padding: isOpen ? '30px' : '0'
+                  }}
+                >
+                  <div className="fenix-team-members">
+                    {department.members.map((member, memberIndex) => (
+                      <MemberCard key={memberIndex} {...member} />
+                    ))}
+                  </div>
                 </div>
               </div>
-            ))}
-          </motion.div>
+            );
+          })}
         </div>
 
       </div>

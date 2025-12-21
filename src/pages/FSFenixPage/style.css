@@ -258,6 +258,7 @@
   flex-direction: column;
   padding: 3%;
   justify-content: space-around;
+  margin-bottom: 2%;
 }
 
 .fenix-department-title {
@@ -280,7 +281,103 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;  /* Now aligns based on the top (images) */
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px;  /* Added consistent spacing between cards */
+  gap: 20px;
+}
+
+/*///////// Team Accordion Section /////////*/
+
+.team-accordion-container {
+  max-width: 2000px;
+  width: 95%;
+  margin: 40px auto 0;
+}
+
+.team-accordion-item {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.team-accordion-header {
+  width: 100%;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-accordion-header:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(119, 201, 255, 0.3);
+}
+
+.team-accordion-header.active {
+  background: rgba(25, 163, 255, 0.1);
+  border-color: rgba(119, 201, 255, 0.5);
+}
+
+.accordion-icon {
+  font-size: 1.5em;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.team-accordion-header.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.team-department-title {
+  font-family: 'Horizon', sans-serif;
+  background-image: linear-gradient(to right, #19a3ff, #77c9ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.2em;
+}
+
+.team-accordion-content {
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0;
+}
+
+.team-accordion-content.open {
+  opacity: 1;
+}
+
+@media (max-width: 968px) {
+  .team-accordion-container {
+    max-width: 1200px;
+    width: 92%;
+  }
+
+  .team-accordion-header {
+    padding: 15px 20px;
+    font-size: 1.1em;
+  }
+
+  .team-accordion-content.open {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-accordion-header {
+    font-size: 1em;
+    padding: 12px 15px;
+  }
 }

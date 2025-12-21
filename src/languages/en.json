@@ -471,7 +471,7 @@
   "teams-names": {
     "board": "Board",
     "aerodynamics": "Aerodynamics",
-    "chassis": "Chassis",
+    "chassis&suspension": "Chassis & Suspension",
     "vehicle-dynamics": "Vehicle Dynamics",
     "steering&ergonomics": "Steering & Ergonomics",
     "electronics": "Electronics",

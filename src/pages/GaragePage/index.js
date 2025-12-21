@@ -18,25 +18,25 @@ const GaragePage = () => {
   // Car images array
   const carImages = useMemo(() => [
     {
-      src: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2FebRender.png?alt=media&token=1703bbe8-084d-41ba-b178-4061e2bbfcb2',
+      src: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2FnovaEV01Render.png?alt=media&token=dd6df09b-42a4-45d2-b1c6-a387b1c78844',
       alt: 'fsnovaev01',
       title: 'NOVA EV01',
       path: 'fsnovaev01'
     },
     {
-      src: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FfenixRender.png?alt=media&token=592b3e8e-113b-4202-a6be-073ea5a8c2b9',
+      src: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FfenixRender.png?alt=media&token=3b95e718-42ab-446b-9479-5411a52ebb55',
       alt: 'fsfenixevo',
       title: 'FS FENIX EVO',
       path: 'fsfenixevo'
     },
     {
-      src: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=1419a883-a4d9-4a9c-a3ed-260d664307c6',
+      src: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=5be239b5-6464-4984-82a3-9fbac012723d',
       alt: 'fsfenix',
       title: 'FS FENIX',
       path: 'fsfenix'
     },
     {
-      src: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2FdragonRender.png?alt=media&token=770c5507-bf7b-4f13-908b-4a625a30c091',
+      src: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2FdragonRender.png?alt=media&token=65c15157-3116-463b-92c2-998d3687593e',
       alt: 'fsdragon',
       title: 'FS DRAGON',
       path: 'fsdragon'

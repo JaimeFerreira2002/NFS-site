@@ -55,7 +55,7 @@ const carData = [
     name: "NOVA EV01",
     year: "2025",
     path: "/garage/fsnovaev01",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2FebRender.png?alt=media&token=1703bbe8-084d-41ba-b178-4061e2bbfcb2"
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2FnovaEV01Render.png?alt=media&token=dd6df09b-42a4-45d2-b1c6-a387b1c78844"
   }
 ];
 
@@ -73,7 +73,7 @@ const carData = [
     const video = document.querySelector('.video-player');
     const images = [
       'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_fspt.jpg?alt=media&token=97557c72-cc63-44b0-a1e4-3ca6783a03c5',
-      'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=1419a883-a4d9-4a9c-a3ed-260d664307c6'
+      'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=5be239b5-6464-4984-82a3-9fbac012723d'
     ];
   
     // Load images
