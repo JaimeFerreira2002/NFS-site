@@ -343,7 +343,6 @@
 
 .gold-sponsor-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(40, 97, 150, 0.2);
 }
 
 .gold-sponsor-card img {
@@ -391,9 +390,7 @@
 
 .accordion-header {
   width: 100%;
-  padding: 20px 30px;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 1.3em;
@@ -403,6 +400,10 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.accordion-header h2{
+  padding: 0%;
 }
 
 .accordion-header:hover {
@@ -460,7 +461,6 @@
 
 .sponsor-logo-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(112, 160, 255, 0.3);
 }
 
 .sponsor-logo-card img {

@@ -74,11 +74,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.perk-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-}
-
 .perk-content {
   flex: 1;
 }
@@ -169,11 +164,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: #f0f0f0;
   height: 100%;
-}
-
-.image-item:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .image-item img {

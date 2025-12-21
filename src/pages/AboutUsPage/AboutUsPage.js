@@ -32,7 +32,8 @@ const AboutUsPage = () => {
       autoplay: 0,
     },
   };
-  var iconColor = "#19a3ff";
+  var iconColor = "white";
+
   return (
     <div className="page-about">
 
