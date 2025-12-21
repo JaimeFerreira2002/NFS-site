@@ -16,7 +16,8 @@
   gap: 2rem;
   padding: 1% 6%;
   max-width: 100%;
-  margin: 0 auto;
+  margin: auto;
+  margin-bottom: 2%;
   align-items: stretch;
 }
 
@@ -233,7 +234,7 @@
 }
 
 .partners-tier-grid.institutional {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .partners-tier-grid.gold {
@@ -241,15 +242,15 @@
 }
 
 .partners-tier-grid.silver {
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .partners-tier-grid.bronze {
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .partners-tier-grid.software {
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .partner-logo-card {
