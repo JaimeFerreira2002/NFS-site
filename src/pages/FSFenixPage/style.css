@@ -280,6 +280,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;  /* Now aligns based on the top (images) */
   flex-wrap: wrap;
+  gap: 20px;  /* Added consistent spacing between cards */
 }

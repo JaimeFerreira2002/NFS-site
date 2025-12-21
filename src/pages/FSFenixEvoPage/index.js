@@ -34,10 +34,6 @@ const photos = [
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fgaleria%2Ffenix7.jpg?alt=media&token=8cfb8101-ceef-43f6-94d3-540114658f3c",
 ];
 
-const colorGradient = {
-  backgroundImage: "linear-gradient(to right, #286196, #70a0ff)",
-};
-
 const FenixEvoPage = () => {
   const { t } = useTranslation();
   const ref = useRef();
@@ -108,6 +104,7 @@ const FenixEvoPage = () => {
   // Access fenixevo-specific sponsors
   const fenixevoPartners = PartnersData.fenixevo || {};
   const goldSponsors = fenixevoPartners.gold || [];
+  const fenixevoTeam = TeamListData.fsfenixevo || [];
 
   return (
     <div className="fenixevo">
@@ -331,7 +328,7 @@ const FenixEvoPage = () => {
         <div className="team-number-container">
           <div className="team-number-row">
             <div className="numbers members">
-              <div className="numbers-digits members">60</div>
+              <div className="numbers-digits members">63</div>
               <div className="numbers-title members">
                 {t(`fsfenix-page.team-container.members`)}
               </div>
@@ -355,7 +352,7 @@ const FenixEvoPage = () => {
 
         {/* TEAM ACCORDION */}
         <div className="team-accordion-container">
-          {TeamListData.map((department, index) => {
+          {fenixevoTeam.map((department, index) => {
             const isOpen = openTeamAccordion === index;
             return (
               <div key={index} className="team-accordion-item">

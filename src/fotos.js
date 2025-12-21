@@ -1,8 +1,10 @@
-export const Manuel_Tiago_Santos = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FManuel%20Santos.png?alt=media&token=7c561887-47f9-4725-b160-9ae379c0dad7";
+export const Afonso_Dinis = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FAfonso%20Dinis.png?alt=media&token=3fb70844-a2c8-4ee8-beb9-8f743b12792b";
+export const Angela_Rodrigues = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2F%C3%82ngela%20Rodrigues.png?alt=media&token=fa2165e4-346a-4da6-a069-c530aaa1f68b";
 export const Beatriz_Moniz = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FBeatriz%20Moniz.png?alt=media&token=e3b9d260-2b77-42f2-a9a6-e10f3f26fd69";
 export const Carlos_Barbosa = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FCarlos%20Barbosa.png?alt=media&token=08a72a42-26f8-4de9-a166-300dfa9cc8e7";
 export const Carmo_Cadilha = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FCarmo%20Cadilha.png?alt=media&token=7c48f54f-f47b-4908-addb-a7943b7c4fbf";
 export const Carolina_Costa = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FCarolina%20Costa.png?alt=media&token=7bb4ef46-5db5-4791-9b82-9b04af7a6334";
+export const David_Amaral = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FDavid%20Amaral.jpg?alt=media&token=15b17223-c3a0-4868-bf20-fa25fa305b23";
 export const Diogo_Peixe = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FDiogo%20Peixe.png?alt=media&token=26bc9a26-5115-4fd1-8ac9-71d8e4ff6d0b";
 export const Francisco_Jorge = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FFrancisco%20Jorge.png?alt=media&token=bfc19a7c-d62e-4ffc-bdd1-de80ea957f9f";
 export const Gabriela_Gonçalves = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FGabriela%20Gon%C3%A7alves.png?alt=media&token=3d1d89ef-c0a9-4291-acb2-8467c3906490";
@@ -18,14 +20,15 @@ export const Joao_Gaspar = "https://firebasestorage.googleapis.com/v0/b/novaform
 export const Joao_Rodrigues = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FJo%C3%A3o%20Rodrigues.png?alt=media&token=e9d47ce2-7d60-402d-96be-8f9c68732cfb";
 export const Laura_Galvao = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FLaura%20Galv%C3%A3o.png?alt=media&token=4b29e4ad-5a7a-462f-8bc3-4ee9f388c2af";
 export const Madalena_Silva = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMadalena%20Silva.png?alt=media&token=2069b5bc-de2c-426f-a3e7-9b06b3c24eef";
+export const Manuel_Tiago_Santos = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FManuel%20Santos.png?alt=media&token=7c561887-47f9-4725-b160-9ae379c0dad7";
 export const Mariana_Inacio = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMariana%20In%C3%A1cio.png?alt=media&token=43728b56-6b53-4599-9830-e8aa04cbca47";
 export const Mariana_Ribeiro = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMariana%20Ribeiro.png?alt=media&token=f044dbb0-b344-4687-8468-e28bdc0aa779";
 export const Mariana_Santos = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMariana%20Santos.png?alt=media&token=04eb7193-200b-4b74-bd7e-fde9738e1c1a";
+export const Mario_Fonseca = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FM%C3%A1rio%20Fonseca.png?alt=media&token=e736d6b2-0e41-4d05-b3e9-df2b666f783d";
 export const Martim_Costa = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMartim%20Costa.png?alt=media&token=a52b7463-602e-4c0d-9f5e-396cca43cebf";
 export const Martim_Matias = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMartim%20Matias.png?alt=media&token=4aaf0e9d-e432-43c1-ac24-c42fd8784ddf";
 export const Miguel_Lourenco = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMiguel%20Louren%C3%A7o.png?alt=media&token=7d07a8cb-35ad-45ec-abd5-c59211dfeeff";
-export const Miguel_Pereira = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMiguel_Pereira.jpeg?alt=media&token=a1ef14e8-bee9-43bc-98ac-69b8f8dc700c"
-export const Mario_Fonseca = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FM%C3%A1rio%20Fonseca.png?alt=media&token=e736d6b2-0e41-4d05-b3e9-df2b666f783d";
+export const Miguel_Pereira = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FMiguel_Pereira.jpeg?alt=media&token=a1ef14e8-bee9-43bc-98ac-69b8f8dc700c";
 export const Pedro_Matos = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FPedro%20Matos.png?alt=media&token=44fcd36a-32af-4549-a741-e9f142808fed";
 export const Rafael_Jordao = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FRafael%20Jord%C3%A3o.png?alt=media&token=0e96681d-cf1b-4d71-b2dc-5ed7b9a3c6dd";
 export const Ricardo_Cascais = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FRicardo%20Cascais.png?alt=media&token=d249b1c3-5232-4b20-b494-84035a458271";
@@ -37,5 +40,3 @@ export const Tomas_Pratas = "https://firebasestorage.googleapis.com/v0/b/novafor
 export const Tomas_Sousa = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FTom%C3%A1s%20Sousa.png?alt=media&token=33edee97-b3b1-4ac0-a2f8-695d80778f0e";
 export const Vasco_Louro = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FVasco%20Louro.png?alt=media&token=1507ad82-73d0-40f4-902b-156ecdfb5601";
 export const Vitor_Raimundo = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FVitor%20Raimundo.png?alt=media&token=0ddcba0c-0ab6-4136-aba4-f07d23311a3e";
-export const Angela_Rodrigues = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2F%C3%82ngela%20Rodrigues.png?alt=media&token=fa2165e4-346a-4da6-a069-c530aaa1f68b";
-export const Afonso_Dinis = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FAfonso%20Dinis.png?alt=media&token=3fb70844-a2c8-4ee8-beb9-8f743b12792b";

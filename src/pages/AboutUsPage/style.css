@@ -99,7 +99,7 @@ body {
   background-position: center 40%; /* Adjust the percentage as needed */
   flex-direction: row-reverse;
   align-items: end;
-  padding: 5% 10vw;
+  padding: 3% 10vw;
   gap: 20px;
 }
 

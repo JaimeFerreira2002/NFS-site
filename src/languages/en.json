@@ -180,15 +180,15 @@
       "aerodynamics": "Aerodynamics",
       "chassis": "Chassis",
       "vehicle-dynamics": "Vehicle Dynamics",
-      "steering&ergonomics": "Steering & Ergonomics",
-      "electronics": "Electronics",
-      "powertrain": "Electric Powertrain",
-      "high-voltage": "High Voltage",
-      "battery": "Battery",
+      "electronics": "Electronics and Software",
+      "driverless": "Driverless",
+      "e-powertrain": "Electric Powertrain",
+      "m-powertrain": "Mechanical Powertrain",
       "marketing": "Marketing",
-      "corporate-relations": "Corporate Relations",
+      "production": "Production",
+      "sponsoring": "Sponsoring",
       "logistics": "Logistics",
-      "finances": "Finance",
+      "cost": "Cost",
       "suspension": "Suspension"
   },
   
@@ -334,15 +334,14 @@
     "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
-    "steering&ergonomics": "Steering & Ergonomics",
-    "electronics": "Electronics",
+    "electronics": "Electronics and Software",
     "powertrain": "Powertrain",
     "marketing": "Marketing",
-    "corporate-relations": "Corporate Relations",
     "logistics": "Logistics",
-    "finances": "Finance",
-    "suspension": "Suspension"
-
+    "suspension": "Suspension",
+    "production": "Production",
+    "cost": "Cost",
+    "sponsoring": "Sponsoring"
   },
 
   "roles": {
