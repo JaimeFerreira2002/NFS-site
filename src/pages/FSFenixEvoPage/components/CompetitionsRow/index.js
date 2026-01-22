@@ -9,17 +9,6 @@ const ImageGallery = () => {
   return (
     <div>
       <div className="fenixevo-image-row">
-        
-        <ImageCard
-          key={"fspt"}
-          src={fspt_photo}
-          title={t("fsfenixevo-page.competitions.fspt.title")}
-          date={t("fsfenixevo-page.competitions.fspt.date")}
-          location={t("fsfenixevo-page.competitions.fspt.location")}
-          division={t("fsfenixevo-page.competitions.fspt.class")}
-          position={""}
-          url={"https://www.formulastudent.pt/"}
-        />
         <ImageCard
           key={"fsa"}
           src={"https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Faustria.jpg?alt=media&token=605ad51f-24ab-455f-bd89-0eb1034ad510"}
@@ -30,6 +19,17 @@ const ImageGallery = () => {
           position={""}
           url={"https://fsaustria.at/"}
         />
+        <ImageCard
+          key={"fspt"}
+          src={"https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2FFotos%20FSPT%2FFSPT-Drone.jpeg?alt=media&token=9cd71fde-65d5-4a1a-99b5-2010c5c11ff8"}
+          title={t("fsfenixevo-page.competitions.fspt.title")}
+          date={t("fsfenixevo-page.competitions.fspt.date")}
+          location={t("fsfenixevo-page.competitions.fspt.location")}
+          division={t("fsfenixevo-page.competitions.fspt.class")}
+          position={""}
+          url={"https://www.formulastudent.pt/"}
+        />
+
         <ImageCard
           key={"fss"}
           src={"https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFSS2025.jpg?alt=media&token=33d72f14-e02f-4845-8385-3badafb6b722"}

@@ -84,13 +84,13 @@
     
     "powertrain": {
       "title": "Powertrain",
-      "description": "The heart of the NOVA EV01 is an EMRAX 228 MV liquid-cooled electric motor, delivering impressive power and efficiency. The rear-wheel drive system with a single motor and differential provides excellent traction and control, reaching up to 6500 RPM.",
+      "description": "The heart of the NOVA EV01 is an EMRAX 228 MV electric motor, that delivers impressive power and efficiency. The rear-wheel drive system with a single motor and differential provides excellent traction and control, reaching up to 6500 RPM.",
       
       "motor": "Motor",
       "motor-value": "EMRAX 228 MV Liquid Cooled",
       
       "power": "Power",
-      "power-value": "85 HP",
+      "power-value": "60 kW",
       
       "max-rpm": "Max RPM",
       "max-rpm-value": "6500",
@@ -118,21 +118,21 @@
     
     "chassis": {
       "title": "Chassis",
-      "description": "The tubular steel spaceframe chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness at just 41 kg. The carbon fiber compression-molded steering wheel provides excellent grip and reduces weight in a critical area.",
+      "description": "The tubular steel spaceframe chassis with TIG welding offers an optimal combination of torsional rigidity and lightness at just 41 kg. The carbon fiber compression-molded steering wheel provides excellent grip and reduces weight in a critical area.",
       
       "structure": "Structure Type",
-      "structure-value": "Tubular Steel Spaceframe with Tungsten Welding",
+      "structure-value": "Tubular Steel Spaceframe with TIG Welding",
       
       "weight": "Chassis Weight",
       "weight-value": "41 kg",
       
       "steering-wheel": "Steering Wheel",
-      "steering-wheel-value": "Compression-molded Carbon Fiber"
+      "steering-wheel-value": "Carbon Fiber"
     },
     
     "aero": {
       "title": "Aerodynamics",
-      "description": "The NOVA EV01's aerodynamics were developed to maximize downforce and optimize drag. The carbon fiber bodywork with side and rear diffusers not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
+      "description": "The NOVA EV01's aerodynamics were developed to maximize downforce and optimize drag. The carbon fiber bodywork with side and rear diffusers not only provides lightness but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
       
       "package": "Aerodynamic Package",
       "package-value": "Bodywork with side and rear diffusers",
@@ -199,7 +199,8 @@
     "technical-director&team-leader": "Technical Director & Team Leader",
     "bsd": "Business Strategy Director",
     "dep-leader": "Department Leader",
-    "member": "Member"
+    "member": "Member",
+    "cost": "Head of Cost and Manufacture"
   },
   
   "team-container": {
@@ -280,10 +281,10 @@
     
     "chassis": {
       "title": "Chassis",
-      "description": "The tubular chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness. The 45F/55R weight distribution has been carefully calculated to provide ideal balance between traction and maneuverability, allowing predictable and confident car response in all situations.",
+      "description": "The tubular chassis with TIG welding offers an optimal combination of torsional rigidity and lightness. The 45F/55R weight distribution has been carefully calculated to provide ideal balance between traction and maneuverability, allowing predictable and confident car response in all situations.",
       
       "structure": "Structure",
-      "structure-value": "Tubular with Tungsten Welding",
+      "structure-value": "Tubular with TIG Welding",
       
       "weight-dist": "Weight Distribution",
       "weight-dist-value": "45F 55R"
@@ -291,7 +292,7 @@
     
     "aero": {
       "title": "Aerodynamics",
-      "description": "The Fenix Evo's aerodynamics were developed to maximize downforce and minimize drag. The carbon fiber bodywork not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
+      "description": "The Fenix Evo's aerodynamics were developed to maximize downforce and minimize drag. The carbon fiber bodywork not only provides lightness but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
       
       "bodywork": "Bodywork",
       "bodywork-value": "Carbon Fiber"
@@ -350,7 +351,8 @@
     "project-manager": "Project Manager",
     "bsd": "Business & Strategy Director",
     "dep-leader": "Department Leader",
-    "member": "Member"
+    "member": "Member",
+    "cost": "Head of Cost and Manufacture"
   },
 
   "with-help-from": "With help from",
@@ -490,8 +492,10 @@
     "project-manager": "Project Manager",
     "bsd": "Strategy Director",
     "dep-leader": "Coordinator",
-    "member": "Member"
+    "member": "Member",
+    "cost": "Head of Cost and Manufacture"
   },
+
   "team-container": {
     "members": "Members",
     "degrees": "Degrees",

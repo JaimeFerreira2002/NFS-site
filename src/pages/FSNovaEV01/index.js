@@ -105,7 +105,7 @@ const NOVAEV01Page = () => {
       />
 
       <h2 className="gold-sponsors-title">
-          {t("fsnovaev01-page.with-help-from") || "Com o apoio de"}
+        {t("fsnovaev01-page.with-help-from") || "Com o apoio de"}
       </h2>
 
       {/* MAIN SPONSORS SECTION */}
@@ -128,8 +128,6 @@ const NOVAEV01Page = () => {
       )}
 
       {/* GOLD SPONSORS SECTION */}
-
-
       <img
         src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev1.jpg?alt=media&token=74ae2ddd-46de-4263-8d31-9b7e24d11de1"
         alt="NOVA EV01"
@@ -211,7 +209,7 @@ const NOVAEV01Page = () => {
           <ul>
             <li>Engeneering Design: P1</li>
             <li>Cost & Manufacturing: P3</li>
-            <li>Business Plan Presentation: 1st Place</li>
+            <li>Business Plan Presentation: P1</li>
           </ul>
           <h5>Other:</h5>
           <ul>

@@ -131,7 +131,8 @@ const TeamListData = []
       { name: 'Mariana Inácio', role: 'dep-leader', imageSrc: fotos.Mariana_Inacio },
       { name: 'César Martinho', role: 'member', imageSrc: placeholder },
       { name: 'Francisco Antunes', role: 'member', imageSrc: placeholder },
-      { name: 'Sara Martins', role: 'member', imageSrc: placeholder }
+      { name: 'Sara Martins', role: 'member', imageSrc: placeholder },
+      { name: 'Maria Beatriz Romão', role: 'cost', imageSrc: placeholder }
     ],
   },
 
@@ -142,13 +143,6 @@ const TeamListData = []
       { name: 'Ana Reis', role: 'member', imageSrc: placeholder },
       { name: 'Barbara Matos', role: 'member', imageSrc: placeholder },
       { name: 'Mariana Meira', role: 'member', imageSrc: placeholder },
-    ],
-  },
-
-  {
-    title: 'cost',
-    members: [
-      { name: 'Maria Beatriz Romão', role: 'dep-leader', imageSrc: placeholder },
     ],
   }
 ];
@@ -267,7 +261,8 @@ TeamListData.fsfenixevo = [
       { name: 'Mariana Inácio', role: 'dep-leader', imageSrc: fotos.Mariana_Inacio },
       { name: 'César Martinho', role: 'member', imageSrc: placeholder },
       { name: 'Francisco Antunes', role: 'member', imageSrc: placeholder },
-      { name: 'Sara Martins', role: 'member', imageSrc: placeholder }
+      { name: 'Sara Martins', role: 'member', imageSrc: placeholder },
+      { name: 'Maria Beatriz Romão', role: 'cost', imageSrc: placeholder }
     ],
   },
 
@@ -281,11 +276,5 @@ TeamListData.fsfenixevo = [
     ],
   },
 
-  {
-    title: 'cost',
-    members: [
-      { name: 'Maria Beatriz Romão', role: 'dep-leader', imageSrc: placeholder },
-    ],
-  }
 ];
 export default TeamListData;

@@ -212,12 +212,26 @@ const FenixEvoPage = () => {
       {/* COMPETITIONS RESULTS */}
       <div className="competition-results-container">
         <div className="competition-results-column">
+          <h3>FSA Results</h3>
+          <h5>Static Events</h5>
+          <ul>
+            <li>Engeneering Design: P18</li>
+            <li>Cost & Manufacturing: P17</li>
+            <li>Business Plan Presentation: Did not compete</li>
+          </ul>
+          <h5>Dynamic Events</h5>
+          <ul>
+            <li>Did not complete scrutineering</li>
+          </ul>
+        </div>
+
+        <div className="competition-results-column">
           <h3>FSPT Results</h3>
           <h5>Static Events</h5>
           <ul>
             <li>Engeneering Design: P2</li>
             <li>Cost & Manufacturing: P2</li>
-            <li>Business Plan Presentation: 1st Place</li>
+            <li>Business Plan Presentation: P1</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
@@ -231,20 +245,7 @@ const FenixEvoPage = () => {
             <li>Special Awards: Best social media presence</li>
           </ul>
         </div>
-
-        <div className="competition-results-column">
-          <h3>FSA Results</h3>
-          <h5>Static Events</h5>
-          <ul>
-            <li>Engeneering Design: P18</li>
-            <li>Cost & Manufacturing: P17</li>
-            <li>Business Plan Presentation: Did not compete</li>
-          </ul>
-          <h5>Dynamic Events</h5>
-          <ul>
-            <li>Did not complete scrutineering</li>
-          </ul>
-        </div>
+        
         <div className="competition-results-column">
           <h3>FSS Results</h3>
           <h5>Static Events</h5>
