@@ -25,7 +25,6 @@ const photos = [
 const NOVAEV01Page = () => {
   const { t } = useTranslation();
   const ref = useRef();
-  const [openAccordion, setOpenAccordion] = useState(null);
   const [openTeamAccordion, setOpenTeamAccordion] = useState(null);
 
   ///////////////ANIMATIONS///////////////////////////
@@ -80,10 +79,6 @@ const NOVAEV01Page = () => {
   const chassisKeys = ["structure", "weight", "steering-wheel"];
   const aeroKeys = ["package", "cl", "cd", "frontal-area", "manufacturing"];
 
-  const toggleAccordion = (category) => {
-    setOpenAccordion(openAccordion === category ? null : category);
-  };
-
   const toggleTeamAccordion = (index) => {
     setOpenTeamAccordion(openTeamAccordion === index ? null : index);
   };
@@ -91,9 +86,16 @@ const NOVAEV01Page = () => {
   // Access EV01-specific sponsors
   const ev01Partners = PartnersData.ev01 || {};
   const mainSponsors = ev01Partners.main || [];
-  const goldSponsors = ev01Partners.gold || [];
   
   const ev01Team = TeamListData.novaev01 || [];
+
+  const tierTitles = {
+    institutional: t("fsnovaev01-page.sponsors.institutional") || "Institutional Partners",
+    gold: t("fsnovaev01-page.sponsors.gold") || "Gold Partners",
+    silver: t("fsnovaev01-page.sponsors.silver") || "Silver Partners",
+    bronze: t("fsnovaev01-page.sponsors.bronze") || "Bronze Partners",
+    software: t("fsnovaev01-page.sponsors.software") || "Software Partners"
+  };
 
   return (
     <div className="fenixevo">
@@ -227,56 +229,38 @@ const NOVAEV01Page = () => {
 
       <Gallery images={photos} />
 
-      {/* SPONSORS ACCORDION */}
-      <div className="sponsors-accordion-section">
-        <div className="fenixevo-section-title">
+      {/* SPONSORS LIST SECTION */}
+      <div className="partners-list-section">
+        <div className="partners-main-title">
           {t("fsnovaev01-page.sponsors-title") || "Patrocinadores"}
         </div>
 
-        <div className="accordion-container">
-          {Object.keys(ev01Partners).map((category) => {
-            const isOpen = openAccordion === category;
+        {Object.keys(ev01Partners)
+          .filter(category => category !== 'main')
+          .map((category) => {
             const categorySponsors = ev01Partners[category];
             
-            // Skip if no sponsors in this category
             if (!categorySponsors || categorySponsors.length === 0) return null;
             
             return (
-              <div key={category} className="accordion-item">
-                <button
-                  className={`accordion-header ${isOpen ? 'active' : ''}`}
-                  onClick={() => toggleAccordion(category)}
-                >
-                  <span>{t(`fsnovaev01-page.sponsors.${category}`).toUpperCase()}</span>
-                  <span className="accordion-icon">
-                    {isOpen ? '−' : '+'}
-                  </span>
-                </button>
-                <div 
-                  className={`accordion-content ${isOpen ? 'open' : ''}`}
-                  style={{
-                    maxHeight: isOpen ? '5000px' : '0',
-                    padding: isOpen ? '30px' : '0'
-                  }}
-                >
-                  <div className="sponsors-grid">
-                    {categorySponsors.map((sponsor) => (
-                      <a
-                        key={sponsor.title}
-                        href={sponsor.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="sponsor-logo-card"
-                      >
-                        <img src={sponsor.imageUrl} alt={sponsor.title} />
-                      </a>
-                    ))}
-                  </div>
+              <div key={category} className="tier-section">
+                <h3 className="tier-title">{tierTitles[category]}</h3>
+                <div className={`partners-tier-grid ${category}`}>
+                  {categorySponsors.map((sponsor) => (
+                    <a
+                      key={sponsor.title}
+                      href={sponsor.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="partner-logo-card"
+                    >
+                      <img src={sponsor.imageUrl} alt={sponsor.title} />
+                    </a>
+                  ))}
                 </div>
               </div>
             );
           })}
-        </div>
       </div>
 
       {/* TEAM SECTION */}

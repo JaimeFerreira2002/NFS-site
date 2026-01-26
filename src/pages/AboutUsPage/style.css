@@ -97,7 +97,7 @@ body {
   background-color: #1d1d1d;
   background-size: cover;
   background-position: center 40%; /* Adjust the percentage as needed */
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: end;
   padding: 3% 10vw;
   gap: 20px;
@@ -112,12 +112,12 @@ body {
 
 
 .how-it-works h2 {
-  text-align: right;
+  text-align: left;
   color: white;
 }
 
 .how-it-works p {
-  text-align: end;
+  text-align: justify;
   color: white
 }
 

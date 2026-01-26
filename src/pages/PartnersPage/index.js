@@ -68,7 +68,8 @@ const Partners = () => {
     gold: t("partners-page.tier-gold") || "Gold Partners",
     silver: t("partners-page.tier-silver") || "Silver Partners",
     bronze: t("partners-page.tier-bronze") || "Bronze Partners",
-    software: t("partners-page.tier-software") || "Software Partners"
+    software: t("partners-page.tier-software") || "Software Partners",
+    partner: t("partners-page.tier-partner") || "Partner"
   };
 
   return (

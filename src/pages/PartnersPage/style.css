@@ -243,6 +243,10 @@
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.partners-tier-grid.partner {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
 .partner-logo-card {
   background: white;
   padding: 1.5rem;
@@ -281,7 +285,8 @@
 
   .partners-tier-grid.silver,
   .partners-tier-grid.bronze,
-  .partners-tier-grid.software {
+  .partners-tier-grid.software,
+  .partners-tier-grid.partner {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
@@ -346,7 +351,8 @@
   .partners-tier-grid.gold,
   .partners-tier-grid.silver,
   .partners-tier-grid.bronze,
-  .partners-tier-grid.software {
+  .partners-tier-grid.software,
+  .partners-tier-grid.partner {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1.5rem;
   }

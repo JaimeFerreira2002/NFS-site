@@ -37,7 +37,6 @@ const photos = [
 const FenixEvoPage = () => {
   const { t } = useTranslation();
   const ref = useRef();
-  const [openAccordion, setOpenAccordion] = useState(null);
   const [openTeamAccordion, setOpenTeamAccordion] = useState(null);
 
   ///////////////ANIMATIONS///////////////////////////
@@ -93,10 +92,6 @@ const FenixEvoPage = () => {
   const chassisKeys = ["structure", "weight-dist"];
   const aeroKeys = ["bodywork"];
 
-  const toggleAccordion = (category) => {
-    setOpenAccordion(openAccordion === category ? null : category);
-  };
-
   const toggleTeamAccordion = (index) => {
     setOpenTeamAccordion(openTeamAccordion === index ? null : index);
   };
@@ -105,6 +100,14 @@ const FenixEvoPage = () => {
   const fenixevoPartners = PartnersData.fenixevo || {};
   const goldSponsors = fenixevoPartners.gold || [];
   const fenixevoTeam = TeamListData.fsfenixevo || [];
+
+  const tierTitles = {
+    institutional: t("fsfenixevo-page.sponsors.institutional") || "Institutional Partners",
+    gold: t("fsfenixevo-page.sponsors.gold") || "Gold Partners",
+    silver: t("fsfenixevo-page.sponsors.silver") || "Silver Partners",
+    bronze: t("fsfenixevo-page.sponsors.bronze") || "Bronze Partners",
+    software: t("fsfenixevo-page.sponsors.software") || "Software Partners"
+  };
 
   return (
     <div className="fenixevo">
@@ -273,51 +276,36 @@ const FenixEvoPage = () => {
 
       <Gallery images={photos} />
 
-      {/* SPONSORS ACCORDION */}
-      <div className="sponsors-accordion-section">
-        <div className="fenixevo-section-title">
+      {/* SPONSORS LIST SECTION */}
+      <div className="partners-list-section">
+        <div className="partners-main-title">
           {t("fsfenixevo-page.sponsors-title") || "Patrocinadores"}
         </div>
 
-        <div className="accordion-container">
-          {Object.keys(fenixevoPartners).map((category) => {
-            const isOpen = openAccordion === category;
-            return (
-              <div key={category} className="accordion-item">
-                <button
-                  className={`accordion-header ${isOpen ? 'active' : ''}`}
-                  onClick={() => toggleAccordion(category)}
-                >
-                  <span>{t(`fsfenixevo-page.sponsors.${category}`).toUpperCase()}</span>
-                  <span className="accordion-icon">
-                    {isOpen ? '−' : '+'}
-                  </span>
-                </button>
-                <div 
-                  className={`accordion-content ${isOpen ? 'open' : ''}`}
-                  style={{
-                    maxHeight: isOpen ? '5000px' : '0',
-                    padding: isOpen ? '30px' : '0'
-                  }}
-                >
-                  <div className="sponsors-grid">
-                    {fenixevoPartners[category].map((sponsor) => (
-                      <a
-                        key={sponsor.title}
-                        href={sponsor.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="sponsor-logo-card"
-                      >
-                        <img src={sponsor.imageUrl} alt={sponsor.title} />
-                      </a>
-                    ))}
-                  </div>
-                </div>
+        {Object.keys(fenixevoPartners).map((category) => {
+          const categorySponsors = fenixevoPartners[category];
+          
+          if (!categorySponsors || categorySponsors.length === 0) return null;
+          
+          return (
+            <div key={category} className="tier-section">
+              <h3 className="tier-title">{tierTitles[category]}</h3>
+              <div className={`partners-tier-grid ${category}`}>
+                {categorySponsors.map((sponsor) => (
+                  <a
+                    key={sponsor.title}
+                    href={sponsor.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="partner-logo-card"
+                  >
+                    <img src={sponsor.imageUrl} alt={sponsor.title} />
+                  </a>
+                ))}
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
 
       {/* TEAM SECTION */}
