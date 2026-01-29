@@ -94,8 +94,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: justify;
   flex: 1; 
-  padding: 5svw 10px 5svw 6svw;
+  padding: 5svw 40px 5svw 6svw;
 }
 
 .content-team {

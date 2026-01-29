@@ -365,7 +365,7 @@ const PartnersData = {}
       },
       {
         title: 'CADFLOW',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FCADFLOW.png?alt=media&token=c883ce4b-bce6-43f0-996a-822f83e3c0ce',
+        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSilver%2FCADFLOW.png?alt=media&token=56f13e18-1f7f-463b-81dd-86c3bdff6585',
         link: 'https://www.cadflow.pt/',
         tier: 'silver'
       },
