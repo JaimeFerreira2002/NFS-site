@@ -94,6 +94,7 @@ const NOVAEV01Page = () => {
     gold: t("fsnovaev01-page.sponsors.gold") || "Gold Partners",
     silver: t("fsnovaev01-page.sponsors.silver") || "Silver Partners",
     bronze: t("fsnovaev01-page.sponsors.bronze") || "Bronze Partners",
+    partner: t("fsnovaev01-page.sponsors.partner") || "Partners",
     software: t("fsnovaev01-page.sponsors.software") || "Software Partners"
   };
 
@@ -212,10 +213,6 @@ const NOVAEV01Page = () => {
             <li>Engeneering Design: P1</li>
             <li>Cost & Manufacturing: P3</li>
             <li>Business Plan Presentation: P1</li>
-          </ul>
-          <h5>Other:</h5>
-          <ul>
-            <li>Special Awards: Best social media presence</li>
           </ul>
         </div>
       </div>

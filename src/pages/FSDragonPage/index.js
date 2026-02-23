@@ -1,8 +1,6 @@
 import React, { useRef, useState } from 'react';
 import "../FSDragonPage/style.css"; 
 import { useTranslation } from "react-i18next";
-import CarModelViewer from '../../components/CarModelViewer';
-import SpecsSection from '../../components/SpecsSection'; 
 import Gallery from '../../components/Gallery'; 
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -126,32 +124,6 @@ const FSDragonPage = () => {
       <div className='dragon-background-image-container'>
          <div className='background-image-gradient-overlay'/>
       </div>     
-
-      {/* <div className='dragon-model_and_specs-container'>
-          <div className='dragon-section-title'>
-                Technical Specifications
-          </div>
-
-          <div className='dragon-specs-and-model'>
-          <div ref={specsAndModelRef}> 
-            <motion.div className='dragon-specs&model-animation' animate={specsAndModelController} initial={{ opacity: 0, x: 100 }}>
-              <div className='dragon-specs'>
-                <SpecsSection title="general" dataKeys={generalKeys} t={t} car="dragon"/>
-                <SpecsSection title="powertrain" dataKeys={powertrainKeys} t={t} car="dragon"/>
-                <SpecsSection title="steering&suspension" dataKeys={steeringSuspensionKeys} t={t} car="dragon"/>
-                <SpecsSection title="chassis" dataKeys={chassisKeys} t={t} car="dragon"/>
-                <SpecsSection title="aero" dataKeys={aeroKeys} t={t} car="dragon"/>
-              </div> */}
-              
-              {/* <div className="fsfenix-3d-model">        
-                    <CarModelViewer/>         
-              </div> */}
-            {/* </motion.div>
-          </div>
-          </div>          
-      </div> */}
-
-
       <div className='dragon-gallery-container'>
           <div className='dragon-section-title'>
           {t(`fsdragon-page.gallery`)}

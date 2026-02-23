@@ -32,8 +32,8 @@
     "perk-innovation-title": "Parceria de Inovação",
     "perk-innovation-desc": "Colabore em tecnologia automóvel de ponta e soluções de mobilidade sustentável",
     "perk-education-title": "Impacto Educacional",
-    "perk-education-desc": "Apoie a próxima geração de engenheiros enquanto melhora a sua responsabilidade social corporativa",
-    "interested-title": "Interessado em ser parceiro?",
+    "perk-education-desc": "Apoie a próxima geração de engenheiros e posicione a sua empresa como impulsionadora do talento nacional",
+    "interested-title": "Interessado em ser nosso parceiro?",
     "interested-desc": "Entre em contacto connosco para discutir oportunidades de parceria",
     "contact-button": "Contacte-nos",
     "our-partners": "Os Nossos Parceiros",
@@ -159,7 +159,7 @@
       "title": "FORMULA STUDENT PORTUGAL",
       "date": "27 de julho a 1 de Agosto 2025",
       "location": "Castelo Branco Kart Track",
-      "class": "Class 1"
+      "class": "Class 2"
     }
   },
 
@@ -168,24 +168,25 @@
     "gold": "Gold",
     "silver": "Silver",
     "bronze": "Bronze",
+    "partner": "Parceiro",
     "institutional": "Institucional"
   },
   
   "teams-names": {
-    "board": "Direção",
-    "aerodynamics": "Aerodinâmica",
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
-    "vehicle-dynamics": "Dinâmica de Veículo",
-    "electronics": "Eletrónica e Software",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "electronics": "Electronics and Software",
     "driverless": "Driverless",
-    "e-powertrain": "Powertrain Elétrico",
-    "m-powertrain": "Powertrain Mecânico",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "production": "Produção",
+    "production": "Production",
     "sponsoring": "Sponsoring",
-    "logistics": "Logística",
-    "cost": "Custo",
-    "suspension": "Suspensão"
+    "logistics": "Logistics",
+    "cost": "Cost",
+    "suspension": "Suspension"
   },
   
   "roles": {
@@ -501,7 +502,7 @@
 
   "fsdragon-page": {
     "page-title": "FS DRAGON",
-    "page-subtitle": "O FS DRAGON é o primeiro protótipo que a equipa do NOVA Formula Student construiu.",
+    "page-subtitle": "O FS DRAGON é o primeiro protótipo que a equipa FS FCT construiu.",
     "specs-title": "Especificações Técnicas",
     "team-title": "A Equipa",
     "gallery": "Galeria",
@@ -605,7 +606,7 @@
   "contacts-page": {
     "page-title": "Contactos",
     "team-email": "Email",
-    "cr-email": "Email Empresarial",
+    "cr-email": "Email Corporativo",
     "team-hq": "Morada",
     "cta-text": "Tem alguma questão ou quer ser nosso parceiro?",
     "email-button": "Envie-nos um email"
@@ -675,15 +676,15 @@
     "static-ev-desc":"Os eventos estáticos avaliam a preparação da equipa nas seguintes áreas:",
     "area":"Área",	
     "points":"Pontos",
-    "business-model": "Modelo de Negócios",
+    "business-model": "Business Model",
     "business-model-desc": "O objetivo é avaliar a capacidade da equipa de desenvolver e apresentar um modelo de negócios abrangente. Este modelo de negócios deve estar relacionado ao veículo protótipo específico da equipa ou a um componente específico dele. Ao fazer isso, o negócio deve oferecer o veículo ou componente como um produto, ou vender um serviço com base nele, proporcionando uma oportunidade de negócio recompensadora que gere lucro monetário.",
-    "cost-manufacturing": "Custo e Manufatura",
+    "cost-manufacturing": "Cost and Manufacturing",
     "cost-manufacturing-desc": "O objetivo do evento de custo e manufatura é avaliar a compreensão da equipa dos processos de manufatura e dos custos associados à construção de um veículo protótipo. Isso inclui decisões de compensação entre conteúdo e custo, decisões de fazer ou comprar e compreensão das diferenças entre protótipo e produção em massa.",
-    "engineering-design": "Design de Engenharia",
+    "engineering-design": "Engineering Design",
     "engineering-desc": "O conceito do evento de design é avaliar o processo de engenharia e o esforço do estudante que foram dedicados ao design de um veículo, atendendo à intenção da competição. Componentes e sistemas patenteados que são incorporados ao design do veículo como itens acabados não são avaliados como unidades projetadas pelo estudante, mas são apenas avaliados com base na seleção e aplicação da equipa desse componente.",
-    "dynamic-events": "EVENTOS DINÂMICOS",
+    "dynamic-events": "EVENTS DINÂMICOS",
     "dynamic-ev-desc": "Os eventos dinâmicos avaliam o desempenho do carro na pista. Para isso, após a aprovação nos testes de segurança, os veículos são testados nos seguintes testes:",
-    "acceleration": "Aceleração",
+    "acceleration": "Acceleration",
     "acceleration-desc": "Medir o desempenho de aceleração em linha reta do carro. A pista de aceleração é uma linha reta com um comprimento de 75 m da linha de largada para a linha de chegada. A pista tem pelo menos 3 m de largura. Cones são colocados ao longo da pista em intervalos de cerca de 5 m.",
     "skidpad": "Skidpad",
     "skidpad-desc": "Avaliar a aderência lateral e as capacidades de curva do carro. O carro percorre um percurso em oito marcado por dois círculos em direções opostas. O tempo para completar o percurso e a aceleração lateral média são indicadores-chave de desempenho.",
@@ -691,10 +692,11 @@
     "autocross-desc": "Avaliar a agilidade, manuseio e desempenho dinâmico geral do carro. O carro manobra por um percurso apertado e sinuoso marcado por cones. O foco está em alcançar o tempo mais rápido enquanto navega com sucesso pelo percurso, enfatizando a aceleração lateral e longitudinal, além da responsividade.",
     "endurance": "Endurance",
     "endurance-desc": "Testar a durabilidade, confiabilidade e eficiência de combustível do carro ao longo de uma distância de corrida estendida. O carro deve completar um número especificado de voltas em uma pista desafiadora. O evento avalia tanto a resistência do veículo quanto as decisões estratégicas da equipa em relação à eficiência de combustível, paragens nas boxes e confiabilidade geral.",
-    "efficiency": "Eficiência / Trackdrive",
+    "efficiency": "Efficiency / Trackdrive",
     "efficiency-desc": "A eficiência é medida no evento de resistência é refletida na capacidade da equipa de projetar um carro que possa completar a corrida com um consumo mínimo de combustível, demonstrando não apenas velocidade, mas também uma gestão de energia cuidadosa.",
     "media-aps": "NFS nos Media"
   },
+
  "news-page" : {
     "page-title" : "Artigos",
     "page-subtitle" : "Fique a par das últimas novidades da equipa",

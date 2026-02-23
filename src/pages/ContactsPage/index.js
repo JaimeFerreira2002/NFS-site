@@ -44,6 +44,18 @@ const ContactsPage = () => {
               </div>
 
               <div className='contact-card'>
+                <h3>TikTok</h3>
+                <a 
+                  href="https://www.tiktok.com/@novaformulastudent" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  @novaformulastudent
+                </a>
+              </div>
+
+              <div className='contact-card'>
                 <h3>LinkedIn</h3>
                 <a 
                   href="https://www.linkedin.com/company/formula-student-fct/" 
@@ -54,6 +66,20 @@ const ContactsPage = () => {
                   Nova Formula Student
                 </a>
               </div>
+
+              <div className='contact-card'>
+                <h3>Facebook</h3>
+                <a 
+                  href="https://www.facebook.com/NOVAFormulaStudent/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  NOVA Formula Student
+                </a>
+              </div>
+
+              
             </div>
 
             <div className='email-cta-section'>

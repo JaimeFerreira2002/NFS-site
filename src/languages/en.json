@@ -32,8 +32,8 @@
     "perk-innovation-title": "Innovation Partnership",
     "perk-innovation-desc": "Collaborate on cutting-edge automotive technology and sustainable mobility solutions",
     "perk-education-title": "Educational Impact",
-    "perk-education-desc": "Support the next generation of engineers while enhancing your corporate social responsibility",
-    "interested-title": "Interested in partnering?",
+    "perk-education-desc": "Support the next generation of engineers and position your company as a driver of national talent",
+    "interested-title": "Interested in being our partner?",
     "interested-desc": "Get in touch with us to discuss partnership opportunities",
     "contact-button": "Contact Us",
     "our-partners": "Our Partners",
@@ -164,7 +164,7 @@
         "title": "FORMULA STUDENT PORTUGAL",
         "date": "27th of July to 1st of August 2025",
         "location": "Castelo Branco Kart Track",
-        "class": "Class 1"
+        "class": "Class 2"
       }
     },
 
@@ -173,6 +173,7 @@
       "gold": "Gold",
       "silver": "Silver",
       "bronze": "Bronze",
+      "partner": "Partner",
       "institutional": "Institutional"
     },
 
@@ -506,7 +507,7 @@
 
   "fsdragon-page": {
     "page-title": "FS DRAGON",
-    "page-subtitle": "The FS DRAGON is the first prototype car that the NOVA Formula Student team built.",
+    "page-subtitle": "The FS DRAGON is the first prototype car that the FS FCT team built.",
     "specs-title": "Technical Specifications",
     "team-title": "The Team",
     "gallery": "Gallery",

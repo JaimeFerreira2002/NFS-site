@@ -266,32 +266,6 @@ const PartnersData = {}
         link: 'https://www.zdkmotorsport.com/',
         tier: 'Bronze'
       }
-    ],
-    "software": [
-      {
-        title: 'MathWorks',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FMATHWORKS.png?alt=media&token=f3ace95b-0884-4d58-a38e-551f6af872b1',  
-        link:'https://www.mathworks.com',
-        tier: 'Software'
-      },
-      {
-        title: 'RapidHarness',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FRapidHarness.png?alt=media&token=ea68562b-f561-4bdc-aa37-0cc32517f0cc',  
-        link:'https://rapidharness.com',
-        tier: 'Software'
-      },
-      {
-        title: 'SolidWorks',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FSolidWorkds.png?alt=media&token=07f8bdcd-429e-457a-9880-77eb5d42ecce',  
-        link:'https://www.solidworks.com',
-        tier: 'Software'
-      },
-      {
-        title: 'VI-GRADE',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FVI-GRADE.jpg?alt=media&token=0ba9de7a-94d5-43c1-983f-f70912c2f007',  
-        link:'https://www.vi-grade.com',
-        tier: 'Software'
-      }
     ]
   };
 
@@ -402,12 +376,6 @@ const PartnersData = {}
         tier: 'bronze'
       },
       {
-        title: 'ALTIUM',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FALTIUM_DESIGNER.png?alt=media&token=1edfe1fc-5a07-4892-b286-dfce1b1fed25',
-        link: 'https://www.altium.com/altium-designer',
-        tier: 'bronze'
-      },
-      {
         title: 'BLOCKS',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FBLOCKS.png?alt=media&token=9d7854e4-5746-469f-96c4-17b800d2803a',
         link: 'https://blockstec.com/',
@@ -426,12 +394,6 @@ const PartnersData = {}
         tier: 'bronze'
       },
       {
-        title: 'IPG SOFTWARE',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FIPG.png?alt=media&token=d2d4fbef-1689-40f5-a79f-bdb4fb83ec70',
-        link: 'https://www.itape.com/',
-        tier: 'bronze'
-      },
-      {
         title: 'KIP',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FKIP.png?alt=media&token=31686522-3e3d-4537-b085-7f4f53df510f',
         link: 'https://kip.pt/',
@@ -441,12 +403,6 @@ const PartnersData = {}
         title: 'Loctite',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FLOCTITE.png?alt=media&token=1c45723c-b4d6-4813-b50b-246fc67366f8',
         link: 'https://www.loctiteproducts.com/',
-        tier: 'bronze'
-      },
-      {
-        title: 'Mathworks',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FMATHWORKS.png?alt=media&token=f9901129-26a5-4a4f-983b-c63110396ce2',
-        link: 'https://www.mathworks.com/',
         tier: 'bronze'
       },
       {
@@ -468,18 +424,6 @@ const PartnersData = {}
         tier: 'bronze'
       },
       {
-        title: 'Rapidharness',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FRapidHarness.png?alt=media&token=ea68562b-f561-4bdc-aa37-0cc32517f0cc',
-        link: 'https://rapidharness.com',
-        tier: 'bronze'
-      },
-      {
-        title: 'SOLIDWORKS',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FSolidWorkds.png?alt=media&token=07f8bdcd-429e-457a-9880-77eb5d42ecce',
-        link: 'https://www.solidworks.com',
-        tier: 'bronze'
-      },
-      {
         title: 'TE',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FTE.png?alt=media&token=a4597f39-33db-4907-ac98-49b04b4c3147',
         link: 'https://www.te.com/pt/home.html',
@@ -492,27 +436,9 @@ const PartnersData = {}
         tier: 'bronze'
       },
       {
-        title: 'TESLA',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FTESLA.png?alt=media&token=f90d672d-4446-4044-8e2b-444c46455bd8',
-        link: 'https://www.tesla.com/',
-        tier: 'bronze'
-      },
-      {
-        title: 'TRIGENIUS',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FTRIGENIUS.png?alt=media&token=e0f90cac-9e30-43be-9d5b-ef4e35dfdd99',
-        link: 'https://trigenius.pt/',
-        tier: 'bronze'
-      },
-      {
         title: 'Vector',
         imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FVECTOR.png?alt=media&token=c780e887-c0ff-43ff-9fa7-6215775ba286',
         link: 'https://www.vector.com/int/en/',
-        tier: 'bronze'
-      },
-      {
-        title: 'VI-Grade',
-        imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FVI-GRADE.jpg?alt=media&token=0ba9de7a-94d5-43c1-983f-f70912c2f007',
-        link: 'https://www.vi-grade.com',
         tier: 'bronze'
       },
       {
@@ -521,7 +447,57 @@ const PartnersData = {}
         link: 'https://eshop.wurth.pt/pt/PT/EUR/',
         tier: 'bronze'
       }
-    ]
+    ],
+    "partner": [
+    {
+      title: 'Altium',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FPartner%2FALTIUM.png?alt=media&token=141b15a8-879a-46de-92f3-cc619ee70695',
+      link:'https://www.altium.com/',
+      tier: 'partner'
+    },
+    {
+      title: 'IPG Software',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FPartner%2FIPG.svg?alt=media&token=da95bbd6-e4a9-4db0-90c1-fae2b903b108',
+      link:'https://www.ipg-automotive.com/',
+      tier: 'partner'
+    },
+    {
+      title: 'MATHWORKS',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FMATHWORKS.png?alt=media&token=f9901129-26a5-4a4f-983b-c63110396ce2',  
+      link:'https://www.mathworks.com/',
+      tier: 'partner'
+    },
+    {
+      title: 'Rapid Harness',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FPartner%2FRAPID_HARNESS.png?alt=media&token=b11341ac-2248-4d6e-af8e-44b49c630a40',
+      link:'https://rapidharness.com/',
+      tier: 'partner'
+    },
+    {
+      title: 'SolidWorks',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FPartner%2FSOLIDWORKS.svg?alt=media&token=e43aa96d-9e6a-4eba-9583-2f0c5de52767',
+      link:'https://www.solidworks.com/',
+      tier: 'partner'
+    },
+    {
+      title: 'TESLA',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FBronze%2FTESLA.png?alt=media&token=f90d672d-4446-4044-8e2b-444c46455bd8',
+      link: 'https://www.tesla.com/',
+      tier: 'partner'
+    },
+    {
+      title: 'Trigenius',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FPartner%2FTRIGENIUS.svg?alt=media&token=24266613-6307-4cfd-b94a-a092d7fc890e',
+      link:'https://trigenius.pt/',
+      tier: 'partner'
+    },
+    {
+      title: 'VI-Grade',
+      imageUrl: 'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Sponsors%2FSoftware%2FVI-GRADE.jpg?alt=media&token=0ba9de7a-94d5-43c1-983f-f70912c2f007',
+      link: 'https://www.vi-grade.com',
+      tier: 'partner'
+    },
+  ]
   };
 
 PartnersData.allPartners = {
@@ -747,7 +723,7 @@ PartnersData.allPartners = {
       link: 'https://www.vi-grade.com',
       tier: 'partner'
     },
-  ],
+  ]
 };
 
 
