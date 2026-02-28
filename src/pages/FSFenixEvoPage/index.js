@@ -218,8 +218,8 @@ const FenixEvoPage = () => {
           <h3>FSA Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Engeneering Design: P18</li>
-            <li>Cost & Manufacturing: P17</li>
+            <li>Engeneering Design: 18<sup>th</sup> Place</li>
+            <li>Cost & Manufacturing: 17<sup>th</sup> Place</li>
             <li>Business Plan Presentation: Did not compete</li>
           </ul>
           <h5>Dynamic Events</h5>
@@ -232,9 +232,9 @@ const FenixEvoPage = () => {
           <h3>FSPT Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Engeneering Design: P2</li>
-            <li>Cost & Manufacturing: P2</li>
-            <li>Business Plan Presentation: P1</li>
+            <li>Engeneering Design: 2<sup>nd</sup> Place</li>
+            <li>Cost & Manufacturing: 2<sup>nd</sup> Place</li>
+            <li>Business Plan Presentation: 1<sup>st</sup> Place</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
@@ -253,15 +253,15 @@ const FenixEvoPage = () => {
           <h3>FSS Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Engeneering Design: P5</li>
-            <li>Cost & Manufacturing: P5</li>
-            <li>Business Plan Presentation: P2</li>
+            <li>Engeneering Design: 5<sup>th</sup> Place</li>
+            <li>Cost & Manufacturing: 5<sup>th</sup> Place</li>
+            <li>Business Plan Presentation: 2<sup>nd</sup> Place</li>
           </ul>
           <h5>Dynamic Events</h5>
           <ul>
-            <li>Aceleration: P6</li>
+            <li>Aceleration: 6<sup>th</sup> Place</li>
             <li>Skidpad: DNS</li>
-            <li>Autocross: P8</li>
+            <li>Autocross: 8<sup>th</sup> Place</li>
             <li>Endurance: DNF</li>
           </ul>
         </div>

@@ -177,27 +177,29 @@
     "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
-    "electronics": "Electronics and Software",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
     "driverless": "Driverless",
+    "powertrain": "Powertrain",
     "e-powertrain": "Electric Powertrain",
     "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "production": "Production",
-    "sponsoring": "Sponsoring",
     "logistics": "Logistics",
-    "cost": "Cost",
-    "suspension": "Suspension"
+    "operations": "Operations",
+    "production": "Production",
+    "sponsoring": "Corporate Relations"
   },
   
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Diretor Técnico",
-    "team-leader&project-manager": "Team Leader & Diretor de Projeto",
-    "technical-director&team-leader": "Diretor Técnico & Team Leader",
-    "bsd": "Diretor de Estratégia e Negócio",
+    "project-manager": "Gestor de Projeto",
+    "strategy-finance-director": "Diretor de Estratégia & Finanças",
+    "finance": "Diretor Financeiro",
     "dep-leader": "Coordenador",
     "member": "Membro",
-    "cost": "Coordenador de Custo e Manufatura"
+    "cost": "Gestão de Custos"
   },
   
   "team-container": {
@@ -329,18 +331,23 @@
     },
   
   "teams-names": {
-    "board": "Direção",
-    "aerodynamics": "Aerodinâmica",
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
-    "vehicle-dynamics": "Dinâmica de Veículo",
-    "electronics": "Eletrónica e Software",
-    "powertrain": "Powertrain",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "electronics": "Electronics and Software",
+    "driverless": "Driverless",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "logistics": "Logística",
-    "suspension": "Suspensão",
-    "production": "Produção",
-    "cost": "Custo",
-    "sponsoring": "Sponsoring"
+    "production": "Production",
+    "sponsoring": "Sponsoring",
+    "logistics": "Logistics",
+    "cost": "Cost & Manufacturing",
+    "suspension": "Suspension",
+    "software-control": "Software & Control",
+    "strategy-finance-director": "Strategy & Finance Director",
+    "finance": "Finance"
   },
 
   "roles": {
@@ -469,28 +476,33 @@
   },
   
   "teams-names": {
-    "board": "Direção",
-    "aerodynamics": "Aerodinâmica",
-    "chassis&suspension": "Chassis e Suspensão",
-    "vehicle-dynamics": "Dinâmica de Veículo",
-    "steering&ergonomics": "Direção e Ergonómica ",
-    "electronics": "Eletrónica",
-    "powertrain": "Motor",
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
+    "chassis": "Chassis",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "electronics": "Electronics and Software",
+    "driverless": "Driverless",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "corporate-relations": "Relações Empresariais",
-    "logistics": "Logística",
-    "finances": "Finanças",
-    "suspension": "Suspensão"
+    "production": "Production",
+    "sponsoring": "Sponsoring",
+    "logistics": "Logistics",
+    "cost": "Cost & Manufacturing",
+    "suspension": "Suspension",
+    "software-control": "Software & Control",
+    "finance": "Finance"
   },
   
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Diretor Técnico",
-    "project-manager": "Diretor de Projeto",
-    "bsd": "Diretor de Estratégia",
+    "project-manager": "Gestor de Projeto",
+    "strategy-finance-director": "Diretor de Estratégia & Finanças",
+    "finance": "Diretor Financeiro",
     "dep-leader": "Coordenador",
     "member": "Membro",
-    "cost": "Coordenador de Custo e Manufatura"
+    "cost": "Gestão de Custos"
   },
 
   "team-container": {
@@ -579,18 +591,23 @@
     },
     
     "teams-names": {
-        "board": "Direção",
-        "aerodynamics": "Aerodinâmica",
-        "chassis&Dynamics": "Chassis e Dinâmica",
-        "chassis&suspension": "Chassis & Suspension",
-        "vehicle-dynamics": "Vehicle Dynamics",
-        "steering&ergonomics": "Steering & Ergonomics",
-        "electronics": "Eletrónica",
-        "powertrain": "Motores",
-        "marketing": "Marketing",
-        "corporate-relations": "Relações Empresariais",
-        "logistics": "Logística",
-        "finances": "Finanças"
+      "board": "Board",
+      "aerodynamics": "Aerodynamics",
+      "chassis": "Chassis",
+      "vehicle-dynamics": "Vehicle Dynamics",
+      "electronics": "Electronics and Software",
+      "driverless": "Driverless",
+      "e-powertrain": "Electric Powertrain",
+      "m-powertrain": "Mechanical Powertrain",
+      "marketing": "Marketing",
+      "production": "Production",
+      "sponsoring": "Sponsoring",
+      "logistics": "Logistics",
+      "cost": "Cost & Manufacturing",
+      "suspension": "Suspension",
+      "software-control": "Software & Control",
+      "strategy-finance-director": "Strategy & Finance Director",
+      "finance": "Finance"
     },
     "roles": {
         "team-leader": "Team Leader",
@@ -676,7 +693,7 @@
     "static-ev-desc":"Os eventos estáticos avaliam a preparação da equipa nas seguintes áreas:",
     "area":"Área",	
     "points":"Pontos",
-    "business-model": "Business Model",
+    "business-model": "Business Plan",
     "business-model-desc": "O objetivo é avaliar a capacidade da equipa de desenvolver e apresentar um modelo de negócios abrangente. Este modelo de negócios deve estar relacionado ao veículo protótipo específico da equipa ou a um componente específico dele. Ao fazer isso, o negócio deve oferecer o veículo ou componente como um produto, ou vender um serviço com base nele, proporcionando uma oportunidade de negócio recompensadora que gere lucro monetário.",
     "cost-manufacturing": "Cost and Manufacturing",
     "cost-manufacturing-desc": "O objetivo do evento de custo e manufatura é avaliar a compreensão da equipa dos processos de manufatura e dos custos associados à construção de um veículo protótipo. Isso inclui decisões de compensação entre conteúdo e custo, decisões de fazer ou comprar e compreensão das diferenças entre protótipo e produção em massa.",
@@ -692,7 +709,7 @@
     "autocross-desc": "Avaliar a agilidade, manuseio e desempenho dinâmico geral do carro. O carro manobra por um percurso apertado e sinuoso marcado por cones. O foco está em alcançar o tempo mais rápido enquanto navega com sucesso pelo percurso, enfatizando a aceleração lateral e longitudinal, além da responsividade.",
     "endurance": "Endurance",
     "endurance-desc": "Testar a durabilidade, confiabilidade e eficiência de combustível do carro ao longo de uma distância de corrida estendida. O carro deve completar um número especificado de voltas em uma pista desafiadora. O evento avalia tanto a resistência do veículo quanto as decisões estratégicas da equipa em relação à eficiência de combustível, paragens nas boxes e confiabilidade geral.",
-    "efficiency": "Efficiency / Trackdrive",
+    "efficiency": "Efficiency",
     "efficiency-desc": "A eficiência é medida no evento de resistência é refletida na capacidade da equipa de projetar um carro que possa completar a corrida com um consumo mínimo de combustível, demonstrando não apenas velocidade, mas também uma gestão de energia cuidadosa.",
     "media-aps": "NFS nos Media"
   },

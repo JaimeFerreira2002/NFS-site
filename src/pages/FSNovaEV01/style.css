@@ -307,3 +307,79 @@
   margin-bottom: 10px;
   font-size: 1.1em;
 }
+.novaev01-season-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 30px auto 10px;
+}
+
+.novaev01-season-toggle-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 45px;
+  font-family: 'Horizon', sans-serif;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.novaev01-season-toggle-btn:hover:not(.active) {
+  background: rgba(40, 97, 150, 0.15);
+  border-color: rgba(40, 97, 150, 0.4);
+  color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+.novaev01-season-toggle-btn.active {
+  background: linear-gradient(135deg, rgba(40, 97, 150, 0.3), rgba(112, 160, 255, 0.2));
+  border: 1px solid #70a0ff;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(112, 160, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.novaev01-season-toggle-label {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.65em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  opacity: 0.7;
+}
+
+.novaev01-season-toggle-btn.active .novaev01-season-toggle-label {
+  opacity: 1;
+  color: #70a0ff;
+}
+
+.novaev01-season-toggle-year {
+  display: block;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .novaev01-season-toggle-container {
+    gap: 12px;
+  }
+
+  .novaev01-season-toggle-btn {
+    padding: 14px 30px;
+    min-width: 110px;
+  }
+
+  .novaev01-season-toggle-year {
+    font-size: 1.2em;
+  }
+}

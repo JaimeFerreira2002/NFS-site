@@ -26,8 +26,9 @@
   }
   
   .member-name {
-    font-size: 1.3em; /* Increase the font size of the name */
-    margin-bottom: 8px; /* Add some spacing below the name */
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    text-align: center;
   }
   
   .member-role {
@@ -35,8 +36,8 @@
     font-weight: 600;
     max-width: 90%;
     color: #818181;
+    text-align: center;
   }
-
 
   /*//////POP UP/////////*/
 

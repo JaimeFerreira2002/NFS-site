@@ -19,17 +19,16 @@ const photos = [
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev5.jpg?alt=media&token=11de9c49-d236-47c4-925b-efe18a1d8947",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev6.jpg?alt=media&token=457a7355-f9fa-4e2a-ac02-d0a89b34f4bb",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev7.jpg?alt=media&token=14192e7e-c040-4d0b-b15b-9a8d9332e435",
-  // Add more EV01 photos
 ];
 
 const NOVAEV01Page = () => {
   const { t } = useTranslation();
   const ref = useRef();
   const [openTeamAccordion, setOpenTeamAccordion] = useState(null);
+  const [activeSeason, setActiveSeason] = useState('2425');
 
   ///////////////ANIMATIONS///////////////////////////
 
-  //controllers//
   const specsAndModelController = useAnimation();
   const [specsAndModelRef, specsAndModelInView] = useInView({ threshold: 0.1 });
 
@@ -38,7 +37,6 @@ const NOVAEV01Page = () => {
 
   //////EFFECTS////////
 
-  //specs and model
   React.useEffect(() => {
     if (specsAndModelInView) {
       specsAndModelController.start({
@@ -55,7 +53,6 @@ const NOVAEV01Page = () => {
     }
   }, [specsAndModelController, specsAndModelInView]);
 
-  //team
   React.useEffect(() => {
     if (teamInView) {
       teamController.start({ opacity: 1, x: 0 });
@@ -64,7 +61,6 @@ const NOVAEV01Page = () => {
     }
   }, [teamController, teamInView]);
 
-  //used for the specs section translations - UPDATED for NOVA EV01
   const generalKeys = [
     "weight",
     "wheel-base",
@@ -83,11 +79,12 @@ const NOVAEV01Page = () => {
     setOpenTeamAccordion(openTeamAccordion === index ? null : index);
   };
 
-  // Access EV01-specific sponsors
   const ev01Partners = PartnersData.ev01 || {};
   const mainSponsors = ev01Partners.main || [];
   
-  const ev01Team = TeamListData.novaev01 || [];
+  const ev01Team2425 = TeamListData.novaev01_2425 || [];
+  const ev01Team2526 = TeamListData.novaev01_2526 || [];
+  const activeTeam = activeSeason === '2425' ? ev01Team2425 : ev01Team2526;
 
   const tierTitles = {
     institutional: t("fsnovaev01-page.sponsors.institutional") || "Institutional Partners",
@@ -130,7 +127,6 @@ const NOVAEV01Page = () => {
         </div>
       )}
 
-      {/* GOLD SPONSORS SECTION */}
       <img
         src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev1.jpg?alt=media&token=74ae2ddd-46de-4263-8d31-9b7e24d11de1"
         alt="NOVA EV01"
@@ -210,9 +206,9 @@ const NOVAEV01Page = () => {
           <h3>FSPT Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Engeneering Design: P1</li>
-            <li>Cost & Manufacturing: P3</li>
-            <li>Business Plan Presentation: P1</li>
+            <li>Engeneering Design: 1<sup>st</sup> Place</li>
+            <li>Cost & Manufacturing: 3<sup>rd</sup> Place</li>
+            <li>Business Plan Presentation: 1<sup>st</sup> Place</li>
           </ul>
         </div>
       </div>
@@ -266,6 +262,24 @@ const NOVAEV01Page = () => {
           {t(`fsnovaev01-page.team-title`)}
         </div>
 
+        {/* SEASON TOGGLE */}
+        <div className="novaev01-season-toggle-container">
+          <button
+            className={`novaev01-season-toggle-btn ${activeSeason === '2425' ? 'active' : ''}`}
+            onClick={() => { setActiveSeason('2425'); setOpenTeamAccordion(null); }}
+          >
+            <span className="novaev01-season-toggle-label">Season</span>
+            <span className="novaev01-season-toggle-year">24/25</span>
+          </button>
+          <button
+            className={`novaev01-season-toggle-btn ${activeSeason === '2526' ? 'active' : ''}`}
+            onClick={() => { setActiveSeason('2526'); setOpenTeamAccordion(null); }}
+          >
+            <span className="novaev01-season-toggle-label">Season</span>
+            <span className="novaev01-season-toggle-year">25/26</span>
+          </button>
+        </div>
+
         <div className="team-number-container">
           <div className="team-number-row">
             <div className="numbers members">
@@ -293,7 +307,7 @@ const NOVAEV01Page = () => {
 
         {/* TEAM ACCORDION */}
         <div className="team-accordion-container">
-          {ev01Team.map((department, index) => {
+          {activeTeam.map((department, index) => {
             const isOpen = openTeamAccordion === index;
             return (
               <div key={index} className="team-accordion-item">
@@ -308,7 +322,7 @@ const NOVAEV01Page = () => {
                     {isOpen ? '−' : '+'}
                   </span>
                 </button>
-                <div 
+                <div
                   className={`team-accordion-content ${isOpen ? 'open' : ''}`}
                   style={{
                     maxHeight: isOpen ? '5000px' : '0',
