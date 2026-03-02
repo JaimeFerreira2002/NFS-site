@@ -193,7 +193,8 @@
     "logistics": "Logistics",
     "operations": "Operations",
     "production": "Production",
-    "sponsoring": "Corporate Relations"
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
   },
   
 "roles": {
@@ -339,13 +340,18 @@
     "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
-    "electronics": "Electronics and Software",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
+    "driverless": "Driverless",
     "powertrain": "Powertrain",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
     "logistics": "Logistics",
-    "suspension": "Suspension",
+    "operations": "Operations",
     "production": "Production",
-    "cost": "Cost",
+    "corporate-relations": "Corporate Relations",
     "sponsoring": "Sponsoring"
   },
 
@@ -490,7 +496,8 @@
     "logistics": "Logistics",
     "operations": "Operations",
     "production": "Production",
-    "sponsoring": "Corporate Relations"
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
   },
 
   "roles": {

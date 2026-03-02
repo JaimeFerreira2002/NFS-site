@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "../FSFenixEvoPage/style.css";
+import "./style.css";
 import { useTranslation } from "react-i18next";
 import SpecsSection from "../../components/SpecsSection";
 import Gallery from "../../components/Gallery";
@@ -266,14 +266,14 @@ const NOVAEV01Page = () => {
         <div className="novaev01-season-toggle-container">
           <button
             className={`novaev01-season-toggle-btn ${activeSeason === '2425' ? 'active' : ''}`}
-            onClick={() => { setActiveSeason('2425'); setOpenTeamAccordion(null); }}
+            onClick={() => { setActiveSeason('2425'); }}
           >
             <span className="novaev01-season-toggle-label">Season</span>
             <span className="novaev01-season-toggle-year">24/25</span>
           </button>
           <button
             className={`novaev01-season-toggle-btn ${activeSeason === '2526' ? 'active' : ''}`}
-            onClick={() => { setActiveSeason('2526'); setOpenTeamAccordion(null); }}
+            onClick={() => { setActiveSeason('2526'); }}
           >
             <span className="novaev01-season-toggle-label">Season</span>
             <span className="novaev01-season-toggle-year">25/26</span>

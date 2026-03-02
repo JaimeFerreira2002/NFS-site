@@ -188,7 +188,8 @@
     "logistics": "Logistics",
     "operations": "Operations",
     "production": "Production",
-    "sponsoring": "Corporate Relations"
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
   },
   
   "roles": {
@@ -335,19 +336,19 @@
     "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
-    "electronics": "Electronics and Software",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
     "driverless": "Driverless",
+    "powertrain": "Powertrain",
     "e-powertrain": "Electric Powertrain",
     "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "production": "Production",
-    "sponsoring": "Sponsoring",
     "logistics": "Logistics",
-    "cost": "Cost & Manufacturing",
-    "suspension": "Suspension",
-    "software-control": "Software & Control",
-    "strategy-finance-director": "Strategy & Finance Director",
-    "finance": "Finance"
+    "operations": "Operations",
+    "production": "Production",
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
   },
 
   "roles": {
@@ -480,18 +481,19 @@
     "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
-    "electronics": "Electronics and Software",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
     "driverless": "Driverless",
+    "powertrain": "Powertrain",
     "e-powertrain": "Electric Powertrain",
     "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "production": "Production",
-    "sponsoring": "Sponsoring",
     "logistics": "Logistics",
-    "cost": "Cost & Manufacturing",
-    "suspension": "Suspension",
-    "software-control": "Software & Control",
-    "finance": "Finance"
+    "operations": "Operations",
+    "production": "Production",
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
   },
   
   "roles": {
