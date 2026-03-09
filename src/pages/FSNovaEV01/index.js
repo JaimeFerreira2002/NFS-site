@@ -120,7 +120,7 @@ const NOVAEV01Page = () => {
                 rel="noopener noreferrer"
                 className="main-sponsor-card"
               >
-                <img src={sponsor.imageUrl} alt={sponsor.title} />
+                <img src={sponsor.imageUrl} alt={sponsor.title}/>
               </a>
             ))}
           </div>

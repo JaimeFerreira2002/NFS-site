@@ -13,6 +13,7 @@ import {
 import { useTranslation } from "react-i18next";
 import Accordion from "react-bootstrap/Accordion";
 import YouTube from "react-youtube";
+import { toPublicUrl } from '../../utils/storageUrl';
 
 
 const AboutUsPage = () => {

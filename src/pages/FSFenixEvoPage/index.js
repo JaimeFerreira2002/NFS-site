@@ -103,7 +103,7 @@ const FenixEvoPage = () => {
         <div className="gold-sponsors-grid">
           {goldSponsors.map((sponsor) => (
             <a key={sponsor.title} href={sponsor.link} target="_blank" rel="noopener noreferrer" className="gold-sponsor-card">
-              <img src={sponsor.imageUrl} alt={sponsor.title} />
+              <img src={sponsor.imageUrl} alt={sponsor.title} loading="lazy"/>
             </a>
           ))}
         </div>
@@ -112,6 +112,7 @@ const FenixEvoPage = () => {
       <img
         src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fcarro_fspt.jpg?alt=media&token=c254dd19-2cd4-400c-9694-0b700ddab32d"
         alt="Fenix Evo"
+        loading="lazy"
       />
 
       <div className="fenixevo-background-image-container">
@@ -214,7 +215,7 @@ const FenixEvoPage = () => {
               <div className={`partners-tier-grid ${category}`}>
                 {categorySponsors.map((sponsor) => (
                   <a key={sponsor.title} href={sponsor.link} target="_blank" rel="noopener noreferrer" className="partner-logo-card">
-                    <img src={sponsor.imageUrl} alt={sponsor.title} />
+                    <img src={sponsor.imageUrl} alt={sponsor.title} loading="lazy"/>
                   </a>
                 ))}
               </div>

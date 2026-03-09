@@ -4,7 +4,6 @@ import PartnersData from "./PartnersList.js";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 import PageHeader from "../../components/PageHeader/index.js";
-import SplashScreen from '../../components/SplashScreen/index.js'; 
 import loadImages from '../../HelperFunctions.js'
 
 const Partners = () => {
@@ -74,7 +73,6 @@ const Partners = () => {
 
   return (
     <div className="partners-page">
-      <SplashScreen isVisible={isLoading}/>
       <PageHeader
         title={t("partners-page.page-title")}
         subtitle={t("partners-page.page-subtitle")}
