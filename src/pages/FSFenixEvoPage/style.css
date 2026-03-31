@@ -64,7 +64,7 @@
   background-clip: text;
   color: transparent;
   margin-bottom: 1%;
-  padding-top: 1%;
+  padding-top: 2%;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -532,7 +532,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1300px;
+  width: 70%;
   height: 250px;
 }
 
@@ -542,8 +542,8 @@
 }
 
 .main-sponsor-card img {
-  width: 2000px;
-  max-height: 1500px;
+  width: 100%;
+  height: 110%;
 }
 
 /*///////// Team Accordion Section /////////*/

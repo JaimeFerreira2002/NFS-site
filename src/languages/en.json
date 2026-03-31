@@ -32,8 +32,8 @@
     "perk-innovation-title": "Innovation Partnership",
     "perk-innovation-desc": "Collaborate on cutting-edge automotive technology and sustainable mobility solutions",
     "perk-education-title": "Educational Impact",
-    "perk-education-desc": "Support the next generation of engineers while enhancing your corporate social responsibility",
-    "interested-title": "Interested in partnering?",
+    "perk-education-desc": "Support the next generation of engineers and position your company as a driver of national talent",
+    "interested-title": "Interested in being our partner?",
     "interested-desc": "Get in touch with us to discuss partnership opportunities",
     "contact-button": "Contact Us",
     "our-partners": "Our Partners",
@@ -41,7 +41,8 @@
     "tier-gold": "Gold",
     "tier-silver": "Silver",
     "tier-bronze": "Bronze",
-    "tier-software": "Software"
+    "tier-software": "Software",
+    "tier-partner": "Partner"
   },
 
 "fsnovaev01-page": {
@@ -84,13 +85,13 @@
     
     "powertrain": {
       "title": "Powertrain",
-      "description": "The heart of the NOVA EV01 is an EMRAX 228 MV liquid-cooled electric motor, delivering impressive power and efficiency. The rear-wheel drive system with a single motor and differential provides excellent traction and control, reaching up to 6500 RPM.",
+      "description": "The heart of the NOVA EV01 is an EMRAX 228 MV electric motor, that delivers impressive power and efficiency. The rear-wheel drive system with a single motor and differential provides excellent traction and control, reaching up to 6500 RPM.",
       
       "motor": "Motor",
       "motor-value": "EMRAX 228 MV Liquid Cooled",
       
       "power": "Power",
-      "power-value": "85 HP",
+      "power-value": "60 kW",
       
       "max-rpm": "Max RPM",
       "max-rpm-value": "6500",
@@ -118,21 +119,21 @@
     
     "chassis": {
       "title": "Chassis",
-      "description": "The tubular steel spaceframe chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness at just 41 kg. The carbon fiber compression-molded steering wheel provides excellent grip and reduces weight in a critical area.",
+      "description": "The tubular steel spaceframe chassis with TIG welding offers an optimal combination of torsional rigidity and lightness at just 41 kg. The carbon fiber compression-molded steering wheel provides excellent grip and reduces weight in a critical area.",
       
       "structure": "Structure Type",
-      "structure-value": "Tubular Steel Spaceframe with Tungsten Welding",
+      "structure-value": "Tubular Steel Spaceframe with TIG Welding",
       
       "weight": "Chassis Weight",
       "weight-value": "41 kg",
       
       "steering-wheel": "Steering Wheel",
-      "steering-wheel-value": "Compression-molded Carbon Fiber"
+      "steering-wheel-value": "Carbon Fiber"
     },
     
     "aero": {
       "title": "Aerodynamics",
-      "description": "The NOVA EV01's aerodynamics were developed to maximize downforce and optimize drag. The carbon fiber bodywork with side and rear diffusers not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
+      "description": "The NOVA EV01's aerodynamics were developed to maximize downforce and optimize drag. The carbon fiber bodywork with side and rear diffusers not only provides lightness but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
       
       "package": "Aerodynamic Package",
       "package-value": "Bodywork with side and rear diffusers",
@@ -149,58 +150,63 @@
       "manufacturing": "Manufacturing",
       "manufacturing-value": "Carbon fiber wet lay-up vacuum cured at 60°C"
     }
-    },
-    
-    "project": {
-      "title": "The Project",
-      "description": "The FS NOVA EV01 represents a historic milestone for the NOVA Formula Student team - our first fully electric prototype. This ambitious project aims to develop skills in electric propulsion technologies, high-voltage systems, and energy management, preparing the team for Formula Student Electric competitions."
-    },
-    
-    "competitions": {
-      "title": "Competitions",
-      "subtitle": "The FS NOVA EV01 competed in the Formula Student Portugal event!",
-      "fspt": {
-        "title": "FORMULA STUDENT PORTUGAL",
-        "date": "27th of July to 1st of August 2025",
-        "location": "Castelo Branco Kart Track",
-        "class": "Class 1"
-      }
-    },
-
-    "sponsors": {
-      "main": "Main",
-      "gold": "Gold",
-      "silver": "Silver",
-      "bronze": "Bronze",
-      "institutional": "Institutional"
-    },
-
-    "teams-names": {
-      "board": "Board",
-      "aerodynamics": "Aerodynamics",
-      "chassis": "Chassis",
-      "vehicle-dynamics": "Vehicle Dynamics",
-      "electronics": "Electronics and Software",
-      "driverless": "Driverless",
-      "e-powertrain": "Electric Powertrain",
-      "m-powertrain": "Mechanical Powertrain",
-      "marketing": "Marketing",
-      "production": "Production",
-      "sponsoring": "Sponsoring",
-      "logistics": "Logistics",
-      "cost": "Cost",
-      "suspension": "Suspension"
   },
   
-  "roles": {
-    "team-leader": "Team Leader",
-    "technical-director": "Technical Director",
-    "project-manager": "Project Manager",
-    "technical-director&team-leader": "Technical Director & Team Leader",
-    "bsd": "Business Strategy Director",
-    "dep-leader": "Department Leader",
-    "member": "Member"
+  "project": {
+    "title": "The Project",
+    "description": "The FS NOVA EV01 represents a historic milestone for the NOVA Formula Student team - our first fully electric prototype. This ambitious project aims to develop skills in electric propulsion technologies, high-voltage systems, and energy management, preparing the team for Formula Student Electric competitions."
   },
+  
+  "competitions": {
+    "title": "Competitions",
+    "subtitle": "The FS NOVA EV01 competed in the Formula Student Portugal event!",
+    "fspt": {
+      "title": "FORMULA STUDENT PORTUGAL",
+      "date": "27th of July to 1st of August 2025",
+      "location": "Castelo Branco Kart Track",
+      "class": "Class 2"
+    }
+  },
+
+  "sponsors": {
+    "main": "Main",
+    "gold": "Gold",
+    "silver": "Silver",
+    "bronze": "Bronze",
+    "partner": "Partner",
+    "institutional": "Institutional"
+  },
+
+  "teams-names": {
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
+    "chassis": "Chassis",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
+    "driverless": "Driverless",
+    "powertrain": "Powertrain",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
+    "marketing": "Marketing",
+    "logistics": "Logistics",
+    "operations": "Operations",
+    "production": "Production",
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
+  },
+  
+"roles": {
+  "team-leader": "Team Leader",
+  "technical-director": "Technical Director",
+  "project-manager": "Project Manager",
+  "strategy-finance-director": "Strategy & Finance Director",
+  "finance": "Finance Director",
+  "dep-leader": "Department Leader",
+  "member": "Member",
+  "cost": "Cost Manager"
+},
   
   "team-container": {
     "members": "Members",
@@ -280,10 +286,10 @@
     
     "chassis": {
       "title": "Chassis",
-      "description": "The tubular chassis with tungsten welding offers an optimal combination of torsional rigidity and lightness. The 45F/55R weight distribution has been carefully calculated to provide ideal balance between traction and maneuverability, allowing predictable and confident car response in all situations.",
+      "description": "The tubular chassis with TIG welding offers an optimal combination of torsional rigidity and lightness. The 45F/55R weight distribution has been carefully calculated to provide ideal balance between traction and maneuverability, allowing predictable and confident car response in all situations.",
       
       "structure": "Structure",
-      "structure-value": "Tubular with Tungsten Welding",
+      "structure-value": "Tubular with TIG Welding",
       
       "weight-dist": "Weight Distribution",
       "weight-dist-value": "45F 55R"
@@ -291,7 +297,7 @@
     
     "aero": {
       "title": "Aerodynamics",
-      "description": "The Fenix Evo's aerodynamics were developed to maximize downforce and minimize drag. The carbon fiber bodywork not only provides lightness and structural rigidity but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
+      "description": "The Fenix Evo's aerodynamics were developed to maximize downforce and minimize drag. The carbon fiber bodywork not only provides lightness but was also shaped through CFD simulations to optimize airflow, improving high-speed stability and cornering efficiency.",
       
       "bodywork": "Bodywork",
       "bodywork-value": "Carbon Fiber"
@@ -334,13 +340,18 @@
     "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
-    "electronics": "Electronics and Software",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
+    "driverless": "Driverless",
     "powertrain": "Powertrain",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
     "logistics": "Logistics",
-    "suspension": "Suspension",
+    "operations": "Operations",
     "production": "Production",
-    "cost": "Cost",
+    "corporate-relations": "Corporate Relations",
     "sponsoring": "Sponsoring"
   },
 
@@ -350,7 +361,8 @@
     "project-manager": "Project Manager",
     "bsd": "Business & Strategy Director",
     "dep-leader": "Department Leader",
-    "member": "Member"
+    "member": "Member",
+    "cost": "Head of Cost and Manufacture"
   },
 
   "with-help-from": "With help from",
@@ -467,31 +479,38 @@
       "location": "Castelo Branco Kart Track"
     }
   },
-  
+
   "teams-names": {
     "board": "Board",
     "aerodynamics": "Aerodynamics",
-    "chassis&suspension": "Chassis & Suspension",
+    "chassis": "Chassis",
     "vehicle-dynamics": "Vehicle Dynamics",
-    "steering&ergonomics": "Steering & Ergonomics",
+    "suspension": "Suspension",
     "electronics": "Electronics",
+    "software-control": "Software & Control",
+    "driverless": "Driverless",
     "powertrain": "Powertrain",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "corporate-relations": "Corporate Relations",
     "logistics": "Logistics",
-    "finances": "Finance",
-    "suspension": "Suspension"
-
+    "operations": "Operations",
+    "production": "Production",
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
   },
 
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Technical Director",
     "project-manager": "Project Manager",
-    "bsd": "Strategy Director",
-    "dep-leader": "Coordinator",
-    "member": "Member"
+    "strategy-finance-director": "Strategy & Finance Director",
+    "finance": "Finance Director",
+    "dep-leader": "Department Leader",
+    "member": "Member",
+    "cost": "Cost Manager"
   },
+
   "team-container": {
     "members": "Members",
     "degrees": "Degrees",
@@ -501,7 +520,7 @@
 
   "fsdragon-page": {
     "page-title": "FS DRAGON",
-    "page-subtitle": "The FS DRAGON is the first prototype car that the NOVA Formula Student team built.",
+    "page-subtitle": "The FS DRAGON is the first prototype car that the FS FCT team built.",
     "specs-title": "Technical Specifications",
     "team-title": "The Team",
     "gallery": "Gallery",
@@ -664,7 +683,7 @@
     "static-ev-desc": "The static events assess the team's preparation in the following areas:",
     "area": "Area",
     "points": "Points",
-    "business-model": "Business Model",
+    "business-model": "Business Plan",
     "business-model-desc": "The goal is to assess the team's ability to develop and present a comprehensive business model. This business model must be related to the specific prototype vehicle of the team or a specific component of it. By doing so, the business should offer the vehicle or component as a product, or sell a service based on it, providing a rewarding business opportunity that generates monetary profit.",
     "cost-manufacturing": "Cost and Manufacturing",
     "cost-manufacturing-desc": "The goal of the cost and manufacturing event is to assess the team's understanding of manufacturing processes and the costs associated with building a prototype vehicle. This includes trade-off decisions between content and cost, make or buy decisions, and understanding the differences between prototype and mass production.",
@@ -680,7 +699,7 @@
     "autocross-desc": "Evaluate the car's agility, handling, and overall dynamic performance. The car maneuvers through a tight and winding course marked by cones. The focus is on achieving the fastest time while successfully navigating the course, emphasizing lateral and longitudinal acceleration, as well as responsiveness.",
     "endurance": "Endurance",
     "endurance-desc": "Test the car's durability, reliability, and fuel efficiency over an extended race distance. The car must complete a specified number of laps on a challenging track. The event assesses both the vehicle's endurance and the team's strategic decisions regarding fuel efficiency, pit stops, and overall reliability.",
-    "efficiency": "Efficiency / Trackdrive",
+    "efficiency": "Efficiency",
     "efficiency-desc": "Efficiency measured in the endurance event is reflected in the team's ability to design a car that can complete the race with minimum fuel consumption, demonstrating not just speed, but also careful energy management.",
     "media-aps": "NFS in the Media"
   },

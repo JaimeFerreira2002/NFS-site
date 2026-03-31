@@ -203,6 +203,19 @@ const FSFenixPage = () => {
         </div>
       </div>        
 
+      {/* COMPETITIONS RESULTS */}
+      <div className="competition-results-container">
+        <div className="competition-results-column">
+          <h3>FSPT Results</h3>
+          <h5>Static Events</h5>
+          <ul>
+            <li>Engeneering Design: 4<sup>th</sup> Place</li>
+            <li>Cost & Manufacturing: 4<sup>th</sup> Place</li>
+            <li>Business Plan Presentation: 6<sup>th</sup> Place</li>
+          </ul>
+        </div>
+      </div>
+
 
       {/* GALLERY */}
       {/* <div className='fenix-gallery-container'>

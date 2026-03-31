@@ -1,3 +1,4 @@
+export const placeholder = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2Fplaceholder.jpg?alt=media&token=4b6715b3-336e-4351-acd5-7cc1433fd04d";
 export const Afonso_Dinis = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FAfonso%20Dinis.png?alt=media&token=3fb70844-a2c8-4ee8-beb9-8f743b12792b";
 export const Angela_Rodrigues = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2F%C3%82ngela%20Rodrigues.png?alt=media&token=fa2165e4-346a-4da6-a069-c530aaa1f68b";
 export const Beatriz_Moniz = "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FMembros%2FBeatriz%20Moniz.png?alt=media&token=e3b9d260-2b77-42f2-a9a6-e10f3f26fd69";

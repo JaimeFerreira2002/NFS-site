@@ -97,7 +97,7 @@ body {
   background-color: #1d1d1d;
   background-size: cover;
   background-position: center 40%; /* Adjust the percentage as needed */
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: end;
   padding: 3% 10vw;
   gap: 20px;
@@ -112,12 +112,12 @@ body {
 
 
 .how-it-works h2 {
-  text-align: right;
+  text-align: left;
   color: white;
 }
 
 .how-it-works p {
-  text-align: end;
+  text-align: justify;
   color: white
 }
 
@@ -171,7 +171,7 @@ body {
 
 /* Default styles for English images */
 .team-image-container.en {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FEstruturaEquipa.png?alt=media&token=6f5dbd51-27cc-4c17-8316-fc91215a1563');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FEstruturaEquipa.png?alt=media&token=ddde0679-84c6-484b-9578-d139e5bef5fe');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -181,14 +181,14 @@ body {
 /* Styles for English images on screens with an aspect ratio less than 1 (more vertical) */
 @media (max-aspect-ratio: 1/1) {
   .team-image-container.en {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Forg_chart_eng.drawio_mobile.png?alt=media&token=f70792bf-147c-46c8-acc2-b6a62178b470');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FEstruturaEquipa.png?alt=media&token=ddde0679-84c6-484b-9578-d139e5bef5fe');
     z-index: 10;
   }
 }
 
 /* Default styles for Portuguese images */
 .team-image-container.pt {
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FEstruturaEquipa.png?alt=media&token=6f5dbd51-27cc-4c17-8316-fc91215a1563');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FEstruturaEquipa.png?alt=media&token=ddde0679-84c6-484b-9578-d139e5bef5fe');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -198,7 +198,7 @@ body {
 /* Styles for Portuguese images on screens with an aspect ratio less than 1 (more vertical) */
 @media (max-aspect-ratio: 1/1) {
   .team-image-container.pt {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Forg_chart_pt.drawio_mobile.png?alt=media&token=d1b62a28-f752-4e37-9383-fe94b4a85b19');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FEstruturaEquipa.png?alt=media&token=ddde0679-84c6-484b-9578-d139e5bef5fe');
     z-index: 10;
   }
 }

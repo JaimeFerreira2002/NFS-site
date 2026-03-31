@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "../FSFenixEvoPage/style.css";
+import "./style.css";
 import { useTranslation } from "react-i18next";
 import SpecsSection from "../../components/SpecsSection";
 import Gallery from "../../components/Gallery";
@@ -19,18 +19,16 @@ const photos = [
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev5.jpg?alt=media&token=11de9c49-d236-47c4-925b-efe18a1d8947",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev6.jpg?alt=media&token=457a7355-f9fa-4e2a-ac02-d0a89b34f4bb",
   "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev7.jpg?alt=media&token=14192e7e-c040-4d0b-b15b-9a8d9332e435",
-  // Add more EV01 photos
 ];
 
 const NOVAEV01Page = () => {
   const { t } = useTranslation();
   const ref = useRef();
-  const [openAccordion, setOpenAccordion] = useState(null);
   const [openTeamAccordion, setOpenTeamAccordion] = useState(null);
+  const [activeSeason, setActiveSeason] = useState('2425');
 
   ///////////////ANIMATIONS///////////////////////////
 
-  //controllers//
   const specsAndModelController = useAnimation();
   const [specsAndModelRef, specsAndModelInView] = useInView({ threshold: 0.1 });
 
@@ -39,7 +37,6 @@ const NOVAEV01Page = () => {
 
   //////EFFECTS////////
 
-  //specs and model
   React.useEffect(() => {
     if (specsAndModelInView) {
       specsAndModelController.start({
@@ -56,7 +53,6 @@ const NOVAEV01Page = () => {
     }
   }, [specsAndModelController, specsAndModelInView]);
 
-  //team
   React.useEffect(() => {
     if (teamInView) {
       teamController.start({ opacity: 1, x: 0 });
@@ -65,7 +61,6 @@ const NOVAEV01Page = () => {
     }
   }, [teamController, teamInView]);
 
-  //used for the specs section translations - UPDATED for NOVA EV01
   const generalKeys = [
     "weight",
     "wheel-base",
@@ -80,20 +75,25 @@ const NOVAEV01Page = () => {
   const chassisKeys = ["structure", "weight", "steering-wheel"];
   const aeroKeys = ["package", "cl", "cd", "frontal-area", "manufacturing"];
 
-  const toggleAccordion = (category) => {
-    setOpenAccordion(openAccordion === category ? null : category);
-  };
-
   const toggleTeamAccordion = (index) => {
     setOpenTeamAccordion(openTeamAccordion === index ? null : index);
   };
 
-  // Access EV01-specific sponsors
   const ev01Partners = PartnersData.ev01 || {};
   const mainSponsors = ev01Partners.main || [];
-  const goldSponsors = ev01Partners.gold || [];
   
-  const ev01Team = TeamListData.novaev01 || [];
+  const ev01Team2425 = TeamListData.novaev01_2425 || [];
+  const ev01Team2526 = TeamListData.novaev01_2526 || [];
+  const activeTeam = activeSeason === '2425' ? ev01Team2425 : ev01Team2526;
+
+  const tierTitles = {
+    institutional: t("fsnovaev01-page.sponsors.institutional") || "Institutional Partners",
+    gold: t("fsnovaev01-page.sponsors.gold") || "Gold Partners",
+    silver: t("fsnovaev01-page.sponsors.silver") || "Silver Partners",
+    bronze: t("fsnovaev01-page.sponsors.bronze") || "Bronze Partners",
+    partner: t("fsnovaev01-page.sponsors.partner") || "Partners",
+    software: t("fsnovaev01-page.sponsors.software") || "Software Partners"
+  };
 
   return (
     <div className="fenixevo">
@@ -105,7 +105,7 @@ const NOVAEV01Page = () => {
       />
 
       <h2 className="gold-sponsors-title">
-          {t("fsnovaev01-page.with-help-from") || "Com o apoio de"}
+        {t("fsnovaev01-page.with-help-from") || "Com o apoio de"}
       </h2>
 
       {/* MAIN SPONSORS SECTION */}
@@ -120,15 +120,12 @@ const NOVAEV01Page = () => {
                 rel="noopener noreferrer"
                 className="main-sponsor-card"
               >
-                <img src={sponsor.imageUrl} alt={sponsor.title} />
+                <img src={sponsor.imageUrl} alt={sponsor.title}/>
               </a>
             ))}
           </div>
         </div>
       )}
-
-      {/* GOLD SPONSORS SECTION */}
-
 
       <img
         src="https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2Fev1.jpg?alt=media&token=74ae2ddd-46de-4263-8d31-9b7e24d11de1"
@@ -209,13 +206,9 @@ const NOVAEV01Page = () => {
           <h3>FSPT Results</h3>
           <h5>Static Events</h5>
           <ul>
-            <li>Engeneering Design: P1</li>
-            <li>Cost & Manufacturing: P3</li>
-            <li>Business Plan Presentation: 1st Place</li>
-          </ul>
-          <h5>Other:</h5>
-          <ul>
-            <li>Special Awards: Best social media presence</li>
+            <li>Engeneering Design: 1<sup>st</sup> Place</li>
+            <li>Cost & Manufacturing: 3<sup>rd</sup> Place</li>
+            <li>Business Plan Presentation: 1<sup>st</sup> Place</li>
           </ul>
         </div>
       </div>
@@ -229,62 +222,62 @@ const NOVAEV01Page = () => {
 
       <Gallery images={photos} />
 
-      {/* SPONSORS ACCORDION */}
-      <div className="sponsors-accordion-section">
-        <div className="fenixevo-section-title">
+      {/* SPONSORS LIST SECTION */}
+      <div className="partners-list-section">
+        <div className="partners-main-title">
           {t("fsnovaev01-page.sponsors-title") || "Patrocinadores"}
         </div>
 
-        <div className="accordion-container">
-          {Object.keys(ev01Partners).map((category) => {
-            const isOpen = openAccordion === category;
+        {Object.keys(ev01Partners)
+          .filter(category => category !== 'main')
+          .map((category) => {
             const categorySponsors = ev01Partners[category];
             
-            // Skip if no sponsors in this category
             if (!categorySponsors || categorySponsors.length === 0) return null;
             
             return (
-              <div key={category} className="accordion-item">
-                <button
-                  className={`accordion-header ${isOpen ? 'active' : ''}`}
-                  onClick={() => toggleAccordion(category)}
-                >
-                  <span>{t(`fsnovaev01-page.sponsors.${category}`).toUpperCase()}</span>
-                  <span className="accordion-icon">
-                    {isOpen ? '−' : '+'}
-                  </span>
-                </button>
-                <div 
-                  className={`accordion-content ${isOpen ? 'open' : ''}`}
-                  style={{
-                    maxHeight: isOpen ? '5000px' : '0',
-                    padding: isOpen ? '30px' : '0'
-                  }}
-                >
-                  <div className="sponsors-grid">
-                    {categorySponsors.map((sponsor) => (
-                      <a
-                        key={sponsor.title}
-                        href={sponsor.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="sponsor-logo-card"
-                      >
-                        <img src={sponsor.imageUrl} alt={sponsor.title} />
-                      </a>
-                    ))}
-                  </div>
+              <div key={category} className="tier-section">
+                <h3 className="tier-title">{tierTitles[category]}</h3>
+                <div className={`partners-tier-grid ${category}`}>
+                  {categorySponsors.map((sponsor) => (
+                    <a
+                      key={sponsor.title}
+                      href={sponsor.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="partner-logo-card"
+                    >
+                      <img src={sponsor.imageUrl} alt={sponsor.title} />
+                    </a>
+                  ))}
                 </div>
               </div>
             );
           })}
-        </div>
       </div>
 
       {/* TEAM SECTION */}
       <div className="fenixevo-team-container">
         <div className="fenixevo-section-title">
           {t(`fsnovaev01-page.team-title`)}
+        </div>
+
+        {/* SEASON TOGGLE */}
+        <div className="novaev01-season-toggle-container">
+          <button
+            className={`novaev01-season-toggle-btn ${activeSeason === '2425' ? 'active' : ''}`}
+            onClick={() => { setActiveSeason('2425'); }}
+          >
+            <span className="novaev01-season-toggle-label">Season</span>
+            <span className="novaev01-season-toggle-year">24/25</span>
+          </button>
+          <button
+            className={`novaev01-season-toggle-btn ${activeSeason === '2526' ? 'active' : ''}`}
+            onClick={() => { setActiveSeason('2526'); }}
+          >
+            <span className="novaev01-season-toggle-label">Season</span>
+            <span className="novaev01-season-toggle-year">25/26</span>
+          </button>
         </div>
 
         <div className="team-number-container">
@@ -314,7 +307,7 @@ const NOVAEV01Page = () => {
 
         {/* TEAM ACCORDION */}
         <div className="team-accordion-container">
-          {ev01Team.map((department, index) => {
+          {activeTeam.map((department, index) => {
             const isOpen = openTeamAccordion === index;
             return (
               <div key={index} className="team-accordion-item">
@@ -329,7 +322,7 @@ const NOVAEV01Page = () => {
                     {isOpen ? '−' : '+'}
                   </span>
                 </button>
-                <div 
+                <div
                   className={`team-accordion-content ${isOpen ? 'open' : ''}`}
                   style={{
                     maxHeight: isOpen ? '5000px' : '0',

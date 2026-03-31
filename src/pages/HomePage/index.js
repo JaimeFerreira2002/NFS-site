@@ -2,12 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 import { useTranslation } from "react-i18next";
-import { faAddressBook } from '@fortawesome/free-regular-svg-icons';
-import { faAnglesDown } from '@fortawesome/free-solid-svg-icons';
-import SplashScreen from '../../components/SplashScreen/index.js'; // Import SplashScreen if it's not imported already
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
@@ -26,40 +23,34 @@ const HomePage = () => {
   const { t } = useTranslation();
 
   const [showScrollArrow, setShowScrollArrow] = useState(true);
-  const [isLoading, setIsLoading] = useState(true); // State to control splash screen visibility
 
-  // --- CAR DATA ---
-// We define all car data here to create the grid
-const carData = [
+  const carData = [
     {
-    name: "FS DRAGON",
-    year: "2015",
-    path: "/garage/fsdragon",
-    // This is the Dragon image from your old carousel
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fcar_background.jpg?alt=media&token=b4845e0b-8f0b-407e-8f4d-1efce819f1d3"
-  },
-  {
-    name: "FS FENIX",
-    year: "2023",
-    path: "/garage/fsfenix",
-    // This is the Fenix render from your old carousel
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%2Ffsfenix_render3.png?alt=media&token=f6f6d07e-71a5-4524-9761-e3460a77c3fd"
-  },
-  {
-    name: "FS FENIX EVO",
-    year: "2024",
-    path: "/garage/fsfenixevo",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fcarro_fspt.jpg?alt=media&token=c254dd19-2cd4-400c-9694-0b700ddab32d"
-  },
-  {
-    name: "NOVA EV01",
-    year: "2025",
-    path: "/garage/fsnovaev01",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2FnovaEV01Render.png?alt=media&token=dd6df09b-42a4-45d2-b1c6-a387b1c78844"
-  }
-];
+      name: "FS DRAGON",
+      year: "2015",
+      path: "/garage/fsdragon",
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FDragon%2Fcar_background.jpg?alt=media&token=b4845e0b-8f0b-407e-8f4d-1efce819f1d3"
+    },
+    {
+      name: "FS FENIX",
+      year: "2023",
+      path: "/garage/fsfenix",
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%2Ffsfenix_render3.png?alt=media&token=f6f6d07e-71a5-4524-9761-e3460a77c3fd"
+    },
+    {
+      name: "FS FENIX EVO",
+      year: "2024",
+      path: "/garage/fsfenixevo",
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FFenix%20Evo%2Fcarro_fspt.jpg?alt=media&token=c254dd19-2cd4-400c-9694-0b700ddab32d"
+    },
+    {
+      name: "NOVA EV01",
+      year: "2025",
+      path: "/garage/fsnovaev01",
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2FNovaEV01%2FnovaEV01Render.png?alt=media&token=dd6df09b-42a4-45d2-b1c6-a387b1c78844"
+    }
+  ];
 
-  // Handle scroll arrow visibility
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollArrow(window.scrollY <= 100);
@@ -68,45 +59,6 @@ const carData = [
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Track video and image loading
-  useEffect(() => {
-    const video = document.querySelector('.video-player');
-    const images = [
-      'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_fspt.jpg?alt=media&token=97557c72-cc63-44b0-a1e4-3ca6783a03c5',
-      'https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Ffsfenix.png?alt=media&token=5be239b5-6464-4984-82a3-9fbac012723d'
-    ];
-  
-    // Load images
-    let imagesLoaded = 0;
-    let videoLoaded = false;
-  
-    // here we dont use the refactored function because it has the video
-    
-    images.forEach(src => {
-      const img = new Image();
-      img.src = src;
-      img.onload = () => {
-        imagesLoaded += 1;
-        if (imagesLoaded === images.length && videoLoaded) {
-          setIsLoading(false);
-        }
-      };
-    });
-  
-    // Load video
-    if (video) {
-      video.onloadeddata = () => {
-        videoLoaded = true;
-        if (imagesLoaded === images.length) {
-          setIsLoading(false);
-        }
-      };
-    }
-  
-  }, []);
-  
-
-  // Effects for animations
   useEffect(() => {
     if (titleInView) {
       titleController.start({ opacity: 0 });
@@ -139,11 +91,8 @@ const carData = [
     }
   }, [controlsGarage, garageInView]);
 
- 
-
   return (
     <div className="home-page">
-    <SplashScreen isVisible={isLoading}/>
       <div className="background-home-video">
         <div className="video-player-container">
           <video className='video-player' autoPlay loop muted>
@@ -177,7 +126,7 @@ const carData = [
           <p className='content-team'>{t('home.team_desc3')}</p>
         </div>
         <motion.div className="team-photo" animate={controlsTeam} initial={{ opacity: 0, x: 100 }}>
-          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_2025.jpg?alt=media&token=7fb76067-f655-4e54-9680-4a0984848092' alt="Team Leader" />
+          <img src='https://firebasestorage.googleapis.com/v0/b/novaformulastudent.appspot.com/o/Fotos%2Fteam_photo_2025.jpg?alt=media&token=7fb76067-f655-4e54-9680-4a0984848092' alt="Team" />
         </motion.div>
       </div>
 
@@ -186,7 +135,6 @@ const carData = [
           <div className="sponsor-text-content">
             <h2 className='title-sponsor'>{t('home.sponsor_title')}</h2>
           </div>
-          
           <motion.div
             animate={controlsSponsor}
             initial={{ opacity: 0, x: -100 }}
@@ -196,39 +144,36 @@ const carData = [
               <div className='reach'>{t("home.reach_us")}</div>
             </Link>
           </motion.div>
-
         </div>
       </div>
 
-      <div className="garage-home-section" ref={garageRef}> 
-          {/* Main Title */}
+      <div className="garage-home-section" ref={garageRef}>
         <div className="garage-home-content">
           <h2 className='title-garage'>{t('garage-page.page-title')}</h2>
           <p className='garage-content'>{t('garage-page.page-subtitle')}</p>
         </div>
-          
-        {/* 4-Card Grid */}
-        <motion.div className='garage-grid-container'
-          animate={controlsGarage} 
+        <motion.div
+          className='garage-grid-container'
+          animate={controlsGarage}
           initial={{ opacity: 0, x: 100 }}
         >
-        {carData.map((car) => (
-          <Link 
-            key={car.name} 
-            to={car.path} 
-            className='car-card'
-            style={{ backgroundImage: `url(${car.imageUrl})` }}
-          >
-            <div className='car-card-overlay'>
-              <div className='car-card-text'>
-                <h3>{car.name}</h3>
-                <p>{car.year}</p>
+          {carData.map((car) => (
+            <Link
+              key={car.name}
+              to={car.path}
+              className='car-card'
+              style={{ backgroundImage: `url(${car.imageUrl})` }}
+            >
+              <div className='car-card-overlay'>
+                <div className='car-card-text'>
+                  <h3>{car.name}</h3>
+                  <p>{car.year}</p>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
           ))}
         </motion.div>
-    </div>
+      </div>
     </div>
   );
 };

@@ -243,12 +243,15 @@
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.partners-tier-grid.partner {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
 .partner-logo-card {
   background: white;
   padding: 1.5rem;
   border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,8 +261,7 @@
 }
 
 .partner-logo-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
 }
 
 .partner-logo-card img {
@@ -283,7 +285,8 @@
 
   .partners-tier-grid.silver,
   .partners-tier-grid.bronze,
-  .partners-tier-grid.software {
+  .partners-tier-grid.software,
+  .partners-tier-grid.partner {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
@@ -348,7 +351,8 @@
   .partners-tier-grid.gold,
   .partners-tier-grid.silver,
   .partners-tier-grid.bronze,
-  .partners-tier-grid.software {
+  .partners-tier-grid.software,
+  .partners-tier-grid.partner {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1.5rem;
   }

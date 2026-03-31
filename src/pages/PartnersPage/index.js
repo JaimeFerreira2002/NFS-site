@@ -4,7 +4,6 @@ import PartnersData from "./PartnersList.js";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 import PageHeader from "../../components/PageHeader/index.js";
-import SplashScreen from '../../components/SplashScreen/index.js'; 
 import loadImages from '../../HelperFunctions.js'
 
 const Partners = () => {
@@ -68,12 +67,12 @@ const Partners = () => {
     gold: t("partners-page.tier-gold") || "Gold Partners",
     silver: t("partners-page.tier-silver") || "Silver Partners",
     bronze: t("partners-page.tier-bronze") || "Bronze Partners",
-    software: t("partners-page.tier-software") || "Software Partners"
+    software: t("partners-page.tier-software") || "Software Partners",
+    partner: t("partners-page.tier-partner") || "Partner"
   };
 
   return (
     <div className="partners-page">
-      <SplashScreen isVisible={isLoading}/>
       <PageHeader
         title={t("partners-page.page-title")}
         subtitle={t("partners-page.page-subtitle")}
@@ -98,7 +97,6 @@ const Partners = () => {
           
           <div className="cta-section">
             <h3>{t("partners-page.interested-title") || "Interested in partnering?"}</h3>
-            <p>{t("partners-page.interested-desc") || "Get in touch with us to discuss partnership opportunities"}</p>
             <a href="mailto:formulastudent@ae.fct.unl.pt" className="cta-button">
               {t("partners-page.contact-button") || "Contact Us"}
             </a>

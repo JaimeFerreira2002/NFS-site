@@ -32,8 +32,8 @@
     "perk-innovation-title": "Parceria de Inovação",
     "perk-innovation-desc": "Colabore em tecnologia automóvel de ponta e soluções de mobilidade sustentável",
     "perk-education-title": "Impacto Educacional",
-    "perk-education-desc": "Apoie a próxima geração de engenheiros enquanto melhora a sua responsabilidade social corporativa",
-    "interested-title": "Interessado em ser parceiro?",
+    "perk-education-desc": "Apoie a próxima geração de engenheiros e posicione a sua empresa como impulsionadora do talento nacional",
+    "interested-title": "Interessado em ser nosso parceiro?",
     "interested-desc": "Entre em contacto connosco para discutir oportunidades de parceria",
     "contact-button": "Contacte-nos",
     "our-partners": "Os Nossos Parceiros",
@@ -41,7 +41,8 @@
     "tier-gold": "Gold",
     "tier-silver": "Silver",
     "tier-bronze": "Bronze",
-    "tier-software": "Software"
+    "tier-software": "Software",
+    "tier-partner": "Parceiro"
   },
 
 "fsnovaev01-page": {
@@ -84,13 +85,13 @@
     
     "powertrain": {
       "title": "Motor",
-      "description": "O coração do NOVA EV01 é um motor elétrico EMRAX 228 MV refrigerado a líquido, oferecendo potência e eficiência impressionantes. O sistema de tração traseira com um motor e diferencial proporciona excelente tração e controlo, atingindo 6500 RPM.",
+      "description": "O coração do NOVA EV01 é um motor elétrico EMRAX 228 MV, que oferece potência e eficiência impressionantes. O sistema de tração traseira com um motor e diferencial proporciona excelente tração e controlo, atingindo 6500 RPM.",
       
       "motor": "Motor",
       "motor-value": "EMRAX 228 MV Refrigerado a Líquido",
       
       "power": "Potência",
-      "power-value": "85 cv",
+      "power-value": "60 kW",
       
       "max-rpm": "Max RPM",
       "max-rpm-value": "6500",
@@ -118,21 +119,21 @@
     
     "chassis": {
       "title": "Chassis",
-      "description": "O chassis spaceframe tubular de aço com soldadura a tungsténio oferece uma combinação ótima de rigidez torsional e leveza com apenas 41 kg. O volante em fibra de carbono forjada à compressão proporciona excelente aderência e reduz o peso numa área crítica.",
+      "description": "O chassis spaceframe tubular de aço com soldadura TIG oferece uma combinação ótima de rigidez torsional e leveza com apenas 41 kg. O volante em fibra de carbono forjada à compressão proporciona excelente aderência e reduz o peso numa área crítica.",
       
       "structure": "Tipo de estrutura",
-      "structure-value": "Spaceframe tubular de aço soldado a tungsténio",
+      "structure-value": "Spaceframe tubular de aço soldado a TIG",
       
       "weight": "Peso do chassis",
       "weight-value": "41 kg",
       
       "steering-wheel": "Volante",
-      "steering-wheel-value": "Fibra de carbono forjada à compressão"
+      "steering-wheel-value": "Fibra de carbono"
     },
     
     "aero": {
       "title": "Aerodinâmica",
-      "description": "A aerodinâmica do NOVA EV01 foi desenvolvida para maximizar a downforce e otimizar o arrasto. A carenagem em fibra de carbono com difusores laterais e traseiro não só proporciona leveza e rigidez estrutural, mas também foi moldada através de simulações CFD para otimizar o fluxo de ar, melhorando a estabilidade em alta velocidade e a eficiência em curva.",
+      "description": "A aerodinâmica do NOVA EV01 foi desenvolvida para maximizar a downforce e otimizar o arrasto. A carenagem em fibra de carbono com difusores laterais e traseiro não só proporciona leveza, mas também foi moldada através de simulações CFD para otimizar o fluxo de ar, melhorando a estabilidade em alta velocidade e a eficiência em curva.",
       
       "package": "Pacote Aerodinâmico",
       "package-value": "Bodywork com difusores laterais e traseiro",
@@ -158,7 +159,7 @@
       "title": "FORMULA STUDENT PORTUGAL",
       "date": "27 de julho a 1 de Agosto 2025",
       "location": "Castelo Branco Kart Track",
-      "class": "Class 1"
+      "class": "Class 2"
     }
   },
 
@@ -167,34 +168,39 @@
     "gold": "Gold",
     "silver": "Silver",
     "bronze": "Bronze",
+    "partner": "Parceiro",
     "institutional": "Institucional"
   },
   
   "teams-names": {
-    "board": "Direção",
-    "aerodynamics": "Aerodinâmica",
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
-    "vehicle-dynamics": "Dinâmica de Veículo",
-    "electronics": "Eletrónica e Software",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
     "driverless": "Driverless",
-    "e-powertrain": "Powertrain Elétrico",
-    "m-powertrain": "Powertrain Mecânico",
+    "powertrain": "Powertrain",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "production": "Produção",
-    "sponsoring": "Sponsoring",
-    "logistics": "Logística",
-    "cost": "Custo",
-    "suspension": "Suspensão"
+    "logistics": "Logistics",
+    "operations": "Operations",
+    "production": "Production",
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
   },
   
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Diretor Técnico",
-    "team-leader&project-manager": "Team Leader & Diretor de Projeto",
-    "technical-director&team-leader": "Diretor Técnico & Team Leader",
-    "bsd": "Diretor de Estratégia e Negócio",
+    "project-manager": "Gestor de Projeto",
+    "strategy-finance-director": "Diretor de Estratégia & Finanças",
+    "finance": "Diretor Financeiro",
     "dep-leader": "Coordenador",
-    "member": "Membro"
+    "member": "Membro",
+    "cost": "Gestão de Custos"
   },
   
   "team-container": {
@@ -275,10 +281,10 @@
     
     "chassis": {
       "title": "Chassis",
-      "description": "O chassis tubular com soldadura a tungsténio oferece uma combinação ótima de rigidez torsional e leveza. A distribuição de peso 45F/55R foi cuidadosamente calculada para proporcionar um equilíbrio ideal entre tração e manobrabilidade, permitindo que o carro responda de forma previsível e confiante em todas as situações.",
+      "description": "O chassis tubular com soldadura TIG oferece uma combinação ótima de rigidez torsional e leveza. A distribuição de peso 45F/55R foi cuidadosamente calculada para proporcionar um equilíbrio ideal entre tração e manobrabilidade, permitindo que o carro responda de forma previsível e confiante em todas as situações.",
       
       "structure": "Estrutura",
-      "structure-value": ": Tubular com soldadura a tungsténio ",
+      "structure-value": ": Tubular com soldadura TIG ",
       
       "weight-dist": "Distribuição de Peso",
       "weight-dist-value": "45F 55R"
@@ -286,7 +292,7 @@
     
     "aero": {
       "title": "Aerodinâmica",
-      "description": "A aerodinâmica do Fenix Evo foi desenvolvida para maximizar a downforce e minimizar o arrasto. A carenagem em fibra de carbono não só proporciona leveza e rigidez estrutural, mas também foi moldada através de simulações CFD para otimizar o fluxo de ar, melhorando a estabilidade em alta velocidade e a eficiência em curva.",
+      "description": "A aerodinâmica do Fenix Evo foi desenvolvida para maximizar a downforce e minimizar o arrasto. A carenagem em fibra de carbono não só proporciona leveza, mas também foi moldada através de simulações CFD para otimizar o fluxo de ar, melhorando a estabilidade em alta velocidade e a eficiência em curva.",
       
       "bodywork": "Carenagem",
       "bodywork-value": "Fibra de Carbono"
@@ -326,17 +332,22 @@
     },
   
   "teams-names": {
-    "board": "Direção",
-    "aerodynamics": "Aerodinâmica",
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
     "chassis": "Chassis",
-    "vehicle-dynamics": "Dinâmica de Veículo",
-    "electronics": "Eletrónica e Software",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
+    "driverless": "Driverless",
     "powertrain": "Powertrain",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "logistics": "Logística",
-    "suspension": "Suspensão",
-    "production": "Produção",
-    "cost": "Custo",
+    "logistics": "Logistics",
+    "operations": "Operations",
+    "production": "Production",
+    "corporate-relations": "Corporate Relations",
     "sponsoring": "Sponsoring"
   },
 
@@ -347,7 +358,8 @@
     "technical-director&team-leader": "Diretor Técnico & Team Leader",
     "bsd": "Diretor de Estratégia e Negócio",
     "dep-leader": "Coordenador",
-    "member": "Membro"
+    "member": "Membro",
+    "cost": "Coordenador de Custo e Manufatura"
   },
   
   "with-help-from": "Com o apoio de",
@@ -465,28 +477,36 @@
   },
   
   "teams-names": {
-    "board": "Direção",
-    "aerodynamics": "Aerodinâmica",
-    "chassis&suspension": "Chassis e Suspensão",
-    "vehicle-dynamics": "Dinâmica de Veículo",
-    "steering&ergonomics": "Direção e Ergonómica ",
-    "electronics": "Eletrónica",
-    "powertrain": "Motor",
+    "board": "Board",
+    "aerodynamics": "Aerodynamics",
+    "chassis": "Chassis",
+    "vehicle-dynamics": "Vehicle Dynamics",
+    "suspension": "Suspension",
+    "electronics": "Electronics",
+    "software-control": "Software & Control",
+    "driverless": "Driverless",
+    "powertrain": "Powertrain",
+    "e-powertrain": "Electric Powertrain",
+    "m-powertrain": "Mechanical Powertrain",
     "marketing": "Marketing",
-    "corporate-relations": "Relações Empresariais",
-    "logistics": "Logística",
-    "finances": "Finanças",
-    "suspension": "Suspensão"
+    "logistics": "Logistics",
+    "operations": "Operations",
+    "production": "Production",
+    "corporate-relations": "Corporate Relations",
+    "sponsoring": "Sponsoring"
   },
   
   "roles": {
     "team-leader": "Team Leader",
     "technical-director": "Diretor Técnico",
-    "project-manager": "Diretor de Projeto",
-    "bsd": "Diretor de Estratégia",
+    "project-manager": "Gestor de Projeto",
+    "strategy-finance-director": "Diretor de Estratégia & Finanças",
+    "finance": "Diretor Financeiro",
     "dep-leader": "Coordenador",
-    "member": "Membro"
+    "member": "Membro",
+    "cost": "Gestão de Custos"
   },
+
   "team-container": {
     "members": "Membros",
     "degrees": "Cursos",
@@ -496,7 +516,7 @@
 
   "fsdragon-page": {
     "page-title": "FS DRAGON",
-    "page-subtitle": "O FS DRAGON é o primeiro protótipo que a equipa do NOVA Formula Student construiu.",
+    "page-subtitle": "O FS DRAGON é o primeiro protótipo que a equipa FS FCT construiu.",
     "specs-title": "Especificações Técnicas",
     "team-title": "A Equipa",
     "gallery": "Galeria",
@@ -573,18 +593,23 @@
     },
     
     "teams-names": {
-        "board": "Direção",
-        "aerodynamics": "Aerodinâmica",
-        "chassis&Dynamics": "Chassis e Dinâmica",
-        "chassis&suspension": "Chassis & Suspension",
-        "vehicle-dynamics": "Vehicle Dynamics",
-        "steering&ergonomics": "Steering & Ergonomics",
-        "electronics": "Eletrónica",
-        "powertrain": "Motores",
-        "marketing": "Marketing",
-        "corporate-relations": "Relações Empresariais",
-        "logistics": "Logística",
-        "finances": "Finanças"
+      "board": "Board",
+      "aerodynamics": "Aerodynamics",
+      "chassis": "Chassis",
+      "vehicle-dynamics": "Vehicle Dynamics",
+      "electronics": "Electronics and Software",
+      "driverless": "Driverless",
+      "e-powertrain": "Electric Powertrain",
+      "m-powertrain": "Mechanical Powertrain",
+      "marketing": "Marketing",
+      "production": "Production",
+      "sponsoring": "Sponsoring",
+      "logistics": "Logistics",
+      "cost": "Cost & Manufacturing",
+      "suspension": "Suspension",
+      "software-control": "Software & Control",
+      "strategy-finance-director": "Strategy & Finance Director",
+      "finance": "Finance"
     },
     "roles": {
         "team-leader": "Team Leader",
@@ -600,7 +625,7 @@
   "contacts-page": {
     "page-title": "Contactos",
     "team-email": "Email",
-    "cr-email": "Email Empresarial",
+    "cr-email": "Email Corporativo",
     "team-hq": "Morada",
     "cta-text": "Tem alguma questão ou quer ser nosso parceiro?",
     "email-button": "Envie-nos um email"
@@ -670,15 +695,15 @@
     "static-ev-desc":"Os eventos estáticos avaliam a preparação da equipa nas seguintes áreas:",
     "area":"Área",	
     "points":"Pontos",
-    "business-model": "Modelo de Negócios",
+    "business-model": "Business Plan",
     "business-model-desc": "O objetivo é avaliar a capacidade da equipa de desenvolver e apresentar um modelo de negócios abrangente. Este modelo de negócios deve estar relacionado ao veículo protótipo específico da equipa ou a um componente específico dele. Ao fazer isso, o negócio deve oferecer o veículo ou componente como um produto, ou vender um serviço com base nele, proporcionando uma oportunidade de negócio recompensadora que gere lucro monetário.",
-    "cost-manufacturing": "Custo e Manufatura",
+    "cost-manufacturing": "Cost and Manufacturing",
     "cost-manufacturing-desc": "O objetivo do evento de custo e manufatura é avaliar a compreensão da equipa dos processos de manufatura e dos custos associados à construção de um veículo protótipo. Isso inclui decisões de compensação entre conteúdo e custo, decisões de fazer ou comprar e compreensão das diferenças entre protótipo e produção em massa.",
-    "engineering-design": "Design de Engenharia",
+    "engineering-design": "Engineering Design",
     "engineering-desc": "O conceito do evento de design é avaliar o processo de engenharia e o esforço do estudante que foram dedicados ao design de um veículo, atendendo à intenção da competição. Componentes e sistemas patenteados que são incorporados ao design do veículo como itens acabados não são avaliados como unidades projetadas pelo estudante, mas são apenas avaliados com base na seleção e aplicação da equipa desse componente.",
-    "dynamic-events": "EVENTOS DINÂMICOS",
+    "dynamic-events": "EVENTS DINÂMICOS",
     "dynamic-ev-desc": "Os eventos dinâmicos avaliam o desempenho do carro na pista. Para isso, após a aprovação nos testes de segurança, os veículos são testados nos seguintes testes:",
-    "acceleration": "Aceleração",
+    "acceleration": "Acceleration",
     "acceleration-desc": "Medir o desempenho de aceleração em linha reta do carro. A pista de aceleração é uma linha reta com um comprimento de 75 m da linha de largada para a linha de chegada. A pista tem pelo menos 3 m de largura. Cones são colocados ao longo da pista em intervalos de cerca de 5 m.",
     "skidpad": "Skidpad",
     "skidpad-desc": "Avaliar a aderência lateral e as capacidades de curva do carro. O carro percorre um percurso em oito marcado por dois círculos em direções opostas. O tempo para completar o percurso e a aceleração lateral média são indicadores-chave de desempenho.",
@@ -686,10 +711,11 @@
     "autocross-desc": "Avaliar a agilidade, manuseio e desempenho dinâmico geral do carro. O carro manobra por um percurso apertado e sinuoso marcado por cones. O foco está em alcançar o tempo mais rápido enquanto navega com sucesso pelo percurso, enfatizando a aceleração lateral e longitudinal, além da responsividade.",
     "endurance": "Endurance",
     "endurance-desc": "Testar a durabilidade, confiabilidade e eficiência de combustível do carro ao longo de uma distância de corrida estendida. O carro deve completar um número especificado de voltas em uma pista desafiadora. O evento avalia tanto a resistência do veículo quanto as decisões estratégicas da equipa em relação à eficiência de combustível, paragens nas boxes e confiabilidade geral.",
-    "efficiency": "Eficiência / Trackdrive",
+    "efficiency": "Efficiency",
     "efficiency-desc": "A eficiência é medida no evento de resistência é refletida na capacidade da equipa de projetar um carro que possa completar a corrida com um consumo mínimo de combustível, demonstrando não apenas velocidade, mas também uma gestão de energia cuidadosa.",
     "media-aps": "NFS nos Media"
   },
+
  "news-page" : {
     "page-title" : "Artigos",
     "page-subtitle" : "Fique a par das últimas novidades da equipa",
